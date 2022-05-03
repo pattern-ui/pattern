@@ -1,0 +1,34 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["./src", "./types", "../../configuration/types"],
+  "exclude": [
+    "./lib",
+    "./esm",
+    "./cjs",
+    "**/*.story.tsx",
+    "**/*.test.tsx",
+    "**/*.test.ts",
+    "**/styles.api.ts",
+    "src/components/*/demos/*",
+    "src/demos.ts"
+  ],
+  "compilerOptions": {
+    "rootDir": "src",
+    "baseUrl": ".",
+    "outDir": "lib",
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "lib",
+    "composite": true,
+    "paths": {
+      "@pattern/core": ["../pattern-core/src"],
+      "@pattern/hooks": ["../pattern-hooks/src"],
+      "@pattern/tests": ["../pattern-tests/src"]
+    }
+  },
+  "references": [
+    { "path": "../pattern-core" },
+    { "path": "../pattern-hooks" },
+    { "path": "../pattern-tests" }
+  ]
+}

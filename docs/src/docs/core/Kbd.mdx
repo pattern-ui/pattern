@@ -1,0 +1,27 @@
+---
+group: 'pattern-core'
+package: '@pattern/core'
+title: Kbd
+order: 1
+slug: /core/kbd/
+category: 'data-display'
+description: 'Display keyboard button or keys combination'
+props: ['Kbd']
+import: "import { Kbd } from '@pattern/core';"
+source: 'pattern-core/src/components/Kbd/Kbd.tsx'
+docs: 'core/Kbd.mdx'
+styles: ['Kbd', 'single-node']
+---
+
+import { KbdDemos } from '@pattern/demos';
+
+## Usage
+
+<Demo data={KbdDemos.usage} />
+
+## Example
+
+Usage example with [TextInput](/core/text-input/) component
+– Kbd is used to describe keyboard shortcut to focus input:
+
+<Demo data={KbdDemos.input} />

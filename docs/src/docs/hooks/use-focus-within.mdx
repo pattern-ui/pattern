@@ -1,0 +1,32 @@
+---
+group: 'pattern-hooks'
+package: '@pattern/hooks'
+category: 'dom'
+title: 'use-focus-within'
+order: 1
+slug: /hooks/use-focus-within/
+description: 'Detect if any element within has focus'
+import: "import { useFocusWithin } from '@pattern/hooks';"
+docs: 'hooks/use-focus-within.mdx'
+source: 'pattern-hooks/src/use-focus-within/use-focus-within.ts'
+---
+
+import { HooksDemos } from '@pattern/demos';
+
+## Usage
+
+`use-focus-within` hook detects if any element within has focus, it works the same way as `:focus-within` CSS selector:
+
+<Demo data={HooksDemos.useFocusWithinDemo} />
+
+## Definition
+
+```tsx
+function useFocusWithin<T extends HTMLElement = any>(handlers?: {
+  onFocus?(event: FocusEvent): void;
+  onBlur?(event: FocusEvent): void;
+}): {
+  ref: React.MutableRefObject<T>;
+  focused: boolean;
+};
+```

@@ -1,0 +1,22 @@
+{
+  "name": "@pattern/form",
+  "description": "Pattern form management library",
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "lokielse <lokielse@gmail.com>",
+  "sideEffects": false,
+  "homepage": "https://pattern-ui.design",
+  "repository": {
+    "url": "https://github.com/pattern-ui/pattern.git",
+    "type": "git",
+    "directory": "src/pattern-hooks"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

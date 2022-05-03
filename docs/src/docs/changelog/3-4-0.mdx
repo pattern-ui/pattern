@@ -1,0 +1,85 @@
+---
+group: 'changelog'
+title: 'Version 3.4.0'
+order: 1
+slug: /changelog/3-4-0/
+release: https://github.com/pattern-ui/pattern/releases/tag/3.4.0
+date: 'December 13th, 2021'
+---
+
+import { SelectDemos, HighlightDemos, CardDemos, CalendarDemos, HooksDemos } from '@pattern/demos';
+
+## @pattern/dates improvements
+
+[Calendar](https://pattern-ui.design/dates/calendar/) component was rebuilt to improved date picking experience.
+Now user can change level by clicking label between next and previous controls:
+
+<Demo data={CalendarDemos.usage} demoProps={{ toggle: true }} />
+
+This change is applied to all components that use Calendar: [DatePicker](https://pattern-ui.design/dates/date-picker/), [DateRangePicker](https://pattern-ui.design/dates/date-picker/) and [RangeCalendar](https://pattern-ui.design/dates/calendar/).
+There are several **breaking changes** associated with this improvement:
+
+- All @pattern/dates components that use Calendar no longer support `withSelect` and `yearsRange` props
+- Styles API names were changed to include new calendar header
+
+## New hooks
+
+[use-page-leave](https://pattern-ui.design/hooks/use-page-leave/) hook calls given function when mouse leaves page:
+
+<Demo data={HooksDemos.usePageLeaveDemo} />
+
+[use-input-state](https://pattern-ui.design/hooks/use-input-state/) hook lets you handle state of native inputs (with event in `onChange` handler) and custom inputs (with value in `onChange` handler):
+
+```tsx
+import { useInputState } from '@pattern/hooks';
+import { TextInput, NumberInput } from '@pattern/core';
+
+function Demo() {
+  const [stringValue, setStringValue] = useInputState('');
+  const [numberValue, setNumberValue] = useInputState(0);
+
+  return (
+    <>
+      <input type="text" value={stringValue} onChange={setStringValue} />
+      <TextInput value={stringValue} onChange={setStringValue} />
+      <NumberInput value={numberValue} onChange={setNumberValue} />
+    </>
+  );
+}
+```
+
+## New features
+
+[Select](https://pattern-ui.design/core/select/), [MultiSelect](https://pattern-ui.design/core/multi-select/) and [Autocomplete](https://pattern-ui.design/core/autocomplete/)
+components now support forcing dropdown position:
+
+<Demo data={SelectDemos.flip} />
+
+[Highlight](https://pattern-ui.design/core/highlight/) component now supports changing highlight styles:
+
+<Demo data={HighlightDemos.styles} />
+
+[Card.Section](https://pattern-ui.design/core/card/) component now supports changing root element:
+
+<Demo data={CardDemos.linkSection} />
+
+## Other changes
+
+- [Popover](https://pattern-ui.design/core/popover/) component now supports `width` prop to set popover body width without Styles API
+- [Modal](https://pattern-ui.design/core/modal/) component now supports `radius` prop
+- [Modals manager](https://pattern-ui.design/others/modals/) now supports `onClose` prop for all modals, callback is called when modal is closed no matter the reason
+
+## 3.3.0 – 3.4.0 bug fixes
+
+- Fix missing support for margin props in [UnstyledButton](https://pattern-ui.design/core/button/#unstyled-button) component
+- Fix incorrect initial month displayed for controlled free form [DatePicker](https://pattern-ui.design/dates/date-picker/)
+- Fix incorrect [use-form](https://pattern-ui.design/hooks/use-form/) `getInputProps` type
+- Fix incorrect [Drawer](https://pattern-ui.design/core/drawer/) default z-index property
+- Fix incorrect value set n hidden input in [Select](https://pattern-ui.design/core/select/) component
+- Fix issue when it was not possible to delete last character in controlled searchable [Select](https://pattern-ui.design/core/select/) component
+- Fix items filtering logic for searchable [Select](https://pattern-ui.design/core/select/) – now items state can be fully controlled with filter function
+- Fix [Group](https://pattern-ui.design/core/group/) component styles with column direction and apart position
+- Fix [Select](https://pattern-ui.design/core/select/), [MultiSelect](https://pattern-ui.design/core/multi-select/) and [Autocomplete](https://pattern-ui.design/core/autocomplete/) dropdowns positioning when components are out of viewport
+- Fix [Popper](https://pattern-ui.design/core/popper/) component not being unmounted when reference element is removed from the dom
+- Fix scrollbars displaying under [Modal](https://pattern-ui.design/core/modal/) overlay for modals with outside overflow
+- Remove unexpected scrollbar from [TransferList](https://pattern-ui.design/core/transfer-list/), [Select](https://pattern-ui.design/core/select/) and [MultiSelect](https://pattern-ui.design/core/multi-select/) components

@@ -1,0 +1,33 @@
+import React, { useState } from 'react';
+import { Group, MediaQuery, Text } from '@pattern/core';
+import { Calendar } from '@pattern/dates';
+
+const code = `
+import { Calendar } from '@pattern/dates';
+
+function Demo() {
+  return <Calendar amountOfMonths={2} />;
+}
+`;
+
+function Demo() {
+  const [value, setValue] = useState(null);
+  return (
+    <>
+      <MediaQuery smallerThan="md" styles={{ display: 'none' }}>
+        <Group position="center">
+          <Calendar amountOfMonths={2} value={value} onChange={setValue} />
+        </Group>
+      </MediaQuery>
+      <MediaQuery largerThan="md" styles={{ display: 'none' }}>
+        <Text align="center">Demo is not available, increase viewport size to see it</Text>
+      </MediaQuery>
+    </>
+  );
+}
+
+export const multipleMonths: PatternDemo = {
+  type: 'demo',
+  code,
+  component: Demo,
+};

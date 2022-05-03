@@ -1,0 +1,437 @@
+---
+group: 'theming'
+title: PatternProvider
+slug: /theming/pattern-provider/
+order: 0
+search: 'Theme object, usePatternTheme, default props, normalize.css, emotionOptions'
+---
+
+import { ThemeDemos } from '@pattern/demos';
+
+# PatternProvider
+
+PatternProvider component can be used to change theme globally. It is not required if you decide to use default theme:
+
+```tsx
+import { PatternProvider, Button } from '@pattern/core';
+
+function App() {
+  return <Button>My app button</Button>;
+}
+
+// Custom theme is applied to all components in App
+function WithProvider() {
+  return (
+    <PatternProvider theme={{ fontFamily: 'Open Sans' }} withGlobalStyles withNormalizeCSS>
+      <App />
+    </PatternProvider>
+  );
+}
+```
+
+## Theme object
+
+Pattern theme is an object where your application's colors, fonts, spacing, border-radius and other design tokens are stored.
+
+```tsx
+interface PatternTheme {
+  // Defines color scheme for all components, defaults to "light"
+  colorScheme: 'light' | 'dark';
+
+  // Controls focus ring styles:
+  // auto – display focus ring only when user navigates with keyboard (default)
+  // always – display focus ring when user navigates with keyboard and mouse
+  // never – focus ring is always hidden (not recommended)
+  focusRing: 'auto' | 'always' | 'never';
+
+  // Default border-radius used for most elements
+  defaultRadius: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | number;
+
+  // White and black colors, defaults to '#fff' and '#000'
+  white: string;
+  black: string;
+
+  // Object of arrays with 10 colors
+  colors: Record<string, Tuple<string, 10>>;
+
+  // Key of theme.colors
+  primaryColor: string;
+
+  // Index of color from theme.colors that is considered primary, Shade type is 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+  primaryShade: Shade | { light: Shade; dark: Shade };
+
+  // font-family and line-height used in most components
+  fontFamily: string;
+  lineHeight: string | number;
+
+  // Timing function used for animations, defaults to 'ease'
+  transitionTimingFunction: string;
+
+  // Monospace font-family, used in Code, Kbd and Prism components
+  fontFamilyMonospace: string;
+
+  // Sizes for corresponding properties
+  fontSizes: Record<'xs' | 'sm' | 'md' | 'lg' | 'xl', number>;
+  radius: Record<'xs' | 'sm' | 'md' | 'lg' | 'xl', number>;
+  spacing: Record<'xs' | 'sm' | 'md' | 'lg' | 'xl', number>;
+
+  // Values used for box-shadow
+  shadows: Record<'xs' | 'sm' | 'md' | 'lg' | 'xl', string>;
+
+  // Breakpoints used in some components to add responsive styles
+  breakpoints: Record<'xs' | 'sm' | 'md' | 'lg' | 'xl', number>;
+
+  // h1-h6 styles, used in Title and TypographyStylesProvider components
+  headings: {
+    fontFamily: CSSProperties['fontFamily'];
+    fontWeight: CSSProperties['fontWeight'];
+    sizes: {
+      h1: { fontSize: CSSProperties['fontSize']; lineHeight: CSSProperties['lineHeight'] };
+      h2: { fontSize: CSSProperties['fontSize']; lineHeight: CSSProperties['lineHeight'] };
+      h3: { fontSize: CSSProperties['fontSize']; lineHeight: CSSProperties['lineHeight'] };
+      h4: { fontSize: CSSProperties['fontSize']; lineHeight: CSSProperties['lineHeight'] };
+      h5: { fontSize: CSSProperties['fontSize']; lineHeight: CSSProperties['lineHeight'] };
+      h6: { fontSize: CSSProperties['fontSize']; lineHeight: CSSProperties['lineHeight'] };
+    };
+  };
+
+  // theme functions, see in theme functions guide
+  fn: PatternThemeFunctions;
+
+  // Left to right or right to left direction, see RTL Support guide to learn more
+  dir: 'ltr' | 'rtl';
+
+  // Default loader used in Loader and LoadingOverlay components
+  loader: 'oval' | 'bars' | 'dots';
+
+  // Default date format used in DatePicker and DateRangePicker components
+  dateFormat: string;
+
+  // Add your own custom properties on Pattern theme
+  other: Record<string, any>;
+
+  // Default dates formatting locale used in every @pattern/dates component
+  datesLocale: string;
+}
+```
+
+Pass theme object to PatternProvider to change global styles:
+
+```tsx
+import { PatternProvider } from '@pattern/core';
+
+function App() {
+  return (
+    <PatternProvider
+      withGlobalStyles
+      withNormalizeCSS
+      theme={{
+        // Theme is deeply merged with default theme
+        colorScheme: 'light',
+        colors: {
+          // Add your color
+          'deep-blue': ['#E9EDFC', '#C1CCF6', '#99ABF0' /* ... */],
+          // or replace default theme color
+          blue: ['#E9EDFC', '#C1CCF6', '#99ABF0' /* ... */],
+        },
+
+        shadows: {
+          // other shadows (xs, sm, lg) will be merged from default theme
+          md: '1px 1px 3px rgba(0,0,0,.25)',
+          xl: '5px 5px 3px rgba(0,0,0,.25)',
+        },
+
+        headings: {
+          fontFamily: 'Roboto, sans-serif',
+          sizes: {
+            h1: { fontSize: 30 },
+          },
+        },
+      }}
+    >
+      <YourApp />
+    </PatternProvider>
+  );
+}
+```
+
+## Store theme override object in a variable
+
+To store theme override object in a variable use `PatternThemeOverride` type:
+
+```tsx
+import { PatternThemeOverride, PatternProvider } from '@pattern/core';
+
+const myTheme: PatternThemeOverride = {
+  colorScheme: 'light',
+  primaryColor: 'orange',
+  defaultRadius: 0,
+};
+
+function App() {
+  return (
+    <PatternProvider theme={myTheme} withGlobalStyles withNormalizeCSS>
+      <YourApp />
+    </PatternProvider>
+  );
+}
+```
+
+## use-pattern-theme hook
+
+Hook returns theme from PatternProvider context or default theme
+if you did not wrap application with PatternProvider.
+
+```tsx
+import { usePatternTheme } from '@pattern/core';
+
+function Demo() {
+  const theme = usePatternTheme();
+  return <div style={{ background: theme.colors.blue[5] }} />;
+}
+```
+
+## Nested PatternProviders
+
+If some parts of your application require different theme settings, you can wrap them with another PatternProvider:
+
+<Demo data={ThemeDemos.nestedProviders} />
+
+Nested PatternProviders will inherit `theme` override, `emotionOptions`, `defaultProps` and `styles` from
+parent provider if `inherit` prop is set:
+
+```tsx
+import { PatternProvider, Button } from '@pattern/core';
+
+function App() {
+  return (
+    // Parent PatternProvider
+    <PatternProvider
+      withGlobalStyles
+      withNormalizeCSS
+      theme={{ colorScheme: 'dark' }}
+      styles={{ Button: { root: { fontWeight: 400 } } }}
+      defaultProps={{ Badge: { variant: 'outline' } }}
+      emotionOptions={{ key: 'custom-cache' }}
+    >
+      <Button>Affected only by parent provider</Button>
+
+      {/*
+        Child PatternProvider, inherits theme, emotionOptions, defaultProps and styles
+        from parent PatternProvider. Other properties specified on child provider will override parent props.
+        For example, theme override will be: { colorScheme: 'dark', primaryColor: 'red' }
+      */}
+      <PatternProvider theme={{ primaryColor: 'red' }} inherit>
+        <Button>Affected only by child provider</Button>
+      </PatternProvider>
+    </PatternProvider>
+  );
+}
+```
+
+## Styles on PatternProvider
+
+You can add context styles to components that support [Styles API](/theming/styles-api/) with PatternProvider.
+All components that are rendered inside PatternProvider will inherit those styles:
+
+<Demo data={ThemeDemos.providerStyles} />
+
+If component does not specify Styles API selectors, then in most cases you can add styles using `root` selector:
+
+```tsx
+import { PatternProvider, Text } from '@pattern/core';
+
+function App() {
+  return (
+    <PatternProvider
+      styles={{ Text: { root: { fontSize: 20 } } }}
+      withGlobalStyles
+      withNormalizeCSS
+    >
+      <Text>20px text</Text>
+    </PatternProvider>
+  );
+}
+```
+
+## Classes on PatternProvider
+
+Same as with `styles` you can add classes to all components with `classNames` prop on PatternProvider:
+
+```tsx
+import { PatternProvider, Button } from '@pattern/core';
+
+function App() {
+  return (
+    <PatternProvider
+      classNames={{ Button: { root: 'button-root', label: 'button-label' } }}
+      withGlobalStyles
+      withNormalizeCSS
+    >
+      <Button>All Button components will have the classes above</Button>
+    </PatternProvider>
+  );
+}
+```
+
+This approach is useful when you want to styles components with utility based CSS libraries.
+
+## Pattern CSS variables
+
+If you prefer to style components with CSS/SCSS or other styling solutions that do not have access to Pattern theme
+context, then you can use Pattern CSS variables. To add css variables set `withCSSVariables` prop on PatternProvider:
+
+```tsx
+import { PatternProvider } from '@pattern/core';
+
+function App() {
+  return (
+    <PatternProvider withCSSVariables withGlobalStyles withNormalizeCSS>
+      <YourApp />
+    </PatternProvider>
+  );
+}
+```
+
+Then you will be able to use variables anywhere in your CSS:
+
+```css
+.my-button {
+  background-color: var(--pattern-color-blue-6);
+  font-family: var(--pattern-font-family);
+  line-height: var(--pattern-line-height);
+}
+```
+
+Pattern exposes the following CSS variables based on `theme` you provide:
+
+- `--pattern-color-white`
+- `--pattern-color-black`
+- `--pattern-transition-timing-function`
+- `--pattern-line-height`
+- `--pattern-font-family`
+- `--pattern-font-family-monospace`
+- `--pattern-font-family-headings`
+- `--pattern-heading-font-weight`
+- `--pattern-shadow-{size}`, e.g. `--pattern-shadow-sm`, `--pattern-shadow-xl`
+- `--pattern-radius-{size}`, e.g. `--pattern-radius-sm`, `--pattern-radius-xl`
+- `--pattern-spacing-{size}`, e.g. `--pattern-spacing-sm`, `--pattern-spacing-xl`
+- `--pattern-font-size-{size}`, e.g. `--pattern-font-size-sm`, `--pattern-font-size-xl`
+- `--pattern-color-{color}-{shade}`, e.g. `--pattern-color-blue-6`, `--pattern-color-gray-0`
+- `--pattern-{heading}-font-size`, e.g. `--pattern-h1-font-size`
+- `--pattern-{heading}-line-height`, e.g, `--pattern-h3-line-height`
+
+## Default props on PatternProvider
+
+All Pattern components support default props on PatternProvider:
+
+```tsx
+import { PatternProvider, Button, Badge } from '@pattern/core';
+
+function App() {
+  return (
+    <PatternProvider
+      withNormalizeCSS
+      withGlobalStyles
+      defaultProps={{
+        Button: { color: 'red' },
+        Badge: { size: 'xl', radius: 0 },
+        // ... default props for other components
+      }}
+    >
+      {/* By default, Button will have red color */}
+      <Button>Red button</Button>
+
+      {/* Default color can be overwritten by props */}
+      <Button color="blue">Blue button</Button>
+
+      {/* By default, Badge will have xl size and 0 radius */}
+      <Badge>Badge</Badge>
+    </PatternProvider>
+  );
+}
+```
+
+## Normalize.css and global styles
+
+PatternProvider includes [normalize.css](https://necolas.github.io/normalize.css/) and some extra global styles added to body element:
+
+- background-color to `theme.colors.dark[7]` in dark color scheme and `theme.white` in light
+- color to `theme.colors.dark[0]` in dark color scheme and `theme.black` in light
+- font-family and font-smoothing based on theme
+- font-size to `theme.fontSize.md`
+
+To enable these global styles, set `withNormalizeCSS` and `withGlobalStyles` props:
+
+```tsx
+import { PatternProvider } from '@pattern/core';
+
+function App() {
+  return (
+    <PatternProvider withNormalizeCSS withGlobalStyles>
+      <YourApp />
+    </PatternProvider>
+  );
+}
+```
+
+## Configure emotion
+
+You can provide [emotion options](https://emotion.sh/docs/@emotion/cache#options) to PatternProvider to configure emotion cache:
+
+- `key` (required) – the prefix before class names, defaults to `pattern`
+- `container` – a DOM node that emotion will insert all of its style tags into. This is useful for inserting styles into iframes.
+- `prepend` - a boolean representing whether to prepend rather than append style tags into the specified container DOM node
+- `stylisPlugins` – an array of Stylis plugins that will be run by Stylis during preprocessing, for example [stylis-plugin-rtl](https://www.npmjs.com/package/stylis-plugin-rtl) can be used to add [RTL](/theming/rtl) support
+
+```tsx
+import { PatternProvider } from '@pattern/core';
+
+function App() {
+  return (
+    <PatternProvider emotionOptions={{ key: 'pattern' }} withGlobalStyles withNormalizeCSS>
+      <YourApp />
+    </PatternProvider>
+  );
+}
+```
+
+## Change styles insertion point
+
+By default, Pattern components styles are prepended to head to allow overrides.
+To make Pattern styles override other styles, set `prepend` to `false`.
+With this option styles will be added at the end of `head` element:
+
+```tsx
+import { PatternProvider } from '@pattern/core';
+
+function App() {
+  return (
+    <PatternProvider
+      emotionOptions={{ key: 'pattern', prepend: false }}
+      withGlobalStyles
+      withNormalizeCSS
+    >
+      <YourApp />
+    </PatternProvider>
+  );
+}
+```
+
+## Change classes prefix
+
+To change classes prefix set `emotionOptions.key` property:
+
+```tsx
+import { PatternProvider } from '@pattern/core';
+
+function App() {
+  return (
+    <PatternProvider emotionOptions={{ key: 'custom-key' }} withGlobalStyles withNormalizeCSS>
+      <YourApp />
+    </PatternProvider>
+  );
+}
+```
+
+Now classes will follow this pattern: `custom-key-{random part}`.

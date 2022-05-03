@@ -1,0 +1,28 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["./src", "../../configuration/types", "../../tests"],
+  "exclude": ["./lib", "./esm", "./cjs"],
+  "compilerOptions": {
+    "rootDir": "src",
+    "baseUrl": ".",
+    "outDir": "lib",
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "lib",
+    "composite": true,
+    "paths": {
+      "@pattern/hooks": ["../pattern-hooks/src"],
+      "@pattern/styles": ["../pattern-styles/src"],
+      "@pattern/utils": ["../pattern-utils/src"],
+      "@pattern/tests": ["../pattern-tests/src"],
+      "@pattern/storybook": ["../pattern-storybook/src"]
+    }
+  },
+  "references": [
+    { "path": "../pattern-hooks" },
+    { "path": "../pattern-utils" },
+    { "path": "../pattern-styles" },
+    { "path": "../pattern-tests" },
+    { "path": "../pattern-storybook" }
+  ]
+}

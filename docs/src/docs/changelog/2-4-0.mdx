@@ -1,0 +1,76 @@
+---
+group: 'changelog'
+title: 'Version 2.4.0'
+order: 1
+slug: /changelog/2-4-0/
+release: https://github.com/pattern-ui/pattern/releases/tag/2.4.0
+date: 'September 1st, 2021'
+---
+
+import {
+  TextDemos,
+  AlertDemos,
+  BlockquoteDemos,
+  ButtonDemos,
+  BadgeDemos,
+  SimpleGridDemos,
+  GridDemos,
+  CollapseDemos,
+} from '@pattern/demos';
+
+## Components redesign
+
+[Alert](https://pattern-ui.design/core/alert/) component was redesigned, it now supports icon and close button:
+
+<Demo data={AlertDemos.configurator} />
+
+[Blockquote](https://pattern-ui.design/core/blockquote/) component was redesigned to look more neutral:
+
+<Demo data={BlockquoteDemos.configurator} />
+
+## New components
+
+[SimpleGrid](https://pattern-ui.design/core/simple-grid/) component allows you to create responsive grid with equal width columns:
+
+<Demo data={SimpleGridDemos.configurator} />
+
+[Collapse](https://pattern-ui.design/core/collapse/) component allows you to animate presence with slide down transition
+
+<Demo data={CollapseDemos.usage} demoProps={{ toggle: true }} />
+
+## New features
+
+[Grid](https://pattern-ui.design/core/grid/) component now supports setting breakpoints via `Col` component props:
+
+<Demo data={GridDemos.responsive} />
+
+[Text](https://pattern-ui.design/core/text/) component now supports setting [-webkit-line-clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp)
+via prop to limit amount of lines:
+
+<Demo data={TextDemos.linesConfigurator} />
+
+[Button](https://pattern-ui.design/core/button/) component now supports loading state:
+
+<Demo data={ButtonDemos.loadingConfigurator} />
+
+[Text](https://pattern-ui.design/core/text/), [Button](https://pattern-ui.design/core/button/), [Badge](https://pattern-ui.design/core/badge/) and [ThemeIcon](https://pattern-ui.design/core/theme-icon/) components now support new gradient variant:
+
+<Demo data={BadgeDemos.gradient} demoProps={{ toggle: true }} />
+
+<Demo data={TextDemos.gradient} demoProps={{ toggle: true }} />
+
+## Other changes
+
+- [Center](https://pattern-ui.design/core/center/) component now supports `inline` prop to center inline elements
+- Initial highlighted item in [Menu](https://pattern-ui.design/core/menu/) component no longer set on menu open – user will have to use up or down arrow at least one to make selection visible
+- [Card](https://pattern-ui.design/core/card/), [Paper](https://pattern-ui.design/core/paper/) and [Avatar](https://pattern-ui.design/core/avatar/) components now support setting custom component as root element via `component` prop
+- [Text](https://pattern-ui.design/core/text/#dimmed) component now supports special `dimmed` color and `inline` prop to set line-height to 1
+- [Select](https://pattern-ui.design/core/select/), [Autocomplete](https://pattern-ui.design/core/autocomplete/) and [MultiSelect](https://pattern-ui.design/core/multi-select/) dropdowns are closed when input is clicked
+- Components that support changing root element with `component` prop ([Button](https://pattern-ui.design/core/button/), [ActionIcon](https://pattern-ui.design/core/action-icon/), etc.) now have better TypeScript support
+- [Loader](https://pattern-ui.design/core/loader/) component now supports 2 new variants
+- [Select](https://pattern-ui.design/core/select/) component now supports `onSearchChange` event which allows to change data based on search query
+- Indeterminate and checked icons were replaced in [Checkbox](https://pattern-ui.design/core/checkbox/) to make component more recognizable
+- [Menu](https://pattern-ui.design/core/menu/), [Accordion](https://pattern-ui.design/core/accordion/) and [Card](https://pattern-ui.design/core/card/) components now support simpler imports, e.g. `<Menu.Item />` instead of separate `<MenuItem />` import
+- [NativeSelect](https://pattern-ui.design/core/native-select/#right-section), [Select](https://pattern-ui.design/core/select/#right-section) and [MultiSelect](https://pattern-ui.design/core/multi-select/#right-section) components now support icon in right section changing
+- [Modal](https://pattern-ui.design/core/modal/) and [Drawer](https://pattern-ui.design/core/drawer/) components now return focus to last active element after being closed
+- [Overlay](https://pattern-ui.design/core/overlay/#with-gradient) component now supports setting gradient instead of background color

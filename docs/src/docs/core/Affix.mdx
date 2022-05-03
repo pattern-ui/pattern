@@ -1,0 +1,23 @@
+---
+group: 'pattern-core'
+package: '@pattern/core'
+title: Affix
+order: 1
+slug: /core/affix/
+category: 'overlay'
+description: 'Render react node inside portal at fixed position'
+props: ['Affix']
+import: "import { Affix } from '@pattern/core';"
+source: 'pattern-core/src/components/Affix/Affix.tsx'
+docs: 'core/Affix.mdx'
+styles: ['Affix', 'single-node']
+---
+
+import { AffixDemos } from '@pattern/demos';
+
+## Usage
+
+Affix renders div element with fixed position inside [Portal](/core/portal) component.
+Use component to display elements fixed at any position on screen, for example, scroll to top button:
+
+<Demo data={AffixDemos.usage} />

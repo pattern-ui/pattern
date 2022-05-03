@@ -1,0 +1,64 @@
+---
+group: 'pattern-hooks'
+package: '@pattern/hooks'
+title: 'use-input-state'
+category: 'state'
+order: 1
+slug: /hooks/use-input-state/
+description: 'Manage state of native and custom inputs'
+import: "import { useInputState } from '@pattern/hooks';"
+docs: 'hooks/use-input-state.mdx'
+source: 'pattern-hooks/src/use-input-state/use-input-state.ts'
+---
+
+## Usage
+
+use-input-state hook handles state of native inputs (with event in `onChange` handler) and custom inputs (with value in `onChange` handler).
+Hook works with all Pattern and native inputs:
+
+```tsx
+import { useState } from 'react';
+import { useInputState } from '@pattern/hooks';
+import { TextInput, NumberInput } from '@pattern/core';
+
+function WithUseInputState() {
+  const [stringValue, setStringValue] = useInputState('');
+  const [numberValue, setNumberValue] = useInputState(0);
+
+  return (
+    <>
+      <input type="text" value={stringValue} onChange={setStringValue} />
+      <TextInput value={stringValue} onChange={setStringValue} />
+      <NumberInput value={numberValue} onChange={setNumberValue} />
+    </>
+  );
+}
+
+function WithUseState() {
+  const [stringValue, setStringValue] = useState('');
+  const [numberValue, setNumberValue] = useState(0);
+
+  return (
+    <>
+      <input
+        type="text"
+        value={stringValue}
+        onChange={(event) => setStringValue(event.currentTarget.value)}
+      />
+      <TextInput
+        value={stringValue}
+        onChange={(event) => setStringValue(event.currentTarget.value)}
+      />
+      <NumberInput value={numberValue} onChange={setNumberValue} />
+    </>
+  );
+}
+```
+
+## Definition
+
+```tsx
+function useInputState<T>(
+  initialState: T
+): [T, (value: null | undefined | T | React.ChangeEvent<any>) => void];
+```

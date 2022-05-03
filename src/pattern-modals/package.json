@@ -1,0 +1,37 @@
+{
+  "name": "@pattern/modals",
+  "description": "Modals manager based on Pattern components",
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "lokielse <lokielse@gmail.com>",
+  "sideEffects": false,
+  "homepage": "https://pattern-ui.design/others/modals/",
+  "repository": {
+    "url": "https://github.com/pattern-ui/pattern.git",
+    "type": "git",
+    "directory": "src/pattern-modals"
+  },
+  "keywords": [
+    "react",
+    "next",
+    "nextjs",
+    "ui",
+    "components",
+    "ui-kit",
+    "library",
+    "frontend",
+    "modal",
+    "confirm"
+  ],
+  "peerDependencies": {
+    "@pattern/core": "1.0.0",
+    "@pattern/hooks": "1.0.0",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

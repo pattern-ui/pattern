@@ -1,0 +1,78 @@
+---
+group: 'pattern-core'
+package: '@pattern/core'
+title: Pagination
+order: 1
+slug: /core/pagination/
+category: 'navigation'
+description: 'Display active page and navigate between multiple pages'
+props: ['Pagination']
+import: "import { Pagination } from '@pattern/core';"
+source: 'pattern-core/src/components/Pagination/Pagination.tsx'
+docs: 'core/Pagination.mdx'
+styles: ['Pagination']
+---
+
+import { PaginationDemos } from '@pattern/demos';
+
+## Usage
+
+<Demo data={PaginationDemos.configurator} />
+
+## Controlled
+
+To control component state provide `page` and `onChange` props:
+
+```tsx
+import { useState } from 'react';
+import { Pagination } from '@pattern/core';
+
+function Demo() {
+  const [activePage, setPage] = useState(1);
+  return <Pagination page={activePage} onChange={setPage} total={10} />;
+}
+```
+
+## Siblings
+
+Control amount of active item siblings with `siblings` prop:
+
+<Demo data={PaginationDemos.siblings} />
+
+## Boundaries
+
+Control amount of items displayed after previous and before next buttons with `boundaries` prop:
+
+<Demo data={PaginationDemos.boundaries} />
+
+## Accessibility
+
+Pagination renders a regular button element. To include aria-label for screen reader support
+provide `getItemAriaLabel` function to generate aria-labels:
+
+```tsx
+<Pagination
+  total={20}
+  getItemAriaLabel={(page) => {
+    switch (page) {
+      case 'dots':
+        return 'dots element aria-label';
+      case 'prev':
+        return 'previous page button aria-label';
+      case 'next':
+        return 'next page button aria-label';
+      case 'first':
+        return 'first page button aria-label';
+      case 'last':
+        return 'last page button aria-label';
+      default:
+        return `${page} item aria-label`;
+    }
+  }}
+/>
+```
+
+## use-pagination hook
+
+If you need more flexibility @pattern/hooks exports [use-pagination](/hooks/use-pagination/) hook,
+you can use it to create your own pagination component.

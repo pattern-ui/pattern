@@ -1,0 +1,41 @@
+{
+  "name": "@pattern/demos",
+  "description": "Demos used in documentation",
+  "private": true,
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "lokielse <lokielse@gmail.com>",
+  "sideEffects": false,
+  "homepage": "https://pattern-ui.design",
+  "repository": {
+    "url": "https://github.com/pattern-ui/pattern.git",
+    "type": "git",
+    "directory": "src/pattern-demos"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "@pattern/core": "1.0.0",
+    "@pattern/hooks": "1.0.0",
+    "@pattern/dates": "1.0.0",
+    "@pattern/form": "1.0.0",
+    "@pattern/rte": "1.0.0",
+    "@pattern/modals": "1.0.0",
+    "@pattern/nprogress": "1.0.0",
+    "@pattern/notifications": "1.0.0",
+    "@pattern/dropzone": "1.0.0",
+    "@pattern/prism": "1.0.0",
+    "@pattern/labs": "1.0.0",
+    "@pattern/spotlight": "1.0.0",
+    "tabler-icons-react": "*",
+    "react-beautiful-dnd": "*",
+    "dayjs": "*",
+    "zod": "*",
+    "@modulz/radix-icons": "*",
+    "@primer/octicons-react": "*"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

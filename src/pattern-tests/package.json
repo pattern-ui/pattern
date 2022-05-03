@@ -1,0 +1,13 @@
+{
+  "name": "@pattern/tests",
+  "private": true,
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "lokielse <lokielse@gmail.com>",
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {}
+}

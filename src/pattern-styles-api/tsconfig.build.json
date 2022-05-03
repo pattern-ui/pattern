@@ -1,0 +1,46 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["./src", "./types", "../../configuration/types"],
+  "exclude": [
+    "./lib",
+    "./esm",
+    "./cjs",
+    "**/*.story.tsx",
+    "**/*.test.tsx",
+    "**/*.test.ts",
+    "**/styles.api.ts",
+    "src/components/*/demos/*",
+    "src/demos.ts"
+  ],
+  "compilerOptions": {
+    "rootDir": "src",
+    "baseUrl": ".",
+    "outDir": "lib",
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "lib",
+    "composite": true,
+    "paths": {
+      "@pattern/core": ["../pattern-core/src"],
+      "@pattern/dates": ["../pattern-dates/src"],
+      "@pattern/hooks": ["../pattern-hooks/src"],
+      "@pattern/prism": ["../pattern-prism/src"],
+      "@pattern/dropzone": ["../pattern-dropzone/src"],
+      "@pattern/notifications": ["../pattern-notifications/src"],
+      "@pattern/modals": ["../pattern-modals/src"],
+      "@pattern/rte": ["../pattern-rte/src"],
+      "@pattern/labs": ["../pattern-labs/src"]
+    }
+  },
+  "references": [
+    { "path": "../pattern-core" },
+    { "path": "../pattern-dates" },
+    { "path": "../pattern-hooks" },
+    { "path": "../pattern-prism" },
+    { "path": "../pattern-dropzone" },
+    { "path": "../pattern-notifications" },
+    { "path": "../pattern-modals" },
+    { "path": "../pattern-rte" },
+    { "path": "../pattern-labs" }
+  ]
+}

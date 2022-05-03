@@ -1,0 +1,96 @@
+---
+group: 'changelog'
+title: 'Version 3.5.0'
+order: 1
+slug: /changelog/3-5-0/
+release: https://github.com/pattern-ui/pattern/releases/tag/3.5.0
+date: 'January 3rd, 2022'
+---
+
+import {
+  RingProgressDemos,
+  NumberInputDemos,
+  StepperDemos,
+  ProgressDemos,
+  SwitchDemos,
+  TransferListDemos,
+  PrismDemos,
+  RichTextEditorDemos,
+} from '@pattern/demos';
+
+## @pattern/prism changes
+
+[Prism](https://pattern-ui.design/others/prism/) component now uses [ScrollArea](https://pattern-ui.design/core/scroll-area/) instead of native browser scrollbars:
+
+<Demo data={PrismDemos.scrollbars} demoProps={{ toggle: true }} />
+
+[Prism](https://pattern-ui.design/others/prism/) now supports organizing code with tabs:
+
+<Demo data={PrismDemos.tabs} demoProps={{ toggle: true }} />
+
+## NumberInput component improvements
+
+[NumberInput](https://pattern-ui.design/core/number-input/) component now supports the following new features:
+
+- decimal separator configuration
+- value increment/decrement when user clicks and holds up/down controls
+
+<Demo data={NumberInputDemos.decimalSeparator} />
+
+<Demo data={NumberInputDemos.hold} />
+
+## New features
+
+[RingProgress](https://pattern-ui.design/core/ring-progress/) component now supports round caps:
+
+<Demo data={RingProgressDemos.configurator} />
+
+[Stepper](https://pattern-ui.design/core/stepper/) component now supports `Stepper.Completed` to display content after final step is completed:
+
+<Demo data={StepperDemos.usage} />
+
+[Progress](https://pattern-ui.design/core/progress/) component now supports labels and animations:
+
+<Demo data={ProgressDemos.label} demoProps={{ toggle: true }} />
+
+<Demo data={ProgressDemos.animations} />
+
+[Switch](https://pattern-ui.design/core/switch/) component now supports inner labels:
+
+<Demo data={SwitchDemos.labels} />
+
+[RichTextEditor](https://pattern-ui.design/others/rte/) now supports mentions:
+
+<Demo data={RichTextEditorDemos.mentions} demoProps={{ toggle: true, zIndex: 5 }} />
+
+[TransferList](https://pattern-ui.design/core/transfer-list/) now supports items grouping:
+
+<Demo data={TransferListDemos.group} demoProps={{ toggle: true }} />
+
+## Other changes
+
+- New [use-element-size](https://pattern-ui.design/hooks/use-element-size/) hook – subscribe to element width and height with ResizeObserver, simpler alternative to [use-resize-observer](https://pattern-ui.design/hooks/use-resize-observer/)
+- [Select](https://pattern-ui.design/core/select/) component now has an option to enable active item deselection when user clicks on active item
+- [Skeleton](https://pattern-ui.design/core/skeleton/) component now supports animations disabling
+- [Alert](https://pattern-ui.design/core/alert/), [Tooltip](https://pattern-ui.design/core/tooltip) and [Notification](https://pattern-ui.design/core/notification/) components now support `radius` prop
+- [Alert](https://pattern-ui.design/core/alert) component now supports 3 variants: filled, light and outline
+- [Center](https://pattern-ui.design/core/center/) component is now polymorphic, it supports `component` prop
+- [Grid](https://pattern-ui.design/core/grid/) component now exposes `Col` component as `Grid.Col`
+- [Progress](https://pattern-ui.design/core/progress/) and [RingProgress](https://pattern-ui.design/core/ring-progress/) components now support setting colors with css color values instead of allowing only values from `theme.colors`
+- [Modal](https://pattern-ui.design/core/modal/) component now has an option to disable closing when escape key is pressed with `closeOnEscape={false}`
+- `@pattern/core` package now exports `PatternProviderProps` type
+- `@pattern/hooks` package now exports `UseForm` type
+
+## 3.4.0 - 3.5.0 bug fixes
+
+- Fix incorrect click outside events handling in [Modal](https://pattern-ui.design/core/modal/) and [Drawer](https://pattern-ui.design/core/drawer/) components
+- Fix incorrect max-width calculated for [Group](https://pattern-ui.design/core/group/) with falsy children
+- Fix incorrect animations applied to [Collapse](https://pattern-ui.design/core/collapse/) component with `animateOpacity` prop set to false
+- Fix [HueSlider and AlphaSlider](https://pattern-ui.design/core/color-picker/) components breaking when used without `size` prop
+- Fix `size` prop not applied to [Divider](https://pattern-ui.design/core/divider/) with label
+- Fix `onChange` function called with incorrect precision in [NumberInput](https://pattern-ui.design/core/number-input/) component
+- Fix Linux detected as undetermined is [use-os](https://pattern-ui.design/hooks/use-os/) hook
+- Fix incorrect [MediaQuery](https://pattern-ui.design/core/media-query/) component `largerThan` and `smallerThan` props handling (**breaking bug fix**)
+- Fix incorrect [DateRangePicker](https://pattern-ui.design/dates/date-picker/) types for strict TypeScript mode
+- Fix unexpected vertical scrollbars in [TransferList](https://pattern-ui.design/core/transfer-list/) component
+- Fix unexpected onChange function called onBlur in [DatePicker](https://pattern-ui.design/dates/date-picker/) component

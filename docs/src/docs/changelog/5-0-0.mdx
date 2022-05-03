@@ -1,0 +1,116 @@
+---
+group: 'changelog'
+title: 'Version 5.0.0'
+order: 1
+slug: /changelog/5-0-0/
+release: https://github.com/pattern-ui/pattern/releases/tag/5.0.0
+date: 'March 29th, 2022'
+---
+
+import { TabsDemos, AccordionDemos, TooltipDemos, PopoverDemos } from '@pattern/demos';
+
+## Components API changes
+
+### Tabs component
+
+[Tabs](https://pattern-ui.design/core/tabs/) and associated [Prism.Tabs](https://pattern-ui.design/others/prism/) components now have new API.
+New API provides the following enhancements:
+
+- Tabs are now more accessible
+- Tabs content no longer unmounts on tab change, it is hidden with `display: none`
+- It is now easier to manage controlled tabs state with string value instead of index
+- With new component structure it is now easier to modify styles of each part with `sx` or `classname` props
+
+Tabs component now supports the following new props:
+
+- `radius` prop (defaults to `theme.defaultRadius`)
+- `inverted` prop allows to display panels before controls
+- `loop` prop control arrow keys behavior (allows to go from first to last and vice versa)
+- `activateTabWithKeyboard` prop controls how tabs respond to arrows and Home/End key presses
+- `allowTabDeactivation` prop allows user to deactivate current active tab
+
+<Demo data={TabsDemos.configurator} />
+
+### Accordion component
+
+[Accordion](https://pattern-ui.design/core/accordion/) component now has new API with the following new props:
+
+- `variant` prop controls visuals, Accordion now has 4 variants
+- `radius` prop (defaults to `theme.defaultRadius`) controls border-radius for all variants except `default`
+- `loop` prop control arrow keys behavior (allows to go from first to last and vice versa)
+- `disabled` prop allows to disable items
+- `icon` prop adds icon to the opposite side of chevron
+
+<Demo data={AccordionDemos.configurator} />
+
+### Tooltip component
+
+[Tooltip](https://pattern-ui.design/core/tooltip/) now requires children to be an element or a component,
+string, numbers, fragments and multiple elements are no longer supported. In addition to that Tooltip no longer wraps target
+element with div tag, events are added directly to target element.
+
+```tsx
+import { Tooltip, Badge } from '@pattern/core';
+
+function Demo() {
+  return (
+    <>
+      <Tooltip label="OK">
+        <button>Native button – ok</button>
+      </Tooltip>
+
+      <Tooltip label="OK">
+        <Badge>Pattern component – ok</Badge>
+      </Tooltip>
+
+      <Tooltip label="Throws">Raw string, NOT OK – will throw error</Tooltip>
+
+      {/* Number, NOT OK – will throw error */}
+      <Tooltip label="Throws">{2}</Tooltip>
+
+      <Tooltip label="Throws">
+        <>Fragment, NOT OK, will throw error</>
+      </Tooltip>
+
+      <Tooltip label="Throws">
+        <div>More that one node</div>
+        <div>NOT OK, will throw error</div>
+      </Tooltip>
+    </>
+  );
+}
+```
+
+### Popover component
+
+[Popover](https://pattern-ui.design/core/popover/) component now has new API with the following breaking changes:
+
+- `placement` prop is no longer supported, Popover side and alignment is now controlled with `position` prop
+- Default value for `trapFocus` and `withinPortal` props is now `false`
+- Close button and title are no longer supported, if you need these parts – add them on your side in `Popover.Dropdown` component
+
+Popover now supports the following new features:
+
+- Uncontrolled and controlled mode
+- `width="target"` prop will make popover width the same as target element
+- `Popover.Dropdown` can now be styled with system props (`sx`, `className`, padding props, etc.)
+
+<Demo data={PopoverDemos.usage} />
+
+## Other breaking changes
+
+- [Portal](https://pattern-ui.design/core/portal/) component no longer accepts `position` and `zIndex` props – it is now required to add these styles to Portal children
+- FloatingTooltip component was renamed to [Tooltip.Floating](https://pattern-ui.design/core/tooltip/#floating-tooltip)
+- Most components with dropdowns (Tooltip, Popover, ColorPicker, DatePicker, Select, etc.) are no longer using Portal by default, it is now required to set `withinPortal` if you need this feature
+
+## New features
+
+### Tooltip delay group
+
+[Tooltip.Group](https://pattern-ui.design/core/tooltip/#tooltip-delay-group) component can be used to sync open and close delays for multiple tooltips:
+
+<Demo data={TooltipDemos.group} />
+
+## Other changes
+
+- New [FocusTrap](https://pattern-ui.design/core/focus-trap/) component – component implementation of [use-focus-trap](https://pattern-ui.design/hooks/use-focus-trap/) hook

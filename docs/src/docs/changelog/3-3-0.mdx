@@ -1,0 +1,88 @@
+---
+group: 'changelog'
+title: 'Version 3.3.0'
+order: 1
+slug: /changelog/3-3-0/
+release: https://github.com/pattern-ui/pattern/releases/tag/3.3.0
+date: 'December 2nd, 2021'
+---
+
+import {
+  ScrollAreaDemos,
+  ModalDemos,
+  AccordionDemos,
+  SelectDemos,
+  HooksDemos,
+} from '@pattern/demos';
+
+## ScrollArea component
+
+New [ScrollArea](https://pattern-ui.design/core/scroll-area/) component lets you easily manage custom scrollbars
+without any external libraries:
+
+<Demo data={ScrollAreaDemos.configurator} />
+
+ScrollArea is now rendered as default dropdown element in [Select](https://pattern-ui.design/core/select/), [MultiSelect](https://pattern-ui.design/core/multi-select/)
+and [TransferList](https://pattern-ui.design/core/transfer-list/) components:
+
+<Demo data={SelectDemos.large} />
+
+## use-form hook improvements
+
+- [use-form](https://pattern-ui.design/hooks/use-form/) hook now includes new `getInputProps` handler to simplify inputs
+
+- [use-form](https://pattern-ui.design/hooks/use-form/) hook now supports optional error messages (hook will work as before if messages are not provided):
+
+```tsx
+const form = useForm({
+  initialValues: { name: '', age: 0 },
+  validationRules: {
+    name: (value) => value.trim().length >= 2,
+    age: (value) => value > 21,
+  },
+  errorMessages: {
+    name: 'Name must include at least 2 characters',
+    age: 'You must be 21 or older to enter',
+  },
+});
+
+form.validate();
+form.errors;
+// -> { name: 'Name must include at least 2 characters', age: 'You must be 21 or older to enter' }
+
+form.setFieldValue('name', 'John');
+form.validate();
+form.errors;
+// -> { name: null, age: 'You must be 21 or older to enter' }
+```
+
+## New features
+
+[Modal](https://pattern-ui.design/core/modal/) component can now be centered:
+
+<Demo data={ModalDemos.centered} />
+
+[Accordion](https://pattern-ui.design/core/accordion/) component now supports controlled state with `useAccordionState` hook:
+
+<Demo data={AccordionDemos.form} demoProps={{ toggle: true }} />
+
+## Other changes
+
+- Components that use [Popper](https://pattern-ui.design/core/popper/) ([Select](https://pattern-ui.design/core/select/), [Menu](https://pattern-ui.design/core/menu/), [DatePicker](https://pattern-ui.design/dates/date-picker/), etc.) now support an option to disable rendering within portal
+- [Rich text editor](https://pattern-ui.design/others/rte/) now has an option to [get editor ref](https://pattern-ui.design/others/rte/#get-editor-ref), it can be used, for example, to focus/blur editor or to extend editor with plugins
+- Components that use [Popper](https://pattern-ui.design/core/popper/) now support rendering without [Portal](https://pattern-ui.design/core/portal/) by setting `withinPortal={false}`. This option is useful when you want to use [Select](https://pattern-ui.design/core/select/) and other components inside [Popover](https://pattern-ui.design/core/popover/) or other components that use [use-click-outside](https://pattern-ui.design/hooks/use-click-outside/).
+- [Accordion](https://pattern-ui.design/core/accordion/) component now supports `iconSize` and `offsetIcon` props
+- [Menu](https://pattern-ui.design/core/menu/) component now support disabled items
+- You can now change default locale that is used in all `@pattern/dates` components with `dateLocale` on [PatternProvider](https://pattern-ui.design/theming/pattern-provider/)
+
+## Bug fixes
+
+- [Collapse](https://pattern-ui.design/core/collapse/) component now works correctly with `transitionDuration={0}`
+- [use-focus-trap](https://pattern-ui.design/hooks/use-focus-trap/) hook is now less restrictive, it fixes issue with [Popover](https://pattern-ui.design/core/popover/) and [Menu](https://pattern-ui.design/core/menu/) scrolling page when being closed
+- Fix click outside not working with [Modal](https://pattern-ui.design/core/modal/) with outside overflow
+- [InputWrapper](https://pattern-ui.design/core/input-wrapper/) label now has `display: inline-block` styles, these styles will prevent input focusing when empty area above the input is clicked
+- [Select](https://pattern-ui.design/core/select/) component now correctly handles up and down arrow keys with selected value
+- Fix incorrect opened dropdown state in [Select](https://pattern-ui.design/core/select/) component when search results are empty and nothing found message is not provided
+- Fix incorrect enter key handling in [Autocomplete](https://pattern-ui.design/core/autocomplete/), [Select](https://pattern-ui.design/core/select/), [MultiSelect](https://pattern-ui.design/core/multi-select/) and [DatePicker](https://pattern-ui.design/core/date-picker/) components which resulted in unexpected form submits
+- Fix incorrect space key handling in [Select](https://pattern-ui.design/core/select/) and [MultiSelect](https://pattern-ui.design/core/multi-select/) components
+- Fix focus shifting to input when date is selected with keyboard in [DateRangePicker](https://pattern-ui.design/dates/date-picker/)
