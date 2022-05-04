@@ -11,7 +11,7 @@ import {
   CloseButton,
   extractSystemStyles,
 } from '@pattern/core';
-import { BaseSelectProps } from '@pattern/core/src/components/Select/types';
+import { BaseSelectProps } from '@pattern/core';
 import useStyles, { RIGHT_SECTION_WIDTH } from './TagInput.styles';
 import { DefaultValue, DefaultValueStylesNames } from './DefaultValue/DefaultValue';
 

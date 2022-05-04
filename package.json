@@ -2,7 +2,7 @@
   "name": "pattern",
   "private": true,
   "workspaces": [
-    "src/*"
+    "packages/*"
   ],
   "version": "1.0.0",
   "description": "Pattern Components Monorepo",
@@ -15,7 +15,7 @@
     "postinstall": "npm run docs:docgen && cd docs && yarn",
     "syncpack": "syncpack list-mismatches",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint src --ext .ts,.tsx",
+    "lint": "eslint packages --ext .ts,.tsx",
     "build": "esno scripts/build",
     "build:all": "npm run build all && npm run build:private",
     "build:demos": "npm run build @pattern/demos",
@@ -24,7 +24,7 @@
     "prettier:test": "prettier --check \"**/*.{ts,tsx}\"",
     "prettier:write": "prettier --write \"**/*.{ts,tsx}\"",
     "exports": "esno scripts/check-exports",
-    "clean": "rimraf src/*/{esm,cjs,lib,dist} src/**/*.tsbuildinfo",
+    "clean": "rimraf packages/*/{esm,cjs,lib,dist} packages/**/*.tsbuildinfo",
     "clean:node_modules": "rimraf node_modules */**/node_modules",
     "storybook": "esno scripts/storybook-start",
     "test": "npm run prettier:test && npm run syncpack && npm run typecheck && npm run lint && npm run jest",

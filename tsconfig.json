@@ -1,8 +1,8 @@
 {
   "extends": "./tsconfig.base.json",
   "include": [
-    "src/pattern-*/src",
-    "src/pattern-*/demos",
+    "packages/pattern-*/src",
+    "packages/pattern-*/demos",
     "./types",
     "./docs/src",
     "./scripts",
@@ -16,14 +16,14 @@
     "configuration/jest",
     "configuration/storybook/main.js",
     "node_modules",
-    "src/pattern-*/esm/**/*",
-    "src/pattern-*/lib/**/*",
-    "src/pattern-*/cjs/**/*"
+    "packages/pattern-*/esm/**/*",
+    "packages/pattern-*/lib/**/*",
+    "packages/pattern-*/cjs/**/*"
   ],
   "compilerOptions": {
     "paths": {
-      "@pattern/*": ["src/pattern-*/src"],
-      "@demos/*": ["src/pattern-*/src/demos"]
+      "@pattern/*": ["packages/pattern-*/src"],
+      "@demos/*": ["packages/pattern-*/src/demos"]
     }
   }
 }

@@ -24,15 +24,15 @@ export interface Package {
 }
 
 export async function getPackagesList() {
-  const basePath = path.join(__dirname, '../../src');
-  const srcPaths = await fs.readdir(basePath);
+  const basePath = path.join(__dirname, '../../packages');
+  const packagePaths = await fs.readdir(basePath);
   const packages: Package[] = [];
 
-  for (const srcPath of srcPaths) {
-    const packageJsonPath = path.join(basePath, srcPath, 'package.json');
+  for (const packagePath of packagePaths) {
+    const packageJsonPath = path.join(basePath, packagePath, 'package.json');
     if (await fs.pathExists(packageJsonPath)) {
       packages.push({
-        path: path.join(basePath, srcPath),
+        path: path.join(basePath, packagePath),
         packageJsonPath,
         packageJson: await fs.readJSON(packageJsonPath),
       });
