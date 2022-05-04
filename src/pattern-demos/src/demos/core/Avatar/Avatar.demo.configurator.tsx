@@ -23,7 +23,7 @@ export const configurator: PatternDemo = {
   component: Wrapper,
   codeTemplate,
   configurator: [
-    { name: 'radius', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
+    { name: 'radius', type: 'size', initialValue: 'xs', defaultValue: 'xs' },
     { name: 'size', type: 'size', initialValue: 'md', defaultValue: 'md' },
     {
       name: 'src',

@@ -40,7 +40,7 @@ export const configurator: PatternDemo = {
       defaultValue: 'filled',
     },
     { name: 'color', type: 'color', initialValue: 'blue', defaultValue: 'blue' },
-    { name: 'radius', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
+    { name: 'radius', type: 'size', initialValue: 'xs', defaultValue: 'xs' },
     { name: 'size', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
     { name: 'disabled', type: 'boolean', initialValue: false, defaultValue: false },
     { name: 'compact', type: 'boolean', initialValue: false, defaultValue: false },

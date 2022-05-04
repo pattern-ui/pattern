@@ -14,11 +14,11 @@ export interface InputStylesParams {
 }
 
 export const sizes = {
-  xs: 30,
-  sm: 36,
-  md: 42,
-  lg: 50,
-  xl: 60,
+  xs: 24,
+  sm: 32,
+  md: 40,
+  lg: 48,
+  xl: 56,
 };
 
 export default createStyles(

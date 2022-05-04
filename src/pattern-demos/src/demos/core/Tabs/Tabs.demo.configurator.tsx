@@ -82,7 +82,7 @@ export const configurator: PatternDemo = {
         { value: 'pills', label: 'Pills' },
       ],
     },
-    { name: 'radius', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
+    { name: 'radius', type: 'size', initialValue: 'xs', defaultValue: 'xs' },
     {
       name: 'orientation',
       type: 'segmented',

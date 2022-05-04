@@ -24,7 +24,7 @@ export const configurator: PatternDemo = {
   configurator: [
     { name: 'color', type: 'color', initialValue: 'blue', defaultValue: 'blue' },
     { name: 'size', type: 'size', initialValue: 'md', defaultValue: 'md' },
-    { name: 'radius', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
+    { name: 'radius', type: 'size', initialValue: 'xs', defaultValue: 'xs' },
     { name: 'withControls', type: 'boolean', initialValue: true, defaultValue: true },
     { name: 'withEdges', type: 'boolean', initialValue: false, defaultValue: false },
   ],

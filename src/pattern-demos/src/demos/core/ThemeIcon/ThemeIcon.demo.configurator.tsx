@@ -49,7 +49,7 @@ export const configurator: PatternDemo = {
         { label: 'outline', value: 'outline' },
       ],
     },
-    { name: 'radius', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
+    { name: 'radius', type: 'size', initialValue: 'xs', defaultValue: 'xs' },
     { name: 'size', type: 'size', initialValue: 'md', defaultValue: 'md' },
     { name: 'color', type: 'color', initialValue: 'blue', defaultValue: 'blue' },
   ],

@@ -17,7 +17,7 @@ export const _DEFAULT_THEME: PatternThemeBase = {
   colorScheme: 'light',
   white: '#fff',
   black: '#000',
-  defaultRadius: 'sm',
+  defaultRadius: 'xs',
   transitionTimingFunction: 'ease',
   colors: DEFAULT_COLORS,
   lineHeight: 1.55,

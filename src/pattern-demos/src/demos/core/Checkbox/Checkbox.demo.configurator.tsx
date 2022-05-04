@@ -27,7 +27,7 @@ export const configurator: PatternDemo = {
       initialValue: 'I agree to sell my privacy',
     },
     { name: 'color', type: 'color', initialValue: 'blue', defaultValue: 'blue' },
-    { name: 'radius', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
+    { name: 'radius', type: 'size', initialValue: 'xs', defaultValue: 'xs' },
     { name: 'size', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
     { name: 'disabled', type: 'boolean', initialValue: false, defaultValue: false },
     { name: 'indeterminate', type: 'boolean', initialValue: false, defaultValue: false },

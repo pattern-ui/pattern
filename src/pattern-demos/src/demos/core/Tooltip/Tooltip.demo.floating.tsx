@@ -37,6 +37,6 @@ export const floating: PatternDemo = {
       type: 'color',
       initialValue: 'blue',
     },
-    { name: 'radius', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
+    { name: 'radius', type: 'size', initialValue: 'xs', defaultValue: 'xs' },
   ],
 };

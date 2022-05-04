@@ -55,7 +55,7 @@ export const configurator: PatternDemo = {
     },
     { name: 'color', type: 'color', initialValue: 'blue', defaultValue: 'blue' },
     { name: 'size', type: 'size', initialValue: 'md', defaultValue: 'md' },
-    { name: 'radius', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
+    { name: 'radius', type: 'size', initialValue: 'xs', defaultValue: 'xs' },
     { name: 'showLabelOnHover', type: 'boolean', initialValue: true, defaultValue: true },
     { name: 'labelAlwaysOn', type: 'boolean', initialValue: false, defaultValue: false },
   ],
