@@ -55,4 +55,4 @@ interface PatternConfiguratorDemo extends PatternDemoBase {
   };
 }
 
-type PatternDemo = PatternCodeDemo | PatternConfiguratorDemo;
+type PatternDemo = PatternCodeDemo | PatternConfiguratorDemo | PatternDemoBaseComponent;

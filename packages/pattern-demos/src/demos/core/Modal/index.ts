@@ -1,4 +1,4 @@
-export { usage } from './Modal.usage.demo';
+export { default as usage } from './Modal.usage.demo';
 export { header } from './Modal.header.demo';
 export { sizes } from './Modal.sizes.demo';
 export { overlay } from './Modal.overlay.demo';

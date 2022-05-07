@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { usePatternTheme } from '@pattern/core';
 import CodeDemo from './CodeDemo/CodeDemo';
 import Configurator from './Configurator/Configurator';
@@ -15,7 +15,17 @@ interface DemoProps {
   data: PatternDemo;
 }
 
-export function Demo({ data, demoProps, configuratorProps }: DemoProps) {
+export function Demo({ data: dataProp, demoProps, configuratorProps }: DemoProps) {
+  const data: PatternCodeDemo | PatternConfiguratorDemo = useMemo(() => {
+    if (typeof dataProp === 'function') {
+      return {
+        type: 'demo',
+        data: dataProp,
+      };
+    }
+    return dataProp;
+  }, []);
+
   const theme = usePatternTheme();
   const background =
     typeof data.background === 'function' ? data.background(theme.colorScheme) : undefined;
