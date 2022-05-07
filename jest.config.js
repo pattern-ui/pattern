@@ -8,6 +8,6 @@ module.exports = {
   setupFilesAfterEnv: ['./config/jest/jsdom.mocks.js'],
   moduleNameMapper: {
     '@pattern-ui/core/src/styles.api': '<rootDir>/src/pattern-core/src/styles.api',
-    '@pattern-ui/(.*)': '<rootDir>/src/pattern-$1/src',
+    '@pattern-ui/(.*)': '<rootDir>/packages/pattern-$1/src',
   },
 };
