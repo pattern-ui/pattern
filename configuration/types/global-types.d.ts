@@ -20,8 +20,12 @@ interface PatternDemoControlProps {
   step?: number;
 }
 
+type PatternDemoBaseComponent = React.FC & {
+  code?: string;
+};
+
 interface PatternDemoBase {
-  component?: React.FC;
+  component?: PatternDemoBaseComponent;
   wrapper?: React.FC;
   code?: string;
   background?: (colorScheme: 'light' | 'dark') => string;
