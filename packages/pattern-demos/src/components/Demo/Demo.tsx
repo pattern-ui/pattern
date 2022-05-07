@@ -25,9 +25,8 @@ export function Demo({ data: dataProp, demoProps }: DemoProps) {
   }, []);
 
   const theme = usePatternTheme();
-  const background = typeof data.background === 'function'
-    ? data.background(theme.colorScheme)
-    : undefined;
+  const background =
+    typeof data.background === 'function' ? data.background(theme.colorScheme) : undefined;
 
   return (
     <CodeDemo

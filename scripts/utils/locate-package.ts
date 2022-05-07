@@ -2,9 +2,7 @@ import path from 'path';
 import fs from 'fs-extra';
 
 export default async function locatePackage(packageName: string) {
-  const folder = packageName
-    .replace(/@pattern-ui/, 'pattern')
-    .replace('/', '-');
+  const folder = packageName.replace(/@pattern-ui/, 'pattern').replace('/', '-');
   const packagePath = path.join(__dirname, '../../packages', folder);
   const exists = await fs.pathExists(packagePath);
   return exists ? packagePath : null;

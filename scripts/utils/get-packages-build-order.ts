@@ -36,17 +36,14 @@ export async function getPackageBuildOrder(
     1 + Math.max(...dependencies.map((dependency) => order[dependency.packageJson.name]));
 }
 
-const excludes = [
-  'eslint-config-pattern',
-  'eslint-demo-loader',
-];
+const excludes = ['eslint-config-pattern', 'eslint-demo-loader'];
 
 export async function getPackagesBuildOrder(
   packages?: Package[],
   order: Record<string, number> = {}
 ) {
   packages = packages || (await getPackagesList());
-  packages = packages.filter(it => !excludes.includes(it.packageJson.name));
+  packages = packages.filter((it) => !excludes.includes(it.packageJson.name));
 
   for (const pkg of packages) {
     await getPackageBuildOrder(packages, pkg, order);

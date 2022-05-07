@@ -2,11 +2,7 @@ import React from 'react';
 
 export function LogoImage(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 572.23 159.9"
-      {...props}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 572.23 159.9" {...props}>
       <g>
         <circle cx="79.95" cy="79.95" r="79.95" fill="#2251ca" />
         <g>

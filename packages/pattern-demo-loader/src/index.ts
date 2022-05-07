@@ -1,11 +1,15 @@
 function processChunk(source: string, map: string) {
   this.cacheable();
 
-  this.callback(null, `${source}
+  this.callback(
+    null,
+    `${source}
 if (typeof Demo === 'function') {
   Demo.code = ${JSON.stringify(source)}
 }
-  `, map);
+  `,
+    map
+  );
 }
 
 module.exports = processChunk;

@@ -10,7 +10,8 @@ import {
   InputStylesNames,
   CloseButton,
   extractSystemStyles,
- BaseSelectProps } from '@pattern-ui/core';
+  BaseSelectProps,
+} from '@pattern-ui/core';
 import useStyles, { RIGHT_SECTION_WIDTH } from './TagInput.styles';
 import { DefaultValue, DefaultValueStylesNames } from './DefaultValue/DefaultValue';
 

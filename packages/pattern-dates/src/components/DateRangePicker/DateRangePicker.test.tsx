@@ -2,7 +2,11 @@ import 'dayjs/locale/ru';
 import React from 'react';
 import { PatternProvider } from '@pattern-ui/core';
 import { render, screen } from '@testing-library/react';
-import { itSupportsSystemProps, itSupportsInputProps, itSupportsFocusEvents } from '@pattern-ui/tests';
+import {
+  itSupportsSystemProps,
+  itSupportsInputProps,
+  itSupportsFocusEvents,
+} from '@pattern-ui/tests';
 import { DateRangePicker, DateRangePickerProps } from './DateRangePicker';
 
 const defaultProps: DateRangePickerProps = {};

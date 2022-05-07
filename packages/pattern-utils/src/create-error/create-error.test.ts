@@ -27,7 +27,9 @@ describe('@pattern-ui/utils/create-error', () => {
       error2: createError({ message: 'Error 2', code: 'error2' }),
     });
 
-    expect(createErrors({ error1: 'Error 1', error2: 'Error 2' }, '@pattern-ui/dates')).toStrictEqual({
+    expect(
+      createErrors({ error1: 'Error 1', error2: 'Error 2' }, '@pattern-ui/dates')
+    ).toStrictEqual({
       error1: createError({ message: 'Error 1', code: 'error1', scope: '@pattern-ui/dates' }),
       error2: createError({ message: 'Error 2', code: 'error2', scope: '@pattern-ui/dates' }),
     });

@@ -17,9 +17,8 @@ interface ControlDemoProps {
 
 export function ControlDemo({ data, configuratorProps }: ControlDemoProps) {
   const theme = usePatternTheme();
-  const background = typeof data.background === 'function'
-    ? data.background(theme.colorScheme)
-    : undefined;
+  const background =
+    typeof data.background === 'function' ? data.background(theme.colorScheme) : undefined;
 
   return (
     <CodeConfigurator

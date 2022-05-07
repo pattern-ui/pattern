@@ -1,5 +1,9 @@
 import React, { forwardRef } from 'react';
-import { PolymorphicComponentProps, PolymorphicRef, usePatternDefaultProps } from '@pattern-ui/styles';
+import {
+  PolymorphicComponentProps,
+  PolymorphicRef,
+  usePatternDefaultProps,
+} from '@pattern-ui/styles';
 import { Text, SharedTextProps } from '../Text/Text';
 import useStyles from './Anchor.styles';
 

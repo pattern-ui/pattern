@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
-import { Popper, PopperProps, Button, Paper, Center, Group, usePatternTheme } from '@pattern-ui/core';
+import {
+  Popper,
+  PopperProps,
+  Button,
+  Paper,
+  Center,
+  Group,
+  usePatternTheme,
+} from '@pattern-ui/core';
 
 function Wrapper(props: PopperProps<HTMLDivElement>) {
   const [referenceElement, setReferenceElement] = useState(null);

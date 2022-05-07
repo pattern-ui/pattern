@@ -1,5 +1,10 @@
 import React, { forwardRef, useRef } from 'react';
-import { Selectors, PolymorphicComponentProps, DefaultProps, PatternColor } from '@pattern-ui/styles';
+import {
+  Selectors,
+  PolymorphicComponentProps,
+  DefaultProps,
+  PatternColor,
+} from '@pattern-ui/styles';
 import { mergeRefs } from '@pattern-ui/hooks';
 import { Box } from '../../Box';
 import { useMenuContext } from '../Menu.context';

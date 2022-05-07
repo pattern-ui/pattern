@@ -1,4 +1,10 @@
-import { createStyles, PatternTheme, PatternSize, PatternColor, CSSObject } from '@pattern-ui/styles';
+import {
+  createStyles,
+  PatternTheme,
+  PatternSize,
+  PatternColor,
+  CSSObject,
+} from '@pattern-ui/styles';
 
 export interface TextStylesParams {
   color: PatternColor;

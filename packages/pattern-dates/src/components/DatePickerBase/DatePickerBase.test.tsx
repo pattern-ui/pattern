@@ -1,4 +1,8 @@
-import { itSupportsSystemProps, itSupportsInputProps, itSupportsFocusEvents } from '@pattern-ui/tests';
+import {
+  itSupportsSystemProps,
+  itSupportsInputProps,
+  itSupportsFocusEvents,
+} from '@pattern-ui/tests';
 import { DatePickerBase, DatePickerBaseProps } from './DatePickerBase';
 
 const defaultProps: DatePickerBaseProps = {

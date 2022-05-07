@@ -1,5 +1,9 @@
 import React from 'react';
-import { checkAccessibility, itConnectsLabelAndInput, itSupportsSystemProps } from '@pattern-ui/tests';
+import {
+  checkAccessibility,
+  itConnectsLabelAndInput,
+  itSupportsSystemProps,
+} from '@pattern-ui/tests';
 import { Radio, RadioProps } from './Radio';
 
 const defaultProps: RadioProps = {
