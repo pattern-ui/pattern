@@ -13,6 +13,8 @@ module.exports = {
     siteUrl: 'https://pattern-ui.design',
   },
 
+  pathPrefix: "/pattern",
+
   plugins: [
     'gatsby-plugin-cname',
     'gatsby-plugin-tsconfig-paths',
