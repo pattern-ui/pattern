@@ -11,9 +11,9 @@
     "cjs/**/*"
   ],
   "compilerOptions": {
-    "target": "ES2015",
-    "lib": ["DOM", "ESNext"],
-    "module": "ESNext",
+    "target": "es2015",
+    "lib": ["dom", "esnext"],
+    "module": "esnext",
     "moduleResolution": "Node",
     "jsx": "react",
     "resolveJsonModule": true,

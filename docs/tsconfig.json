@@ -16,5 +16,5 @@
     "baseUrl": "."
   },
   "exclude": ["node_modules"],
-  "include": ["./src/**/*", "../configuration/types"]
+  "include": ["./src/**/*", "../configuration/types", "./"]
 }

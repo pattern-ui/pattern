@@ -1,4 +1,4 @@
-const remarkSlug = require('remark-slug');
+const remarkSlugPlugin = require('remark-slug');
 
 module.exports = {
   flags: {
@@ -9,7 +9,7 @@ module.exports = {
   siteMetadata: {
     title: 'Pattern Docs',
     description: 'Pattern documentation',
-    author: '@rtivital',
+    author: '@lokielse',
     siteUrl: 'https://pattern-ui.design',
   },
 
@@ -26,7 +26,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
-        remarkPlugins: [remarkSlug],
+        remarkPlugins: [
+          remarkSlugPlugin,
+        ],
       },
     },
     {

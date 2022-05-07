@@ -35,7 +35,7 @@ export function Footer({ withNavbar }: FooterProps) {
           <div className={classes.afterFooter}>
             <Group position="apart">
               <Text size="xs" className={classes.afterFooterNote}>
-                Built by <a href="https://github.com/rtivital">lokielse</a> and{' '}
+                Built by <a href="https://github.com/lokielse">lokielse</a> and{' '}
                 <a href="https://github.com/pattern-ui/pattern/graphs/contributors">
                   these awesome people
                 </a>
