@@ -20,7 +20,7 @@ function DiscordButton({ style, ...others }: SocialButtonProps) {
       component="a"
       target="_blank"
       rel="noopener noreferrer"
-      href="https://discord.gg/eUZpPbpxb4"
+      href="https://discord.gg/comingsoon"
       leftIcon={<DiscordIcon style={{ width: 14, marginRight: 5 }} />}
       style={{
         ...style,

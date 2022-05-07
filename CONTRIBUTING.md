@@ -5,10 +5,10 @@ Thank you for showing interest in contributing to Pattern. All of your contribut
 ## Ways to contribute
 
 - **Improve documentation** - fix incomplete or missing docs, bad wording, examples, or explanations
-- **Give feedback** - we are constantly working to make Pattern a better experience, so please feel free to share what you like, dislike, or any improvements you'd like to see via [GitHub Discussions](https://github.com/pattern-ui/pattern/discussions/new) or [Discord](https://discord.gg/eUZpPbpxb4)
+- **Give feedback** - we are constantly working to make Pattern a better experience, so please feel free to share what you like, dislike, or any improvements you'd like to see via [GitHub Discussions](https://github.com/pattern-ui/pattern/discussions/new) or [Discord](https://discord.gg/comingsoon)
 - **Share Pattern** - help us spread the word by sharing [Pattern](https://pattern.icu/), or even [Tweet about Pattern directly](https://twitter.com/intent/tweet?text=Pattern%20%E2%80%93%20new%20React%20library%20with%20100%2B%20components%20and%20hooks.%20It%20has%20native%20dark%20theme%20support%20and%20focuses%20on%20accessibility%20and%20usability.%0A%0Ahttp%3A%2F%2Fpattern.icu%0A%0A%23reactjs%20)
 - **GitHub Issues** - work on an [outstanding issue](https://github.com/pattern-ui/pattern/labels/help%20wanted) to help us keep Pattern a sturdy, reliable UI solution
-- **Suggest New Features** - please feel free to dicuss any new features you'd like to see by creating a [GitHub issue](https://github.com/pattern-ui/pattern/labels/help%20wanted) or sending a [Discord](https://discord.gg/eUZpPbpxb4) message
+- **Suggest New Features** - please feel free to dicuss any new features you'd like to see by creating a [GitHub issue](https://github.com/pattern-ui/pattern/labels/help%20wanted) or sending a [Discord](https://discord.gg/comingsoon) message
 
 ## Contributing workflow
 

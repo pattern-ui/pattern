@@ -18,7 +18,7 @@ export function HeaderControls() {
           <SearchControl />
 
           <HeaderControl
-            link="https://discord.gg/eUZpPbpxb4"
+            link="https://discord.gg/comingsoon"
             tooltip="Discord"
             variant="discord"
             hideOnMobile
