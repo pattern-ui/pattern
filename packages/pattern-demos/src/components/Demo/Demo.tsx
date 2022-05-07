@@ -10,7 +10,7 @@ type CodeDemoProps = React.ComponentProps<typeof CodeDemo>;
 interface DemoProps {
   toggle?: boolean;
   demoProps?: CodeDemoProps;
-  data: PatternCodeDemo;
+  data: PatternCodeDemo | PatternDemoBaseComponent;
 }
 
 export function Demo({ data: dataProp, demoProps }: DemoProps) {

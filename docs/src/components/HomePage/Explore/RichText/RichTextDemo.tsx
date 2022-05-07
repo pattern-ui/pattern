@@ -4,7 +4,7 @@ import { RichTextEditorDemos } from '@pattern-ui/demos';
 
 export function RichTextDemo() {
   const theme = usePatternTheme();
-  const Component = RichTextEditorDemos.usage.component as any;
+  const Component = RichTextEditorDemos.usage as any;
   return (
     <Component
       style={{

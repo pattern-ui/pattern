@@ -40,7 +40,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 export function AnimationsDemo() {
-  const Transitions = TooltipDemos.transitions.component;
+  const Transitions = TooltipDemos.transitions;
   const [modalOpened, setModalOpened] = useState(false);
   const { classes } = useStyles();
   return (

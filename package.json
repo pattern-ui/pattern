@@ -25,7 +25,7 @@
     "prettier:write": "prettier --write \"**/*.{ts,tsx}\"",
     "exports": "esno scripts/check-exports",
     "clean": "rimraf packages/*/{esm,cjs,lib,dist} packages/**/*.tsbuildinfo",
-    "clean:node_modules": "rimraf node_modules */**/node_modules",
+    "clean:node_modules": "rimraf node_modules docs/node_modules */**/node_modules",
     "storybook": "esno scripts/storybook-start",
     "test": "npm run prettier:test && npm run syncpack && npm run typecheck && npm run lint && npm run jest",
     "docs": "npm run docs:clean && npm run docs:docgen && cd docs && npm start",

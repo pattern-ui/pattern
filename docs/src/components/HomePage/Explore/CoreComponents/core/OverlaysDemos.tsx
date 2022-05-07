@@ -24,7 +24,7 @@ function Demo() {
 export function OverlaysDemos() {
   const [modalOpened, setModalOpened] = useState(false);
   const [drawerOpened, setDrawerOpened] = useState(false);
-  const PopoverDemo = PopoverDemos.form.component;
+  const PopoverDemo = PopoverDemos.form;
 
   return (
     <Paper shadow="md" radius="md" p={30}>

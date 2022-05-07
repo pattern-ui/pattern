@@ -114,8 +114,6 @@ export const Prism = forwardRef<HTMLDivElement, PrismProps>((props: PrismProps, 
         </Tooltip>
       )}
 
-      {/* TODO
-       // @ts-ignore */}
       <Highlight
         {...defaultProps}
         theme={getPrismTheme(theme, colorScheme || theme.colorScheme)}
