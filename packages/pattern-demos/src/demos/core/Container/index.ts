@@ -1,1 +1,1 @@
-export { usage } from './Container.demo.usage';
+export { usage } from './Container.usage.demo';

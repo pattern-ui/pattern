@@ -1,3 +1,3 @@
-export { configurator } from './Blockquote.demo.configurator';
-export { icon } from './Blockquote.demo.icon';
-export { noIcon } from './Blockquote.demo.noIcon';
+export { configurator } from './Blockquote.configurator.demo';
+export { icon } from './Blockquote.icon.demo';
+export { noIcon } from './Blockquote.noIcon.demo';

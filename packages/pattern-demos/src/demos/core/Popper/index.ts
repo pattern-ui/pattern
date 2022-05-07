@@ -1,1 +1,1 @@
-export { configurator } from './Popper.demo.configurator';
+export { configurator } from './Popper.configurator.demo';

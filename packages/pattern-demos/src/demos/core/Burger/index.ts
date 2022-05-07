@@ -1,3 +1,3 @@
-export { usage } from './Burger.demo.usage';
-export { color } from './Burger.demo.color';
-export { sizes } from './Burger.demo.sizes';
+export { usage } from './Burger.usage.demo';
+export { color } from './Burger.color.demo';
+export { sizes } from './Burger.sizes.demo';

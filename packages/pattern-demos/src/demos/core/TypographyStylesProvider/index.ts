@@ -1,2 +1,2 @@
-export { usage } from './TypographyStylesProvider.demo.usage';
-export { all } from './TypographyStylesProvider.demo.all';
+export { usage } from './TypographyStylesProvider.usage.demo';
+export { all } from './TypographyStylesProvider.all.demo';

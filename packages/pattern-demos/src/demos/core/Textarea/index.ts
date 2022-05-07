@@ -1,3 +1,3 @@
-export { configurator } from './Textarea.demo.configurator';
-export { autosize } from './Textarea.demo.autosize';
-export { validation } from './Textarea.demo.validation';
+export { configurator } from './Textarea.configurator.demo';
+export { autosize } from './Textarea.autosize.demo';
+export { validation } from './Textarea.validation.demo';

@@ -1,1 +1,1 @@
-export { usage } from './Breadcrumbs.demo.usage';
+export { usage } from './Breadcrumbs.usage.demo';

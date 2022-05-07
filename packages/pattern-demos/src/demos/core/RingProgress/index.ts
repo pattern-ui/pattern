@@ -1,4 +1,4 @@
-export { usage } from './RingProgress.demo.usage';
-export { configurator } from './RingProgress.demo.configurator';
-export { label } from './RingProgress.demo.label';
-export { colors } from './RingProgress.demo.colors';
+export { usage } from './RingProgress.usage.demo';
+export { configurator } from './RingProgress.configurator.demo';
+export { label } from './RingProgress.label.demo';
+export { colors } from './RingProgress.colors.demo';

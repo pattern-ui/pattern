@@ -1,7 +1,7 @@
-export { configurator } from './Input.demo.configurator';
-export { variants } from './Input.demo.variants';
-export { icon } from './Input.demo.icon';
-export { tooltip } from './Input.demo.tooltip';
-export { component } from './Input.demo.component';
-export { sizes } from './Input.demo.sizes';
-export { headless } from './Input.demo.headless';
+export { configurator } from './Input.configurator.demo';
+export { variants } from './Input.variants.demo';
+export { icon } from './Input.icon.demo';
+export { tooltip } from './Input.tooltip.demo';
+export { component } from './Input.component.demo';
+export { sizes } from './Input.sizes.demo';
+export { headless } from './Input.headless.demo';

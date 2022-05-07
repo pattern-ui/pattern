@@ -1,2 +1,2 @@
-export { usage } from './Box.demo.usage';
-export { link } from './Box.demo.link';
+export { usage } from './Box.usage.demo';
+export { link } from './Box.link.demo';

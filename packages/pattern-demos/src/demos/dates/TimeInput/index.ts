@@ -1,8 +1,8 @@
-export { usage } from './TimeInput.demo.usage';
-export { configurator } from './TimeInput.demo.configurator';
-export { withSeconds } from './TimeInput.demo.withSeconds';
-export { format } from './TimeInput.demo.format';
-export { validation } from './TimeInput.demo.validation';
-export { icon } from './TimeInput.demo.icon';
-export { clearable } from './TimeInput.demo.clearable';
-export { disabled } from './TimeInput.demo.disabled';
+export { usage } from './TimeInput.usage.demo';
+export { configurator } from './TimeInput.configurator.demo';
+export { withSeconds } from './TimeInput.withSeconds.demo';
+export { format } from './TimeInput.format.demo';
+export { validation } from './TimeInput.validation.demo';
+export { icon } from './TimeInput.icon.demo';
+export { clearable } from './TimeInput.clearable.demo';
+export { disabled } from './TimeInput.disabled.demo';

@@ -1,2 +1,2 @@
-export { usage } from './Mark.demo.usage';
-export { configurator } from './Mark.demo.configurator';
+export { usage } from './Mark.usage.demo';
+export { configurator } from './Mark.configurator.demo';

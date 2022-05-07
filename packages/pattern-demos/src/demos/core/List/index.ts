@@ -1,3 +1,3 @@
-export { configurator } from './List.demo.configurator';
-export { icon } from './List.demo.icon';
-export { nested } from './List.demo.nested';
+export { configurator } from './List.configurator.demo';
+export { icon } from './List.icon.demo';
+export { nested } from './List.nested.demo';

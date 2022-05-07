@@ -1,7 +1,7 @@
-export { usage } from './Modal.demo.usage';
-export { header } from './Modal.demo.header';
-export { sizes } from './Modal.demo.sizes';
-export { overlay } from './Modal.demo.overlay';
-export { overflow } from './Modal.demo.overflow';
-export { transitions } from './Modal.demo.transitions';
-export { centered } from './Modal.demo.centered';
+export { usage } from './Modal.usage.demo';
+export { header } from './Modal.header.demo';
+export { sizes } from './Modal.sizes.demo';
+export { overlay } from './Modal.overlay.demo';
+export { overflow } from './Modal.overflow.demo';
+export { transitions } from './Modal.transitions.demo';
+export { centered } from './Modal.centered.demo';

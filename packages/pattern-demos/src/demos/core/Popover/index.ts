@@ -1,4 +1,4 @@
-export { usage } from './Popover.demo.usage';
-export { form } from './Popover.demo.form';
-export { hover } from './Popover.demo.hover';
-export { sameWidth } from './Popover.demo.sameWidth';
+export { usage } from './Popover.usage.demo';
+export { form } from './Popover.form.demo';
+export { hover } from './Popover.hover.demo';
+export { sameWidth } from './Popover.sameWidth.demo';

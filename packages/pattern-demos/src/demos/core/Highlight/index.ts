@@ -1,4 +1,4 @@
-export { configurator } from './Highlight.demo.configurator';
-export { props } from './Highlight.demo.props';
-export { multiple } from './Highlight.demo.multiple';
-export { styles } from './Highlight.demo.styles';
+export { configurator } from './Highlight.configurator.demo';
+export { props } from './Highlight.props.demo';
+export { multiple } from './Highlight.multiple.demo';
+export { styles } from './Highlight.styles.demo';

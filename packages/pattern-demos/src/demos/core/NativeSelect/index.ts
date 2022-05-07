@@ -1,5 +1,5 @@
-export { configurator } from './NativeSelect.demo.configurator';
-export { validation } from './NativeSelect.demo.validation';
-export { disabled } from './NativeSelect.demo.disabled';
-export { icon } from './NativeSelect.demo.icon';
-export { rightSection } from './NativeSelect.demo.rightSection';
+export { configurator } from './NativeSelect.configurator.demo';
+export { validation } from './NativeSelect.validation.demo';
+export { disabled } from './NativeSelect.disabled.demo';
+export { icon } from './NativeSelect.icon.demo';
+export { rightSection } from './NativeSelect.rightSection.demo';

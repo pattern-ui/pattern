@@ -1,1 +1,1 @@
-export { usage } from './Dialog.demo.usage';
+export { usage } from './Dialog.usage.demo';

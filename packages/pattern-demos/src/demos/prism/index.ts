@@ -1,8 +1,8 @@
-export { languages } from './Prism.demo.languages';
-export { copyLabel } from './Prism.demo.copyLabel';
-export { themeOverride } from './Prism.demo.themeOverride';
-export { linesHighlight } from './Prism.demo.linesHighlight';
-export { lineNumbers } from './Prism.demo.lineNumbers';
-export { usage } from './Prism.demo.usage';
-export { tabs } from './Prism.demo.tabs';
-export { scrollbars } from './Prism.demo.scrollbars';
+export { languages } from './Prism.languages.demo';
+export { copyLabel } from './Prism.copyLabel.demo';
+export { themeOverride } from './Prism.themeOverride.demo';
+export { linesHighlight } from './Prism.linesHighlight.demo';
+export { lineNumbers } from './Prism.lineNumbers.demo';
+export { usage } from './Prism.usage.demo';
+export { tabs } from './Prism.tabs.demo';
+export { scrollbars } from './Prism.scrollbars.demo';

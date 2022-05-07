@@ -1,3 +1,3 @@
-export { usage } from './PinInput.demo.usage';
-export { focus } from './PinInput.demo.focus';
-export { placeholder } from './PinInput.demo.placeholder';
+export { usage } from './PinInput.usage.demo';
+export { focus } from './PinInput.focus.demo';
+export { placeholder } from './PinInput.placeholder.demo';

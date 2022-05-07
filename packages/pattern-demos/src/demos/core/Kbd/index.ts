@@ -1,2 +1,2 @@
-export { usage } from './Kbd.demo.usage';
-export { input } from './Kbd.demo.input';
+export { usage } from './Kbd.usage.demo';
+export { input } from './Kbd.input.demo';

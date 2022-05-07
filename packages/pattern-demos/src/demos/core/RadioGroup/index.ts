@@ -1,2 +1,2 @@
-export { configurator } from './RadioGroup.demo.configurator';
-export { sizes } from './RadioGroup.demo.sizes';
+export { configurator } from './RadioGroup.configurator.demo';
+export { sizes } from './RadioGroup.sizes.demo';

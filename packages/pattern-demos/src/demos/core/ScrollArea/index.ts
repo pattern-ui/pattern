@@ -1,4 +1,4 @@
-export { configurator } from './ScrollArea.demo.configurator';
-export { horizontal } from './ScrollArea.demo.horizontal';
-export { scrollTo } from './ScrollArea.demo.scrollTo';
-export { scrollPosition } from './ScrollArea.demo.scrollPosition';
+export { configurator } from './ScrollArea.configurator.demo';
+export { horizontal } from './ScrollArea.horizontal.demo';
+export { scrollTo } from './ScrollArea.scrollTo.demo';
+export { scrollPosition } from './ScrollArea.scrollPosition.demo';

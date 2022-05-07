@@ -1,5 +1,5 @@
-export { usage } from './Drawer.demo.usage';
-export { positions } from './Drawer.demo.positions';
-export { sizes } from './Drawer.demo.sizes';
-export { transitions } from './Drawer.demo.transitions';
-export { overlay } from './Drawer.demo.overlay';
+export { usage } from './Drawer.usage.demo';
+export { positions } from './Drawer.positions.demo';
+export { sizes } from './Drawer.sizes.demo';
+export { transitions } from './Drawer.transitions.demo';
+export { overlay } from './Drawer.overlay.demo';

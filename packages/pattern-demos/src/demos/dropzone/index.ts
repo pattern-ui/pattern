@@ -1,5 +1,5 @@
-export { usage } from './Dropzone.demo.usage';
-export { loading } from './Dropzone.demo.loading';
-export { disabled } from './Dropzone.demo.disabled';
-export { manual } from './Dropzone.demo.manual';
-export { fullScreen } from './Dropzone.demo.fullScreen';
+export { usage } from './Dropzone.usage.demo';
+export { loading } from './Dropzone.loading.demo';
+export { disabled } from './Dropzone.disabled.demo';
+export { manual } from './Dropzone.manual.demo';
+export { fullScreen } from './Dropzone.fullScreen.demo';

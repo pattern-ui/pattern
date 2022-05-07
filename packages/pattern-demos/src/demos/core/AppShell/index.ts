@@ -1,3 +1,3 @@
-export { usage } from './AppShell.demo.usage';
-export { navbar } from './AppShell.demo.navbar';
-export { scrollbars } from './AppShell.demo.scrollbars';
+export { usage } from './AppShell.usage.demo';
+export { navbar } from './AppShell.navbar.demo';
+export { scrollbars } from './AppShell.scrollbars.demo';

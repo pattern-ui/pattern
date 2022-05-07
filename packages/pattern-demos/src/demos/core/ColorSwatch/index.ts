@@ -1,3 +1,3 @@
-export { usage } from './ColorSwatch.demo.usage';
-export { component } from './ColorSwatch.demo.component';
-export { transparent } from './ColorSwatch.demo.transparent';
+export { usage } from './ColorSwatch.usage.demo';
+export { component } from './ColorSwatch.component.demo';
+export { transparent } from './ColorSwatch.transparent.demo';

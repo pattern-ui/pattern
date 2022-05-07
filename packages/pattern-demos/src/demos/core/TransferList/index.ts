@@ -1,5 +1,5 @@
-export { usage } from './TransferList.demo.usage';
-export { scrollbars } from './TransferList.demo.scrollbars';
-export { itemComponent } from './TransferList.demo.itemComponent';
-export { initialSelection } from './TransferList.demo.initialSelection';
-export { group } from './TransferList.demo.group';
+export { usage } from './TransferList.usage.demo';
+export { scrollbars } from './TransferList.scrollbars.demo';
+export { itemComponent } from './TransferList.itemComponent.demo';
+export { initialSelection } from './TransferList.initialSelection.demo';
+export { group } from './TransferList.group.demo';

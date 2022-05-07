@@ -1,4 +1,4 @@
-export { closeButton } from './ActionIcon.demo.closeButton';
-export { colors } from './ActionIcon.demo.colors';
-export { configurator } from './ActionIcon.demo.configurator';
-export { variants } from './ActionIcon.demo.variants';
+export { closeButton } from './ActionIcon.closeButton.demo';
+export { colors } from './ActionIcon.colors.demo';
+export { configurator } from './ActionIcon.configurator.demo';
+export { variants } from './ActionIcon.variants.demo';

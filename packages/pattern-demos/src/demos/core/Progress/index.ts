@@ -1,5 +1,5 @@
-export { configurator } from './Progress.demo.configurator';
-export { sections } from './Progress.demo.sections';
-export { label } from './Progress.demo.label';
-export { animations } from './Progress.demo.animations';
-export { colors } from './Progress.demo.colors';
+export { configurator } from './Progress.configurator.demo';
+export { sections } from './Progress.sections.demo';
+export { label } from './Progress.label.demo';
+export { animations } from './Progress.animations.demo';
+export { colors } from './Progress.colors.demo';

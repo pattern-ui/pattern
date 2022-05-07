@@ -1,3 +1,3 @@
-export { usage } from './Timeline.demo.usage';
-export { configurator } from './Timeline.demo.configurator';
-export { bullet } from './Timeline.demo.bullet';
+export { usage } from './Timeline.usage.demo';
+export { configurator } from './Timeline.configurator.demo';
+export { bullet } from './Timeline.bullet.demo';

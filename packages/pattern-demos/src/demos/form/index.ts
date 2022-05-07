@@ -1,8 +1,8 @@
-export { usage } from './Form.demo.usage';
-export { lists } from './Form.demo.lists';
-export { dnd } from './Form.demo.dnd';
-export { zod } from './Form.demo.zod';
-export { password } from './Form.demo.password';
-export { validateFunction } from './Form.demo.validateFunction';
-export { joi } from './Form.demo.joi';
-export { yup } from './Form.demo.yup';
+export { usage } from './Form.usage.demo';
+export { lists } from './Form.lists.demo';
+export { dnd } from './Form.dnd.demo';
+export { zod } from './Form.zod.demo';
+export { password } from './Form.password.demo';
+export { validateFunction } from './Form.validateFunction.demo';
+export { joi } from './Form.joi.demo';
+export { yup } from './Form.yup.demo';

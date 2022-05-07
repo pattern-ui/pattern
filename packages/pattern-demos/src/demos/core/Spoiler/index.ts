@@ -1,2 +1,2 @@
-export { usage } from './Spoiler.demo.usage';
-export { transitions } from './Spoiler.demo.transitions';
+export { usage } from './Spoiler.usage.demo';
+export { transitions } from './Spoiler.transitions.demo';

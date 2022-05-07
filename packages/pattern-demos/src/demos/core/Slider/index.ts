@@ -1,7 +1,7 @@
-export { configurator } from './Slider.demo.configurator';
-export { customize } from './Slider.demo.customize';
-export { marks } from './Slider.demo.marks';
-export { label } from './Slider.demo.label';
-export { step } from './Slider.demo.step';
-export { changeEnd } from './Slider.demo.changeEnd';
-export { disabled } from './Slider.demo.disabled';
+export { configurator } from './Slider.configurator.demo';
+export { customize } from './Slider.customize.demo';
+export { marks } from './Slider.marks.demo';
+export { label } from './Slider.label.demo';
+export { step } from './Slider.step.demo';
+export { changeEnd } from './Slider.changeEnd.demo';
+export { disabled } from './Slider.disabled.demo';

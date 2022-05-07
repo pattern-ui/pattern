@@ -1,8 +1,8 @@
-export { usage } from './ColorPicker.demo.usage';
-export { swatches } from './ColorPicker.demo.swatches';
-export { swatchesConfigurator } from './ColorPicker.demo.swatchesConfigurator';
-export { formatsConfigurator } from './ColorPicker.demo.formatsConfigurator';
-export { sizeConfigurator } from './ColorPicker.demo.sizeConfigurator';
-export { alphaConfigurator } from './ColorPicker.demo.alphaConfigurator';
-export { hueConfigurator } from './ColorPicker.demo.hueConfigurator';
-export { swatchesOnly } from './ColorPicker.demo.swatchesOnly';
+export { usage } from './ColorPicker.usage.demo';
+export { swatches } from './ColorPicker.swatches.demo';
+export { swatchesConfigurator } from './ColorPicker.swatchesConfigurator.demo';
+export { formatsConfigurator } from './ColorPicker.formatsConfigurator.demo';
+export { sizeConfigurator } from './ColorPicker.sizeConfigurator.demo';
+export { alphaConfigurator } from './ColorPicker.alphaConfigurator.demo';
+export { hueConfigurator } from './ColorPicker.hueConfigurator.demo';
+export { swatchesOnly } from './ColorPicker.swatchesOnly.demo';

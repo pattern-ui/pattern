@@ -1,6 +1,6 @@
-export { usage } from './Avatar.demo.usage';
-export { placeholders } from './Avatar.demo.placeholders';
-export { configurator } from './Avatar.demo.configurator';
-export { link } from './Avatar.demo.link';
-export { avatarsGroup } from './Avatar.demo.avatarsGroup';
-export { total } from './Avatar.demo.total';
+export { usage } from './Avatar.usage.demo';
+export { placeholders } from './Avatar.placeholders.demo';
+export { configurator } from './Avatar.configurator.demo';
+export { link } from './Avatar.link.demo';
+export { avatarsGroup } from './Avatar.avatarsGroup.demo';
+export { total } from './Avatar.total.demo';

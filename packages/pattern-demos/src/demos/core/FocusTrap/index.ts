@@ -1,2 +1,2 @@
-export { usage } from './FocusTrap.demo.usage';
-export { initial } from './FocusTrap.demo.initial';
+export { usage } from './FocusTrap.usage.demo';
+export { initial } from './FocusTrap.initial.demo';

@@ -1,6 +1,6 @@
-export { usage } from './RichTextEditor.demo.usage';
-export { toolbar } from './RichTextEditor.demo.toolbar';
-export { simple } from './RichTextEditor.demo.simple';
-export { embeds } from './RichTextEditor.demo.embeds';
-export { mentions } from './RichTextEditor.demo.mentions';
-export { readOnly } from './RichTextEditor.demo.readOnly';
+export { usage } from './RichTextEditor.usage.demo';
+export { toolbar } from './RichTextEditor.toolbar.demo';
+export { simple } from './RichTextEditor.simple.demo';
+export { embeds } from './RichTextEditor.embeds.demo';
+export { mentions } from './RichTextEditor.mentions.demo';
+export { readOnly } from './RichTextEditor.readOnly.demo';

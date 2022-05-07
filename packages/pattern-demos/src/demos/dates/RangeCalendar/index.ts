@@ -1,2 +1,2 @@
-export { usage } from './RangeCalendar.demo.usage';
-export { multipleMonths } from './RangeCalendar.demo.multipleMonths';
+export { usage } from './RangeCalendar.usage.demo';
+export { multipleMonths } from './RangeCalendar.multipleMonths.demo';

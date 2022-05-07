@@ -1,4 +1,4 @@
-export { configurator } from './Pagination.demo.configurator';
-export { siblings } from './Pagination.demo.siblings';
-export { boundaries } from './Pagination.demo.boundaries';
-export { usage } from './Pagination.demo.usage';
+export { configurator } from './Pagination.configurator.demo';
+export { siblings } from './Pagination.siblings.demo';
+export { boundaries } from './Pagination.boundaries.demo';
+export { usage } from './Pagination.usage.demo';
