@@ -4,7 +4,7 @@ import {
   PatternTheme,
   useCss,
   usePatternTheme,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { getSystemStyles } from './get-system-styles/get-system-styles';
 
 type Sx = CSSObject | ((theme: PatternTheme) => CSSObject);

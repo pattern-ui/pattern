@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Group, Text, Title, usePatternTheme } from '@pattern/core';
+import { Container, Group, Text, Title, usePatternTheme } from '@pattern-ui/core';
 import { SocialButton } from '../../SocialButton/SocialButton';
 import { Blobs } from './Blobs';
 import useStyles from './Community.styles';

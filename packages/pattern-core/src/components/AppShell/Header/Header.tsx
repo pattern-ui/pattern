@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { getDefaultZIndex, usePatternDefaultProps } from '@pattern/styles';
+import { getDefaultZIndex, usePatternDefaultProps } from '@pattern-ui/styles';
 import { VerticalSection, VerticalSectionSharedProps } from '../VerticalSection/VerticalSection';
 
 export interface HeaderProps
@@ -20,4 +20,4 @@ export const Header = forwardRef<HTMLElement, HeaderProps>((props: HeaderProps, 
   return <VerticalSection section="header" __staticSelector="Header" {..._props} ref={ref} />;
 });
 
-Header.displayName = '@pattern/core/Header';
+Header.displayName = '@pattern-ui/core/Header';

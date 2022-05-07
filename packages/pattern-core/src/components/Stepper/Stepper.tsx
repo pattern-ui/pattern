@@ -6,7 +6,7 @@ import {
   PatternSize,
   Selectors,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { findChildByType, filterChildrenByType } from '../../utils';
 import { Box } from '../Box';
 import { Step, StepStylesNames } from './Step/Step';
@@ -160,4 +160,4 @@ export const Stepper: StepperComponent = forwardRef<HTMLDivElement, StepperProps
 
 Stepper.Step = Step;
 Stepper.Completed = StepCompleted;
-Stepper.displayName = '@pattern/core/Stepper';
+Stepper.displayName = '@pattern-ui/core/Stepper';

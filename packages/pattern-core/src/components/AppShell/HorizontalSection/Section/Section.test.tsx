@@ -1,18 +1,18 @@
-import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Section, SectionProps } from './Section';
 
 const defaultProps: SectionProps<'div'> = {
   children: 'test-section',
 };
 
-describe('@pattern/core/Section', () => {
+describe('@pattern-ui/core/Section', () => {
   itRendersChildren(Section, defaultProps);
   itIsPolymorphic(Section, defaultProps);
 
   itSupportsSystemProps({
     component: Section,
     props: defaultProps,
-    displayName: '@pattern/core/Section',
+    displayName: '@pattern-ui/core/Section',
     refType: HTMLDivElement,
   });
 });

@@ -8,7 +8,7 @@ const sizes = {
   xl: 18,
 };
 
-describe('@pattern/styles/size', () => {
+describe('@pattern-ui/styles/size', () => {
   it('returns given value if value type is number', () => {
     expect(size({ size: 20, sizes })).toBe(20);
     expect(size({ size: 0, sizes })).toBe(0);

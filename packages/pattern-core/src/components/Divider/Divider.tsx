@@ -5,7 +5,7 @@ import {
   PatternNumberSize,
   PatternColor,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import useStyles from './Divider.styles';
 import { Text, TextProps } from '../Text';
 import { Box } from '../Box';
@@ -102,4 +102,4 @@ export const Divider = forwardRef<HTMLDivElement, DividerProps>((props: DividerP
   );
 });
 
-Divider.displayName = '@pattern/core/Divider';
+Divider.displayName = '@pattern-ui/core/Divider';

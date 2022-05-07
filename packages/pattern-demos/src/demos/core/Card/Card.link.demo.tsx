@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Image, Text } from '@pattern/core';
+import { Card, Image, Text } from '@pattern-ui/core';
 import { demoBase } from './_demo-base';
 
 export default function Demo() {

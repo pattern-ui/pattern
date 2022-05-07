@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '@pattern/core';
+import { Box } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

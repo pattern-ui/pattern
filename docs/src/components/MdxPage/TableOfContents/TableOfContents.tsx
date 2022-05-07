@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import Slugger from 'github-slugger';
 import { navigate } from 'gatsby';
 import { useLocation } from '@reach/router';
-import { Text, usePatternTheme } from '@pattern/core';
+import { Text, usePatternTheme } from '@pattern-ui/core';
 import { ActivityLogIcon } from '@modulz/radix-icons';
 import useStyles from './TableOfContents.styles';
 

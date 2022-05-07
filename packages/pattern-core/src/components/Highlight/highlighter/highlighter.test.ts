@@ -1,6 +1,6 @@
 import { highlighter } from './highlighter';
 
-describe('@pattern/core/Highlight/highlighter', () => {
+describe('@pattern-ui/core/Highlight/highlighter', () => {
   const VALUE = 'Hello, World';
 
   it('highlights start of string', () => {

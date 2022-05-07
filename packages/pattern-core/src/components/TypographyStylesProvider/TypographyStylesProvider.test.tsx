@@ -1,4 +1,4 @@
-import { itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import {
   TypographyStylesProvider,
   TypographyStylesProviderProps,
@@ -8,12 +8,12 @@ const defaultProps: TypographyStylesProviderProps = {
   children: 'test-children',
 };
 
-describe('@pattern/core/TypographyStylesProvider', () => {
+describe('@pattern-ui/core/TypographyStylesProvider', () => {
   itRendersChildren(TypographyStylesProvider, defaultProps);
   itSupportsSystemProps({
     component: TypographyStylesProvider,
     props: defaultProps,
-    displayName: '@pattern/core/TypographyStylesProvider',
+    displayName: '@pattern-ui/core/TypographyStylesProvider',
     refType: HTMLDivElement,
   });
 });

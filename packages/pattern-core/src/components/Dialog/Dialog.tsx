@@ -7,7 +7,7 @@ import {
   PatternStyleSystemSize,
   getDefaultZIndex,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Transition, PatternTransition } from '../Transition';
 import { CloseButton } from '../ActionIcon';
 import { Affix } from '../Affix';
@@ -128,4 +128,4 @@ export const Dialog: DialogComponent & { displayName?: string } = forwardRef<
   );
 });
 
-Dialog.displayName = '@pattern/core/Dialog';
+Dialog.displayName = '@pattern-ui/core/Dialog';

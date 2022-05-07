@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { useUuid } from '@pattern/hooks';
+import { useUuid } from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternSize,
@@ -7,7 +7,7 @@ import {
   Selectors,
   extractSystemStyles,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../../Box';
 import { RadioIcon } from './RadioIcon';
 import useStyles from './Radio.styles';
@@ -100,4 +100,4 @@ export const Radio = forwardRef<HTMLInputElement, RadioProps>((props: RadioProps
   );
 });
 
-Radio.displayName = '@pattern/core/Radio';
+Radio.displayName = '@pattern-ui/core/Radio';

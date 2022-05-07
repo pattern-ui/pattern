@@ -1,8 +1,8 @@
 import React from 'react';
-import { Switch, SwitchProps } from '@pattern/core';
+import { Switch, SwitchProps } from '@pattern-ui/core';
 
 const codeTemplate = (props: string) => `
-import { Switch } from '@pattern/core';
+import { Switch } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

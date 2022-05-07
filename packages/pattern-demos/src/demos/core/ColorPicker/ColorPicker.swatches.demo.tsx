@@ -1,5 +1,5 @@
 import React from 'react';
-import { DEFAULT_THEME, Group, ColorPicker } from '@pattern/core';
+import { DEFAULT_THEME, Group, ColorPicker } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

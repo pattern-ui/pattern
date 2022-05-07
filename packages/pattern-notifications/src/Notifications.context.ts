@@ -2,4 +2,4 @@ import { createContext } from 'react';
 import { NotificationsContextProps } from './types';
 
 export const NotificationsContext = createContext<NotificationsContextProps>(null);
-NotificationsContext.displayName = '@pattern/notifications/NotificationsContext';
+NotificationsContext.displayName = '@pattern-ui/notifications/NotificationsContext';

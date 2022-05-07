@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, PatternNumberSize, usePatternDefaultProps } from '@pattern/styles';
+import { DefaultProps, PatternNumberSize, usePatternDefaultProps } from '@pattern-ui/styles';
 import { filterFalsyChildren } from '../../utils';
 import { Box } from '../Box';
 import useStyles, { GroupPosition } from './Group.styles';
@@ -76,4 +76,4 @@ export const Group = forwardRef<HTMLDivElement, GroupProps>((props: GroupProps, 
   );
 });
 
-Group.displayName = '@pattern/core/Group';
+Group.displayName = '@pattern-ui/core/Group';

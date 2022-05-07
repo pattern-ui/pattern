@@ -8,10 +8,10 @@ Overlay command center for your application
 
 ```sh
 # With yarn
-yarn add @pattern/spotlight @pattern/core @pattern/hooks
+yarn add @pattern-ui/spotlight @pattern-ui/core @pattern-ui/hooks
 
 # With npm
-npm install @pattern/spotlight @pattern/core @pattern/hooks
+npm install @pattern-ui/spotlight @pattern-ui/core @pattern-ui/hooks
 ```
 
 ## License

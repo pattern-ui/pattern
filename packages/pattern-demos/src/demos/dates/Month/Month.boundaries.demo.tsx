@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Group } from '@pattern/core';
-import { Month } from '@pattern/dates';
+import { Group } from '@pattern-ui/core';
+import { Month } from '@pattern-ui/dates';
 import dayjs from 'dayjs';
 
 export default function Demo() {

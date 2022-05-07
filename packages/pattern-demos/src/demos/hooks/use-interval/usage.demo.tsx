@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Group, Button, Text } from '@pattern/core';
-import { useInterval } from '@pattern/hooks';
+import { Group, Button, Text } from '@pattern-ui/core';
+import { useInterval } from '@pattern-ui/hooks';
 
 export default function Demo() {
   const [seconds, setSeconds] = useState(0);

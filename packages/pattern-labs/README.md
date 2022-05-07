@@ -8,10 +8,10 @@ Experimental Pattern components, use at your own risk
 
 ```sh
 # With yarn
-yarn add @pattern/hooks @pattern/core @pattern/labs
+yarn add @pattern-ui/hooks @pattern-ui/core @pattern-ui/labs
 
 # With npm
-npm install @pattern/hooks @pattern/core @pattern/labs
+npm install @pattern-ui/hooks @pattern-ui/core @pattern-ui/labs
 ```
 
 ## License

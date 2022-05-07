@@ -1,5 +1,5 @@
 import React from 'react';
-import { Slider, RangeSlider } from '@pattern/core';
+import { Slider, RangeSlider } from '@pattern-ui/core';
 
 function Wrapper(props: any) {
   const Component = props.type === 'range' ? RangeSlider : Slider;
@@ -20,7 +20,7 @@ function Wrapper(props: any) {
 }
 
 const codeTemplate = (props: string) => `
-import { ${props.includes('range') ? 'RangeSlider' : 'Slider'} } from '@pattern/core';
+import { ${props.includes('range') ? 'RangeSlider' : 'Slider'} } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

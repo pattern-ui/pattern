@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility, itSupportsSystemProps } from '@pattern/tests';
+import { checkAccessibility, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Slider, SliderProps } from './Slider';
 
 const defaultProps: SliderProps = {
@@ -17,12 +17,12 @@ const expectInputValue = (value: string, container: HTMLElement) =>
 const pressArrow = (kind: 'right' | 'left') =>
   userEvent.type(screen.getByRole('slider'), kind === 'right' ? '{arrowright}' : '{arrowleft}');
 
-describe('@pattern/core/Slider', () => {
+describe('@pattern-ui/core/Slider', () => {
   checkAccessibility([<Slider {...defaultProps} />]);
   itSupportsSystemProps({
     component: Slider,
     props: defaultProps,
-    displayName: '@pattern/core/Slider',
+    displayName: '@pattern-ui/core/Slider',
     refType: HTMLDivElement,
   });
 

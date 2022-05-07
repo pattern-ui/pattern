@@ -2,7 +2,7 @@ import { getSafeId } from './get-safe-id';
 
 const TEST_ERROR = 'test-error';
 
-describe('@pattern/utils/Tabs/get-safe-id', () => {
+describe('@pattern-ui/utils/Tabs/get-safe-id', () => {
   it('returns correct id', () => {
     expect(getSafeId('test-tab', TEST_ERROR)('react')).toBe('test-tab-react');
   });

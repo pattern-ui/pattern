@@ -1,4 +1,4 @@
-import { PatternSize, PatternTheme } from '@pattern/styles';
+import { PatternSize, PatternTheme } from '@pattern-ui/styles';
 
 type Breakpoints<T> = Partial<Record<PatternSize | (string & {}), T>>;
 

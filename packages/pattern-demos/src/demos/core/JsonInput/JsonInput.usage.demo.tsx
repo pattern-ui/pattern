@@ -1,5 +1,5 @@
 import React from 'react';
-import { JsonInput } from '@pattern/core';
+import { JsonInput } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
-import { createStyles, usePatternTheme } from '@pattern/core';
-import { Dropzone, IMAGE_MIME_TYPE } from '@pattern/dropzone';
+import { createStyles, usePatternTheme } from '@pattern-ui/core';
+import { Dropzone, IMAGE_MIME_TYPE } from '@pattern-ui/dropzone';
 import { dropzoneChildren } from './_base';
 
 const useStyles = createStyles((theme) => ({

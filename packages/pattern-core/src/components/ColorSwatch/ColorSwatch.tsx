@@ -6,7 +6,7 @@ import {
   PolymorphicRef,
   usePatternDefaultProps,
   Selectors,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles from './ColorSwatch.styles';
 
@@ -63,4 +63,4 @@ export const ColorSwatch: ColorSwatchComponent = forwardRef(
   }
 ) as any;
 
-ColorSwatch.displayName = '@pattern/core/ColorSwatch';
+ColorSwatch.displayName = '@pattern-ui/core/ColorSwatch';

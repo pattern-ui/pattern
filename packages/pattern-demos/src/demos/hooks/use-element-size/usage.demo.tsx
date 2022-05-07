@@ -1,6 +1,6 @@
 import React from 'react';
-import { usePatternTheme, Text, Group } from '@pattern/core';
-import { useElementSize } from '@pattern/hooks';
+import { usePatternTheme, Text, Group } from '@pattern-ui/core';
+import { useElementSize } from '@pattern-ui/hooks';
 
 export default function Demo() {
   const theme = usePatternTheme();

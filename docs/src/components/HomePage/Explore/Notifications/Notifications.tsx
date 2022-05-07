@@ -8,7 +8,7 @@ export function Notifications() {
       title="Notifications system"
       description="A fully featured notifications system integrates seamlessly with your Pattern theme."
       link="/others/notifications/"
-      label="Get started with @pattern/notifications"
+      label="Get started with @pattern-ui/notifications"
     >
       <NotificationsDemo />
     </Section>

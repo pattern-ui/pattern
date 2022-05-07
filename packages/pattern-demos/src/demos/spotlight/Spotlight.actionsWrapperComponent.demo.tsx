@@ -1,6 +1,6 @@
 import React from 'react';
 import { Search } from 'tabler-icons-react';
-import { Group, Text, Anchor } from '@pattern/core';
+import { Group, Text, Anchor } from '@pattern-ui/core';
 import { Wrapper } from './_wrapper';
 
 function ActionsWrapper({ children }: { children: React.ReactNode }) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, SimpleGrid } from '@pattern/core';
+import { Image, SimpleGrid } from '@pattern-ui/core';
 
 import darkTheme from './assets/dark-theme.png';
 import notifications from './assets/notifications.gif';
@@ -9,8 +9,8 @@ import socialMedia from './assets/social-media.png';
 const data = [
   { image: socialMedia, title: 'Social media preview' },
   { image: darkTheme, title: 'Dark/light theme' },
-  { image: notifications, title: '@pattern/notifications example' },
-  { image: richTextEditor, title: '@pattern/rte RichTextEditor' },
+  { image: notifications, title: '@pattern-ui/notifications example' },
+  { image: richTextEditor, title: '@pattern-ui/rte RichTextEditor' },
 ];
 
 export function Images() {

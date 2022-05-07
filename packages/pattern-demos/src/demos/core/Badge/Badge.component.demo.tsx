@@ -1,5 +1,5 @@
 import React from 'react';
-import { Group, Badge } from '@pattern/core';
+import { Group, Badge } from '@pattern-ui/core';
 
 const CustomComponent = ({
   pads,

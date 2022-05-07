@@ -1,5 +1,5 @@
 import React from 'react';
-import { Indicator, IndicatorProps, Avatar, Group } from '@pattern/core';
+import { Indicator, IndicatorProps, Avatar, Group } from '@pattern-ui/core';
 
 function Wrapper(props: IndicatorProps) {
   return (
@@ -15,7 +15,7 @@ function Wrapper(props: IndicatorProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Indicator, Avatar, Group } from '@pattern/core';
+import { Indicator, Avatar, Group } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

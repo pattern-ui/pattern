@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, Selectors, useContextStylesApi, PatternColor } from '@pattern/styles';
-import { createScopedKeydownHandler } from '@pattern/utils';
+import { DefaultProps, Selectors, useContextStylesApi, PatternColor } from '@pattern-ui/styles';
+import { createScopedKeydownHandler } from '@pattern-ui/utils';
 import { UnstyledButton } from '../../Button';
 import { useTabsContext } from '../Tabs.context';
 import useStyles from './Tab.styles';
@@ -86,4 +86,4 @@ export const Tab = forwardRef<HTMLButtonElement, TabProps>(
   }
 );
 
-Tab.displayName = '@pattern/core/Tab';
+Tab.displayName = '@pattern-ui/core/Tab';

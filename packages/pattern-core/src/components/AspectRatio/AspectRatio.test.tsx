@@ -1,16 +1,16 @@
-import { itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { AspectRatio, AspectRatioProps } from './AspectRatio';
 
 const defaultProps: AspectRatioProps = {
   ratio: 16 / 9,
 };
 
-describe('@pattern/core/AspectRatio', () => {
+describe('@pattern-ui/core/AspectRatio', () => {
   itRendersChildren(AspectRatio, defaultProps);
   itSupportsSystemProps({
     component: AspectRatio,
     props: defaultProps,
-    displayName: '@pattern/core/AspectRatio',
+    displayName: '@pattern-ui/core/AspectRatio',
     refType: HTMLDivElement,
   });
 });

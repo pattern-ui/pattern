@@ -1,6 +1,6 @@
 import React from 'react';
-import { Group, createStyles } from '@pattern/core';
-import { Calendar } from '@pattern/dates';
+import { Group, createStyles } from '@pattern-ui/core';
+import { Calendar } from '@pattern-ui/dates';
 
 const useStyles = createStyles((theme) => ({
   outside: {

@@ -1,34 +1,34 @@
 ---
 group: 'Other packages'
-package: '@pattern/nprogress'
+package: '@pattern-ui/nprogress'
 title: 'Navigation progress'
 order: 1
 slug: /others/nprogress/
 description: 'A navigation progress bar'
 props: ['NProgress']
-import: "import { NProgress } from '@pattern/nprogress';"
+import: "import { NProgress } from '@pattern-ui/nprogress';"
 source: 'pattern-nprogress/src'
 docs: 'others/nprogress.mdx'
-installation: '@pattern/nprogress'
+installation: '@pattern-ui/nprogress'
 license: MIT
 ---
 
-import { NProgressDemos } from '@pattern/demos';
+import { NProgressDemos } from '@pattern-ui/demos';
 
 ## Installation
 
-Package depends on @pattern/core and @pattern/hooks.
+Package depends on @pattern-ui/core and @pattern-ui/hooks.
 
 Install with npm:
 
 ```sh
-npm install @pattern/nprogress @pattern/core @pattern/hooks
+npm install @pattern-ui/nprogress @pattern-ui/core @pattern-ui/hooks
 ```
 
 Install with yarn:
 
 ```sh
-yarn add @pattern/nprogress @pattern/core @pattern/hooks
+yarn add @pattern-ui/nprogress @pattern-ui/core @pattern-ui/hooks
 ```
 
 ## Setup NProgress
@@ -36,8 +36,8 @@ yarn add @pattern/nprogress @pattern/core @pattern/hooks
 Add `NProgress` to your app:
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
-import { NProgress } from '@pattern/nprogress';
+import { PatternProvider } from '@pattern-ui/core';
+import { NProgress } from '@pattern-ui/nprogress';
 
 function App() {
   return (
@@ -55,7 +55,7 @@ function App() {
 
 ## Event based functions
 
-`@pattern/nprogress` exports several functions which can be used to perform certain actions
+`@pattern-ui/nprogress` exports several functions which can be used to perform certain actions
 from any part of your application:
 
 ```tsx
@@ -67,7 +67,7 @@ import {
   startNProgress,
   stopNProgress,
   resetNProgress,
-} from '@pattern/nprogress';
+} from '@pattern-ui/nprogress';
 
 // Adds progress to the current progress
 addNProgress(10);

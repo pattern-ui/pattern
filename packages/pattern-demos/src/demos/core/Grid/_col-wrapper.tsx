@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, ColProps, Text, usePatternTheme, Box } from '@pattern/core';
+import { Col, ColProps, Text, usePatternTheme, Box } from '@pattern-ui/core';
 
 export function ColWrapper(props: ColProps) {
   const theme = usePatternTheme();

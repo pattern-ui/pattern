@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal, Group, Button } from '@pattern/core';
+import { Modal, Group, Button } from '@pattern-ui/core';
 
 export default function Demo() {
   const [opened, setOpened] = useState(false);

@@ -1,12 +1,12 @@
 import React, { forwardRef, useRef, useState, useCallback } from 'react';
-import { clamp, useMergedRef, useMove, useUncontrolled } from '@pattern/hooks';
+import { clamp, useMergedRef, useMove, useUncontrolled } from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternColor,
   PatternNumberSize,
   usePatternDefaultProps,
   usePatternTheme,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { PatternTransition } from '../../Transition';
 import { getPosition } from '../utils/get-position/get-position';
 import { getChangeValue } from '../utils/get-change-value/get-change-value';
@@ -288,4 +288,4 @@ export const Slider = forwardRef<HTMLDivElement, SliderProps>((props: SliderProp
   );
 });
 
-Slider.displayName = '@pattern/core/Slider';
+Slider.displayName = '@pattern-ui/core/Slider';

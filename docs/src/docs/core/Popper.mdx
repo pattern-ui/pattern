@@ -1,18 +1,18 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Popper
 order: 1
 slug: /core/popper/
 category: 'misc'
 description: 'Render dropdown in portal with popper.js'
 props: ['Popper']
-import: "import { Popper } from '@pattern/core';"
+import: "import { Popper } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Popper/Popper.tsx'
 docs: 'core/Popper.mdx'
 ---
 
-import { PopperDemos, TooltipDemos } from '@pattern/demos';
+import { PopperDemos, TooltipDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -27,7 +27,7 @@ To use Popper, add the following required props first:
 
 ```tsx
 import { useState } from 'react';
-import { Popper } from '@pattern/core';
+import { Popper } from '@pattern-ui/core';
 
 function Demo() {
   // useState is required to store element ref, useRef won't work

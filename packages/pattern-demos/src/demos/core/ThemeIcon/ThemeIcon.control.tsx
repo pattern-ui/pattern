@@ -1,6 +1,6 @@
 import React from 'react';
 import { Photo } from 'tabler-icons-react';
-import { ThemeIcon, ThemeIconProps } from '@pattern/core';
+import { ThemeIcon, ThemeIconProps } from '@pattern-ui/core';
 
 const iconSizes = {
   xs: 10,
@@ -21,7 +21,7 @@ function Wrapper(props: ThemeIconProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { ThemeIcon } from '@pattern/core';
+import { ThemeIcon } from '@pattern-ui/core';
 import { Photo } from 'tabler-icons-react';
 
 export default function Demo() {

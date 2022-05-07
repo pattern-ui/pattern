@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useForm } from '@pattern/hooks';
+import { useForm } from '@pattern-ui/hooks';
 import { EnvelopeClosedIcon, LockClosedIcon } from '@modulz/radix-icons';
 import {
   TextInput,
@@ -12,7 +12,7 @@ import {
   LoadingOverlay,
   Anchor,
   usePatternTheme,
-} from '@pattern/core';
+} from '@pattern-ui/core';
 
 export interface AuthenticationFormProps {
   noShadow?: boolean;

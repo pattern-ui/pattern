@@ -1,4 +1,4 @@
-import { useHotkeys, HotkeyItem } from '@pattern/hooks';
+import { useHotkeys, HotkeyItem } from '@pattern-ui/hooks';
 
 export function getHotkeysPayload(
   shortcuts: string | string[],

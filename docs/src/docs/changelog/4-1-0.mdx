@@ -7,11 +7,11 @@ release: https://github.com/pattern-ui/pattern/releases/tag/4.1.0
 date: 'March 29th, 2022'
 ---
 
-import { NotificationsDemos, StackDemos, SliderDemos, TooltipDemos } from '@pattern/demos';
+import { NotificationsDemos, StackDemos, SliderDemos, TooltipDemos } from '@pattern-ui/demos';
 import { ExternalLinkIcon } from '@modulz/radix-icons';
-import { Anchor, Center } from '@pattern/core';
+import { Anchor, Center } from '@pattern-ui/core';
 
-## @pattern/notifications improvements
+## @pattern-ui/notifications improvements
 
 ### Events based functions
 
@@ -20,7 +20,7 @@ import { Anchor, Center } from '@pattern/core';
 they are no longer depend on context and can be called in any part of application.
 Old way with `useNotifications` hook will work until version 5.0 release.
 
-`@pattern/notifications` now exports the following functions:
+`@pattern-ui/notifications` now exports the following functions:
 
 - `showNotification` – adds given notification to notifications list or queue depending on current state and limit
 - `updateNotification` – updates notification that was previously added to the state or queue
@@ -42,7 +42,7 @@ Same as with `styles` you can now add classes to all components with `classNames
 This approach is useful when you want to styles components with utility based CSS libraries.
 
 ```tsx
-import { PatternProvider, Button } from '@pattern/core';
+import { PatternProvider, Button } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -60,7 +60,7 @@ You can now set `withCSSVariables` prop on [PatternProvider](https://pattern-ui.
 This option is useful when you want to use Pattern theme values with CSS/SCSS or css-in-js libraries that do not have Pattern theme context.
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -86,7 +86,7 @@ Then you will be able to use variables anywhere in your CSS:
 All components now support arrays in [sx prop](https://pattern-ui.design/theming/sx/). It can be to simultaneously use `sx` prop and add it from props:
 
 ```tsx
-import { Button, Sx } from '@pattern/core';
+import { Button, Sx } from '@pattern-ui/core';
 
 interface MyButtonProps {
   sx?: Sx;
@@ -133,7 +133,7 @@ import {
   MediaQuery,
   Burger,
   usePatternTheme,
-} from '@pattern/core';
+} from '@pattern-ui/core';
 
 export default function AppShellDemo() {
   const theme = usePatternTheme();
@@ -197,12 +197,12 @@ export default function AppShellDemo() {
 
 ## Other changes
 
-- [@pattern/spotlight](https://pattern-ui.design/others/spotlight/) now exports event based functions to open/close spotlight and perform other actions from anywhere in your application (not only in components)
+- [@pattern-ui/spotlight](https://pattern-ui.design/others/spotlight/) now exports event based functions to open/close spotlight and perform other actions from anywhere in your application (not only in components)
 - [Button](https://pattern-ui.design/core/button/), [Badge](https://pattern-ui.design/core/badge/), [ThemeIcon](https://pattern-ui.design/core/theme-icon/) and [Text](https://pattern-ui.design/core/text/) components now support hex color values in `gradient` prop
 - [Radio](https://pattern-ui.design/core/radio-group/) now supports setting transition duration and icon customization via props
 - [Slider and RangeSlider](https://pattern-ui.design/core/slider/) components now support `precision` prop
 - [Menu](https://pattern-ui.design/core/menu/), [List](https://pattern-ui.design/core/list/) and [Grid](https://pattern-ui.design/core/grid/) components were migrated to context, associated components (`Menu.Item`, `List.Item`, `Grid.Col`, etc.) can now be wrapper with other components and fragments
-- `useLocalStorageValue` hook was renamed to `useLocalStorage` (old hook is still exported from `@pattern/hooks`)
+- `useLocalStorageValue` hook was renamed to `useLocalStorage` (old hook is still exported from `@pattern-ui/hooks`)
 - [AppShell](https://pattern-ui.design/core/app-shell/) no longer parses props of Navbar and Header components, AppShell positioning logic was migrated to context and CSS variables, Navbar and Header components can now be wrapped with other components
-- NextLink component was added to `@pattern/next` package to simplify Next.js Link usage with [Menu](https://pattern-ui.design/core/menu/#menuitem-as-nextjs-link)
+- NextLink component was added to `@pattern-ui/next` package to simplify Next.js Link usage with [Menu](https://pattern-ui.design/core/menu/#menuitem-as-nextjs-link)
 - [Global](https://pattern-ui.design/theming/global-styles/#global-component) component now supports array syntax for `styles`

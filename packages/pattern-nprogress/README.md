@@ -8,10 +8,10 @@ A navigation progress bar
 
 ```sh
 # With yarn
-yarn add @pattern/nprogress @pattern/core @pattern/hooks
+yarn add @pattern-ui/nprogress @pattern-ui/core @pattern-ui/hooks
 
 # With npm
-npm install @pattern/nprogress @pattern/core @pattern/hooks
+npm install @pattern-ui/nprogress @pattern-ui/core @pattern-ui/hooks
 ```
 
 ## License

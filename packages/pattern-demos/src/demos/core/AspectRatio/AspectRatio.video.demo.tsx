@@ -1,5 +1,5 @@
 import React from 'react';
-import { AspectRatio } from '@pattern/core';
+import { AspectRatio } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

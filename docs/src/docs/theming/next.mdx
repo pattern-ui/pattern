@@ -3,7 +3,7 @@ group: 'theming'
 title: Usage with Next.js
 slug: /theming/next/
 order: 8
-search: 'Setup SSR with Next.js using @pattern/next'
+search: 'Setup SSR with Next.js using @pattern-ui/next'
 ---
 
 # Usage with Next.js
@@ -18,18 +18,18 @@ Alternatively you can download or clone [repository](https://github.com/pattern-
 
 ## Adding to existing Next.js project
 
-1. Install `@pattern/next`
+1. Install `@pattern-ui/next`
 
 ```bash
-yarn add @pattern/next
+yarn add @pattern-ui/next
 
-npm install @pattern/next
+npm install @pattern-ui/next
 ```
 
 1. Create `pages/_document.tsx` file:
 
 ```tsx
-import { createGetInitialProps } from '@pattern/next';
+import { createGetInitialProps } from '@pattern-ui/next';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 const getInitialProps = createGetInitialProps();
@@ -56,7 +56,7 @@ export default class _Document extends Document {
 ```tsx
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props;
@@ -90,7 +90,7 @@ to do so you will need to setup Pattern ssr styles extraction on your own:
 
 ```tsx
 import Document, { DocumentContext } from 'next/document';
-import { ServerStyles, createStylesServer } from '@pattern/next';
+import { ServerStyles, createStylesServer } from '@pattern-ui/next';
 
 const stylesServer = createStylesServer();
 
@@ -122,7 +122,7 @@ You can use polymorphic components (Button, ActionIcon, Anchor, etc.) with Next 
 
 ```tsx
 import Link from 'next/link';
-import { Button } from '@pattern/core';
+import { Button } from '@pattern-ui/core';
 
 function Demo() {
   return (

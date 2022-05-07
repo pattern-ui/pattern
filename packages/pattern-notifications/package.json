@@ -1,5 +1,5 @@
 {
-  "name": "@pattern/notifications",
+  "name": "@pattern-ui/notifications",
   "description": "Notification system based on Pattern components",
   "version": "1.0.0",
   "main": "cjs/index.js",
@@ -12,7 +12,7 @@
   "repository": {
     "url": "https://github.com/pattern-ui/pattern.git",
     "type": "git",
-    "directory": "src/pattern-notifications"
+    "directory": "packages/pattern-notifications"
   },
   "keywords": [
     "react",
@@ -28,8 +28,8 @@
     "notification-system"
   ],
   "peerDependencies": {
-    "@pattern/core": "1.0.0",
-    "@pattern/hooks": "1.0.0",
+    "@pattern-ui/core": "1.0.0",
+    "@pattern-ui/hooks": "1.0.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },

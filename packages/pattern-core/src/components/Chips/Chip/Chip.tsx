@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { useUncontrolled, useUuid } from '@pattern/hooks';
+import { useUncontrolled, useUuid } from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternNumberSize,
@@ -8,7 +8,7 @@ import {
   Selectors,
   extractSystemStyles,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../../Box';
 import { CheckboxIcon } from '../../Checkbox';
 import useStyles from './Chip.styles';
@@ -139,4 +139,4 @@ export const Chip = forwardRef<HTMLInputElement, ChipProps>((props: ChipProps, r
   );
 });
 
-Chip.displayName = '@pattern/core/Chip';
+Chip.displayName = '@pattern-ui/core/Chip';

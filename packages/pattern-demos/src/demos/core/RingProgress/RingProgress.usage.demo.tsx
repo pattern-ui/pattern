@@ -1,5 +1,5 @@
 import React from 'react';
-import { RingProgress, Group, Text } from '@pattern/core';
+import { RingProgress, Group, Text } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

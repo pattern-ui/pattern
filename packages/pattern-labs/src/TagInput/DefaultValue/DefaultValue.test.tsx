@@ -6,7 +6,7 @@ import {
   itSupportsStyle,
   itSupportsOthers,
   checkAccessibility,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { DefaultValue, TagInputValueProps } from './DefaultValue';
 
 const defaultProps: TagInputValueProps = {
@@ -17,7 +17,7 @@ const defaultProps: TagInputValueProps = {
   radius: 'sm',
 };
 
-describe('@pattern/labs/TagInput/DefaultValue', () => {
+describe('@pattern-ui/labs/TagInput/DefaultValue', () => {
   checkAccessibility([<DefaultValue {...defaultProps} />]);
   itSupportsClassName(DefaultValue, defaultProps);
   itSupportsStyle(DefaultValue, defaultProps);
@@ -43,6 +43,6 @@ describe('@pattern/labs/TagInput/DefaultValue', () => {
   });
 
   it('has correct displayName', () => {
-    expect(DefaultValue.displayName).toEqual('@pattern/labs/TagInput/DefaultValue');
+    expect(DefaultValue.displayName).toEqual('@pattern-ui/labs/TagInput/DefaultValue');
   });
 });

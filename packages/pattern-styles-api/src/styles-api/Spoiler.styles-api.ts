@@ -1,4 +1,4 @@
-import type { SpoilerStylesNames } from '@pattern/core';
+import type { SpoilerStylesNames } from '@pattern-ui/core';
 
 export const Spoiler: Record<SpoilerStylesNames, string> = {
   root: 'Root element',

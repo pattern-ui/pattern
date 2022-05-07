@@ -7,7 +7,7 @@ import {
   PolymorphicComponentProps,
   PolymorphicRef,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles from './Text.styles';
 
@@ -111,4 +111,4 @@ export const Text: TextComponent = forwardRef(
   }
 ) as any;
 
-Text.displayName = '@pattern/core/Text';
+Text.displayName = '@pattern-ui/core/Text';

@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Burger
 order: 1
 slug: /core/burger/
 category: 'navigation'
 description: 'Open/close navigation button'
 props: ['Burger']
-import: "import { Burger } from '@pattern/core';"
+import: "import { Burger } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Burger/Burger.tsx'
 docs: 'core/Burger.mdx'
 styles: ['Burger']
 ---
 
-import { BurgerDemos } from '@pattern/demos';
+import { BurgerDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -46,7 +46,7 @@ Alternatively, you can use a number to set width and height in px:
 
 ```tsx
 import { useRef } from 'react';
-import { Burger } from '@pattern/core';
+import { Burger } from '@pattern-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLButtonElement>();

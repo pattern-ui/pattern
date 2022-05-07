@@ -3,7 +3,7 @@ import { findChildByType } from './find-child-by-type';
 
 const TestComponent = () => <div>Test</div>;
 
-describe('@pattern/core/utils/find-child-by-type', () => {
+describe('@pattern-ui/core/utils/find-child-by-type', () => {
   it('finds child with a given type', () => {
     const result = findChildByType(
       [

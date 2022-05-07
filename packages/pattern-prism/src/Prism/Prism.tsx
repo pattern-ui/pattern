@@ -10,8 +10,8 @@ import {
   ScrollArea,
   usePatternDefaultProps,
   PatternColor,
-} from '@pattern/core';
-import { useClipboard } from '@pattern/hooks';
+} from '@pattern-ui/core';
+import { useClipboard } from '@pattern-ui/hooks';
 import { CopyIcon } from './CopyIcon';
 import { getPrismTheme } from './prism-theme';
 import useStyles from './Prism.styles';
@@ -205,4 +205,4 @@ export const Prism = forwardRef<HTMLDivElement, PrismProps>((props: PrismProps, 
   );
 });
 
-Prism.displayName = '@pattern/prism/Prism';
+Prism.displayName = '@pattern-ui/prism/Prism';

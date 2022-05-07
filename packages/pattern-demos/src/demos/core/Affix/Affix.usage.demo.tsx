@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowUpIcon } from '@modulz/radix-icons';
-import { useWindowScroll } from '@pattern/hooks';
-import { Button, Text, Transition, Affix } from '@pattern/core';
+import { useWindowScroll } from '@pattern-ui/hooks';
+import { Button, Text, Transition, Affix } from '@pattern-ui/core';
 
 export default function Demo() {
   const [scroll, scrollTo] = useWindowScroll();

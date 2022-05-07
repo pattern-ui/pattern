@@ -1,19 +1,19 @@
 import 'dayjs/locale/ru';
 import React from 'react';
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 import { render, screen } from '@testing-library/react';
-import { itSupportsSystemProps, itSupportsInputProps, itSupportsFocusEvents } from '@pattern/tests';
+import { itSupportsSystemProps, itSupportsInputProps, itSupportsFocusEvents } from '@pattern-ui/tests';
 import { DateRangePicker, DateRangePickerProps } from './DateRangePicker';
 
 const defaultProps: DateRangePickerProps = {};
 
-describe('@pattern/dates/DateRangePicker', () => {
+describe('@pattern-ui/dates/DateRangePicker', () => {
   itSupportsInputProps(DateRangePicker, defaultProps, 'DateRangePicker');
   itSupportsFocusEvents(DateRangePicker, defaultProps, 'input');
   itSupportsSystemProps({
     component: DateRangePicker,
     props: defaultProps,
-    displayName: '@pattern/dates/DateRangePicker',
+    displayName: '@pattern-ui/dates/DateRangePicker',
     excludeOthers: true,
     refType: HTMLInputElement,
   });

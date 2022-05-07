@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { DEFAULT_THEME, PATTERN_SIZES, PatternProvider } from '@pattern/styles';
+import { DEFAULT_THEME, PATTERN_SIZES, PatternProvider } from '@pattern-ui/styles';
 import { ColorPicker } from './ColorPicker';
 import { HueSlider, HueSliderProps } from './HueSlider/HueSlider';
 import { AlphaSlider, AlphaSliderProps } from './AlphaSlider/AlphaSlider';

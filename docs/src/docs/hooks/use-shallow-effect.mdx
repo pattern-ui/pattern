@@ -1,12 +1,12 @@
 ---
 group: 'pattern-hooks'
-package: '@pattern/hooks'
+package: '@pattern-ui/hooks'
 title: 'use-shallow-effect'
 category: 'lifecycle'
 order: 1
 slug: /hooks/use-shallow-effect/
 description: 'useEffect drop in replacement with dependencies shallow comparison'
-import: "import { useShallowEffect } from '@pattern/hooks';"
+import: "import { useShallowEffect } from '@pattern-ui/hooks';"
 docs: 'hooks/use-shallow-effect.mdx'
 source: 'pattern-hooks/src/use-shallow-effect/use-shallow-effect.ts'
 ---
@@ -17,7 +17,7 @@ use-shallow-effect works exactly like useEffect but performs shallow dependencie
 
 ```tsx
 import { useEffect } from 'react';
-import { useShallowEffect } from '@pattern/hooks';
+import { useShallowEffect } from '@pattern-ui/hooks';
 
 // Will be called on each render
 useEffect(() => {}, [{ a: 1 }]);

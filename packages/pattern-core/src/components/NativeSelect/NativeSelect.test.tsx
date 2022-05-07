@@ -5,20 +5,20 @@ import {
   itSupportsSystemProps,
   itSupportsInputProps,
   itSupportsFocusEvents,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { NativeSelect, NativeSelectProps } from './NativeSelect';
 
 const defaultProps: NativeSelectProps = {
   data: ['test-item-1', 'test-item-2', 'test-item-3'],
 };
 
-describe('@pattern/core/NativeSelect', () => {
+describe('@pattern-ui/core/NativeSelect', () => {
   itSupportsInputProps(NativeSelect, defaultProps, 'NativeSelect');
   itSupportsFocusEvents(NativeSelect, defaultProps, 'select');
   itSupportsSystemProps({
     component: NativeSelect,
     props: defaultProps,
-    displayName: '@pattern/core/NativeSelect',
+    displayName: '@pattern-ui/core/NativeSelect',
     excludeOthers: true,
     refType: HTMLSelectElement,
   });

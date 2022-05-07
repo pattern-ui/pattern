@@ -3,7 +3,7 @@ import { defaultFilter, AutocompleteItem } from '../Autocomplete';
 
 const data = [{ value: 'react' }, { value: 'ng' }, { value: 'svelte' }, { value: 'vue' }];
 
-describe('@pattern/core/Autocomplete/filter-data', () => {
+describe('@pattern-ui/core/Autocomplete/filter-data', () => {
   it('filters data based on value', () => {
     expect(
       filterData({

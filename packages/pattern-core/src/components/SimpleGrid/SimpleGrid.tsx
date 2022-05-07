@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, PatternNumberSize, usePatternDefaultProps } from '@pattern/styles';
+import { DefaultProps, PatternNumberSize, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles, { SimpleGridBreakpoint } from './SimpleGrid.styles';
 
@@ -38,4 +38,4 @@ export const SimpleGrid = forwardRef<HTMLDivElement, SimpleGridProps>(
   }
 );
 
-SimpleGrid.displayName = '@pattern/core/SimpleGrid';
+SimpleGrid.displayName = '@pattern-ui/core/SimpleGrid';

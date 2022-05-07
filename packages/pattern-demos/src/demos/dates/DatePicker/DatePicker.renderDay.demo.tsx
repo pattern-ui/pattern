@@ -1,6 +1,6 @@
 import React from 'react';
-import { DatePicker } from '@pattern/dates';
-import { Indicator } from '@pattern/core';
+import { DatePicker } from '@pattern-ui/dates';
+import { Indicator } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

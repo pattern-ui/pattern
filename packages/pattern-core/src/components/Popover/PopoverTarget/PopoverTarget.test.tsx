@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itThrowsContextError, patchConsoleError, createContextContainer } from '@pattern/tests';
+import { itThrowsContextError, patchConsoleError, createContextContainer } from '@pattern-ui/tests';
 import { PopoverTarget, PopoverTargetProps } from './PopoverTarget';
 import { POPOVER_ERRORS } from '../Popover.errors';
 import { Popover } from '../Popover';
@@ -11,7 +11,7 @@ const defaultProps: PopoverTargetProps = {
 
 const TestContainer = createContextContainer(PopoverTarget, Popover, { opened: true });
 
-describe('@pattern/core/PopoverTarget', () => {
+describe('@pattern-ui/core/PopoverTarget', () => {
   itThrowsContextError(PopoverTarget, defaultProps, POPOVER_ERRORS['popover-context']);
 
   it('throws error if children cannot be processed', () => {
@@ -38,6 +38,6 @@ describe('@pattern/core/PopoverTarget', () => {
   });
 
   it('has correct displayName', () => {
-    expect(PopoverTarget.displayName).toEqual('@pattern/core/PopoverTarget');
+    expect(PopoverTarget.displayName).toEqual('@pattern-ui/core/PopoverTarget');
   });
 });

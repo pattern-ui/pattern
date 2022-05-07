@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, Text, Highlight, usePatternTheme } from '@pattern/core';
+import { Table, Text, Highlight, usePatternTheme } from '@pattern-ui/core';
 import DocsSection from '../../../DocsSection/DocsSection';
 import PROPS_DATA from '../../../../../.docgen/docgen.json';
 

@@ -1,4 +1,4 @@
-import { createStyles, PatternNumberSize, PatternColor, PatternSize } from '@pattern/styles';
+import { createStyles, PatternNumberSize, PatternColor, PatternSize } from '@pattern-ui/styles';
 import { iconSizes } from './Step/Step.styles';
 
 export interface StepperStylesParams {

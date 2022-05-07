@@ -1,7 +1,7 @@
 import { radius } from './radius';
 import { DEFAULT_THEME } from '../../../default-theme';
 
-describe('@pattern/tss/radius', () => {
+describe('@pattern-ui/tss/radius', () => {
   it('returns given radius from theme.radius', () => {
     expect(radius(DEFAULT_THEME)('md')).toBe(DEFAULT_THEME.radius.md);
   });

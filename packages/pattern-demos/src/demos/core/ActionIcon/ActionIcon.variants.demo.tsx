@@ -1,6 +1,6 @@
 import React from 'react';
 import { Settings } from 'tabler-icons-react';
-import { ActionIcon, Group } from '@pattern/core';
+import { ActionIcon, Group } from '@pattern-ui/core';
 
 const icon = <Settings size={16} />;
 

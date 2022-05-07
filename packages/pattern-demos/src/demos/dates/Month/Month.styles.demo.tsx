@@ -1,6 +1,6 @@
 import React from 'react';
-import { Group, usePatternTheme } from '@pattern/core';
-import { Month } from '@pattern/dates';
+import { Group, usePatternTheme } from '@pattern-ui/core';
+import { Month } from '@pattern-ui/dates';
 
 export default function Demo() {
   const theme = usePatternTheme();

@@ -8,7 +8,7 @@ const data = [
   { value: 'lit', label: 'Lit', group: 'Google' },
 ];
 
-describe('@pattern/core/utils/group-options', () => {
+describe('@pattern-ui/core/utils/group-options', () => {
   it('returns data sorted according to the insertion order', () => {
     const sortedData = groupOptions({ data });
     expect(sortedData).toHaveLength(data.length);

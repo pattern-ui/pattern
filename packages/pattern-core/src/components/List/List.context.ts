@@ -1,5 +1,5 @@
 import { createContext, useContext } from 'react';
-import { CSSObject, PatternNumberSize, PatternTheme } from '@pattern/styles';
+import { CSSObject, PatternNumberSize, PatternTheme } from '@pattern-ui/styles';
 import type { ListItemStylesNames } from './ListItem/ListItem';
 
 interface ListContextValue {

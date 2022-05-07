@@ -1,5 +1,5 @@
 import React from 'react';
-import { AspectRatio, Image } from '@pattern/core';
+import { AspectRatio, Image } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

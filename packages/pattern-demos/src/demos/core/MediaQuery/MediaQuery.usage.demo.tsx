@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePatternTheme, MediaQuery, Group, Box, CSSObject } from '@pattern/core';
+import { usePatternTheme, MediaQuery, Group, Box, CSSObject } from '@pattern-ui/core';
 
 export default function Demo() {
   const theme = usePatternTheme();

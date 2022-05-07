@@ -17,7 +17,7 @@ import {
   SpotlightDemos,
   OverlayDemos,
   FormDemos,
-} from '@pattern/demos';
+} from '@pattern-ui/demos';
 
 ## Pattern UI
 
@@ -30,10 +30,10 @@ Pattern UI is free for everyone.
 
 ## Breaking changes
 
-- `@pattern/core` package no longer exports `CONTAINER_SIZES` variable
+- `@pattern-ui/core` package no longer exports `CONTAINER_SIZES` variable
 - [Prism](https://pattern-ui.design/others/prism/) now trims code by default, to disable that set `<Prism trim={false} />`
-- `useForm` hook exported from `@pattern/hooks` package is now deprecated, it will be removed in one of the next releases.
-- [@pattern/eslint-config](https://www.npmjs.com/package/@pattern/eslint-config) was migrated to [eslint-config-pattern](https://www.npmjs.com/package/eslint-config-pattern)
+- `useForm` hook exported from `@pattern-ui/hooks` package is now deprecated, it will be removed in one of the next releases.
+- [@pattern-ui/eslint-config](https://www.npmjs.com/package/@pattern-ui/eslint-config) was migrated to [eslint-config-pattern](https://www.npmjs.com/package/eslint-config-pattern)
 
 ## Renamed props
 
@@ -69,7 +69,7 @@ Some props were renamed to make Pattern components more consistent:
 Most of components now support default props on PatternProvider:
 
 ```tsx
-import { PatternProvider, Button } from '@pattern/core';
+import { PatternProvider, Button } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -100,7 +100,7 @@ Each component that has [Styles API](https://pattern-ui.design/theming/styles-ap
 `ComponentNameStylesParams`, for example, `ButtonStylesParams`. This feature can be used to add more complex context styles that were not possible before:
 
 ```tsx
-import { PatternProvider, ButtonStylesParams } from '@pattern/core';
+import { PatternProvider, ButtonStylesParams } from '@pattern-ui/core';
 
 function Demo() {
   return (
@@ -125,7 +125,7 @@ Nested PatternProviders will now inherit `theme` override, `emotionOptions`, `de
 parent provider if `inherit` prop is set:
 
 ```tsx
-import { PatternProvider, Button } from '@pattern/core';
+import { PatternProvider, Button } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -158,7 +158,7 @@ Pattern theme now includes two new properties: `defaultRadius` and `focusRing`.
 `defaultRadius` property is used to set border-radius on most components by default:
 
 ```tsx
-import { PatternProvider, Button } from '@pattern/core';
+import { PatternProvider, Button } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -177,7 +177,7 @@ With `focusRing` property you can configure how focus ring is displayed:
 - `never` – focus ring is always hidden (not recommended)
 
 ```tsx
-import { PatternProvider, Button } from '@pattern/core';
+import { PatternProvider, Button } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -201,7 +201,7 @@ All components now support setting following props to control padding:
 - `pr` – sets `padding-right` property on root element
 
 ```tsx
-import { Paper, Container } from '@pattern/core';
+import { Paper, Container } from '@pattern-ui/core';
 
 function Demo() {
   return (
@@ -241,10 +241,10 @@ createStyles((theme, params, getRef) => ({
 }));
 ```
 
-## @pattern/form package
+## @pattern-ui/form package
 
-New [@pattern/form package](https://pattern-ui.design/form/use-form/) is an enhanced version of `useForm` hook that was previously exported from
-`@pattern/hooks` package. `@pattern/form` introduces the following features:
+New [@pattern-ui/form package](https://pattern-ui.design/form/use-form/) is an enhanced version of `useForm` hook that was previously exported from
+`@pattern-ui/hooks` package. `@pattern-ui/form` introduces the following features:
 
 - Improved fields validation logic
 - Schema based validation with zod, yup or joi
@@ -252,9 +252,9 @@ New [@pattern/form package](https://pattern-ui.design/form/use-form/) is an enha
 
 <Demo data={FormDemos.usage} />
 
-## @pattern/spotlight package
+## @pattern-ui/spotlight package
 
-[@pattern/spotlight](https://pattern-ui.design/others/spotlight/) is a new package that lets you create
+[@pattern-ui/spotlight](https://pattern-ui.design/others/spotlight/) is a new package that lets you create
 a command center for you application. It can be triggered with keyboard shortcut and programmatically
 from anywhere in you application:
 
@@ -311,7 +311,7 @@ New [BackgroundImage](https://pattern-ui.design/core/image/#backgroundimage-comp
 - [Text](https://pattern-ui.design/core/text/), [Anchor](https://pattern-ui.design/core/anchor/) and [Highlight](https://pattern-ui.design/core/highlight/) components now support `underline` prop
 - [Container](https://pattern-ui.design/core/container/) component now supports sizes configuration with default props on PatternProvider
 - All components now support negative margins for theme values with margin props (`m`, `mx`, `my`, `mt`, etc.): `<Button mx="-xl">Negative margins</Button>`
-- `onCancel` callback in [@pattern/modals](https://pattern-ui.design/others/modals/) is now also called when confirm modal is closed without confirmation
+- `onCancel` callback in [@pattern-ui/modals](https://pattern-ui.design/others/modals/) is now also called when confirm modal is closed without confirmation
 - New [OptionalPortal](https://pattern-ui.design/core/portal/#optionalportal-component) component can be used to switch between rendering within Portal or as a regular child with `withinPortal` prop
 - [Modal](https://pattern-ui.design/core/modal/) and [Drawer](https://pattern-ui.design/core/drawer/) can now be used without [Portal](https://pattern-ui.design/core/portal/)
 - [Title](https://pattern-ui.design/core/title/) component now inherits color from parent element
@@ -332,4 +332,4 @@ New [BackgroundImage](https://pattern-ui.design/core/image/#backgroundimage-comp
 - Add missing right and bottom padding to [AppShell](https://pattern-ui.design/core/app-shell/) component
 - Fix `initialLevel` prop not working in [DateRangePicker](https://pattern-ui.design/dates/date-picker/) component
 - Add correct input mode to [NumberInput](https://pattern-ui.design/core/number-input/) – mobile devices will display correct keyboard now
-- Fix `findDomNode` warning in [@pattern/notifications](https://pattern-ui.design/others/notifications/) while using strict react mode
+- Fix `findDomNode` warning in [@pattern-ui/notifications](https://pattern-ui.design/others/notifications/) while using strict react mode

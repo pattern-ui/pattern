@@ -1,6 +1,6 @@
 import React from 'react';
 import { EnvelopeOpenIcon } from '@modulz/radix-icons';
-import { TagInput } from '@pattern/labs';
+import { TagInput } from '@pattern-ui/labs';
 
 export default function Demo() {
   return (

@@ -6,7 +6,7 @@ export function useNotifications() {
 
   if (!context) {
     throw new Error(
-      '@pattern/notifications: use-notifications hook was called outside of NotificationsProvider context'
+      '@pattern-ui/notifications: use-notifications hook was called outside of NotificationsProvider context'
     );
   }
 

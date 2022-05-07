@@ -1,12 +1,12 @@
 ---
 group: 'pattern-hooks'
-package: '@pattern/hooks'
+package: '@pattern-ui/hooks'
 title: 'use-local-storage'
 category: 'state'
 order: 1
 slug: /hooks/use-local-storage/
 description: 'Use localStorage value as react state, sync state across opened tabs'
-import: "import { useLocalStorage } from '@pattern/hooks';"
+import: "import { useLocalStorage } from '@pattern-ui/hooks';"
 docs: 'hooks/use-local-storage.mdx'
 source: 'pattern-hooks/src/use-local-storage/use-local-storage.ts'
 ---
@@ -17,7 +17,7 @@ use-local-storage allows you to use value from localStorage as react state.
 Hook works exactly the same as useState, but also writes value to local storage:
 
 ```tsx
-import { useLocalStorage } from '@pattern/hooks';
+import { useLocalStorage } from '@pattern-ui/hooks';
 
 // hook will read value from localStorage.getItem('color-scheme')
 // if localStorage is not available or value at given key does not exist
@@ -36,8 +36,8 @@ setValue((current) => (current === 'dark' ? 'light' : 'dark'));
 Pattern docs website uses this hook to store color scheme information:
 
 ```tsx
-import { useLocalStorage } from '@pattern/hooks';
-import { ActionIcon, ColorScheme } from '@pattern/core';
+import { useLocalStorage } from '@pattern-ui/hooks';
+import { ActionIcon, ColorScheme } from '@pattern-ui/core';
 import { Sun, MoonStars } from 'tabler-icons-react';
 
 function ColorSchemeToggle() {

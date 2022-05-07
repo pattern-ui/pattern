@@ -6,7 +6,7 @@ order: 3
 search: 'ColorSchemeProvider, usePatternColorScheme'
 ---
 
-import { ThemeDemos } from '@pattern/demos';
+import { ThemeDemos } from '@pattern-ui/demos';
 import { ColorsGroup } from '../../components/ThemeColors/ColorsGroup.tsx';
 
 # Dark theme
@@ -15,7 +15,7 @@ All pattern components support dark color scheme natively without any additional
 To use dark color scheme, wrap your application in PatternProvider and specify `colorScheme`:
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -35,7 +35,7 @@ Pattern uses `theme.colors.dark` values to style components with dark color sche
 You can customize these values the same way as other colors:
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -73,7 +73,7 @@ function App() {
 You can create these styles on your own or add them by setting `withGlobalStyles` prop on [PatternProvider](/theming/pattern-provider/), which includes them by default:
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 function Demo() {
   return (
@@ -91,7 +91,7 @@ help you set up color scheme context:
 
 ```tsx
 import { useState } from 'react';
-import { PatternProvider, ColorSchemeProvider, ColorScheme } from '@pattern/core';
+import { PatternProvider, ColorSchemeProvider, ColorScheme } from '@pattern-ui/core';
 
 function App() {
   const [colorScheme, setColorScheme] = useState<ColorScheme>('light');
@@ -119,8 +119,8 @@ hook to store theme state in localStorage and sync it across all opened tabs and
 to add `Ctrl/⌘ + J` keyboard shortcut for theme toggle:
 
 ```tsx
-import { PatternProvider, ColorSchemeProvider, ColorScheme } from '@pattern/core';
-import { useHotkeys, useLocalStorage } from '@pattern/hooks';
+import { PatternProvider, ColorSchemeProvider, ColorScheme } from '@pattern-ui/core';
+import { useHotkeys, useLocalStorage } from '@pattern-ui/hooks';
 
 function App() {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
@@ -159,8 +159,8 @@ hook and set is as default value:
 
 ```tsx
 import { useState } from 'react';
-import { PatternProvider, ColorSchemeProvider, ColorScheme } from '@pattern/core';
-import { useColorScheme } from '@pattern/hooks';
+import { PatternProvider, ColorSchemeProvider, ColorScheme } from '@pattern-ui/core';
+import { useColorScheme } from '@pattern-ui/hooks';
 
 function App() {
   // hook will return either 'dark' or 'light' on client
@@ -193,7 +193,7 @@ import { useState } from 'react';
 import { AppProps } from 'next/app';
 // install cookies-next package to manage cookies
 import { getCookie, setCookies } from 'cookies-next';
-import { PatternProvider, ColorScheme, ColorSchemeProvider } from '@pattern/core';
+import { PatternProvider, ColorScheme, ColorSchemeProvider } from '@pattern-ui/core';
 
 export default function App(props: AppProps & { colorScheme: ColorScheme }) {
   const { Component, pageProps } = props;

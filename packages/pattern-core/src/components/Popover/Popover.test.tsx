@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { itRendersChildren, checkAccessibility, wait } from '@pattern/tests';
+import { itRendersChildren, checkAccessibility, wait } from '@pattern-ui/tests';
 import { Popover, PopoverProps } from './Popover';
 import { PopoverDropdown } from './PopoverDropdown/PopoverDropdown';
 import { PopoverTarget } from './PopoverTarget/PopoverTarget';
@@ -28,7 +28,7 @@ function TestContainer(props: Partial<PopoverProps>) {
   );
 }
 
-describe('@pattern/core/component', () => {
+describe('@pattern-ui/core/component', () => {
   checkAccessibility([<TestContainer opened />, <TestContainer opened={false} />]);
   itRendersChildren(Popover, defaultProps);
 

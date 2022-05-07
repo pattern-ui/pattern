@@ -7,7 +7,7 @@ async function writeVersionToPackageJson(filePath: string, version: string) {
 
   if (current.peerDependencies) {
     Object.keys(current.peerDependencies).forEach((packageName) => {
-      if (packageName.includes('@pattern/')) {
+      if (packageName.includes('@pattern-ui/')) {
         current.peerDependencies[packageName] = version;
       }
     });
@@ -15,7 +15,7 @@ async function writeVersionToPackageJson(filePath: string, version: string) {
 
   if (current.dependencies) {
     Object.keys(current.dependencies).forEach((packageName) => {
-      if (packageName.includes('@pattern/')) {
+      if (packageName.includes('@pattern-ui/')) {
         current.dependencies[packageName] = version;
       }
     });

@@ -1,7 +1,7 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 import { useIdle } from './use-idle';
 
-describe('@pattern/hooks/use-idle', () => {
+describe('@pattern-ui/hooks/use-idle', () => {
   beforeEach(() => {
     jest.useFakeTimers();
   });

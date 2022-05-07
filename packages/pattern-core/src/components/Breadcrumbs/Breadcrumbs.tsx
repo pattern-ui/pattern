@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, Selectors, usePatternDefaultProps } from '@pattern/styles';
+import { DefaultProps, Selectors, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Text } from '../Text';
 import { Box } from '../Box';
 import useStyles from './Breadcrumbs.styles';
@@ -52,4 +52,4 @@ export const Breadcrumbs = forwardRef<HTMLDivElement, BreadcrumbsProps>(
   }
 );
 
-Breadcrumbs.displayName = '@pattern/core/Breadcrumbs';
+Breadcrumbs.displayName = '@pattern-ui/core/Breadcrumbs';

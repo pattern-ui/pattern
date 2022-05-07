@@ -3,7 +3,7 @@ import {
   createContextContainer,
   itRendersChildren,
   itThrowsContextError,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { TabsList, TabsListProps } from './TabsList';
 import { TabsProvider } from '../TabsProvider';
 import { TABS_ERRORS } from '../Tabs.errors';
@@ -14,13 +14,13 @@ const defaultProps: TabsListProps = {
 
 const TestContainer = createContextContainer(TabsList, TabsProvider);
 
-describe('@pattern/core/TabsList', () => {
+describe('@pattern-ui/core/TabsList', () => {
   itThrowsContextError(TabsList, defaultProps, TABS_ERRORS['tabs-context']);
   itRendersChildren(TestContainer, defaultProps);
   itSupportsSystemProps({
     component: TestContainer,
     props: defaultProps,
     refType: HTMLDivElement,
-    displayName: '@pattern/core/TabsList',
+    displayName: '@pattern-ui/core/TabsList',
   });
 });

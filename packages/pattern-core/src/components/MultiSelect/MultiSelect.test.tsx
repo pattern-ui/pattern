@@ -8,7 +8,7 @@ import {
   itConnectsLabelAndInput,
   itSupportsFocusEvents,
   itSupportsInputWrapperProps,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { MultiSelect, MultiSelectProps } from './MultiSelect';
 
 const defaultProps: MultiSelectProps = {
@@ -20,7 +20,7 @@ const defaultProps: MultiSelectProps = {
   id: 'test-multi-select',
 };
 
-describe('@pattern/core/MultiSelect', () => {
+describe('@pattern-ui/core/MultiSelect', () => {
   checkAccessibility([<MultiSelect {...defaultProps} initiallyOpened />]);
   itSupportsFocusEvents(MultiSelect, defaultProps, '#test-multi-select');
   itSupportsInputIcon(MultiSelect, defaultProps);
@@ -31,7 +31,7 @@ describe('@pattern/core/MultiSelect', () => {
   itSupportsSystemProps({
     component: MultiSelect,
     props: defaultProps,
-    displayName: '@pattern/core/MultiSelect',
+    displayName: '@pattern-ui/core/MultiSelect',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

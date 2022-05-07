@@ -1,5 +1,5 @@
 import React from 'react';
-import { Anchor } from '@pattern/core';
+import { Anchor } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

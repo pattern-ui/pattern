@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { ScrollArea, Button, Group } from '@pattern/core';
+import { ScrollArea, Button, Group } from '@pattern-ui/core';
 import { Content } from './_content';
 
 export default function Demo() {

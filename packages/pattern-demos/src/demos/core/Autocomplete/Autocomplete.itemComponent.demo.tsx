@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { Group, Avatar, Text, PatternColor, SelectItemProps, Autocomplete } from '@pattern/core';
+import { Group, Avatar, Text, PatternColor, SelectItemProps, Autocomplete } from '@pattern-ui/core';
 
 const charactersList = [
   {

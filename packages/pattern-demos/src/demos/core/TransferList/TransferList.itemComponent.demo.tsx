@@ -8,7 +8,7 @@ import {
   TransferListData,
   TransferListItemComponent,
   TransferListItemComponentProps,
-} from '@pattern/core';
+} from '@pattern-ui/core';
 import { charactersList } from './_mockdata';
 
 const initialValues: TransferListData = [

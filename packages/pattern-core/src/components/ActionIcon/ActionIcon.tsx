@@ -7,7 +7,7 @@ import {
   PolymorphicRef,
   Selectors,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles, { sizes, ActionIconVariant } from './ActionIcon.styles';
 import { Loader, LoaderProps } from '../Loader';
@@ -94,4 +94,4 @@ export const ActionIcon: ActionIconComponent = forwardRef(
   }
 ) as any;
 
-ActionIcon.displayName = '@pattern/core/ActionIcon';
+ActionIcon.displayName = '@pattern-ui/core/ActionIcon';

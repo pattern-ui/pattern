@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStyles, Menu, Group } from '@pattern/core';
+import { createStyles, Menu, Group } from '@pattern-ui/core';
 import { menuItems } from './_menu-items';
 
 const useStyles = createStyles((theme) => ({

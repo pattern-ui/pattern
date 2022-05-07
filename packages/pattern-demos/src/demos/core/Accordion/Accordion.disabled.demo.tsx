@@ -1,4 +1,4 @@
-import { Accordion, Box } from '@pattern/core';
+import { Accordion, Box } from '@pattern-ui/core';
 import React from 'react';
 import { baseAccordionMockdata } from './_mockdata';
 

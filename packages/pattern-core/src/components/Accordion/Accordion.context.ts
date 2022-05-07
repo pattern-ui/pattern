@@ -1,5 +1,5 @@
-import { PatternNumberSize } from '@pattern/styles';
-import { createSafeContext } from '@pattern/utils';
+import { PatternNumberSize } from '@pattern-ui/styles';
+import { createSafeContext } from '@pattern-ui/utils';
 import { ACCORDION_ERRORS } from './Accordion.errors';
 import {
   AccordionChevronPosition,

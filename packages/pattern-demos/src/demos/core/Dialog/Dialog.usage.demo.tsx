@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Dialog, Group, Button, TextInput, Text } from '@pattern/core';
+import { Dialog, Group, Button, TextInput, Text } from '@pattern-ui/core';
 
 export default function Demo() {
   const [opened, setOpened] = useState(false);

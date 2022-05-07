@@ -1,5 +1,5 @@
 {
-  "name": "@pattern/hooks",
+  "name": "@pattern-ui/hooks",
   "version": "1.0.0",
   "main": "cjs/index.js",
   "module": "esm/index.js",
@@ -11,7 +11,7 @@
   "repository": {
     "url": "https://github.com/pattern-ui/pattern.git",
     "type": "git",
-    "directory": "src/pattern-hooks"
+    "directory": "packages/pattern-hooks"
   },
   "keywords": [
     "react",

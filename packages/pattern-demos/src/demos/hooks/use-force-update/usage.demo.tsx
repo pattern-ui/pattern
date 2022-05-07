@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, Text, Group } from '@pattern/core';
-import { useForceUpdate, randomId } from '@pattern/hooks';
+import { Button, Text, Group } from '@pattern-ui/core';
+import { useForceUpdate, randomId } from '@pattern-ui/hooks';
 
 export default function Demo() {
   const forceUpdate = useForceUpdate();

@@ -1,7 +1,7 @@
 import React from 'react';
-import { useBooleanToggle } from '@pattern/hooks';
+import { useBooleanToggle } from '@pattern-ui/hooks';
 import { storiesOf } from '@storybook/react';
-import { PATTERN_SIZES, PatternProvider } from '@pattern/styles';
+import { PATTERN_SIZES, PatternProvider } from '@pattern-ui/styles';
 import { MagnifyingGlassIcon } from '@modulz/radix-icons';
 import Textarea from 'react-textarea-autosize';
 import { ActionIcon } from '../ActionIcon/ActionIcon';

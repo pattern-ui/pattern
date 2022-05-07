@@ -6,7 +6,7 @@ order: 2
 search: 'cx function, media queries, responsive styles, keyframes'
 ---
 
-import { TabsDemos, CreateStylesDemos } from '@pattern/demos';
+import { TabsDemos, CreateStylesDemos } from '@pattern-ui/demos';
 
 # createStyles
 
@@ -76,20 +76,20 @@ the same way as with `createStyles`:
 
 <Demo data={TabsDemos.stylesApi} />
 
-## Using createStyles without @pattern/core
+## Using createStyles without @pattern-ui/core
 
 You can use `createStyles` and `PatternProvider` without any other Pattern packages:
 
 ```bash
-yarn add @pattern/styles
+yarn add @pattern-ui/styles
 
-npm install @pattern/styles
+npm install @pattern-ui/styles
 ```
 
-After installation you can import `createStyles` and other function from `@pattern/styles` instead of `@pattern/core` and use it separately:
+After installation you can import `createStyles` and other function from `@pattern-ui/styles` instead of `@pattern-ui/core` and use it separately:
 
 ```tsx
-import { createStyles, PatternProvider, usePatternTheme } from '@pattern/styles';
+import { createStyles, PatternProvider, usePatternTheme } from '@pattern-ui/styles';
 ```
 
 ## Can I use other css-in-js libraries or SCSS with Pattern?

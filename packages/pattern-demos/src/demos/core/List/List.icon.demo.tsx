@@ -1,6 +1,6 @@
 import React from 'react';
 import { CircleCheck, CircleDashed } from 'tabler-icons-react';
-import { ThemeIcon, List } from '@pattern/core';
+import { ThemeIcon, List } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

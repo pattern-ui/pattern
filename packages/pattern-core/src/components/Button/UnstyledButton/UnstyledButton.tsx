@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, PolymorphicComponentProps, PolymorphicRef } from '@pattern/styles';
+import { DefaultProps, PolymorphicComponentProps, PolymorphicRef } from '@pattern-ui/styles';
 import { Box } from '../../Box';
 import useStyles from './UnstyledButton.styles';
 
@@ -31,4 +31,4 @@ export const UnstyledButton: UnstyledButtonComponent = forwardRef(
   }
 ) as any;
 
-UnstyledButton.displayName = '@pattern/core/UnstyledButton';
+UnstyledButton.displayName = '@pattern-ui/core/UnstyledButton';

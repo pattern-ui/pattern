@@ -1,6 +1,6 @@
 import { cover } from './cover';
 
-describe('@pattern/styles/cover', () => {
+describe('@pattern-ui/styles/cover', () => {
   it('returns correct styles', () => {
     expect(cover(10)).toStrictEqual({
       position: 'absolute',

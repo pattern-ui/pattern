@@ -4,8 +4,8 @@ import {
   PatternNumberSize,
   Selectors,
   usePatternDefaultProps,
-} from '@pattern/styles';
-import { useDidUpdate } from '@pattern/hooks';
+} from '@pattern-ui/styles';
+import { useDidUpdate } from '@pattern-ui/hooks';
 import { Text } from '../Text';
 import { Box } from '../Box';
 import { ImageIcon } from './ImageIcon';
@@ -123,4 +123,4 @@ export const Image = forwardRef<HTMLDivElement, ImageProps>((props: ImageProps, 
   );
 });
 
-Image.displayName = '@pattern/core/Image';
+Image.displayName = '@pattern-ui/core/Image';

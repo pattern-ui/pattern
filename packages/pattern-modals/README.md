@@ -8,10 +8,10 @@ Manage modals state
 
 ```sh
 # With yarn
-yarn add @pattern/hooks @pattern/core @pattern/modals
+yarn add @pattern-ui/hooks @pattern-ui/core @pattern-ui/modals
 
 # With npm
-npm install @pattern/hooks @pattern/core @pattern/modals
+npm install @pattern-ui/hooks @pattern-ui/core @pattern-ui/modals
 ```
 
 ## License

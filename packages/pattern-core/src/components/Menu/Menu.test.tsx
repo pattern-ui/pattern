@@ -7,7 +7,7 @@ import {
   itSupportsFocusEvents,
   renderWithAct,
   actAsync,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { Divider } from '../Divider';
 import { MenuItem } from './MenuItem/MenuItem';
 import { MenuLabel } from './MenuLabel/MenuLabel';
@@ -26,7 +26,7 @@ const defaultProps: MenuProps = {
   ],
 };
 
-describe('@pattern/core/Menu', () => {
+describe('@pattern-ui/core/Menu', () => {
   checkAccessibility([
     <Menu opened {...defaultProps} />,
     <Menu opened={false} {...defaultProps} />,
@@ -35,7 +35,7 @@ describe('@pattern/core/Menu', () => {
   itSupportsSystemProps({
     component: Menu,
     props: defaultProps,
-    displayName: '@pattern/core/Menu',
+    displayName: '@pattern-ui/core/Menu',
     refType: HTMLButtonElement,
   });
 

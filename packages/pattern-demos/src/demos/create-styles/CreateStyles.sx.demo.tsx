@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Group } from '@pattern/core';
+import { Button, Group } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

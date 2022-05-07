@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Accordion
 order: 1
 slug: /core/accordion/
 category: 'data-display'
 description: 'Divide content into collapsible sections'
 props: ['Accordion', 'AccordionControl', 'AccordionItem', 'AccordionPanel']
-import: "import { Accordion } from '@pattern/core';"
+import: "import { Accordion } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Accordion/Accordion.tsx'
 docs: 'core/Accordion.mdx'
 styles: ['Accordion']
 ---
 
-import { AccordionDemos } from '@pattern/demos';
+import { AccordionDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -47,7 +47,7 @@ When `multiple={false}`, set `value` as string:
 
 ```tsx
 import { useState } from 'react';
-import { Accordion } from '@pattern/core';
+import { Accordion } from '@pattern-ui/core';
 
 function Demo() {
   const [value, setValue] = useState<string | null>(null);
@@ -72,7 +72,7 @@ When `multiple={true}`, set `value` as an array of stings:
 
 ```tsx
 import { useState } from 'react';
-import { Accordion } from '@pattern/core';
+import { Accordion } from '@pattern-ui/core';
 
 function Demo() {
   const [value, setValue] = useState<string[]>([]);
@@ -128,7 +128,7 @@ Accordion elements have `data-` attributes that can be used with [Styles API](/t
 - `data-rotate` attribute is added to chevron icon when icon should rotate (controlled by `disableChevronRotation` and expanded state of associated panel)
 
 ```tsx
-import { Accordion } from '@pattern/core';
+import { Accordion } from '@pattern-ui/core';
 
 function Demo() {
   return (
@@ -161,11 +161,11 @@ function Demo() {
 
 ## TypeScript
 
-`AccordionProps` type exported from `@pattern/core` is a generic, it accepts boolean type that
+`AccordionProps` type exported from `@pattern-ui/core` is a generic, it accepts boolean type that
 describes `multiple` state:
 
 ```tsx
-import type { AccordionProps } from '@pattern/core';
+import type { AccordionProps } from '@pattern-ui/core';
 
 type MultipleAccordionProps = AccordionProps<true>;
 type DefaultAccordionProps = AccordionProps<false>;
@@ -181,7 +181,7 @@ Set `order` on `Accordion` component to wrap accordion controls with h2-h6 headi
 The following example will wrap controls with h3 tag:
 
 ```tsx
-import { Accordion } from '@pattern/core';
+import { Accordion } from '@pattern-ui/core';
 
 function Demo() {
   return <Accordion order={3}>{/* ...items */}</Accordion>;

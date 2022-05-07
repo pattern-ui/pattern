@@ -1,4 +1,4 @@
-import { createErrors } from '@pattern/utils';
+import { createErrors } from '@pattern-ui/utils';
 
 export const ACCORDION_ERRORS = createErrors({
   'accordion-context': 'Accordion component was not found in the tree',

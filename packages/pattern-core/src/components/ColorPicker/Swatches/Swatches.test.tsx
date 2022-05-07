@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { DEFAULT_THEME } from '@pattern/styles';
+import { DEFAULT_THEME } from '@pattern-ui/styles';
 import { Swatches, SwatchesProps } from './Swatches';
 import { parseColor } from '../converters';
 
@@ -10,7 +10,7 @@ const defaultProps: SwatchesProps = {
   onSelect: () => {},
 };
 
-describe('@pattern/core/Swatches', () => {
+describe('@pattern-ui/core/Swatches', () => {
   it('calls onSelect when color is clicked', () => {
     const spy = jest.fn();
     render(<Swatches {...defaultProps} onSelect={spy} />);
@@ -26,6 +26,6 @@ describe('@pattern/core/Swatches', () => {
   });
 
   it('has correct displayName', () => {
-    expect(Swatches.displayName).toStrictEqual('@pattern/core/Swatches');
+    expect(Swatches.displayName).toStrictEqual('@pattern-ui/core/Swatches');
   });
 });

@@ -7,14 +7,14 @@ import {
   itConnectsLabelAndInput,
   itSupportsWrapperProps,
   itSupportsFocusEvents,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { Switch, SwitchProps } from './Switch';
 
 const defaultProps: SwitchProps = {
   label: 'test-label',
 };
 
-describe('@pattern/core/Switch', () => {
+describe('@pattern-ui/core/Switch', () => {
   checkAccessibility([<Switch aria-label="Switch without label" />, <Switch label="With label" />]);
   itHandlesBooleanState(Switch, defaultProps);
   itConnectsLabelAndInput(Switch, defaultProps);
@@ -23,7 +23,7 @@ describe('@pattern/core/Switch', () => {
   itSupportsSystemProps({
     component: Switch,
     props: defaultProps,
-    displayName: '@pattern/core/Switch',
+    displayName: '@pattern-ui/core/Switch',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

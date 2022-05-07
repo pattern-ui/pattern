@@ -1,5 +1,5 @@
 import React from 'react';
-import { Kbd, Table, Code } from '@pattern/core';
+import { Kbd, Table, Code } from '@pattern-ui/core';
 
 interface KeyboardEventsTableProps {
   data: { key: string; description: string; condition: string }[];

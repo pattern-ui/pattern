@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 import React, { useState, forwardRef } from 'react';
-import { usePatternDefaultProps } from '@pattern/core';
+import { usePatternDefaultProps } from '@pattern-ui/core';
 import { isSameDate } from '../../utils';
 import { DayModifiers } from '../Month';
 import { CalendarBase, CalendarBaseProps } from '../CalendarBase/CalendarBase';
@@ -125,4 +125,4 @@ export const RangeCalendar = forwardRef<HTMLDivElement, RangeCalendarProps>(
   }
 );
 
-RangeCalendar.displayName = '@pattern/dates/RangeCalendar';
+RangeCalendar.displayName = '@pattern-ui/dates/RangeCalendar';

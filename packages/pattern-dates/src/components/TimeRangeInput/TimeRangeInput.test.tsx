@@ -7,7 +7,7 @@ import {
   itConnectsLabelAndInput,
   itSupportsFocusEvents,
   itSupportsInputWrapperProps,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { TimeRangeInput, TimeRangeInputProps } from './TimeRangeInput';
 
 const defaultProps: TimeRangeInputProps = {
@@ -17,7 +17,7 @@ const defaultProps: TimeRangeInputProps = {
   secondsLabel: 'test-seconds',
 };
 
-describe('@pattern/dates/TimeRangeInput', () => {
+describe('@pattern-ui/dates/TimeRangeInput', () => {
   itSupportsInputRightSection(TimeRangeInput, defaultProps);
   itSupportsInputWrapperProps(TimeRangeInput, defaultProps, 'TimeRangeInput');
   itSupportsInputIcon(TimeRangeInput, defaultProps);
@@ -26,7 +26,7 @@ describe('@pattern/dates/TimeRangeInput', () => {
   itSupportsSystemProps({
     component: TimeRangeInput,
     props: defaultProps,
-    displayName: '@pattern/dates/TimeRangeInput',
+    displayName: '@pattern-ui/dates/TimeRangeInput',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

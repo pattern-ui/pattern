@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility, itSupportsSystemProps } from '@pattern/tests';
+import { checkAccessibility, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Drawer, DrawerProps } from './Drawer';
 
 const defaultProps: DrawerProps = {
@@ -10,7 +10,7 @@ const defaultProps: DrawerProps = {
   withinPortal: false,
 };
 
-describe('@pattern/core/Drawer', () => {
+describe('@pattern-ui/core/Drawer', () => {
   itSupportsSystemProps({ component: Drawer, props: defaultProps });
   checkAccessibility([
     <Drawer
@@ -47,6 +47,6 @@ describe('@pattern/core/Drawer', () => {
   });
 
   it('has correct displayName', () => {
-    expect(Drawer.displayName).toStrictEqual('@pattern/core/Drawer');
+    expect(Drawer.displayName).toStrictEqual('@pattern-ui/core/Drawer');
   });
 });

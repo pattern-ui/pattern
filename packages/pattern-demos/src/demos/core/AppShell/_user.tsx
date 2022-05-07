@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronRight, ChevronLeft } from 'tabler-icons-react';
-import { UnstyledButton, Group, Avatar, Text, Box, usePatternTheme } from '@pattern/core';
+import { UnstyledButton, Group, Avatar, Text, Box, usePatternTheme } from '@pattern-ui/core';
 
 export function User() {
   const theme = usePatternTheme();

@@ -7,9 +7,9 @@ release: https://github.com/pattern-ui/pattern/releases/tag/3.4.0
 date: 'December 13th, 2021'
 ---
 
-import { SelectDemos, HighlightDemos, CardDemos, CalendarDemos, HooksDemos } from '@pattern/demos';
+import { SelectDemos, HighlightDemos, CardDemos, CalendarDemos, HooksDemos } from '@pattern-ui/demos';
 
-## @pattern/dates improvements
+## @pattern-ui/dates improvements
 
 [Calendar](https://pattern-ui.design/dates/calendar/) component was rebuilt to improved date picking experience.
 Now user can change level by clicking label between next and previous controls:
@@ -19,7 +19,7 @@ Now user can change level by clicking label between next and previous controls:
 This change is applied to all components that use Calendar: [DatePicker](https://pattern-ui.design/dates/date-picker/), [DateRangePicker](https://pattern-ui.design/dates/date-picker/) and [RangeCalendar](https://pattern-ui.design/dates/calendar/).
 There are several **breaking changes** associated with this improvement:
 
-- All @pattern/dates components that use Calendar no longer support `withSelect` and `yearsRange` props
+- All @pattern-ui/dates components that use Calendar no longer support `withSelect` and `yearsRange` props
 - Styles API names were changed to include new calendar header
 
 ## New hooks
@@ -31,8 +31,8 @@ There are several **breaking changes** associated with this improvement:
 [use-input-state](https://pattern-ui.design/hooks/use-input-state/) hook lets you handle state of native inputs (with event in `onChange` handler) and custom inputs (with value in `onChange` handler):
 
 ```tsx
-import { useInputState } from '@pattern/hooks';
-import { TextInput, NumberInput } from '@pattern/core';
+import { useInputState } from '@pattern-ui/hooks';
+import { TextInput, NumberInput } from '@pattern-ui/core';
 
 function Demo() {
   const [stringValue, setStringValue] = useInputState('');

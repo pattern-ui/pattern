@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, Container, Divider, createStyles, PatternProvider } from '@pattern/core';
-import * as StylesAPI from '@pattern/styles-api';
+import { Text, Container, Divider, createStyles, PatternProvider } from '@pattern-ui/core';
+import * as StylesAPI from '@pattern-ui/styles-api';
 import { generateBorderStyles } from '../generate-border-styles';
 
 interface SectionProps {

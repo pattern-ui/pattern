@@ -6,7 +6,7 @@ import {
   useUuid,
   useMergedRef,
   useIsomorphicEffect,
-} from '@pattern/hooks';
+} from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternNumberSize,
@@ -14,7 +14,7 @@ import {
   PatternColor,
   Selectors,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles, { WRAPPER_PADDING } from './SegmentedControl.styles';
 
@@ -219,4 +219,4 @@ export const SegmentedControl = forwardRef<HTMLDivElement, SegmentedControlProps
   );
 });
 
-SegmentedControl.displayName = '@pattern/core/SegmentedControl';
+SegmentedControl.displayName = '@pattern-ui/core/SegmentedControl';

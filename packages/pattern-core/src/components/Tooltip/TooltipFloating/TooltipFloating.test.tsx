@@ -1,5 +1,5 @@
 import React from 'react';
-import { itSupportsSystemProps, checkAccessibility, patchConsoleError } from '@pattern/tests';
+import { itSupportsSystemProps, checkAccessibility, patchConsoleError } from '@pattern-ui/tests';
 import { render } from '@testing-library/react';
 import { TooltipFloating, TooltipFloatingProps } from './TooltipFloating';
 import { TOOLTIP_ERRORS } from '../Tooltip.errors';
@@ -10,12 +10,12 @@ const defaultProps: TooltipFloatingProps = {
   children: <button type="button">test-target</button>,
 };
 
-describe('@pattern/core/Tooltip', () => {
+describe('@pattern-ui/core/Tooltip', () => {
   checkAccessibility([<TooltipFloating {...defaultProps} />]);
   itSupportsSystemProps({
     component: TooltipFloating,
     props: defaultProps,
-    displayName: '@pattern/core/TooltipFloating',
+    displayName: '@pattern-ui/core/TooltipFloating',
     name: 'TooltipFloating',
   });
 

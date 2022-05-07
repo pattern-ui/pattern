@@ -1,5 +1,5 @@
 import React from 'react';
-import { Group, GroupProps, Button } from '@pattern/core';
+import { Group, GroupProps, Button } from '@pattern-ui/core';
 
 function Wrapper(props: GroupProps) {
   return (
@@ -12,7 +12,7 @@ function Wrapper(props: GroupProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Group, Button } from '@pattern/core';
+import { Group, Button } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

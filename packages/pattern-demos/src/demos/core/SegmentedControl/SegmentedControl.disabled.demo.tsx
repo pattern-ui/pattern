@@ -1,5 +1,5 @@
 import React from 'react';
-import { SegmentedControl, Stack, Text } from '@pattern/core';
+import { SegmentedControl, Stack, Text } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

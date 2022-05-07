@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, forwardRef } from 'react';
-import { useMergedRef, assignRef, clamp, useOs } from '@pattern/hooks';
-import { DefaultProps, Selectors, usePatternDefaultProps } from '@pattern/styles';
+import { useMergedRef, assignRef, clamp, useOs } from '@pattern-ui/hooks';
+import { DefaultProps, Selectors, usePatternDefaultProps } from '@pattern-ui/styles';
 import { getInputMode } from '../../utils';
 import { TextInput } from '../TextInput/TextInput';
 import { InputStylesNames } from '../Input/Input';
@@ -378,4 +378,4 @@ export const NumberInput = forwardRef<HTMLInputElement, NumberInputProps>(
   }
 );
 
-NumberInput.displayName = '@pattern/core/NumberInput';
+NumberInput.displayName = '@pattern-ui/core/NumberInput';

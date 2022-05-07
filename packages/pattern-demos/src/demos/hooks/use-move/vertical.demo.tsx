@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { usePatternTheme, Group, Text } from '@pattern/core';
-import { useMove } from '@pattern/hooks';
+import { usePatternTheme, Group, Text } from '@pattern-ui/core';
+import { useMove } from '@pattern-ui/hooks';
 
 export default function Demo() {
   const theme = usePatternTheme();

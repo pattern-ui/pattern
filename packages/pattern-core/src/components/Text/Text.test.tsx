@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Text, TextProps } from './Text';
 
 const defaultProps: TextProps<'div'> = {
@@ -12,13 +12,13 @@ const expectStyle = (props: TextProps<'div'>, style: Record<string, any>) => {
   expect(screen.getByText('test-text')).toHaveStyle(style);
 };
 
-describe('@pattern/core/Text', () => {
+describe('@pattern-ui/core/Text', () => {
   itRendersChildren(Text, defaultProps);
   itIsPolymorphic(Text, defaultProps);
   itSupportsSystemProps({
     component: Text,
     props: defaultProps,
-    displayName: '@pattern/core/Text',
+    displayName: '@pattern-ui/core/Text',
     refType: HTMLDivElement,
   });
 

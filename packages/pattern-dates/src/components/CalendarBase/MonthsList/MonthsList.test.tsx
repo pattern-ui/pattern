@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility } from '@pattern/tests';
+import { checkAccessibility } from '@pattern-ui/tests';
 import { MonthsList, MonthsListProps } from './MonthsList';
 
 const defaultProps: MonthsListProps = {
@@ -17,7 +17,7 @@ const defaultProps: MonthsListProps = {
   previousMonthLabel: 'test-previous-month',
 };
 
-describe('@pattern/dates/MonthsList', () => {
+describe('@pattern-ui/dates/MonthsList', () => {
   checkAccessibility([
     <MonthsList {...defaultProps} amountOfMonths={1} />,
     <MonthsList {...defaultProps} amountOfMonths={2} />,
@@ -58,6 +58,6 @@ describe('@pattern/dates/MonthsList', () => {
   });
 
   it('has correct displayName', () => {
-    expect(MonthsList.displayName).toStrictEqual('@pattern/dates/MonthsList');
+    expect(MonthsList.displayName).toStrictEqual('@pattern-ui/dates/MonthsList');
   });
 });

@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
-import { Selectors, DefaultProps, useContextStylesApi } from '@pattern/styles';
-import { packSx } from '@pattern/utils';
+import { Selectors, DefaultProps, useContextStylesApi } from '@pattern-ui/styles';
+import { packSx } from '@pattern-ui/utils';
 import { Box } from '../../Box';
 import { useTabsContext } from '../Tabs.context';
 import useStyles from './TabsPanel.styles';
@@ -46,4 +46,4 @@ export const TabsPanel = forwardRef<HTMLDivElement, TabsPanelProps>(
   }
 );
 
-TabsPanel.displayName = '@pattern/core/TabsPanel';
+TabsPanel.displayName = '@pattern-ui/core/TabsPanel';

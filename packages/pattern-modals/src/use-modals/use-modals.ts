@@ -6,7 +6,7 @@ export function useModals() {
 
   if (!ctx) {
     throw new Error(
-      '[@pattern/modals] useModals hook was called outside of context, wrap your app with ModalsProvider component'
+      '[@pattern-ui/modals] useModals hook was called outside of context, wrap your app with ModalsProvider component'
     );
   }
 

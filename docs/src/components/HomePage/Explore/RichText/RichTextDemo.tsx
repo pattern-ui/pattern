@@ -1,6 +1,6 @@
 import React from 'react';
-import { usePatternTheme } from '@pattern/core';
-import { RichTextEditorDemos } from '@pattern/demos';
+import { usePatternTheme } from '@pattern-ui/core';
+import { RichTextEditorDemos } from '@pattern-ui/demos';
 
 export function RichTextDemo() {
   const theme = usePatternTheme();

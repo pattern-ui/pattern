@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tooltip, TooltipProps, Group, Button } from '@pattern/core';
+import { Tooltip, TooltipProps, Group, Button } from '@pattern-ui/core';
 import { FLOATING_POSITION_DATA } from '../../../shared/floating-position-data';
 
 const Wrapper = (props: TooltipProps) => (
@@ -15,7 +15,7 @@ const Wrapper = (props: TooltipProps) => (
 );
 
 const codeTemplate = (props: string) => `
-import { Tooltip, Button } from '@pattern/core';
+import { Tooltip, Button } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

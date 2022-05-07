@@ -5,7 +5,7 @@ import {
   Selectors,
   PatternNumberSize,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Text } from '../Text';
 import { Loader } from '../Loader';
 import { CloseButton } from '../ActionIcon';
@@ -106,4 +106,4 @@ export const Notification = forwardRef<HTMLDivElement, NotificationProps>(
   }
 );
 
-Notification.displayName = '@pattern/core/Notification';
+Notification.displayName = '@pattern-ui/core/Notification';

@@ -1,6 +1,6 @@
 import { lowerFirst } from './lower-first';
 
-describe('@pattern/hooks/lower-first', () => {
+describe('@pattern-ui/hooks/lower-first', () => {
   it('converts first letter to lower case', () => {
     expect(lowerFirst('Hello')).toBe('hello');
     expect(lowerFirst('HELLO')).toBe('hELLO');

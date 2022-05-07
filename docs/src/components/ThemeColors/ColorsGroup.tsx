@@ -1,5 +1,5 @@
 import React from 'react';
-import { ColorSwatch, Text, Box } from '@pattern/core';
+import { ColorSwatch, Text, Box } from '@pattern-ui/core';
 import useStyles from './ColorsGroup.styles';
 
 interface ColorsGroupProps {

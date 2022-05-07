@@ -1,5 +1,5 @@
-import { createSafeContext } from '@pattern/utils';
-import { PatternColor, PatternNumberSize } from '@pattern/styles';
+import { createSafeContext } from '@pattern-ui/utils';
+import { PatternColor, PatternNumberSize } from '@pattern-ui/styles';
 import { TabsOrientation, TabsValue, TabsVariant } from './Tabs.types';
 import { TABS_ERRORS } from './Tabs.errors';
 

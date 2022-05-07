@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollArea, Navbar, Box } from '@pattern/core';
+import { ScrollArea, Navbar, Box } from '@pattern-ui/core';
 import { User } from './_user';
 import { Brand } from './_brand';
 import { MainLinks } from './_mainLinks';

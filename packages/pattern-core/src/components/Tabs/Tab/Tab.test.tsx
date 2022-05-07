@@ -5,7 +5,7 @@ import {
   itRendersChildren,
   itSupportsFocusEvents,
   itThrowsContextError,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import userEvent from '@testing-library/user-event';
 import { render, screen } from '@testing-library/react';
 import { Tab, TabProps } from './Tab';
@@ -19,7 +19,7 @@ const defaultProps: TabProps = {
 
 const TestContainer = createContextContainer(Tab, TabsProvider);
 
-describe('@pattern/core/Tab', () => {
+describe('@pattern-ui/core/Tab', () => {
   itThrowsContextError(Tab, defaultProps, TABS_ERRORS['tabs-context']);
   itRendersChildren(TestContainer, defaultProps);
   itSupportsFocusEvents(TestContainer, defaultProps, '[role="tab"]');
@@ -27,7 +27,7 @@ describe('@pattern/core/Tab', () => {
     component: TestContainer,
     props: defaultProps,
     refType: HTMLButtonElement,
-    displayName: '@pattern/core/Tab',
+    displayName: '@pattern-ui/core/Tab',
   });
 
   it('calls onClick function from props', () => {

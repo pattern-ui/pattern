@@ -1,5 +1,5 @@
 import React from 'react';
-import { TagInput } from '@pattern/labs';
+import { TagInput } from '@pattern-ui/labs';
 
 const PasteSplit = (data: string): string[] => {
   const separators = [','];

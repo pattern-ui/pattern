@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePatternTheme } from '@pattern/core';
+import { usePatternTheme } from '@pattern-ui/core';
 
 interface ArrowIconProps extends React.ComponentPropsWithoutRef<'svg'> {
   direction: 'left' | 'right';
@@ -32,4 +32,4 @@ export function ArrowIcon({ direction, style, ...others }: ArrowIconProps) {
   );
 }
 
-ArrowIcon.displayName = '@pattern/dates/ArrowIcon';
+ArrowIcon.displayName = '@pattern-ui/dates/ArrowIcon';

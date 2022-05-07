@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Switch
 order: 1
 slug: /core/switch/
 category: 'inputs'
 description: 'Capture boolean input from user'
 props: ['Switch']
-import: "import { Switch } from '@pattern/core';"
+import: "import { Switch } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Switch/Switch.tsx'
 docs: 'core/Switch.mdx'
 styles: ['Switch']
 ---
 
-import { SwitchDemos } from '@pattern/demos';
+import { SwitchDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -23,7 +23,7 @@ import { SwitchDemos } from '@pattern/demos';
 
 ```tsx
 import { useState } from 'react';
-import { Switch } from '@pattern/core';
+import { Switch } from '@pattern-ui/core';
 
 function Demo() {
   const [checked, setChecked] = useState(false);
@@ -39,7 +39,7 @@ function Demo() {
 
 ```tsx
 import { useRef } from 'react';
-import { Switch } from '@pattern/core';
+import { Switch } from '@pattern-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>();

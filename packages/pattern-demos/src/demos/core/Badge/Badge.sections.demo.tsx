@@ -1,6 +1,6 @@
 import React from 'react';
 import { X } from 'tabler-icons-react';
-import { Group, Badge, ActionIcon, Avatar } from '@pattern/core';
+import { Group, Badge, ActionIcon, Avatar } from '@pattern-ui/core';
 
 const avatar = (
   <Avatar

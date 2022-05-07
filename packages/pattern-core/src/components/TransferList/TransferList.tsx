@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, PatternNumberSize, usePatternDefaultProps } from '@pattern/styles';
+import { DefaultProps, PatternNumberSize, usePatternDefaultProps } from '@pattern-ui/styles';
 import { RenderList, RenderListStylesNames } from './RenderList/RenderList';
 import { SelectScrollArea } from '../Select/SelectScrollArea/SelectScrollArea';
 import { DefaultItem } from './DefaultItem/DefaultItem';
@@ -164,4 +164,4 @@ export const TransferList = forwardRef<HTMLDivElement, TransferListProps>(
   }
 );
 
-TransferList.displayName = '@pattern/core/TransferList';
+TransferList.displayName = '@pattern-ui/core/TransferList';

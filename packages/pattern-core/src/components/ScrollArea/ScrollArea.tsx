@@ -1,6 +1,6 @@
 import React, { useState, forwardRef } from 'react';
 import * as RadixScrollArea from '@radix-ui/react-scroll-area';
-import { DefaultProps, Selectors, usePatternTheme, usePatternDefaultProps } from '@pattern/styles';
+import { DefaultProps, Selectors, usePatternTheme, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles from './ScrollArea.styles';
 
@@ -111,4 +111,4 @@ export const ScrollArea = forwardRef<HTMLDivElement, ScrollAreaProps>(
   }
 );
 
-ScrollArea.displayName = '@pattern/core/ScrollArea';
+ScrollArea.displayName = '@pattern-ui/core/ScrollArea';

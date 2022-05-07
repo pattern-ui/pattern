@@ -1,13 +1,13 @@
 import React, { useEffect, PropsWithChildren } from 'react';
 import ReactDOM from 'react-dom';
 import { renderHook, WrapperComponent } from '@testing-library/react-hooks';
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 import { render, screen } from '@testing-library/react';
 import { useModals } from './use-modals';
 import { ModalsProvider } from '../ModalsProvider';
 import { ContextModalProps } from '../context';
 
-describe('@pattern/modals/use-modals', () => {
+describe('@pattern-ui/modals/use-modals', () => {
   beforeAll(() => {
     // @ts-ignore
     ReactDOM.createPortal = jest.fn((element) => element);
@@ -23,7 +23,7 @@ describe('@pattern/modals/use-modals', () => {
 
     expect(hook.result.error).toStrictEqual(
       Error(
-        '[@pattern/modals] useModals hook was called outside of context, wrap your app with ModalsProvider component'
+        '[@pattern-ui/modals] useModals hook was called outside of context, wrap your app with ModalsProvider component'
       )
     );
   });

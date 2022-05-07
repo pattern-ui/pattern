@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import dayjs from 'dayjs';
-import { TimeRangeInput } from '@pattern/dates';
+import { TimeRangeInput } from '@pattern-ui/dates';
 
 export default function Demo() {
   const now = new Date();

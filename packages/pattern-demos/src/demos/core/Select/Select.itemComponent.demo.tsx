@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { Group, Avatar, Text, Select } from '@pattern/core';
+import { Group, Avatar, Text, Select } from '@pattern-ui/core';
 
 const data = [
   {

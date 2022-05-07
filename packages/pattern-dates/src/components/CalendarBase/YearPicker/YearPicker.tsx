@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DefaultProps, Selectors, UnstyledButton, PatternSize } from '@pattern/core';
+import { DefaultProps, Selectors, UnstyledButton, PatternSize } from '@pattern-ui/core';
 import { getDecadeRange } from './get-decade-range/get-decade-range';
 import { CalendarHeader, CalendarHeaderStylesNames } from '../CalendarHeader/CalendarHeader';
 import useStyles from './YearPicker.styles';
@@ -75,4 +75,4 @@ export function YearPicker({
   );
 }
 
-YearPicker.displayName = '@pattern/dates/YearPicker';
+YearPicker.displayName = '@pattern-ui/dates/YearPicker';

@@ -1,4 +1,4 @@
-name: Report an issue with @pattern/ scoped package
+name: Report an issue with @pattern-ui/ scoped package
 description: Tell us if something is not working as expected
 labels: 'bug'
 body:
@@ -6,22 +6,22 @@ body:
     attributes:
       value: |
         ## Thanks for reaching out!
-        Before submitting an issue please make sure that you use latest version of all @pattern/ packages.
+        Before submitting an issue please make sure that you use latest version of all @pattern-ui/ packages.
   - type: dropdown
     id: version
     attributes:
       label: What package has an issue
       options:
-        - '@pattern/core'
-        - '@pattern/dates'
-        - '@pattern/hooks'
-        - '@pattern/form'
-        - '@pattern/notifications'
-        - '@pattern/rte'
-        - '@pattern/prism'
-        - '@pattern/modals'
-        - '@pattern/dropzone'
-        - '@pattern/spotlight'
+        - '@pattern-ui/core'
+        - '@pattern-ui/dates'
+        - '@pattern-ui/hooks'
+        - '@pattern-ui/form'
+        - '@pattern-ui/notifications'
+        - '@pattern-ui/rte'
+        - '@pattern-ui/prism'
+        - '@pattern-ui/modals'
+        - '@pattern-ui/dropzone'
+        - '@pattern-ui/spotlight'
     validations:
       required: true
   - type: textarea

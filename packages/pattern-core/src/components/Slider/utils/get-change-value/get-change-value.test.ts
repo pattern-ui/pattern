@@ -1,6 +1,6 @@
 import { getChangeValue } from './get-change-value';
 
-describe('@pattern/core/Slider/get-change-value', () => {
+describe('@pattern-ui/core/Slider/get-change-value', () => {
   it('returns correct change value', () => {
     expect(getChangeValue({ value: 20, containerWidth: 200, min: 0, max: 100, step: 1 })).toBe(10);
     expect(getChangeValue({ value: 20, containerWidth: 800, min: 0, max: 100, step: 1 })).toBe(3);

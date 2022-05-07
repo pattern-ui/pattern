@@ -1,7 +1,7 @@
 ---
 order: 1
 group: 'Other packages'
-package: '@pattern/notifications'
+package: '@pattern-ui/notifications'
 title: Notifications system
 slug: /others/notifications/
 props: ['NotificationsProvider']
@@ -9,24 +9,24 @@ source: 'pattern-notifications/src'
 docs: 'others/notifications.mdx'
 pageTitle: 'Pattern Notifications'
 description: 'Pattern notifications system'
-installation: '@pattern/notifications'
+installation: '@pattern-ui/notifications'
 license: MIT
 ---
 
-import { NotificationDemos, NotificationsDemos } from '@pattern/demos';
+import { NotificationDemos, NotificationsDemos } from '@pattern-ui/demos';
 
 ## Installation
 
 Install with npm:
 
 ```sh
-npm install @pattern/notifications @pattern/core @pattern/hooks
+npm install @pattern-ui/notifications @pattern-ui/core @pattern-ui/hooks
 ```
 
 Install with yarn:
 
 ```sh
-yarn add @pattern/notifications @pattern/core @pattern/hooks
+yarn add @pattern-ui/notifications @pattern-ui/core @pattern-ui/hooks
 ```
 
 ## Demo
@@ -38,7 +38,7 @@ yarn add @pattern/notifications @pattern/core @pattern/hooks
 Wrap your application with NotificationsProvider:
 
 ```tsx
-import { NotificationsProvider } from '@pattern/notifications';
+import { NotificationsProvider } from '@pattern-ui/notifications';
 
 function App() {
   return (
@@ -58,7 +58,7 @@ Then use `showNotification` function anywhere in your application:
 ## Functions
 
 Notifications system is based on [custom events](https://developer.mozilla.org/en-US/docs/Web/Events/Creating_and_triggering_events),
-`@pattern/notifications` package exports the following functions:
+`@pattern-ui/notifications` package exports the following functions:
 
 - **showNotification** – adds given notification to notifications list or queue depending on current state and limit
 - **updateNotification** – updates notification that was previously added to the state or queue
@@ -66,10 +66,10 @@ Notifications system is based on [custom events](https://developer.mozilla.org/e
 - **cleanNotifications** – removes all notifications from notifications state and queue
 - **cleanNotificationsQueue** – removes all notifications from queue
 
-All functions can be imported from `@pattern/notifications` package and can be used in any part of your application:
+All functions can be imported from `@pattern-ui/notifications` package and can be used in any part of your application:
 
 ```tsx
-import { showNotification } from '@pattern/notifications';
+import { showNotification } from '@pattern-ui/notifications';
 ```
 
 ## Notification props
@@ -87,7 +87,7 @@ Notification state item can have these properties:
 All properties except **message** are optional.
 
 ```tsx
-import { showNotification } from '@pattern/notifications';
+import { showNotification } from '@pattern-ui/notifications';
 
 // Bare minimum – message is required for all notifications
 showNotification({ message: 'Hello' });
@@ -133,7 +133,7 @@ Position cannot be changed per notification. NotificationsProvider supports the 
 - `bottom-center`
 
 ```tsx
-import { NotificationsProvider } from '@pattern/notifications';
+import { NotificationsProvider } from '@pattern-ui/notifications';
 
 function App() {
   return (
@@ -151,7 +151,7 @@ You can limit maximum amount of notifications that can be displayed by setting
 `limit` prop on NotificationsProvider:
 
 ```tsx
-import { NotificationsProvider } from '@pattern/notifications';
+import { NotificationsProvider } from '@pattern-ui/notifications';
 
 function App() {
   return (
@@ -172,7 +172,7 @@ and displayed when notification from current state is closed.
 To remove specific notification from state or queue use `hideNotification` function:
 
 ```tsx
-import { showNotification, hideNotification } from '@pattern/notifications';
+import { showNotification, hideNotification } from '@pattern-ui/notifications';
 
 showNotification({ id: 'hello', message: 'Hello!' });
 hideNotification('hello');
@@ -192,7 +192,7 @@ Use `cleanNotificationsQueue` function to remove all notifications that are not 
 You can configure auto close timeout with NotificationsProvider:
 
 ```tsx
-import { NotificationsProvider } from '@pattern/notifications';
+import { NotificationsProvider } from '@pattern-ui/notifications';
 
 // All notifications will be closed automatically in 4000ms
 function App() {
@@ -207,7 +207,7 @@ function App() {
 Or in `showNotification`/`updateNotification` functions:
 
 ```tsx
-import { showNotification, updateNotification } from '@pattern/notifications';
+import { showNotification, updateNotification } from '@pattern-ui/notifications';
 
 showNotification({
   message: 'I will close in 500ms seconds',

@@ -1,5 +1,5 @@
 /* eslint-disable import/no-cycle */
-import { createStyles, PatternTheme } from '@pattern/core';
+import { createStyles, PatternTheme } from '@pattern-ui/core';
 import { HEADER_HEIGHT } from '../Header/Header.styles';
 
 export const NAVBAR_WIDTH = 260;

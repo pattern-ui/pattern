@@ -5,7 +5,7 @@ import {
   useDidUpdate,
   useScrollIntoView,
   useUuid,
-} from '@pattern/hooks';
+} from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternSize,
@@ -13,7 +13,7 @@ import {
   extractSystemStyles,
   getDefaultZIndex,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { SelectScrollArea } from './SelectScrollArea/SelectScrollArea';
 import { InputWrapper } from '../InputWrapper';
 import { Input } from '../Input';
@@ -669,4 +669,4 @@ export const Select = forwardRef<HTMLInputElement, SelectProps>((props: SelectPr
   );
 });
 
-Select.displayName = '@pattern/core/Select';
+Select.displayName = '@pattern-ui/core/Select';

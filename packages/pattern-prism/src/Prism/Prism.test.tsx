@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { Prism, PrismProps } from './Prism';
 
 const defaultProps: PrismProps = {
@@ -9,11 +9,11 @@ const defaultProps: PrismProps = {
   language: 'tsx',
 };
 
-describe('@pattern/prism/Prism', () => {
+describe('@pattern-ui/prism/Prism', () => {
   itSupportsSystemProps({
     component: Prism,
     props: defaultProps,
-    displayName: '@pattern/prism/Prism',
+    displayName: '@pattern-ui/prism/Prism',
     refType: HTMLDivElement,
   });
 

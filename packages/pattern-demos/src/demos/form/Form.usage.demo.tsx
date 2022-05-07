@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React from 'react';
-import { TextInput, Checkbox, Button, Group, Box } from '@pattern/core';
-import { useForm } from '@pattern/form';
+import { TextInput, Checkbox, Button, Group, Box } from '@pattern-ui/core';
+import { useForm } from '@pattern-ui/form';
 
 export default function Demo() {
   const form = useForm({

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Group, Button, PatternProvider, usePatternTheme } from '@pattern/core';
+import { Group, Button, PatternProvider, usePatternTheme } from '@pattern-ui/core';
 
 export default function Demo() {
   const theme = usePatternTheme();

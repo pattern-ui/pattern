@@ -1,4 +1,4 @@
-import { createErrors } from '@pattern/utils';
+import { createErrors } from '@pattern-ui/utils';
 
 export const POPOVER_ERRORS = createErrors({
   'popover-context': 'Popover component was not found in the tree',

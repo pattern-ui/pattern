@@ -1,16 +1,16 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itIsPolymorphic, itSupportsSystemProps } from '@pattern/tests';
+import { itIsPolymorphic, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Highlight, HighlightProps } from './Highlight';
 
 const defaultProps: HighlightProps<'div'> = { children: 'Hello', highlight: 'He' };
 
-describe('@pattern/core/Highlight', () => {
+describe('@pattern-ui/core/Highlight', () => {
   itIsPolymorphic(Highlight, defaultProps);
   itSupportsSystemProps({
     component: Highlight,
     props: defaultProps,
-    displayName: '@pattern/core/Highlight',
+    displayName: '@pattern-ui/core/Highlight',
     refType: HTMLDivElement,
   });
 

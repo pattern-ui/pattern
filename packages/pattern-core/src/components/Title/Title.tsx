@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, usePatternDefaultProps } from '@pattern/styles';
+import { DefaultProps, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles from './Title.styles';
 
@@ -37,4 +37,4 @@ export const Title = forwardRef<HTMLHeadingElement, TitleProps>((props: TitlePro
   );
 });
 
-Title.displayName = '@pattern/core/Title';
+Title.displayName = '@pattern-ui/core/Title';

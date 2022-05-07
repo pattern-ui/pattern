@@ -1,4 +1,4 @@
-import { createStyles, PatternSize } from '@pattern/styles';
+import { createStyles, PatternSize } from '@pattern-ui/styles';
 import { INPUT_SIZES } from '../Input';
 
 export interface PasswordInputStylesParams {

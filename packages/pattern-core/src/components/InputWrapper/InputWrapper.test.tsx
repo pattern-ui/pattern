@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { InputWrapper, InputWrapperProps } from './InputWrapper';
 
 const defaultProps: InputWrapperProps = {
@@ -20,12 +20,12 @@ const queries = {
     container.querySelector('.pattern-InputWrapper-description'),
 };
 
-describe('@pattern/core/InputWrapper', () => {
+describe('@pattern-ui/core/InputWrapper', () => {
   itRendersChildren(InputWrapper, defaultProps);
   itSupportsSystemProps({
     component: InputWrapper,
     props: defaultProps,
-    displayName: '@pattern/core/InputWrapper',
+    displayName: '@pattern-ui/core/InputWrapper',
     refType: HTMLDivElement,
   });
 

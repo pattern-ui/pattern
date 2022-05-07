@@ -1,6 +1,6 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Tooltip
 order: 1
 slug: /core/tooltip/
@@ -8,13 +8,13 @@ category: 'overlay'
 description: 'Renders tooltip at given element on mouse over or other event'
 componentPrefix: 'Tooltip'
 props: ['Tooltip', 'TooltipFloating', 'TooltipGroup']
-import: "import { Tooltip } from '@pattern/core';"
+import: "import { Tooltip } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Tooltip/Tooltip.tsx'
 docs: 'core/Tooltip.mdx'
 styles: ['Tooltip']
 ---
 
-import { TooltipDemos } from '@pattern/demos';
+import { TooltipDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -28,7 +28,7 @@ Custom components must provide a prop to get root element ref,
 all Pattern components support ref out of the box.
 
 ```tsx
-import { Tooltip, Badge } from '@pattern/core';
+import { Tooltip, Badge } from '@pattern-ui/core';
 
 function Demo() {
   return (
@@ -85,7 +85,7 @@ with the following properties that determine which events will trigger tooltip:
 - `touch` – events for touchscreen devices, `false` by default
 
 ```tsx
-import { Tooltip } from '@pattern/core';
+import { Tooltip } from '@pattern-ui/core';
 
 function Demo() {
   return (
@@ -107,7 +107,7 @@ To enable multiline mode set `multiline` prop to enable line breaks and `width` 
 Tooltip is built with [Transition](/core/transition/) component, it supports `transition` and `transitionDuration` props:
 
 ```tsx
-import { Tooltip } from '@pattern/core';
+import { Tooltip } from '@pattern-ui/core';
 
 function Demo() {
   return (
@@ -199,7 +199,7 @@ or navigate with keyboard will not be able to get tooltip content. Set `events` 
 focus/blur tooltip events:
 
 ```tsx
-import { Tooltip } from '@pattern/core';
+import { Tooltip } from '@pattern-ui/core';
 
 // Tooltip will be visible for screen readers
 function Demo() {

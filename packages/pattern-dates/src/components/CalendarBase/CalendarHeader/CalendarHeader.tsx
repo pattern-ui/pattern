@@ -6,7 +6,7 @@ import {
   PatternSize,
   Selectors,
   DefaultProps,
-} from '@pattern/core';
+} from '@pattern-ui/core';
 import { ArrowIcon } from './ArrowIcon';
 import useStyles from './CalendarHeader.styles';
 
@@ -106,4 +106,4 @@ export function CalendarHeader({
   );
 }
 
-CalendarHeader.displayName = '@pattern/dates/CalendarHeader';
+CalendarHeader.displayName = '@pattern-ui/dates/CalendarHeader';

@@ -8,7 +8,7 @@ import {
   itSupportsWrapperProps,
   itHandlesBooleanState,
   itSupportsFocusEvents,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { Chip, ChipProps } from './Chip';
 
 const defaultProps: ChipProps = {
@@ -16,7 +16,7 @@ const defaultProps: ChipProps = {
   children: 'test-chip',
 };
 
-describe('@pattern/core/Chip', () => {
+describe('@pattern-ui/core/Chip', () => {
   checkAccessibility([<Chip {...defaultProps} />]);
   itRendersChildren(Chip, defaultProps);
   itConnectsLabelAndInput(Chip, defaultProps);
@@ -26,7 +26,7 @@ describe('@pattern/core/Chip', () => {
   itSupportsSystemProps({
     component: Chip,
     props: defaultProps,
-    displayName: '@pattern/core/Chip',
+    displayName: '@pattern-ui/core/Chip',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

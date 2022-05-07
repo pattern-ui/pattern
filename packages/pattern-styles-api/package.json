@@ -1,5 +1,5 @@
 {
-  "name": "@pattern/styles-api",
+  "name": "@pattern-ui/styles-api",
   "description": "Pattern components styles api descriptions",
   "private": true,
   "version": "1.0.0",
@@ -13,12 +13,12 @@
   "repository": {
     "url": "https://github.com/pattern-ui/pattern.git",
     "type": "git",
-    "directory": "src/pattern-styles-api"
+    "directory": "packages/pattern-styles-api"
   },
   "peerDependencies": {
-    "@pattern/core": "1.0.0",
-    "@pattern/hooks": "1.0.0",
-    "@pattern/spotlight": "1.0.0"
+    "@pattern-ui/core": "1.0.0",
+    "@pattern-ui/hooks": "1.0.0",
+    "@pattern-ui/spotlight": "1.0.0"
   },
   "dependencies": {},
   "devDependencies": {}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { SpotlightProvider, SpotlightProviderProps } from '@pattern/spotlight';
+import { SpotlightProvider, SpotlightProviderProps } from '@pattern-ui/spotlight';
 import { actions } from './_actions';
 import { SpotlightControl } from './_control';
 

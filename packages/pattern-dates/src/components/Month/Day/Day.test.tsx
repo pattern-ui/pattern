@@ -7,7 +7,7 @@ import {
   itSupportsRef,
   itSupportsStyle,
   itSupportsOthers,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { Day, DayProps } from './Day';
 
 const defaultProps: DayProps = {
@@ -27,7 +27,7 @@ const defaultProps: DayProps = {
   onMouseEnter: () => {},
 };
 
-describe('@pattern/core/Month/Day', () => {
+describe('@pattern-ui/core/Month/Day', () => {
   checkAccessibility([<Day {...defaultProps} />]);
   itSupportsClassName(Day, defaultProps);
   itSupportsStyle(Day, defaultProps);
@@ -53,7 +53,7 @@ describe('@pattern/core/Month/Day', () => {
   });
 
   it('has correct displayName', () => {
-    expect(Day.displayName).toStrictEqual('@pattern/core/Day');
+    expect(Day.displayName).toStrictEqual('@pattern-ui/core/Day');
   });
 
   it('renders correctly with a renderDay function', () => {

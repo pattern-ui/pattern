@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, usePatternTheme } from '@pattern/core';
+import { Text, usePatternTheme } from '@pattern-ui/core';
 
 export function GridItem(props: React.ComponentPropsWithoutRef<'div'>) {
   const theme = usePatternTheme();

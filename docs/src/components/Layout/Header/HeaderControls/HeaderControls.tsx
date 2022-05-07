@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Group, usePatternColorScheme, Tooltip } from '@pattern/core';
+import { Box, Group, usePatternColorScheme, Tooltip } from '@pattern-ui/core';
 import { TextDirectionRtl, TextDirectionLtr, Sun, Moon } from 'tabler-icons-react';
 import { MarkGithubIcon } from '@primer/octicons-react';
 import { DiscordIcon } from './DiscordIcon';

@@ -1,8 +1,8 @@
 import React from 'react';
-import { RadioGroup, RadioGroupProps, Radio } from '@pattern/core';
+import { RadioGroup, RadioGroupProps, Radio } from '@pattern-ui/core';
 
 const codeTemplate = (props: string) => `
-import { RadioGroup, Radio } from '@pattern/core';
+import { RadioGroup, Radio } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

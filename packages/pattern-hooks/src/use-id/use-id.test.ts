@@ -1,7 +1,7 @@
 import { renderHook } from '@testing-library/react-hooks';
 import { useId } from './use-id';
 
-describe('@pattern/hooks/use-id', () => {
+describe('@pattern-ui/hooks/use-id', () => {
   it('returns id from hook call', () => {
     const hook = renderHook(() => useId('test-id'));
     expect(hook.result.current).toBe('test-id');

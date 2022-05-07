@@ -1,6 +1,6 @@
 import React from 'react';
 import { Check } from 'tabler-icons-react';
-import { ThemeIcon, RingProgress, Group, Text, Center } from '@pattern/core';
+import { ThemeIcon, RingProgress, Group, Text, Center } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

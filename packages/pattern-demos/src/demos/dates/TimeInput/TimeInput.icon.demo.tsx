@@ -1,6 +1,6 @@
 import React from 'react';
 import { Clock } from 'tabler-icons-react';
-import { TimeInput } from '@pattern/dates';
+import { TimeInput } from '@pattern-ui/dates';
 
 export default function Demo() {
   return (

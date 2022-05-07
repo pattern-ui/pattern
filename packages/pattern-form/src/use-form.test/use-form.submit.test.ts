@@ -3,7 +3,7 @@ import { useForm } from '../index';
 
 const getFormEvent = () => ({ preventDefault: jest.fn() } as any);
 
-describe('@pattern/form/use-form submit', () => {
+describe('@pattern-ui/form/use-form submit', () => {
   it('calls given function with values and event when all values are valid', () => {
     const hook = renderHook(() =>
       useForm({ initialValues: { banana: 'test banana', apple: 'test apple' } })

@@ -1,4 +1,4 @@
-import { createStyles } from '@pattern/styles';
+import { createStyles } from '@pattern-ui/styles';
 
 export interface VerticalSectionPosition {
   top?: number;

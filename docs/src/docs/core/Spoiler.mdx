@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Spoiler
 order: 1
 slug: /core/spoiler/
 category: 'data-display'
 description: 'Hide long sections of content under spoiler'
 props: ['Spoiler']
-import: "import { Spoiler } from '@pattern/core';"
+import: "import { Spoiler } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Spoiler/Spoiler.tsx'
 docs: 'core/Spoiler.mdx'
 styles: ['Spoiler']
 ---
 
-import { SpoilerDemos } from '@pattern/demos';
+import { SpoilerDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -36,7 +36,7 @@ To disable animations, set prop to 0:
 
 ```tsx
 import { useRef } from 'react';
-import { Spoiler } from '@pattern/core';
+import { Spoiler } from '@pattern-ui/core';
 
 function Demo() {
   const spoilerControlRef = useRef<HTMLButtonElement>();

@@ -7,7 +7,7 @@ export default {
 
 export function Usage() {
   const [value, setValue] = useLocalStorage<string>({
-    key: '@pattern/localStorage/val',
+    key: '@pattern-ui/localStorage/val',
     defaultValue: 'Value persists through reloads and changes across multiple tabs',
   });
 
@@ -20,17 +20,17 @@ export function Usage() {
 
 export function SerializeJson() {
   const [value, setValue] = useLocalStorage<{ pattern: string }>({
-    key: '@pattern/localStorage/val',
+    key: '@pattern-ui/localStorage/val',
     defaultValue: { pattern: 'is awesome' },
   });
 
   const [value2, setValue2] = useLocalStorage<{ pattern: string }>({
-    key: '@pattern/localStorage/val',
+    key: '@pattern-ui/localStorage/val',
     defaultValue: { pattern: 'is awesome' },
   });
 
   const [value3, setValue3] = useLocalStorage<{ pattern: string }>({
-    key: '@pattern/localStorage/another-value',
+    key: '@pattern-ui/localStorage/another-value',
     defaultValue: { pattern: 'is awesome' },
   });
 
@@ -54,7 +54,7 @@ export function SerializeJson() {
 
 export function SerializeBoolean() {
   const [value, setValue] = useLocalStorage<boolean>({
-    key: '@pattern/localStorage/val',
+    key: '@pattern-ui/localStorage/val',
     defaultValue: true,
   });
 

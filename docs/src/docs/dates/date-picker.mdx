@@ -1,18 +1,18 @@
 ---
 group: 'pattern-dates'
-package: '@pattern/dates'
+package: '@pattern-ui/dates'
 title: DatePicker
 order: 1
 slug: /dates/date-picker/
 description: 'Capture date or dates range from user'
 props: ['DatePicker', 'DateRangePicker']
-import: "import { DatePicker, DateRangePicker } from '@pattern/dates';"
+import: "import { DatePicker, DateRangePicker } from '@pattern-ui/dates';"
 source: 'pattern-dates/src/components/DatePicker/DatePicker.tsx'
 docs: 'dates/DatePicker.mdx'
 styles: ['DatePicker', 'DateRangePicker']
 ---
 
-import { DatePickerDemos, DateRangePickerDemos } from '@pattern/demos';
+import { DatePickerDemos, DateRangePickerDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -28,7 +28,7 @@ DateRangePicker component (supports the same props as DatePicker component):
 
 ```tsx
 import { useState } from 'react';
-import { DatePicker } from '@pattern/dates';
+import { DatePicker } from '@pattern-ui/dates';
 
 function Demo() {
   const [value, onChange] = useState(new Date());
@@ -38,7 +38,7 @@ function Demo() {
 
 ## Localization
 
-All @pattern/dates components are built with [dayjs](https://day.js.org/) library.
+All @pattern-ui/dates components are built with [dayjs](https://day.js.org/) library.
 Default locale is `en`, to change this follow [dayjs localization guide](https://day.js.org/docs/en/i18n/loading-into-nodejs):
 
 ```tsx
@@ -81,8 +81,8 @@ In most cases, you would want to switch to modal when a certain breakpoint is re
 To implement this use [use-media-query](/hooks/use-media-query/) hook:
 
 ```tsx
-import { useMediaQuery } from '@pattern/hooks';
-import { DatePicker } from '@pattern/dates';
+import { useMediaQuery } from '@pattern-ui/hooks';
+import { DatePicker } from '@pattern-ui/dates';
 
 function Demo() {
   const isMobile = useMediaQuery('(max-width: 755px)');
@@ -108,7 +108,7 @@ By default, DatePicker will try to parse date using dayjs with given `inputForma
 to change that provide `dateParser` function:
 
 ```tsx
-import { DatePicker } from '@pattern/dates';
+import { DatePicker } from '@pattern-ui/dates';
 
 function Demo() {
   return (
@@ -227,7 +227,7 @@ Component supports all props from [Input](/core/input/) and [InputWrapper](/core
 
 ```tsx
 import { useRef } from 'react';
-import { DatePicker } from '@pattern/dates';
+import { DatePicker } from '@pattern-ui/dates';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>();

@@ -1,4 +1,4 @@
-import type { RichTextEditorStylesNames } from '@pattern/rte';
+import type { RichTextEditorStylesNames } from '@pattern-ui/rte';
 
 export const RichTextEditor: Record<RichTextEditorStylesNames, string> = {
   root: 'Root element',

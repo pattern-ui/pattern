@@ -1,8 +1,8 @@
 import React from 'react';
-import { TimeInput } from '@pattern/dates';
+import { TimeInput } from '@pattern-ui/dates';
 
 const codeTemplate = (props: string) => `
-import { TimeInput } from '@pattern/dates';
+import { TimeInput } from '@pattern-ui/dates';
 
 export default function Demo() {
   return (

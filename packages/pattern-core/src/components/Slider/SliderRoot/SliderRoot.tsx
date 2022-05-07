@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { PatternNumberSize, DefaultProps, Selectors } from '@pattern/styles';
+import { PatternNumberSize, DefaultProps, Selectors } from '@pattern-ui/styles';
 import { Box } from '../../Box';
 import useStyles from './SliderRoot.styles';
 
@@ -20,4 +20,4 @@ export const SliderRoot = forwardRef<HTMLDivElement, SliderRootProps>(
   }
 );
 
-SliderRoot.displayName = '@pattern/core/SliderRoot';
+SliderRoot.displayName = '@pattern-ui/core/SliderRoot';

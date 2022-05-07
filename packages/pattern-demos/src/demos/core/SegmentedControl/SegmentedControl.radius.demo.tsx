@@ -1,5 +1,5 @@
 import React from 'react';
-import { PATTERN_SIZES } from '@pattern/core';
+import { PATTERN_SIZES } from '@pattern-ui/core';
 import { SegmentedControlWrapper } from './Wrapper';
 
 export default function Demo() {

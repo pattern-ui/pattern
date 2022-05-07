@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Menu
 order: 1
 slug: /core/menu/
 category: 'overlay'
 description: 'Combine a list of secondary actions into single interactive area'
 props: ['Menu']
-import: "import { Menu } from '@pattern/core';"
+import: "import { Menu } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Menu/Menu.tsx'
 docs: 'core/Menu.mdx'
 styles: ['Menu']
 ---
 
-import { MenuDemos } from '@pattern/demos';
+import { MenuDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -22,8 +22,8 @@ import { MenuDemos } from '@pattern/demos';
 ## Controlled
 
 ```tsx
-import { useDisclosure } from '@pattern/hooks';
-import { Menu } from '@pattern/core';
+import { useDisclosure } from '@pattern-ui/hooks';
+import { Menu } from '@pattern-ui/core';
 
 function Demo() {
   const [opened, handlers] = useDisclosure(false);
@@ -58,7 +58,7 @@ Menu.Item renders button and accepts following props:
 - `...others` – Menu.Item produces button element, all other props will be spread to it, for example, `onClick`, `style`, `sx`, `className`
 
 ```tsx
-import { Menu, Text } from '@pattern/core';
+import { Menu, Text } from '@pattern-ui/core';
 import { Settings } from 'tabler-icons-react';
 
 function Demo() {
@@ -154,8 +154,8 @@ By default, menu items render as button, to change that set `component` prop on 
 ## Menu.Item as Next.js Link
 
 ```tsx
-import { Menu } from '@pattern/core';
-import { NextLink } from '@pattern/next';
+import { Menu } from '@pattern-ui/core';
+import { NextLink } from '@pattern-ui/next';
 
 function Demo() {
   return (
@@ -179,7 +179,7 @@ for example, change hovered item color:
 
 ```tsx
 import { useRef } from 'react';
-import { Menu } from '@pattern/core';
+import { Menu } from '@pattern-ui/core';
 
 function Demo() {
   const menuControlRef = useRef<HTMLButtonElement>();

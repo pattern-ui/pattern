@@ -1,5 +1,5 @@
 import React from 'react';
-import { itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Collapse, CollapseProps } from './Collapse';
 
 const defaultProps: CollapseProps = {
@@ -7,11 +7,11 @@ const defaultProps: CollapseProps = {
   children: <div style={{ height: '300px' }} />,
 };
 
-describe('@pattern/core/Collapse', () => {
+describe('@pattern-ui/core/Collapse', () => {
   itRendersChildren(Collapse, defaultProps);
   itSupportsSystemProps({
     component: Collapse,
     props: defaultProps,
-    displayName: '@pattern/core/Collapse',
+    displayName: '@pattern-ui/core/Collapse',
   });
 });

@@ -1,16 +1,16 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { TimelineItem, TimelineItemProps } from './TimelineItem';
 
 const defaultProps: TimelineItemProps = {};
 
-describe('@pattern/core/TimelineItem', () => {
+describe('@pattern-ui/core/TimelineItem', () => {
   itRendersChildren(TimelineItem, defaultProps);
   itSupportsSystemProps({
     component: TimelineItem,
     props: defaultProps,
-    displayName: '@pattern/core/TimelineItem',
+    displayName: '@pattern-ui/core/TimelineItem',
   });
 
   it('renders given bullet', () => {

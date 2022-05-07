@@ -1,4 +1,4 @@
-import { DrawerStylesNames } from '@pattern/core';
+import { DrawerStylesNames } from '@pattern-ui/core';
 
 export const Drawer: Record<DrawerStylesNames, string> = {
   root: 'Root element',

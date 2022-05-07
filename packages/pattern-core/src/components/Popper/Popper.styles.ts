@@ -1,4 +1,4 @@
-import { createStyles, PatternTheme } from '@pattern/styles';
+import { createStyles, PatternTheme } from '@pattern-ui/styles';
 
 interface PopperStyles {
   arrowSize: number;

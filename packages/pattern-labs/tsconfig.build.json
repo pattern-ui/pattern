@@ -21,8 +21,8 @@
     "composite": true,
     "declarationDir": "lib",
     "paths": {
-      "@pattern/core": ["../pattern-core/src"],
-      "@pattern/hooks": ["../pattern-hooks/src"]
+      "@pattern-ui/core": ["../pattern-core/src"],
+      "@pattern-ui/hooks": ["../pattern-hooks/src"]
     }
   },
   "references": [{ "path": "../pattern-core" }, { "path": "../pattern-hooks" }]

@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextInput } from '@pattern/core';
+import { TextInput } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

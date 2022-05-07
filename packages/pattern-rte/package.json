@@ -1,5 +1,5 @@
 {
-  "name": "@pattern/rte",
+  "name": "@pattern-ui/rte",
   "description": "Rich text editor built with Pattern components",
   "version": "1.0.0",
   "main": "cjs/index.js",
@@ -12,7 +12,7 @@
   "repository": {
     "url": "https://github.com/pattern-ui/pattern.git",
     "type": "git",
-    "directory": "src/pattern-rte"
+    "directory": "packages/pattern-rte"
   },
   "keywords": [
     "react",
@@ -30,8 +30,8 @@
     "quilljs"
   ],
   "peerDependencies": {
-    "@pattern/core": "1.0.0",
-    "@pattern/hooks": "1.0.0",
+    "@pattern-ui/core": "1.0.0",
+    "@pattern-ui/hooks": "1.0.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },

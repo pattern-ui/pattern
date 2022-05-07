@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CheckIcon } from '@modulz/radix-icons';
-import { usePatternTheme, ColorSwatch, Group } from '@pattern/core';
+import { usePatternTheme, ColorSwatch, Group } from '@pattern-ui/core';
 
 export default function Demo() {
   const theme = usePatternTheme();

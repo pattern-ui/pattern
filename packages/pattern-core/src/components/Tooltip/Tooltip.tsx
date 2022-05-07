@@ -1,8 +1,8 @@
 import React, { cloneElement } from 'react';
 import { Placement } from '@floating-ui/react-dom-interactions';
-import { isElement, getArrowPositionStyles, getFloatingPosition } from '@pattern/utils';
-import { useMergedRef } from '@pattern/hooks';
-import { getDefaultZIndex, usePatternDefaultProps } from '@pattern/styles';
+import { isElement, getArrowPositionStyles, getFloatingPosition } from '@pattern-ui/utils';
+import { useMergedRef } from '@pattern-ui/hooks';
+import { getDefaultZIndex, usePatternDefaultProps } from '@pattern-ui/styles';
 import { TooltipGroup } from './TooltipGroup/TooltipGroup';
 import { TooltipFloating } from './TooltipFloating/TooltipFloating';
 import { useTooltip } from './use-tooltip';
@@ -171,4 +171,4 @@ export function Tooltip(props: TooltipProps) {
 Tooltip.Group = TooltipGroup;
 Tooltip.Floating = TooltipFloating;
 
-Tooltip.displayName = '@pattern/core/Tooltip';
+Tooltip.displayName = '@pattern-ui/core/Tooltip';

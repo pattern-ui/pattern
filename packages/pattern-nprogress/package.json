@@ -1,5 +1,5 @@
 {
-  "name": "@pattern/nprogress",
+  "name": "@pattern-ui/nprogress",
   "description": "A navigation progress bar",
   "version": "1.0.0",
   "main": "cjs/index.js",
@@ -12,12 +12,12 @@
   "repository": {
     "url": "https://github.com/pattern-ui/pattern.git",
     "type": "git",
-    "directory": "src/pattern-nprogress"
+    "directory": "packages/pattern-nprogress"
   },
   "peerDependencies": {
-    "@pattern/core": "1.0.0",
-    "@pattern/hooks": "1.0.0",
-    "@pattern/styles": "1.0.0",
+    "@pattern-ui/core": "1.0.0",
+    "@pattern-ui/hooks": "1.0.0",
+    "@pattern-ui/styles": "1.0.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },

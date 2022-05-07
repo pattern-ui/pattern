@@ -1,15 +1,15 @@
 ---
 group: 'Other packages'
-package: '@pattern/dropzone'
+package: '@pattern-ui/dropzone'
 title: 'Dropzone'
 order: 1
 slug: /others/dropzone/
 description: 'Capture files from user with drag and drop'
 props: ['Dropzone', 'FullScreenDropzone']
-import: "import { Dropzone, FullScreenDropzone } from '@pattern/dropzone';"
+import: "import { Dropzone, FullScreenDropzone } from '@pattern-ui/dropzone';"
 source: 'pattern-dropzone/src'
 docs: 'others/dropzone.mdx'
-installation: '@pattern/dropzone'
+installation: '@pattern-ui/dropzone'
 license: MIT
 styles: ['Dropzone', 'FullScreenDropzone']
 ---
@@ -21,23 +21,23 @@ import {
   MS_WORD_MIME_TYPE,
   MS_EXCEL_MIME_TYPE,
   MS_POWERPOINT_MIME_TYPE,
-} from '@pattern/dropzone';
-import { DropzoneDemos } from '@pattern/demos';
+} from '@pattern-ui/dropzone';
+import { DropzoneDemos } from '@pattern-ui/demos';
 
 ## Installation
 
-Package depends on @pattern/core and @pattern/hooks.
+Package depends on @pattern-ui/core and @pattern-ui/hooks.
 
 Install with npm:
 
 ```sh
-npm install @pattern/dropzone @pattern/core @pattern/hooks
+npm install @pattern-ui/dropzone @pattern-ui/core @pattern-ui/hooks
 ```
 
 Install with yarn:
 
 ```sh
-yarn add @pattern/dropzone @pattern/core @pattern/hooks
+yarn add @pattern-ui/dropzone @pattern-ui/core @pattern-ui/hooks
 ```
 
 ## Usage
@@ -76,7 +76,7 @@ To open files browser from outside of component use `openRef` prop to get functi
 To specify specific file types provide an array of mime types to `accept` prop:
 
 ```tsx
-import { Dropzone } from '@pattern/dropzone';
+import { Dropzone } from '@pattern-ui/dropzone';
 
 function Demo() {
   return (
@@ -87,10 +87,10 @@ function Demo() {
 }
 ```
 
-To save some research time you can use `MIME_TYPES` variable exported from `@pattern/dropzone`:
+To save some research time you can use `MIME_TYPES` variable exported from `@pattern-ui/dropzone`:
 
 ```tsx
-import { Dropzone, MIME_TYPES } from '@pattern/dropzone';
+import { Dropzone, MIME_TYPES } from '@pattern-ui/dropzone';
 
 function Demo() {
   return (
@@ -122,7 +122,7 @@ Additionally you can use grouped mime types:
 />
 
 ```tsx
-import { IMAGE_MIME_TYPE, Dropzone } from '@pattern/dropzone';
+import { IMAGE_MIME_TYPE, Dropzone } from '@pattern-ui/dropzone';
 
 function Demo() {
   return <Dropzone accept={IMAGE_MIME_TYPE}>{/* children */}</Dropzone>;
@@ -133,7 +133,7 @@ function Demo() {
 
 ```tsx
 import { useRef, useEffect } from 'react';
-import { Dropzone } from '@pattern/dropzone';
+import { Dropzone } from '@pattern-ui/dropzone';
 
 function Demo() {
   const dropzoneRef = useRef<HTMLDivElement>();

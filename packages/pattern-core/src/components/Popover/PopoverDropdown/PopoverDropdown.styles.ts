@@ -1,4 +1,4 @@
-import { createStyles, PatternShadow, PatternNumberSize } from '@pattern/styles';
+import { createStyles, PatternShadow, PatternNumberSize } from '@pattern-ui/styles';
 
 export interface PopoverStylesParams {
   radius?: PatternNumberSize;

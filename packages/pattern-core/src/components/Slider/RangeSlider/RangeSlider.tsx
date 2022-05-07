@@ -1,12 +1,12 @@
 import React, { useRef, useState, forwardRef, useEffect } from 'react';
-import { useMove, useUncontrolled, useMergedRef } from '@pattern/hooks';
+import { useMove, useUncontrolled, useMergedRef } from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternNumberSize,
   PatternColor,
   usePatternTheme,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { PatternTransition } from '../../Transition';
 import { getClientPosition } from '../utils/get-client-position/get-client-position';
 import { getPosition } from '../utils/get-position/get-position';
@@ -445,4 +445,4 @@ export const RangeSlider = forwardRef<HTMLDivElement, RangeSliderProps>(
   }
 );
 
-RangeSlider.displayName = '@pattern/core/RangeSlider';
+RangeSlider.displayName = '@pattern-ui/core/RangeSlider';

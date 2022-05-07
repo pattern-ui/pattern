@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePatternTheme, DefaultProps, PatternSize } from '@pattern/styles';
+import { usePatternTheme, DefaultProps, PatternSize } from '@pattern-ui/styles';
 
 interface ChevronIconProps extends DefaultProps, React.ComponentPropsWithoutRef<'svg'> {
   size: PatternSize;

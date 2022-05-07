@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { SubmitForm } from '@pattern/storybook';
+import { SubmitForm } from '@pattern-ui/storybook';
 import { Select, SelectProps } from './Select';
 import { Button } from '../Button';
 import { Group } from '../Group';

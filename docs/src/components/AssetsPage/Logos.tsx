@@ -1,7 +1,7 @@
 /* eslint-disable import/no-webpack-loader-syntax */
 import React from 'react';
-import { SimpleGrid, Button, Group, createStyles, DEFAULT_THEME } from '@pattern/core';
-import { useClipboard } from '@pattern/hooks';
+import { SimpleGrid, Button, Group, createStyles, DEFAULT_THEME } from '@pattern-ui/core';
+import { useClipboard } from '@pattern-ui/hooks';
 
 import fullLogoCode from '!!raw-loader!./assets/pattern-logo-full.svg';
 import fullLogoImage from './assets/pattern-logo-full.svg';

@@ -1,18 +1,18 @@
 ---
 group: 'pattern-dates'
-package: '@pattern/dates'
+package: '@pattern-ui/dates'
 title: Calendar
 order: 1
 slug: /dates/calendar/
 description: 'Display inline calendar to pick single date or dates range'
 props: ['Calendar', 'RangeCalendar']
-import: "import { Calendar, RangeCalendar } from '@pattern/dates';"
+import: "import { Calendar, RangeCalendar } from '@pattern-ui/dates';"
 source: 'pattern-dates/src/components/Calendar/Calendar.tsx'
 docs: 'dates/Calendar.mdx'
 styles: ['Calendar', 'RangeCalendar']
 ---
 
-import { CalendarDemos, RangeCalendarDemos } from '@pattern/demos';
+import { CalendarDemos, RangeCalendarDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -43,7 +43,7 @@ Control month that is currently displayed with `month` and `onMonthChange` props
 
 ```tsx
 import { useState } from 'react';
-import { Calendar } from '@pattern/dates';
+import { Calendar } from '@pattern-ui/dates';
 
 function Demo() {
   const [month, onMonthChange] = useState(new Date());
@@ -66,7 +66,7 @@ To disable that, set `allowLevelChange` prop to false:
 
 ## Localization
 
-All @pattern/dates components are built with [dayjs](https://day.js.org/) library.
+All @pattern-ui/dates components are built with [dayjs](https://day.js.org/) library.
 Default locale is `en`, to change this follow [dayjs localization guide](https://day.js.org/docs/en/i18n/loading-into-nodejs):
 
 ```tsx

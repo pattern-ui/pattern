@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { AvatarsGroup, AvatarsGroupProps } from './AvatarsGroup';
 import { Avatar } from '../Avatar';
 
@@ -8,11 +8,11 @@ const defaultProps: AvatarsGroupProps = {
   children: [<Avatar>M</Avatar>, <Avatar>K</Avatar>, <Avatar>L</Avatar>, <Avatar>L</Avatar>],
 };
 
-describe('@pattern/core/AvatarsGroup', () => {
+describe('@pattern-ui/core/AvatarsGroup', () => {
   itSupportsSystemProps({
     component: AvatarsGroup,
     props: defaultProps,
-    displayName: '@pattern/core/AvatarsGroup',
+    displayName: '@pattern-ui/core/AvatarsGroup',
     refType: HTMLDivElement,
   });
 

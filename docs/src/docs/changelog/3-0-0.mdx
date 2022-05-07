@@ -16,12 +16,12 @@ import {
   DropzoneDemos,
   HooksDemos,
   CreateStylesDemos,
-} from '@pattern/demos';
+} from '@pattern-ui/demos';
 
 ## Breaking changes
 
 - Pattern was migrated to [emotion](https://emotion.sh/) from react-jss and no longer supports react-jss
-- `@pattern/core` package no longer exports react-jss `theming` context, use [createStyles](https://pattern-ui.design/theming/create-styles/) instead
+- `@pattern-ui/core` package no longer exports react-jss `theming` context, use [createStyles](https://pattern-ui.design/theming/create-styles/) instead
 - All components no longer support `themeOverride` prop due to performance reasons
 - `elementRef` prop was replaced with `ref` in all components
 - Default line-height (`theme.lineHeight`) was increased from 1.4 to 1.55
@@ -32,7 +32,7 @@ import {
 ## Migration to emotion
 
 Pattern no longer uses react-jss, all components were migrated to [emotion](https://emotion.sh/) based css-in-js library
-exposed as separate `@pattern/styles` package and as a part of `@pattern/core`. This means that you will have to:
+exposed as separate `@pattern-ui/styles` package and as a part of `@pattern-ui/core`. This means that you will have to:
 
 - migrate all of your custom styles built with react-jss to new `createStyles` hook creator
 - setup new strategy for server side rendering
@@ -59,8 +59,8 @@ Basic `createStyles` usage example:
 Since Pattern now uses emotion instead of react-jss you will need to change server side rendering strategy.
 Pattern now has 3 new packages to help you setup server side rendering:
 
-- `@pattern/ssr` – general server side rendering utilities
-- `@pattern/next` – Next.js specific ssr configurations
+- `@pattern-ui/ssr` – general server side rendering utilities
+- `@pattern-ui/next` – Next.js specific ssr configurations
 - `gatsby-plugin-pattern` – enable ssr in Gatsby
 
 Follow these guides to get started with ssr:
@@ -92,7 +92,7 @@ if you wrap your application in PatternProvider.
 `ColorSchemeProvider` is a new component that will help you manage color scheme ([read full docs](https://pattern-ui.design/theming/dark-theme/)):
 
 ```tsx
-import { PatternProvider, ColorSchemeProvider, ColorScheme } from '@pattern/core';
+import { PatternProvider, ColorSchemeProvider, ColorScheme } from '@pattern-ui/core';
 
 export default function Demo() {
   const [colorScheme, setColorScheme] = useState('light');
@@ -109,7 +109,7 @@ export default function Demo() {
 }
 
 // ...later in other component
-import { ActionIcon, usePatternColorScheme } from '@pattern/core';
+import { ActionIcon, usePatternColorScheme } from '@pattern-ui/core';
 import { SunIcon, MoonIcon } from '@modulz/radix-icons';
 
 function Demo() {
@@ -146,7 +146,7 @@ All components now support setting following props to control margins:
 - `mr` – sets `margin-right` property on root element
 
 ```tsx
-import { Button, TextInput } from '@pattern/core';
+import { Button, TextInput } from '@pattern-ui/core';
 
 function Demo() {
   return (
@@ -158,9 +158,9 @@ function Demo() {
 }
 ```
 
-## @pattern/dropzone package
+## @pattern-ui/dropzone package
 
-[@pattern/dropzone](https://pattern-ui.design/others/dropzone/) is a new package that includes Dropzone and FullScreenDropzone components.
+[@pattern-ui/dropzone](https://pattern-ui.design/others/dropzone/) is a new package that includes Dropzone and FullScreenDropzone components.
 
 Dropzone components lets you capture files from user with drag 'n' drop:
 

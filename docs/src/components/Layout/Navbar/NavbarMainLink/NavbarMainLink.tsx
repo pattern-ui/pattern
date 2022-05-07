@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { ThemeIcon, usePatternTheme } from '@pattern/core';
+import { ThemeIcon, usePatternTheme } from '@pattern-ui/core';
 import useStyles from './NavbarMainLink.styles';
 
 interface NavbarMainLinkProps {

@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Paper
 order: 1
 slug: /core/paper/
 category: 'misc'
 description: 'Renders white or dark background depending on color scheme'
 props: ['Paper']
-import: "import { Paper } from '@pattern/core';"
+import: "import { Paper } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Paper/Paper.tsx'
 docs: 'core/Paper.mdx'
 styles: ['Paper', 'single-node']
 ---
 
-import { PaperDemos } from '@pattern/demos';
+import { PaperDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -57,7 +57,7 @@ You can get root element ref with `ref` prop:
 
 ```tsx
 import { useRef } from 'react';
-import { Paper } from '@pattern/core';
+import { Paper } from '@pattern-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLDivElement>();

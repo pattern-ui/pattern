@@ -1,4 +1,4 @@
-import type { AvatarStylesNames, AvatarsGroupStylesNames } from '@pattern/core';
+import type { AvatarStylesNames, AvatarsGroupStylesNames } from '@pattern-ui/core';
 
 export const AvatarsGroup: Record<AvatarsGroupStylesNames, string> = {
   root: 'Root element',

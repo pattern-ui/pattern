@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Container
 order: 1
 slug: /core/container/
 category: 'layout'
 description: 'Center content horizontally with predefined max-width'
 props: ['Container']
-import: "import { Container } from '@pattern/core';"
+import: "import { Container } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Container/Container.tsx'
 docs: 'core/Container.mdx'
 styles: ['Container', 'single-node']
 ---
 
-import { ContainerDemos } from '@pattern/demos';
+import { ContainerDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -31,7 +31,7 @@ Component accepts these props:
 To configure container sizes use default props on [PatternProvider](/theming/pattern-provider/):
 
 ```tsx
-import { PatternProvider, Container } from '@pattern/core';
+import { PatternProvider, Container } from '@pattern-ui/core';
 
 function App() {
   return (

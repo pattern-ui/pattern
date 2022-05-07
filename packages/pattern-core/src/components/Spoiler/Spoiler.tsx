@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect, forwardRef } from 'react';
-import { DefaultProps, Selectors, usePatternDefaultProps } from '@pattern/styles';
+import { DefaultProps, Selectors, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Anchor } from '../Anchor';
 import { Box } from '../Box';
 import useStyles from './Spoiler.styles';
@@ -89,4 +89,4 @@ export const Spoiler = forwardRef<HTMLDivElement, SpoilerProps>((props: SpoilerP
   );
 });
 
-Spoiler.displayName = '@pattern/core/Spoiler';
+Spoiler.displayName = '@pattern-ui/core/Spoiler';

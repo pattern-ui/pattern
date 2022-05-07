@@ -8,10 +8,10 @@ A set of react hooks for state and UI management
 
 ```sh
 # With yarn
-yarn add @pattern/hooks
+yarn add @pattern-ui/hooks
 
 # With npm
-npm install @pattern/hooks
+npm install @pattern-ui/hooks
 ```
 
 ## License

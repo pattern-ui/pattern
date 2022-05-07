@@ -1,4 +1,4 @@
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { TransferList, TransferListProps } from './TransferList';
 
 const defaultProps: TransferListProps = {
@@ -17,11 +17,11 @@ const defaultProps: TransferListProps = {
   ],
 };
 
-describe('@pattern/core/TransferList', () => {
+describe('@pattern-ui/core/TransferList', () => {
   itSupportsSystemProps({
     component: TransferList,
     props: defaultProps,
-    displayName: '@pattern/core/TransferList',
+    displayName: '@pattern-ui/core/TransferList',
     refType: HTMLDivElement,
   });
 });

@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Input
 order: 1
 slug: /core/input/
 category: 'inputs'
 description: 'Base component to create custom inputs'
 props: ['Input']
-import: "import { Input } from '@pattern/core';"
+import: "import { Input } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Input/Input.tsx'
 docs: 'core/Input.mdx'
 styles: ['Input']
 ---
 
-import { InputDemos } from '@pattern/demos';
+import { InputDemos } from '@pattern-ui/demos';
 
 ## Disclaimer
 
@@ -81,7 +81,7 @@ You can get input ref by passing `ref` prop to Input component:
 
 ```tsx
 import { useRef } from 'react';
-import { Input } from '@pattern/core';
+import { Input } from '@pattern-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>();

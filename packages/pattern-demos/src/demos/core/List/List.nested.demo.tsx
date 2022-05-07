@@ -1,5 +1,5 @@
 import React from 'react';
-import { List } from '@pattern/core';
+import { List } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

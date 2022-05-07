@@ -1,5 +1,5 @@
 import React from 'react';
-import { Selectors, DefaultProps, useContextStylesApi } from '@pattern/styles';
+import { Selectors, DefaultProps, useContextStylesApi } from '@pattern-ui/styles';
 import { Collapse } from '../../Collapse';
 import { useAccordionContext } from '../Accordion.context';
 import { useAccordionItemContext } from '../AccordionItem.context';
@@ -38,4 +38,4 @@ export function AccordionPanel({ children, className, ...others }: AccordionPane
   );
 }
 
-AccordionPanel.displayName = '@pattern/core/AccordionPanel';
+AccordionPanel.displayName = '@pattern-ui/core/AccordionPanel';

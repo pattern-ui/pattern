@@ -1,5 +1,5 @@
 import React from 'react';
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { SliderRoot, SliderRootProps } from './SliderRoot';
 
 const defaultProps: SliderRootProps = {
@@ -8,11 +8,11 @@ const defaultProps: SliderRootProps = {
   disabled: false,
 };
 
-describe('@pattern/core/SliderRoot', () => {
+describe('@pattern-ui/core/SliderRoot', () => {
   itSupportsSystemProps({
     component: SliderRoot,
     props: defaultProps,
-    displayName: '@pattern/core/SliderRoot',
+    displayName: '@pattern-ui/core/SliderRoot',
     refType: HTMLDivElement,
   });
 });

@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Autocomplete
 order: 1
 slug: /core/autocomplete/
 category: 'inputs'
 description: 'Autocomplete user input with any list of options'
 props: ['Autocomplete']
-import: "import { Autocomplete } from '@pattern/core';"
+import: "import { Autocomplete } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Autocomplete/Autocomplete.tsx'
 docs: 'core/Autocomplete.mdx'
 styles: ['Autocomplete']
 ---
 
-import { AutocompleteDemos } from '@pattern/demos';
+import { AutocompleteDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -23,7 +23,7 @@ import { AutocompleteDemos } from '@pattern/demos';
 
 ```tsx
 import { useState } from 'react';
-import { Autocomplete } from '@pattern/core';
+import { Autocomplete } from '@pattern-ui/core';
 
 function Demo() {
   const [value, setValue] = useState('');
@@ -39,7 +39,7 @@ Autocomplete support two different data formats:
 2. An array of objects with required `value` property and any other additional properties
 
 ```tsx
-import { Autocomplete } from '@pattern/core';
+import { Autocomplete } from '@pattern-ui/core';
 
 function Demo() {
   return (
@@ -139,7 +139,7 @@ To enable animations set the following optional props:
 
 ```tsx
 import { useRef } from 'react';
-import { Autocomplete } from '@pattern/core';
+import { Autocomplete } from '@pattern-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>();

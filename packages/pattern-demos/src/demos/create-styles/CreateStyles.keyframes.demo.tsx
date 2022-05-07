@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStyles, keyframes } from '@pattern/core';
+import { createStyles, keyframes } from '@pattern-ui/core';
 
 const bounce = keyframes({
   'from, 20%, 53%, 80%, to': { transform: 'translate3d(0, 0, 0)' },

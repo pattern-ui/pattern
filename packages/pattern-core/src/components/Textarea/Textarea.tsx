@@ -1,12 +1,12 @@
 import React, { forwardRef } from 'react';
 import TextareaAutosize from 'react-textarea-autosize';
-import { useUuid } from '@pattern/hooks';
+import { useUuid } from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternSize,
   extractSystemStyles,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { InputWrapperBaseProps, InputWrapper } from '../InputWrapper/InputWrapper';
 import { TextInputStylesNames } from '../TextInput/TextInput';
 import { Input, InputBaseProps, InputProps } from '../Input/Input';
@@ -121,4 +121,4 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
   }
 );
 
-Textarea.displayName = '@pattern/core/Textarea';
+Textarea.displayName = '@pattern-ui/core/Textarea';

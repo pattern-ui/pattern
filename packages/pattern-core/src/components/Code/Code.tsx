@@ -4,7 +4,7 @@ import {
   DefaultProps,
   PatternColor,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles from './Code.styles';
 
@@ -47,4 +47,4 @@ export const Code = forwardRef<HTMLElement, CodeProps>((props: CodeProps, ref) =
   );
 });
 
-Code.displayName = '@pattern/core/Code';
+Code.displayName = '@pattern-ui/core/Code';

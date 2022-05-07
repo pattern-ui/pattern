@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Group, Indicator } from '@pattern/core';
-import { Calendar } from '@pattern/dates';
+import { Group, Indicator } from '@pattern-ui/core';
+import { Calendar } from '@pattern-ui/dates';
 
 export default function Demo() {
   const [value, setValue] = useState(null);

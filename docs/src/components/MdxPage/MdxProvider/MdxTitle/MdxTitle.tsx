@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title } from '@pattern/core';
+import { Title } from '@pattern-ui/core';
 import useStyles from './MdxTitle.styles';
 
 export default function MdxTitle({

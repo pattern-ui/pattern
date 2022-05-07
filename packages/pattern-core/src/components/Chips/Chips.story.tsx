@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { PatternProvider } from '@pattern/styles';
+import { PatternProvider } from '@pattern-ui/styles';
 import { Group } from '../Group/Group';
 import { Button } from '../Button/Button';
 import { Chip } from './Chip/Chip';

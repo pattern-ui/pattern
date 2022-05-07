@@ -1,5 +1,5 @@
 import React from 'react';
-import { ActionIcon, ActionIconProps } from '@pattern/core';
+import { ActionIcon, ActionIconProps } from '@pattern-ui/core';
 import useStyles from './ToolbarButton.styles';
 
 interface ToolbarButtonProps extends ActionIconProps<'button'> {
@@ -38,4 +38,4 @@ export function ToolbarButton({
   );
 }
 
-ToolbarButton.displayName = '@pattern/rte/ToolbarButton';
+ToolbarButton.displayName = '@pattern-ui/rte/ToolbarButton';

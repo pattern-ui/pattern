@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePatternTheme, Button, Box, Overlay } from '@pattern/core';
+import { usePatternTheme, Button, Box, Overlay } from '@pattern-ui/core';
 
 export default function Demo() {
   const theme = usePatternTheme();

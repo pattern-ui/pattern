@@ -10,7 +10,7 @@ interface Fruit {
 const banana: Fruit = { name: 'banana', price: 50, stock: 11 };
 const orange: Fruit = { name: 'orange', price: 5, stock: 5 };
 
-describe('@pattern/form/use-form list validation', () => {
+describe('@pattern-ui/form/use-form list validation', () => {
   it('validates form list with given object', () => {
     const hook = renderHook(() =>
       useForm({

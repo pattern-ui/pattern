@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, Group } from '@pattern/core';
-import { useSpotlight } from '@pattern/spotlight';
+import { Button, Group } from '@pattern-ui/core';
+import { useSpotlight } from '@pattern-ui/spotlight';
 
 export function SpotlightControl({ buttonLabel }: { buttonLabel?: string }) {
   const spotlight = useSpotlight();

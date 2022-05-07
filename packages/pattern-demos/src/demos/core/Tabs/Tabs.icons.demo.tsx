@@ -1,6 +1,6 @@
 import React from 'react';
 import { Settings, MessageCircle, Coin } from 'tabler-icons-react';
-import { Tabs } from '@pattern/core';
+import { Tabs } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

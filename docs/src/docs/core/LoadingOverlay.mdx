@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: LoadingOverlay
 order: 1
 slug: /core/loading-overlay/
 category: 'overlay'
 description: 'Overlay over given container with centered Loader'
 props: ['LoadingOverlay']
-import: "import { LoadingOverlay } from '@pattern/core';"
+import: "import { LoadingOverlay } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/LoadingOverlay/LoadingOverlay.tsx'
 docs: 'core/LoadingOverlay.mdx'
 styles: ['LoadingOverlay', 'single-node']
 ---
 
-import { LoadingOverlayDemos } from '@pattern/demos';
+import { LoadingOverlayDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -45,7 +45,7 @@ LoadingOverlay is built using [Overlay](/core/overlay/) and [Loader](/core/loade
 You can change all props of Loader component, opacity and color of Overlay:
 
 ```tsx
-import { LoadingOverlay } from '@pattern/core';
+import { LoadingOverlay } from '@pattern-ui/core';
 
 function Demo() {
   return (
@@ -64,7 +64,7 @@ You can configure default loader in [PatternProvider](/theming/pattern-provider/
 it will be used in [Loader](/core/loader/) and LoadingOverlay components by default:
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 function Demo() {
   return (

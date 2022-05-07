@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { PATTERN_SIZES } from '@pattern/styles';
+import { PATTERN_SIZES } from '@pattern-ui/styles';
 import { NumberInput } from './NumberInput';
 
 const sizes = PATTERN_SIZES.map((size) => (

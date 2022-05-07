@@ -1,5 +1,5 @@
 import React from 'react';
-import { TypographyStylesProvider } from '@pattern/core';
+import { TypographyStylesProvider } from '@pattern-ui/core';
 
 const html = `
 <h1>Example article</h1>

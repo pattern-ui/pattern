@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { PATTERN_SIZES, PatternProvider } from '@pattern/styles';
-import { WithinOverlays, SubmitForm } from '@pattern/storybook';
+import { PATTERN_SIZES, PatternProvider } from '@pattern-ui/styles';
+import { WithinOverlays, SubmitForm } from '@pattern-ui/storybook';
 import { Group } from '../Group/Group';
 import { TextInput } from '../TextInput/TextInput';
 import { SegmentedControl } from '../SegmentedControl/SegmentedControl';

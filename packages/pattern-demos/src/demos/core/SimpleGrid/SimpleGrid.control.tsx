@@ -1,5 +1,5 @@
 import React from 'react';
-import { SimpleGrid, SimpleGridProps } from '@pattern/core';
+import { SimpleGrid, SimpleGridProps } from '@pattern-ui/core';
 import { defaultItems } from './_Item';
 
 function Wrapper(props: SimpleGridProps) {
@@ -11,7 +11,7 @@ function Wrapper(props: SimpleGridProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { SimpleGrid } from '@pattern/core';
+import { SimpleGrid } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

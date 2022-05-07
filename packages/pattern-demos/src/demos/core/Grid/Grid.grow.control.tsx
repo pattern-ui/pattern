@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, GridProps } from '@pattern/core';
+import { Grid, GridProps } from '@pattern-ui/core';
 import { ColWrapper as Col } from './_col-wrapper';
 
 function Wrapper(props: GridProps) {
@@ -15,7 +15,7 @@ function Wrapper(props: GridProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Grid } from '@pattern/core';
+import { Grid } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

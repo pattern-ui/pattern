@@ -1,4 +1,4 @@
-export * from '@pattern/styles';
+export * from '@pattern-ui/styles';
 export * from './utils';
 
 export * from './components/Accordion';

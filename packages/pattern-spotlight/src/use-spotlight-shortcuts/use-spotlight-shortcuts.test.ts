@@ -1,6 +1,6 @@
 import { getHotkeysPayload } from './use-spotlight-shortcuts';
 
-describe('@pattern/spotlight/use-spotlight-shortcuts', () => {
+describe('@pattern-ui/spotlight/use-spotlight-shortcuts', () => {
   const spy = jest.fn();
 
   it('returns correct values for string shortcut', () => {

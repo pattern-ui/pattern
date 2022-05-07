@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePatternDefaultProps } from '@pattern/core';
+import { usePatternDefaultProps } from '@pattern-ui/core';
 import { CalendarBase, CalendarBaseProps } from '../CalendarBase/CalendarBase';
 import { isSameDate } from '../../utils';
 
@@ -44,4 +44,4 @@ export function Calendar<Multiple extends boolean = false>(props: CalendarProps<
   );
 }
 
-Calendar.displayName = '@pattern/dates/Calendar';
+Calendar.displayName = '@pattern-ui/dates/Calendar';

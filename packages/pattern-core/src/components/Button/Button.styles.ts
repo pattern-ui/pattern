@@ -5,7 +5,7 @@ import {
   PatternSizes,
   PatternColor,
   PatternTheme,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { INPUT_SIZES } from '../Input';
 
 export type ButtonVariant =

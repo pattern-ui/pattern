@@ -1,6 +1,6 @@
 import React from 'react';
-import { Switch } from '@pattern/core';
-import { upperFirst } from '@pattern/hooks';
+import { Switch } from '@pattern-ui/core';
+import { upperFirst } from '@pattern-ui/hooks';
 
 interface BooleanControlProps {
   value: boolean;

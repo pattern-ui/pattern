@@ -1,5 +1,5 @@
 import React from 'react';
-import { RingProgress, Group, RingProgressProps } from '@pattern/core';
+import { RingProgress, Group, RingProgressProps } from '@pattern-ui/core';
 
 function Wrapper(props: RingProgressProps) {
   return (
@@ -17,7 +17,7 @@ function Wrapper(props: RingProgressProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { RingProgress } from '@pattern/core';
+import { RingProgress } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

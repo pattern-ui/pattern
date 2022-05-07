@@ -1,35 +1,35 @@
 ---
 group: 'Other packages'
-package: '@pattern/spotlight'
+package: '@pattern-ui/spotlight'
 title: 'Spotlight'
 order: 1
 slug: /others/spotlight/
 description: 'Command center for your application'
 props: ['SpotlightProvider']
-import: "import { SpotlightProvider } from '@pattern/spotlight';"
+import: "import { SpotlightProvider } from '@pattern-ui/spotlight';"
 source: 'pattern-spotlight/src'
 docs: 'others/spotlight.mdx'
-installation: '@pattern/spotlight'
+installation: '@pattern-ui/spotlight'
 license: MIT
 styles: ['SpotlightProvider']
 ---
 
-import { SpotlightDemos } from '@pattern/demos';
+import { SpotlightDemos } from '@pattern-ui/demos';
 
 ## Installation
 
-Package depends on `@pattern/core` and `@pattern/hooks`.
+Package depends on `@pattern-ui/core` and `@pattern-ui/hooks`.
 
 Install with npm:
 
 ```sh
-npm install @pattern/spotlight @pattern/core @pattern/hooks
+npm install @pattern-ui/spotlight @pattern-ui/core @pattern-ui/hooks
 ```
 
 Install with yarn:
 
 ```sh
-yarn add @pattern/spotlight @pattern/core @pattern/hooks
+yarn add @pattern-ui/spotlight @pattern-ui/core @pattern-ui/hooks
 ```
 
 ## Usage
@@ -43,8 +43,8 @@ with `SpotlightProvider` component:
 Note that if you are using [PatternProvider](/theming/pattern-provider/), `SpotlightProvider` must be used as its child:
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
-import { SpotlightProvider } from '@pattern/spotlight';
+import { PatternProvider } from '@pattern-ui/core';
+import { SpotlightProvider } from '@pattern-ui/spotlight';
 
 function App() {
   return (
@@ -66,7 +66,7 @@ when users press `⌘ + K` on MacOS and `Ctrl + K` on any other os.
 You can setup multiple shortcuts, for example, Pattern documentation uses the following setup:
 
 ```tsx
-import { SpotlightProvider } from '@pattern/spotlight';
+import { SpotlightProvider } from '@pattern-ui/spotlight';
 
 function App() {
   return (
@@ -95,7 +95,7 @@ Keyboard shortcuts will not work if:
 To disabled keyboard shortcuts set `shortcut={null}`:
 
 ```tsx
-import { SpotlightProvider } from '@pattern/spotlight';
+import { SpotlightProvider } from '@pattern-ui/spotlight';
 
 function App() {
   return (
@@ -112,8 +112,8 @@ function App() {
 For example, it can be used to open spotlight with button click:
 
 ```tsx
-import { useSpotlight } from '@pattern/spotlight';
-import { Button, Group } from '@pattern/core';
+import { useSpotlight } from '@pattern-ui/spotlight';
+import { Button, Group } from '@pattern-ui/core';
 
 function SpotlightControl() {
   const spotlight = useSpotlight();
@@ -160,7 +160,7 @@ interface UseSpotlight {
 
 ## Event based functions
 
-`@pattern/spotlight` exports several functions which can be used to perform certain actions
+`@pattern-ui/spotlight` exports several functions which can be used to perform certain actions
 from any part of your application:
 
 ```tsx
@@ -172,7 +172,7 @@ import {
   triggerSpotlightAction,
   registerSpotlightActions,
   removeSpotlightActions,
-} from '@pattern/spotlight';
+} from '@pattern-ui/spotlight';
 
 // Opens spotlight
 openSpotlight();
@@ -238,10 +238,10 @@ interface SpotlightAction {
 }
 ```
 
-You can import `SpotlightAction` type from `@pattern/spotlight` package:
+You can import `SpotlightAction` type from `@pattern-ui/spotlight` package:
 
 ```tsx
-import type { SpotlightAction } from '@pattern/spotlight';
+import type { SpotlightAction } from '@pattern-ui/spotlight';
 ```
 
 ## Actions filtering

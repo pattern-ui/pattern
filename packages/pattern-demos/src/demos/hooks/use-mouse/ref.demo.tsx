@@ -1,6 +1,6 @@
 import React from 'react';
-import { usePatternTheme, Group, Text, Code } from '@pattern/core';
-import { useMouse } from '@pattern/hooks';
+import { usePatternTheme, Group, Text, Code } from '@pattern-ui/core';
+import { useMouse } from '@pattern-ui/hooks';
 
 export default function Demo() {
   const theme = usePatternTheme();

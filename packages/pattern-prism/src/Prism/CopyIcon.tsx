@@ -26,4 +26,4 @@ export function CopyIcon({ copied }: CopyIconProps) {
   );
 }
 
-CopyIcon.displayName = '@pattern/prism/CopyIcon';
+CopyIcon.displayName = '@pattern-ui/prism/CopyIcon';

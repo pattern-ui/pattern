@@ -1,4 +1,4 @@
-import type { RadioGroupStylesNames } from '@pattern/core';
+import type { RadioGroupStylesNames } from '@pattern-ui/core';
 import { InputWrapper } from './InputWrapper.styles-api';
 
 export const RadioGroup: Record<RadioGroupStylesNames, string> = {

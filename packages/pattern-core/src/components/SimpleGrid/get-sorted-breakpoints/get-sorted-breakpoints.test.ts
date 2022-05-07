@@ -1,7 +1,7 @@
-import { DEFAULT_THEME } from '@pattern/styles';
+import { DEFAULT_THEME } from '@pattern-ui/styles';
 import { getSortedBreakpoints } from './get-sorted-breakpoints';
 
-describe('@pattern/core/SimpleGrid/get-sorted-breakpoints', () => {
+describe('@pattern-ui/core/SimpleGrid/get-sorted-breakpoints', () => {
   it('returns an empty array if breakpoints are not set', () => {
     expect(getSortedBreakpoints(DEFAULT_THEME, [])).toStrictEqual([]);
   });

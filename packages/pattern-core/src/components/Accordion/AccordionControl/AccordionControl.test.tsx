@@ -6,7 +6,7 @@ import {
   itSupportsSystemProps,
   itThrowsContextError,
   itRendersChildren,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { AccordionControl, AccordionControlProps } from './AccordionControl';
 import { AccordionProvider } from '../AccordionProvider';
 import { AccordionItemContextProvider } from '../AccordionItem.context';
@@ -21,7 +21,7 @@ const TestContainer = createContextContainer(
 
 const defaultProps: AccordionControlProps = {};
 
-describe('@pattern/core/AccordionControl', () => {
+describe('@pattern-ui/core/AccordionControl', () => {
   itThrowsContextError(
     createContextContainer(AccordionControl, AccordionItemContextProvider, {
       value: { value: 'test-value' },
@@ -34,7 +34,7 @@ describe('@pattern/core/AccordionControl', () => {
   itSupportsSystemProps({
     component: TestContainer,
     props: defaultProps,
-    displayName: '@pattern/core/AccordionControl',
+    displayName: '@pattern-ui/core/AccordionControl',
     refType: HTMLButtonElement,
   });
 

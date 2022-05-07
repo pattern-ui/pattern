@@ -1,4 +1,4 @@
-import { PatternNumberSize, PatternTheme, CSSObject } from '@pattern/styles';
+import { PatternNumberSize, PatternTheme, CSSObject } from '@pattern-ui/styles';
 import { createUseContext } from '../../utils';
 import type { MenuStylesNames } from './Menu';
 

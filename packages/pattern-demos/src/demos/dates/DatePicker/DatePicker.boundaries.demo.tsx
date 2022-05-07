@@ -1,6 +1,6 @@
 import React from 'react';
 import dayjs from 'dayjs';
-import { DatePicker } from '@pattern/dates';
+import { DatePicker } from '@pattern-ui/dates';
 
 export default function Demo() {
   return (

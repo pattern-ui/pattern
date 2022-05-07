@@ -6,7 +6,7 @@ import {
   itSupportsInputWrapperProps,
   itSupportsSystemProps,
   itFiltersChildren,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { CheckboxGroup, Checkbox, CheckboxGroupProps } from '../index';
 
 const defaultProps: CheckboxGroupProps = {
@@ -17,12 +17,12 @@ const defaultProps: CheckboxGroupProps = {
   ],
 };
 
-describe('@pattern/core/CheckboxGroup', () => {
+describe('@pattern-ui/core/CheckboxGroup', () => {
   itSupportsInputWrapperProps(CheckboxGroup, defaultProps, 'CheckboxGroup');
   itSupportsSystemProps({
     component: CheckboxGroup,
     props: defaultProps,
-    displayName: '@pattern/core/CheckboxGroup',
+    displayName: '@pattern-ui/core/CheckboxGroup',
     excludeOthers: true,
     refType: HTMLDivElement,
   });

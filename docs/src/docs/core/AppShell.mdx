@@ -1,21 +1,21 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: AppShell
 order: 1
 slug: /core/app-shell/
 category: 'layout'
 description: 'Responsive shell for your application with header and navbar'
 props: ['AppShell', 'Navbar', 'Header', 'Aside', 'Footer']
-import: "import { AppShell, Navbar, Header, Aside, Footer } from '@pattern/core';"
+import: "import { AppShell, Navbar, Header, Aside, Footer } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/AppShell/AppShell.tsx'
 docs: 'core/AppShell.mdx'
 styles: ['AppShell', 'Navbar']
 ---
 
 import { ExternalLinkIcon } from '@modulz/radix-icons';
-import { Anchor, Center } from '@pattern/core';
-import { AppShellDemos } from '@pattern/demos';
+import { Anchor, Center } from '@pattern-ui/core';
+import { AppShellDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -45,7 +45,7 @@ import {
   MediaQuery,
   Burger,
   usePatternTheme,
-} from '@pattern/core';
+} from '@pattern-ui/core';
 
 export default function AppShellDemo() {
   const theme = usePatternTheme();
@@ -110,7 +110,7 @@ Navbar and Aside components can be used outside of AppShell context ([View full 
 ### Navbar.Section and Aside.Section
 
 ```tsx
-import { Navbar } from '@pattern/core';
+import { Navbar } from '@pattern-ui/core';
 
 function Demo() {
   // Same can be applied to Aside component with Aside.Section component
@@ -132,7 +132,7 @@ function Demo() {
 ### Responsive width
 
 ```tsx
-import { Navbar } from '@pattern/core';
+import { Navbar } from '@pattern-ui/core';
 
 function Demo() {
   // Same can be applied to Aside component
@@ -158,7 +158,7 @@ function Demo() {
 To make Navbar or Aside fixed (like in Pattern docs) set `fixed` and `position` props:
 
 ```tsx
-import { Navbar } from '@pattern/core';
+import { Navbar } from '@pattern-ui/core';
 
 function Demo() {
   return <Navbar fixed position={{ top: 0, left: 0 }} />;

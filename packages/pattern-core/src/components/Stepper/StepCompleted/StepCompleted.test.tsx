@@ -1,7 +1,7 @@
 import { StepCompleted } from './StepCompleted';
 
-describe('@pattern/core/StepCompleted', () => {
+describe('@pattern-ui/core/StepCompleted', () => {
   it('has correct displayName', () => {
-    expect(StepCompleted.displayName).toStrictEqual('@pattern/core/StepCompleted');
+    expect(StepCompleted.displayName).toStrictEqual('@pattern-ui/core/StepCompleted');
   });
 });

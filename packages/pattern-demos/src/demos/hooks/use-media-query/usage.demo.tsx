@@ -1,6 +1,6 @@
 import React from 'react';
-import { Group, Badge } from '@pattern/core';
-import { useMediaQuery } from '@pattern/hooks';
+import { Group, Badge } from '@pattern-ui/core';
+import { useMediaQuery } from '@pattern-ui/hooks';
 
 export default function Demo() {
   const matches = useMediaQuery('(min-width: 900px)');

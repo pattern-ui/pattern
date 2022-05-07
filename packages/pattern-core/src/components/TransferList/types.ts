@@ -1,4 +1,4 @@
-import { PatternNumberSize } from '@pattern/styles';
+import { PatternNumberSize } from '@pattern-ui/styles';
 
 export interface TransferListItem {
   value: string;

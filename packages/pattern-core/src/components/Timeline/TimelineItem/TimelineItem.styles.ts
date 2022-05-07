@@ -1,4 +1,4 @@
-import { createStyles, PatternColor, PatternNumberSize } from '@pattern/styles';
+import { createStyles, PatternColor, PatternNumberSize } from '@pattern-ui/styles';
 
 interface TimelineItemStyles {
   bulletSize: number;

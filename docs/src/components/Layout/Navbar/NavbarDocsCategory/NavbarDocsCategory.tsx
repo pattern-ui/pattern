@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'gatsby';
 import { ChevronDownIcon } from '@modulz/radix-icons';
-import { Text } from '@pattern/core';
-import { useViewportSize } from '@pattern/hooks';
+import { Text } from '@pattern-ui/core';
+import { useViewportSize } from '@pattern-ui/hooks';
 import { useLocation } from '@reach/router';
 import { getDocsData } from '../../get-docs-data';
 import useStyles from './NavbarDocsCategory.styles';

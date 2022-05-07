@@ -8,10 +8,10 @@ Code highlight built with prism and Pattern
 
 ```sh
 # With yarn
-yarn add @pattern/hooks @pattern/core @pattern/prism
+yarn add @pattern-ui/hooks @pattern-ui/core @pattern-ui/prism
 
 # With npm
-npm install @pattern/hooks @pattern/core @pattern/prism
+npm install @pattern-ui/hooks @pattern-ui/core @pattern-ui/prism
 ```
 
 ## License

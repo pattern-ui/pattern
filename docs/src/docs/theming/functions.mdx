@@ -18,7 +18,7 @@ You can use theme functions wherever Pattern theme is available. There are 4 mai
 - [createStyles](/theming/create-styles) function
 
 ```tsx
-import { createStyles } from '@pattern/core';
+import { createStyles } from '@pattern-ui/core';
 
 const useStyles = createStyles((theme) => ({
   myCustomButton: {
@@ -30,7 +30,7 @@ const useStyles = createStyles((theme) => ({
 - `sx` component prop
 
 ```tsx
-import { Box } from '@pattern/core';
+import { Box } from '@pattern-ui/core';
 
 function Demo() {
   return (
@@ -46,7 +46,7 @@ function Demo() {
 - `styles` component prop
 
 ```tsx
-import { Slider } from '@pattern/core';
+import { Slider } from '@pattern-ui/core';
 
 function Demo() {
   return (
@@ -64,7 +64,7 @@ function Demo() {
 - `usePatternTheme` hook
 
 ```tsx
-import { usePatternTheme } from '@pattern/core';
+import { usePatternTheme } from '@pattern-ui/core';
 
 function Demo() {
   const theme = usePatternTheme();
@@ -80,7 +80,7 @@ include Pattern focus styles to your custom interactive elements. `focusStyles` 
 without providing any additional parameters:
 
 ```tsx
-import { createStyles } from '@pattern/core';
+import { createStyles } from '@pattern-ui/core';
 
 const useStyles = createStyles((theme) => ({
   myCustomButton: {
@@ -104,7 +104,7 @@ With `fontStyles` function you can add font styles from your Pattern theme to an
 Function returns font-family and font-smoothing styles:
 
 ```tsx
-import { createStyles } from '@pattern/core';
+import { createStyles } from '@pattern-ui/core';
 
 const useStyles = createStyles((theme) => ({
   myCustomText: {
@@ -133,7 +133,7 @@ theme.fn.largerThan(700); // -> `@media (min-width: 701px)`
 You can use both functions as a replacement for regular media query syntax in `createStyles` function, `styles` and `sx` props:
 
 ```tsx
-import { createStyles } from '@pattern/core';
+import { createStyles } from '@pattern-ui/core';
 
 const useStyles = createStyles((theme) => ({
   myResponsiveText: {

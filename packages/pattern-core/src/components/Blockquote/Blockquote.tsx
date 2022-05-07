@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, PatternColor, Selectors, usePatternDefaultProps } from '@pattern/styles';
+import { DefaultProps, PatternColor, Selectors, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Box } from '../Box';
 import { QuoteIcon } from './QuoteIcon';
 import useStyles from './Blockquote.styles';
@@ -44,4 +44,4 @@ export const Blockquote = forwardRef<HTMLQuoteElement, BlockquoteProps>(
   }
 );
 
-Blockquote.displayName = '@pattern/core/Blockquote';
+Blockquote.displayName = '@pattern-ui/core/Blockquote';

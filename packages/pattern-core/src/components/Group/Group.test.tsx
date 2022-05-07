@@ -1,16 +1,16 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Group, GroupProps } from './Group';
 
 const defaultProps: GroupProps = {};
 
-describe('@pattern/core/Group', () => {
+describe('@pattern-ui/core/Group', () => {
   itRendersChildren(Group, defaultProps);
   itSupportsSystemProps({
     component: Group,
     props: defaultProps,
-    displayName: '@pattern/core/Group',
+    displayName: '@pattern-ui/core/Group',
     refType: HTMLDivElement,
   });
 

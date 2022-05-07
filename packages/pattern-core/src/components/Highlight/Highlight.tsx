@@ -6,7 +6,7 @@ import {
   PatternTheme,
   CSSObject,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Text, SharedTextProps } from '../Text/Text';
 import { Mark } from '../Mark/Mark';
 import { highlighter } from './highlighter/highlighter';
@@ -57,4 +57,4 @@ export const Highlight: HighlightComponent = forwardRef(
   }
 ) as any;
 
-Highlight.displayName = '@pattern/core/Highlight';
+Highlight.displayName = '@pattern-ui/core/Highlight';

@@ -5,7 +5,7 @@ import {
   PatternSize,
   PatternNumberSize,
   Selectors,
-} from '@pattern/core';
+} from '@pattern-ui/core';
 import useStyles from './DefaultValue.styles';
 
 export type DefaultValueStylesNames = Selectors<typeof useStyles>;
@@ -65,4 +65,4 @@ export function DefaultValue({
   );
 }
 
-DefaultValue.displayName = '@pattern/labs/TagInput/DefaultValue';
+DefaultValue.displayName = '@pattern-ui/labs/TagInput/DefaultValue';

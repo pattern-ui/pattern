@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
-import { useForm, zodResolver } from '@pattern/form';
-import { Box, Button, Group, NumberInput, TextInput } from '@pattern/core';
+import { useForm, zodResolver } from '@pattern-ui/form';
+import { Box, Button, Group, NumberInput, TextInput } from '@pattern-ui/core';
 import React from 'react';
 import { z } from 'zod';
 

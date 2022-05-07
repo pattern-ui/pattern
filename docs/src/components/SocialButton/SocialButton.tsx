@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, usePatternTheme } from '@pattern/core';
+import { Button, usePatternTheme } from '@pattern-ui/core';
 import { MarkGithubIcon } from '@primer/octicons-react';
 import { TwitterIcon } from './TwitterIcon';
 import { DiscordIcon } from './DiscordIcon';

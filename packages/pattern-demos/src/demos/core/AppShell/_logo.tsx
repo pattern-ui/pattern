@@ -1,5 +1,5 @@
 import React from 'react';
-import { ColorScheme } from '@pattern/core';
+import { ColorScheme } from '@pattern-ui/core';
 
 export function Logo({ colorScheme }: { colorScheme: ColorScheme }) {
   return (

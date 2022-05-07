@@ -1,4 +1,4 @@
-import { createStyles, PatternNumberSize, PatternTheme, CSSObject } from '@pattern/styles';
+import { createStyles, PatternNumberSize, PatternTheme, CSSObject } from '@pattern-ui/styles';
 
 export interface AppShellStylesParams {
   padding: PatternNumberSize;

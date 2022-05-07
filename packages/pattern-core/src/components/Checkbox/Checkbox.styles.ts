@@ -1,4 +1,4 @@
-import { createStyles, PatternSize, PatternColor, PatternNumberSize } from '@pattern/styles';
+import { createStyles, PatternSize, PatternColor, PatternNumberSize } from '@pattern-ui/styles';
 
 export const sizes = {
   xs: 16,

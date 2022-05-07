@@ -1,4 +1,4 @@
-import { createStyles, PatternSize, PatternColor } from '@pattern/styles';
+import { createStyles, PatternSize, PatternColor } from '@pattern-ui/styles';
 
 export interface RadioStylesParams {
   size: PatternSize;

@@ -3,7 +3,7 @@ import {
   getDefaultZIndex,
   ForwardRefWithStaticComponents,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import {
   HorizontalSection,
   HorizontalSectionSharedProps,
@@ -37,4 +37,4 @@ export const Aside: AsideComponent = forwardRef<HTMLElement, AsideProps>(
 ) as any;
 
 Aside.Section = HorizontalSection.Section;
-Aside.displayName = '@pattern/core/Aside';
+Aside.displayName = '@pattern-ui/core/Aside';

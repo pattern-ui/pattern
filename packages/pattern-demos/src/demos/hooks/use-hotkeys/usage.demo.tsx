@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { getHotkeyHandler, useHotkeys } from '@pattern/hooks';
-import { useNotifications } from '@pattern/notifications';
-import { TextInput } from '@pattern/core';
+import { getHotkeyHandler, useHotkeys } from '@pattern-ui/hooks';
+import { useNotifications } from '@pattern-ui/notifications';
+import { TextInput } from '@pattern-ui/core';
 
 export default function Demo() {
   useHotkeys([

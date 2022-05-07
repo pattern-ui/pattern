@@ -6,7 +6,7 @@ import {
   PatternColor,
   PatternNumberSize,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import { IndicatorPosition } from './Indicator.types';
 import useStyles from './Indicator.styles';
@@ -88,4 +88,4 @@ export const Indicator = forwardRef<HTMLDivElement, IndicatorProps>((props, ref)
   );
 });
 
-Indicator.displayName = '@pattern/core/Indicator';
+Indicator.displayName = '@pattern-ui/core/Indicator';

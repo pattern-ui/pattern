@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, Selectors, UnstyledButton, PatternSize } from '@pattern/core';
+import { DefaultProps, Selectors, UnstyledButton, PatternSize } from '@pattern-ui/core';
 import { getMonthsNames } from '../../../utils';
 import { CalendarHeader, CalendarHeaderStylesNames } from '../CalendarHeader/CalendarHeader';
 import { isMonthInRange } from './is-month-in-range/is-month-in-range';
@@ -85,4 +85,4 @@ export function MonthPicker({
   );
 }
 
-MonthPicker.displayName = '@pattern/dates/MonthPicker';
+MonthPicker.displayName = '@pattern-ui/dates/MonthPicker';

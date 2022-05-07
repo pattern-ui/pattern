@@ -1,6 +1,6 @@
 import React from 'react';
-import { Table, Title } from '@pattern/core';
-import * as STYLES_API from '@pattern/styles-api';
+import { Table, Title } from '@pattern-ui/core';
+import * as STYLES_API from '@pattern-ui/styles-api';
 import useStyles from './StylesApiItem.styles';
 
 interface StylesApiItemProps {

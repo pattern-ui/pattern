@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, forwardRef } from 'react';
-import { useUncontrolled, useDidUpdate } from '@pattern/hooks';
-import { DefaultProps, PatternSize, Selectors, usePatternDefaultProps } from '@pattern/styles';
+import { useUncontrolled, useDidUpdate } from '@pattern-ui/hooks';
+import { DefaultProps, PatternSize, Selectors, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Box } from '../Box';
 import { ColorSwatch } from '../ColorSwatch/ColorSwatch';
 import { convertHsvaTo, isColorValid, parseColor } from './converters';
@@ -227,4 +227,4 @@ export const ColorPicker = forwardRef<HTMLDivElement, ColorPickerProps>(
   }
 );
 
-ColorPicker.displayName = '@pattern/core/ColorPicker';
+ColorPicker.displayName = '@pattern-ui/core/ColorPicker';

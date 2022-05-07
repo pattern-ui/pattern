@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: InputWrapper
 order: 1
 slug: /core/input-wrapper/
 category: 'inputs'
 description: 'Enhance custom inputs with label, error and description'
 props: ['InputWrapper']
-import: "import { InputWrapper } from '@pattern/core';"
+import: "import { InputWrapper } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/InputWrapper/InputWrapper.tsx'
 docs: 'core/InputWrapper.mdx'
 styles: ['InputWrapper']
 ---
 
-import { InputWrapperDemos } from '@pattern/demos';
+import { InputWrapperDemos } from '@pattern-ui/demos';
 
 ## Disclaimer
 
@@ -45,7 +45,7 @@ Some inputs like [RadioGroup](/core/radio-group/) may require to detach label fr
 To implement this, use `labelElement`:
 
 ```tsx
-import { InputWrapper } from '@pattern/core';
+import { InputWrapper } from '@pattern-ui/core';
 
 // id is required to connect label and input
 function WithLabel() {

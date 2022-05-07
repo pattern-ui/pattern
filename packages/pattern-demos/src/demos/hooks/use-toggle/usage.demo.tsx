@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, Group } from '@pattern/core';
-import { useToggle, upperFirst } from '@pattern/hooks';
+import { Button, Group } from '@pattern-ui/core';
+import { useToggle, upperFirst } from '@pattern-ui/hooks';
 
 export default function Demo() {
   const [value, toggle] = useToggle('blue', ['blue', 'orange']);

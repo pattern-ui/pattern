@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, Group, AvatarsGroup } from '@pattern/core';
+import { Avatar, Group, AvatarsGroup } from '@pattern-ui/core';
 import { avatars } from './_mockdata';
 
 export default function Demo() {

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Group, Button, Text } from '@pattern/core';
-import { useModals } from '@pattern/modals';
-import { useNotifications } from '@pattern/notifications';
+import { Group, Button, Text } from '@pattern-ui/core';
+import { useModals } from '@pattern-ui/modals';
+import { useNotifications } from '@pattern-ui/notifications';
 
 export default function Demo() {
   const notifications = useNotifications();

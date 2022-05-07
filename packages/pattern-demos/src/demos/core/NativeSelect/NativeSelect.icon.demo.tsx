@@ -1,6 +1,6 @@
 import React from 'react';
 import { Hash } from 'tabler-icons-react';
-import { NativeSelect } from '@pattern/core';
+import { NativeSelect } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

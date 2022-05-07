@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Slider, Text, Container } from '@pattern/core';
+import { Slider, Text, Container } from '@pattern-ui/core';
 
 export default function Demo() {
   const [value, setValue] = useState(50);

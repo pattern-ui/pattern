@@ -1,5 +1,5 @@
 import React from 'react';
-import { Kbd } from '@pattern/core';
+import { Kbd } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

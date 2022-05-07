@@ -1,8 +1,8 @@
 import React from 'react';
-import { Prism } from '@pattern/prism';
+import { Prism } from '@pattern-ui/prism';
 
 const demoCode = `
-import { Button } from '@pattern/core';
+import { Button } from '@pattern-ui/core';
 
 export default function Demo() {
   return <Button>Hello</Button>

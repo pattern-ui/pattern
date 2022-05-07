@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { ListItem } from './ListItem/ListItem';
 import { List, ListProps } from './List';
 
@@ -12,11 +12,11 @@ const defaultProps: ListProps = {
   ],
 };
 
-describe('@pattern/core/List', () => {
+describe('@pattern-ui/core/List', () => {
   itSupportsSystemProps({
     component: List,
     props: defaultProps,
-    displayName: '@pattern/core/List',
+    displayName: '@pattern-ui/core/List',
     refType: HTMLUListElement,
   });
 

@@ -1,31 +1,31 @@
 ---
 group: 'pattern-dates'
-package: '@pattern/dates'
+package: '@pattern-ui/dates'
 title: Month
 order: 1
 slug: /dates/month/
 description: 'Most basic date related component, displays given month with optional weekdays row'
 props: ['Month']
-import: "import { Month } from '@pattern/dates';"
+import: "import { Month } from '@pattern-ui/dates';"
 source: 'pattern-dates/src/components/Month/Month.tsx'
 docs: 'dates/Month.mdx'
 styles: ['Month']
 ---
 
-import { MonthDemos } from '@pattern/demos';
+import { MonthDemos } from '@pattern-ui/demos';
 
 ## Usage
 
-Month is the most basic @pattern/dates component, it displays single month without any controls to change current month.
+Month is the most basic @pattern-ui/dates component, it displays single month without any controls to change current month.
 Component is used as base for [Calendar](/dates/calendar/), [DatePicker](/dates/date-picker/)
-and other components. You can use Month to build custom date or date range pickers that are not included in @pattern/dates
+and other components. You can use Month to build custom date or date range pickers that are not included in @pattern-ui/dates
 but in most cases other components will be more suitable in your application.
 
 <Demo data={MonthDemos.usage} />
 
 ## Localization
 
-All @pattern/dates components are built with [dayjs](https://day.js.org/) library.
+All @pattern-ui/dates components are built with [dayjs](https://day.js.org/) library.
 Default locale is `en`, to change this follow [dayjs localization guide](https://day.js.org/docs/en/i18n/loading-into-nodejs):
 
 ```tsx

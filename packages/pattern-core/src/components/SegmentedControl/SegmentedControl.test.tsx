@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility, itSupportsSystemProps } from '@pattern/tests';
+import { checkAccessibility, itSupportsSystemProps } from '@pattern-ui/tests';
 import { SegmentedControl, SegmentedControlProps } from './SegmentedControl';
 
 const defaultProps: SegmentedControlProps = {
@@ -13,12 +13,12 @@ const defaultProps: SegmentedControlProps = {
   ],
 };
 
-describe('@pattern/core/SegmentedControl', () => {
+describe('@pattern-ui/core/SegmentedControl', () => {
   checkAccessibility([<SegmentedControl {...defaultProps} />]);
   itSupportsSystemProps({
     component: SegmentedControl,
     props: defaultProps,
-    displayName: '@pattern/core/SegmentedControl',
+    displayName: '@pattern-ui/core/SegmentedControl',
     refType: HTMLDivElement,
   });
 

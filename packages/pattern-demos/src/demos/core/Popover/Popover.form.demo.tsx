@@ -1,5 +1,5 @@
 import React from 'react';
-import { Popover, Button, TextInput } from '@pattern/core';
+import { Popover, Button, TextInput } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

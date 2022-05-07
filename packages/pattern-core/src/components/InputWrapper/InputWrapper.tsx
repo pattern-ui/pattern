@@ -1,5 +1,5 @@
 import React, { createElement, forwardRef } from 'react';
-import { DefaultProps, PatternSize, Selectors, usePatternDefaultProps } from '@pattern/styles';
+import { DefaultProps, PatternSize, Selectors, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Text } from '../Text';
 import { Box } from '../Box';
 import useStyles from './InputWrapper.styles';
@@ -118,4 +118,4 @@ export const InputWrapper = forwardRef<HTMLDivElement, InputWrapperProps>(
   }
 );
 
-InputWrapper.displayName = '@pattern/core/InputWrapper';
+InputWrapper.displayName = '@pattern-ui/core/InputWrapper';

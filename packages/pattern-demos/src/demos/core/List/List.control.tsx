@@ -1,5 +1,5 @@
 import React from 'react';
-import { List, ListProps } from '@pattern/core';
+import { List, ListProps } from '@pattern-ui/core';
 
 function Wrapper(props: ListProps) {
   return (
@@ -14,7 +14,7 @@ function Wrapper(props: ListProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { List } from '@pattern/core';
+import { List } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

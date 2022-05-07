@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { PatternProvider, ColorSchemeProvider, ColorScheme, Global } from '@pattern/core';
-import { useHotkeys, useLocalStorage } from '@pattern/hooks';
+import { PatternProvider, ColorSchemeProvider, ColorScheme, Global } from '@pattern-ui/core';
+import { useHotkeys, useLocalStorage } from '@pattern-ui/hooks';
 import rtlPlugin from 'stylis-plugin-rtl';
 import { LayoutInner, LayoutProps } from './LayoutInner';
 import { DirectionContext } from './DirectionContext';

@@ -1,4 +1,4 @@
-import { itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Header, HeaderProps } from './Header';
 
 const defaultProps: HeaderProps = {
@@ -6,12 +6,12 @@ const defaultProps: HeaderProps = {
   children: 'test-header',
 };
 
-describe('@pattern/core/Header', () => {
+describe('@pattern-ui/core/Header', () => {
   itRendersChildren(Header, defaultProps);
   itSupportsSystemProps({
     component: Header,
     props: defaultProps,
-    displayName: '@pattern/core/Header',
+    displayName: '@pattern-ui/core/Header',
     refType: HTMLElement,
   });
 });

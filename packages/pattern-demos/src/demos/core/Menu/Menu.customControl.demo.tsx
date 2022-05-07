@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import { ChevronRight } from 'tabler-icons-react';
-import { Group, Avatar, Text, UnstyledButton, Menu } from '@pattern/core';
+import { Group, Avatar, Text, UnstyledButton, Menu } from '@pattern-ui/core';
 import { menuItems } from './_menu-items';
 
 interface UserButtonProps extends React.ComponentPropsWithoutRef<'button'> {

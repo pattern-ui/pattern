@@ -1,6 +1,6 @@
 import { linearGradient, radialGradient } from './gradient';
 
-describe('@pattern/styles/linear-gradient', () => {
+describe('@pattern-ui/styles/linear-gradient', () => {
   it('returns correct gradient with two color stops', () => {
     expect(linearGradient(24, '#000', '#fff')).toBe('linear-gradient(24deg, #000 0%, #fff 100%)');
   });
@@ -12,7 +12,7 @@ describe('@pattern/styles/linear-gradient', () => {
   });
 });
 
-describe('@pattern/styles/radial-gradient', () => {
+describe('@pattern-ui/styles/radial-gradient', () => {
   it('returns correct gradient with two color stops', () => {
     expect(radialGradient('#000', '#fff')).toBe('radial-gradient(circle, #000 0%, #fff 100%)');
   });

@@ -4,7 +4,7 @@ import {
   PatternColor,
   PatternNumberSize,
   getDefaultZIndex,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { IndicatorPosition } from './Indicator.types';
 
 export interface IndicatorStylesParams {

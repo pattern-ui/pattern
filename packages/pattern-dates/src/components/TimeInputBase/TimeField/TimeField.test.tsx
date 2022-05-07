@@ -5,7 +5,7 @@ import {
   itSupportsOthers,
   itSupportsStyle,
   itSupportsRef,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { TimeField } from './TimeField';
 
 const defaultProps = {
@@ -13,7 +13,7 @@ const defaultProps = {
   setValue: () => {},
 };
 
-describe('@pattern/dates/TimeField', () => {
+describe('@pattern-ui/dates/TimeField', () => {
   itSupportsClassName(TimeField, defaultProps);
   itSupportsOthers(TimeField, defaultProps);
   itSupportsStyle(TimeField, defaultProps);
@@ -27,6 +27,6 @@ describe('@pattern/dates/TimeField', () => {
   });
 
   it('has correct displayName', () => {
-    expect(TimeField.displayName).toStrictEqual('@pattern/dates/TimeField');
+    expect(TimeField.displayName).toStrictEqual('@pattern-ui/dates/TimeField');
   });
 });

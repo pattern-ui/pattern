@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from '@pattern/core';
+import { Container } from '@pattern-ui/core';
 import { Demo } from './components/Demo/Demo';
 import { ControlDemo } from './components/Demo/ControlDemo';
 

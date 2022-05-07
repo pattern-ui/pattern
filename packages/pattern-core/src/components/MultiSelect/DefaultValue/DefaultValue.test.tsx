@@ -6,7 +6,7 @@ import {
   itSupportsStyle,
   itSupportsOthers,
   checkAccessibility,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { DefaultValue, MultiSelectValueProps } from './DefaultValue';
 
 const defaultProps: MultiSelectValueProps = {
@@ -17,7 +17,7 @@ const defaultProps: MultiSelectValueProps = {
   radius: 'sm',
 };
 
-describe('@pattern/core/MultiSelect/DefaultValue', () => {
+describe('@pattern-ui/core/MultiSelect/DefaultValue', () => {
   checkAccessibility([<DefaultValue {...defaultProps} />]);
   itSupportsClassName(DefaultValue, defaultProps);
   itSupportsStyle(DefaultValue, defaultProps);
@@ -43,6 +43,6 @@ describe('@pattern/core/MultiSelect/DefaultValue', () => {
   });
 
   it('has correct displayName', () => {
-    expect(DefaultValue.displayName).toStrictEqual('@pattern/core/MultiSelect/DefaultValue');
+    expect(DefaultValue.displayName).toStrictEqual('@pattern-ui/core/MultiSelect/DefaultValue');
   });
 });

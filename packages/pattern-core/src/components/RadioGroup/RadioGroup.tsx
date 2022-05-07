@@ -1,12 +1,12 @@
 import React, { cloneElement, forwardRef } from 'react';
-import { useUncontrolled, useUuid } from '@pattern/hooks';
+import { useUncontrolled, useUuid } from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternNumberSize,
   PatternSize,
   PatternColor,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { filterChildrenByType } from '../../utils';
 import {
   InputWrapper,
@@ -134,4 +134,4 @@ export const RadioGroup = forwardRef<HTMLDivElement, RadioGroupProps>(
   }
 );
 
-RadioGroup.displayName = '@pattern/core/RadioGroup';
+RadioGroup.displayName = '@pattern-ui/core/RadioGroup';

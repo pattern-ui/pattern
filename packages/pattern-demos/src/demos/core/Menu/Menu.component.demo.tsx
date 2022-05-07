@@ -1,6 +1,6 @@
 import React from 'react';
 import { ExternalLink } from 'tabler-icons-react';
-import { Menu, Group } from '@pattern/core';
+import { Menu, Group } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

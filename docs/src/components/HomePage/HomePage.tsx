@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePatternTheme, Container, Box } from '@pattern/core';
+import { usePatternTheme, Container, Box } from '@pattern-ui/core';
 import Head from '../Head/Head';
 import { Jumbotron } from './Jumbotron/Jumbotron';
 import { Footer } from '../Footer/Footer';

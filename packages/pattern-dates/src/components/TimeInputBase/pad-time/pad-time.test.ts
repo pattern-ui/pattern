@@ -1,6 +1,6 @@
 import { padTime } from './pad-time';
 
-describe('@pattern/dates/pad-time', () => {
+describe('@pattern-ui/dates/pad-time', () => {
   it('correctly pads time', () => {
     expect(padTime('20')).toBe('20');
     expect(padTime('59')).toBe('59');

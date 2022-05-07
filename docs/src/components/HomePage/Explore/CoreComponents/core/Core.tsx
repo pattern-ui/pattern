@@ -1,6 +1,6 @@
 import React from 'react';
 import { InputIcon, StackIcon, DashboardIcon } from '@modulz/radix-icons';
-import { Tabs, createStyles } from '@pattern/core';
+import { Tabs, createStyles } from '@pattern-ui/core';
 import { InputsDemo } from './InputsDemo';
 import { ContentDemos } from './ContentDemos';
 import { OverlaysDemos } from './OverlaysDemos';

@@ -4,7 +4,7 @@ import {
   PatternColor,
   PatternNumberSize,
   PatternTheme,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 
 export interface TooltipStylesParams {
   color: PatternColor;

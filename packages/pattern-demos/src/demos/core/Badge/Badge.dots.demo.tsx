@@ -1,5 +1,5 @@
 import React from 'react';
-import { Group, PATTERN_COLORS, Badge } from '@pattern/core';
+import { Group, PATTERN_COLORS, Badge } from '@pattern-ui/core';
 
 export default function Demo() {
   const items = PATTERN_COLORS.map((color) => (

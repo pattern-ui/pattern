@@ -9,7 +9,7 @@ import {
   PolymorphicRef,
   extractSystemStyles,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles, { InputVariant } from './Input.styles';
 
@@ -150,4 +150,4 @@ export const Input: InputComponent = forwardRef(
   }
 ) as any;
 
-Input.displayName = '@pattern/core/Input';
+Input.displayName = '@pattern-ui/core/Input';

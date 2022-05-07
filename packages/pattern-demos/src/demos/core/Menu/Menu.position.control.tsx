@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, MenuProps, Group } from '@pattern/core';
+import { Menu, MenuProps, Group } from '@pattern-ui/core';
 import { menuItems } from './_menu-items';
 
 function Wrapper(props: MenuProps) {
@@ -13,7 +13,7 @@ function Wrapper(props: MenuProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Menu } from '@pattern/core';
+import { Menu } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

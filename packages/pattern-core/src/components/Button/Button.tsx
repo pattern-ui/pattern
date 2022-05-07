@@ -9,7 +9,7 @@ import {
   PolymorphicComponentProps,
   PolymorphicRef,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles, { heights, ButtonVariant } from './Button.styles';
 import { Loader, LoaderProps } from '../Loader';
@@ -163,4 +163,4 @@ export const Button: ButtonComponent = forwardRef(
   }
 ) as any;
 
-Button.displayName = '@pattern/core/Button';
+Button.displayName = '@pattern-ui/core/Button';

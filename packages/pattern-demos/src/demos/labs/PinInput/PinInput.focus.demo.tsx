@@ -1,4 +1,4 @@
-import { PinInput } from '@pattern/labs';
+import { PinInput } from '@pattern-ui/labs';
 
 const codeTemplate = (props: string) => `<PasswordInput
  ${props}

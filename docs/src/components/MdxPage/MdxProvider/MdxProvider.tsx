@@ -1,8 +1,8 @@
 import React from 'react';
 import { MDXProvider } from '@mdx-js/react';
-import { Code, Text } from '@pattern/core';
-import { Prism } from '@pattern/prism';
-import { Demo, ControlDemo } from '@pattern/demos';
+import { Code, Text } from '@pattern-ui/core';
+import { Prism } from '@pattern-ui/prism';
+import { Demo, ControlDemo } from '@pattern-ui/demos';
 import { KeyboardEventsTable } from './KeyboardEventsTable/KeyboardEventsTable';
 import GatsbyLink from './GatsbyLink/GatsbyLink';
 import DataTable from './DataTable/DataTable';

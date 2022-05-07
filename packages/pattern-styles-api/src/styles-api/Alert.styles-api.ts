@@ -1,4 +1,4 @@
-import type { AlertStylesNames } from '@pattern/core';
+import type { AlertStylesNames } from '@pattern-ui/core';
 
 export const Alert: Record<AlertStylesNames, string> = {
   root: 'Root element',

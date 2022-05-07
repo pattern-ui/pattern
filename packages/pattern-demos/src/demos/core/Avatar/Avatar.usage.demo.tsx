@@ -1,6 +1,6 @@
 import React from 'react';
 import { Star } from 'tabler-icons-react';
-import { Avatar, Group } from '@pattern/core';
+import { Avatar, Group } from '@pattern-ui/core';
 import { avatars } from './_mockdata';
 
 export default function Demo() {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Stepper, StepperProps, createStyles } from '@pattern/core';
+import { Stepper, StepperProps, createStyles } from '@pattern-ui/core';
 
 const useStyles = createStyles((theme, params, getRef) => ({
   root: {

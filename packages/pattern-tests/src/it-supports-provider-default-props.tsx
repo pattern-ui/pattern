@@ -1,5 +1,5 @@
 import React from 'react';
-import { PatternProvider } from '@pattern/styles';
+import { PatternProvider } from '@pattern-ui/styles';
 import { renderWithAct } from './render-with-act';
 
 export function itSupportsProviderDefaultProps<P>(

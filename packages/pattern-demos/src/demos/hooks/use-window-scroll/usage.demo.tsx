@@ -1,6 +1,6 @@
 import React from 'react';
-import { useWindowScroll } from '@pattern/hooks';
-import { Button, Text, Group } from '@pattern/core';
+import { useWindowScroll } from '@pattern-ui/hooks';
+import { Button, Text, Group } from '@pattern-ui/core';
 
 export default function Demo() {
   const [scroll, scrollTo] = useWindowScroll();

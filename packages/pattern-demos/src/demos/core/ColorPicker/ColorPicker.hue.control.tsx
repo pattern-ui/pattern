@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DEFAULT_THEME, Text, HueSlider, HueSliderProps } from '@pattern/core';
+import { DEFAULT_THEME, Text, HueSlider, HueSliderProps } from '@pattern-ui/core';
 
 function Wrapper(props: HueSliderProps) {
   const [value, onChange] = useState(250);
@@ -20,7 +20,7 @@ function Wrapper(props: HueSliderProps) {
 }
 
 const codeTemplate = (props: string) => `import { useState } from 'react';
-import { HueSlider, Text } from '@pattern/core';
+import { HueSlider, Text } from '@pattern-ui/core';
 
 export default function Demo() {
   const [value, onChange] = useState(250);

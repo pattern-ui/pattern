@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, PatternSize, PatternNumberSize, Selectors } from '@pattern/styles';
+import { DefaultProps, PatternSize, PatternNumberSize, Selectors } from '@pattern-ui/styles';
 import { CloseButton } from '../../ActionIcon/CloseButton/CloseButton';
 import useStyles from './DefaultValue.styles';
 
@@ -60,4 +60,4 @@ export function DefaultValue({
   );
 }
 
-DefaultValue.displayName = '@pattern/core/MultiSelect/DefaultValue';
+DefaultValue.displayName = '@pattern-ui/core/MultiSelect/DefaultValue';

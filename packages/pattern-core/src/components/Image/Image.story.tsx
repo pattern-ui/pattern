@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { useInterval } from '@pattern/hooks';
+import { useInterval } from '@pattern-ui/hooks';
 import { Image } from './Image';
 import { BackgroundImage } from './BackgroundImage/BackgroundImage';
 

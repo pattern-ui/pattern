@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import { isSameDate } from './is-same-date';
 
-describe('@pattern/dates/is-same-date', () => {
+describe('@pattern-ui/dates/is-same-date', () => {
   it('correctly detects same dates', () => {
     expect(isSameDate(new Date(2021, 10, 12), new Date(2021, 10, 12))).toBe(true);
     expect(

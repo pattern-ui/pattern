@@ -1,6 +1,6 @@
 import { rgba } from './rgba';
 
-describe('@pattern/styles/rgba', () => {
+describe('@pattern-ui/styles/rgba', () => {
   it('correctly converts colors from hex to rgba', () => {
     expect(rgba('#228BE6', 0.74)).toBe('rgba(34, 139, 230, 0.74)');
     expect(rgba('96f2d7', 0.945)).toBe('rgba(150, 242, 215, 0.945)');

@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStyles } from '@pattern/core';
+import { createStyles } from '@pattern-ui/core';
 
 interface ButtonProps {
   color: 'blue' | 'violet';

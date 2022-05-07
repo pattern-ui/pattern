@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, Title, UnstyledButton, Group } from '@pattern/core';
+import { Text, Title, UnstyledButton, Group } from '@pattern-ui/core';
 import { GUIDES_DATA } from './data';
 import { guides, GuideProps } from './Guide';
 import useStyles from './Guides.styles';

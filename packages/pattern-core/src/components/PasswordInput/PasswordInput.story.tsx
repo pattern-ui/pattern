@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { PatternProvider, PATTERN_SIZES } from '@pattern/styles';
+import { PatternProvider, PATTERN_SIZES } from '@pattern-ui/styles';
 import { PasswordInput, PasswordInputProps } from './PasswordInput';
 
 const sizes = PATTERN_SIZES.map((size) => (

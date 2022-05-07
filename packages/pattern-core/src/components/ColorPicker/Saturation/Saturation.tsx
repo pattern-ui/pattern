@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useMove, clampUseMovePosition, UseMovePosition } from '@pattern/hooks';
-import { DefaultProps, PatternSize, Selectors } from '@pattern/styles';
+import { useMove, clampUseMovePosition, UseMovePosition } from '@pattern-ui/hooks';
+import { DefaultProps, PatternSize, Selectors } from '@pattern-ui/styles';
 import { HsvaColor } from '../types';
 import { Thumb, ThumbStylesNames } from '../Thumb/Thumb';
 import useStyles from './Saturation.styles';
@@ -111,4 +111,4 @@ export function Saturation({
   );
 }
 
-Saturation.displayName = '@pattern/core/Saturation';
+Saturation.displayName = '@pattern-ui/core/Saturation';

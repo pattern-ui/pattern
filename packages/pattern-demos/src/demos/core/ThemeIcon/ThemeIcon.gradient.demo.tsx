@@ -1,6 +1,6 @@
 import React from 'react';
 import { Photo } from 'tabler-icons-react';
-import { Group, ThemeIcon } from '@pattern/core';
+import { Group, ThemeIcon } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

@@ -1,15 +1,15 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { Divider, DividerProps } from './Divider';
 
 const defaultProps: DividerProps = {};
 
-describe('@pattern/core/Divider', () => {
+describe('@pattern-ui/core/Divider', () => {
   itSupportsSystemProps({
     component: Divider,
     props: defaultProps,
-    displayName: '@pattern/core/Divider',
+    displayName: '@pattern-ui/core/Divider',
     refType: HTMLDivElement,
   });
 

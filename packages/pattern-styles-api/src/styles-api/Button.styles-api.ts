@@ -1,4 +1,4 @@
-import { ButtonStylesNames } from '@pattern/core';
+import { ButtonStylesNames } from '@pattern-ui/core';
 
 export const Button: Record<ButtonStylesNames, string> = {
   root: 'Root button element',

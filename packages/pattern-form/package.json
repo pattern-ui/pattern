@@ -1,5 +1,5 @@
 {
-  "name": "@pattern/form",
+  "name": "@pattern-ui/form",
   "description": "Pattern form management library",
   "version": "1.0.0",
   "main": "cjs/index.js",
@@ -12,7 +12,7 @@
   "repository": {
     "url": "https://github.com/pattern-ui/pattern.git",
     "type": "git",
-    "directory": "src/pattern-hooks"
+    "directory": "packages/pattern-hooks"
   },
   "peerDependencies": {
     "react": ">=16.8.0"

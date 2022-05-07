@@ -1,5 +1,5 @@
 {
-  "name": "@pattern/spotlight",
+  "name": "@pattern-ui/spotlight",
   "description": "Command center for your application",
   "version": "1.0.0",
   "main": "cjs/index.js",
@@ -12,11 +12,11 @@
   "repository": {
     "url": "https://github.com/pattern-ui/pattern.git",
     "type": "git",
-    "directory": "src/pattern-spotlight"
+    "directory": "packages/pattern-spotlight"
   },
   "peerDependencies": {
-    "@pattern/core": "1.0.0",
-    "@pattern/hooks": "1.0.0",
+    "@pattern-ui/core": "1.0.0",
+    "@pattern-ui/hooks": "1.0.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },

@@ -1,5 +1,5 @@
 {
-  "name": "@pattern/next",
+  "name": "@pattern-ui/next",
   "description": "Pattern integration for Next.js",
   "version": "1.0.0",
   "main": "cjs/index.js",
@@ -12,7 +12,7 @@
   "repository": {
     "url": "https://github.com/pattern-ui/pattern.git",
     "type": "git",
-    "directory": "src/pattern-ssr"
+    "directory": "packages/pattern-ssr"
   },
   "keywords": [
     "react",
@@ -25,7 +25,7 @@
     "next": "*"
   },
   "dependencies": {
-    "@pattern/ssr": "1.0.0"
+    "@pattern-ui/ssr": "1.0.0"
   },
   "devDependencies": {}
 }

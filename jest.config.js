@@ -7,7 +7,7 @@ module.exports = {
   testMatch: ['**/__tests__/**/*.ts?(x)', '**/?(*.)+(spec|test).ts?(x)'],
   setupFilesAfterEnv: ['./configuration/jest/jsdom.mocks.js'],
   moduleNameMapper: {
-    '@pattern/core/src/styles.api': '<rootDir>/src/pattern-core/src/styles.api',
-    '@pattern/(.*)': '<rootDir>/src/pattern-$1/src',
+    '@pattern-ui/core/src/styles.api': '<rootDir>/src/pattern-core/src/styles.api',
+    '@pattern-ui/(.*)': '<rootDir>/src/pattern-$1/src',
   },
 };

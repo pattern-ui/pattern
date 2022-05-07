@@ -1,4 +1,4 @@
-import type { ModalStylesNames } from '@pattern/core';
+import type { ModalStylesNames } from '@pattern-ui/core';
 
 export const Modal: Record<ModalStylesNames, string> = {
   root: 'Root element, contains modal and overlay',

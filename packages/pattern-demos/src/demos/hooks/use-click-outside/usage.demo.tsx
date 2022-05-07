@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Paper, Button, Group, usePatternTheme } from '@pattern/core';
-import { useClickOutside } from '@pattern/hooks';
+import { Paper, Button, Group, usePatternTheme } from '@pattern-ui/core';
+import { useClickOutside } from '@pattern-ui/hooks';
 
 export default function Demo() {
   const theme = usePatternTheme();

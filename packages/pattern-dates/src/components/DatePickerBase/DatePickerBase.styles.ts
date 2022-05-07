@@ -1,4 +1,4 @@
-import { createStyles, PatternSize, INPUT_SIZES } from '@pattern/core';
+import { createStyles, PatternSize, INPUT_SIZES } from '@pattern-ui/core';
 
 interface DatePickerBaseStyles {
   size: PatternSize;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, StackProps, Button } from '@pattern/core';
+import { Stack, StackProps, Button } from '@pattern-ui/core';
 
 function Wrapper(props: StackProps) {
   return (
@@ -18,7 +18,7 @@ function Wrapper(props: StackProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Stack, Button } from '@pattern/core';
+import { Stack, Button } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

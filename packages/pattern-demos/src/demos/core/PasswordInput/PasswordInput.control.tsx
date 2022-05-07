@@ -1,7 +1,7 @@
-import { PasswordInput } from '@pattern/core';
+import { PasswordInput } from '@pattern-ui/core';
 
 const codeTemplate = (props: string) => `
-import { PasswordInput } from '@pattern/core';
+import { PasswordInput } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

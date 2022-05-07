@@ -1,5 +1,5 @@
 import React from 'react';
-import { Badge, BadgeProps, Group } from '@pattern/core';
+import { Badge, BadgeProps, Group } from '@pattern-ui/core';
 
 function Wrapper(props: BadgeProps<'div'>) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: BadgeProps<'div'>) {
 }
 
 const codeTemplate = (props: string) => `
-import { Badge } from '@pattern/core';
+import { Badge } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

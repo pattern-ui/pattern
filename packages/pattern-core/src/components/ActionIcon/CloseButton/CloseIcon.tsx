@@ -13,4 +13,4 @@ export function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   );
 }
 
-CloseIcon.displayName = '@pattern/core/CloseIcon';
+CloseIcon.displayName = '@pattern-ui/core/CloseIcon';

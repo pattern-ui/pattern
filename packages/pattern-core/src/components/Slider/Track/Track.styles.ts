@@ -1,4 +1,4 @@
-import { createStyles, PatternNumberSize, PatternColor } from '@pattern/styles';
+import { createStyles, PatternNumberSize, PatternColor } from '@pattern-ui/styles';
 import { sizes } from '../SliderRoot/SliderRoot.styles';
 
 interface TrackStyles {

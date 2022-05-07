@@ -8,10 +8,10 @@ General purpose utilities for Pattern server side rendering
 
 ```sh
 # With yarn
-yarn add @pattern/hooks @pattern/core @pattern/ssr
+yarn add @pattern-ui/hooks @pattern-ui/core @pattern-ui/ssr
 
 # With npm
-npm install @pattern/hooks @pattern/core @pattern/ssr
+npm install @pattern-ui/hooks @pattern-ui/core @pattern-ui/ssr
 ```
 
 ## License

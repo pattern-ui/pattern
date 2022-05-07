@@ -1,5 +1,5 @@
 import React from 'react';
-import { NativeSelect } from '@pattern/core';
+import { NativeSelect } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

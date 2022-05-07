@@ -1,6 +1,6 @@
 import React from 'react';
 import { Eye, Code, ExternalLink } from 'tabler-icons-react';
-import { Center, SegmentedControl, Box, Group } from '@pattern/core';
+import { Center, SegmentedControl, Box, Group } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

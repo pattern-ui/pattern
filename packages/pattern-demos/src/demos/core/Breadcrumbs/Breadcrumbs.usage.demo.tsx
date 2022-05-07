@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePatternTheme, Breadcrumbs, Anchor } from '@pattern/core';
+import { usePatternTheme, Breadcrumbs, Anchor } from '@pattern-ui/core';
 
 const items = [
   { title: 'Pattern', href: 'https://pattern-ui.design' },

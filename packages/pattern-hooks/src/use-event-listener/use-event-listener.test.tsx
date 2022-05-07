@@ -12,7 +12,7 @@ function Test({ spy }: { spy(): void }) {
   );
 }
 
-describe('@pattern/hooks/use-event-listener', () => {
+describe('@pattern-ui/hooks/use-event-listener', () => {
   it('calls given function when event is fired', () => {
     const spy = jest.fn();
     render(<Test spy={spy} />);

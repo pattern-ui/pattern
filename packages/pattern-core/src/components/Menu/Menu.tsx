@@ -5,7 +5,7 @@ import {
   useWindowEvent,
   useUncontrolled,
   useUuid,
-} from '@pattern/hooks';
+} from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternNumberSize,
@@ -14,7 +14,7 @@ import {
   getDefaultZIndex,
   ForwardRefWithStaticComponents,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import { Paper } from '../Paper';
 import { ActionIcon } from '../ActionIcon';
@@ -379,4 +379,4 @@ export const Menu: MenuComponent = forwardRef<HTMLButtonElement, MenuProps>(
 Menu.Item = MenuItem;
 Menu.Label = MenuLabel;
 
-Menu.displayName = '@pattern/core/Menu';
+Menu.displayName = '@pattern-ui/core/Menu';

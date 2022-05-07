@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Transition, TransitionGroup } from 'react-transition-group';
-import { DefaultProps, Portal, PatternStyleSystemSize, getDefaultZIndex, Box } from '@pattern/core';
-import { useReducedMotion, useForceUpdate, useDidUpdate } from '@pattern/hooks';
+import { DefaultProps, Portal, PatternStyleSystemSize, getDefaultZIndex, Box } from '@pattern-ui/core';
+import { useReducedMotion, useForceUpdate, useDidUpdate } from '@pattern-ui/hooks';
 import { NotificationsContext } from '../Notifications.context';
 import { NotificationsProviderPositioning } from '../types';
 import { useNotificationsEvents } from '../events';
@@ -155,4 +155,4 @@ export function NotificationsProvider({
   );
 }
 
-NotificationsProvider.displayName = '@pattern/notifications/NotificationsProvider';
+NotificationsProvider.displayName = '@pattern-ui/notifications/NotificationsProvider';

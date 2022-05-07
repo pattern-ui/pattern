@@ -1,6 +1,6 @@
 import { validateJson } from './validate-json';
 
-describe('@pattern/core/JsonInput/validate-json', () => {
+describe('@pattern-ui/core/JsonInput/validate-json', () => {
   it('considers empty string to be valid json', () => {
     expect(validateJson('')).toBe(true);
     expect(validateJson(' \t \n')).toBe(true);

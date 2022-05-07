@@ -1,6 +1,6 @@
 import React from 'react';
-import { Group, Badge } from '@pattern/core';
-import { useColorScheme } from '@pattern/hooks';
+import { Group, Badge } from '@pattern-ui/core';
+import { useColorScheme } from '@pattern-ui/hooks';
 
 export default function Demo() {
   const colorScheme = useColorScheme();

@@ -1,20 +1,20 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: MediaQuery
 order: 1
 slug: /core/media-query/
 category: 'layout'
 description: 'Apply styles to children if media query matches'
 props: ['MediaQuery']
-import: "import { MediaQuery } from '@pattern/core';"
+import: "import { MediaQuery } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/MediaQuery/MediaQuery.tsx'
 docs: 'core/MediaQuery.mdx'
 styles: ['MediaQuery', 'single-node']
 ---
 
-import { DEFAULT_THEME } from '@pattern/core';
-import { MediaQueryDemos } from '@pattern/demos';
+import { DEFAULT_THEME } from '@pattern-ui/core';
+import { MediaQueryDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -43,7 +43,7 @@ Pattern uses Bootstrap's breakpoint values as defaults:
 To change these values wrap your application with PatternProvider and set `breakpoints` prop on theme:
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 function YourApp() {
   return (
@@ -85,7 +85,7 @@ not have correct styles:
 
 ```tsx
 // Invalid MediaQuery usage, do not do this
-import { MediaQuery } from '@pattern/core';
+import { MediaQuery } from '@pattern-ui/core';
 
 function InvalidDemo() {
   return <MediaQuery>No styles applied</MediaQuery>;

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Group, Button } from '@pattern/core';
-import { showNotification } from '@pattern/notifications';
+import { Group, Button } from '@pattern-ui/core';
+import { showNotification } from '@pattern-ui/notifications';
 
 export default function Demo() {
   return (

@@ -17,14 +17,14 @@ import {
   Selectors,
   extractSystemStyles,
   getDefaultZIndex,
-} from '@pattern/core';
+} from '@pattern-ui/core';
 import {
   useClickOutside,
   useFocusTrap,
   useMergedRef,
   useWindowEvent,
   useUuid,
-} from '@pattern/hooks';
+} from '@pattern-ui/hooks';
 import { CalendarBaseStylesNames } from '../CalendarBase/CalendarBase';
 import useStyles from './DatePickerBase.styles';
 
@@ -365,4 +365,4 @@ export const DatePickerBase = forwardRef<HTMLInputElement, DatePickerBaseProps>(
   }
 );
 
-DatePickerBase.displayName = '@pattern/dates/DatePickerBase';
+DatePickerBase.displayName = '@pattern-ui/dates/DatePickerBase';

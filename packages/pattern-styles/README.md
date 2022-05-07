@@ -8,10 +8,10 @@ Pattern CSS-in-JS library built on top of emotion
 
 ```sh
 # With yarn
-yarn add @pattern/styles
+yarn add @pattern-ui/styles
 
 # With npm
-npm install @pattern/styles
+npm install @pattern-ui/styles
 ```
 
 ## License

@@ -1,6 +1,6 @@
 import React, { cloneElement } from 'react';
-import { isElement } from '@pattern/utils';
-import { useFocusTrap, useMergedRef } from '@pattern/hooks';
+import { isElement } from '@pattern-ui/utils';
+import { useFocusTrap, useMergedRef } from '@pattern-ui/hooks';
 
 export interface FocusTrapProps {
   /** Element at which focus should be trapped, should support ref prop */
@@ -28,4 +28,4 @@ export function FocusTrap({
   return cloneElement(children, { [refProp]: ref });
 }
 
-FocusTrap.displayName = '@pattern/core/FocusTrap';
+FocusTrap.displayName = '@pattern-ui/core/FocusTrap';

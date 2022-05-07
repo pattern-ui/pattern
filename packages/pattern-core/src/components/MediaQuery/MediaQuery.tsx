@@ -1,5 +1,5 @@
 import React, { Children } from 'react';
-import { PatternNumberSize, CSSObject, usePatternDefaultProps } from '@pattern/styles';
+import { PatternNumberSize, CSSObject, usePatternDefaultProps } from '@pattern-ui/styles';
 import useStyles from './MediaQuery.styles';
 
 export interface MediaQueryProps {
@@ -44,4 +44,4 @@ export function MediaQuery(props: MediaQueryProps) {
   return child;
 }
 
-MediaQuery.displayName = '@pattern/core/MediaQuery';
+MediaQuery.displayName = '@pattern-ui/core/MediaQuery';

@@ -4,7 +4,7 @@ import {
   PatternStyleSystemSize,
   getDefaultZIndex,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import { Portal } from '../Portal/Portal';
 
@@ -48,4 +48,4 @@ export const Affix = forwardRef<HTMLDivElement, AffixProps>((props: AffixProps, 
   );
 });
 
-Affix.displayName = '@pattern/core/Affix';
+Affix.displayName = '@pattern-ui/core/Affix';

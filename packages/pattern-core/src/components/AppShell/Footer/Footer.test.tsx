@@ -1,4 +1,4 @@
-import { itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Footer, FooterProps } from './Footer';
 
 const defaultProps: FooterProps = {
@@ -6,12 +6,12 @@ const defaultProps: FooterProps = {
   children: 'test-footer',
 };
 
-describe('@pattern/core/Footer', () => {
+describe('@pattern-ui/core/Footer', () => {
   itRendersChildren(Footer, defaultProps);
   itSupportsSystemProps({
     component: Footer,
     props: defaultProps,
-    displayName: '@pattern/core/Footer',
+    displayName: '@pattern-ui/core/Footer',
     refType: HTMLElement,
   });
 });

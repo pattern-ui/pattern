@@ -1,6 +1,6 @@
 import React from 'react';
 import { Adjustments } from 'tabler-icons-react';
-import { ActionIcon, ActionIconProps, Group } from '@pattern/core';
+import { ActionIcon, ActionIconProps, Group } from '@pattern-ui/core';
 
 const iconSizes = {
   xs: 12,
@@ -21,7 +21,7 @@ function Wrapper(props: ActionIconProps<'button'>) {
 }
 
 const codeTemplate = (props: string) => `
-import { ActionIcon } from '@pattern/core';
+import { ActionIcon } from '@pattern-ui/core';
 import { Adjustments } from 'tabler-icons-react';
 
 export default function Demo() {

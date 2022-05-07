@@ -1,5 +1,5 @@
 import React from 'react';
-import { TooltipFloatingProps, Group, Button, Tooltip } from '@pattern/core';
+import { TooltipFloatingProps, Group, Button, Tooltip } from '@pattern-ui/core';
 
 const Wrapper = (props: TooltipFloatingProps) => (
   <div style={{ padding: 30 }}>
@@ -14,7 +14,7 @@ const Wrapper = (props: TooltipFloatingProps) => (
 );
 
 const codeTemplate = (props: string) => `
-import { Tooltip, Button } from '@pattern/core';
+import { Tooltip, Button } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

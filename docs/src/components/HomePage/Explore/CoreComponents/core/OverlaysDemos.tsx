@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Text, Group, Button, Modal, Drawer, Divider, CloseButton, Paper } from '@pattern/core';
-import { Prism } from '@pattern/prism';
-import { AuthenticationForm, PopoverDemos } from '@pattern/demos';
+import { Text, Group, Button, Modal, Drawer, Divider, CloseButton, Paper } from '@pattern-ui/core';
+import { Prism } from '@pattern-ui/prism';
+import { AuthenticationForm, PopoverDemos } from '@pattern-ui/demos';
 
 const code = `
 import { useState } from 'react';
-import { Modal, Button } from '@pattern/core';
+import { Modal, Button } from '@pattern-ui/core';
 
 function Demo() {
   const [opened, setOpened] = useState(false);

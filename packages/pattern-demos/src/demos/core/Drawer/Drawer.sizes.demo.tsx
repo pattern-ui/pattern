@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Drawer, Button, Group } from '@pattern/core';
+import { Drawer, Button, Group } from '@pattern-ui/core';
 
 export default function Demo() {
   const [opened, setOpened] = useState(false);

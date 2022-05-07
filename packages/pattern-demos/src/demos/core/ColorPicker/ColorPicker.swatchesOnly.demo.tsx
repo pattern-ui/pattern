@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DEFAULT_THEME, Text, ColorPicker } from '@pattern/core';
+import { DEFAULT_THEME, Text, ColorPicker } from '@pattern-ui/core';
 
 export default function Demo() {
   const [value, onChange] = useState(null);

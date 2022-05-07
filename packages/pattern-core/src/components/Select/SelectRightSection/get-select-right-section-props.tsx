@@ -1,5 +1,5 @@
 import React from 'react';
-import { PatternTheme } from '@pattern/styles';
+import { PatternTheme } from '@pattern-ui/styles';
 import { SelectRightSection, SelectRightSectionProps } from './SelectRightSection';
 
 interface GetRightSectionProps extends SelectRightSectionProps {

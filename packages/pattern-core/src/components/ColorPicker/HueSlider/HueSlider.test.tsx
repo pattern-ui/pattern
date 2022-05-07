@@ -1,5 +1,5 @@
 import React from 'react';
-import { checkAccessibility, itSupportsSystemProps } from '@pattern/tests';
+import { checkAccessibility, itSupportsSystemProps } from '@pattern-ui/tests';
 import { HueSlider, HueSliderProps } from './HueSlider';
 
 const defaultProps: HueSliderProps = {
@@ -8,12 +8,12 @@ const defaultProps: HueSliderProps = {
   size: 'sm',
 };
 
-describe('@pattern/core/HueSlider', () => {
+describe('@pattern-ui/core/HueSlider', () => {
   checkAccessibility([<HueSlider {...defaultProps} aria-label="test-label" />]);
   itSupportsSystemProps({
     component: HueSlider,
     props: defaultProps,
-    displayName: '@pattern/core/HueSlider',
+    displayName: '@pattern-ui/core/HueSlider',
     refType: HTMLDivElement,
   });
 });

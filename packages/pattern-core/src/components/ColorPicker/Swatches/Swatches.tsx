@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, Selectors } from '@pattern/styles';
+import { DefaultProps, Selectors } from '@pattern-ui/styles';
 import { ColorSwatch } from '../../ColorSwatch/ColorSwatch';
 import { parseColor } from '../converters/parsers';
 import { HsvaColor } from '../types';
@@ -51,4 +51,4 @@ export function Swatches({
   );
 }
 
-Swatches.displayName = '@pattern/core/Swatches';
+Swatches.displayName = '@pattern-ui/core/Swatches';

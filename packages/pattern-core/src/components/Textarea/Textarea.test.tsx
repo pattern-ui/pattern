@@ -6,19 +6,19 @@ import {
   itSupportsFocusEvents,
   itSupportsSystemProps,
   itSupportsInputProps,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { Textarea, TextareaProps } from './Textarea';
 
 const defaultProps: TextareaProps = {};
 
-describe('@pattern/core/Textarea', () => {
+describe('@pattern-ui/core/Textarea', () => {
   itSupportsFocusEvents(Textarea, defaultProps, 'textarea');
   itSupportsInputProps(Textarea, defaultProps, 'Textarea');
   checkAccessibility([<Textarea label="test-label" />, <Textarea aria-label="test-label" />]);
   itSupportsSystemProps({
     component: Textarea,
     props: defaultProps,
-    displayName: '@pattern/core/Textarea',
+    displayName: '@pattern-ui/core/Textarea',
     refType: HTMLTextAreaElement,
     excludeOthers: true,
   });

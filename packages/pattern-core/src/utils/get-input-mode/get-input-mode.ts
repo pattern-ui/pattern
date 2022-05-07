@@ -1,4 +1,4 @@
-import { OS } from '@pattern/hooks';
+import { OS } from '@pattern-ui/hooks';
 
 export const getInputMode = (
   step: number,

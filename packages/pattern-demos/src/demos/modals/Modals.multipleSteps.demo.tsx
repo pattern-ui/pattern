@@ -1,6 +1,6 @@
 import React from 'react';
-import { Group, Button, Text } from '@pattern/core';
-import { useModals } from '@pattern/modals';
+import { Group, Button, Text } from '@pattern-ui/core';
+import { useModals } from '@pattern-ui/modals';
 
 export default function Demo() {
   const modals = useModals();

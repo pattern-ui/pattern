@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React from 'react';
-import { PasswordInput, Group, Button, Box } from '@pattern/core';
-import { useForm } from '@pattern/form';
+import { PasswordInput, Group, Button, Box } from '@pattern-ui/core';
+import { useForm } from '@pattern-ui/form';
 
 export default function Demo() {
   const form = useForm({

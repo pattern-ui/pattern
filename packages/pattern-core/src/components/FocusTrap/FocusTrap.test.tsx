@@ -1,10 +1,10 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { wait } from '@pattern/tests';
+import { wait } from '@pattern-ui/tests';
 import { FocusTrap } from './FocusTrap';
 
-describe('@pattern/core/FocusTrap', () => {
+describe('@pattern-ui/core/FocusTrap', () => {
   it('traps focus at given node', async () => {
     render(
       <FocusTrap>
@@ -52,6 +52,6 @@ describe('@pattern/core/FocusTrap', () => {
   });
 
   it('has correct displayName', () => {
-    expect(FocusTrap.displayName).toEqual('@pattern/core/FocusTrap');
+    expect(FocusTrap.displayName).toEqual('@pattern-ui/core/FocusTrap');
   });
 });

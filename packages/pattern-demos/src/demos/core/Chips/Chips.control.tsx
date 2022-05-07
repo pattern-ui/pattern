@@ -1,5 +1,5 @@
 import React from 'react';
-import { Chips, Chip, ChipsProps } from '@pattern/core';
+import { Chips, Chip, ChipsProps } from '@pattern-ui/core';
 
 function Wrapper(props: ChipsProps) {
   return (
@@ -13,7 +13,7 @@ function Wrapper(props: ChipsProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Chips, Chip } from '@pattern/core';
+import { Chips, Chip } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

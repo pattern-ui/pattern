@@ -1,6 +1,6 @@
 import React from 'react';
-import { Group, Button } from '@pattern/core';
-import { useClipboard } from '@pattern/hooks';
+import { Group, Button } from '@pattern-ui/core';
+import { useClipboard } from '@pattern-ui/hooks';
 
 export default function Demo() {
   const clipboard = useClipboard({ timeout: 500 });

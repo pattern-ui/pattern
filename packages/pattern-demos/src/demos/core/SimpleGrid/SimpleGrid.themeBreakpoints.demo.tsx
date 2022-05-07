@@ -1,5 +1,5 @@
 import React from 'react';
-import { SimpleGrid } from '@pattern/core';
+import { SimpleGrid } from '@pattern-ui/core';
 import { defaultItems } from './_Item';
 
 export default function Demo() {

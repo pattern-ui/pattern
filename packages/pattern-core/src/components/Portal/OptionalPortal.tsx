@@ -14,4 +14,4 @@ export function OptionalPortal({ withinPortal = true, children, ...others }: Opt
   return <>{children}</>;
 }
 
-OptionalPortal.displayName = '@pattern/core/OptionalPortal';
+OptionalPortal.displayName = '@pattern-ui/core/OptionalPortal';

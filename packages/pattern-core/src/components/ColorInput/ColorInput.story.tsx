@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { DEFAULT_THEME, PATTERN_SIZES, PatternProvider } from '@pattern/styles';
-import { WithinOverlays } from '@pattern/storybook';
+import { DEFAULT_THEME, PATTERN_SIZES, PatternProvider } from '@pattern-ui/styles';
+import { WithinOverlays } from '@pattern-ui/storybook';
 import { ColorInput } from './ColorInput';
 
 const sizes = PATTERN_SIZES.map((size) => (

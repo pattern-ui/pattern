@@ -1,9 +1,9 @@
 /* eslint-disable no-console */
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { useDisclosure } from '@pattern/hooks';
-import { PATTERN_SIZES, PatternProvider, TextInput, Modal, Button } from '@pattern/core';
-import { WithinOverlays, SubmitForm } from '@pattern/storybook';
+import { useDisclosure } from '@pattern-ui/hooks';
+import { PATTERN_SIZES, PatternProvider, TextInput, Modal, Button } from '@pattern-ui/core';
+import { WithinOverlays, SubmitForm } from '@pattern-ui/storybook';
 import { DatePicker } from './DatePicker';
 
 function Controlled() {

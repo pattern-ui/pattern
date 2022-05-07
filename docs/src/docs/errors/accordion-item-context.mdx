@@ -8,7 +8,7 @@ error: 'Accordion.Item component was not found in the tree'
 You have rendered `Accordion.Control` or `Accordion.Panel` component outside of `Accordion.Item` component context:
 
 ```tsx
-import { Accordion } from '@pattern/core';
+import { Accordion } from '@pattern-ui/core';
 
 function DemoWithError() {
   return (
@@ -26,7 +26,7 @@ Make sure that all `Accordion.Control` and `Accordion.Panel` components
 are rendered within `Accordion.Item` component – all of them require context to work correctly:
 
 ```tsx
-import { Accordion } from '@pattern/core';
+import { Accordion } from '@pattern-ui/core';
 
 function Demo() {
   return (

@@ -13,4 +13,4 @@ export function StepCompleted(
   return null;
 }
 
-StepCompleted.displayName = '@pattern/core/StepCompleted';
+StepCompleted.displayName = '@pattern-ui/core/StepCompleted';

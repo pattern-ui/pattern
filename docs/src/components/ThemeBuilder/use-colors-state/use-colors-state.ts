@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { DEFAULT_THEME, Tuple } from '@pattern/core';
+import { DEFAULT_THEME, Tuple } from '@pattern-ui/core';
 
 let counter = 1;
 

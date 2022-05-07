@@ -1,12 +1,12 @@
 ---
 group: 'pattern-hooks'
-package: '@pattern/hooks'
+package: '@pattern-ui/hooks'
 title: 'use-input-state'
 category: 'state'
 order: 1
 slug: /hooks/use-input-state/
 description: 'Manage state of native and custom inputs'
-import: "import { useInputState } from '@pattern/hooks';"
+import: "import { useInputState } from '@pattern-ui/hooks';"
 docs: 'hooks/use-input-state.mdx'
 source: 'pattern-hooks/src/use-input-state/use-input-state.ts'
 ---
@@ -18,8 +18,8 @@ Hook works with all Pattern and native inputs:
 
 ```tsx
 import { useState } from 'react';
-import { useInputState } from '@pattern/hooks';
-import { TextInput, NumberInput } from '@pattern/core';
+import { useInputState } from '@pattern-ui/hooks';
+import { TextInput, NumberInput } from '@pattern-ui/core';
 
 function WithUseInputState() {
   const [stringValue, setStringValue] = useInputState('');

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Prism } from '@pattern/prism';
+import { Prism } from '@pattern-ui/prism';
 import { py, css } from './Prism.languages.demo';
 import { demoCode } from './Prism.usage.demo';
 

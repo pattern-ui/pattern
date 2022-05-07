@@ -1,6 +1,6 @@
 import React, { cloneElement } from 'react';
-import { useMergedRef } from '@pattern/hooks';
-import { isElement } from '@pattern/utils';
+import { useMergedRef } from '@pattern-ui/hooks';
+import { isElement } from '@pattern-ui/utils';
 import { usePopoverContext } from '../Popover.context';
 import { POPOVER_ERRORS } from '../Popover.errors';
 
@@ -31,4 +31,4 @@ export function PopoverTarget({ children, refProp = 'ref' }: PopoverTargetProps)
   });
 }
 
-PopoverTarget.displayName = '@pattern/core/PopoverTarget';
+PopoverTarget.displayName = '@pattern-ui/core/PopoverTarget';

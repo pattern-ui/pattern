@@ -5,7 +5,7 @@ import {
   Selectors,
   PatternSize,
   PatternNumberSize,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Text } from '../../Text';
 import { Loader } from '../../Loader';
 import { CheckboxIcon } from '../../Checkbox';
@@ -157,4 +157,4 @@ export const Step = forwardRef<HTMLButtonElement, StepProps>(
   }
 );
 
-Step.displayName = '@pattern/core/Step';
+Step.displayName = '@pattern-ui/core/Step';

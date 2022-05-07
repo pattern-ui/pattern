@@ -1,4 +1,4 @@
-import { DividerStylesNames } from '@pattern/core';
+import { DividerStylesNames } from '@pattern-ui/core';
 
 export const Divider: Record<DividerStylesNames, string> = {
   label: 'Label element, horizontal orientation only',

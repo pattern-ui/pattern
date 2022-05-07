@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsRef, checkAccessibility } from '@pattern/tests';
+import { itSupportsRef, checkAccessibility } from '@pattern-ui/tests';
 import { Thumb, ThumbProps } from './Thumb';
 
 const defaultProps: ThumbProps = {
@@ -21,7 +21,7 @@ const defaultProps: ThumbProps = {
   disabled: false,
 };
 
-describe('@pattern/core/Thumb', () => {
+describe('@pattern-ui/core/Thumb', () => {
   checkAccessibility([<Thumb {...defaultProps} />]);
   itSupportsRef(Thumb, defaultProps, HTMLDivElement);
 
@@ -47,6 +47,6 @@ describe('@pattern/core/Thumb', () => {
   });
 
   it('has correct displayName', () => {
-    expect(Thumb.displayName).toStrictEqual('@pattern/core/SliderThumb');
+    expect(Thumb.displayName).toStrictEqual('@pattern-ui/core/SliderThumb');
   });
 });

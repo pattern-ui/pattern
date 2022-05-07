@@ -1,7 +1,7 @@
-import { TextInput } from '@pattern/core';
+import { TextInput } from '@pattern-ui/core';
 
 const codeTemplate = (props: string) => `
-import { TextInput } from '@pattern/core';
+import { TextInput } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

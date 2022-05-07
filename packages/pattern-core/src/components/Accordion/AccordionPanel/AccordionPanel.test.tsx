@@ -3,7 +3,7 @@ import {
   itSupportsSystemProps,
   itThrowsContextError,
   itRendersChildren,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { AccordionPanel, AccordionPanelProps } from './AccordionPanel';
 import { AccordionProvider } from '../AccordionProvider';
 import { AccordionItemContextProvider } from '../AccordionItem.context';
@@ -18,7 +18,7 @@ const TestContainer = createContextContainer(
 
 const defaultProps: AccordionPanelProps = {};
 
-describe('@pattern/core/AccordionPanel', () => {
+describe('@pattern-ui/core/AccordionPanel', () => {
   itThrowsContextError(
     createContextContainer(AccordionPanel, AccordionItemContextProvider, {
       value: { value: 'test-value' },
@@ -31,6 +31,6 @@ describe('@pattern/core/AccordionPanel', () => {
   itSupportsSystemProps({
     component: TestContainer,
     props: defaultProps,
-    displayName: '@pattern/core/AccordionPanel',
+    displayName: '@pattern-ui/core/AccordionPanel',
   });
 });

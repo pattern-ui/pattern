@@ -11,7 +11,7 @@ const changeEventBoolean = {
   nativeEvent: {},
 } as any;
 
-describe('@pattern/hooks/use-input-state', () => {
+describe('@pattern-ui/hooks/use-input-state', () => {
   it('sets correct initial state', () => {
     const hook = renderHook(() => useInputState('test-value'));
     const [value] = hook.result.current;

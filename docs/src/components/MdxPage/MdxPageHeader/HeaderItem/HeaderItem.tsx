@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from '@pattern/core';
+import { Text } from '@pattern-ui/core';
 import useStyles from './HeaderItem.styles';
 
 interface HeaderItemProps {

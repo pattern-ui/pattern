@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mark, Text } from '@pattern/core';
+import { Mark, Text } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

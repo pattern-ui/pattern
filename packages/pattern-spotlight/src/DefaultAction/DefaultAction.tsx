@@ -9,7 +9,7 @@ import {
   Text,
   PatternNumberSize,
   PatternColor,
-} from '@pattern/core';
+} from '@pattern-ui/core';
 import type { SpotlightAction } from '../types';
 import useStyles from './DefaultAction.styles';
 
@@ -68,4 +68,4 @@ export function DefaultAction({
   );
 }
 
-DefaultAction.displayName = '@pattern/spotlight/DefaultAction';
+DefaultAction.displayName = '@pattern-ui/spotlight/DefaultAction';

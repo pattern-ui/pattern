@@ -1,17 +1,17 @@
 ---
 group: 'pattern-hooks'
-package: '@pattern/hooks'
+package: '@pattern-ui/hooks'
 category: 'dom'
 title: 'use-hotkeys'
 order: 1
 slug: /hooks/use-hotkeys/
 description: 'Listen for keys combinations on document element'
-import: "import { useHotkeys } from '@pattern/hooks';"
+import: "import { useHotkeys } from '@pattern-ui/hooks';"
 docs: 'hooks/use-hotkeys.mdx'
 source: 'pattern-hooks/src/use-hotkeys/use-hotkeys.ts'
 ---
 
-import { HooksDemos } from '@pattern/demos';
+import { HooksDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -21,7 +21,7 @@ use-hotkeys accepts an array of hotkeys and handler tuples:
 - `handler` - event handler called when given combination was pressed
 
 ```tsx
-import { useHotkeys } from '@pattern/hooks';
+import { useHotkeys } from '@pattern-ui/hooks';
 
 function Demo() {
   // ctrl + J and ⌘ + J to toggle color scheme

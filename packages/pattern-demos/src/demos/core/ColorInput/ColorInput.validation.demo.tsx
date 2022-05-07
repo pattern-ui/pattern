@@ -1,5 +1,5 @@
 import React from 'react';
-import { ColorInput } from '@pattern/core';
+import { ColorInput } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

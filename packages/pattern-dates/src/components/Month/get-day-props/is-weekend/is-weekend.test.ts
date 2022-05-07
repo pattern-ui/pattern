@@ -1,6 +1,6 @@
 import { isWeekend } from './is-weekend';
 
-describe('@pattern/dates/Day/is-weekend', () => {
+describe('@pattern-ui/dates/Day/is-weekend', () => {
   it('correctly detects sunday and saturday as weekend', () => {
     expect(isWeekend(new Date(2021, 11, 11))).toBe(true);
     expect(isWeekend(new Date(2021, 11, 12))).toBe(true);

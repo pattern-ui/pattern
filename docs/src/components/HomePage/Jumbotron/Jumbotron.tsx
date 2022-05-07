@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Container, Group, Button, Text, usePatternTheme, SimpleGrid } from '@pattern/core';
+import { Container, Group, Button, Text, usePatternTheme, SimpleGrid } from '@pattern-ui/core';
 import { MarkGithubIcon } from '@primer/octicons-react';
 import { Hero } from './Hero';
 import { FEATURES_DATA } from './features';

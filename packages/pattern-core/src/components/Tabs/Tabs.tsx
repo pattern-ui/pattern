@@ -5,7 +5,7 @@ import {
   usePatternDefaultProps,
   StylesApiProvider,
   Selectors,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import { TabsList, TabsListStylesNames } from './TabsList/TabsList';
 import { TabsPanel, TabsPanelStylesNames } from './TabsPanel/TabsPanel';
@@ -99,4 +99,4 @@ Tabs.List = TabsList;
 Tabs.Tab = Tab;
 Tabs.Panel = TabsPanel;
 
-Tabs.displayName = '@pattern/core/Tabs';
+Tabs.displayName = '@pattern-ui/core/Tabs';

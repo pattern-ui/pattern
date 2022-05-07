@@ -1,5 +1,5 @@
 import React from 'react';
-import { Selectors, DefaultProps } from '@pattern/styles';
+import { Selectors, DefaultProps } from '@pattern-ui/styles';
 import { SharedTextProps, Text } from '../../Text/Text';
 import { useMenuContext } from '../Menu.context';
 import useStyles from './MenuLabel.styles';
@@ -26,4 +26,4 @@ export function MenuLabel(props: MenuLabelProps) {
   return <Text className={classes.label} {...props} />;
 }
 
-MenuLabel.displayName = '@pattern/core/MenuLabel';
+MenuLabel.displayName = '@pattern-ui/core/MenuLabel';

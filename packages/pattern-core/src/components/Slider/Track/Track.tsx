@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, PatternNumberSize, PatternColor, Selectors } from '@pattern/styles';
+import { DefaultProps, PatternNumberSize, PatternColor, Selectors } from '@pattern-ui/styles';
 import { Box } from '../../Box';
 import { Marks, MarksStylesNames } from '../Marks/Marks';
 import { sizes } from '../SliderRoot/SliderRoot.styles';
@@ -70,4 +70,4 @@ export function Track({
   );
 }
 
-Track.displayName = '@pattern/core/SliderTrack';
+Track.displayName = '@pattern-ui/core/SliderTrack';

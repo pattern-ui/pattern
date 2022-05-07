@@ -1,7 +1,7 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 import { usePagination } from './use-pagination';
 
-describe('@pattern/hooks/use-pagination', () => {
+describe('@pattern-ui/hooks/use-pagination', () => {
   it('setPage function sets active page', () => {
     const { result } = renderHook(() => usePagination({ total: 10 }));
 

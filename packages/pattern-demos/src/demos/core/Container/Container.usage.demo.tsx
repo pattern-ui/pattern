@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePatternTheme, Container } from '@pattern/core';
+import { usePatternTheme, Container } from '@pattern-ui/core';
 
 export default function Demo() {
   const theme = usePatternTheme();

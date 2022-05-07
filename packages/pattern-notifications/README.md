@@ -8,10 +8,10 @@ Notifications system
 
 ```sh
 # With yarn
-yarn add @pattern/hooks @pattern/core @pattern/notifications
+yarn add @pattern-ui/hooks @pattern-ui/core @pattern-ui/notifications
 
 # With npm
-npm install @pattern/hooks @pattern/core @pattern/notifications
+npm install @pattern-ui/hooks @pattern-ui/core @pattern-ui/notifications
 ```
 
 ## License

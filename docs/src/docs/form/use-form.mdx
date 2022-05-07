@@ -1,32 +1,32 @@
 ---
 group: 'pattern-form'
-package: '@pattern/form'
+package: '@pattern-ui/form'
 title: 'use-form'
 order: 0
 slug: /form/use-form/
 description: 'Manage form state'
-import: "import { useForm } from '@pattern/form';"
+import: "import { useForm } from '@pattern-ui/form';"
 docs: 'form/use-form.mdx'
 source: 'pattern-form/src'
 license: MIT
 ---
 
-import { FormDemos } from '@pattern/demos';
+import { FormDemos } from '@pattern-ui/demos';
 
 ## Installation
 
-`@pattern/form` package does not depend on any other libraries, you can use it with or without `@pattern/core` inputs:
+`@pattern-ui/form` package does not depend on any other libraries, you can use it with or without `@pattern-ui/core` inputs:
 
 Install with npm:
 
 ```sh
-npm install @pattern/form
+npm install @pattern-ui/form
 ```
 
 Install with yarn:
 
 ```sh
-yarn add @pattern/form
+yarn add @pattern-ui/form
 ```
 
 ## Usage
@@ -80,11 +80,11 @@ form.setFieldValue('age', 22);
 form.values; // -> { name: 'John', age: 22 }
 ```
 
-`setFieldValue` can be used with all `@pattern/core` inputs, example with [TextInput](/core/text-input/) component:
+`setFieldValue` can be used with all `@pattern-ui/core` inputs, example with [TextInput](/core/text-input/) component:
 
 ```tsx
-import { TextInput } from '@pattern/core';
-import { useForm } from '@pattern/form';
+import { TextInput } from '@pattern-ui/core';
+import { useForm } from '@pattern-ui/form';
 
 function Demo() {
   const form = useForm({ initialValues: { name: '' } });
@@ -307,7 +307,7 @@ form.getInputProps('termsOfService', { type: 'checkbox' }); // -> returns object
 - call provided function with form values when form is submitted if all fields are valid
 
 ```tsx
-import { useForm } from '@pattern/form';
+import { useForm } from '@pattern-ui/form';
 
 function Demo() {
   const form = useForm({ initialValues: { name: '', age: 0 } });
@@ -324,7 +324,7 @@ function Demo() {
 ### Get form values type
 
 ```tsx
-import { useForm } from '@pattern/form';
+import { useForm } from '@pattern-ui/form';
 
 function Demo() {
   const form = useForm({ initialValues: { name: '', age: 0 } });
@@ -344,7 +344,7 @@ To avoid that, you can pass type to `useForm` hook, this approach is useful when
 types cannot be inferred or when you want to provide more specific types:
 
 ```tsx
-import { useForm } from '@pattern/form';
+import { useForm } from '@pattern-ui/form';
 
 interface FormValues {
   name: string; // regular field, same as inferred type

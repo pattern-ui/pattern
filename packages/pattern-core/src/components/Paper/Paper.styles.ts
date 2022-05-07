@@ -1,4 +1,4 @@
-import { createStyles, PatternNumberSize, PatternShadow } from '@pattern/styles';
+import { createStyles, PatternNumberSize, PatternShadow } from '@pattern-ui/styles';
 
 export interface PaperStylesParams {
   radius: PatternNumberSize;

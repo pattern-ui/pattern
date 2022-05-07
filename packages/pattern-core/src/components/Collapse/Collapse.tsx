@@ -1,6 +1,6 @@
 import React from 'react';
-import { useReducedMotion } from '@pattern/hooks';
-import { extractSystemStyles, DefaultProps, usePatternDefaultProps } from '@pattern/styles';
+import { useReducedMotion } from '@pattern-ui/hooks';
+import { extractSystemStyles, DefaultProps, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Box } from '../Box';
 import { useCollapse } from './use-collapse';
 
@@ -70,4 +70,4 @@ export function Collapse(props: CollapseProps) {
   );
 }
 
-Collapse.displayName = '@pattern/core/Collapse';
+Collapse.displayName = '@pattern-ui/core/Collapse';

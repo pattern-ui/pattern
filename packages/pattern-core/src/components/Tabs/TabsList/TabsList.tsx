@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, Selectors, useContextStylesApi } from '@pattern/styles';
+import { DefaultProps, Selectors, useContextStylesApi } from '@pattern-ui/styles';
 import { Box } from '../../Box';
 import { TabsPosition } from '../Tabs.types';
 import { useTabsContext } from '../Tabs.context';
@@ -41,4 +41,4 @@ export const TabsList = forwardRef<HTMLDivElement, TabsListProps>(
   }
 );
 
-TabsList.displayName = '@pattern/core/TabsList';
+TabsList.displayName = '@pattern-ui/core/TabsList';

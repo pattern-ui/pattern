@@ -1,8 +1,8 @@
 import React from 'react';
 import { Search } from 'tabler-icons-react';
-import { UnstyledButton, Text, Group } from '@pattern/core';
-import { useOs } from '@pattern/hooks';
-import { useSpotlight } from '@pattern/spotlight';
+import { UnstyledButton, Text, Group } from '@pattern-ui/core';
+import { useOs } from '@pattern-ui/hooks';
+import { useSpotlight } from '@pattern-ui/spotlight';
 
 export function SearchControl(props: React.ComponentPropsWithoutRef<'button'>) {
   const os = useOs();

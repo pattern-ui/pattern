@@ -1,6 +1,6 @@
 import React, { forwardRef, useRef } from 'react';
-import { Selectors, PolymorphicComponentProps, DefaultProps, PatternColor } from '@pattern/styles';
-import { mergeRefs } from '@pattern/hooks';
+import { Selectors, PolymorphicComponentProps, DefaultProps, PatternColor } from '@pattern-ui/styles';
+import { mergeRefs } from '@pattern-ui/hooks';
 import { Box } from '../../Box';
 import { useMenuContext } from '../Menu.context';
 import { getContextItemIndex } from '../../../utils';
@@ -90,4 +90,4 @@ type MenuItemComponent = <C = 'button'>(props: MenuItemProps<C>) => React.ReactE
 
 export const MenuItem: MenuItemComponent & { displayName?: string } = _MenuItem as any;
 
-MenuItem.displayName = '@pattern/core/MenuItem';
+MenuItem.displayName = '@pattern-ui/core/MenuItem';

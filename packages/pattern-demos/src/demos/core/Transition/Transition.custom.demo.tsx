@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useClickOutside } from '@pattern/hooks';
-import { Transition, Paper, Button, usePatternTheme } from '@pattern/core';
+import { useClickOutside } from '@pattern-ui/hooks';
+import { Transition, Paper, Button, usePatternTheme } from '@pattern-ui/core';
 
 const scaleY = {
   in: { opacity: 1, transform: 'scaleY(1)' },

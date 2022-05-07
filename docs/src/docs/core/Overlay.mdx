@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Overlay
 order: 1
 slug: /core/overlay/
 category: 'overlay'
 description: 'Overlays given element with div element with any color and opacity'
 props: ['Overlay']
-import: "import { Overlay } from '@pattern/core';"
+import: "import { Overlay } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Overlay/Overlay.tsx'
 docs: 'core/Overlay.mdx'
 styles: ['Overlay', 'single-node']
 ---
 
-import { OverlayDemos, CardDemos } from '@pattern/demos';
+import { OverlayDemos, CardDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -40,7 +40,7 @@ Note that blur [is not supported in Firefox](https://caniuse.com/css-backdrop-fi
 You can pass custom tag or component that will be used as root element:
 
 ```tsx
-import { Overlay } from '@pattern/core';
+import { Overlay } from '@pattern-ui/core';
 import { Link } from 'react-router-dom';
 
 function Demo() {

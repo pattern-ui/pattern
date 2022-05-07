@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion, createStyles } from '@pattern/core';
+import { Accordion, createStyles } from '@pattern-ui/core';
 import { baseDemoItems } from './_base';
 
 const useStyles = createStyles((theme) => ({

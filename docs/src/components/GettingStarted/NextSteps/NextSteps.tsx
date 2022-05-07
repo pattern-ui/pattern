@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Title, ThemeIcon, Text, Group, SimpleGrid, usePatternTheme } from '@pattern/core';
+import { Title, ThemeIcon, Text, Group, SimpleGrid, usePatternTheme } from '@pattern-ui/core';
 import { NEXT_STEPS_DATA } from './data';
 import useStyles from './NextSteps.styles';
 

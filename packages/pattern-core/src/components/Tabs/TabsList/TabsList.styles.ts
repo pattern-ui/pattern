@@ -1,4 +1,4 @@
-import { createStyles, CSSObject, PatternTheme } from '@pattern/styles';
+import { createStyles, CSSObject, PatternTheme } from '@pattern-ui/styles';
 import { GROUP_POSITIONS } from '../../Group/Group.styles';
 import { TabsStylesParams, TabsPosition } from '../Tabs.types';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mark, MarkProps, Text } from '@pattern/core';
+import { Mark, MarkProps, Text } from '@pattern-ui/core';
 
 function Wrapper(props: MarkProps) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: MarkProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Text, Mark } from '@pattern/core';
+import { Text, Mark } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

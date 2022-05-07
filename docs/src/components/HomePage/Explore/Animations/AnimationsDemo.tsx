@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Prism } from '@pattern/prism';
-import { Title, Modal, Button, Paper, createStyles } from '@pattern/core';
-import { AuthenticationForm, TooltipDemos } from '@pattern/demos';
+import { Prism } from '@pattern-ui/prism';
+import { Title, Modal, Button, Paper, createStyles } from '@pattern-ui/core';
+import { AuthenticationForm, TooltipDemos } from '@pattern-ui/demos';
 
 const scaleY = {
   in: { opacity: 1, transform: 'scaleY(1)' },

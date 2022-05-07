@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, usePatternDefaultProps } from '@pattern/styles';
+import { DefaultProps, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Box } from '../../Box';
 import { useGridContext } from '../Grid.context';
 import useStyles from './Col.styles';
@@ -111,4 +111,4 @@ export const Col = forwardRef<HTMLDivElement, ColProps>((props: ColProps, ref) =
   );
 });
 
-Col.displayName = '@pattern/core/Col';
+Col.displayName = '@pattern-ui/core/Col';

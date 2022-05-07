@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title, Text } from '@pattern/core';
+import { Title, Text } from '@pattern-ui/core';
 import { MarkGithubIcon, PencilIcon, LawIcon, CalendarIcon } from '@primer/octicons-react';
 import { ImportStatement } from './ImportStatement/ImportStatement';
 import { NpmIcon } from './NpmIcon';
@@ -78,10 +78,10 @@ export function MdxPageHeader({ frontmatter }: MdxPageProps) {
             icon={<NpmIcon />}
             link={`https://www.npmjs.com/package/${frontmatter.package.replace(
               'pattern-',
-              '@pattern/'
+              '@pattern-ui/'
             )}`}
           >
-            {frontmatter.package.replace('pattern-', '@pattern/')}
+            {frontmatter.package.replace('pattern-', '@pattern-ui/')}
           </LinkItem>
         )}
 

@@ -2,7 +2,7 @@ import { getDecadeRange } from './get-decade-range';
 
 const TEST_RANGE = [2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030];
 
-describe('@pattern/dates/YearPicker/get-decade-range', () => {
+describe('@pattern-ui/dates/YearPicker/get-decade-range', () => {
   it('returns correct decade range for year that ends with 0', () => {
     expect(getDecadeRange(2020)).toStrictEqual(TEST_RANGE);
   });

@@ -1,15 +1,15 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { Space, SpaceProps } from './Space';
 
 const defaultProps: SpaceProps = {};
 
-describe('@pattern/core/Space', () => {
+describe('@pattern-ui/core/Space', () => {
   itSupportsSystemProps({
     component: Space as any,
     props: defaultProps,
-    displayName: '@pattern/core/Space',
+    displayName: '@pattern-ui/core/Space',
     refType: HTMLDivElement,
   });
 

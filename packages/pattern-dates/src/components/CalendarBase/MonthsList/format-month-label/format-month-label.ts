@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { upperFirst } from '@pattern/hooks';
+import { upperFirst } from '@pattern-ui/hooks';
 
 interface FormatMonthLabel {
   month: Date;

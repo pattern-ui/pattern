@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, Table } from '@pattern/core';
-import { useNetwork } from '@pattern/hooks';
+import { Text, Table } from '@pattern-ui/core';
+import { useNetwork } from '@pattern-ui/hooks';
 
 export default function Demo() {
   const networkStatus = useNetwork();

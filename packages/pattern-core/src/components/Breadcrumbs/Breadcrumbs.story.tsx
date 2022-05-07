@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { PatternProvider } from '@pattern/styles';
+import { PatternProvider } from '@pattern-ui/styles';
 import { Breadcrumbs } from './Breadcrumbs';
 
 storiesOf('Breadcrumbs', module).add('Default props on PatternProvider', () => (

@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { useUuid } from '@pattern/hooks';
+import { useUuid } from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternNumberSize,
@@ -8,7 +8,7 @@ import {
   Selectors,
   extractSystemStyles,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles from './Switch.styles';
 
@@ -95,4 +95,4 @@ export const Switch = forwardRef<HTMLInputElement, SwitchProps>((props: SwitchPr
   );
 });
 
-Switch.displayName = '@pattern/core/Switch';
+Switch.displayName = '@pattern-ui/core/Switch';

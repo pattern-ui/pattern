@@ -1,7 +1,7 @@
 import React from 'react';
-import { Tooltip } from '@pattern/core';
-import { useClipboard, useMediaQuery } from '@pattern/hooks';
-import { Prism } from '@pattern/prism';
+import { Tooltip } from '@pattern-ui/core';
+import { useClipboard, useMediaQuery } from '@pattern-ui/hooks';
+import { Prism } from '@pattern-ui/prism';
 import { Language } from 'prism-react-renderer';
 import useStyles from './HeaderCode.styles';
 

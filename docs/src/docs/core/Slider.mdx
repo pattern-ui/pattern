@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Slider
 order: 1
 slug: /core/slider/
 category: 'inputs'
 description: 'Capture user feedback from a range of values'
 props: ['Slider', 'RangeSlider']
-import: "import { Slider, RangeSlider } from '@pattern/core';"
+import: "import { Slider, RangeSlider } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Slider'
 docs: 'core/Slider.mdx'
 styles: ['Slider', 'RangeSlider']
 ---
 
-import { SliderDemos } from '@pattern/demos';
+import { SliderDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -25,7 +25,7 @@ By default, both Slider and RangeSlider are uncontrolled, add onChange and value
 
 ```tsx
 import { useState } from 'react';
-import { Slider, RangeSlider } from '@pattern/core';
+import { Slider, RangeSlider } from '@pattern-ui/core';
 
 function Demo() {
   const [value, setValue] = useState(40);

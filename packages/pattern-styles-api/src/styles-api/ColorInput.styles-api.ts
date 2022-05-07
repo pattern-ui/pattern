@@ -1,4 +1,4 @@
-import { ColorInputStylesNames } from '@pattern/core';
+import { ColorInputStylesNames } from '@pattern-ui/core';
 import { Input } from './Input.styles-api';
 import { InputWrapper } from './InputWrapper.styles-api';
 import { ColorPicker } from './ColorPicker.styles-api';

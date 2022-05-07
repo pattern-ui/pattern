@@ -1,4 +1,4 @@
-import { createStyles } from '@pattern/core';
+import { createStyles } from '@pattern-ui/core';
 import { BREAKPOINT, TABLE_OF_CONTENTS_WIDTH } from '../settings';
 
 export default createStyles((theme) => ({

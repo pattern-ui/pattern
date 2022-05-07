@@ -1,5 +1,5 @@
 {
-  "name": "@pattern/ssr",
+  "name": "@pattern-ui/ssr",
   "description": "Pattern server side rendering utils",
   "version": "1.0.0",
   "main": "cjs/index.js",
@@ -12,7 +12,7 @@
   "repository": {
     "url": "https://github.com/pattern-ui/pattern.git",
     "type": "git",
-    "directory": "src/pattern-ssr"
+    "directory": "packages/pattern-ssr"
   },
   "keywords": [
     "react",
@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@emotion/server": "11.4.0",
-    "@pattern/styles": "1.0.0",
+    "@pattern-ui/styles": "1.0.0",
     "@emotion/cache": "11.7.1",
     "@emotion/react": "11.7.1",
     "@emotion/serialize": "1.0.2",

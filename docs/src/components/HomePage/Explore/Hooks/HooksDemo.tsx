@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { useScrollLock, useClickOutside } from '@pattern/hooks';
-import { Title, Button, Paper, Center, createStyles, usePatternTheme } from '@pattern/core';
-import { Prism } from '@pattern/prism';
+import { useScrollLock, useClickOutside } from '@pattern-ui/hooks';
+import { Title, Button, Paper, Center, createStyles, usePatternTheme } from '@pattern-ui/core';
+import { Prism } from '@pattern-ui/prism';
 import { LockClosedIcon, LockOpen2Icon } from '@modulz/radix-icons';
 
 const useStyles = createStyles((theme) => ({
@@ -28,8 +28,8 @@ const useStyles = createStyles((theme) => ({
 }));
 
 const lockCode = `
-import { useScrollLock } from '@pattern/hooks';
-import { Button } from '@pattern/core';
+import { useScrollLock } from '@pattern-ui/hooks';
+import { Button } from '@pattern-ui/core';
 
 function Demo() {
   const [scrollLocked, setScrollLocked] = useScrollLock();
@@ -40,8 +40,8 @@ function Demo() {
 
 const clickOutsideCode = `
 import { useState } from 'react';
-import { Paper, Button } from '@pattern/core';
-import { useClickOutside } from '@pattern/hooks';
+import { Paper, Button } from '@pattern-ui/core';
+import { useClickOutside } from '@pattern-ui/hooks';
 
 function Demo() {
   const [opened, setOpened] = useState(false);

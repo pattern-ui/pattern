@@ -1,16 +1,16 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsSystemProps } from '@pattern/tests';
-import { DEFAULT_THEME } from '@pattern/styles';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
+import { DEFAULT_THEME } from '@pattern-ui/styles';
 import { Loader, LoaderProps } from './Loader';
 
 const defaultProps: LoaderProps = {};
 
-describe('@pattern/core/Loader', () => {
+describe('@pattern-ui/core/Loader', () => {
   itSupportsSystemProps({
     component: Loader,
     props: defaultProps,
-    displayName: '@pattern/core/Loader',
+    displayName: '@pattern-ui/core/Loader',
   });
 
   it('sets svg width based on size prop', () => {

@@ -1,18 +1,18 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { checkAccessibility, itSupportsSystemProps } from '@pattern/tests';
+import { checkAccessibility, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Progress, ProgressProps } from './Progress';
 
 const defaultProps: ProgressProps = {
   value: 80,
 };
 
-describe('@pattern/core/Progress', () => {
+describe('@pattern-ui/core/Progress', () => {
   checkAccessibility([<Progress value={80} aria-label="test-progress" />]);
   itSupportsSystemProps({
     component: Progress,
     props: defaultProps,
-    displayName: '@pattern/core/Progress',
+    displayName: '@pattern-ui/core/Progress',
     refType: HTMLDivElement,
   });
 

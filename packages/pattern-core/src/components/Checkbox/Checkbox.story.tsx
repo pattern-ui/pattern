@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { PATTERN_COLORS, PatternProvider } from '@pattern/styles';
+import { PATTERN_COLORS, PatternProvider } from '@pattern-ui/styles';
 import { Checkbox, CheckboxProps } from './Checkbox';
 import { CheckboxGroup } from './CheckboxGroup/CheckboxGroup';
 

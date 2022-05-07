@@ -1,7 +1,7 @@
 import React, { cloneElement } from 'react';
-import { isElement } from '@pattern/utils';
-import { useMergedRef } from '@pattern/hooks';
-import { getDefaultZIndex, usePatternDefaultProps } from '@pattern/styles';
+import { isElement } from '@pattern-ui/utils';
+import { useMergedRef } from '@pattern-ui/hooks';
+import { getDefaultZIndex, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Box } from '../../Box';
 import { OptionalPortal } from '../../Portal';
 import { TooltipBaseProps } from '../Tooltip.types';
@@ -101,4 +101,4 @@ export function TooltipFloating(props: TooltipFloatingProps) {
   );
 }
 
-TooltipFloating.displayName = '@pattern/core/TooltipFloating';
+TooltipFloating.displayName = '@pattern-ui/core/TooltipFloating';

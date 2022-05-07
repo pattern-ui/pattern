@@ -1,6 +1,6 @@
 import React from 'react';
 import { AlertCircle } from 'tabler-icons-react';
-import { Alert } from '@pattern/core';
+import { Alert } from '@pattern-ui/core';
 
 function Wrapper(props: React.ComponentPropsWithoutRef<typeof Alert>) {
   return (
@@ -11,7 +11,7 @@ function Wrapper(props: React.ComponentPropsWithoutRef<typeof Alert>) {
 }
 
 const codeTemplate = (props: string, children: string) => `
-import { Alert } from '@pattern/core';
+import { Alert } from '@pattern-ui/core';
 import { AlertCircle } from 'tabler-icons-react';
 
 export default function Demo() {

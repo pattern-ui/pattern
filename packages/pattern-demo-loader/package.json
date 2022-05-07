@@ -1,5 +1,5 @@
 {
-  "name": "@pattern/demo-loader",
+  "name": "@pattern-ui/demo-loader",
   "version": "1.0.0",
   "main": "cjs/index.js",
   "module": "esm/index.js",
@@ -12,14 +12,11 @@
   "sideEffects": false,
   "repository": {
     "url": "https://github.com/pattern-ui/pattern.git",
-    "type": "git"
-  },
-  "scripts": {
-    "build": "tsc --project tsconfig.build.json"
+    "type": "git",
+    "directory": "packages/pattern-demo-loader"
   },
   "dependencies": {
   },
   "devDependencies": {
-    "typescript": "4.6.3"
   }
 }

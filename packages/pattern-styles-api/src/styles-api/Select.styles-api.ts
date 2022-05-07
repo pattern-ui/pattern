@@ -1,4 +1,4 @@
-import type { SelectStylesNames } from '@pattern/core';
+import type { SelectStylesNames } from '@pattern-ui/core';
 import { Input } from './Input.styles-api';
 import { InputWrapper } from './InputWrapper.styles-api';
 

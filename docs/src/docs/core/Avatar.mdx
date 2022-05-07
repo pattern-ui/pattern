@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Avatar
 order: 1
 slug: /core/avatar/
 category: 'data-display'
 description: 'Display user profile image, initials or fallback icon'
 props: ['Avatar', 'AvatarsGroup']
-import: "import { Avatar, AvatarsGroup } from '@pattern/core';"
+import: "import { Avatar, AvatarsGroup } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Avatar/Avatar.tsx'
 docs: 'core/Avatar.mdx'
 styles: ['Avatar', 'AvatarsGroup']
 ---
 
-import { AvatarDemos } from '@pattern/demos';
+import { AvatarDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -50,7 +50,7 @@ With custom component (react router example):
 
 ```tsx
 import { Link } from 'react-router-dom';
-import { Card } from '@pattern/core';
+import { Card } from '@pattern-ui/core';
 
 function Demo() {
   return <Avatar component={Link} to="/my-route/" src="./avatar.png" />;
@@ -60,7 +60,7 @@ function Demo() {
 To use a custom component with TypeScript, pass an additional type:
 
 ```tsx
-import { Avatar } from '@pattern/core';
+import { Avatar } from '@pattern-ui/core';
 import { Link } from 'react-router-dom';
 
 function Demo() {

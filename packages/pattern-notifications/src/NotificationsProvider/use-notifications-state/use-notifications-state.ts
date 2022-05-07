@@ -1,4 +1,4 @@
-import { useQueue, randomId } from '@pattern/hooks';
+import { useQueue, randomId } from '@pattern-ui/hooks';
 import { NotificationProps } from '../../types';
 
 export default function useNotificationsState({ limit }: { limit: number }) {

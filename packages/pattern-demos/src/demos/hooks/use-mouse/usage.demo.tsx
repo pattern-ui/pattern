@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, Code } from '@pattern/core';
-import { useMouse } from '@pattern/hooks';
+import { Text, Code } from '@pattern-ui/core';
+import { useMouse } from '@pattern-ui/hooks';
 
 export default function Demo() {
   const { x, y } = useMouse();

@@ -1,7 +1,7 @@
 import 'dayjs/locale/ru';
 import React, { useState } from 'react';
-import { Group } from '@pattern/core';
-import { Month } from '@pattern/dates';
+import { Group } from '@pattern-ui/core';
+import { Month } from '@pattern-ui/dates';
 
 export default function Demo() {
   const [value, setValue] = useState(new Date());

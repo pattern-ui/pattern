@@ -1,12 +1,12 @@
 import React from 'react';
-import { useUncontrolled, useUuid } from '@pattern/hooks';
+import { useUncontrolled, useUuid } from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternNumberSize,
   PatternSize,
   PatternColor,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { filterChildrenByType } from '../../utils';
 import { Group, GroupProps } from '../Group/Group';
 import { Chip, ChipStylesNames } from './Chip/Chip';
@@ -119,4 +119,4 @@ export function Chips<T extends boolean>(props: ChipsProps<T>) {
   );
 }
 
-Chips.displayName = '@pattern/core/Chips';
+Chips.displayName = '@pattern-ui/core/Chips';

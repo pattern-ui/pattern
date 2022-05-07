@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, PatternColor, Selectors, PatternNumberSize } from '@pattern/styles';
+import { DefaultProps, PatternColor, Selectors, PatternNumberSize } from '@pattern-ui/styles';
 import { Text } from '../../Text';
 import { Box } from '../../Box';
 import useStyles from './TimelineItem.styles';
@@ -86,4 +86,4 @@ export function TimelineItem({
   );
 }
 
-TimelineItem.displayName = '@pattern/core/TimelineItem';
+TimelineItem.displayName = '@pattern-ui/core/TimelineItem';

@@ -6,7 +6,7 @@ import {
   PatternStyleSystemSize,
   getDefaultZIndex,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import { AppShellProvider } from './AppShell.context';
 import useStyles from './AppShell.styles';
@@ -91,4 +91,4 @@ export const AppShell = forwardRef<HTMLDivElement, AppShellProps>((props: AppShe
   );
 });
 
-AppShell.displayName = '@pattern/core/AppShell';
+AppShell.displayName = '@pattern-ui/core/AppShell';

@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Textarea
 order: 1
 slug: /core/textarea/
 category: 'inputs'
 description: 'Renders textarea with optional autosize variant'
 props: ['Textarea']
-import: "import { Textarea } from '@pattern/core';"
+import: "import { Textarea } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Textarea/Textarea.tsx'
 docs: 'core/Textarea.mdx'
 styles: ['Textarea']
 ---
 
-import { TextareaDemos } from '@pattern/demos';
+import { TextareaDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -30,7 +30,7 @@ Textarea height will grow until `maxRows` are reached or indefinitely if `maxRow
 
 ```tsx
 import { useState } from 'react';
-import { Textarea } from '@pattern/core';
+import { Textarea } from '@pattern-ui/core';
 
 function Demo() {
   const [value, setValue] = useState('');
@@ -46,7 +46,7 @@ function Demo() {
 
 ```tsx
 import { useRef } from 'react';
-import { Textarea } from '@pattern/core';
+import { Textarea } from '@pattern-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLTextAreaElement>();

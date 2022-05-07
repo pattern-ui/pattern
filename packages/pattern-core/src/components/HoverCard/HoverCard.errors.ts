@@ -1,4 +1,4 @@
-import { createErrors } from '@pattern/utils';
+import { createErrors } from '@pattern-ui/utils';
 
 export const HOVER_CARD_ERRORS = createErrors({
   'hover-card-context': 'HoverCard component was not found in the tree',

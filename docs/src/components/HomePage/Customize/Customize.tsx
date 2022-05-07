@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { ArrowRightIcon } from '@modulz/radix-icons';
-import { Text, SimpleGrid, Slider, Button } from '@pattern/core';
-import { Prism } from '@pattern/prism';
-import { Slider as SliderStylesApi } from '@pattern/styles-api';
+import { Text, SimpleGrid, Slider, Button } from '@pattern-ui/core';
+import { Prism } from '@pattern-ui/prism';
+import { Slider as SliderStylesApi } from '@pattern-ui/styles-api';
 import DataTable from '../../MdxPage/MdxProvider/DataTable/DataTable';
 import { PageSection } from '../PageSection/PageSection';
 

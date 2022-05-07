@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { useDisclosure } from '@pattern/hooks';
+import { useDisclosure } from '@pattern-ui/hooks';
 import { Popover } from '../Popover';
 import { HoverCardContextProvider } from './HoverCard.context';
 import { HoverCardDropdown } from './HoverCardDropdown/HoverCardDropdown';
@@ -67,6 +67,6 @@ export function HoverCard({
   );
 }
 
-HoverCard.displayName = '@pattern/core/HoverCard';
+HoverCard.displayName = '@pattern-ui/core/HoverCard';
 HoverCard.Target = HoverCardTarget;
 HoverCard.Dropdown = HoverCardDropdown;

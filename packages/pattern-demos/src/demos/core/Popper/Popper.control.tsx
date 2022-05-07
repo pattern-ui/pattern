@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Popper, PopperProps, Button, Paper, Center, Group, usePatternTheme } from '@pattern/core';
+import { Popper, PopperProps, Button, Paper, Center, Group, usePatternTheme } from '@pattern-ui/core';
 
 function Wrapper(props: PopperProps<HTMLDivElement>) {
   const [referenceElement, setReferenceElement] = useState(null);
@@ -38,7 +38,7 @@ function Wrapper(props: PopperProps<HTMLDivElement>) {
 
 const codeTemplate = (props: string) => `
 import { useState } from 'react';
-import { Popper, Button, Paper, Center, Group, usePatternTheme } from '@pattern/core';
+import { Popper, Button, Paper, Center, Group, usePatternTheme } from '@pattern-ui/core';
 
 export default function Demo() {
   const [referenceElement, setReferenceElement] = useState(null);

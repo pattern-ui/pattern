@@ -1,4 +1,4 @@
-import { createStyles, PatternColor } from '@pattern/styles';
+import { createStyles, PatternColor } from '@pattern-ui/styles';
 
 export interface CodeStylesParams {
   color: PatternColor;

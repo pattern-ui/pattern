@@ -26,4 +26,4 @@ export const HueSlider = forwardRef<HTMLDivElement, HueSliderProps>(
   )
 );
 
-HueSlider.displayName = '@pattern/core/HueSlider';
+HueSlider.displayName = '@pattern-ui/core/HueSlider';

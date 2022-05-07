@@ -1,5 +1,5 @@
 import React from 'react';
-import { Group, ActionIcon, usePatternColorScheme, Box } from '@pattern/core';
+import { Group, ActionIcon, usePatternColorScheme, Box } from '@pattern-ui/core';
 import { Sun, MoonStars } from 'tabler-icons-react';
 import { Logo } from './_logo';
 

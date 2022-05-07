@@ -1,6 +1,6 @@
 import React from 'react';
-import { useListState, randomId } from '@pattern/hooks';
-import { Checkbox } from '@pattern/core';
+import { useListState, randomId } from '@pattern-ui/hooks';
+import { Checkbox } from '@pattern-ui/core';
 
 const initialValues = [
   { label: 'Receive email notifications', checked: false, key: randomId() },

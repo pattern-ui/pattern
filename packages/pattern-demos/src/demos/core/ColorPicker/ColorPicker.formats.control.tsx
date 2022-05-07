@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Group, Text, ColorPicker, ColorPickerProps } from '@pattern/core';
+import { Group, Text, ColorPicker, ColorPickerProps } from '@pattern-ui/core';
 
 function Wrapper(props: ColorPickerProps) {
   const [value, onChange] = useState('#C5D899');
@@ -13,7 +13,7 @@ function Wrapper(props: ColorPickerProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { ColorPicker } from '@pattern/core';
+import { ColorPicker } from '@pattern-ui/core';
 
 export default function Demo() {
   return <ColorPicker${props} />;

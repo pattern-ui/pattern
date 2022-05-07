@@ -1,5 +1,5 @@
 import React, { Children, cloneElement, forwardRef } from 'react';
-import { PolymorphicComponentProps, PolymorphicRef, usePatternDefaultProps } from '@pattern/styles';
+import { PolymorphicComponentProps, PolymorphicRef, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Paper, SharedPaperProps } from '../Paper/Paper';
 import { CardSection } from './CardSection/CardSection';
 import useStyles from './Card.styles';
@@ -55,4 +55,4 @@ export const Card: CardComponent = forwardRef(
 ) as any;
 
 Card.Section = CardSection;
-Card.displayName = '@pattern/core/Card';
+Card.displayName = '@pattern-ui/core/Card';

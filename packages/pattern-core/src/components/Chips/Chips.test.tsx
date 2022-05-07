@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility, itSupportsSystemProps } from '@pattern/tests';
+import { checkAccessibility, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Chips } from './Chips';
 import { Chip } from './Chip/Chip';
 
@@ -19,12 +19,12 @@ const queries = {
     userEvent.click(queries.getChip(index, type)),
 };
 
-describe('@pattern/core/Chips', () => {
+describe('@pattern-ui/core/Chips', () => {
   checkAccessibility([<Chips {...defaultProps} />]);
   itSupportsSystemProps({
     component: Chips,
     props: defaultProps,
-    displayName: '@pattern/core/Chips',
+    displayName: '@pattern-ui/core/Chips',
     excludeOthers: true,
   });
 

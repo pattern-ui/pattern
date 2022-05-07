@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import React from 'react';
-import { Container } from '@pattern/core';
-import { TimeRangeInput } from '@pattern/dates';
+import { Container } from '@pattern-ui/core';
+import { TimeRangeInput } from '@pattern-ui/dates';
 
 export default function Demo() {
   return (

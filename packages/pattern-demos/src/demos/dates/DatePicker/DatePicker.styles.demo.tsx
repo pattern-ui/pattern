@@ -1,6 +1,6 @@
 import React from 'react';
-import { usePatternTheme } from '@pattern/core';
-import { DatePicker } from '@pattern/dates';
+import { usePatternTheme } from '@pattern-ui/core';
+import { DatePicker } from '@pattern-ui/dates';
 
 export default function Demo() {
   const theme = usePatternTheme();

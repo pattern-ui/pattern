@@ -1,5 +1,5 @@
 import React from 'react';
-import { Prism } from '@pattern/prism';
+import { Prism } from '@pattern-ui/prism';
 
 export const go = `
 package main

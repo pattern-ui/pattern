@@ -1,16 +1,16 @@
-import { itIsPolymorphic, itSupportsSystemProps } from '@pattern/tests';
+import { itIsPolymorphic, itSupportsSystemProps } from '@pattern-ui/tests';
 import { ColorSwatch, ColorSwatchProps } from './ColorSwatch';
 
 const defaultProps: ColorSwatchProps<'div'> = {
   color: '#fff',
 };
 
-describe('@pattern/core/ColorSwatch', () => {
+describe('@pattern-ui/core/ColorSwatch', () => {
   itIsPolymorphic(ColorSwatch, defaultProps);
   itSupportsSystemProps({
     component: ColorSwatch,
     props: defaultProps,
-    displayName: '@pattern/core/ColorSwatch',
+    displayName: '@pattern-ui/core/ColorSwatch',
     refType: HTMLDivElement,
   });
 });

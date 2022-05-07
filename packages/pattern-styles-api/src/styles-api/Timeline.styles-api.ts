@@ -1,4 +1,4 @@
-import type { TimelineItemStylesNames } from '@pattern/core';
+import type { TimelineItemStylesNames } from '@pattern-ui/core';
 
 export const Timeline: Record<TimelineItemStylesNames, string> = {
   item: 'Item root element',

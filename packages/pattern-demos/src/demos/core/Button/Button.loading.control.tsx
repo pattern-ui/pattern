@@ -1,6 +1,6 @@
 import React from 'react';
 import { Database } from 'tabler-icons-react';
-import { Button, Group, ButtonProps } from '@pattern/core';
+import { Button, Group, ButtonProps } from '@pattern-ui/core';
 
 function Wrapper(props: ButtonProps<'button'>) {
   return (
@@ -14,7 +14,7 @@ function Wrapper(props: ButtonProps<'button'>) {
 
 const codeTemplate = (props: string) => `
 import { Database } from 'tabler-icons-react';
-import { Button } from '@pattern/core';
+import { Button } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

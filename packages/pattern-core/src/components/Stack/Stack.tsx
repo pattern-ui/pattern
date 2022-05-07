@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unused-prop-types */
 import React, { forwardRef } from 'react';
-import { DefaultProps, usePatternDefaultProps, PatternNumberSize } from '@pattern/styles';
+import { DefaultProps, usePatternDefaultProps, PatternNumberSize } from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles from './Stack.styles';
 
@@ -28,4 +28,4 @@ export const Stack = forwardRef<HTMLDivElement, StackProps>((props, ref) => {
   return <Box className={cx(classes.root, className)} ref={ref} {...others} />;
 });
 
-Stack.displayName = '@pattern/core/Stack';
+Stack.displayName = '@pattern-ui/core/Stack';

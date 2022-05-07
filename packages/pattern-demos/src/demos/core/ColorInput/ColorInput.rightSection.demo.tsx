@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Refresh } from 'tabler-icons-react';
-import { ActionIcon, ColorInput } from '@pattern/core';
+import { ActionIcon, ColorInput } from '@pattern-ui/core';
 
 const randomColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 

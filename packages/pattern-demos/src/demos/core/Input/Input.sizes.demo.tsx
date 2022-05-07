@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, PATTERN_SIZES } from '@pattern/core';
+import { Input, PATTERN_SIZES } from '@pattern-ui/core';
 
 export default function Demo() {
   const inputs = PATTERN_SIZES.map((size, index) => (

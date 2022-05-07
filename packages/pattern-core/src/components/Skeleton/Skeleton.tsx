@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, PatternNumberSize, usePatternDefaultProps } from '@pattern/styles';
+import { DefaultProps, PatternNumberSize, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles from './Skeleton.styles';
 
@@ -58,4 +58,4 @@ export const Skeleton = forwardRef<HTMLDivElement, SkeletonProps>((props: Skelet
   );
 });
 
-Skeleton.displayName = '@pattern/core/Skeleton';
+Skeleton.displayName = '@pattern-ui/core/Skeleton';

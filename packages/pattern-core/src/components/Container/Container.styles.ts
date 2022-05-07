@@ -1,4 +1,4 @@
-import { createStyles, PatternNumberSize, PatternSize } from '@pattern/styles';
+import { createStyles, PatternNumberSize, PatternSize } from '@pattern-ui/styles';
 
 export interface ContainerStylesParams {
   fluid: boolean;

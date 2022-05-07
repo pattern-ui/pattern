@@ -1,6 +1,6 @@
 import React from 'react';
-import { useFocusWithin } from '@pattern/hooks';
-import { TextInput, Button, Box, Text } from '@pattern/core';
+import { useFocusWithin } from '@pattern-ui/hooks';
+import { TextInput, Button, Box, Text } from '@pattern-ui/core';
 
 export default function Demo() {
   const { ref, focused } = useFocusWithin();

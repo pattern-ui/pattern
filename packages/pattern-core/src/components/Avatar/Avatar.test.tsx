@@ -1,13 +1,13 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { checkAccessibility, itIsPolymorphic, itSupportsSystemProps } from '@pattern/tests';
+import { checkAccessibility, itIsPolymorphic, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Avatar, AvatarProps } from './Avatar';
 
 const defaultProps: AvatarProps<'div'> = {
   src: './test-image',
 };
 
-describe('@pattern/core/Avatar', () => {
+describe('@pattern-ui/core/Avatar', () => {
   itIsPolymorphic(Avatar, defaultProps);
   checkAccessibility([
     <Avatar {...defaultProps} alt="It's me!" />,
@@ -17,7 +17,7 @@ describe('@pattern/core/Avatar', () => {
   itSupportsSystemProps({
     component: Avatar,
     props: defaultProps,
-    displayName: '@pattern/core/Avatar',
+    displayName: '@pattern-ui/core/Avatar',
     refType: HTMLDivElement,
   });
 

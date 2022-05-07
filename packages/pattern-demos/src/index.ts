@@ -13,7 +13,7 @@ export { default as CountriesSelect } from './demos/core/MultiSelect/MultiSelect
 export * as CreateStylesDemos from './demos/create-styles';
 export * as ThemeDemos from './demos/theme';
 
-// @pattern/core
+// @pattern-ui/core
 export * as AccordionDemos from './demos/core/Accordion';
 export * as ActionIconDemos from './demos/core/ActionIcon';
 export * as AffixDemos from './demos/core/Affix';
@@ -96,7 +96,7 @@ export * as TransferListDemos from './demos/core/TransferList';
 export * as TransitionDemos from './demos/core/Transition';
 export * as TypographyStylesProviderDemos from './demos/core/TypographyStylesProvider';
 
-// @pattern/dates
+// @pattern-ui/dates
 export * as CalendarDemos from './demos/dates/Calendar';
 export * as DatePickerDemos from './demos/dates/DatePicker';
 export * as DateRangePickerDemos from './demos/dates/DateRangePicker';
@@ -116,6 +116,6 @@ export * as SpotlightDemos from './demos/spotlight';
 export * as FormDemos from './demos/form';
 export * as NProgressDemos from './demos/nprogress';
 
-// @pattern/labs
+// @pattern-ui/labs
 export * as PinInputDemos from './demos/labs/PinInput';
 export * as TagInputDemos from './demos/labs/TagInput';

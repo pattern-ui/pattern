@@ -9,7 +9,7 @@ import {
   PolymorphicComponentProps,
   PolymorphicRef,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles from './Badge.styles';
 
@@ -105,4 +105,4 @@ export const Badge: BadgeComponent = forwardRef(
   }
 ) as any;
 
-Badge.displayName = '@pattern/core/Badge';
+Badge.displayName = '@pattern-ui/core/Badge';

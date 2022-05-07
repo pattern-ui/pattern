@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
-import { useContextStylesApi, DefaultProps, Selectors } from '@pattern/styles';
-import { createScopedKeydownHandler } from '@pattern/utils';
+import { useContextStylesApi, DefaultProps, Selectors } from '@pattern-ui/styles';
+import { createScopedKeydownHandler } from '@pattern-ui/utils';
 import { UnstyledButton } from '../../Button';
 import { useAccordionContext } from '../Accordion.context';
 import { useAccordionItemContext } from '../AccordionItem.context';
@@ -100,4 +100,4 @@ export const AccordionControl = forwardRef<HTMLButtonElement, AccordionControlPr
   }
 );
 
-AccordionControl.displayName = '@pattern/core/AccordionControl';
+AccordionControl.displayName = '@pattern-ui/core/AccordionControl';

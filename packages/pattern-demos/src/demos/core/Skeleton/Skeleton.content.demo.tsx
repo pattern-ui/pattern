@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Group, Button, Text, Skeleton } from '@pattern/core';
+import { Group, Button, Text, Skeleton } from '@pattern-ui/core';
 
 export default function Demo() {
   const [loading, setLoading] = useState(true);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Search } from 'tabler-icons-react';
-import { Menu, Group } from '@pattern/core';
+import { Menu, Group } from '@pattern-ui/core';
 import { menuItems } from './_menu-items';
 
 export default function Demo() {

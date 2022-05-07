@@ -1,17 +1,17 @@
 ---
 group: 'pattern-hooks'
-package: '@pattern/hooks'
+package: '@pattern-ui/hooks'
 category: 'dom'
 title: 'use-resize-observer'
 order: 1
 slug: /hooks/use-resize-observer/
 description: 'Subscribe to element size and position changes with ResizeObserver'
-import: "import { useResizeObserver } from '@pattern/hooks';"
+import: "import { useResizeObserver } from '@pattern-ui/hooks';"
 docs: 'hooks/use-resize-observer.mdx'
 source: 'pattern-hooks/src/use-resize-observer/use-resize-observer.ts'
 ---
 
-import { HooksDemos } from '@pattern/demos';
+import { HooksDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -24,7 +24,7 @@ See [Resize Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Resiz
 On the first render (as well as during SSR), or when no element is being observed, all of the properties are equal to `0`.
 
 ```tsx
-import { useResizeObserver } from '@pattern/hooks';
+import { useResizeObserver } from '@pattern-ui/hooks';
 
 function Demo() {
   const [ref, rect] = useResizeObserver();

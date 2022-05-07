@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, PatternColor, usePatternDefaultProps } from '@pattern/styles';
+import { DefaultProps, PatternColor, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles from './Mark.styles';
 
@@ -23,4 +23,4 @@ export const Mark = forwardRef<HTMLElement, MarkProps>((props: MarkProps, ref) =
   return <Box component="mark" ref={ref} className={cx(classes.root, className)} {...others} />;
 });
 
-Mark.displayName = '@pattern/core/Mark';
+Mark.displayName = '@pattern-ui/core/Mark';

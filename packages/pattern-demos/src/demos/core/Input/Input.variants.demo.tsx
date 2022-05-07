@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input } from '@pattern/core';
+import { Input } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

@@ -1,6 +1,6 @@
 import { Placement, ReferenceType } from '@floating-ui/react-dom-interactions';
-import { createSafeContext } from '@pattern/utils';
-import { PatternNumberSize, PatternShadow } from '@pattern/styles';
+import { createSafeContext } from '@pattern-ui/utils';
+import { PatternNumberSize, PatternShadow } from '@pattern-ui/styles';
 import { PatternTransition } from '../Transition';
 import { POPOVER_ERRORS } from './Popover.errors';
 import { PopoverWidth } from './Popover.types';

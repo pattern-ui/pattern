@@ -1,4 +1,4 @@
-import { createStyles } from '@pattern/core';
+import { createStyles } from '@pattern-ui/core';
 
 const BREAKPOINT = '@media (max-width: 960px)';
 

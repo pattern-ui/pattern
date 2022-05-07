@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Notification, DefaultProps } from '@pattern/core';
+import { Notification, DefaultProps } from '@pattern-ui/core';
 import getAutoClose from './get-auto-close/get-auto-close';
 import { NotificationProps } from '../types';
 
@@ -61,4 +61,4 @@ export default function NotificationContainer({
   );
 }
 
-NotificationContainer.displayName = '@pattern/notifications/NotificationContainer';
+NotificationContainer.displayName = '@pattern-ui/notifications/NotificationContainer';

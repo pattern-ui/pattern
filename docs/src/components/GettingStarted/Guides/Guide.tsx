@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, Button, usePatternTheme } from '@pattern/core';
-import { Prism } from '@pattern/prism';
+import { Text, Button, usePatternTheme } from '@pattern-ui/core';
+import { Prism } from '@pattern-ui/prism';
 import GatsbyLink from '../../MdxPage/MdxProvider/GatsbyLink/GatsbyLink';
 
 /* eslint-disable react/no-unused-prop-types */
@@ -15,7 +15,7 @@ export interface GuideProps {
 /* eslint-enable react/no-unused-prop-types */
 
 const done = `
-import { Button } from '@pattern/core';
+import { Button } from '@pattern-ui/core';
 
 export function MyApp() {
   return <Button>Hello world!</Button>;
@@ -54,14 +54,14 @@ function Guide({ dependencies, initScript, children, action, actionLink, withDon
         With yarn
       </Text>
 
-      <Prism language="bash">{`yarn add ${dependencies || '@pattern/core @pattern/hooks'}`}</Prism>
+      <Prism language="bash">{`yarn add ${dependencies || '@pattern-ui/core @pattern-ui/hooks'}`}</Prism>
 
       <Text mb={5} mt={15} size="sm">
         With npm
       </Text>
 
       <Prism language="bash">
-        {`npm install ${dependencies || '@pattern/core @pattern/hooks'}`}
+        {`npm install ${dependencies || '@pattern-ui/core @pattern-ui/hooks'}`}
       </Prism>
 
       {children}
@@ -102,7 +102,7 @@ function ViteGuide({ dependencies }: GuideProps) {
 function NextGuide({ dependencies }: GuideProps) {
   return (
     <Guide
-      dependencies={`${dependencies} @pattern/next`}
+      dependencies={`${dependencies} @pattern-ui/next`}
       initScript="npx create-next-app --ts"
       action="Get started with Next.js GitHub template"
       actionLink="https://github.com/pattern-ui/pattern-next-template"
@@ -136,7 +136,7 @@ function GatsbyGuide({ dependencies }: GuideProps) {
 const remixCode = `import { renderToString } from 'react-dom/server';
 import { RemixServer } from '@remix-run/react';
 import type { EntryContext } from '@remix-run/node';
-import { injectStylesIntoStaticMarkup } from '@pattern/ssr';
+import { injectStylesIntoStaticMarkup } from '@pattern-ui/ssr';
 
 export default function handleRequest(
   request: Request,
@@ -157,7 +157,7 @@ export default function handleRequest(
 function RemixGuide({ dependencies }: GuideProps) {
   return (
     <Guide
-      dependencies={`${dependencies} @pattern/ssr`}
+      dependencies={`${dependencies} @pattern-ui/ssr`}
       initScript="npx create-remix@latest"
       action="View example setup"
       actionLink="https://github.com/remix-run/remix/tree/main/examples/pattern"

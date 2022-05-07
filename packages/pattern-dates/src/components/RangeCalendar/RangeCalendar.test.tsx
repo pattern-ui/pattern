@@ -1,4 +1,4 @@
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { RangeCalendar, RangeCalendarProps } from './RangeCalendar';
 
 const defaultProps: RangeCalendarProps = {
@@ -7,11 +7,11 @@ const defaultProps: RangeCalendarProps = {
   onChange: () => {},
 };
 
-describe('@pattern/dates/RangeCalendar', () => {
+describe('@pattern-ui/dates/RangeCalendar', () => {
   itSupportsSystemProps({
     component: RangeCalendar,
     props: defaultProps,
-    displayName: '@pattern/dates/RangeCalendar',
+    displayName: '@pattern-ui/dates/RangeCalendar',
     refType: HTMLDivElement,
   });
 });

@@ -1,4 +1,4 @@
-import { itSupportsSystemProps, itSupportsInputProps, itSupportsFocusEvents } from '@pattern/tests';
+import { itSupportsSystemProps, itSupportsInputProps, itSupportsFocusEvents } from '@pattern-ui/tests';
 import { DatePickerBase, DatePickerBaseProps } from './DatePickerBase';
 
 const defaultProps: DatePickerBaseProps = {
@@ -10,13 +10,13 @@ const defaultProps: DatePickerBaseProps = {
   transitionDuration: 0,
 };
 
-describe('@pattern/dates/DatePickerBase', () => {
+describe('@pattern-ui/dates/DatePickerBase', () => {
   itSupportsInputProps(DatePickerBase, defaultProps, 'DatePickerBase');
   itSupportsFocusEvents(DatePickerBase, defaultProps, 'input');
   itSupportsSystemProps({
     component: DatePickerBase,
     props: defaultProps,
-    displayName: '@pattern/dates/DatePickerBase',
+    displayName: '@pattern-ui/dates/DatePickerBase',
     excludeOthers: true,
     refType: HTMLInputElement,
   });

@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, usePatternDefaultProps } from '@pattern/styles';
+import { DefaultProps, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Box } from '../Box/Box';
 import useStyles from './AspectRatio.styles';
 
@@ -26,4 +26,4 @@ export const AspectRatio = forwardRef<HTMLDivElement, AspectRatioProps>(
   }
 );
 
-AspectRatio.displayName = '@pattern/core/AspectRatio';
+AspectRatio.displayName = '@pattern-ui/core/AspectRatio';

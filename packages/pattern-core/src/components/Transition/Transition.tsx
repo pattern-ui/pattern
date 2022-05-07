@@ -76,4 +76,4 @@ export function Transition({
   );
 }
 
-Transition.displayName = '@pattern/core/Transition';
+Transition.displayName = '@pattern-ui/core/Transition';

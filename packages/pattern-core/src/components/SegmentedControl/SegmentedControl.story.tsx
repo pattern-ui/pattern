@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { PatternProvider } from '@pattern/styles';
+import { PatternProvider } from '@pattern-ui/styles';
 import { Button } from '../Button/Button';
 import { SegmentedControl, SegmentedControlProps } from './SegmentedControl';
 

@@ -14,9 +14,9 @@ import {
   ColorInput,
   createStyles,
   Paper,
-} from '@pattern/core';
-import { CustomSelectDemo, CountriesSelect } from '@pattern/demos';
-import { DatePicker, DateRangePicker } from '@pattern/dates';
+} from '@pattern-ui/core';
+import { CustomSelectDemo, CountriesSelect } from '@pattern-ui/demos';
+import { DatePicker, DateRangePicker } from '@pattern-ui/dates';
 
 const BREAKPOINT = '@media (max-width: 960px)';
 

@@ -2,7 +2,7 @@ import { filterActions } from './filter-actions';
 
 const onTrigger = jest.fn();
 
-describe('@pattern/spotlight/filter-actions', () => {
+describe('@pattern-ui/spotlight/filter-actions', () => {
   it('filters actions by title', () => {
     expect(
       filterActions('test', [

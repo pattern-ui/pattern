@@ -1,6 +1,6 @@
 import React from 'react';
-import { usePatternTheme, Text, Group, Code } from '@pattern/core';
-import { useResizeObserver } from '@pattern/hooks';
+import { usePatternTheme, Text, Group, Code } from '@pattern-ui/core';
+import { useResizeObserver } from '@pattern-ui/hooks';
 
 export default function Demo() {
   const theme = usePatternTheme();

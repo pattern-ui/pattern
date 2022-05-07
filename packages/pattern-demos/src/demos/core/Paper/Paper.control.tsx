@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Paper, DEFAULT_THEME } from '@pattern/core';
+import { Text, Paper, DEFAULT_THEME } from '@pattern-ui/core';
 
 function Wrapper(props: any) {
   return (
@@ -16,7 +16,7 @@ function Wrapper(props: any) {
 }
 
 const codeTemplate = (props: string) => `
-import { Text, Paper } from '@pattern/core';
+import { Text, Paper } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

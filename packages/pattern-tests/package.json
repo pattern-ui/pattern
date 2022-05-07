@@ -1,5 +1,5 @@
 {
-  "name": "@pattern/tests",
+  "name": "@pattern-ui/tests",
   "private": true,
   "version": "1.0.0",
   "main": "cjs/index.js",

@@ -17,7 +17,7 @@ const baseOptions = {
   value: null,
 };
 
-describe('@pattern/core/Select/filter-data', () => {
+describe('@pattern-ui/core/Select/filter-data', () => {
   it('returns unmodified data if input is not searchable', () => {
     expect(filterData({ ...baseOptions, searchable: false, searchValue: '' })).toBe(data);
   });

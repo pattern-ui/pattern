@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: NativeSelect
 order: 1
 slug: /core/native-select/
 category: 'inputs'
 description: 'Capture user feedback limited to large set of options'
 props: ['NativeSelect']
-import: "import { NativeSelect } from '@pattern/core';"
+import: "import { NativeSelect } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/NativeSelect/NativeSelect.tsx'
 docs: 'core/NativeSelect.mdx'
 styles: ['NativeSelect']
 ---
 
-import { NativeSelectDemos } from '@pattern/demos';
+import { NativeSelectDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -23,7 +23,7 @@ import { NativeSelectDemos } from '@pattern/demos';
 
 ```tsx
 import { useState } from 'react';
-import { NativeSelect } from '@pattern/core';
+import { NativeSelect } from '@pattern-ui/core';
 
 function Demo() {
   const [value, setValue] = useState('');
@@ -61,7 +61,7 @@ Note that in this case `clearable` option will not work and will need to handle 
 
 ```tsx
 import { useRef } from 'react';
-import { NativeSelect } from '@pattern/core';
+import { NativeSelect } from '@pattern-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLSelectElement>();

@@ -7,7 +7,7 @@ const TEST_NOTIFICATION: NotificationProps = {
   message: 'test-notification',
 };
 
-describe('@pattern/notifications/use-notifications-state', () => {
+describe('@pattern-ui/notifications/use-notifications-state', () => {
   it('adds notification to the list with showNotification handler', () => {
     const hook = renderHook(() => useNotificationsState({ limit: 3 }));
     expect(hook.result.current.notifications).toHaveLength(0);

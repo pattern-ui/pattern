@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useLogger } from '@pattern/hooks';
-import { Button, Group } from '@pattern/core';
+import { useLogger } from '@pattern-ui/hooks';
+import { Button, Group } from '@pattern-ui/core';
 
 export default function Demo() {
   const [count, setCount] = useState(0);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { itRendersChildren, itSupportsRef, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itSupportsRef, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Dialog, PatternDialog, DialogProps } from './Dialog';
 
 const defaultProps: DialogProps = {
@@ -10,7 +10,7 @@ const defaultProps: DialogProps = {
   withCloseButton: true,
 };
 
-describe('@pattern/core/Dialog', () => {
+describe('@pattern-ui/core/Dialog', () => {
   itRendersChildren(PatternDialog, defaultProps);
   itSupportsRef(Dialog, defaultProps, HTMLDivElement);
   itSupportsSystemProps({ component: PatternDialog, props: defaultProps });
@@ -23,6 +23,6 @@ describe('@pattern/core/Dialog', () => {
   });
 
   it('has correct displayName', () => {
-    expect(Dialog.displayName).toStrictEqual('@pattern/core/Dialog');
+    expect(Dialog.displayName).toStrictEqual('@pattern-ui/core/Dialog');
   });
 });

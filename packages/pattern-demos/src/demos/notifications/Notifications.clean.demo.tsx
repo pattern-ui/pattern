@@ -1,10 +1,10 @@
 import React from 'react';
-import { Group, Button } from '@pattern/core';
+import { Group, Button } from '@pattern-ui/core';
 import {
   showNotification,
   cleanNotificationsQueue,
   cleanNotifications,
-} from '@pattern/notifications';
+} from '@pattern-ui/notifications';
 
 export default function Demo() {
   return (

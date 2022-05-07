@@ -1,5 +1,5 @@
 import React from 'react';
-import { Checkbox, Group } from '@pattern/core';
+import { Checkbox, Group } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

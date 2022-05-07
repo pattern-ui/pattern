@@ -1,6 +1,6 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Popover
 order: 1
 slug: /core/popover/
@@ -8,13 +8,13 @@ category: 'overlay'
 description: 'Display popover section relative to given target element'
 componentPrefix: 'Popover'
 props: ['Popover', 'PopoverTarget', 'PopoverDropdown']
-import: "import { Popover } from '@pattern/core';"
+import: "import { Popover } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Popover/Popover.tsx'
 docs: 'core/Popover.mdx'
 styles: ['Popover']
 ---
 
-import { PopoverDemos, PasswordInputDemos } from '@pattern/demos';
+import { PopoverDemos, PasswordInputDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -26,7 +26,7 @@ You can control Popover state with `opened` and `onChange` props:
 
 ```tsx
 import { useState } from 'react';
-import { Popover, Button } from '@pattern/core';
+import { Popover, Button } from '@pattern-ui/core';
 
 function Demo() {
   const [opened, setOpened] = useState(false);
@@ -83,7 +83,7 @@ Custom components must provide a prop to get root element ref,
 all Pattern components support ref out of the box.
 
 ```tsx
-import { Popover, Badge } from '@pattern/core';
+import { Popover, Badge } from '@pattern-ui/core';
 
 function Demo() {
   return (

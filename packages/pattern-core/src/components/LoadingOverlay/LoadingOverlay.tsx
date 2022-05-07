@@ -4,7 +4,7 @@ import {
   PatternNumberSize,
   getDefaultZIndex,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Overlay } from '../Overlay';
 import { Transition } from '../Transition';
 import { Loader, LoaderProps } from '../Loader';
@@ -92,4 +92,4 @@ export const LoadingOverlay = forwardRef<HTMLDivElement, LoadingOverlayProps>(
   }
 );
 
-LoadingOverlay.displayName = '@pattern/core/LoadingOverlay';
+LoadingOverlay.displayName = '@pattern-ui/core/LoadingOverlay';

@@ -1,4 +1,4 @@
-import { createStyles, PatternSize } from '@pattern/core';
+import { createStyles, PatternSize } from '@pattern-ui/core';
 
 interface YearPickerStyles {
   size: PatternSize;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility, itSupportsSystemProps } from '@pattern/tests';
+import { checkAccessibility, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Step } from './Step/Step';
 import { StepCompleted } from './StepCompleted/StepCompleted';
 import { Stepper, StepperProps } from './Stepper';
@@ -25,12 +25,12 @@ const defaultProps: StepperProps = {
   ],
 };
 
-describe('@pattern/core/Stepper', () => {
+describe('@pattern-ui/core/Stepper', () => {
   checkAccessibility([<Stepper {...defaultProps} />]);
   itSupportsSystemProps({
     component: Stepper,
     props: defaultProps,
-    displayName: '@pattern/core/Stepper',
+    displayName: '@pattern-ui/core/Stepper',
     refType: HTMLDivElement,
   });
 

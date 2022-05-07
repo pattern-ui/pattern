@@ -1,5 +1,5 @@
 import React from 'react';
-import { Textarea } from '@pattern/core';
+import { Textarea } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

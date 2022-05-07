@@ -1,5 +1,5 @@
 import React from 'react';
-import { AccordionProps } from '@pattern/core';
+import { AccordionProps } from '@pattern-ui/core';
 import { BaseDemo } from './_base';
 
 function Wrapper(props: Partial<AccordionProps>) {
@@ -7,7 +7,7 @@ function Wrapper(props: Partial<AccordionProps>) {
 }
 
 const codeTemplate = (props: string) => `
-import { Accordion } from '@pattern/core';
+import { Accordion } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

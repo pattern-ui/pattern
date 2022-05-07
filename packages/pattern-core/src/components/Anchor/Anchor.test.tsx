@@ -1,17 +1,17 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Anchor, AnchorProps } from './Anchor';
 
 const defaultProps: AnchorProps<'a'> = {};
 
-describe('@pattern/core/Anchor', () => {
+describe('@pattern-ui/core/Anchor', () => {
   itRendersChildren(Anchor, defaultProps);
   itIsPolymorphic(Anchor, defaultProps);
   itSupportsSystemProps({
     component: Anchor,
     props: defaultProps,
-    displayName: '@pattern/core/Anchor',
+    displayName: '@pattern-ui/core/Anchor',
     refType: HTMLAnchorElement,
   });
 

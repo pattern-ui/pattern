@@ -1,6 +1,6 @@
 import React from 'react';
 import { GitPullRequest, AlertCircle, Messages, Database } from 'tabler-icons-react';
-import { ThemeIcon, UnstyledButton, Group, Text } from '@pattern/core';
+import { ThemeIcon, UnstyledButton, Group, Text } from '@pattern-ui/core';
 
 interface MainLinkProps {
   icon: React.ReactNode;

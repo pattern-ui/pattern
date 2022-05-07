@@ -8,10 +8,10 @@ Pattern core components library.
 
 ```sh
 # With yarn
-yarn add @pattern/core @pattern/hooks
+yarn add @pattern-ui/core @pattern-ui/hooks
 
 # With npm
-npm install @pattern/core @pattern/hooks
+npm install @pattern-ui/core @pattern-ui/hooks
 ```
 
 ## License

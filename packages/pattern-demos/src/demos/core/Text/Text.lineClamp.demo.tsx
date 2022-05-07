@@ -1,5 +1,5 @@
 import React from 'react';
-import { TypographyStylesProvider, Text } from '@pattern/core';
+import { TypographyStylesProvider, Text } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

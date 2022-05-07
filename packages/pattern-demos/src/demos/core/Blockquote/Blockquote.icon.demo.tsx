@@ -1,6 +1,6 @@
 import React from 'react';
 import { Flame } from 'tabler-icons-react';
-import { Blockquote } from '@pattern/core';
+import { Blockquote } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

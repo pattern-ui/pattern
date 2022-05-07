@@ -1,6 +1,6 @@
 import React from 'react';
 import { Photo, MessageCircle, Settings } from 'tabler-icons-react';
-import { Tabs, TabsProps } from '@pattern/core';
+import { Tabs, TabsProps } from '@pattern-ui/core';
 
 function StyledTabs(props: TabsProps) {
   return (

@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { getDefaultZIndex, usePatternDefaultProps } from '@pattern/styles';
+import { getDefaultZIndex, usePatternDefaultProps } from '@pattern-ui/styles';
 import { VerticalSection, VerticalSectionSharedProps } from '../VerticalSection/VerticalSection';
 
 export interface FooterProps
@@ -20,4 +20,4 @@ export const Footer = forwardRef<HTMLElement, FooterProps>((props: FooterProps, 
   return <VerticalSection section="footer" __staticSelector="Footer" {...others} ref={ref} />;
 });
 
-Footer.displayName = '@pattern/core/Footer';
+Footer.displayName = '@pattern-ui/core/Footer';

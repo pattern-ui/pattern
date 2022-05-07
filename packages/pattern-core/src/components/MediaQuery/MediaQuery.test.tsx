@@ -1,5 +1,5 @@
 import React from 'react';
-import { itSupportsClassName } from '@pattern/tests';
+import { itSupportsClassName } from '@pattern-ui/tests';
 import { MediaQuery, MediaQueryProps } from './MediaQuery';
 
 const defaultProps: MediaQueryProps = {
@@ -7,10 +7,10 @@ const defaultProps: MediaQueryProps = {
   children: <span>test-children</span>,
 };
 
-describe('@pattern/core/MediaQuery', () => {
+describe('@pattern-ui/core/MediaQuery', () => {
   itSupportsClassName(MediaQuery, defaultProps);
 
   it('has correct displayName', () => {
-    expect(MediaQuery.displayName).toStrictEqual('@pattern/core/MediaQuery');
+    expect(MediaQuery.displayName).toStrictEqual('@pattern-ui/core/MediaQuery');
   });
 });

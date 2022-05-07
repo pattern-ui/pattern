@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: RadioGroup
 order: 1
 slug: /core/radio-group/
 category: 'inputs'
 description: 'Capture user feedback limited to small set of options'
 props: ['RadioGroup']
-import: "import { RadioGroup, Radio } from '@pattern/core';"
+import: "import { RadioGroup, Radio } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/RadioGroup/RadioGroup.tsx'
 docs: 'core/RadioGroup.mdx'
 styles: ['RadioGroup']
 ---
 
-import { RadioGroupDemos } from '@pattern/demos';
+import { RadioGroupDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -23,7 +23,7 @@ import { RadioGroupDemos } from '@pattern/demos';
 
 ```tsx
 import { useState } from 'react';
-import { RadioGroup, Radio } from '@pattern/core';
+import { RadioGroup, Radio } from '@pattern-ui/core';
 
 function Demo() {
   const [value, setValue] = useState('react');
@@ -53,7 +53,7 @@ function Demo() {
 
 ```tsx
 import { useRef } from 'react';
-import { RadioGroup, Radio } from '@pattern/core';
+import { RadioGroup, Radio } from '@pattern-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>();

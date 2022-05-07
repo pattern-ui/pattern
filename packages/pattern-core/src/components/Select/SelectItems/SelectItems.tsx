@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, PatternSize, Selectors } from '@pattern/styles';
+import { DefaultProps, PatternSize, Selectors } from '@pattern-ui/styles';
 import { Text } from '../../Text/Text';
 import { Divider } from '../../Divider/Divider';
 import { SelectItem } from '../types';
@@ -150,4 +150,4 @@ export function SelectItems({
   );
 }
 
-SelectItems.displayName = '@pattern/core/SelectItems';
+SelectItems.displayName = '@pattern-ui/core/SelectItems';

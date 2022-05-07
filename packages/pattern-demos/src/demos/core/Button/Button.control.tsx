@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, ButtonProps, Group } from '@pattern/core';
+import { Button, ButtonProps, Group } from '@pattern-ui/core';
 
 function Wrapper(props: ButtonProps<'button'>) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: ButtonProps<'button'>) {
 }
 
 const codeTemplate = (props: string, children: string) => `
-import { Button } from '@pattern/core';
+import { Button } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

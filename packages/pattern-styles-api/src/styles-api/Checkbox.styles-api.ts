@@ -1,4 +1,4 @@
-import { CheckboxStylesNames } from '@pattern/core';
+import { CheckboxStylesNames } from '@pattern-ui/core';
 
 export const Checkbox: Record<CheckboxStylesNames, string> = {
   root: 'Root button element',

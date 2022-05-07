@@ -1,8 +1,8 @@
 import React from 'react';
-import { CheckboxGroup, CheckboxGroupProps, Checkbox } from '@pattern/core';
+import { CheckboxGroup, CheckboxGroupProps, Checkbox } from '@pattern-ui/core';
 
 const codeTemplate = (props: string) => `
-import { CheckboxGroup, Checkbox } from '@pattern/core';
+import { CheckboxGroup, Checkbox } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

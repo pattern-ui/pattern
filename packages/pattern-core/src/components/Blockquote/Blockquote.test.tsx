@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { checkAccessibility, itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { checkAccessibility, itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Blockquote, BlockquoteProps } from './Blockquote';
 
 const defaultProps: BlockquoteProps = {
@@ -8,13 +8,13 @@ const defaultProps: BlockquoteProps = {
   cite: 'test-cite',
 };
 
-describe('@pattern/core/Blockquote', () => {
+describe('@pattern-ui/core/Blockquote', () => {
   checkAccessibility([<Blockquote {...defaultProps} />]);
   itRendersChildren(Blockquote, defaultProps);
   itSupportsSystemProps({
     component: Blockquote,
     props: defaultProps,
-    displayName: '@pattern/core/Blockquote',
+    displayName: '@pattern-ui/core/Blockquote',
     refType: HTMLQuoteElement,
   });
 

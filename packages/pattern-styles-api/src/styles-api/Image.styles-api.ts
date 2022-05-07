@@ -1,4 +1,4 @@
-import { ImageStylesNames } from '@pattern/core';
+import { ImageStylesNames } from '@pattern-ui/core';
 
 export const Image: Record<ImageStylesNames, string> = {
   root: 'Root element',

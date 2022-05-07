@@ -7,7 +7,7 @@ const getThemeBase = () => {
   return themeBase;
 };
 
-describe('@pattern/styles/merge-theme', () => {
+describe('@pattern-ui/styles/merge-theme', () => {
   it('shallow merges non-object properties', () => {
     const themeBase = getThemeBase();
     expect(mergeTheme(themeBase, { primaryColor: 'red', white: '#ccc' })).toStrictEqual({

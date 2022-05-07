@@ -1,18 +1,18 @@
 ---
 group: 'pattern-dates'
-package: '@pattern/dates'
+package: '@pattern-ui/dates'
 title: TimeInput
 order: 1
 slug: /dates/time-input/
 description: 'Capture time or time range from user'
 props: ['TimeInput', 'TimeRangeInput']
-import: "import { TimeInput, TimeRangeInput } from '@pattern/dates';"
+import: "import { TimeInput, TimeRangeInput } from '@pattern-ui/dates';"
 source: 'pattern-dates/src/components/TimeInput/TimeInput.tsx'
 docs: 'dates/TimeInput.mdx'
 styles: ['TimeInput', 'TimeRangeInput']
 ---
 
-import { TimeInputDemos, TimeRangeInputDemos } from '@pattern/demos';
+import { TimeInputDemos, TimeRangeInputDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -28,7 +28,7 @@ TimeRangeInput component (supports the same props as TimeInput component):
 
 ```tsx
 import { useState } from 'react';
-import { TimeInput } from '@pattern/dates';
+import { TimeInput } from '@pattern-ui/dates';
 
 function Demo() {
   const [value, onChange] = useState(new Date());
@@ -72,7 +72,7 @@ You can get hours input ref with `ref` prop:
 
 ```tsx
 import { useRef } from 'react';
-import { TimeInput } from '@pattern/dates';
+import { TimeInput } from '@pattern-ui/dates';
 
 function Demo() {
   const inputRef = useRef<HTMLInputElement>();

@@ -1,14 +1,14 @@
-import { itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Skeleton, SkeletonProps } from './Skeleton';
 
 const defaultProps: SkeletonProps = {};
 
-describe('@pattern/core/Skeleton', () => {
+describe('@pattern-ui/core/Skeleton', () => {
   itRendersChildren(Skeleton, defaultProps);
   itSupportsSystemProps({
     component: Skeleton,
     props: defaultProps,
-    displayName: '@pattern/core/Skeleton',
+    displayName: '@pattern-ui/core/Skeleton',
     refType: HTMLDivElement,
   });
 });

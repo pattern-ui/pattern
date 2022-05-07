@@ -1,16 +1,16 @@
-import { itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { ThemeIcon, ThemeIconProps } from './ThemeIcon';
 
 const defaultProps: ThemeIconProps = {
   children: 'test-icon',
 };
 
-describe('@pattern/core/ThemeIcon', () => {
+describe('@pattern-ui/core/ThemeIcon', () => {
   itRendersChildren(ThemeIcon, defaultProps);
   itSupportsSystemProps({
     component: ThemeIcon,
     props: defaultProps,
-    displayName: '@pattern/core/ThemeIcon',
+    displayName: '@pattern-ui/core/ThemeIcon',
     refType: HTMLDivElement,
   });
 });

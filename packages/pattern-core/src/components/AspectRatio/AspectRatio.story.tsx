@@ -1,5 +1,5 @@
 import React from 'react';
-import { StylesAPIStory } from '@pattern/storybook';
+import { StylesAPIStory } from '@pattern-ui/storybook';
 import { AspectRatio } from './AspectRatio';
 
 export default {

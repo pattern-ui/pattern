@@ -8,10 +8,10 @@ Capture files from user
 
 ```sh
 # With yarn
-yarn add @pattern/dropzone @pattern/core @pattern/hooks
+yarn add @pattern-ui/dropzone @pattern-ui/core @pattern-ui/hooks
 
 # With npm
-npm install @pattern/dropzone @pattern/core @pattern/hooks
+npm install @pattern-ui/dropzone @pattern-ui/core @pattern-ui/hooks
 ```
 
 ## License

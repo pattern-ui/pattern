@@ -1,8 +1,8 @@
 import React from 'react';
-import { MultiSelect } from '@pattern/core';
+import { MultiSelect } from '@pattern-ui/core';
 
 const codeTemplate = (props: string) => `
-import { MultiSelect } from '@pattern/core';
+import { MultiSelect } from '@pattern-ui/core';
 
 export default function Demo() {
   return <MultiSelect${props} />;

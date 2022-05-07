@@ -1,6 +1,6 @@
 import React from 'react';
-import { Group, TextInput, Box, Text, Code, Button, Center } from '@pattern/core';
-import { useForm, formList } from '@pattern/form';
+import { Group, TextInput, Box, Text, Code, Button, Center } from '@pattern-ui/core';
+import { useForm, formList } from '@pattern-ui/form';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import { GripVertical } from 'tabler-icons-react';
 

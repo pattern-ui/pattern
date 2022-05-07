@@ -1,7 +1,7 @@
 import { smallerThan, largerThan } from './breakpoints';
 import { DEFAULT_THEME } from '../../../default-theme';
 
-describe('@pattern/styles/breakpoints', () => {
+describe('@pattern-ui/styles/breakpoints', () => {
   it('returns correct max-width value', () => {
     expect(smallerThan(DEFAULT_THEME)('md')).toBe(
       `@media (max-width: ${DEFAULT_THEME.breakpoints.md}px)`

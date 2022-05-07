@@ -1,7 +1,7 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 import { UncontrolledOptions, useUncontrolled } from './use-uncontrolled';
 
-describe('@pattern/hooks/use-uncontrolled', () => {
+describe('@pattern-ui/hooks/use-uncontrolled', () => {
   it('returns value from configuration object', () => {
     const hook = renderHook(() =>
       useUncontrolled({

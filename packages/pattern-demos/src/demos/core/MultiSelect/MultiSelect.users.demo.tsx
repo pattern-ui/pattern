@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { MultiSelect, Avatar, Group, Text } from '@pattern/core';
+import { MultiSelect, Avatar, Group, Text } from '@pattern-ui/core';
 
 const data = [
   {

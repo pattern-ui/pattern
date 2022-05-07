@@ -1,14 +1,14 @@
-import { itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { ScrollArea, ScrollAreaProps } from './ScrollArea';
 
 const defaultProps: ScrollAreaProps = {};
 
-describe('@pattern/core/ScrollArea', () => {
+describe('@pattern-ui/core/ScrollArea', () => {
   itRendersChildren(ScrollArea, defaultProps);
   itSupportsSystemProps({
     component: ScrollArea,
     props: defaultProps,
-    displayName: '@pattern/core/ScrollArea',
+    displayName: '@pattern-ui/core/ScrollArea',
     refType: HTMLDivElement,
   });
 });

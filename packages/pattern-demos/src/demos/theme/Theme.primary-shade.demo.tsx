@@ -1,5 +1,5 @@
 import React from 'react';
-import { PatternProvider, Group, Button, PatternTheme } from '@pattern/core';
+import { PatternProvider, Group, Button, PatternTheme } from '@pattern-ui/core';
 
 function Wrapper({ primaryShade }: { primaryShade: PatternTheme['primaryShade'] }) {
   return (
@@ -14,7 +14,7 @@ function Wrapper({ primaryShade }: { primaryShade: PatternTheme['primaryShade'] 
 }
 
 const codeTemplate = (props: string) => `
-import { PatternProvider, Group, Button } from '@pattern/core';
+import { PatternProvider, Group, Button } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

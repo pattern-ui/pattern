@@ -1,4 +1,4 @@
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { ColorSlider, ColorSliderProps } from './ColorSlider';
 
 const defaultProps: ColorSliderProps = {
@@ -10,11 +10,11 @@ const defaultProps: ColorSliderProps = {
   round: true,
 };
 
-describe('@pattern/core/ColorSlider', () => {
+describe('@pattern-ui/core/ColorSlider', () => {
   itSupportsSystemProps({
     component: ColorSlider,
     props: defaultProps,
-    displayName: '@pattern/core/ColorSlider',
+    displayName: '@pattern-ui/core/ColorSlider',
     refType: HTMLDivElement,
   });
 });

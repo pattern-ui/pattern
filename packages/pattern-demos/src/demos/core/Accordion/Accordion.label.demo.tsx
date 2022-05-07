@@ -1,5 +1,5 @@
 import React from 'react';
-import { Group, Avatar, Text, Accordion, AccordionProps } from '@pattern/core';
+import { Group, Avatar, Text, Accordion, AccordionProps } from '@pattern-ui/core';
 import { charactersList } from './_mockdata';
 
 interface AccordionLabelProps {

@@ -23,7 +23,7 @@ const defaultResult = {
   weekend: false,
 };
 
-describe('@pattern/dates/Day/get-day-props', () => {
+describe('@pattern-ui/dates/Day/get-day-props', () => {
   it('detects selected date', () => {
     expect(
       getDayProps({

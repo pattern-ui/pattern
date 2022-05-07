@@ -1,6 +1,6 @@
 import React from 'react';
-import { UnstyledButton, Tooltip } from '@pattern/core';
-import { useMediaQuery } from '@pattern/hooks';
+import { UnstyledButton, Tooltip } from '@pattern-ui/core';
+import { useMediaQuery } from '@pattern-ui/hooks';
 import useStyles from './HeaderControl.styles';
 
 interface HeaderControlProps extends React.ComponentPropsWithoutRef<'button'> {

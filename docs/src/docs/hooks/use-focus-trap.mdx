@@ -1,17 +1,17 @@
 ---
 group: 'pattern-hooks'
-package: '@pattern/hooks'
+package: '@pattern-ui/hooks'
 category: 'dom'
 title: 'use-focus-trap'
 order: 1
 slug: /hooks/use-focus-trap/
 description: 'Trap focus inside given node'
-import: "import { useFocusTrap } from '@pattern/hooks';"
+import: "import { useFocusTrap } from '@pattern-ui/hooks';"
 docs: 'hooks/use-focus-trap.mdx'
 source: 'pattern-hooks/src/use-focus-trap/use-focus-trap.ts'
 ---
 
-import { ModalDemos, MenuDemos } from '@pattern/demos';
+import { ModalDemos, MenuDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -19,7 +19,7 @@ use-focus-trap traps focus at given node, for example in modal, drawer or menu.
 Node must include at least one focusable element. When node unmounts, focus trap is automatically disabled.
 
 ```tsx
-import { useFocusTrap } from '@pattern/hooks';
+import { useFocusTrap } from '@pattern-ui/hooks';
 
 function Demo() {
   const focusTrapRef = useFocusTrap();
@@ -61,7 +61,7 @@ Usually focus trap is not used alone. To combine use-focus-trap hook with other 
 
 ```tsx
 import { useRef } from 'react';
-import { useClickOutside, useFocusTrap, useMergedRef } from '@pattern/hooks';
+import { useClickOutside, useFocusTrap, useMergedRef } from '@pattern-ui/hooks';
 
 function Demo() {
   const myRef = useRef();
@@ -80,7 +80,7 @@ To specify element that should receive initial focus add `data-autofocus` attrib
 note that focus trap works with dom and this attribute should be added to element:
 
 ```tsx
-import { useFocusTrap } from '@pattern/hooks';
+import { useFocusTrap } from '@pattern-ui/hooks';
 
 function Demo() {
   const focusTrapRef = useFocusTrap();

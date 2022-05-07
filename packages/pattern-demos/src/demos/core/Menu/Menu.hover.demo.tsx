@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, Group } from '@pattern/core';
+import { Menu, Group } from '@pattern-ui/core';
 import { menuItems } from './_menu-items';
 
 export default function Demo() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrandTwitter } from 'tabler-icons-react';
-import { Input, Badge } from '@pattern/core';
+import { Input, Badge } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

@@ -1,12 +1,12 @@
 import React, { useState, forwardRef, useRef } from 'react';
-import { useUncontrolled, useDidUpdate, useMergedRef, useUuid } from '@pattern/hooks';
+import { useUncontrolled, useDidUpdate, useMergedRef, useUuid } from '@pattern-ui/hooks';
 import {
   DefaultProps,
   Selectors,
   extractSystemStyles,
   getDefaultZIndex,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { InputWrapper, InputWrapperBaseProps, InputWrapperStylesNames } from '../InputWrapper';
 import { Input, InputBaseProps, InputStylesNames } from '../Input';
 import { SelectDropdown, SelectDropdownStylesNames } from '../Select/SelectDropdown/SelectDropdown';
@@ -307,4 +307,4 @@ export const Autocomplete = forwardRef<HTMLInputElement, AutocompleteProps>(
   }
 );
 
-Autocomplete.displayName = '@pattern/core/Autocomplete';
+Autocomplete.displayName = '@pattern-ui/core/Autocomplete';

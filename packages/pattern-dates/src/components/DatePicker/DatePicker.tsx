@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import React, { useState, useRef, forwardRef, useEffect } from 'react';
-import { useUncontrolled, useMergedRef, upperFirst } from '@pattern/hooks';
-import { usePatternTheme, usePatternDefaultProps } from '@pattern/core';
+import { useUncontrolled, useMergedRef, upperFirst } from '@pattern-ui/hooks';
+import { usePatternTheme, usePatternDefaultProps } from '@pattern-ui/core';
 import { FirstDayOfWeek } from '../../types';
 import { Calendar } from '../Calendar/Calendar';
 import { CalendarSharedProps } from '../CalendarBase/CalendarBase';
@@ -290,4 +290,4 @@ export const DatePicker = forwardRef<HTMLButtonElement, DatePickerProps>(
   }
 );
 
-DatePicker.displayName = '@pattern/dates/DatePicker';
+DatePicker.displayName = '@pattern-ui/dates/DatePicker';

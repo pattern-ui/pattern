@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useScrollLock, useFocusTrap, useFocusReturn } from '@pattern/hooks';
+import { useScrollLock, useFocusTrap, useFocusReturn } from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternNumberSize,
@@ -8,7 +8,7 @@ import {
   PatternStyleSystemSize,
   getDefaultZIndex,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Paper } from '../Paper';
 import { Overlay } from '../Overlay';
 import { OptionalPortal } from '../Portal';
@@ -269,4 +269,4 @@ export function Drawer(props: DrawerProps) {
   );
 }
 
-Drawer.displayName = '@pattern/core/Drawer';
+Drawer.displayName = '@pattern-ui/core/Drawer';

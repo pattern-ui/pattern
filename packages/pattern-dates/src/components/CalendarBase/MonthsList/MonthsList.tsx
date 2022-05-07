@@ -1,6 +1,6 @@
 import React from 'react';
 import dayjs from 'dayjs';
-import { DefaultProps } from '@pattern/core';
+import { DefaultProps } from '@pattern-ui/core';
 import { formatMonthLabel } from './format-month-label/format-month-label';
 import { isMonthInRange } from '../MonthPicker/is-month-in-range/is-month-in-range';
 import { CalendarHeader, CalendarHeaderStylesNames } from '../CalendarHeader/CalendarHeader';
@@ -109,4 +109,4 @@ export function MonthsList({
   return <>{months}</>;
 }
 
-MonthsList.displayName = '@pattern/dates/MonthsList';
+MonthsList.displayName = '@pattern-ui/dates/MonthsList';

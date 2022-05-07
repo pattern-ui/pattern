@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { ArrowRightIcon } from '@modulz/radix-icons';
-import { Title, Text, Anchor } from '@pattern/core';
+import { Title, Text, Anchor } from '@pattern-ui/core';
 import useStyles from './Section.styles';
 
 interface SectionProps {

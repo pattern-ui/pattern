@@ -1,14 +1,14 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itRendersChildren, itSupportsClassName } from '@pattern/tests';
+import { itRendersChildren, itSupportsClassName } from '@pattern-ui/tests';
 import { PopperContainer } from './PopperContainer';
 
-describe('@pattern/core/PopperContainer', () => {
+describe('@pattern-ui/core/PopperContainer', () => {
   itRendersChildren(PopperContainer, { withinPortal: false, children: undefined });
   itSupportsClassName(PopperContainer, { withinPortal: false, children: undefined });
 
   it('has correct displayName', () => {
-    expect(PopperContainer.displayName).toStrictEqual('@pattern/core/PopperContainer');
+    expect(PopperContainer.displayName).toStrictEqual('@pattern-ui/core/PopperContainer');
   });
 
   it('adds z-index styles from prop', () => {

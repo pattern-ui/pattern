@@ -1,4 +1,4 @@
-import { ForwardRefWithStaticComponents, Tabs } from '@pattern/core';
+import { ForwardRefWithStaticComponents, Tabs } from '@pattern-ui/core';
 import { PrismTabs, PrismPanel } from './PrismTabs/PrismTabs';
 import { Prism, PrismProps } from './Prism/Prism';
 

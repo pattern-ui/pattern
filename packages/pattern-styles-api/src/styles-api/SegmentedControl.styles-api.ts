@@ -1,4 +1,4 @@
-import type { SegmentedControlStylesNames } from '@pattern/core';
+import type { SegmentedControlStylesNames } from '@pattern-ui/core';
 
 export const SegmentedControl: Record<SegmentedControlStylesNames, string> = {
   root: 'Root element',

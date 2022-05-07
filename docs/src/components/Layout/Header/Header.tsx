@@ -1,5 +1,6 @@
 import React from 'react';
-import { Burger, Code } from '@pattern/core';
+import { Burger, Code } from '@pattern-ui/core';
+// eslint-disable-next-line import/no-relative-packages
 import corePackageJson from '../../../../../package.json';
 import { Logo } from '../../Logo/Logo';
 import { HeaderControls } from './HeaderControls/HeaderControls';

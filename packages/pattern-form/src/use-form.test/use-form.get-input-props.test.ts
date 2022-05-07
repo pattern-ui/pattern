@@ -1,7 +1,7 @@
 import { act, renderHook } from '@testing-library/react-hooks';
 import { useForm } from '../index';
 
-describe('@pattern/form/use-form get-input-props', () => {
+describe('@pattern-ui/form/use-form get-input-props', () => {
   it('returns correct input props', () => {
     const hook = renderHook(() =>
       useForm({ initialValues: { fruit: 'banana' }, initialErrors: { fruit: 'invalid fruit' } })

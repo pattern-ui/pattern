@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import { useIntersection } from '@pattern/hooks';
-import { Text, Paper, usePatternTheme } from '@pattern/core';
+import { useIntersection } from '@pattern-ui/hooks';
+import { Text, Paper, usePatternTheme } from '@pattern-ui/core';
 
 export default function Demo() {
   const containerRef = useRef();

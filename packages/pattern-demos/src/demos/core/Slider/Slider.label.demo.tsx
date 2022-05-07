@@ -1,5 +1,5 @@
 import React from 'react';
-import { Slider, Text } from '@pattern/core';
+import { Slider, Text } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

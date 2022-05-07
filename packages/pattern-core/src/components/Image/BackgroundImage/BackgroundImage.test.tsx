@@ -1,15 +1,15 @@
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { BackgroundImage } from './BackgroundImage';
 
-describe('@pattern/core/BackgroundImage', () => {
+describe('@pattern-ui/core/BackgroundImage', () => {
   itSupportsSystemProps({
     component: BackgroundImage,
     props: { src: './image.png' },
-    displayName: '@pattern/core/BackgroundImage',
+    displayName: '@pattern-ui/core/BackgroundImage',
     refType: HTMLDivElement,
   });
 
   it('has correct displayName', () => {
-    expect(BackgroundImage.displayName).toStrictEqual('@pattern/core/BackgroundImage');
+    expect(BackgroundImage.displayName).toStrictEqual('@pattern-ui/core/BackgroundImage');
   });
 });

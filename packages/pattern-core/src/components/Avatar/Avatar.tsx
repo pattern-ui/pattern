@@ -7,7 +7,7 @@ import {
   PolymorphicComponentProps,
   PolymorphicRef,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import { AvatarPlaceholderIcon } from './AvatarPlaceholderIcon';
 import useStyles from './Avatar.styles';
@@ -99,4 +99,4 @@ export const Avatar: AvatarComponent = forwardRef(
   }
 ) as any;
 
-Avatar.displayName = '@pattern/core/Avatar';
+Avatar.displayName = '@pattern-ui/core/Avatar';

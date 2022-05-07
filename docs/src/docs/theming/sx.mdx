@@ -17,7 +17,7 @@ With `sx` prop, you can add inline styles to any component the same way you woul
 function. Styles added with `sx` will be parsed by [emotion](https://emotion.sh) and added to page head or specified target container in [PatternProvider](/theming/pattern-provider/).
 
 ```tsx
-import { Text } from '@pattern/core';
+import { Text } from '@pattern-ui/core';
 
 function Demo() {
   return (
@@ -29,7 +29,7 @@ function Demo() {
 You can use pseudo-classes, media queries and all other nested selectors with `sx`:
 
 ```tsx
-import { Text } from '@pattern/core';
+import { Text } from '@pattern-ui/core';
 
 function Demo() {
   return (
@@ -55,7 +55,7 @@ function Demo() {
 Use a function instead of an object to subscribe to Pattern theme:
 
 ```tsx
-import { Text } from '@pattern/core';
+import { Text } from '@pattern-ui/core';
 
 function Demo() {
   return (
@@ -81,7 +81,7 @@ function Demo() {
 Array syntax can be used to simultaneously use `sx` prop and add it from props:
 
 ```tsx
-import { Button, Sx } from '@pattern/core';
+import { Button, Sx } from '@pattern-ui/core';
 
 interface MyButtonProps {
   sx?: Sx;
@@ -97,7 +97,7 @@ function MyButton({ sx }) {
 [Box](/core/box/) is an utility polymorphic component that can be used to style non Pattern components or elements with sx:
 
 ```tsx
-import { Box } from '@pattern/core';
+import { Box } from '@pattern-ui/core';
 import { Link } from 'react-router-dom';
 
 // Box with custom element
@@ -147,7 +147,7 @@ function BoxWithComponent() {
 To create sharable styles you can store them in a variable:
 
 ```tsx
-import { Text, Box, CSSObject } from '@pattern/core';
+import { Text, Box, CSSObject } from '@pattern-ui/core';
 
 // styles object is compatible with every Pattern component
 const styles: CSSObject = {
@@ -172,7 +172,7 @@ function Demo() {
 To store function styles in a variable you will need to use `PatternTheme` type in case you are using TypeScript:
 
 ```tsx
-import { Text, Box, CSSObject, PatternTheme } from '@pattern/core';
+import { Text, Box, CSSObject, PatternTheme } from '@pattern-ui/core';
 
 const styles = (theme: PatternTheme): CSSObject => ({
   border: `1px solid ${theme.colors.gray[3]}`,

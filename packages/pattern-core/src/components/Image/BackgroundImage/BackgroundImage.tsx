@@ -5,7 +5,7 @@ import {
   usePatternDefaultProps,
   PolymorphicComponentProps,
   PolymorphicRef,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../../Box';
 
 interface _BackgroundImageProps extends DefaultProps, React.ComponentPropsWithoutRef<'div'> {
@@ -59,4 +59,4 @@ export const BackgroundImage: BackgroundImageComponent = forwardRef(
   }
 ) as any;
 
-BackgroundImage.displayName = '@pattern/core/BackgroundImage';
+BackgroundImage.displayName = '@pattern-ui/core/BackgroundImage';

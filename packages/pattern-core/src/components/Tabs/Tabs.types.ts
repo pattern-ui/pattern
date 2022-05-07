@@ -1,4 +1,4 @@
-import { PatternColor, PatternNumberSize } from '@pattern/styles';
+import { PatternColor, PatternNumberSize } from '@pattern-ui/styles';
 
 export type TabsValue = string | null;
 export type TabsOrientation = 'horizontal' | 'vertical';

@@ -2,7 +2,7 @@ import { renderHook } from '@testing-library/react-hooks';
 import { renderHook as renderHookSSR } from '@testing-library/react-hooks/server';
 import { useMediaQuery } from './use-media-query';
 
-describe('@pattern/hooks/use-media-query', () => {
+describe('@pattern-ui/hooks/use-media-query', () => {
   beforeEach(() => {
     const mediaMatches = {
       '(min-width: 500px)': true,

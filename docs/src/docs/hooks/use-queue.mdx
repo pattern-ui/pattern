@@ -1,27 +1,27 @@
 ---
 group: 'pattern-hooks'
-package: '@pattern/hooks'
+package: '@pattern-ui/hooks'
 title: 'use-queue'
 category: 'state'
 order: 1
 slug: /hooks/use-queue/
 description: 'Add data to queue if current limit is exceeded'
-import: "import { useQueue } from '@pattern/hooks';"
+import: "import { useQueue } from '@pattern-ui/hooks';"
 docs: 'hooks/use-queue.mdx'
 source: 'pattern-hooks/src/use-queue/use-queue.ts'
 ---
 
-import { NotificationsDemos } from '@pattern/demos';
+import { NotificationsDemos } from '@pattern-ui/demos';
 
 ## Usage
 
 use-queue limits the amount of data in current state and place the rest of it in a queue.
-For example, in [@pattern/notifications](/others/notifications/) package amount of
+For example, in [@pattern-ui/notifications](/others/notifications/) package amount of
 notifications that is currently displayed is limited and other new notifications are added to queue and displayed once
 available space appears.
 
 ```tsx
-import { useQueue } from '@pattern/hooks';
+import { useQueue } from '@pattern-ui/hooks';
 
 const { state, queue, add, update, cleanQueue } = useQueue({
   initialValues: [1],

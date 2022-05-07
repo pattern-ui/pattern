@@ -1,4 +1,4 @@
-import { createStyles } from '@pattern/styles';
+import { createStyles } from '@pattern-ui/styles';
 import { TabsStylesParams } from './Tabs.types';
 
 export default createStyles((theme, { orientation }: TabsStylesParams) => ({

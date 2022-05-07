@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { itSupportsClassName, checkAccessibility } from '@pattern/tests';
+import { itSupportsClassName, checkAccessibility } from '@pattern-ui/tests';
 import { YearPicker, YearPickerProps } from './YearPicker';
 
 const defaultProps: YearPickerProps = {
@@ -14,7 +14,7 @@ const defaultProps: YearPickerProps = {
 const CONTROL_SELECTOR = '.pattern-YearPicker-yearPickerControl';
 const ACTIVE_CONTROL_SELECTOR = '.pattern-YearPicker-yearPickerControlActive';
 
-describe('@pattern/dates/YearPicker', () => {
+describe('@pattern-ui/dates/YearPicker', () => {
   itSupportsClassName(YearPicker, defaultProps);
   checkAccessibility([<YearPicker {...defaultProps} />]);
 
@@ -61,6 +61,6 @@ describe('@pattern/dates/YearPicker', () => {
   });
 
   it('has correct displayName', () => {
-    expect(YearPicker.displayName).toStrictEqual('@pattern/dates/YearPicker');
+    expect(YearPicker.displayName).toStrictEqual('@pattern-ui/dates/YearPicker');
   });
 });

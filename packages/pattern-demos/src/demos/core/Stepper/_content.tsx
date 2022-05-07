@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, BoxProps } from '@pattern/core';
+import { Box, BoxProps } from '@pattern-ui/core';
 
 export function Content(props: BoxProps<'div'>) {
   return (

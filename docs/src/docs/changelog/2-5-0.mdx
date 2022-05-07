@@ -15,17 +15,17 @@ import {
   PaginationDemos,
   TimeRangeInputDemos,
   RichTextEditorDemos,
-} from '@pattern/demos';
+} from '@pattern-ui/demos';
 
 ## UMD builds deprecation
 
-All `@pattern/` packages will no longer default to umd builds via `browser` field in `package.json`.
+All `@pattern-ui/` packages will no longer default to umd builds via `browser` field in `package.json`.
 This change will simplify tree shacking for Webpack and should not affect your Next.js, Gatsby, Vite or CRA applications.
 
 ## react-jss peer dependency removal
 
-All `@pattern/` packages no longer require react-jss installation as peer dependency – it will be installed automatically as @pattern/core dependency.
-Instead of direct react-jss usage @pattern/core now exports [createStyles](https://pattern-ui.design/theming/react-jss/) function
+All `@pattern-ui/` packages no longer require react-jss installation as peer dependency – it will be installed automatically as @pattern-ui/core dependency.
+Instead of direct react-jss usage @pattern-ui/core now exports [createStyles](https://pattern-ui.design/theming/react-jss/) function
 and a [set of components](https://pattern-ui.design/theming/next/) to implement server side rendering.
 
 ### createStyles function
@@ -33,7 +33,7 @@ and a [set of components](https://pattern-ui.design/theming/next/) to implement 
 New `createStyles` function lets you create styles with Pattern theme:
 
 ```tsx
-import { createStyles } from '@pattern/core';
+import { createStyles } from '@pattern-ui/core';
 
 const useStyles = createStyles((theme) => ({
   button: {
@@ -53,12 +53,12 @@ Note that it will only work if your application is wrapped with PatternProvider.
 
 ### Builtin server side rendering
 
-@pattern/core package now comes with components to simplify server side rendering setup with Next.js and any other environment.
+@pattern-ui/core package now comes with components to simplify server side rendering setup with Next.js and any other environment.
 Checkout [Next.js guide](https://pattern-ui.design/theming/next/) to learn more.
 
-## New package @pattern/rte
+## New package @pattern-ui/rte
 
-[@pattern/rte](https://pattern-ui.design/others/rte/) is a new package with RichTextEditor component.
+[@pattern-ui/rte](https://pattern-ui.design/others/rte/) is a new package with RichTextEditor component.
 Component integrates seamlessly with your PatternTheme and provides all basic rich text editing features:
 
 <Demo data={RichTextEditorDemos.usage} />

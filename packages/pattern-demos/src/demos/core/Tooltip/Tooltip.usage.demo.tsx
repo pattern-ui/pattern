@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tooltip, Button, Group } from '@pattern/core';
+import { Tooltip, Button, Group } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

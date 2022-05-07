@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Image
 order: 1
 slug: /core/image/
 category: 'data-display'
 description: 'Image with optional placeholder for loading and error state'
 props: ['Image']
-import: "import { Image } from '@pattern/core';"
+import: "import { Image } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Image/Image.tsx'
 docs: 'core/Image.mdx'
 styles: ['Image']
 ---
 
-import { ImageDemos } from '@pattern/demos';
+import { ImageDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -71,7 +71,7 @@ You can get both image and root element (div) refs with `ref` and `imageRef` pro
 
 ```tsx
 import { useRef } from 'react';
-import { Image } from '@pattern/core';
+import { Image } from '@pattern-ui/core';
 
 function Demo() {
   const imageRef = useRef<HTMLImageElement>();

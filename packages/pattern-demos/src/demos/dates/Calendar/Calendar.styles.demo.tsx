@@ -1,6 +1,6 @@
 import React from 'react';
-import { Group, usePatternTheme } from '@pattern/core';
-import { Calendar } from '@pattern/dates';
+import { Group, usePatternTheme } from '@pattern-ui/core';
+import { Calendar } from '@pattern-ui/dates';
 
 export default function Demo() {
   const theme = usePatternTheme();

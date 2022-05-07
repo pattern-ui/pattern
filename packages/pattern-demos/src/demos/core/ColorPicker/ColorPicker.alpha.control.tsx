@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, DEFAULT_THEME, AlphaSlider, AlphaSliderProps } from '@pattern/core';
+import { Text, DEFAULT_THEME, AlphaSlider, AlphaSliderProps } from '@pattern-ui/core';
 
 function Wrapper(props: AlphaSliderProps) {
   const [value, onChange] = useState(1);
@@ -20,7 +20,7 @@ function Wrapper(props: AlphaSliderProps) {
 }
 
 const codeTemplate = (props: string) => `import { useState } from 'react';
-import { AlphaSlider, Text } from '@pattern/core';
+import { AlphaSlider, Text } from '@pattern-ui/core';
 
 export default function Demo() {
   const [value, onChange] = useState(1);

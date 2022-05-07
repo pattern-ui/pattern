@@ -1,4 +1,4 @@
-import { createStyles, PatternNumberSize } from '@pattern/styles';
+import { createStyles, PatternNumberSize } from '@pattern-ui/styles';
 
 interface CardSectionStyles {
   padding: PatternNumberSize;

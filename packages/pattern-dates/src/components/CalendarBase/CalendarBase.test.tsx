@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { itSupportsSystemProps, checkAccessibility } from '@pattern/tests';
+import { itSupportsSystemProps, checkAccessibility } from '@pattern-ui/tests';
 import { CalendarBase, CalendarBaseProps } from './CalendarBase';
 
 const labelsProps = {
@@ -15,11 +15,11 @@ const labelsProps = {
 
 const defaultProps: CalendarBaseProps = {};
 
-describe('@pattern/core/CalendarBase', () => {
+describe('@pattern-ui/core/CalendarBase', () => {
   itSupportsSystemProps({
     component: CalendarBase,
     props: defaultProps,
-    displayName: '@pattern/dates/CalendarBase',
+    displayName: '@pattern-ui/dates/CalendarBase',
     refType: HTMLDivElement,
   });
 

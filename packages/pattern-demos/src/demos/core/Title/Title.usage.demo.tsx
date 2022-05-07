@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title } from '@pattern/core';
+import { Title } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

@@ -1,4 +1,4 @@
-import type { NotificationProps as NotificationComponentProps } from '@pattern/core';
+import type { NotificationProps as NotificationComponentProps } from '@pattern-ui/core';
 
 export interface NotificationProps extends Omit<NotificationComponentProps, 'onClose'> {
   id?: string;

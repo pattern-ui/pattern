@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Button } from '@pattern/core';
+import { Box, Button } from '@pattern-ui/core';
 
 interface SubmitFormProps {
   children: React.ReactNode;

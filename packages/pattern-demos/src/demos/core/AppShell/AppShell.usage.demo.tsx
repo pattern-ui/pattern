@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sun, MoonStars } from 'tabler-icons-react';
-import { AppShell, Navbar, Header, Group, ActionIcon, usePatternColorScheme } from '@pattern/core';
+import { AppShell, Navbar, Header, Group, ActionIcon, usePatternColorScheme } from '@pattern-ui/core';
 import { MainLinks } from './_mainLinks';
 import { User } from './_user';
 import { Logo } from './_logo';

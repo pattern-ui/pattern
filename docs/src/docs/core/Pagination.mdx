@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Pagination
 order: 1
 slug: /core/pagination/
 category: 'navigation'
 description: 'Display active page and navigate between multiple pages'
 props: ['Pagination']
-import: "import { Pagination } from '@pattern/core';"
+import: "import { Pagination } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Pagination/Pagination.tsx'
 docs: 'core/Pagination.mdx'
 styles: ['Pagination']
 ---
 
-import { PaginationDemos } from '@pattern/demos';
+import { PaginationDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -25,7 +25,7 @@ To control component state provide `page` and `onChange` props:
 
 ```tsx
 import { useState } from 'react';
-import { Pagination } from '@pattern/core';
+import { Pagination } from '@pattern-ui/core';
 
 function Demo() {
   const [activePage, setPage] = useState(1);
@@ -74,5 +74,5 @@ provide `getItemAriaLabel` function to generate aria-labels:
 
 ## use-pagination hook
 
-If you need more flexibility @pattern/hooks exports [use-pagination](/hooks/use-pagination/) hook,
+If you need more flexibility @pattern-ui/hooks exports [use-pagination](/hooks/use-pagination/) hook,
 you can use it to create your own pagination component.

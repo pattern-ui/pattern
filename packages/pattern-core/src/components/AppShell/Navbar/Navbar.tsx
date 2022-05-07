@@ -3,7 +3,7 @@ import {
   getDefaultZIndex,
   ForwardRefWithStaticComponents,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import {
   HorizontalSection,
   HorizontalSectionSharedProps,
@@ -37,4 +37,4 @@ export const Navbar: NavbarComponent = forwardRef<HTMLElement, NavbarProps>(
 ) as any;
 
 Navbar.Section = HorizontalSection.Section;
-Navbar.displayName = '@pattern/core/Navbar';
+Navbar.displayName = '@pattern-ui/core/Navbar';

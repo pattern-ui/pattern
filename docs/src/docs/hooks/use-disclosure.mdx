@@ -1,12 +1,12 @@
 ---
 group: 'pattern-hooks'
-package: '@pattern/hooks'
+package: '@pattern-ui/hooks'
 category: 'state'
 title: 'use-disclosure'
 order: 1
 slug: /hooks/use-disclosure/
 description: 'Manage boolean state'
-import: "import { useDisclosure } from '@pattern/hooks';"
+import: "import { useDisclosure } from '@pattern-ui/hooks';"
 docs: 'hooks/use-disclosure.mdx'
 source: 'pattern-hooks/src/use-disclosure/use-disclosure.ts'
 ---
@@ -18,7 +18,7 @@ and accepts optional `onOpen` and `onClose` callbacks. It can be used to manage 
 popovers and other similar components:
 
 ```tsx
-import { useDisclosure } from '@pattern/hooks';
+import { useDisclosure } from '@pattern-ui/hooks';
 
 function Demo() {
   const [opened, handlers] = useDisclosure(false);
@@ -39,7 +39,7 @@ function Demo() {
 `onOpen` and `onClose` callbacks are called when opened state changes:
 
 ```tsx
-import { useDisclosure } from '@pattern/hooks';
+import { useDisclosure } from '@pattern-ui/hooks';
 
 function Demo() {
   const [opened, handlers] = useDisclosure(false, {

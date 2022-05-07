@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion, ActionIcon, AccordionControlProps, Box } from '@pattern/core';
+import { Accordion, ActionIcon, AccordionControlProps, Box } from '@pattern-ui/core';
 import { Dots } from 'tabler-icons-react';
 
 function AccordionControl(props: AccordionControlProps) {

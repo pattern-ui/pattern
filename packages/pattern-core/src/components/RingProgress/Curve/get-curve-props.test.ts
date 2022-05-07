@@ -1,6 +1,6 @@
 import { getCurveProps } from './get-curve-props';
 
-describe('@pattern/core/RingProgress/get-curve-props', () => {
+describe('@pattern-ui/core/RingProgress/get-curve-props', () => {
   it('returns correct props data', () => {
     expect(
       getCurveProps({

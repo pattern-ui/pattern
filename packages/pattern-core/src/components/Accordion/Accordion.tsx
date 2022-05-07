@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, usePatternDefaultProps, StylesApiProvider } from '@pattern/styles';
+import { DefaultProps, usePatternDefaultProps, StylesApiProvider } from '@pattern-ui/styles';
 import { Box } from '../Box';
 import { AccordionProviderProps, AccordionProvider } from './AccordionProvider';
 import { AccordionItem, AccordionItemStylesNames } from './AccordionItem/AccordionItem';
@@ -84,4 +84,4 @@ export function Accordion<Multiple extends boolean = false>(props: AccordionProp
 Accordion.Item = AccordionItem;
 Accordion.Control = AccordionControl;
 Accordion.Panel = AccordionPanel;
-Accordion.displayName = '@pattern/core/Accordion';
+Accordion.displayName = '@pattern-ui/core/Accordion';

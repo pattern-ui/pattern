@@ -1,10 +1,10 @@
 import React from 'react';
-import { Paper, createStyles } from '@pattern/core';
-import { Prism } from '@pattern/prism';
-import { NotificationsDemos, Demo } from '@pattern/demos';
+import { Paper, createStyles } from '@pattern-ui/core';
+import { Prism } from '@pattern-ui/prism';
+import { NotificationsDemos, Demo } from '@pattern-ui/demos';
 
-const code = `import { Button } from '@pattern/core';
-import { useNotifications } from '@pattern/notifications';
+const code = `import { Button } from '@pattern-ui/core';
+import { useNotifications } from '@pattern-ui/notifications';
 
 function Demo() {
   const notifications = useNotifications();

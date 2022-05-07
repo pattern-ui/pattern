@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { PATTERN_SIZES } from '@pattern/styles';
+import { PATTERN_SIZES } from '@pattern-ui/styles';
 import { InputWrapper } from './InputWrapper';
 import { Text } from '../Text/Text';
 

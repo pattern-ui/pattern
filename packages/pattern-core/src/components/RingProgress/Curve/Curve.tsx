@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePatternTheme, PatternColor } from '@pattern/styles';
+import { usePatternTheme, PatternColor } from '@pattern-ui/styles';
 import { getCurveProps } from './get-curve-props';
 
 interface CurveProps {
@@ -40,4 +40,4 @@ export function Curve({
   );
 }
 
-Curve.displayName = '@pattern/core/Curve';
+Curve.displayName = '@pattern-ui/core/Curve';

@@ -1,7 +1,7 @@
 import { act, renderHook } from '@testing-library/react-hooks';
 import { useForm } from '../index';
 
-describe('@pattern/form/use-form values', () => {
+describe('@pattern-ui/form/use-form values', () => {
   it('sets correct values based on initialValues', () => {
     const hook = renderHook(() =>
       useForm({

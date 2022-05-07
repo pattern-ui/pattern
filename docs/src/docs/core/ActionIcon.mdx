@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: ActionIcon
 order: 1
 slug: /core/action-icon/
 category: 'inputs'
 description: 'Icon button to indicate secondary action'
 props: ['ActionIcon']
-import: "import { ActionIcon } from '@pattern/core';"
+import: "import { ActionIcon } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/ActionIcon/ActionIcon.tsx'
 docs: 'core/ActionIcon.mdx'
 styles: ['ActionIcon']
 ---
 
-import { ActionIconDemos } from '@pattern/demos';
+import { ActionIconDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -25,7 +25,7 @@ ActionIcon accepts any React node as child. It **does not control icon size**, s
 For example, in [tabler icons](https://tablericons.com/) you can use size prop:
 
 ```tsx
-import { ActionIcon } from '@pattern/core';
+import { ActionIcon } from '@pattern-ui/core';
 import { Adjustments } from 'tabler-icons-react';
 
 function Demo() {
@@ -82,7 +82,7 @@ or other similar libraries pass `Link` as component to ActionIcon:
 
 ```tsx
 import { Link } from 'react-router-dom';
-import { ActionIcon } from '@pattern/core';
+import { ActionIcon } from '@pattern-ui/core';
 
 function Demo() {
   return (
@@ -96,7 +96,7 @@ function Demo() {
 To use custom component with TypeScript, provide type (should match `component` prop):
 
 ```tsx
-import { ActionIcon } from '@pattern/core';
+import { ActionIcon } from '@pattern-ui/core';
 import { Link } from 'react-router-dom';
 
 function Demo() {
@@ -113,7 +113,7 @@ function Demo() {
 
 ```tsx
 import { useRef } from 'react';
-import { ActionIcon } from '@pattern/core';
+import { ActionIcon } from '@pattern-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLButtonElement>();
@@ -125,7 +125,7 @@ To use `ref` with custom component in TypeScript, specify generic type:
 
 ```tsx
 import { useRef } from 'react';
-import { ActionIcon } from '@pattern/core';
+import { ActionIcon } from '@pattern-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLAnchorElement>();

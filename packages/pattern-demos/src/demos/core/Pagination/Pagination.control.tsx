@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pagination, Group } from '@pattern/core';
+import { Pagination, Group } from '@pattern-ui/core';
 
 function Wrapper(props: any) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: any) {
 }
 
 const codeTemplate = (props: string) => `
-import { Pagination } from '@pattern/core';
+import { Pagination } from '@pattern-ui/core';
 
 export default function Demo() {
   return <Pagination total={10}${props} />;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Highlight, HighlightProps } from '@pattern/core';
+import { Highlight, HighlightProps } from '@pattern-ui/core';
 
 function Wrapper(props: HighlightProps<'div'>) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: HighlightProps<'div'>) {
 }
 
 const codeTemplate = (props: string, children: string) => `
-import { Highlight } from '@pattern/core';
+import { Highlight } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

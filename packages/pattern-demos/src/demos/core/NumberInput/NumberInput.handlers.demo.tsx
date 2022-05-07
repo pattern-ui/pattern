@@ -5,7 +5,7 @@ import {
   ActionIcon,
   NumberInputHandlers,
   usePatternTheme,
-} from '@pattern/core';
+} from '@pattern-ui/core';
 
 export default function Demo() {
   const theme = usePatternTheme();

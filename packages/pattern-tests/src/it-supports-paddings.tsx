@@ -1,5 +1,5 @@
 import React from 'react';
-import { DEFAULT_THEME } from '@pattern/styles';
+import { DEFAULT_THEME } from '@pattern-ui/styles';
 import { renderWithAct } from './render-with-act';
 
 export function itSupportsPaddings<P>(Component: React.ComponentType<P>, requiredProps: P) {

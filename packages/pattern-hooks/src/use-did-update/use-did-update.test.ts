@@ -1,7 +1,7 @@
 import { renderHook } from '@testing-library/react-hooks';
 import { useDidUpdate } from './use-did-update';
 
-describe('@pattern/hooks/use-did-update', () => {
+describe('@pattern-ui/hooks/use-did-update', () => {
   afterAll(() => {
     jest.clearAllMocks();
   });

@@ -8,7 +8,7 @@ const customTransition = {
   transitionProperty: 'color, background-color',
 };
 
-describe('@pattern/core/Transition/get-transition-styles', () => {
+describe('@pattern-ui/core/Transition/get-transition-styles', () => {
   it('returns predefined transition with string value', () => {
     expect(
       getTransitionStyles({

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { storiesOf } from '@storybook/react';
-import { PatternProvider } from '@pattern/styles';
+import { PatternProvider } from '@pattern-ui/styles';
 import { Button } from '../Button/Button';
 import { Text } from '../Text/Text';
 import { Select } from '../Select/Select';

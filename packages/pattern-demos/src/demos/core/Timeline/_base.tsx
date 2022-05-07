@@ -1,6 +1,6 @@
 import React from 'react';
 import { GitBranch, GitPullRequest, GitCommit, MessageDots } from 'tabler-icons-react';
-import { Text, Timeline, TimelineProps } from '@pattern/core';
+import { Text, Timeline, TimelineProps } from '@pattern-ui/core';
 
 export function TimelineBase(props: Partial<TimelineProps> & { noIcon?: boolean }) {
   const displayIcon = !props?.noIcon;

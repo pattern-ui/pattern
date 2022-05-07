@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: JsonInput
 order: 1
 slug: /core/json-input/
 category: 'inputs'
 description: 'Capture json data from user'
 props: ['JsonInput']
-import: "import { JsonInput } from '@pattern/core';"
+import: "import { JsonInput } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/JsonInput/JsonInput.tsx'
 docs: 'core/JsonInput.mdx'
 styles: ['JsonInput']
 ---
 
-import { JsonInputDemos } from '@pattern/demos';
+import { JsonInputDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -26,7 +26,7 @@ it includes json validation logic and option to format input value on blur:
 
 ```tsx
 import { useState } from 'react';
-import { JsonInput } from '@pattern/core';
+import { JsonInput } from '@pattern-ui/core';
 
 function Demo() {
   const [value, setValue] = useState('');
@@ -44,7 +44,7 @@ Component supports all props from [Input](/core/input/) and [InputWrapper](/core
 
 ```tsx
 import { useRef } from 'react';
-import { JsonInput } from '@pattern/core';
+import { JsonInput } from '@pattern-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLTextAreaElement>();

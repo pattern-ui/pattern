@@ -1,5 +1,5 @@
 import React from 'react';
-import type { SpotlightAction } from '@pattern/spotlight';
+import type { SpotlightAction } from '@pattern-ui/spotlight';
 import { Wrapper } from './_wrapper';
 
 const onTrigger = () => {};

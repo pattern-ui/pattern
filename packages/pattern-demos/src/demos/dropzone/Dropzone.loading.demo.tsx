@@ -1,6 +1,6 @@
 import React from 'react';
-import { usePatternTheme } from '@pattern/styles';
-import { Dropzone, IMAGE_MIME_TYPE } from '@pattern/dropzone';
+import { usePatternTheme } from '@pattern-ui/styles';
+import { Dropzone, IMAGE_MIME_TYPE } from '@pattern-ui/dropzone';
 import { dropzoneChildren } from './_base';
 
 export default function Demo() {

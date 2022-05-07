@@ -7,7 +7,7 @@ const data = {
   c: [1, 2, 3],
 };
 
-describe('@pattern/hooks/use-set-state', () => {
+describe('@pattern-ui/hooks/use-set-state', () => {
   it('returns correct initial state', () => {
     const hook = renderHook(() => useSetState(data));
     expect(hook.result.current[0]).toStrictEqual({ a: 1, b: 'test', c: [1, 2, 3] });

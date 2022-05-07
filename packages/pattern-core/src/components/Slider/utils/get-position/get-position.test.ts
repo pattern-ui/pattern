@@ -1,6 +1,6 @@
 import { getPosition } from './get-position';
 
-describe('@pattern/core/Slider/get-position', () => {
+describe('@pattern-ui/core/Slider/get-position', () => {
   it('returns correct position value', () => {
     expect(getPosition({ value: 40, min: 0, max: 100 })).toBe(40);
     expect(getPosition({ value: 820, min: 100, max: 1000 })).toBe(80);

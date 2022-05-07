@@ -17,7 +17,7 @@ import {
   HooksDemos,
   CreateStylesDemos,
   ThemeDemos,
-} from '@pattern/demos';
+} from '@pattern-ui/demos';
 
 ## Breaking changes
 
@@ -38,7 +38,7 @@ With these options you can change styles insertion point (from 3.1 styles are pr
 and configure stylis plugins. For example, you can use [stylis-plugin-rtl](https://github.com/styled-components/stylis-plugin-rtl) to add rtl support:
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 import rtlPlugin from 'stylis-plugin-rtl';
 
 function Demo() {
@@ -92,7 +92,7 @@ New use-css hook is a simpler alternative to `createStyles` function.
 Hook returns `css` and `cx` functions. `css` function accepts styles object and returns class name:
 
 ```tsx
-import { useCss, Button } from '@pattern/core';
+import { useCss, Button } from '@pattern-ui/core';
 
 function Demo({ active }) {
   const { css, cx } = useCss();
@@ -150,4 +150,4 @@ New [use-scroll-into-view](https://pattern-ui.design/hooks/use-scroll-into-view/
 - Fix layout jumping on Windows and Linux when overlay components with scroll lock are opened ([Modal](https://pattern-ui.design/core/modal/) and [Drawer](https://pattern-ui.design/core/drawer)), see [use-scroll-lock](https://pattern-ui.design/hooks/use-scroll-lock/) documentation to learn how to offset elements with fixed position
 - Fix [DatePicker](https://pattern-ui.design/dates/date-picker/) dropdown not updating position when used near bottom edge of viewport
 - Fix incorrect random ids generated during server side rendering in Next.js
-- Prevent page from rendering twice in `@pattern/next` package
+- Prevent page from rendering twice in `@pattern-ui/next` package

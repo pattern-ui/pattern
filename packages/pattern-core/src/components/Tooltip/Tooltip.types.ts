@@ -1,4 +1,4 @@
-import { DefaultProps, Selectors, PatternNumberSize, PatternColor } from '@pattern/styles';
+import { DefaultProps, Selectors, PatternNumberSize, PatternColor } from '@pattern-ui/styles';
 import { Placement } from '@floating-ui/react-dom-interactions';
 import useStyles, { TooltipStylesParams } from './Tooltip.styles';
 

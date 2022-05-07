@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, TableProps } from '@pattern/core';
+import { Table, TableProps } from '@pattern-ui/core';
 import { elements } from './_data';
 
 function Wrapper(props: TableProps) {
@@ -28,7 +28,7 @@ function Wrapper(props: TableProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Table } from '@pattern/core';
+import { Table } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

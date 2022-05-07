@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Stepper, StepperProps } from '@pattern/core';
+import { Stepper, StepperProps } from '@pattern-ui/core';
 
 function StyledStepper(props: StepperProps) {
   return (

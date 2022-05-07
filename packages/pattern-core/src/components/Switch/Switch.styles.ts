@@ -1,4 +1,4 @@
-import { createStyles, PatternNumberSize, PatternSize, PatternColor } from '@pattern/styles';
+import { createStyles, PatternNumberSize, PatternSize, PatternColor } from '@pattern-ui/styles';
 
 export interface SwitchStylesParams {
   color: PatternColor;

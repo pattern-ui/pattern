@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stepper } from '@pattern/core';
+import { Stepper } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

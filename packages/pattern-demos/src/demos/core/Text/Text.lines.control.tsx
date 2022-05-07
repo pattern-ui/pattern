@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, TextProps } from '@pattern/core';
+import { Text, TextProps } from '@pattern-ui/core';
 
 function Wrapper(props: TextProps<'div'>) {
   return (
@@ -19,7 +19,7 @@ function Wrapper(props: TextProps<'div'>) {
 }
 
 const codeTemplate = (props: string) => `
-import { Text } from '@pattern/core';
+import { Text } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

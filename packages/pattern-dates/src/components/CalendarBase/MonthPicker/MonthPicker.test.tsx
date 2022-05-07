@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { itSupportsClassName, checkAccessibility } from '@pattern/tests';
+import { itSupportsClassName, checkAccessibility } from '@pattern-ui/tests';
 import userEvent from '@testing-library/user-event';
 import { MonthPicker, MonthPickerProps } from './MonthPicker';
 
@@ -18,7 +18,7 @@ const defaultProps: MonthPickerProps = {
   onNextLevel: () => {},
 };
 
-describe('@pattern/core/MonthPicker', () => {
+describe('@pattern-ui/core/MonthPicker', () => {
   itSupportsClassName(MonthPicker, defaultProps);
   checkAccessibility([
     <MonthPicker {...defaultProps} nextYearLabel="Next" previousYearLabel="Previous" />,
@@ -110,6 +110,6 @@ describe('@pattern/core/MonthPicker', () => {
   });
 
   it('has correct displayName', () => {
-    expect(MonthPicker.displayName).toStrictEqual('@pattern/dates/MonthPicker');
+    expect(MonthPicker.displayName).toStrictEqual('@pattern-ui/dates/MonthPicker');
   });
 });

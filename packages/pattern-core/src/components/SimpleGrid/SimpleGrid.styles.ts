@@ -1,4 +1,4 @@
-import { createStyles, PatternNumberSize } from '@pattern/styles';
+import { createStyles, PatternNumberSize } from '@pattern-ui/styles';
 import { getSortedBreakpoints } from './get-sorted-breakpoints/get-sorted-breakpoints';
 
 export interface SimpleGridBreakpoint {

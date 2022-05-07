@@ -1,6 +1,6 @@
 import { createTimeHandler } from './create-time-handler';
 
-describe('@pattern/dates/create-time-handler', () => {
+describe('@pattern-ui/dates/create-time-handler', () => {
   it('does not call onChange if value is parsed to NaN', () => {
     const ref = { current: { focus: jest.fn(), select: jest.fn() } };
     const spy = jest.fn();

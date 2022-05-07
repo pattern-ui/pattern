@@ -1,4 +1,4 @@
-import { createStyles, PatternNumberSize } from '@pattern/styles';
+import { createStyles, PatternNumberSize } from '@pattern-ui/styles';
 
 export interface MenuStylesParams {
   size: PatternNumberSize | 'auto';

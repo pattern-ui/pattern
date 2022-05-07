@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, PolymorphicComponentProps, PolymorphicRef } from '@pattern/styles';
+import { DefaultProps, PolymorphicComponentProps, PolymorphicRef } from '@pattern-ui/styles';
 import { Box } from '../../../Box';
 
 interface _SectionProps extends DefaultProps {
@@ -30,4 +30,4 @@ export const Section: SectionComponent & { displayName?: string } = forwardRef(
   )
 ) as any;
 
-Section.displayName = '@pattern/core/Section';
+Section.displayName = '@pattern-ui/core/Section';

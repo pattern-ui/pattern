@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Language } from 'prism-react-renderer';
 import { CodeIcon } from '@modulz/radix-icons';
-import { usePatternTheme, Paper, Group, ActionIcon, Tooltip } from '@pattern/core';
-import { Prism } from '@pattern/prism';
+import { usePatternTheme, Paper, Group, ActionIcon, Tooltip } from '@pattern-ui/core';
+import { Prism } from '@pattern-ui/prism';
 import useStyles from './CodeDemo.styles';
 
 interface CodeDemoProps {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stepper, StepperProps } from '@pattern/core';
+import { Stepper, StepperProps } from '@pattern-ui/core';
 
 function Wrapper(props: Partial<StepperProps>) {
   return (
@@ -11,7 +11,7 @@ function Wrapper(props: Partial<StepperProps>) {
 }
 
 const codeTemplate = (props: string) => `
-import { Stepper } from '@pattern/core';
+import { Stepper } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

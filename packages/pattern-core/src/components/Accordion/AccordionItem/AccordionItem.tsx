@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, Selectors, useContextStylesApi } from '@pattern/styles';
+import { DefaultProps, Selectors, useContextStylesApi } from '@pattern-ui/styles';
 import { Box } from '../../Box';
 import { AccordionItemContextProvider } from '../AccordionItem.context';
 import useStyles from './AccordionItem.styles';
@@ -38,4 +38,4 @@ export const AccordionItem = forwardRef<HTMLDivElement, AccordionItemProps>(
   }
 );
 
-AccordionItem.displayName = '@pattern/core/AccordionItem';
+AccordionItem.displayName = '@pattern-ui/core/AccordionItem';

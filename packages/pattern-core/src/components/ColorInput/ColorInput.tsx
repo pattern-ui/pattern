@@ -1,12 +1,12 @@
 import React, { useState, useEffect, forwardRef } from 'react';
-import { useUncontrolled, useDidUpdate, useUuid } from '@pattern/hooks';
+import { useUncontrolled, useDidUpdate, useUuid } from '@pattern-ui/hooks';
 import {
   DefaultProps,
   Selectors,
   extractSystemStyles,
   getDefaultZIndex,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { InputWrapper, InputWrapperBaseProps, InputWrapperStylesNames } from '../InputWrapper';
 import { Input, InputBaseProps, InputStylesNames } from '../Input';
 import { ColorSwatch } from '../ColorSwatch';
@@ -258,4 +258,4 @@ export const ColorInput = forwardRef<HTMLInputElement, ColorInputProps>(
   }
 );
 
-ColorInput.displayName = '@pattern/core/ColorInput';
+ColorInput.displayName = '@pattern-ui/core/ColorInput';

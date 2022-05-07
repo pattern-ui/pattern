@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs, TabsProps } from '@pattern/core';
+import { Tabs, TabsProps } from '@pattern-ui/core';
 
 function Wrapper(props: TabsProps) {
   return (
@@ -14,7 +14,7 @@ function Wrapper(props: TabsProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Tabs } from '@pattern/core';
+import { Tabs } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

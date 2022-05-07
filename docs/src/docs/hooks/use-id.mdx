@@ -1,12 +1,12 @@
 ---
 group: 'pattern-hooks'
-package: '@pattern/hooks'
+package: '@pattern-ui/hooks'
 category: 'state'
 title: 'use-id'
 order: 1
 slug: /hooks/use-id/
 description: 'Generate memoized random id'
-import: "import { useId } from '@pattern/hooks';"
+import: "import { useId } from '@pattern-ui/hooks';"
 docs: 'hooks/use-id.mdx'
 source: 'pattern-hooks/src/use-id/use-id.ts'
 ---
@@ -18,7 +18,7 @@ Hook is usually used to bind input elements to labels.
 Generated random id is saved to ref and will not change unless component is unmounted.
 
 ```tsx
-import { useId } from '@pattern/hooks';
+import { useId } from '@pattern-ui/hooks';
 
 function Input({ id }: { id?: string }) {
   const uuid = useId(id);

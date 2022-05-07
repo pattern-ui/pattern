@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider } from '@pattern/core';
+import { Divider } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

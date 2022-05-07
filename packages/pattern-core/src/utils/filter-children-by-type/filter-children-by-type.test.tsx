@@ -4,7 +4,7 @@ import { filterChildrenByType } from './filter-children-by-type';
 const TestComponent = () => <div>test</div>;
 const TestComponent2 = () => <div>test</div>;
 
-describe('@pattern/core/utils/filter-children-by-type', () => {
+describe('@pattern-ui/core/utils/filter-children-by-type', () => {
   it('filters nodes by given type', () => {
     const result = filterChildrenByType(
       [

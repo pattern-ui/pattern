@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Placement } from '@floating-ui/react-dom-interactions';
-import { getFloatingPosition, useId, noop } from '@pattern/utils';
+import { getFloatingPosition, useId, noop } from '@pattern-ui/utils';
 import {
   usePatternTheme,
   ClassNames,
@@ -12,8 +12,8 @@ import {
   PatternShadow,
   getDefaultZIndex,
   usePatternDefaultProps,
-} from '@pattern/styles';
-import { useClickOutside } from '@pattern/hooks';
+} from '@pattern-ui/styles';
+import { useClickOutside } from '@pattern-ui/hooks';
 import { PatternTransition } from '../Transition';
 import { usePopover } from './use-popover';
 import { PopoverContextProvider } from './Popover.context';
@@ -219,4 +219,4 @@ export function Popover(props: PopoverProps) {
 
 Popover.Target = PopoverTarget;
 Popover.Dropdown = PopoverDropdown;
-Popover.displayName = '@pattern/core/Popover';
+Popover.displayName = '@pattern-ui/core/Popover';

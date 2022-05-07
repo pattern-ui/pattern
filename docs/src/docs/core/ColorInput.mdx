@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: ColorInput
 order: 1
 slug: /core/color-input/
 category: 'inputs'
 description: 'Capture color data from user'
 props: ['ColorInput']
-import: "import { ColorInput } from '@pattern/core';"
+import: "import { ColorInput } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/ColorInput/ColorInput.tsx'
 docs: 'core/ColorInput.mdx'
 styles: ['ColorInput']
 ---
 
-import { ColorInputDemos, ColorPickerDemos } from '@pattern/demos';
+import { ColorInputDemos, ColorPickerDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -23,7 +23,7 @@ import { ColorInputDemos, ColorPickerDemos } from '@pattern/demos';
 
 ```tsx
 import { useState } from 'react';
-import { ColorInput } from '@pattern/core';
+import { ColorInput } from '@pattern-ui/core';
 
 function Demo() {
   const [value, setValue] = useState('');
@@ -86,7 +86,7 @@ you can remove it (`withPreview={false}` prop) or replace with any React node (`
 
 ```tsx
 import { useRef } from 'react';
-import { ColorInput } from '@pattern/core';
+import { ColorInput } from '@pattern-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>();

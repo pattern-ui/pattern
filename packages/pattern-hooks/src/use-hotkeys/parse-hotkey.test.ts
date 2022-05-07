@@ -1,6 +1,6 @@
 import { getHotkeyMatcher, parseHotkey } from './parse-hotkey';
 
-describe('@pattern/hooks/use-hot-key/parse-hotkey', () => {
+describe('@pattern-ui/hooks/use-hot-key/parse-hotkey', () => {
   it('should parse hotkey correctly', () => {
     expect(parseHotkey('meta+S')).toMatchObject({
       alt: false,

@@ -7,13 +7,13 @@ import {
   itSupportsInputIcon,
   itConnectsLabelAndInput,
   itSupportsInputWrapperProps,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import userEvent from '@testing-library/user-event';
 import { PasswordInput, PasswordInputProps } from './PasswordInput';
 
 const defaultProps: PasswordInputProps = {};
 
-describe('@pattern/core/PasswordInput', () => {
+describe('@pattern-ui/core/PasswordInput', () => {
   itSupportsFocusEvents(PasswordInput, defaultProps, 'input');
   itSupportsInputWrapperProps(PasswordInput, defaultProps, 'PasswordInput');
   itSupportsInputIcon(PasswordInput, defaultProps);
@@ -23,7 +23,7 @@ describe('@pattern/core/PasswordInput', () => {
   itSupportsSystemProps({
     component: PasswordInput,
     props: defaultProps,
-    displayName: '@pattern/core/PasswordInput',
+    displayName: '@pattern-ui/core/PasswordInput',
     excludeOthers: true,
     refType: HTMLInputElement,
   });

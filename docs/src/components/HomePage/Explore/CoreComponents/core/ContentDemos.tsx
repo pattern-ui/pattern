@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, Paper } from '@pattern/core';
-import { AccordionDemo, TimelineBase } from '@pattern/demos';
+import { Text, Paper } from '@pattern-ui/core';
+import { AccordionDemo, TimelineBase } from '@pattern-ui/demos';
 
 export function ContentDemos() {
   return (

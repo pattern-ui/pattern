@@ -1,6 +1,6 @@
 import React from 'react';
-import { useFullscreen } from '@pattern/hooks';
-import { Button, Group } from '@pattern/core';
+import { useFullscreen } from '@pattern-ui/hooks';
+import { Button, Group } from '@pattern-ui/core';
 
 export default function Demo() {
   const { toggle, fullscreen } = useFullscreen();

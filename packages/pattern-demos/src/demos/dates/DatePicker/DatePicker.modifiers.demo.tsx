@@ -1,6 +1,6 @@
 import React from 'react';
-import { createStyles } from '@pattern/core';
-import { DatePicker } from '@pattern/dates';
+import { createStyles } from '@pattern-ui/core';
+import { DatePicker } from '@pattern-ui/dates';
 
 const useStyles = createStyles((theme) => ({
   outside: {

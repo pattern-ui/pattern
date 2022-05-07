@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itFiltersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { itFiltersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Timeline } from './Timeline';
 import { TimelineItem } from './TimelineItem/TimelineItem';
 
@@ -14,12 +14,12 @@ const defaultProps = {
   ],
 };
 
-describe('@pattern/core/Timeline', () => {
+describe('@pattern-ui/core/Timeline', () => {
   itSupportsSystemProps({
     component: Timeline,
     props: defaultProps,
     excludePadding: true,
-    displayName: '@pattern/core/Timeline',
+    displayName: '@pattern-ui/core/Timeline',
     refType: HTMLDivElement,
   });
 

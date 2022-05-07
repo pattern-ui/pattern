@@ -4,7 +4,7 @@ import {
   PatternNumberSize,
   usePatternDefaultProps,
   PatternSize,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles from './Container.styles';
 
@@ -46,4 +46,4 @@ export const Container = forwardRef<HTMLDivElement, ContainerProps>(
   }
 );
 
-Container.displayName = '@pattern/core/Container';
+Container.displayName = '@pattern-ui/core/Container';

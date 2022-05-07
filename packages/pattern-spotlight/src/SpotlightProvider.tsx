@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { useDidUpdate, useDisclosure } from '@pattern/hooks';
+import { useDidUpdate, useDisclosure } from '@pattern-ui/hooks';
 import { useActionsState } from './use-actions-state/use-actions-state';
 import { useSpotlightShortcuts } from './use-spotlight-shortcuts/use-spotlight-shortcuts';
 import { Spotlight, InnerSpotlightProps } from './Spotlight/Spotlight';
@@ -101,4 +101,4 @@ export function SpotlightProvider({
   );
 }
 
-SpotlightProvider.displayName = '@pattern/spotlight/SpotlightProvider';
+SpotlightProvider.displayName = '@pattern-ui/spotlight/SpotlightProvider';

@@ -1,6 +1,6 @@
 import React from 'react';
-import { useHover } from '@pattern/hooks';
-import { usePatternTheme, Text } from '@pattern/core';
+import { useHover } from '@pattern-ui/hooks';
+import { usePatternTheme, Text } from '@pattern-ui/core';
 
 export default function Demo() {
   const theme = usePatternTheme();

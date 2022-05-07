@@ -6,7 +6,7 @@ import {
   PolymorphicComponentProps,
   PolymorphicRef,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles from './Paper.styles';
 
@@ -51,4 +51,4 @@ export const Paper: PaperComponent = forwardRef(
   }
 ) as any;
 
-Paper.displayName = '@pattern/core/Paper';
+Paper.displayName = '@pattern-ui/core/Paper';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Check, X } from 'tabler-icons-react';
-import { Notification } from '@pattern/core';
+import { Notification } from '@pattern-ui/core';
 import { demoBase } from './_demo-base';
 
 export default function Demo() {

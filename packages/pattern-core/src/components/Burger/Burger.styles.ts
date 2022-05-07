@@ -1,4 +1,4 @@
-import { createStyles, PatternNumberSize, PatternColor } from '@pattern/styles';
+import { createStyles, PatternNumberSize, PatternColor } from '@pattern-ui/styles';
 
 export interface BurgerStylesParams {
   size: PatternNumberSize;

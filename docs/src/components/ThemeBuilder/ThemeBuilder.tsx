@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Title } from '@pattern/core';
+import { Container, Title } from '@pattern-ui/core';
 import { Footer } from '../Footer/Footer';
 import { Colors } from './Colors/Colors';
 import { useColorsState } from './use-colors-state/use-colors-state';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { AlertCircle } from 'tabler-icons-react';
-import { Input, Tooltip } from '@pattern/core';
+import { Input, Tooltip } from '@pattern-ui/core';
 
 export default function Demo() {
   const rightSection = (

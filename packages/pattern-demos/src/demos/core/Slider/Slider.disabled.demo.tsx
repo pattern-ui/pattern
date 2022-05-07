@@ -1,5 +1,5 @@
 import React from 'react';
-import { Slider, RangeSlider } from '@pattern/core';
+import { Slider, RangeSlider } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

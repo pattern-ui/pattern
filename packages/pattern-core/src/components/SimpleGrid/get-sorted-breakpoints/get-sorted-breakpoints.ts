@@ -1,4 +1,4 @@
-import { PatternTheme } from '@pattern/styles';
+import { PatternTheme } from '@pattern-ui/styles';
 import type { SimpleGridBreakpoint } from '../SimpleGrid.styles';
 
 export function getSortedBreakpoints(theme: PatternTheme, breakpoints: SimpleGridBreakpoint[]) {

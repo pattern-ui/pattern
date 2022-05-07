@@ -1,5 +1,5 @@
 import React from 'react';
-import { Chips, Chip, createStyles } from '@pattern/core';
+import { Chips, Chip, createStyles } from '@pattern-ui/core';
 
 const useStyles = createStyles((theme, _params, getRef) => ({
   iconWrapper: {

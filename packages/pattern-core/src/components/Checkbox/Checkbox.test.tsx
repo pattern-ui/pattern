@@ -7,14 +7,14 @@ import {
   itConnectsLabelAndInput,
   itSupportsFocusEvents,
   itHandlesBooleanState,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { Checkbox, CheckboxProps } from './Checkbox';
 
 const defaultProps: CheckboxProps = {
   label: 'test-label',
 };
 
-describe('@pattern/core/Checkbox', () => {
+describe('@pattern-ui/core/Checkbox', () => {
   itSupportsWrapperProps(Checkbox, defaultProps);
   itConnectsLabelAndInput(Checkbox, defaultProps);
   itHandlesBooleanState(Checkbox, defaultProps);
@@ -28,7 +28,7 @@ describe('@pattern/core/Checkbox', () => {
   itSupportsSystemProps({
     component: Checkbox,
     props: defaultProps,
-    displayName: '@pattern/core/Checkbox',
+    displayName: '@pattern-ui/core/Checkbox',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

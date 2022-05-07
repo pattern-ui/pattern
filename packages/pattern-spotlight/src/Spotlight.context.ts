@@ -36,7 +36,7 @@ export function useSpotlight() {
   const ctx = useContext(SpotlightContext);
 
   if (!ctx) {
-    throw new Error('[@pattern/spotlight] SpotlightProvider was not found in tree');
+    throw new Error('[@pattern-ui/spotlight] SpotlightProvider was not found in tree');
   }
 
   return ctx;

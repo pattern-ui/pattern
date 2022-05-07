@@ -1,4 +1,4 @@
-import type { TimeInputStylesNames } from '@pattern/dates';
+import type { TimeInputStylesNames } from '@pattern-ui/dates';
 import { Input } from './Input.styles-api';
 import { InputWrapper } from './InputWrapper.styles-api';
 

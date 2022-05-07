@@ -1,5 +1,5 @@
 import React from 'react';
-import { Radio, RadioGroup, RadioProps } from '@pattern/core';
+import { Radio, RadioGroup, RadioProps } from '@pattern-ui/core';
 
 const getSizes = (props?: RadioProps) =>
   (['xs', 'sm', 'md', 'lg', 'xl'] as const).map((size, index) => (

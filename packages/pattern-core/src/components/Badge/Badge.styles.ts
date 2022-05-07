@@ -1,4 +1,4 @@
-import { createStyles, PatternSize, PatternNumberSize, PatternColor } from '@pattern/styles';
+import { createStyles, PatternSize, PatternNumberSize, PatternColor } from '@pattern-ui/styles';
 
 export interface BadgeStylesParams {
   color: PatternColor;

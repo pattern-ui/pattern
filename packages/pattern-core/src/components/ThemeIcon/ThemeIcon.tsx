@@ -5,7 +5,7 @@ import {
   PatternGradient,
   PatternColor,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles, { ThemeIconVariant } from './ThemeIcon.styles';
 
@@ -61,4 +61,4 @@ export const ThemeIcon = forwardRef<HTMLDivElement, ThemeIconProps>(
   }
 );
 
-ThemeIcon.displayName = '@pattern/core/ThemeIcon';
+ThemeIcon.displayName = '@pattern-ui/core/ThemeIcon';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, Selectors } from '@pattern/core';
+import { DefaultProps, Selectors } from '@pattern-ui/core';
 import type { RichTextEditorLabels } from '../RichTextEditor/default-labels';
 import { ToolbarButton } from './ToolbarButton/ToolbarButton';
 import { CONTROLS, ToolbarControl } from './controls';
@@ -74,4 +74,4 @@ export function Toolbar({
   );
 }
 
-Toolbar.displayName = '@pattern/rte/Toolbar';
+Toolbar.displayName = '@pattern-ui/rte/Toolbar';

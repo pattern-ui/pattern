@@ -1,12 +1,12 @@
 ---
 group: 'pattern-dates'
-package: '@pattern/dates'
+package: '@pattern-ui/dates'
 title: 'Getting started'
 pageTitle: 'Pattern Dates'
 description: 'Capture date inputs from user and display calendars'
 order: 0
 slug: /dates/getting-started/
-installation: '@pattern/dates'
+installation: '@pattern-ui/dates'
 source: 'pattern-dates/'
 license: MIT
 ---
@@ -18,7 +18,7 @@ import {
   DatePickerDemos,
   TimeInputDemos,
   DateRangePickerDemos,
-} from '@pattern/demos';
+} from '@pattern-ui/demos';
 
 ## Installation
 
@@ -27,19 +27,19 @@ Package depends on:
 - [react](https://www.npmjs.com/package/react)
 - [react-dom](https://www.npmjs.com/package/react-dom)
 - [dayjs](https://www.npmjs.com/package/dayjs)
-- [@pattern/hooks](https://www.npmjs.com/package/@pattern/hooks)
-- [@pattern/core](https://www.npmjs.com/package/@pattern/core)
+- [@pattern-ui/hooks](https://www.npmjs.com/package/@pattern-ui/hooks)
+- [@pattern-ui/core](https://www.npmjs.com/package/@pattern-ui/core)
 
 Install with npm:
 
 ```sh
-npm install dayjs @pattern/core @pattern/hooks @pattern/dates
+npm install dayjs @pattern-ui/core @pattern-ui/hooks @pattern-ui/dates
 ```
 
 Install with yarn:
 
 ```sh
-yarn add dayjs @pattern/core @pattern/hooks @pattern/dates
+yarn add dayjs @pattern-ui/core @pattern-ui/hooks @pattern-ui/dates
 ```
 
 ## Localization
@@ -55,7 +55,7 @@ import 'dayjs/locale/de';
 [PatternProvider](/theming/pattern-provider/) allows you to set a `datesLocale` property for all date components, or you can overwrite the locale on a per component basis:
 
 ```tsx
-import { DatePicker, Calendar, Month } from '@pattern/dates';
+import { DatePicker, Calendar, Month } from '@pattern-ui/dates';
 
 function Demo() {
   return (
@@ -92,14 +92,14 @@ function Demo() {
 
 ## Utility functions
 
-Apart from components @pattern/dates package also exports several utility functions.
+Apart from components @pattern-ui/dates package also exports several utility functions.
 
 **get-month-days**
 
 Returns an array of weeks of current month:
 
 ```tsx
-import { getMonthDays } from '@pattern/dates';
+import { getMonthDays } from '@pattern-ui/dates';
 
 getMonthDays(new Date()); // -> [[7xDate objects] x amount of weeks in current month]
 ```
@@ -109,14 +109,14 @@ getMonthDays(new Date()); // -> [[7xDate objects] x amount of weeks in current m
 Returns months names for given locale and format:
 
 ```tsx
-import { getMonthsNames } from '@pattern/dates';
+import { getMonthsNames } from '@pattern-ui/dates';
 
 getMonthsNames('en', 'MMMM');
 // -> [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 // to localize import locale from dayjs package
 import 'dayjs/locale/ru';
-import { getMonthsNames } from '@pattern/dates';
+import { getMonthsNames } from '@pattern-ui/dates';
 
 getMonthsNames('ru', 'MMMM');
 // -> ['январь','февраль','март','апрель','май','июнь','июль','август','сентябрь','октябрь','ноябрь','декабрь']
@@ -127,7 +127,7 @@ getMonthsNames('ru', 'MMMM');
 Returns an array of short weekdays names for given locale:
 
 ```tsx
-import { getWeekdaysNames } from '@pattern/dates';
+import { getWeekdaysNames } from '@pattern-ui/dates';
 
 getWeekdaysNames('en');
 // -> ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su']
@@ -138,7 +138,7 @@ getWeekdaysNames('en');
 Returns an array of years, which fall into given range:
 
 ```tsx
-import { getYearsRange } from '@pattern/dates';
+import { getYearsRange } from '@pattern-ui/dates';
 
 getYearsRange({ from: 2020, to: 2025 });
 // -> [2020, 2021, 2022, 2023, 2024, 2025]
@@ -149,7 +149,7 @@ getYearsRange({ from: 2020, to: 2025 });
 Returns true if two dates have the same year, month and date, other properties (minutes, seconds, etc.) are ignored:
 
 ```tsx
-import { isSameDate } from '@pattern/dates';
+import { isSameDate } from '@pattern-ui/dates';
 
 isSameDate(new Date(2020, 7, 21), new Date(2020, 7, 21)); // -> true
 isSameDate(new Date(2020, 7, 21), new Date(2020, 7, 22)); // -> false
@@ -160,7 +160,7 @@ isSameDate(new Date(2020, 7, 21), new Date(2020, 7, 22)); // -> false
 Returns true if two dates have the same year and month, other properties (date, minutes, seconds, etc.) are ignored:
 
 ```tsx
-import { isSameMonth } from '@pattern/dates';
+import { isSameMonth } from '@pattern-ui/dates';
 
 isSameMonth(new Date(2020, 7, 21), new Date(2020, 7, 22)); // -> true
 isSameMonth(new Date(2020, 7, 21), new Date(2020, 8, 22)); // -> false

@@ -1,6 +1,6 @@
 import React, { forwardRef, useState } from 'react';
-import { useUncontrolled } from '@pattern/hooks';
-import { DefaultProps, usePatternDefaultProps } from '@pattern/styles';
+import { useUncontrolled } from '@pattern-ui/hooks';
+import { DefaultProps, usePatternDefaultProps } from '@pattern-ui/styles';
 import { validateJson } from './validate-json/validate-json';
 import { Textarea, TextareaProps } from '../Textarea';
 import { TextInputStylesNames } from '../TextInput';
@@ -91,4 +91,4 @@ export const JsonInput = forwardRef<HTMLTextAreaElement, JsonInputProps>(
   }
 );
 
-JsonInput.displayName = '@pattern/core/JsonInput';
+JsonInput.displayName = '@pattern-ui/core/JsonInput';

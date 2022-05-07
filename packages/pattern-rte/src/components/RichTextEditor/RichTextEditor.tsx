@@ -8,8 +8,8 @@ import {
   Box,
   PatternNumberSize,
   usePatternDefaultProps,
-} from '@pattern/core';
-import { useUuid, mergeRefs } from '@pattern/hooks';
+} from '@pattern-ui/core';
+import { useUuid, mergeRefs } from '@pattern-ui/hooks';
 import { Toolbar, ToolbarStylesNames } from '../Toolbar/Toolbar';
 import { DEFAULT_CONTROLS } from './default-control';
 import useStyles from './RichTextEditor.styles';
@@ -167,4 +167,4 @@ export const RichTextEditor = forwardRef<Editor, RichTextEditorProps>(
   }
 );
 
-RichTextEditor.displayName = '@pattern/rte/RichTextEditor';
+RichTextEditor.displayName = '@pattern-ui/rte/RichTextEditor';

@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: TextInput
 order: 1
 slug: /core/text-input/
 category: 'inputs'
 description: 'Capture string input from user'
 props: ['TextInput']
-import: "import { TextInput } from '@pattern/core';"
+import: "import { TextInput } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/TextInput/TextInput.tsx'
 docs: 'core/TextInput.mdx'
 styles: ['TextInput']
 ---
 
-import { TextInputDemos } from '@pattern/demos';
+import { TextInputDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -23,7 +23,7 @@ import { TextInputDemos } from '@pattern/demos';
 
 ```tsx
 import { useState } from 'react';
-import { TextInput } from '@pattern/core';
+import { TextInput } from '@pattern-ui/core';
 
 function Demo() {
   const [value, setValue] = useState('');
@@ -51,7 +51,7 @@ function Demo() {
 
 ```tsx
 import { useRef } from 'react';
-import { TextInput } from '@pattern/core';
+import { TextInput } from '@pattern-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>();

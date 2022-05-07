@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility, itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { checkAccessibility, itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Alert, AlertProps } from './Alert';
 
 const defaultProps: AlertProps = {
@@ -11,13 +11,13 @@ const defaultProps: AlertProps = {
   closeButtonLabel: 'test-close',
 };
 
-describe('@pattern/core/Alert', () => {
+describe('@pattern-ui/core/Alert', () => {
   itRendersChildren(Alert, defaultProps);
   checkAccessibility([<Alert {...defaultProps} />]);
   itSupportsSystemProps({
     component: Alert,
     props: defaultProps,
-    displayName: '@pattern/core/Alert',
+    displayName: '@pattern-ui/core/Alert',
     refType: HTMLDivElement,
   });
 

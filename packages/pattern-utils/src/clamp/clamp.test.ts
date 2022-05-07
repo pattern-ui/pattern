@@ -1,6 +1,6 @@
 import { clamp } from './clamp';
 
-describe('@pattern/utils/clamp', () => {
+describe('@pattern-ui/utils/clamp', () => {
   it('clamps given value', () => {
     expect(clamp(10, 0, 5)).toBe(5);
     expect(clamp(-10, 0, 5)).toBe(0);

@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { PolymorphicComponentProps, PolymorphicRef, usePatternDefaultProps } from '@pattern/styles';
+import { PolymorphicComponentProps, PolymorphicRef, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Text, SharedTextProps } from '../Text/Text';
 import useStyles from './Anchor.styles';
 
@@ -34,4 +34,4 @@ export const Anchor: AnchorComponent = forwardRef(
   }
 ) as any;
 
-Anchor.displayName = '@pattern/core/Anchor';
+Anchor.displayName = '@pattern-ui/core/Anchor';

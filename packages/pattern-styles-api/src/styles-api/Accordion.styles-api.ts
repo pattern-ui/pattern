@@ -1,4 +1,4 @@
-import type { AccordionStylesNames } from '@pattern/core';
+import type { AccordionStylesNames } from '@pattern-ui/core';
 
 export const Accordion: Record<AccordionStylesNames, string> = {
   item: 'Accordion item wrapper',

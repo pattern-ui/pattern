@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import { createStylesServer, ServerStyles } from '@pattern/ssr';
+import { createStylesServer, ServerStyles } from '@pattern-ui/ssr';
 
 const stylesServer = createStylesServer();
 

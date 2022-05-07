@@ -11,7 +11,7 @@ const apple: Fruit = { fruit: 'apple' };
 const carrot: Vegetable = { vegetable: 'carrot' };
 const potato: Vegetable = { vegetable: 'potato' };
 
-describe('@pattern/form/use-form lists', () => {
+describe('@pattern-ui/form/use-form lists', () => {
   it('sets list values with setListItem handler', () => {
     const hook = renderHook(() =>
       useForm({ initialValues: { fruits: formList([banana, orange]), other: true } })

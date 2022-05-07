@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { flushSync } from 'react-dom';
-import { useDidUpdate, useMergedRef } from '@pattern/hooks';
+import { useDidUpdate, useMergedRef } from '@pattern-ui/hooks';
 
 function getAutoHeightDuration(height: number | string) {
   if (!height || typeof height === 'string') {

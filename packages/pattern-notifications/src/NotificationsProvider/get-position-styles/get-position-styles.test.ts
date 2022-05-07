@@ -1,6 +1,6 @@
 import getPositionStyles from './get-position-styles';
 
-describe('@pattern/notifications/get-position-styles', () => {
+describe('@pattern-ui/notifications/get-position-styles', () => {
   it('returns correct values for all positions', () => {
     expect(getPositionStyles(['top', 'left'], 400, 20)).toStrictEqual({ top: 20, left: 20 });
     expect(getPositionStyles(['top', 'right'], 400, 20)).toStrictEqual({ top: 20, right: 20 });

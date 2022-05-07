@@ -14,8 +14,8 @@ import {
   useDelayGroupContext,
   useDelayGroup,
 } from '@floating-ui/react-dom-interactions';
-import { useId } from '@pattern/utils';
-import { useDidUpdate } from '@pattern/hooks';
+import { useId } from '@pattern-ui/utils';
+import { useDidUpdate } from '@pattern-ui/hooks';
 import { useTooltipGroupContext } from './TooltipGroup/TooltipGroup.context';
 
 interface UseTooltip {

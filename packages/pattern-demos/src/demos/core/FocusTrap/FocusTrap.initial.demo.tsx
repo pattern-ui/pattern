@@ -1,6 +1,6 @@
 import React from 'react';
-import { useDisclosure } from '@pattern/hooks';
-import { FocusTrap, TextInput, Button } from '@pattern/core';
+import { useDisclosure } from '@pattern-ui/hooks';
+import { FocusTrap, TextInput, Button } from '@pattern-ui/core';
 
 export default function Demo() {
   const [active, handlers] = useDisclosure(false);

@@ -12,8 +12,8 @@ import {
   CloseButton,
   extractSystemStyles,
   usePatternDefaultProps,
-} from '@pattern/core';
-import { useDidUpdate, useMergedRef, useUuid } from '@pattern/hooks';
+} from '@pattern-ui/core';
+import { useDidUpdate, useMergedRef, useUuid } from '@pattern-ui/hooks';
 import { TimeField } from '../TimeInputBase/TimeField/TimeField';
 import { createTimeHandler } from '../TimeInputBase/create-time-handler/create-time-handler';
 import useStyles from './TimeInput.styles';
@@ -334,4 +334,4 @@ export const TimeInput = forwardRef<HTMLInputElement, TimeInputProps>(
   }
 );
 
-TimeInput.displayName = '@pattern/dates/TimeInput';
+TimeInput.displayName = '@pattern-ui/dates/TimeInput';

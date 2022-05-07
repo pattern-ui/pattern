@@ -1,5 +1,5 @@
 import React from 'react';
-import { MultiSelect } from '@pattern/core';
+import { MultiSelect } from '@pattern-ui/core';
 
 const data = Array(50)
   .fill(0)

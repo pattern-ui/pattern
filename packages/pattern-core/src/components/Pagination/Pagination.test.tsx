@@ -1,5 +1,5 @@
 import React from 'react';
-import { checkAccessibility, itSupportsSystemProps } from '@pattern/tests';
+import { checkAccessibility, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Pagination, PaginationProps } from './Pagination';
 
 const defaultProps: PaginationProps = {
@@ -7,12 +7,12 @@ const defaultProps: PaginationProps = {
   getItemAriaLabel: () => 'test-label',
 };
 
-describe('@pattern/core/Pagination', () => {
+describe('@pattern-ui/core/Pagination', () => {
   checkAccessibility([<Pagination {...defaultProps} />]);
   itSupportsSystemProps({
     component: Pagination,
     props: defaultProps,
-    displayName: '@pattern/core/Pagination',
+    displayName: '@pattern-ui/core/Pagination',
     refType: HTMLDivElement,
   });
 });

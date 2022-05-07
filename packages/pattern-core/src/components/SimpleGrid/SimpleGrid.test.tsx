@@ -1,5 +1,5 @@
 import React from 'react';
-import { itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { SimpleGrid, SimpleGridProps } from './SimpleGrid';
 
 const defaultProps: SimpleGridProps = {
@@ -7,12 +7,12 @@ const defaultProps: SimpleGridProps = {
   children: <span>test</span>,
 };
 
-describe('@pattern/core/SimpleGrid', () => {
+describe('@pattern-ui/core/SimpleGrid', () => {
   itRendersChildren(SimpleGrid, defaultProps);
   itSupportsSystemProps({
     component: SimpleGrid,
     props: defaultProps,
-    displayName: '@pattern/core/SimpleGrid',
+    displayName: '@pattern-ui/core/SimpleGrid',
     refType: HTMLDivElement,
   });
 });

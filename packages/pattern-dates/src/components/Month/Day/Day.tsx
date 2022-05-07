@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, PatternSize, Selectors } from '@pattern/core';
+import { DefaultProps, PatternSize, Selectors } from '@pattern-ui/core';
 import { getDayTabIndex } from './get-day-tab-index/get-day-tab-index';
 import { getDayAutofocus } from './get-day-autofocus/get-day-autofocus';
 import useStyles from './Day.styles';
@@ -87,4 +87,4 @@ export const Day = forwardRef<HTMLButtonElement, DayProps>(
   }
 );
 
-Day.displayName = '@pattern/core/Day';
+Day.displayName = '@pattern-ui/core/Day';

@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Button, Box } from '@pattern/core';
+import { Button, Box } from '@pattern-ui/core';
 import { Search } from 'tabler-icons-react';
 import { SpotlightProvider, useSpotlight, SpotlightProviderProps, SpotlightAction } from '.';
 

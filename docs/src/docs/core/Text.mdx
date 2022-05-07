@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Text
 order: 1
 slug: /core/text/
 category: 'typography'
 description: 'Display text and links with theme styles'
 props: ['Text']
-import: "import { Text } from '@pattern/core';"
+import: "import { Text } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Text/Text.tsx'
 docs: 'core/Text.mdx'
 styles: ['Text', 'single-node']
 ---
 
-import { TextDemos } from '@pattern/demos';
+import { TextDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -70,7 +70,7 @@ styles set `inherit` prop. For example, highlight part of [Title](/core/title/):
 By default, text is rendered as div element, to change it by set `component` prop:
 
 ```tsx
-import { Text } from '@pattern/core';
+import { Text } from '@pattern-ui/core';
 import { Link } from 'react-router-dom';
 
 function Demo() {

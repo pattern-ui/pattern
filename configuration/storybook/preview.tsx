@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useDarkMode } from 'storybook-dark-mode';
-import { PatternProvider, ColorSchemeProvider, Affix, ActionIcon } from '@pattern/core';
-import { useHotkeys } from '@pattern/hooks';
-import { NotificationsProvider } from '@pattern/notifications';
+import { PatternProvider, ColorSchemeProvider, Affix, ActionIcon } from '@pattern-ui/core';
+import { useHotkeys } from '@pattern-ui/hooks';
+import { NotificationsProvider } from '@pattern-ui/notifications';
 import rtlPlugin from 'stylis-plugin-rtl';
 
 export const parameters = { layout: 'fullscreen' };

@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Select
 order: 1
 slug: /core/select/
 category: 'inputs'
 description: 'Custom searchable select'
 props: ['Select']
-import: "import { Select } from '@pattern/core';"
+import: "import { Select } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Select/Select.tsx'
 docs: 'core/Select.mdx'
 styles: ['Select']
 ---
 
-import { SelectDemos } from '@pattern/demos';
+import { SelectDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -30,7 +30,7 @@ Bare minimum usage example:
 
 ```tsx
 import { useState } from 'react';
-import { Select } from '@pattern/core';
+import { Select } from '@pattern-ui/core';
 
 function Demo() {
   const [value, setValue] = useState('');
@@ -203,7 +203,7 @@ Note that in this case `clearable` option will not work and will need to handle 
 
 ```tsx
 import { useRef } from 'react';
-import { Select } from '@pattern/core';
+import { Select } from '@pattern-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>();

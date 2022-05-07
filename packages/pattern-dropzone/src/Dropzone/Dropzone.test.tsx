@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { Dropzone, DropzoneProps } from './Dropzone';
 
 const defaultProps: DropzoneProps = {
@@ -8,11 +8,11 @@ const defaultProps: DropzoneProps = {
   children: () => null,
 };
 
-describe('@pattern/dropzone/Dropzone', () => {
+describe('@pattern-ui/dropzone/Dropzone', () => {
   itSupportsSystemProps({
     component: Dropzone,
     props: defaultProps,
-    displayName: '@pattern/dropzone/Dropzone',
+    displayName: '@pattern-ui/dropzone/Dropzone',
     refType: HTMLDivElement,
   });
 

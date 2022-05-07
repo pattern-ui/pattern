@@ -1,6 +1,6 @@
 import { formList, isFormList } from './form-list';
 
-describe('@pattern/form form-list', () => {
+describe('@pattern-ui/form form-list', () => {
   it('creates new list from given list without noticeable modifications', () => {
     expect(formList([{ apple: 1 }, { banana: 'fruit' }])).toStrictEqual([
       { apple: 1 },

@@ -1,6 +1,6 @@
 import { getDefaultZIndex } from './get-default-z-index';
 
-describe('@pattern/styles/get-default-z-index', () => {
+describe('@pattern-ui/styles/get-default-z-index', () => {
   it('returns correct z-index value', () => {
     expect(getDefaultZIndex('app')).toBe(100);
     expect(getDefaultZIndex('modal')).toBe(200);

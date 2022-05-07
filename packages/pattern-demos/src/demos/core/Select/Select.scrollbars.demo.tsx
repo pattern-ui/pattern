@@ -1,5 +1,5 @@
 import React from 'react';
-import { Select } from '@pattern/core';
+import { Select } from '@pattern-ui/core';
 
 const data = Array(50)
   .fill(0)

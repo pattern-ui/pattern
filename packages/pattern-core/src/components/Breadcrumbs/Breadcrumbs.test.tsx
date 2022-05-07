@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { Text } from '../Text/Text';
 import { Breadcrumbs, BreadcrumbsProps } from './Breadcrumbs';
 
@@ -16,11 +16,11 @@ const defaultProps: BreadcrumbsProps = {
   )),
 };
 
-describe('@pattern/core/Breadcrumbs', () => {
+describe('@pattern-ui/core/Breadcrumbs', () => {
   itSupportsSystemProps({
     component: Breadcrumbs,
     props: defaultProps,
-    displayName: '@pattern/core/Breadcrumbs',
+    displayName: '@pattern-ui/core/Breadcrumbs',
     refType: HTMLDivElement,
   });
 

@@ -13,4 +13,4 @@ export const DefaultItem = forwardRef<HTMLDivElement, SelectItemProps>(
   )
 );
 
-DefaultItem.displayName = '@pattern/core/DefaultItem';
+DefaultItem.displayName = '@pattern-ui/core/DefaultItem';

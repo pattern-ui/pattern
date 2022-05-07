@@ -1,7 +1,7 @@
 import React, { ReactPortal, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { useIsomorphicEffect } from '@pattern/hooks';
-import { usePatternTheme, usePatternDefaultProps } from '@pattern/styles';
+import { useIsomorphicEffect } from '@pattern-ui/hooks';
+import { usePatternTheme, usePatternDefaultProps } from '@pattern-ui/styles';
 
 export interface PortalProps {
   /** Portal children, for example, modal or popover */
@@ -56,4 +56,4 @@ export function Portal(props: PortalProps): ReactPortal {
   );
 }
 
-Portal.displayName = '@pattern/core/Portal';
+Portal.displayName = '@pattern-ui/core/Portal';

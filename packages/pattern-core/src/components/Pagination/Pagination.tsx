@@ -1,12 +1,12 @@
 import React, { forwardRef } from 'react';
-import { usePagination } from '@pattern/hooks';
+import { usePagination } from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternNumberSize,
   PatternColor,
   Selectors,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Group, GroupProps } from '../Group/Group';
 import { DefaultItem, PaginationItemProps } from './DefaultItem/DefaultItem';
 import useStyles from './Pagination.styles';
@@ -181,4 +181,4 @@ export const Pagination = forwardRef<HTMLDivElement, PaginationProps>(
   }
 );
 
-Pagination.displayName = '@pattern/core/Pagination';
+Pagination.displayName = '@pattern-ui/core/Pagination';

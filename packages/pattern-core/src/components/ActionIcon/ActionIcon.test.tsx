@@ -6,19 +6,19 @@ import {
   itIsPolymorphic,
   itSupportsFocusEvents,
   itSupportsSystemProps,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { ActionIcon, ActionIconProps } from './ActionIcon';
 
 const defaultProps: ActionIconProps<'button'> = { children: <div /> };
 
-describe('@pattern/core/ActionIcon', () => {
+describe('@pattern-ui/core/ActionIcon', () => {
   itIsPolymorphic(ActionIcon, defaultProps);
   itRendersChildren(ActionIcon, defaultProps);
   itSupportsFocusEvents(ActionIcon, defaultProps, '.pattern-ActionIcon-root');
   itSupportsSystemProps({
     component: ActionIcon,
     props: defaultProps,
-    displayName: '@pattern/core/ActionIcon',
+    displayName: '@pattern-ui/core/ActionIcon',
     refType: HTMLButtonElement,
   });
 

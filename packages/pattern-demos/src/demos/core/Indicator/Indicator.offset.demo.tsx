@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, Indicator } from '@pattern/core';
+import { Avatar, Indicator } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

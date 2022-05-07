@@ -86,4 +86,4 @@ export function GroupedTransition({
   return <>{children(transitionsStyles)}</>;
 }
 
-GroupedTransition.displayName = '@pattern/core/GroupedTransition';
+GroupedTransition.displayName = '@pattern-ui/core/GroupedTransition';

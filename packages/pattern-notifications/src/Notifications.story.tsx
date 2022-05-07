@@ -1,7 +1,7 @@
 import React from 'react';
 import { CheckIcon } from '@modulz/radix-icons';
 import { storiesOf } from '@storybook/react';
-import { Button, Group, PatternProvider } from '@pattern/core';
+import { Button, Group, PatternProvider } from '@pattern-ui/core';
 import { showNotification, updateNotification } from './events';
 import { NotificationsProvider } from './NotificationsProvider/NotificationsProvider';
 

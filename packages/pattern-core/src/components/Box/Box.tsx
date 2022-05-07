@@ -4,7 +4,7 @@ import {
   PolymorphicComponentProps,
   PolymorphicRef,
   extractSystemStyles,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { useSx, BoxSx } from './use-sx/use-sx';
 
 interface _BoxProps extends Omit<DefaultProps, 'sx'> {
@@ -27,4 +27,4 @@ export const Box: BoxComponent = forwardRef(
   }
 ) as any;
 
-Box.displayName = '@pattern/core/Box';
+Box.displayName = '@pattern-ui/core/Box';

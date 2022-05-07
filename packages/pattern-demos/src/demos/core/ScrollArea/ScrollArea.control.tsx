@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollArea, ScrollAreaProps } from '@pattern/core';
+import { ScrollArea, ScrollAreaProps } from '@pattern-ui/core';
 import { Content } from './_content';
 
 function Wrapper(props: ScrollAreaProps) {
@@ -13,7 +13,7 @@ function Wrapper(props: ScrollAreaProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { ScrollArea } from '@pattern/core';
+import { ScrollArea } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

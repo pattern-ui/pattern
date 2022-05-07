@@ -1,5 +1,5 @@
 import React from 'react';
-import { Group, ScrollArea } from '@pattern/core';
+import { Group, ScrollArea } from '@pattern-ui/core';
 import { Content } from './_content';
 
 export default function Demo() {

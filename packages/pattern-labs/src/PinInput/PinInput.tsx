@@ -1,5 +1,5 @@
 import React, { forwardRef, useRef, useEffect, useState } from 'react';
-import { useUncontrolled, useUuid } from '@pattern/hooks';
+import { useUncontrolled, useUuid } from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternNumberSize,
@@ -9,7 +9,7 @@ import {
   Input,
   InputBaseProps,
   InputStylesNames,
-} from '@pattern/core';
+} from '@pattern-ui/core';
 import useStyles from './PinInput.styles';
 import { createPinArray } from './create-pin-array/create-pin-array';
 import { regex } from './regex/regex';
@@ -143,7 +143,7 @@ export const PinInput = forwardRef<HTMLDivElement, PinInputProps>(
           if (type instanceof RegExp) {
             matcher = type;
           } else {
-            throw new Error('[@pattern/core] PinInput: Invalid regex format');
+            throw new Error('[@pattern-ui/core] PinInput: Invalid regex format');
           }
       }
 
@@ -285,4 +285,4 @@ export const PinInput = forwardRef<HTMLDivElement, PinInputProps>(
   }
 );
 
-PinInput.displayName = '@pattern/core/PinInput';
+PinInput.displayName = '@pattern-ui/core/PinInput';

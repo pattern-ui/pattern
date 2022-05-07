@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, AvatarProps, Group } from '@pattern/core';
+import { Avatar, AvatarProps, Group } from '@pattern-ui/core';
 import { avatars } from './_mockdata';
 
 function Wrapper(props: AvatarProps<'div'>) {
@@ -11,7 +11,7 @@ function Wrapper(props: AvatarProps<'div'>) {
 }
 
 const codeTemplate = (props: string) => `
-import { Avatar } from '@pattern/core';
+import { Avatar } from '@pattern-ui/core';
 
 export default function Demo() {
   return <Avatar${props} />;

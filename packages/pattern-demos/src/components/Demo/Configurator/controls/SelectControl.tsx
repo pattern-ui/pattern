@@ -1,6 +1,6 @@
 import React from 'react';
-import { NativeSelect } from '@pattern/core';
-import { upperFirst } from '@pattern/hooks';
+import { NativeSelect } from '@pattern-ui/core';
+import { upperFirst } from '@pattern-ui/hooks';
 
 interface SelectControlProps {
   value: string;

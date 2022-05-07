@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, Selectors, Text, PatternNumberSize, PatternColor } from '@pattern/core';
+import { DefaultProps, Selectors, Text, PatternNumberSize, PatternColor } from '@pattern-ui/core';
 import type { SpotlightAction } from '../types';
 import type { DefaultActionProps, DefaultActionStylesNames } from '../DefaultAction/DefaultAction';
 import useStyles from './ActionsList.styles';
@@ -83,4 +83,4 @@ export function ActionsList({
   );
 }
 
-ActionsList.displayName = '@pattern/spotlight/ActionsList';
+ActionsList.displayName = '@pattern-ui/spotlight/ActionsList';

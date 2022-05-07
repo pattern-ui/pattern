@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePatternTheme } from '@pattern/core';
+import { usePatternTheme } from '@pattern-ui/core';
 import { ColorsGroup } from './ColorsGroup';
 
 export function ThemeColors() {

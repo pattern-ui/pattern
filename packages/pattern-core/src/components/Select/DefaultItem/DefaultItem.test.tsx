@@ -5,14 +5,14 @@ import {
   itSupportsOthers,
   itSupportsStyle,
   itSupportsRef,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { DefaultItem, SelectItemProps } from './DefaultItem';
 
 const defaultProps: SelectItemProps = {
   label: 'test',
 };
 
-describe('@pattern/core/Autocomplete/DefaultItem', () => {
+describe('@pattern-ui/core/Autocomplete/DefaultItem', () => {
   itSupportsClassName(DefaultItem, defaultProps);
   itSupportsOthers(DefaultItem, defaultProps);
   itSupportsStyle(DefaultItem, defaultProps);
@@ -29,6 +29,6 @@ describe('@pattern/core/Autocomplete/DefaultItem', () => {
   });
 
   it('has correct displayName', () => {
-    expect(DefaultItem.displayName).toStrictEqual('@pattern/core/DefaultItem');
+    expect(DefaultItem.displayName).toStrictEqual('@pattern-ui/core/DefaultItem');
   });
 });

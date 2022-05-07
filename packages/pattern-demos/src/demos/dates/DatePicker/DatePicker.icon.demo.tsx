@@ -1,6 +1,6 @@
 import React from 'react';
 import { Calendar } from 'tabler-icons-react';
-import { DatePicker } from '@pattern/dates';
+import { DatePicker } from '@pattern-ui/dates';
 
 export default function Demo() {
   return (

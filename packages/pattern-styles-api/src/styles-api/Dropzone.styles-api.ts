@@ -1,4 +1,4 @@
-import type { DropzoneStylesNames, FullScreenDropzoneStylesNames } from '@pattern/dropzone';
+import type { DropzoneStylesNames, FullScreenDropzoneStylesNames } from '@pattern-ui/dropzone';
 
 export const Dropzone: Record<DropzoneStylesNames, string> = {
   root: 'Root element',

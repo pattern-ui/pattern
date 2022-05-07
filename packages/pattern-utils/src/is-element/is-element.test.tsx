@@ -4,7 +4,7 @@ import { isElement } from './is-element';
 const TestComponent = () => <div />;
 const TextRefComponent = forwardRef<HTMLDivElement>((_props, ref) => <div ref={ref} />);
 
-describe('@pattern/utils/is-element', () => {
+describe('@pattern-ui/utils/is-element', () => {
   it('correctly detects elements', () => {
     expect(isElement(<div>Element</div>)).toBe(true);
     expect(isElement(<TestComponent />)).toBe(true);

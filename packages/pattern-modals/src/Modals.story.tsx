@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Button, Text, Group } from '@pattern/core';
+import { Button, Text, Group } from '@pattern-ui/core';
 import { ModalsProvider, useModals, ContextModalProps } from './index';
 
 function DemoWithoutLabels() {

@@ -1,17 +1,17 @@
 ---
 group: 'pattern-hooks'
-package: '@pattern/hooks'
+package: '@pattern-ui/hooks'
 title: 'use-media-query'
 category: 'dom'
 order: 1
 slug: /hooks/use-media-query/
 description: 'Subscribe to media queries with window.matchMedia'
-import: "import { useMediaQuery } from '@pattern/hooks';"
+import: "import { useMediaQuery } from '@pattern-ui/hooks';"
 docs: 'hooks/use-media-query.mdx'
 source: 'pattern-hooks/src/use-media-query/use-media-query.ts'
 ---
 
-import { HooksDemos } from '@pattern/demos';
+import { HooksDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -33,8 +33,8 @@ For example, the server will generate the html for clients using a smaller devic
 After the hydration, the hook will render again and return the result of the media query:
 
 ```tsx
-import { Badge } from '@pattern/core';
-import { useMediaQuery } from '@pattern/hooks';
+import { Badge } from '@pattern-ui/core';
+import { useMediaQuery } from '@pattern-ui/hooks';
 
 function Demo() {
   const matches = useMediaQuery('(min-width: 900px)', false);

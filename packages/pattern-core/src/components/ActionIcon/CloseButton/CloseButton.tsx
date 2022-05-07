@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { usePatternTheme } from '@pattern/styles';
+import { usePatternTheme } from '@pattern-ui/styles';
 import { ActionIcon, ActionIconProps } from '../ActionIcon';
 import { CloseIcon } from './CloseIcon';
 
@@ -29,4 +29,4 @@ export const CloseButton = forwardRef<HTMLButtonElement, CloseButtonProps>(
   }
 );
 
-CloseButton.displayName = '@pattern/core/CloseButton';
+CloseButton.displayName = '@pattern-ui/core/CloseButton';

@@ -13,8 +13,8 @@ import {
   getGroupedOptions,
   PatternNumberSize,
   PatternColor,
-} from '@pattern/core';
-import { useScrollLock, useFocusTrap, useDidUpdate, useFocusReturn } from '@pattern/hooks';
+} from '@pattern-ui/core';
+import { useScrollLock, useFocusTrap, useDidUpdate, useFocusReturn } from '@pattern-ui/hooks';
 import { DefaultAction, DefaultActionProps } from '../DefaultAction/DefaultAction';
 import { ActionsList, ActionsListStylesNames } from '../ActionsList/ActionsList';
 import type { SpotlightAction } from '../types';
@@ -279,4 +279,4 @@ export function Spotlight({
   );
 }
 
-Spotlight.displayName = '@pattern/spotlight/Spotlight';
+Spotlight.displayName = '@pattern-ui/spotlight/Spotlight';

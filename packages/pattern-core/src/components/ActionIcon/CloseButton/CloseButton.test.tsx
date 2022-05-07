@@ -1,17 +1,17 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { checkAccessibility, itSupportsSystemProps, itSupportsFocusEvents } from '@pattern/tests';
+import { checkAccessibility, itSupportsSystemProps, itSupportsFocusEvents } from '@pattern-ui/tests';
 import { CloseButton, CloseButtonProps } from './CloseButton';
 
 const defaultProps: CloseButtonProps = {};
 
-describe('@pattern/core/CloseButton', () => {
+describe('@pattern-ui/core/CloseButton', () => {
   checkAccessibility([<CloseButton aria-label="test" />, <CloseButton title="test" />]);
   itSupportsFocusEvents(CloseButton, defaultProps, '.pattern-ActionIcon-root');
   itSupportsSystemProps({
     component: CloseButton as any,
     props: defaultProps,
-    displayName: '@pattern/core/CloseButton',
+    displayName: '@pattern-ui/core/CloseButton',
     refType: HTMLButtonElement,
   });
 

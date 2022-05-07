@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Group } from '@pattern/core';
+import { Switch, Group } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

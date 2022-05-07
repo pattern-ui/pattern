@@ -1,5 +1,5 @@
 import { createContext, ReactNode } from 'react';
-import { ModalProps } from '@pattern/core';
+import { ModalProps } from '@pattern-ui/core';
 import type { ConfirmModalProps } from './ConfirmModal';
 
 export type ModalSettings = Partial<Omit<ModalProps, 'opened'>>;
@@ -36,4 +36,4 @@ export interface ModalsContextProps {
 }
 
 export const ModalsContext = createContext<ModalsContextProps>(null);
-ModalsContext.displayName = '@pattern/modals/ModalsContext';
+ModalsContext.displayName = '@pattern-ui/modals/ModalsContext';

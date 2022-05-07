@@ -1,4 +1,4 @@
-import type { MonthStylesNames } from '@pattern/dates';
+import type { MonthStylesNames } from '@pattern-ui/dates';
 
 export const Month: Record<MonthStylesNames, string> = {
   month: 'Root element',

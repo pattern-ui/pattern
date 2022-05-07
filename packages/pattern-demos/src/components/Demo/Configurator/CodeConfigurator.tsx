@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { usePatternTheme } from '@pattern/core';
-import { Prism } from '@pattern/prism';
+import { usePatternTheme } from '@pattern-ui/core';
+import { Prism } from '@pattern-ui/prism';
 import controls, { ControlProps } from './controls';
 import { propsToString } from './props-to-string';
 import useStyles from './CodeConfigurator.styles';

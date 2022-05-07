@@ -6,14 +6,14 @@ order: 0
 search: 'Theme object, usePatternTheme, default props, normalize.css, emotionOptions'
 ---
 
-import { ThemeDemos } from '@pattern/demos';
+import { ThemeDemos } from '@pattern-ui/demos';
 
 # PatternProvider
 
 PatternProvider component can be used to change theme globally. It is not required if you decide to use default theme:
 
 ```tsx
-import { PatternProvider, Button } from '@pattern/core';
+import { PatternProvider, Button } from '@pattern-ui/core';
 
 function App() {
   return <Button>My app button</Button>;
@@ -110,7 +110,7 @@ interface PatternTheme {
   // Add your own custom properties on Pattern theme
   other: Record<string, any>;
 
-  // Default dates formatting locale used in every @pattern/dates component
+  // Default dates formatting locale used in every @pattern-ui/dates component
   datesLocale: string;
 }
 ```
@@ -118,7 +118,7 @@ interface PatternTheme {
 Pass theme object to PatternProvider to change global styles:
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -160,7 +160,7 @@ function App() {
 To store theme override object in a variable use `PatternThemeOverride` type:
 
 ```tsx
-import { PatternThemeOverride, PatternProvider } from '@pattern/core';
+import { PatternThemeOverride, PatternProvider } from '@pattern-ui/core';
 
 const myTheme: PatternThemeOverride = {
   colorScheme: 'light',
@@ -183,7 +183,7 @@ Hook returns theme from PatternProvider context or default theme
 if you did not wrap application with PatternProvider.
 
 ```tsx
-import { usePatternTheme } from '@pattern/core';
+import { usePatternTheme } from '@pattern-ui/core';
 
 function Demo() {
   const theme = usePatternTheme();
@@ -201,7 +201,7 @@ Nested PatternProviders will inherit `theme` override, `emotionOptions`, `defaul
 parent provider if `inherit` prop is set:
 
 ```tsx
-import { PatternProvider, Button } from '@pattern/core';
+import { PatternProvider, Button } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -239,7 +239,7 @@ All components that are rendered inside PatternProvider will inherit those style
 If component does not specify Styles API selectors, then in most cases you can add styles using `root` selector:
 
 ```tsx
-import { PatternProvider, Text } from '@pattern/core';
+import { PatternProvider, Text } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -259,7 +259,7 @@ function App() {
 Same as with `styles` you can add classes to all components with `classNames` prop on PatternProvider:
 
 ```tsx
-import { PatternProvider, Button } from '@pattern/core';
+import { PatternProvider, Button } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -282,7 +282,7 @@ If you prefer to style components with CSS/SCSS or other styling solutions that 
 context, then you can use Pattern CSS variables. To add css variables set `withCSSVariables` prop on PatternProvider:
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -326,7 +326,7 @@ Pattern exposes the following CSS variables based on `theme` you provide:
 All Pattern components support default props on PatternProvider:
 
 ```tsx
-import { PatternProvider, Button, Badge } from '@pattern/core';
+import { PatternProvider, Button, Badge } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -364,7 +364,7 @@ PatternProvider includes [normalize.css](https://necolas.github.io/normalize.css
 To enable these global styles, set `withNormalizeCSS` and `withGlobalStyles` props:
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -385,7 +385,7 @@ You can provide [emotion options](https://emotion.sh/docs/@emotion/cache#options
 - `stylisPlugins` – an array of Stylis plugins that will be run by Stylis during preprocessing, for example [stylis-plugin-rtl](https://www.npmjs.com/package/stylis-plugin-rtl) can be used to add [RTL](/theming/rtl) support
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -403,7 +403,7 @@ To make Pattern styles override other styles, set `prepend` to `false`.
 With this option styles will be added at the end of `head` element:
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -423,7 +423,7 @@ function App() {
 To change classes prefix set `emotionOptions.key` property:
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 function App() {
   return (

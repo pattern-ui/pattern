@@ -1,5 +1,5 @@
 import React from 'react';
-import { DEFAULT_THEME, ColorPicker, ColorPickerProps } from '@pattern/core';
+import { DEFAULT_THEME, ColorPicker, ColorPickerProps } from '@pattern-ui/core';
 
 function Wrapper(props: ColorPickerProps) {
   return (
@@ -14,7 +14,7 @@ function Wrapper(props: ColorPickerProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { ColorPicker } from '@pattern/core';
+import { ColorPicker } from '@pattern-ui/core';
 
 export default function Demo() {
   return <ColorPicker${props} />;

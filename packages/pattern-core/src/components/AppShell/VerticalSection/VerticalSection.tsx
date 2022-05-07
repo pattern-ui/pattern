@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, getDefaultZIndex, Global } from '@pattern/styles';
+import { DefaultProps, getDefaultZIndex, Global } from '@pattern-ui/styles';
 import { Box } from '../../Box';
 import { useAppShellContext } from '../AppShell.context';
 import useStyles, { VerticalSectionPosition } from './VerticalSection.styles';
@@ -78,4 +78,4 @@ export const VerticalSection = forwardRef<HTMLElement, VerticalSectionProps>(
   }
 );
 
-VerticalSection.displayName = '@pattern/core/VerticalSection';
+VerticalSection.displayName = '@pattern-ui/core/VerticalSection';

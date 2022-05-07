@@ -6,12 +6,12 @@ import {
   itIsPolymorphic,
   itSupportsSystemProps,
   itSupportsFocusEvents,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { Button, ButtonProps } from './Button';
 
 const defaultProps: ButtonProps<'button'> = {};
 
-describe('@pattern/core/Button', () => {
+describe('@pattern-ui/core/Button', () => {
   checkAccessibility([<Button>Pattern button</Button>]);
   itRendersChildren(Button, defaultProps);
   itIsPolymorphic(Button, defaultProps);
@@ -19,7 +19,7 @@ describe('@pattern/core/Button', () => {
   itSupportsSystemProps({
     component: Button,
     props: defaultProps,
-    displayName: '@pattern/core/Button',
+    displayName: '@pattern-ui/core/Button',
     refType: HTMLButtonElement,
   });
 

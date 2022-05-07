@@ -1,6 +1,6 @@
 import React from 'react';
 import { At } from 'tabler-icons-react';
-import { Input, InputProps } from '@pattern/core';
+import { Input, InputProps } from '@pattern-ui/core';
 
 const iconSizes = {
   xs: 14,
@@ -15,7 +15,7 @@ function Wrapper(props: InputProps<'input'>) {
 }
 
 const codeTemplate = (props: string) => `
-import { Input } from '@pattern/core';
+import { Input } from '@pattern-ui/core';
 import { At } from 'tabler-icons-react';
 
 export default function Demo() {

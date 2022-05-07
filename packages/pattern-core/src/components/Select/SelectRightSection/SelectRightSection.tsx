@@ -1,5 +1,5 @@
 import React from 'react';
-import { PatternSize } from '@pattern/styles';
+import { PatternSize } from '@pattern-ui/styles';
 import { CloseButton } from '../../ActionIcon/CloseButton/CloseButton';
 import { ChevronIcon } from './ChevronIcon';
 
@@ -35,4 +35,4 @@ export function SelectRightSection({
   );
 }
 
-SelectRightSection.displayName = '@pattern/core/SelectRightSection';
+SelectRightSection.displayName = '@pattern-ui/core/SelectRightSection';

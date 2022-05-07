@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { WithinOverlays, SubmitForm, StylesAPIStory } from '@pattern/storybook';
-import { PatternProvider } from '@pattern/styles';
+import { WithinOverlays, SubmitForm, StylesAPIStory } from '@pattern-ui/storybook';
+import { PatternProvider } from '@pattern-ui/styles';
 import { Autocomplete } from './Autocomplete';
 
 function DynamicData() {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Group, Box, Overlay } from '@pattern/core';
+import { Button, Group, Box, Overlay } from '@pattern-ui/core';
 
 export default function Demo() {
   const [visible, setVisible] = useState(false);

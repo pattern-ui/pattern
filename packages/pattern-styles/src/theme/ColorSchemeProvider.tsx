@@ -36,4 +36,4 @@ export function ColorSchemeProvider({
   );
 }
 
-ColorSchemeProvider.displayName = '@pattern/core/ColorSchemeProvider';
+ColorSchemeProvider.displayName = '@pattern-ui/core/ColorSchemeProvider';

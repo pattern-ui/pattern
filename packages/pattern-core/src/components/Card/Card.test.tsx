@@ -1,4 +1,4 @@
-import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Card, CardProps } from './Card';
 import { CardSection } from './CardSection/CardSection';
 
@@ -6,13 +6,13 @@ const defaultProps: CardProps<'div'> = {
   children: 'test-card',
 };
 
-describe('@pattern/core/Card', () => {
+describe('@pattern-ui/core/Card', () => {
   itRendersChildren(Card, defaultProps);
   itIsPolymorphic(Card, defaultProps);
   itSupportsSystemProps({
     component: Card,
     props: defaultProps,
-    displayName: '@pattern/core/Card',
+    displayName: '@pattern-ui/core/Card',
     refType: HTMLDivElement,
   });
 

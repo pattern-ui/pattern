@@ -1,5 +1,5 @@
 import React from 'react';
-import { checkAccessibility, itSupportsSystemProps } from '@pattern/tests';
+import { checkAccessibility, itSupportsSystemProps } from '@pattern-ui/tests';
 import { AlphaSlider, AlphaSliderProps } from './AlphaSlider';
 
 const defaultProps: AlphaSliderProps = {
@@ -9,12 +9,12 @@ const defaultProps: AlphaSliderProps = {
   size: 'sm',
 };
 
-describe('@pattern/core/AlphaSlider', () => {
+describe('@pattern-ui/core/AlphaSlider', () => {
   checkAccessibility([<AlphaSlider {...defaultProps} aria-label="test-label" />]);
   itSupportsSystemProps({
     component: AlphaSlider,
     props: defaultProps,
-    displayName: '@pattern/core/AlphaSlider',
+    displayName: '@pattern-ui/core/AlphaSlider',
     refType: HTMLDivElement,
   });
 });

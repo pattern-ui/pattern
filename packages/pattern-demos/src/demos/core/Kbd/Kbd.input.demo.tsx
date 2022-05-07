@@ -1,6 +1,6 @@
 import React from 'react';
 import { Search } from 'tabler-icons-react';
-import { Kbd, TextInput } from '@pattern/core';
+import { Kbd, TextInput } from '@pattern-ui/core';
 
 export default function Demo() {
   const rightSection = (

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import dayjs from 'dayjs';
-import { Group } from '@pattern/core';
-import { Calendar } from '@pattern/dates';
+import { Group } from '@pattern-ui/core';
+import { Calendar } from '@pattern-ui/dates';
 
 export default function Demo() {
   const [value, setValue] = useState(null);

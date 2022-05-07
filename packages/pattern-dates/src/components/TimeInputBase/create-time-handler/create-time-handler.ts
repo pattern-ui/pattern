@@ -1,4 +1,4 @@
-import { clamp } from '@pattern/hooks';
+import { clamp } from '@pattern-ui/hooks';
 import { padTime } from '../pad-time/pad-time';
 import { allButLastDigit } from './all-but-last-digit/all-but-last-digit';
 

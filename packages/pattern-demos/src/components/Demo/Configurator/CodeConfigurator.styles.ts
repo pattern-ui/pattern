@@ -1,4 +1,4 @@
-import { createStyles, PatternTheme } from '@pattern/core';
+import { createStyles, PatternTheme } from '@pattern-ui/core';
 
 const BREAKPOINT = 885;
 

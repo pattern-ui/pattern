@@ -7,7 +7,7 @@ import {
   getDefaultZIndex,
   usePatternDefaultProps,
   CSSObject,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 
 interface _OverlayProps extends DefaultProps {
@@ -97,4 +97,4 @@ export const Overlay: OverlayComponent = forwardRef(
   }
 ) as any;
 
-Overlay.displayName = '@pattern/core/Overlay';
+Overlay.displayName = '@pattern-ui/core/Overlay';

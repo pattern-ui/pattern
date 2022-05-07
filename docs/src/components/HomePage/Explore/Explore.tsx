@@ -1,4 +1,4 @@
-import { Container } from '@pattern/core';
+import { Container } from '@pattern-ui/core';
 import React from 'react';
 import { SectionTitle } from '../SectionTitle/SectionTitle';
 import { CoreComponents } from './CoreComponents/CoreComponents';

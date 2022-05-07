@@ -1,7 +1,7 @@
 import React from 'react';
-import { DefaultProps, useContextStylesApi } from '@pattern/styles';
-import { getArrowPositionStyles, closeOnEscape } from '@pattern/utils';
-import { useFocusReturn } from '@pattern/hooks';
+import { DefaultProps, useContextStylesApi } from '@pattern-ui/styles';
+import { getArrowPositionStyles, closeOnEscape } from '@pattern-ui/utils';
+import { useFocusReturn } from '@pattern-ui/hooks';
 import { Box } from '../../Box';
 import { Transition } from '../../Transition';
 import { FocusTrap } from '../../FocusTrap';
@@ -80,4 +80,4 @@ export function PopoverDropdown({ style, className, children, ...others }: Popov
   );
 }
 
-PopoverDropdown.displayName = '@pattern/core/PopoverDropdown';
+PopoverDropdown.displayName = '@pattern-ui/core/PopoverDropdown';

@@ -22,7 +22,7 @@ function serializeJSON<T>(value: T) {
   try {
     return JSON.stringify(value);
   } catch (error) {
-    throw new Error('@pattern/hooks use-local-storage: Failed to serialize the value');
+    throw new Error('@pattern-ui/hooks use-local-storage: Failed to serialize the value');
   }
 }
 

@@ -12,7 +12,7 @@ const Target: React.FunctionComponent<any> = () => {
   );
 };
 
-describe('@pattern/hooks/use-hover', () => {
+describe('@pattern-ui/hooks/use-hover', () => {
   it('changes `hovered` on mouseenter/mouseleave correctly', () => {
     render(<Target />);
     const target = screen.getByTestId('target');

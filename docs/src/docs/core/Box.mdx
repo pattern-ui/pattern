@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Box
 order: 1
 slug: /core/box/
 category: 'misc'
 description: 'Add inline styles to any element or component with sx'
 props: ['Box']
-import: "import { Box } from '@pattern/core';"
+import: "import { Box } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Box/Box.tsx'
 docs: 'core/Box.mdx'
 styles: ['Box', 'single-node']
 ---
 
-import { BoxDemos } from '@pattern/demos';
+import { BoxDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -27,7 +27,7 @@ Box itself does not include any styles.
 To use Box with custom component or element set `component` prop to tag name or react component:
 
 ```tsx
-import { ActionIcon } from '@pattern/core';
+import { ActionIcon } from '@pattern-ui/core';
 import { Link } from 'react-router-dom';
 
 function Demo() {

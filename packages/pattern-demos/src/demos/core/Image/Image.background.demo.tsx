@@ -1,5 +1,5 @@
 import React from 'react';
-import { BackgroundImage, BackgroundImageProps, Center, Text, Box } from '@pattern/core';
+import { BackgroundImage, BackgroundImageProps, Center, Text, Box } from '@pattern-ui/core';
 
 function Wrapper(props: BackgroundImageProps<'div'>) {
   return (
@@ -20,7 +20,7 @@ function Wrapper(props: BackgroundImageProps<'div'>) {
 }
 
 const codeTemplate = (props: string) => `
-import { BackgroundImage, Center, Text, Box } from '@pattern/core';
+import { BackgroundImage, Center, Text, Box } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

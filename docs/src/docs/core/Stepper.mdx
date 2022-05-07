@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Stepper
 order: 1
 slug: /core/stepper/
 category: 'navigation'
 description: 'Display content divided into a steps sequence'
 props: ['Stepper', 'Step']
-import: "import { Stepper, Step } from '@pattern/core';"
+import: "import { Stepper, Step } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Stepper/Stepper.tsx'
 docs: 'core/Stepper.mdx'
 styles: ['Stepper']
 ---
 
-import { StepperDemos } from '@pattern/demos';
+import { StepperDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -104,7 +104,7 @@ You can get refs of step button and stepper root element (div):
 
 ```tsx
 import { useRef } from 'react';
-import { Stepper } from '@pattern/core';
+import { Stepper } from '@pattern-ui/core';
 
 function MyStepper() {
   const firstStep = useRef<HTMLButtonElement>();

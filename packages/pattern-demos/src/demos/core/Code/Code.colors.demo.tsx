@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Group } from '@pattern/core';
+import { Code, Group } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

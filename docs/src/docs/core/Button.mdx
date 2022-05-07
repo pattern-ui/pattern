@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Button
 order: 1
 slug: /core/button/
 category: 'inputs'
 description: 'Render button or link with button styles from pattern theme'
 props: ['Button']
-import: "import { Button } from '@pattern/core';"
+import: "import { Button } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Button/Button.tsx'
 docs: 'core/Button.mdx'
 styles: ['Button']
 ---
 
-import { ButtonDemos } from '@pattern/demos';
+import { ButtonDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -111,7 +111,7 @@ or other similar libraries by passing `Link` as component to Button:
 
 ```tsx
 import { Link } from 'react-router-dom';
-import { Button } from '@pattern/core';
+import { Button } from '@pattern-ui/core';
 
 function Demo() {
   return (
@@ -125,7 +125,7 @@ function Demo() {
 Provide type to use custom element with TypeScript:
 
 ```tsx
-import { Button } from '@pattern/core';
+import { Button } from '@pattern-ui/core';
 import { Link } from 'react-router-dom';
 
 function Demo() {
@@ -142,7 +142,7 @@ function Demo() {
 
 ```tsx
 import { useRef } from 'react';
-import { Button } from '@pattern/core';
+import { Button } from '@pattern-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLButtonElement>();

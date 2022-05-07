@@ -6,19 +6,19 @@ import {
   itSupportsSystemProps,
   itSupportsFocusEvents,
   itSupportsInputProps,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { TextInput, TextInputProps } from './TextInput';
 
 const defaultProps: TextInputProps = {};
 
-describe('@pattern/core/Input', () => {
+describe('@pattern-ui/core/Input', () => {
   checkAccessibility([<TextInput label="test-input" />, <TextInput aria-label="test-input" />]);
   itSupportsInputProps(TextInput, defaultProps, 'TextInput');
   itSupportsFocusEvents(TextInput, defaultProps, 'input');
   itSupportsSystemProps({
     component: TextInput,
     props: defaultProps,
-    displayName: '@pattern/core/TextInput',
+    displayName: '@pattern-ui/core/TextInput',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Title } from '@pattern/core';
+import { Container, Title } from '@pattern-ui/core';
 import Head from '../Head/Head';
 import { Footer } from '../Footer/Footer';
 import { Logos } from './Logos';

@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { Portal } from './Portal';
 
-describe('@pattern/core/Portal', () => {
+describe('@pattern-ui/core/Portal', () => {
   it('renders content inside portal', () => {
     render(<Portal className="test-portal">test-portal</Portal>);
     const portal = document.querySelector('.test-portal');
@@ -50,6 +50,6 @@ describe('@pattern/core/Portal', () => {
   });
 
   it('has correct displayName', () => {
-    expect(Portal.displayName).toStrictEqual('@pattern/core/Portal');
+    expect(Portal.displayName).toStrictEqual('@pattern-ui/core/Portal');
   });
 });

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LoadingOverlay, Button, Group, usePatternTheme, DEFAULT_THEME } from '@pattern/core';
+import { LoadingOverlay, Button, Group, usePatternTheme, DEFAULT_THEME } from '@pattern-ui/core';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 import { demoBase } from './_demo-base';
 

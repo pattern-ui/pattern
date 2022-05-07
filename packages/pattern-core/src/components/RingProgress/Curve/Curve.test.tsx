@@ -1,7 +1,7 @@
 import { Curve } from './Curve';
 
-describe('@pattern/core/RingProgress/Curve', () => {
+describe('@pattern-ui/core/RingProgress/Curve', () => {
   it('has correct displayName', () => {
-    expect(Curve.displayName).toStrictEqual('@pattern/core/Curve');
+    expect(Curve.displayName).toStrictEqual('@pattern-ui/core/Curve');
   });
 });

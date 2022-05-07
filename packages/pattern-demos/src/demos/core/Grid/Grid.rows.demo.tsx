@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from '@pattern/core';
+import { Grid } from '@pattern-ui/core';
 import { ColWrapper as Col } from './_col-wrapper';
 
 export default function Demo() {

@@ -1,4 +1,4 @@
-import type { TransferListStylesNames } from '@pattern/core';
+import type { TransferListStylesNames } from '@pattern-ui/core';
 
 export const TransferList: Record<TransferListStylesNames, string> = {
   transferList: 'One of list',

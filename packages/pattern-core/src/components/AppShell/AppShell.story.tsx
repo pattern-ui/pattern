@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { DEFAULT_THEME, usePatternTheme, PatternProvider } from '@pattern/styles';
-import { StylesAPIStory } from '@pattern/storybook';
+import { DEFAULT_THEME, usePatternTheme, PatternProvider } from '@pattern-ui/styles';
+import { StylesAPIStory } from '@pattern-ui/storybook';
 import { Burger } from '../Burger';
 import { Text } from '../Text';
 import { MediaQuery } from '../MediaQuery';

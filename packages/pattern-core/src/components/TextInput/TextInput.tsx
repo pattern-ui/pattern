@@ -1,11 +1,11 @@
 import React, { forwardRef } from 'react';
-import { useUuid } from '@pattern/hooks';
+import { useUuid } from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternSize,
   extractSystemStyles,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Input, InputBaseProps, InputStylesNames } from '../Input/Input';
 import {
   InputWrapperBaseProps,
@@ -110,4 +110,4 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
   }
 );
 
-TextInput.displayName = '@pattern/core/TextInput';
+TextInput.displayName = '@pattern-ui/core/TextInput';

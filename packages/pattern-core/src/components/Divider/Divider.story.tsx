@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { DEFAULT_THEME, PatternProvider } from '@pattern/styles';
+import { DEFAULT_THEME, PatternProvider } from '@pattern-ui/styles';
 import { Divider } from './Divider';
 
 const getColors = (props?: any) =>

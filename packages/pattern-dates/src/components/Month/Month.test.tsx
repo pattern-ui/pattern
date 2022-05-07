@@ -2,7 +2,7 @@ import 'dayjs/locale/ru';
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { Month, MonthProps } from './Month';
 
 const defaultProps: MonthProps = {
@@ -10,11 +10,11 @@ const defaultProps: MonthProps = {
   value: new Date(2021, 11, 5),
 };
 
-describe('@pattern/dates/Month', () => {
+describe('@pattern-ui/dates/Month', () => {
   itSupportsSystemProps({
     component: Month,
     props: defaultProps,
-    displayName: '@pattern/dates/Month',
+    displayName: '@pattern-ui/dates/Month',
     refType: HTMLTableElement,
   });
 

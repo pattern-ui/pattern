@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MultiSelect } from '@pattern/core';
+import { MultiSelect } from '@pattern-ui/core';
 
 export default function Demo() {
   const [data, setData] = useState(['React', 'Angular', 'Svelte', 'Vue']);

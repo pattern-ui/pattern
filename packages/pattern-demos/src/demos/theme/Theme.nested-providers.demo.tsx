@@ -1,5 +1,5 @@
 import React from 'react';
-import { Group, Button, Text, PatternProvider, usePatternColorScheme } from '@pattern/core';
+import { Group, Button, Text, PatternProvider, usePatternColorScheme } from '@pattern-ui/core';
 
 export default function Demo() {
   const { colorScheme } = usePatternColorScheme();

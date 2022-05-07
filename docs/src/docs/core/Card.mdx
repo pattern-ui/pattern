@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Card
 order: 1
 slug: /core/card/
 category: 'data-display'
 description: 'Card with context styles for Image and Divider components'
 props: ['Card']
-import: "import { Card } from '@pattern/core';"
+import: "import { Card } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Card/Card.tsx'
 docs: 'core/Card.mdx'
 styles: ['Card', 'single-node']
 ---
 
-import { CardDemos } from '@pattern/demos';
+import { CardDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -73,7 +73,7 @@ You can also use React component instead of an element, for example, Link from r
 
 ```tsx
 import { Link } from 'react-router-dom';
-import { Card } from '@pattern/core';
+import { Card } from '@pattern-ui/core';
 
 function Demo() {
   return <Card component={Link} to="/my-route/" />;
@@ -83,7 +83,7 @@ function Demo() {
 To use custom component with TypeScript provide type:
 
 ```tsx
-import { Card } from '@pattern/core';
+import { Card } from '@pattern-ui/core';
 import { Link } from 'react-router-dom';
 
 function Demo() {

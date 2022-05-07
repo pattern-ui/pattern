@@ -1,6 +1,6 @@
 import React from 'react';
-import { useOs } from '@pattern/hooks';
-import { Text } from '@pattern/core';
+import { useOs } from '@pattern-ui/hooks';
+import { Text } from '@pattern-ui/core';
 
 export default function Demo() {
   const os = useOs();

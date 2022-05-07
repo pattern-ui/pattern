@@ -1,34 +1,34 @@
 ---
 group: 'Other packages'
-package: '@pattern/modals'
+package: '@pattern-ui/modals'
 title: 'Modals manager'
 order: 1
 slug: /others/modals/
 description: 'Centralized modals manager with option to handle state of multi-step modals'
 props: ['ModalsProvider']
-import: "import { ModalsProvider } from '@pattern/modals';"
+import: "import { ModalsProvider } from '@pattern-ui/modals';"
 source: 'pattern-modals/src'
 docs: 'others/modals.mdx'
-installation: '@pattern/modals'
+installation: '@pattern-ui/modals'
 license: MIT
 ---
 
-import { ModalsDemos } from '@pattern/demos';
+import { ModalsDemos } from '@pattern-ui/demos';
 
 ## Installation
 
-Package depends on @pattern/core and @pattern/hooks.
+Package depends on @pattern-ui/core and @pattern-ui/hooks.
 
 Install with npm:
 
 ```sh
-npm install @pattern/modals @pattern/core @pattern/hooks
+npm install @pattern-ui/modals @pattern-ui/core @pattern-ui/hooks
 ```
 
 Install with yarn:
 
 ```sh
-yarn add @pattern/modals @pattern/core @pattern/hooks
+yarn add @pattern-ui/modals @pattern-ui/core @pattern-ui/hooks
 ```
 
 ## Setup ModalsProvider
@@ -36,8 +36,8 @@ yarn add @pattern/modals @pattern/core @pattern/hooks
 Wrap your app with `ModalsProvider` component:
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
-import { ModalsProvider } from '@pattern/modals';
+import { PatternProvider } from '@pattern-ui/core';
+import { ModalsProvider } from '@pattern-ui/modals';
 
 function App() {
   return (
@@ -52,7 +52,7 @@ function App() {
 
 ## Confirm modal
 
-@pattern/modals package includes special modal that can be used for confirmations.
+@pattern-ui/modals package includes special modal that can be used for confirmations.
 Component includes confirm and cancel buttons and supports children to display additional
 information about action. Use `openConfirmModal` function to open a confirm modal:
 
@@ -78,7 +78,7 @@ Using this properties you can customize confirm modal to match current context r
 To setup shared labels for confirm modals set `labels` on `ModalsProvider`:
 
 ```tsx
-import { ModalsProvider } from '@pattern/modals';
+import { ModalsProvider } from '@pattern-ui/modals';
 
 function Demo() {
   return (
@@ -94,8 +94,8 @@ function Demo() {
 You can define any amount of modals in ModalsProvider context:
 
 ```tsx
-import { ContextModalProps, ModalsProvider } from '@pattern/modals';
-import { Text, Button } from '@pattern/core';
+import { ContextModalProps, ModalsProvider } from '@pattern-ui/modals';
+import { Text, Button } from '@pattern-ui/core';
 
 const TestModal = ({ context, id, innerProps }: ContextModalProps<{ modalBody: string }>) => (
   <>

@@ -4,7 +4,7 @@ import {
   PatternNumberSize,
   ForwardRefWithStaticComponents,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import { Col } from './Col/Col';
 import { GridProvider } from './Grid.context';
@@ -71,4 +71,4 @@ export const Grid: GridComponent = forwardRef<HTMLDivElement, GridProps>(
 ) as any;
 
 Grid.Col = Col;
-Grid.displayName = '@pattern/core/Grid';
+Grid.displayName = '@pattern-ui/core/Grid';

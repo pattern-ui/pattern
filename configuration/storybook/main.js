@@ -2,14 +2,14 @@
 const path = require('path');
 const { argv } = require('yargs');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin').default;
-const demoLoader = path.resolve('./packages/pattern-demo-loader/lib/index.js');
+const demoLoader = path.resolve('./packages/pattern-demo-loader/cjs/index.js');
 
 const storiesPath = !argv._[0]
   ? path.resolve(__dirname, '../../packages/**/*.story.@(ts|tsx)').replace(/\\/g, '/')
   : path
       .resolve(
         __dirname,
-        `../../packages/pattern-${argv._[0].replace('@pattern/', '')}/**/*.story.@(ts|tsx)`
+        `../../packages/pattern-${argv._[0].replace('@pattern-ui/', '')}/**/*.story.@(ts|tsx)`
       )
       .replace(/\\/g, '/');
 
@@ -34,7 +34,7 @@ module.exports = {
       ],
     };
 
-    config.resolve.alias['@pattern/demos'] = path.resolve('../packages/pattern-demos/src');
+    config.resolve.alias['@pattern-ui/demos'] = path.resolve('../packages/pattern-demos/src');
 
     config.module.rules.push({
       test: /\.demo(\.[^.]+)?\.tsx$/,

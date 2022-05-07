@@ -1,5 +1,5 @@
 import React from 'react';
-import { Blockquote, BlockquoteProps } from '@pattern/core';
+import { Blockquote, BlockquoteProps } from '@pattern-ui/core';
 
 function Wrapper(props: BlockquoteProps) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: BlockquoteProps) {
 }
 
 const codeTemplate = (props: string, children: string) => `
-import { Blockquote } from '@pattern/core';
+import { Blockquote } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

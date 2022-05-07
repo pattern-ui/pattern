@@ -22,7 +22,7 @@
   ],
   "compilerOptions": {
     "paths": {
-      "@pattern/*": ["packages/pattern-*/src"],
+      "@pattern-ui/*": ["packages/pattern-*/src"],
       "@demos/*": ["packages/pattern-*/src/demos"]
     }
   }

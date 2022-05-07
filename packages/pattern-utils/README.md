@@ -8,10 +8,10 @@ A set of utils used in Pattern packages
 
 ```sh
 # With yarn
-yarn add @pattern/utils
+yarn add @pattern-ui/utils
 
 # With npm
-npm install @pattern/utils
+npm install @pattern-ui/utils
 ```
 
 ## License

@@ -1,17 +1,17 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { LoadingOverlay, LoadingOverlayProps } from './LoadingOverlay';
 
 const defaultProps: LoadingOverlayProps = {
   visible: true,
 };
 
-describe('@pattern/core/LoadingOverlay', () => {
+describe('@pattern-ui/core/LoadingOverlay', () => {
   itSupportsSystemProps({
     component: LoadingOverlay,
     props: defaultProps,
-    displayName: '@pattern/core/LoadingOverlay',
+    displayName: '@pattern-ui/core/LoadingOverlay',
     refType: HTMLDivElement,
   });
 

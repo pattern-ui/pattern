@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { checkAccessibility, itSupportsSystemProps } from '@pattern/tests';
+import { checkAccessibility, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Image, ImageProps } from './Image';
 
 const defaultProps: ImageProps = {
@@ -8,7 +8,7 @@ const defaultProps: ImageProps = {
   alt: 'Test',
 };
 
-describe('@pattern/core/Image', () => {
+describe('@pattern-ui/core/Image', () => {
   checkAccessibility([
     <Image {...defaultProps} />,
     <Image {...defaultProps} src={null} />,
@@ -18,7 +18,7 @@ describe('@pattern/core/Image', () => {
   itSupportsSystemProps({
     component: Image,
     props: defaultProps,
-    displayName: '@pattern/core/Image',
+    displayName: '@pattern-ui/core/Image',
     refType: HTMLDivElement,
   });
 

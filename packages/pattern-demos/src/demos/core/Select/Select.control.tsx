@@ -1,8 +1,8 @@
 import React from 'react';
-import { Select, SelectProps } from '@pattern/core';
+import { Select, SelectProps } from '@pattern-ui/core';
 
 const codeTemplate = (props: string) => `
-import { Select } from '@pattern/core';
+import { Select } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

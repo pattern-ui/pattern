@@ -1,6 +1,6 @@
 import { upperFirst } from './upper-first';
 
-describe('@pattern/hooks/upper-first', () => {
+describe('@pattern-ui/hooks/upper-first', () => {
   it('capitalizes first letter', () => {
     expect(upperFirst('hello')).toBe('Hello');
     expect(upperFirst('hELLO')).toBe('HELLO');

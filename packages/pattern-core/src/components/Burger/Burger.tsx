@@ -6,7 +6,7 @@ import {
   PatternColor,
   Selectors,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { UnstyledButton } from '../Button';
 import useStyles from './Burger.styles';
 
@@ -53,4 +53,4 @@ export const Burger = forwardRef<HTMLButtonElement, BurgerProps>((props: BurgerP
   );
 });
 
-Burger.displayName = '@pattern/core/Burger';
+Burger.displayName = '@pattern-ui/core/Burger';

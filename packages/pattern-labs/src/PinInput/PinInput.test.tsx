@@ -10,18 +10,18 @@ import {
   checkAccessibility,
   itSupportsSystemProps,
   renderWithAct,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { PinInput } from './PinInput';
 
 const defaultProps = {};
 
-describe('@pattern/core/PinInput', () => {
+describe('@pattern-ui/core/PinInput', () => {
   checkAccessibility([<PinInput {...defaultProps} />]);
   itSupportsFocusEvents(PinInput, defaultProps, 'input');
   itSupportsSystemProps({
     component: PinInput,
     props: defaultProps,
-    displayName: '@pattern/core/PinInput',
+    displayName: '@pattern-ui/core/PinInput',
     refType: HTMLDivElement,
     excludeOthers: true,
   });

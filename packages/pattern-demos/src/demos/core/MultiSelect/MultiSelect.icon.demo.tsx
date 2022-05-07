@@ -1,6 +1,6 @@
 import React from 'react';
 import { Hash } from 'tabler-icons-react';
-import { MultiSelect } from '@pattern/core';
+import { MultiSelect } from '@pattern-ui/core';
 import { data } from './_data';
 
 export default function Demo() {

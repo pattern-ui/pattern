@@ -1,5 +1,5 @@
 {
-  "name": "@pattern/core",
+  "name": "@pattern-ui/core",
   "description": "React components library focused on usability, accessibility and developer experience",
   "version": "1.0.0",
   "main": "cjs/index.js",
@@ -12,7 +12,7 @@
   "repository": {
     "url": "https://github.com/pattern-ui/pattern.git",
     "type": "git",
-    "directory": "src/pattern-core"
+    "directory": "packages/pattern-core"
   },
   "keywords": [
     "react",
@@ -27,13 +27,13 @@
     "emotion"
   ],
   "peerDependencies": {
-    "@pattern/hooks": "1.0.0",
+    "@pattern-ui/hooks": "1.0.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
   "dependencies": {
-    "@pattern/utils": "1.0.0",
-    "@pattern/styles": "1.0.0",
+    "@pattern-ui/utils": "1.0.0",
+    "@pattern-ui/styles": "1.0.0",
     "@radix-ui/react-scroll-area": "^0.1.1",
     "react-textarea-autosize": "^8.3.2",
     "@popperjs/core": "^2.9.3",

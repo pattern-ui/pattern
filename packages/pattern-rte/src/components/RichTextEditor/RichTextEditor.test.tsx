@@ -1,4 +1,4 @@
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { RichTextEditor, RichTextEditorProps } from './RichTextEditor';
 
 const defaultProps: RichTextEditorProps = {
@@ -6,10 +6,10 @@ const defaultProps: RichTextEditorProps = {
   onChange: () => {},
 };
 
-describe('@pattern/core/RichTextEditor', () => {
+describe('@pattern-ui/core/RichTextEditor', () => {
   itSupportsSystemProps({
     component: RichTextEditor,
     props: defaultProps,
-    displayName: '@pattern/rte/RichTextEditor',
+    displayName: '@pattern-ui/rte/RichTextEditor',
   });
 });

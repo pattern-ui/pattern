@@ -1,5 +1,5 @@
 import React from 'react';
-import { Global } from '@pattern/core';
+import { Global } from '@pattern-ui/core';
 import bold from './GreycliffCF-Bold.woff2';
 import heavy from './GreycliffCF-Heavy.woff2';
 

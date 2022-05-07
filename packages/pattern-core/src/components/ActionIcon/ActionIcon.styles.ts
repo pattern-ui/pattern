@@ -1,4 +1,4 @@
-import { createStyles, PatternNumberSize, PatternColor, PatternTheme } from '@pattern/styles';
+import { createStyles, PatternNumberSize, PatternColor, PatternTheme } from '@pattern-ui/styles';
 
 export type ActionIconVariant =
   | 'hover'

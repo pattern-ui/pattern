@@ -1,4 +1,4 @@
-import type { PrismStylesNames } from '@pattern/prism';
+import type { PrismStylesNames } from '@pattern-ui/prism';
 
 export const Prism: Record<PrismStylesNames, string> = {
   root: 'Root element',

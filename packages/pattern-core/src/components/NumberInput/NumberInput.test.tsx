@@ -7,7 +7,7 @@ import {
   itSupportsSystemProps,
   itSupportsInputProps,
   itSupportsFocusEvents,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { NumberInput, NumberInputHandlers, NumberInputProps } from './NumberInput';
 
 const defaultProps: NumberInputProps = {};
@@ -26,7 +26,7 @@ const enterText = (text: string) => userEvent.type(getInput(), text);
 const expectValue = (value: string) => expect(getInput()).toHaveValue(value);
 const blurInput = () => fireEvent.blur(getInput());
 
-describe('@pattern/core/NumberInput', () => {
+describe('@pattern-ui/core/NumberInput', () => {
   checkAccessibility([
     <NumberInput {...defaultProps} label="test" />,
     <NumberInput {...defaultProps} aria-label="test" />,
@@ -35,7 +35,7 @@ describe('@pattern/core/NumberInput', () => {
   itSupportsSystemProps({
     component: NumberInput,
     props: defaultProps,
-    displayName: '@pattern/core/NumberInput',
+    displayName: '@pattern-ui/core/NumberInput',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

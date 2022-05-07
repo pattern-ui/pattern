@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, createStyles } from '@pattern/core';
+import { Image, createStyles } from '@pattern-ui/core';
 import image from './dark-theme-image.png';
 
 const useStyles = createStyles((theme) => ({

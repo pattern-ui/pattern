@@ -1,6 +1,6 @@
 import React from 'react';
-import { useScrollIntoView } from '@pattern/hooks';
-import { Button, Text, Group, usePatternTheme, Paper } from '@pattern/core';
+import { useScrollIntoView } from '@pattern-ui/hooks';
+import { Button, Text, Group, usePatternTheme, Paper } from '@pattern-ui/core';
 
 export default function Demo() {
   const theme = usePatternTheme();

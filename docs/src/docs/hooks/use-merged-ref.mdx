@@ -1,12 +1,12 @@
 ---
 group: 'pattern-hooks'
-package: '@pattern/hooks'
+package: '@pattern-ui/hooks'
 title: 'use-merged-ref'
 category: 'utils'
 order: 1
 slug: /hooks/use-merged-ref/
 description: 'Use multiple refs for one dom node'
-import: "import { useMergedRef } from '@pattern/hooks';"
+import: "import { useMergedRef } from '@pattern-ui/hooks';"
 docs: 'hooks/use-merged-ref.mdx'
 source: 'pattern-hooks/src/use-merged-ref/use-merged-ref.ts'
 ---
@@ -19,7 +19,7 @@ when you want to use [use-click-outside](/hooks/use-click-outside/) and [use-foc
 
 ```tsx
 import { useRef } from 'react';
-import { useClickOutside, useFocusTrap, useMergedRef } from '@pattern/hooks';
+import { useClickOutside, useFocusTrap, useMergedRef } from '@pattern-ui/hooks';
 
 function Demo() {
   const myRef = useRef();
@@ -40,7 +40,7 @@ across two renders. To fix that issue use `mergeRefs` function instead:
 
 ```tsx
 import { useRef } from 'react';
-import { useClickOutside, mergeRefs } from '@pattern/hooks';
+import { useClickOutside, mergeRefs } from '@pattern-ui/hooks';
 
 function Demo() {
   const myRef = useRef();

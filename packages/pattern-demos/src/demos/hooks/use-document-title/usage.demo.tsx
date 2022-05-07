@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useDocumentTitle, randomId } from '@pattern/hooks';
-import { Group, Button } from '@pattern/core';
+import { useDocumentTitle, randomId } from '@pattern-ui/hooks';
+import { Group, Button } from '@pattern-ui/core';
 
 export default function Demo() {
   const [title, setTitle] = useState('');

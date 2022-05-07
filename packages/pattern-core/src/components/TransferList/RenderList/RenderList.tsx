@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
-import { DefaultProps, Selectors, PatternNumberSize } from '@pattern/styles';
-import { useScrollIntoView } from '@pattern/hooks';
+import { DefaultProps, Selectors, PatternNumberSize } from '@pattern-ui/styles';
+import { useScrollIntoView } from '@pattern-ui/hooks';
 import { SelectScrollArea } from '../../Select/SelectScrollArea/SelectScrollArea';
 import { UnstyledButton } from '../../Button';
 import { ActionIcon } from '../../ActionIcon';
@@ -251,4 +251,4 @@ export function RenderList({
   );
 }
 
-RenderList.displayName = '@pattern/core/RenderList';
+RenderList.displayName = '@pattern-ui/core/RenderList';

@@ -1,13 +1,13 @@
 import React from 'react';
 import { screen, render } from '@testing-library/react';
-import { itSupportsClassName, itSupportsOthers, itSupportsStyle } from '@pattern/tests';
+import { itSupportsClassName, itSupportsOthers, itSupportsStyle } from '@pattern-ui/tests';
 import { DefaultItem, PaginationItemProps } from './DefaultItem';
 
 const defaultProps: PaginationItemProps = {
   page: 1,
 };
 
-describe('@pattern/core/Pagination/DefaultItem', () => {
+describe('@pattern-ui/core/Pagination/DefaultItem', () => {
   itSupportsClassName(DefaultItem, defaultProps);
   itSupportsOthers(DefaultItem, defaultProps);
   itSupportsStyle(DefaultItem, defaultProps);
@@ -18,6 +18,6 @@ describe('@pattern/core/Pagination/DefaultItem', () => {
   });
 
   it('has correct displayName', () => {
-    expect(DefaultItem.displayName).toStrictEqual('@pattern/core/Pagination/DefaultItem');
+    expect(DefaultItem.displayName).toStrictEqual('@pattern-ui/core/Pagination/DefaultItem');
   });
 });

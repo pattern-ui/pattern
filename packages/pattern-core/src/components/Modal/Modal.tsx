@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */
 import React, { useEffect } from 'react';
-import { useScrollLock, useFocusTrap, useFocusReturn, useUuid } from '@pattern/hooks';
+import { useScrollLock, useFocusTrap, useFocusReturn, useUuid } from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternNumberSize,
@@ -9,7 +9,7 @@ import {
   PatternStyleSystemSize,
   getDefaultZIndex,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { CloseButton } from '../ActionIcon';
 import { Text } from '../Text';
 import { Paper } from '../Paper';
@@ -261,4 +261,4 @@ export function Modal(props: ModalProps) {
   );
 }
 
-Modal.displayName = '@pattern/core/Modal';
+Modal.displayName = '@pattern-ui/core/Modal';

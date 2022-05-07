@@ -1,6 +1,6 @@
 import React from 'react';
-import { Group, createStyles } from '@pattern/core';
-import { Month } from '@pattern/dates';
+import { Group, createStyles } from '@pattern-ui/core';
+import { Month } from '@pattern-ui/dates';
 
 const useStyles = createStyles((theme) => ({
   outside: {

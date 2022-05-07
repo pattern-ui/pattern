@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { useDidUpdate } from '@pattern/hooks';
-import { useUncontrolled } from '@pattern/utils';
+import { useDidUpdate } from '@pattern-ui/hooks';
+import { useUncontrolled } from '@pattern-ui/utils';
 import {
   Placement,
   useFloating,

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Group } from '@pattern/core';
+import { Group } from '@pattern-ui/core';
 import dayjs from 'dayjs';
-import { Month } from '@pattern/dates';
+import { Month } from '@pattern-ui/dates';
 
 export default function Demo() {
   return (

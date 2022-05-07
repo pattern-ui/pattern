@@ -11,18 +11,18 @@ search: 'General approach to SSR'
 This guide covers server side rendering with custom server, [Next.js](/theming/next/) and [Gatsby](/theming/gatsby/)
 usage guides are available separately.
 
-1. Install `@pattern/ssr` package
+1. Install `@pattern-ui/ssr` package
 
 ```bash
-yarn add @pattern/ssr
+yarn add @pattern-ui/ssr
 
-npm install @pattern/ssr
+npm install @pattern-ui/ssr
 ```
 
 2. Create `App` component with `PatternProvider`
 
 ```tsx
-import { Button, PatternProvider } from '@pattern/core';
+import { Button, PatternProvider } from '@pattern-ui/core';
 
 export function App() {
   return (
@@ -61,7 +61,7 @@ export function Html({ children, styles }) {
 ```tsx
 import { renderToStaticMarkup, renderToString } from 'react-dom/server';
 import express from 'express';
-import { createStylesServer, ServerStyles } from '@pattern/ssr';
+import { createStylesServer, ServerStyles } from '@pattern-ui/ssr';
 import { App } from './App';
 import { Html } from './Html';
 

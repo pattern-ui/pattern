@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDisclosure } from '@pattern/hooks';
+import { useDisclosure } from '@pattern-ui/hooks';
 import { Button } from '../Button';
 import { FocusTrap } from './FocusTrap';
 

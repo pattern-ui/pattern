@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table } from '@pattern/core';
+import { Table } from '@pattern-ui/core';
 import DocsSection from '../../../DocsSection/DocsSection';
 
 interface DataTableProps {

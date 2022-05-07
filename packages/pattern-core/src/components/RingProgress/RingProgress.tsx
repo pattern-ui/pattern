@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, PatternColor, Selectors, usePatternDefaultProps } from '@pattern/styles';
+import { DefaultProps, PatternColor, Selectors, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Box } from '../Box';
 import { Curve } from './Curve/Curve';
 import { getCurves } from './get-curves/get-curves';
@@ -88,4 +88,4 @@ export const RingProgress = forwardRef<HTMLDivElement, RingProgressProps>(
   }
 );
 
-RingProgress.displayName = '@pattern/core/RingProgress';
+RingProgress.displayName = '@pattern-ui/core/RingProgress';

@@ -1,4 +1,4 @@
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { Calendar, CalendarProps } from './Calendar';
 
 const defaultProps: CalendarProps = {
@@ -6,10 +6,10 @@ const defaultProps: CalendarProps = {
   value: new Date(),
 };
 
-describe('@pattern/dates/Calendar', () => {
+describe('@pattern-ui/dates/Calendar', () => {
   itSupportsSystemProps({
     component: Calendar,
     props: defaultProps,
-    displayName: '@pattern/dates/Calendar',
+    displayName: '@pattern-ui/dates/Calendar',
   });
 });

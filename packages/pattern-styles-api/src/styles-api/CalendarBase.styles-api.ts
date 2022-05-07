@@ -1,4 +1,4 @@
-import type { CalendarBaseStylesNames } from '@pattern/dates';
+import type { CalendarBaseStylesNames } from '@pattern-ui/dates';
 import { Month } from './Month.styles-api';
 
 export const CalendarBase: Record<CalendarBaseStylesNames, string> = {

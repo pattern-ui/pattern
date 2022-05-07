@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { usePatternTheme } from '@pattern/core';
+import { usePatternTheme } from '@pattern-ui/core';
 import CodeDemo from './CodeDemo/CodeDemo';
 import CodeConfigurator from './Configurator/CodeConfigurator';
 

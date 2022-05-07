@@ -1,6 +1,6 @@
 import { getDayAutofocus } from './get-day-autofocus';
 
-describe('@pattern/dates/Day/get-day-autofocus', () => {
+describe('@pattern-ui/dates/Day/get-day-autofocus', () => {
   it('returns true if day has value and is selected', () => {
     expect(getDayAutofocus({ hasValue: true, selected: true, firstInMonth: true })).toBe(true);
     expect(getDayAutofocus({ hasValue: true, selected: true, firstInMonth: false })).toBe(true);

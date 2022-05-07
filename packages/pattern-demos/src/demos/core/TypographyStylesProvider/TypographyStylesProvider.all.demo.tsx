@@ -1,5 +1,5 @@
 import React from 'react';
-import { TypographyStylesProvider } from '@pattern/core';
+import { TypographyStylesProvider } from '@pattern-ui/core';
 
 const html = `<h1>Heading 1</h1>
 <h2>Heading 2</h2>
@@ -33,7 +33,7 @@ const html = `<h1>Heading 1</h1>
 <p>This is <code>Code</code> inside paragraph</p>
 
 <pre>import React from 'react';
-import { Avatar } from '@pattern/core';
+import { Avatar } from '@pattern-ui/core';
 import image from './image.png';
 
 export function AvatarDemo() {

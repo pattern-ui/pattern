@@ -1,5 +1,5 @@
 {
-  "name": "@pattern/storybook",
+  "name": "@pattern-ui/storybook",
   "private": true,
   "version": "1.0.0",
   "main": "cjs/index.js",

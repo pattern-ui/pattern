@@ -1,6 +1,6 @@
 import React from 'react';
-import { useUncontrolled, useId, getSafeId } from '@pattern/utils';
-import { PatternNumberSize } from '@pattern/styles';
+import { useUncontrolled, useId, getSafeId } from '@pattern-ui/utils';
+import { PatternNumberSize } from '@pattern-ui/styles';
 import { AccordionContextProvider } from './Accordion.context';
 import {
   AccordionValue,

@@ -1,12 +1,12 @@
 import React, { cloneElement, forwardRef } from 'react';
-import { useUncontrolled } from '@pattern/hooks';
+import { useUncontrolled } from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternNumberSize,
   PatternSize,
   PatternColor,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { filterChildrenByType } from '../../../utils';
 import {
   InputWrapper,
@@ -130,4 +130,4 @@ export const CheckboxGroup = forwardRef<HTMLDivElement, CheckboxGroupProps>(
   }
 );
 
-CheckboxGroup.displayName = '@pattern/core/CheckboxGroup';
+CheckboxGroup.displayName = '@pattern-ui/core/CheckboxGroup';

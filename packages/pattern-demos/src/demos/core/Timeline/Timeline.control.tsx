@@ -1,5 +1,5 @@
 import React from 'react';
-import { TimelineProps } from '@pattern/core';
+import { TimelineProps } from '@pattern-ui/core';
 import { TimelineBase } from './_base';
 
 function Wrapper(props: TimelineProps) {
@@ -11,7 +11,7 @@ function Wrapper(props: TimelineProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Timeline } from '@pattern/core';
+import { Timeline } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

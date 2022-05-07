@@ -8,10 +8,10 @@ Calendars, date and time pickers
 
 ```sh
 # With yarn
-yarn add @pattern/core @pattern/hooks @pattern/dates dayjs
+yarn add @pattern-ui/core @pattern-ui/hooks @pattern-ui/dates dayjs
 
 # With npm
-npm install @pattern/core @pattern/hooks @pattern/dates dayjs
+npm install @pattern-ui/core @pattern-ui/hooks @pattern-ui/dates dayjs
 ```
 
 ## License

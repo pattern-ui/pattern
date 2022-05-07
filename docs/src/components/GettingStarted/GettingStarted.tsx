@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container } from '@pattern/core';
+import { Container } from '@pattern-ui/core';
 import { Footer } from '../Footer/Footer';
 import Head from '../Head/Head';
 import { Installation } from './Installation/Installation';
@@ -10,7 +10,7 @@ import useStyles from './GettingStarted.styles';
 
 export function GettingStarted() {
   const { classes } = useStyles();
-  const [dependencies, setDependencies] = useState('@pattern/hooks @pattern/core');
+  const [dependencies, setDependencies] = useState('@pattern-ui/hooks @pattern-ui/core');
 
   return (
     <>

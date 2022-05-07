@@ -6,7 +6,7 @@ import {
   PatternTheme,
   usePatternTheme,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import { Bars } from './loaders/Bars';
 import { Oval } from './loaders/Oval';
@@ -71,4 +71,4 @@ export function Loader(props: LoaderProps) {
   );
 }
 
-Loader.displayName = '@pattern/core/Loader';
+Loader.displayName = '@pattern-ui/core/Loader';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { checkAccessibility, itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { checkAccessibility, itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Notification, NotificationProps } from './Notification';
 
 const defaultProps: NotificationProps = {
@@ -9,13 +9,13 @@ const defaultProps: NotificationProps = {
   closeButtonProps: { title: 'test-close' },
 };
 
-describe('@pattern/core/Notification', () => {
+describe('@pattern-ui/core/Notification', () => {
   itRendersChildren(Notification, defaultProps);
   checkAccessibility([<Notification {...defaultProps} />]);
   itSupportsSystemProps({
     component: Notification,
     props: defaultProps,
-    displayName: '@pattern/core/Notification',
+    displayName: '@pattern-ui/core/Notification',
     refType: HTMLDivElement,
   });
 

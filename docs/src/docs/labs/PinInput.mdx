@@ -1,18 +1,18 @@
 ---
 group: 'pattern-labs'
-package: '@pattern/labs'
+package: '@pattern-ui/labs'
 title: PinInput
 slug: /labs/pin-input/
 category: 'inputs'
 description: 'Capture pin code from the user'
 props: ['PinInput']
-import: "import { PinInput } from '@pattern/labs';"
+import: "import { PinInput } from '@pattern-ui/labs';"
 source: 'pattern-labs/src/components/PinInput/PinInput.tsx'
 docs: 'labs/PinInput.mdx'
 styles: ['PinInput']
 ---
 
-import { PinInputDemos } from '@pattern/demos';
+import { PinInputDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -38,7 +38,7 @@ RegExp validators `alphanumeric` and `number` but if that does not fit your need
 By default, `alphanumeric` symbols are allowed.
 
 ```tsx
-import { PinInput } from '@pattern/core';
+import { PinInput } from '@pattern-ui/core';
 
 function PinInputDemo() {
   return <PinInput type="number" />;
@@ -52,7 +52,7 @@ To customize the default input placeholder `●`, pass the placeholder prop and 
 <Demo data={PinInputDemos.placeholder} />
 
 ```tsx
-import { PinInput } from '@pattern/core';
+import { PinInput } from '@pattern-ui/core';
 
 function PinInputDemo() {
   return <PinInput placeholder="⭐️" />;
@@ -73,7 +73,7 @@ If the current form input asks for this code, your keyboard adapts and proposes 
 Prop `oneTimeCode` makes your input setting `autocomplete="one-time-code"` what allows using that feature.
 
 ```tsx
-import { PinInput } from '@pattern/core';
+import { PinInput } from '@pattern-ui/core';
 
 function OneTimeCodeInput() {
   return <PinInput oneTimeCode />;

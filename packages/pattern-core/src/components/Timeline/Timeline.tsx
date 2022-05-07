@@ -6,7 +6,7 @@ import {
   PatternNumberSize,
   CSSObject,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { filterChildrenByType } from '../../utils';
 import { Box } from '../Box';
 import { TimelineItem, TimelineItemStylesNames } from './TimelineItem/TimelineItem';
@@ -103,4 +103,4 @@ export const Timeline: TimelineComponent = forwardRef<HTMLDivElement, TimelinePr
 ) as any;
 
 Timeline.Item = TimelineItem;
-Timeline.displayName = '@pattern/core/Timeline';
+Timeline.displayName = '@pattern-ui/core/Timeline';

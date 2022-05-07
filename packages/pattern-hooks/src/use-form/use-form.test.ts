@@ -41,7 +41,7 @@ const BOOLEAN_FORM = {
   },
 };
 
-describe('@pattern/hooks/use-form', () => {
+describe('@pattern-ui/hooks/use-form', () => {
   it('returns correct values', () => {
     const hook = renderHook(() => useForm(TEST_FORM));
     expect(hook.result.current.values).toStrictEqual(TEST_FORM.initialValues);

@@ -6,7 +6,7 @@ const classes = {
   title: 'title-1',
 };
 
-describe('@pattern/tss/merge-class-names', () => {
+describe('@pattern-ui/tss/merge-class-names', () => {
   it('merges classNames correctly', () => {
     expect(
       mergeClassNames(

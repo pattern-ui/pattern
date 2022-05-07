@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Text } from '@pattern/core';
+import { Text } from '@pattern-ui/core';
 import useStyles from './LinksGroup.styles';
 
 export interface LinksGroupProps {

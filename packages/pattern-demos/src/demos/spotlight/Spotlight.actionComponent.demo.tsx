@@ -1,6 +1,6 @@
 import React from 'react';
-import { SpotlightAction, SpotlightActionProps } from '@pattern/spotlight';
-import { createStyles, UnstyledButton, Group, Text, Image, Center, Badge } from '@pattern/core';
+import { SpotlightAction, SpotlightActionProps } from '@pattern-ui/spotlight';
+import { createStyles, UnstyledButton, Group, Text, Image, Center, Badge } from '@pattern-ui/core';
 import { Wrapper } from './_wrapper';
 
 const actions: SpotlightAction[] = [

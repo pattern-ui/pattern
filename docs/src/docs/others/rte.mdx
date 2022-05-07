@@ -1,35 +1,35 @@
 ---
 group: 'Other packages'
-package: '@pattern/rte'
+package: '@pattern-ui/rte'
 title: 'Rich text editor'
 order: 1
 slug: /others/rte/
 description: 'Quill based rich text editor'
 props: ['RichTextEditor']
-import: "import { RichTextEditor } from '@pattern/rte';"
+import: "import { RichTextEditor } from '@pattern-ui/rte';"
 source: 'pattern-rte/src'
 docs: 'others/rte.mdx'
-installation: '@pattern/rte'
+installation: '@pattern-ui/rte'
 license: MIT
 styles: ['RichTextEditor']
 ---
 
-import { RichTextEditorDemos } from '@pattern/demos';
+import { RichTextEditorDemos } from '@pattern-ui/demos';
 
 ## Installation
 
-Package has peer dependencies: [react](https://www.npmjs.com/package/react), [react-dom](https://www.npmjs.com/package/react-dom), [@pattern/hooks](https://www.npmjs.com/package/@pattern/hooks) and [@pattern/core](https://www.npmjs.com/package/@pattern/core):.
+Package has peer dependencies: [react](https://www.npmjs.com/package/react), [react-dom](https://www.npmjs.com/package/react-dom), [@pattern-ui/hooks](https://www.npmjs.com/package/@pattern-ui/hooks) and [@pattern-ui/core](https://www.npmjs.com/package/@pattern-ui/core):.
 
 Install with npm:
 
 ```sh
-npm install @pattern/rte @pattern/core @pattern/hooks
+npm install @pattern-ui/rte @pattern-ui/core @pattern-ui/hooks
 ```
 
 Install with yarn:
 
 ```sh
-yarn add @pattern/rte @pattern/core @pattern/hooks
+yarn add @pattern-ui/rte @pattern-ui/core @pattern-ui/hooks
 ```
 
 ## Demo
@@ -91,7 +91,7 @@ To set up images upload add `onImageUpload` function:
 
 ```tsx
 import { useState } from 'react';
-import { RichTextEditor } from '@pattern/rte';
+import { RichTextEditor } from '@pattern-ui/rte';
 
 // Example with imgbb.com, usually you would use similar logic to upload to S3 like storages
 // Function must return a promise that resolves with uploaded image url
@@ -133,7 +133,7 @@ You can provide any amount of extra modules. Note that it is required to memoize
 
 ```tsx
 import { useMemo } from 'react';
-import { RichTextEditor } from '@pattern/rte';
+import { RichTextEditor } from '@pattern-ui/rte';
 
 function Demo() {
   const modules = useMemo(
@@ -165,7 +165,7 @@ When editor is readonly state, user cannot edit content, toolbar is hidden:
 
 ```tsx
 import { useRef, useEffect } from 'react';
-import { RichTextEditor, Editor } from '@pattern/rte';
+import { RichTextEditor, Editor } from '@pattern-ui/rte';
 
 function Demo() {
   const editorRef = useRef<Editor>();
@@ -188,12 +188,12 @@ General strategy:
 ```tsx
 // Create a separate component which will load RichTextEditor only in browser
 import React from 'react';
-import type { RichTextEditorProps } from '@pattern/rte';
+import type { RichTextEditorProps } from '@pattern-ui/rte';
 
 export function RichText(props: RichTextEditorProps) {
   if (typeof window !== 'undefined') {
     // eslint-disable-next-line import/extensions, global-require
-    const { RichTextEditor } = require('@pattern/rte');
+    const { RichTextEditor } = require('@pattern-ui/rte');
     return <RichTextEditor {...props} />;
   }
 
@@ -210,7 +210,7 @@ To make component work with Next.js use [dynamic module](https://nextjs.org/docs
 // RichText.tsx in your components folder
 import dynamic from 'next/dynamic';
 
-export default dynamic(() => import('@pattern/rte'), {
+export default dynamic(() => import('@pattern-ui/rte'), {
   // Disable during server side rendering
   ssr: false,
 

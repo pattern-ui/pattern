@@ -1,7 +1,7 @@
 import { renderHook, act } from '@testing-library/react-hooks';
 import { useToggle, useBooleanToggle } from './use-toggle';
 
-describe('@pattern/hooks/use-boolean-toggle', () => {
+describe('@pattern-ui/hooks/use-boolean-toggle', () => {
   it('correctly toggles boolean value', () => {
     const hook = renderHook(() => useBooleanToggle(false));
     expect(hook.result.current[0]).toBe(false);
@@ -17,7 +17,7 @@ describe('@pattern/hooks/use-boolean-toggle', () => {
   });
 });
 
-describe('@pattern/hooks/use-toggle', () => {
+describe('@pattern-ui/hooks/use-toggle', () => {
   it('returns correct initial state', () => {
     const hook = renderHook(() => useToggle<'dark' | 'light'>('dark', ['dark', 'light']));
     expect(hook.result.current[0]).toBe('dark');

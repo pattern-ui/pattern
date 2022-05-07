@@ -6,8 +6,8 @@ import {
   PatternSize,
   Selectors,
   usePatternDefaultProps,
-} from '@pattern/core';
-import { upperFirst } from '@pattern/hooks';
+} from '@pattern-ui/core';
+import { upperFirst } from '@pattern-ui/hooks';
 import dayjs from 'dayjs';
 import { FirstDayOfWeek } from '../../types';
 import { getMonthDays, getWeekdaysNames, isSameDate } from '../../utils';
@@ -261,4 +261,4 @@ export const Month = forwardRef<HTMLTableElement, MonthProps>((props: MonthProps
   );
 });
 
-Month.displayName = '@pattern/dates/Month';
+Month.displayName = '@pattern-ui/dates/Month';

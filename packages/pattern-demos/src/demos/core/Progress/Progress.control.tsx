@@ -1,5 +1,5 @@
 import React from 'react';
-import { Progress, ProgressProps } from '@pattern/core';
+import { Progress, ProgressProps } from '@pattern-ui/core';
 
 function Wrapper(props: ProgressProps) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: ProgressProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Progress } from '@pattern/core';
+import { Progress } from '@pattern-ui/core';
 
 export default function Demo() {
   return <Progress${props} />;

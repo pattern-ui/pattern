@@ -1,4 +1,4 @@
-import { createStyles, PatternNumberSize, PatternSize } from '@pattern/core';
+import { createStyles, PatternNumberSize, PatternSize } from '@pattern-ui/core';
 
 interface DefaultLabelStyles {
   size: PatternSize;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Autocomplete } from '@pattern/core';
+import { Autocomplete } from '@pattern-ui/core';
 
 export default function Demo() {
   const [value, setValue] = useState('');

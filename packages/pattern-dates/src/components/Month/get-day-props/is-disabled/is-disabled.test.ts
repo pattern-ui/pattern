@@ -2,7 +2,7 @@ import { isDisabled } from './is-disabled';
 
 const date = new Date(2021, 11, 9);
 
-describe('@pattern/dates/is-disabled', () => {
+describe('@pattern-ui/dates/is-disabled', () => {
   it('detects that date is disabled it it is before min', () => {
     expect(isDisabled({ date, minDate: new Date(2022, 11, 9) })).toBe(true);
     expect(isDisabled({ date, minDate: new Date(2020, 11, 9) })).toBe(false);

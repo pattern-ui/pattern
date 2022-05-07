@@ -1,4 +1,4 @@
-import { createStyles } from '@pattern/core';
+import { createStyles } from '@pattern-ui/core';
 import image from './banner.webp';
 
 export default createStyles((theme) => ({

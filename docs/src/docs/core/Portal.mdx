@@ -1,13 +1,13 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Portal
 order: 1
 slug: /core/portal/
 category: 'misc'
 description: 'Render component outside of current context'
 props: ['Portal']
-import: "import { Portal } from '@pattern/core';"
+import: "import { Portal } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Portal/Portal.tsx'
 docs: 'core/Portal.mdx'
 ---
@@ -24,7 +24,7 @@ and portals are used for components with fixed position, for example, modals.
 
 ```tsx
 import { useState } from 'react';
-import { Portal } from '@pattern/core';
+import { Portal } from '@pattern-ui/core';
 
 function Demo() {
   const [opened, setOpened] = useState(false);
@@ -53,7 +53,7 @@ but still receives `opened` and `onClose` props. Element will not be affected by
 You can specify dom node where portal will be rendered by passing `target` prop:
 
 ```tsx
-import { Portal } from '@pattern/core';
+import { Portal } from '@pattern-ui/core';
 
 const container = document.createElement('div');
 document.body.appendChild(container);
@@ -82,7 +82,7 @@ OptionalPortal component lets you configure whether children should be rendered 
 It accepts the same props as Portal component:
 
 ```tsx
-import { OptionalPortal } from '@pattern/core';
+import { OptionalPortal } from '@pattern-ui/core';
 
 function Demo() {
   return (

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from '@reach/router';
 import { navigate } from 'gatsby';
-import { Tabs, Title, TextInput } from '@pattern/core';
+import { Tabs, Title, TextInput } from '@pattern-ui/core';
 import { MagnifyingGlassIcon } from '@modulz/radix-icons';
-import { useMediaQuery } from '@pattern/hooks';
+import { useMediaQuery } from '@pattern-ui/hooks';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MdxSiblings } from '../MdxSiblings/MdxSiblings';
 import TableOfContents from '../TableOfContents/TableOfContents';

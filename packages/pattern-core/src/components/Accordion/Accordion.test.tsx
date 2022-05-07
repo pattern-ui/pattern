@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility, itSupportsSystemProps } from '@pattern/tests';
+import { checkAccessibility, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Accordion } from './Accordion';
 import { AccordionItem } from './AccordionItem/AccordionItem';
 import { AccordionControl } from './AccordionControl/AccordionControl';
@@ -27,13 +27,13 @@ const defaultProps = {
   ),
 };
 
-describe('@pattern/core/Accordion', () => {
+describe('@pattern-ui/core/Accordion', () => {
   checkAccessibility([<Accordion {...defaultProps} />, <Accordion {...defaultProps} order={2} />]);
 
   itSupportsSystemProps({
     component: Accordion,
     props: defaultProps,
-    displayName: '@pattern/core/Accordion',
+    displayName: '@pattern-ui/core/Accordion',
     name: 'Accordion',
   });
 

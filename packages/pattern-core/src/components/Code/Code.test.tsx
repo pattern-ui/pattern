@@ -1,18 +1,18 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Code, CodeProps } from './Code';
 
 const defaultProps: CodeProps = {
   children: 'test-code',
 };
 
-describe('@pattern/core/Code', () => {
+describe('@pattern-ui/core/Code', () => {
   itRendersChildren(Code, defaultProps);
   itSupportsSystemProps({
     component: Code,
     props: defaultProps,
-    displayName: '@pattern/core/Code',
+    displayName: '@pattern-ui/core/Code',
     refType: HTMLElement,
   });
 

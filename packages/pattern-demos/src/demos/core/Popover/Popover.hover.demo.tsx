@@ -1,6 +1,6 @@
 import React from 'react';
-import { useDisclosure } from '@pattern/hooks';
-import { Popover, Text, Button } from '@pattern/core';
+import { useDisclosure } from '@pattern-ui/hooks';
+import { Popover, Text, Button } from '@pattern-ui/core';
 
 export default function Demo() {
   const [opened, { close, open }] = useDisclosure(false);

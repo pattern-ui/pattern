@@ -1,5 +1,5 @@
 import React from 'react';
-import { PasswordInput } from '@pattern/core';
+import { PasswordInput } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

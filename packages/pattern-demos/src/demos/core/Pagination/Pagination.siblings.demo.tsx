@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Pagination } from '@pattern/core';
+import { Text, Pagination } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

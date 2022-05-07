@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { DEFAULT_THEME, PATTERN_SIZES } from '@pattern/styles';
+import { DEFAULT_THEME, PATTERN_SIZES } from '@pattern-ui/styles';
 import { Switch, SwitchProps } from './Switch';
 
 function SwitchWrapper(props: Omit<SwitchProps, 'value' | 'onChange'>) {

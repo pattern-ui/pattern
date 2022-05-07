@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, usePatternDefaultProps } from '@pattern/styles';
+import { DefaultProps, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles from './TypographyStylesProvider.styles';
 
@@ -18,4 +18,4 @@ export const TypographyStylesProvider = forwardRef<HTMLDivElement, TypographySty
   }
 );
 
-TypographyStylesProvider.displayName = '@pattern/core/TypographyStylesProvider';
+TypographyStylesProvider.displayName = '@pattern-ui/core/TypographyStylesProvider';

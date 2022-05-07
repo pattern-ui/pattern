@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs, Badge } from '@pattern/core';
+import { Tabs, Badge } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

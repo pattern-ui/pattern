@@ -1,6 +1,6 @@
-import { OptionalPortal, Progress } from '@pattern/core';
-import { useDidUpdate, useInterval, useReducedMotion } from '@pattern/hooks';
-import { getDefaultZIndex, PatternColor } from '@pattern/styles';
+import { OptionalPortal, Progress } from '@pattern-ui/core';
+import { useDidUpdate, useInterval, useReducedMotion } from '@pattern-ui/hooks';
+import { getDefaultZIndex, PatternColor } from '@pattern-ui/styles';
 import React, { useRef, useState } from 'react';
 import { useNProgressEvents } from './events';
 

@@ -1,4 +1,4 @@
-import { BadgeStylesNames } from '@pattern/core';
+import { BadgeStylesNames } from '@pattern-ui/core';
 
 export const Badge: Record<BadgeStylesNames, string> = {
   root: 'Root element',

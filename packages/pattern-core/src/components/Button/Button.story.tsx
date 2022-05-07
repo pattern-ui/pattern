@@ -1,5 +1,5 @@
 import React from 'react';
-import { PATTERN_COLORS } from '@pattern/styles';
+import { PATTERN_COLORS } from '@pattern-ui/styles';
 import { Button } from './Button';
 import { Group } from '../Group';
 

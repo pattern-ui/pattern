@@ -1,14 +1,14 @@
-import { itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Kbd, KbdProps } from './Kbd';
 
 const defaultProps: KbdProps = { children: 'test' };
 
-describe('@pattern/core/Kbd', () => {
+describe('@pattern-ui/core/Kbd', () => {
   itRendersChildren(Kbd, defaultProps);
   itSupportsSystemProps({
     component: Kbd,
     props: defaultProps,
-    displayName: '@pattern/core/Kbd',
+    displayName: '@pattern-ui/core/Kbd',
     refType: HTMLElement,
   });
 });

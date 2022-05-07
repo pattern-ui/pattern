@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Group, Text, Collapse } from '@pattern/core';
+import { Button, Group, Text, Collapse } from '@pattern-ui/core';
 
 export default function Demo() {
   const [opened, setOpen] = useState(false);

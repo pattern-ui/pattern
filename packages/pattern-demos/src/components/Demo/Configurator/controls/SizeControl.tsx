@@ -1,6 +1,6 @@
 import React from 'react';
-import { Slider, InputWrapper } from '@pattern/core';
-import { upperFirst } from '@pattern/hooks';
+import { Slider, InputWrapper } from '@pattern-ui/core';
+import { upperFirst } from '@pattern-ui/hooks';
 
 const MARKS = [
   { value: 0, label: 'xs' },

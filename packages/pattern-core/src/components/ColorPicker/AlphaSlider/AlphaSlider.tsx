@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { usePatternTheme } from '@pattern/styles';
+import { usePatternTheme } from '@pattern-ui/styles';
 import { ColorSlider, BaseColorSliderProps } from '../ColorSlider/ColorSlider';
 import { round } from '../converters/parsers';
 
@@ -41,4 +41,4 @@ export const AlphaSlider = forwardRef<HTMLDivElement, AlphaSliderProps>(
   }
 );
 
-AlphaSlider.displayName = '@pattern/core/AlphaSlider';
+AlphaSlider.displayName = '@pattern-ui/core/AlphaSlider';

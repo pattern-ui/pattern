@@ -1,4 +1,4 @@
-import { createStyles, PatternTheme, CSSObject } from '@pattern/styles';
+import { createStyles, PatternTheme, CSSObject } from '@pattern-ui/styles';
 import { AccordionStylesParams, AccordionChevronPosition } from '../Accordion.types';
 
 export interface AccordionControlStylesParams extends AccordionStylesParams {

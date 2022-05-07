@@ -1,4 +1,4 @@
-import { createStyles } from '@pattern/core';
+import { createStyles } from '@pattern-ui/core';
 // eslint-disable-next-line import/no-cycle
 import { NAVBAR_BREAKPOINT } from '../Navbar/Navbar.styles';
 

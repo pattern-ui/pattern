@@ -1,6 +1,6 @@
 import { isMonthInRange } from './is-month-in-range';
 
-describe('@pattern/dates/MonthPicker/is-month-in-range', () => {
+describe('@pattern-ui/dates/MonthPicker/is-month-in-range', () => {
   it('detects that month is in range when minDate and maxDate are not defined', () => {
     expect(isMonthInRange({ date: new Date(2021, 1) })).toBe(true);
   });

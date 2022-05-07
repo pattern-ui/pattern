@@ -1,4 +1,4 @@
-import { createErrors } from '@pattern/utils';
+import { createErrors } from '@pattern-ui/utils';
 
 export const TOOLTIP_ERRORS = createErrors({
   'tooltip-children':

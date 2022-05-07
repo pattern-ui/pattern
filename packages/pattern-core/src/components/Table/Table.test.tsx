@@ -1,13 +1,13 @@
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { Table, TableProps } from './Table';
 
 const defaultProps: TableProps = {};
 
-describe('@pattern/core/Table', () => {
+describe('@pattern-ui/core/Table', () => {
   itSupportsSystemProps({
     component: Table,
     props: defaultProps,
-    displayName: '@pattern/core/Table',
+    displayName: '@pattern-ui/core/Table',
     refType: HTMLTableElement,
   });
 });

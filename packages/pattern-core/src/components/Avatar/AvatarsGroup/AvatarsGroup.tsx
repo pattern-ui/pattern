@@ -4,7 +4,7 @@ import {
   PatternNumberSize,
   Selectors,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { filterChildrenByType } from '../../../utils';
 import { Avatar } from '../Avatar';
 import { Box } from '../../Box';
@@ -93,4 +93,4 @@ export const AvatarsGroup = forwardRef<HTMLDivElement, AvatarsGroupProps>(
   }
 );
 
-AvatarsGroup.displayName = '@pattern/core/AvatarsGroup';
+AvatarsGroup.displayName = '@pattern-ui/core/AvatarsGroup';

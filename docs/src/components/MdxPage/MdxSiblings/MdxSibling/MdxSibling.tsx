@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Text } from '@pattern/core';
-import { upperFirst } from '@pattern/hooks';
+import { Text } from '@pattern-ui/core';
+import { upperFirst } from '@pattern-ui/hooks';
 import { ArrowLeftIcon, ArrowRightIcon } from '@modulz/radix-icons';
 import { Frontmatter } from '../../../../types';
 import useStyles from './MdxSibling.styles';

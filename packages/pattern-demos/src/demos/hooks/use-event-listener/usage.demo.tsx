@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
-import { Button, Group } from '@pattern/core';
-import { useEventListener } from '@pattern/hooks';
+import { Button, Group } from '@pattern-ui/core';
+import { useEventListener } from '@pattern-ui/hooks';
 
 export default function Demo() {
   const [count, setCount] = useState(0);

@@ -1,4 +1,4 @@
-import type { PatternNumberSize } from '@pattern/styles';
+import type { PatternNumberSize } from '@pattern-ui/styles';
 import { createUseContext } from '../../utils';
 
 interface GridContextValue {

@@ -1,4 +1,4 @@
-import { createStyles, PatternNumberSize, keyframes } from '@pattern/styles';
+import { createStyles, PatternNumberSize, keyframes } from '@pattern-ui/styles';
 
 export interface SkeletonStylesParams {
   height: number | string;

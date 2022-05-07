@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStyles, PatternTheme } from '@pattern/styles';
+import { createStyles, PatternTheme } from '@pattern-ui/styles';
 
 export const sizes = {
   xs: 180,

@@ -1,6 +1,6 @@
 import { filterProps } from './filter-props';
 
-describe('@pattern/styles filterProps', () => {
+describe('@pattern-ui/styles filterProps', () => {
   it('filters out props with undefined value', () => {
     expect(
       filterProps({

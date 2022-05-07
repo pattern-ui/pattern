@@ -6,7 +6,7 @@ import {
   Group,
   usePatternColorScheme,
   ButtonStylesParams,
-} from '@pattern/core';
+} from '@pattern-ui/core';
 
 export default function Demo() {
   const { colorScheme } = usePatternColorScheme();

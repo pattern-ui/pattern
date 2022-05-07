@@ -9,7 +9,7 @@ import {
   MediaQuery,
   Burger,
   usePatternTheme,
-} from '@pattern/core';
+} from '@pattern-ui/core';
 import Head from '../components/Head/Head';
 
 export default function AppShellDemo() {

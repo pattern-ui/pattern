@@ -1,6 +1,6 @@
 import React from 'react';
 import { Hash } from 'tabler-icons-react';
-import { Autocomplete } from '@pattern/core';
+import { Autocomplete } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

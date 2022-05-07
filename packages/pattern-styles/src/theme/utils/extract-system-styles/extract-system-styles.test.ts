@@ -1,6 +1,6 @@
 import { extractSystemStyles } from './extract-system-styles';
 
-describe('@pattern/styles/extract-system-styles', () => {
+describe('@pattern-ui/styles/extract-system-styles', () => {
   it('correctly extracts margin props', () => {
     expect(extractSystemStyles({ mt: 10, mb: 15 })).toStrictEqual({
       systemStyles: { mt: 10, mb: 15 },

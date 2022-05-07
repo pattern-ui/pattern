@@ -1,4 +1,4 @@
-import { createSafeContext } from '@pattern/utils';
+import { createSafeContext } from '@pattern-ui/utils';
 import { HOVER_CARD_ERRORS } from './HoverCard.errors';
 
 interface HoverCardContext {

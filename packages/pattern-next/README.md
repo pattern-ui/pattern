@@ -8,10 +8,10 @@ Utilities to setup Pattern server side rendering with Next.js
 
 ```sh
 # With yarn
-yarn add @pattern/hooks @pattern/core @pattern/next
+yarn add @pattern-ui/hooks @pattern-ui/core @pattern-ui/next
 
 # With npm
-npm install @pattern/hooks @pattern/core @pattern/next
+npm install @pattern-ui/hooks @pattern-ui/core @pattern-ui/next
 ```
 
 ## License

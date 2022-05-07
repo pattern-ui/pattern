@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { graphql, useStaticQuery, navigate } from 'gatsby';
-import { useMediaQuery } from '@pattern/hooks';
-import { NotificationsProvider } from '@pattern/notifications';
-import { ModalsProvider, ContextModalProps } from '@pattern/modals';
-import { SpotlightProvider, SpotlightAction } from '@pattern/spotlight';
-import { Text, Button } from '@pattern/core';
+import { useMediaQuery } from '@pattern-ui/hooks';
+import { NotificationsProvider } from '@pattern-ui/notifications';
+import { ModalsProvider, ContextModalProps } from '@pattern-ui/modals';
+import { SpotlightProvider, SpotlightAction } from '@pattern-ui/spotlight';
+import { Text, Button } from '@pattern-ui/core';
 import { Search } from 'tabler-icons-react';
 import MdxProvider from '../MdxPage/MdxProvider/MdxProvider';
 import Navbar from './Navbar/Navbar';

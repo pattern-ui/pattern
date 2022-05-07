@@ -1,4 +1,4 @@
-import type { MenuStylesNames } from '@pattern/core';
+import type { MenuStylesNames } from '@pattern-ui/core';
 
 export const Menu: Record<MenuStylesNames, string> = {
   root: 'Root element',

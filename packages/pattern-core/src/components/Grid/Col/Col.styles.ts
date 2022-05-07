@@ -4,7 +4,7 @@ import {
   PATTERN_SIZES,
   PatternSize,
   PatternTheme,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 
 interface ColStyles {
   gutter: PatternNumberSize;

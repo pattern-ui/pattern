@@ -1,6 +1,6 @@
 import React from 'react';
-import { UnstyledButton, Checkbox, Text, createStyles } from '@pattern/core';
-import { useUncontrolled } from '@pattern/hooks';
+import { UnstyledButton, Checkbox, Text, createStyles } from '@pattern-ui/core';
+import { useUncontrolled } from '@pattern-ui/hooks';
 
 const useStyles = createStyles((theme) => ({
   button: {

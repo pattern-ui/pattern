@@ -1,4 +1,4 @@
-const LIST_IDENTIFIER = Symbol('@pattern/form/list');
+const LIST_IDENTIFIER = Symbol('@pattern-ui/form/list');
 
 export interface FormList<T> extends Array<T> {
   [LIST_IDENTIFIER]: true;

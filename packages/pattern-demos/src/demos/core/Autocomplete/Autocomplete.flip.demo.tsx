@@ -1,8 +1,8 @@
 import React from 'react';
-import { Autocomplete } from '@pattern/core';
+import { Autocomplete } from '@pattern-ui/core';
 
 const codeTemplate = (props: string) => `
-import { Autocomplete } from '@pattern/core';
+import { Autocomplete } from '@pattern-ui/core';
 
 export default function Demo() {
   return <Autocomplete${props} />;

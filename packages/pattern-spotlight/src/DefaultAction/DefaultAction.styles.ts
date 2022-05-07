@@ -1,4 +1,4 @@
-import { createStyles, PatternNumberSize } from '@pattern/core';
+import { createStyles, PatternNumberSize } from '@pattern-ui/core';
 
 export interface DefaultActionStylesParams {
   radius: PatternNumberSize;

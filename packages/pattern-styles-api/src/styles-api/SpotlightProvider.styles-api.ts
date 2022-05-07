@@ -1,4 +1,4 @@
-import type { SpotlightStylesNames } from '@pattern/spotlight';
+import type { SpotlightStylesNames } from '@pattern-ui/spotlight';
 
 export const SpotlightProvider: Record<SpotlightStylesNames, string> = {
   root: 'Root element',

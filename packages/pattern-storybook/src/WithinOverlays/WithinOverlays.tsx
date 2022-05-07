@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal, Button, Popover, Group, Drawer } from '@pattern/core';
+import { Modal, Button, Popover, Group, Drawer } from '@pattern-ui/core';
 
 interface WithinOverlayProps {
   children: React.ReactNode;

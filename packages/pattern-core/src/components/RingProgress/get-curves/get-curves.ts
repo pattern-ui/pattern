@@ -1,4 +1,4 @@
-import type { PatternColor } from '@pattern/styles';
+import type { PatternColor } from '@pattern-ui/styles';
 
 interface CurveData {
   value: number;

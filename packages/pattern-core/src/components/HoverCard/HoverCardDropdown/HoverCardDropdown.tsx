@@ -32,4 +32,4 @@ export function HoverCardDropdown({
   );
 }
 
-HoverCardDropdown.displayName = '@pattern/core/HoverCardDropdown';
+HoverCardDropdown.displayName = '@pattern-ui/core/HoverCardDropdown';

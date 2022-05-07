@@ -5,19 +5,19 @@ import {
   itSupportsSystemProps,
   itSupportsInputProps,
   itSupportsFocusEvents,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { DatePicker, DatePickerProps } from './DatePicker';
 
 const defaultProps: DatePickerProps = {};
 
-describe('@pattern/dates/DatePicker', () => {
+describe('@pattern-ui/dates/DatePicker', () => {
   itSupportsInputProps(DatePicker, defaultProps, 'DatePicker');
   itSupportsFocusEvents(DatePicker, defaultProps, 'input');
   checkAccessibility([<DatePicker label="date picker" />]);
   itSupportsSystemProps({
     component: DatePicker,
     props: defaultProps,
-    displayName: '@pattern/dates/DatePicker',
+    displayName: '@pattern-ui/dates/DatePicker',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

@@ -1,12 +1,12 @@
 ---
 group: 'pattern-hooks'
-package: '@pattern/hooks'
+package: '@pattern-ui/hooks'
 title: 'use-uncontrolled'
 category: 'state'
 order: 1
 slug: /hooks/use-uncontrolled/
 description: 'Manage state of both controlled and uncontrolled components'
-import: "import { useUncontrolled } from '@pattern/hooks';"
+import: "import { useUncontrolled } from '@pattern-ui/hooks';"
 docs: 'hooks/use-uncontrolled.mdx'
 source: 'pattern-hooks/src/use-uncontrolled/use-uncontrolled.ts'
 ---
@@ -16,7 +16,7 @@ source: 'pattern-hooks/src/use-uncontrolled/use-uncontrolled.ts'
 use-uncontrolled allows you to manage state for both controlled and uncontrolled components:
 
 ```tsx
-import { useUncontrolled } from '@pattern/hooks';
+import { useUncontrolled } from '@pattern-ui/hooks';
 
 function CustomInput({ value, defaultValue, onChange }) {
   const [_value, handleChange] = useUncontrolled({

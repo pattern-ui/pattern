@@ -6,7 +6,7 @@ import {
   CloseButton,
   SelectItemProps,
   MultiSelectValueProps,
-} from '@pattern/core';
+} from '@pattern-ui/core';
 import { countriesData, flags } from './_countries-data';
 
 function Value({

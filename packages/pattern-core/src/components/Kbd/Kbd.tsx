@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, usePatternDefaultProps } from '@pattern/styles';
+import { DefaultProps, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles from './Kbd.styles';
 
@@ -19,4 +19,4 @@ export const Kbd = forwardRef<HTMLElement, KbdProps>((props: KbdProps, ref) => {
   );
 });
 
-Kbd.displayName = '@pattern/core/Kbd';
+Kbd.displayName = '@pattern-ui/core/Kbd';

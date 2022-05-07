@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: MultiSelect
 order: 1
 slug: /core/multi-select/
 category: 'inputs'
 description: 'Custom searchable multi select'
 props: ['MultiSelect']
-import: "import { MultiSelect } from '@pattern/core';"
+import: "import { MultiSelect } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/MultiSelect/MultiSelect.tsx'
 docs: 'core/MultiSelect.mdx'
 styles: ['MultiSelect']
 ---
 
-import { MultiSelectDemos } from '@pattern/demos';
+import { MultiSelectDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -29,7 +29,7 @@ A bare minimum example:
 
 ```tsx
 import { useState } from 'react';
-import { MultiSelect } from '@pattern/core';
+import { MultiSelect } from '@pattern-ui/core';
 
 function Demo() {
   const [value, setValue] = useState([]);
@@ -226,7 +226,7 @@ Note that in this case `clearable` option will not work and will need to handle 
 
 ```tsx
 import { useRef } from 'react';
-import { MultiSelect } from '@pattern/core';
+import { MultiSelect } from '@pattern-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>();

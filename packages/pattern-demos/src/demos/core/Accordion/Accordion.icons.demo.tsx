@@ -1,6 +1,6 @@
 import React from 'react';
 import { Photo, Printer, CameraSelfie } from 'tabler-icons-react';
-import { Accordion, AccordionProps, usePatternTheme } from '@pattern/core';
+import { Accordion, AccordionProps, usePatternTheme } from '@pattern-ui/core';
 
 export function IconsReplacementDemo(props: Partial<AccordionProps>) {
   const theme = usePatternTheme();

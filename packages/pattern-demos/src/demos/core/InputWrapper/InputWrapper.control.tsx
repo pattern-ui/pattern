@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputWrapper, InputWrapperProps, Input } from '@pattern/core';
+import { InputWrapper, InputWrapperProps, Input } from '@pattern-ui/core';
 
 function Wrapper(props: InputWrapperProps) {
   return (
@@ -12,7 +12,7 @@ function Wrapper(props: InputWrapperProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { InputWrapper, Input } from '@pattern/core';
+import { InputWrapper, Input } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

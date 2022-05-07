@@ -1,5 +1,5 @@
 import { RocketIcon, GitHubLogoIcon, /* BlendingModeIcon, */ StarIcon } from '@modulz/radix-icons';
-import { DEFAULT_THEME } from '@pattern/core';
+import { DEFAULT_THEME } from '@pattern-ui/core';
 
 export default [
   {

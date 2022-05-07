@@ -1,10 +1,10 @@
 const path = require('path')
-const demoLoader = path.resolve('../packages/pattern-demo-loader/lib/index.js');
+const demoLoader = path.resolve('../packages/pattern-demo-loader/cjs/index.js');
 
 exports.onCreateWebpackConfig = ({ actions, loaders, getConfig }) => {
   const config = getConfig()
 
-  config.resolve.alias['@pattern/demos'] = path.resolve('../packages/pattern-demos/src')
+  config.resolve.alias['@pattern-ui/demos'] = path.resolve('../packages/pattern-demos/src')
 
   config.module.rules = [
     ...config.module.rules,

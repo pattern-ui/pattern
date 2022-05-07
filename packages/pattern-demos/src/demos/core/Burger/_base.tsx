@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Burger } from '@pattern/core';
+import { Burger } from '@pattern-ui/core';
 
 export function DemoBase(
   props: Omit<React.ComponentPropsWithoutRef<typeof Burger>, 'opened' | 'onChange'>

@@ -1,4 +1,4 @@
-import { TagInputStylesNames } from '@pattern/labs';
+import { TagInputStylesNames } from '@pattern-ui/labs';
 import { Input } from './Input.styles-api';
 import { InputWrapper } from './InputWrapper.styles-api';
 

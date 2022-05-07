@@ -25,7 +25,7 @@ const defaultProps: SelectItemsProps = {
   nothingFound: 'test-nothing',
 };
 
-describe('@pattern/core/Select/SelectItems', () => {
+describe('@pattern-ui/core/Select/SelectItems', () => {
   it('renders nothing found message if data array is empty', () => {
     const { container: withData } = render(<SelectItems {...defaultProps} data={data} />);
     const { container: withoutData } = render(
@@ -80,6 +80,6 @@ describe('@pattern/core/Select/SelectItems', () => {
   });
 
   it('has correct displayName', () => {
-    expect(SelectItems.displayName).toStrictEqual('@pattern/core/SelectItems');
+    expect(SelectItems.displayName).toStrictEqual('@pattern-ui/core/SelectItems');
   });
 });

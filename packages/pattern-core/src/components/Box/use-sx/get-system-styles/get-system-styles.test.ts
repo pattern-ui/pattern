@@ -1,7 +1,7 @@
-import { DEFAULT_THEME } from '@pattern/styles';
+import { DEFAULT_THEME } from '@pattern-ui/styles';
 import { getSystemStyles } from './get-system-styles';
 
-describe('@pattern/core/Box/get-system-styles', () => {
+describe('@pattern-ui/core/Box/get-system-styles', () => {
   it('extracts margins and paddings with theme.spacing values', () => {
     expect(getSystemStyles({ mt: 'xl', mb: 'sm' }, DEFAULT_THEME)).toStrictEqual({
       marginTop: DEFAULT_THEME.spacing.xl,

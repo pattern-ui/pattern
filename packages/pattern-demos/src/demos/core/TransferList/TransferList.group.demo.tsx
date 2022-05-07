@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TransferList, TransferListData } from '@pattern/core';
+import { TransferList, TransferListData } from '@pattern-ui/core';
 
 const mockdata: TransferListData = [
   [

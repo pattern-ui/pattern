@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { randomId } from '@pattern/hooks';
+import { randomId } from '@pattern-ui/hooks';
 import type { SpotlightAction } from '../types';
 
 function prepareAction(action: SpotlightAction) {

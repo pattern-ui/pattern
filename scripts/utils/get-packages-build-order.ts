@@ -20,7 +20,7 @@ export async function getPackageBuildOrder(
     ...pkg.packageJson.peerDependencies,
     ...pkg.packageJson.dependencies,
   })
-    .filter((dependency) => dependency.includes('@pattern/'))
+    .filter((dependency) => dependency.includes('@pattern-ui/'))
     .map((dependency) => packages.find((pkgItem) => pkgItem.packageJson.name === dependency));
 
   if (dependencies.length === 0) {

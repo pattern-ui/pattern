@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, PatternNumberSize, usePatternDefaultProps } from '@pattern/styles';
+import { DefaultProps, PatternNumberSize, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles from './Table.styles';
 
@@ -66,4 +66,4 @@ export const Table = forwardRef<HTMLTableElement, TableProps>((props: TableProps
   );
 });
 
-Table.displayName = '@pattern/core/Table';
+Table.displayName = '@pattern-ui/core/Table';

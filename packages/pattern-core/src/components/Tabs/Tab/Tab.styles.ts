@@ -1,4 +1,4 @@
-import { createStyles, CSSObject, PatternTheme } from '@pattern/styles';
+import { createStyles, CSSObject, PatternTheme } from '@pattern-ui/styles';
 import { TabsStylesParams } from '../Tabs.types';
 
 interface TabStylesParams extends TabsStylesParams {

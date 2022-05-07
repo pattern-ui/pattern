@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React, { useState } from 'react';
-import { Button, Group, usePatternTheme } from '@pattern/core';
-import { FullScreenDropzone, IMAGE_MIME_TYPE } from '@pattern/dropzone';
+import { Button, Group, usePatternTheme } from '@pattern-ui/core';
+import { FullScreenDropzone, IMAGE_MIME_TYPE } from '@pattern-ui/dropzone';
 import { dropzoneChildren } from './_base';
 
 export default function Demo() {

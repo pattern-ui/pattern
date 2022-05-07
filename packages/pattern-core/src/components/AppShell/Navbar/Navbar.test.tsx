@@ -1,15 +1,15 @@
-import { itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Navbar, NavbarProps } from './Navbar';
 import { HorizontalSection } from '../HorizontalSection/HorizontalSection';
 
 const defaultProps: NavbarProps = { children: 'test-navbar' };
 
-describe('@pattern/core/Navbar', () => {
+describe('@pattern-ui/core/Navbar', () => {
   itRendersChildren(Navbar, defaultProps);
   itSupportsSystemProps({
     component: Navbar,
     props: defaultProps,
-    displayName: '@pattern/core/Navbar',
+    displayName: '@pattern-ui/core/Navbar',
     refType: HTMLElement,
   });
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Slider } from '@pattern/core';
+import { Slider } from '@pattern-ui/core';
 
 const marks = [
   { value: 20, label: '20%' },

@@ -1,5 +1,5 @@
 import React from 'react';
-import { DateRangePicker } from '@pattern/dates';
+import { DateRangePicker } from '@pattern-ui/dates';
 
 export default function Demo() {
   return (

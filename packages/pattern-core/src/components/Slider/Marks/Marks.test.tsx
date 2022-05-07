@@ -17,7 +17,7 @@ const defaultProps: MarksProps = {
   disabled: false,
 };
 
-describe('@pattern/core/Slider/Marks', () => {
+describe('@pattern-ui/core/Slider/Marks', () => {
   it('renders correct marks labels', () => {
     const { container } = render(<Marks {...defaultProps} />);
     const labels = container.querySelectorAll('.pattern-Slider-markLabel');
@@ -54,6 +54,6 @@ describe('@pattern/core/Slider/Marks', () => {
   });
 
   it('has correct displayName', () => {
-    expect(Marks.displayName).toStrictEqual('@pattern/core/SliderMarks');
+    expect(Marks.displayName).toStrictEqual('@pattern-ui/core/SliderMarks');
   });
 });

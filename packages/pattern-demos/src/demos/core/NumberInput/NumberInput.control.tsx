@@ -1,8 +1,8 @@
 import React from 'react';
-import { NumberInput, NumberInputProps } from '@pattern/core';
+import { NumberInput, NumberInputProps } from '@pattern-ui/core';
 
 const codeTemplate = (props: string) => `
-import { NumberInput } from '@pattern/core';
+import { NumberInput } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

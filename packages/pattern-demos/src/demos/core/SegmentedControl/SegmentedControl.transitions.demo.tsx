@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from '@pattern/core';
+import { Text } from '@pattern-ui/core';
 import { SegmentedControlWrapper } from './Wrapper';
 
 export default function Demo() {

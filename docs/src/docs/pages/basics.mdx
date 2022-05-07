@@ -2,7 +2,7 @@
 title: Learn the basics
 ---
 
-import { SliderDemos, CreateStylesDemos } from '@pattern/demos';
+import { SliderDemos, CreateStylesDemos } from '@pattern-ui/demos';
 
 # Learn the basics
 
@@ -26,17 +26,17 @@ Pattern documentation includes more than 150 pages, to use it efficiently rememb
 
 ## Pattern packages
 
-- `@pattern/hooks` – collection of 30+ react hooks for state and UI management.
-- `@pattern/styles` – [emotion](https://emotion.sh/) based css-in-js library that is used in all Pattern components. Usually this package is installed automatically and exported from `@pattern/core` – there is no need to install it separately, [learn more about createStyles here](/theming/create-styles/).
-- `@pattern/core` – core components library – 100+ components, exports everything from `@pattern/styles`.
-- `@pattern/notifications` – a fully featured [notifications system](/others/notifications/).
-- `@pattern/prism` – [code highlight](/others/prism/) built with [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer).
-- `@pattern/rte` – a Quill based [rich text editor](/others/rte/).
-- `@pattern/dropzone` – manages [files drag 'n' drop](/others/dropzone/) of files to an area or the entire screen.
-- `@pattern/ssr` – [server side rendering](/theming/ssr/) utilities.
-- `@pattern/next` – components and ssr utils for [Next.js integration](/theming/next/).
+- `@pattern-ui/hooks` – collection of 30+ react hooks for state and UI management.
+- `@pattern-ui/styles` – [emotion](https://emotion.sh/) based css-in-js library that is used in all Pattern components. Usually this package is installed automatically and exported from `@pattern-ui/core` – there is no need to install it separately, [learn more about createStyles here](/theming/create-styles/).
+- `@pattern-ui/core` – core components library – 100+ components, exports everything from `@pattern-ui/styles`.
+- `@pattern-ui/notifications` – a fully featured [notifications system](/others/notifications/).
+- `@pattern-ui/prism` – [code highlight](/others/prism/) built with [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer).
+- `@pattern-ui/rte` – a Quill based [rich text editor](/others/rte/).
+- `@pattern-ui/dropzone` – manages [files drag 'n' drop](/others/dropzone/) of files to an area or the entire screen.
+- `@pattern-ui/ssr` – [server side rendering](/theming/ssr/) utilities.
+- `@pattern-ui/next` – components and ssr utils for [Next.js integration](/theming/next/).
 - `gatsby-plugin-pattern` – [Gatsby plugin](/theming/gatsby/) to setup ssr.
-- `@pattern/eslint-config` – ESLint and Prettier configuration that the Pattern project uses.
+- `@pattern-ui/eslint-config` – ESLint and Prettier configuration that the Pattern project uses.
 
 ## Theming
 
@@ -44,7 +44,7 @@ Pattern theming supports changing colors, spacing, box-shadows, font families, f
 To configure theme, wrap your app with a [PatternProvider](/theming/pattern-provider/) component:
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -69,7 +69,7 @@ All Pattern components support light and dark color scheme out of the box.
 You can edit the details of each color scheme via [PatternProvider](/theming/pattern-provider/):
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -126,7 +126,7 @@ All Pattern components support these props:
   - `pr` – sets `padding-right` property on root element
 
 ```tsx
-import { Button } from '@pattern/core';
+import { Button } from '@pattern-ui/core';
 
 function Demo() {
   return (
@@ -165,7 +165,7 @@ Pattern components work with colors defined in [theme.colors](/theming/extend-th
 You can [extend theme](/theming/extend-theme/) with any amount of your colors:
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -217,7 +217,7 @@ default values are:
 To change these values set `spacing` property on [theme](/theming/extend-theme/):
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -253,7 +253,7 @@ default values are:
 To change these values set the `shadows` property on [theme](/theming/extend-theme/):
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 function App() {
   return (
@@ -287,7 +287,7 @@ Some Pattern components support changing root element with `component` prop,
 you can pass html element or React component to the prop:
 
 ```tsx
-import { Text, Button } from '@pattern/core';
+import { Text, Button } from '@pattern-ui/core';
 import { Link } from 'react-router-dom';
 
 function Demo() {
@@ -313,7 +313,7 @@ To use Pattern components with Next.js Link:
 - wrap it with Link
 
 ```tsx
-import { Button } from '@pattern/core';
+import { Button } from '@pattern-ui/core';
 import Link from 'next/link';
 
 function Demo() {
@@ -329,7 +329,7 @@ If you use polymorphic with TypeScript you will also need to set type for full t
 otherwise you will have untyped event handlers and ref props:
 
 ```tsx
-import { Button } from '@pattern/core';
+import { Button } from '@pattern-ui/core';
 import { Link } from 'react-router-dom';
 
 function Demo() {
@@ -353,7 +353,7 @@ You can get ref of most components with their `ref` prop:
 
 ```tsx
 import { useRef } from 'react';
-import { Button, Paper, TextInput } from '@pattern/core';
+import { Button, Paper, TextInput } from '@pattern-ui/core';
 
 function Demo() {
   const buttonRef = useRef<HTMLButtonElement>();
@@ -382,7 +382,7 @@ To setup server side rendering follow one of these guides
 
 ### Exported types
 
-@pattern/core package export types to help you build components and styles with TypeScript:
+@pattern-ui/core package export types to help you build components and styles with TypeScript:
 
 - `PatternTheme` – theme interface defined in PatternProvider.
 - `ColorScheme` – union of `'light' | 'dark'`.
@@ -397,17 +397,17 @@ To setup server side rendering follow one of these guides
 You can import props type of any component by adding `Props` to the component name:
 
 ```tsx
-import type { ButtonProps } from '@pattern/core';
+import type { ButtonProps } from '@pattern-ui/core';
 ```
 
 ### Polymorphic components types
 
-@pattern/core package exports `PolymorphicRef` and `PolymorphicComponentProps` types to help you build
+@pattern-ui/core package exports `PolymorphicRef` and `PolymorphicComponentProps` types to help you build
 custom components with ref forwarding:
 
 ```tsx
 import { forwardRef } from 'react';
-import { PolymorphicRef, PolymorphicComponentProps } from '@pattern/core';
+import { PolymorphicRef, PolymorphicComponentProps } from '@pattern-ui/core';
 import { Link } from 'react-router-dom';
 
 // Define all component specific props here

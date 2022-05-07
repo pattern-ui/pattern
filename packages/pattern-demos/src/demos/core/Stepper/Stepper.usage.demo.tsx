@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Stepper, Button, Group } from '@pattern/core';
+import { Stepper, Button, Group } from '@pattern-ui/core';
 import { Content } from './_content';
 
 export default function Demo() {

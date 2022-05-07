@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowLeft, ArrowRight } from 'tabler-icons-react';
-import { Center, usePatternTheme, Anchor, Box } from '@pattern/core';
+import { Center, usePatternTheme, Anchor, Box } from '@pattern-ui/core';
 
 export default function Demo() {
   const theme = usePatternTheme();

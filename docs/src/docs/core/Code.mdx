@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Code
 order: 1
 slug: /core/code/
 category: 'typography'
 description: 'Inline or block code without syntax highlight'
 props: ['Code']
-import: "import { Code } from '@pattern/core';"
+import: "import { Code } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Code/Code.tsx'
 docs: 'core/Code.mdx'
 styles: ['Code', 'single-node']
 ---
 
-import { CodeDemos, PrismDemos } from '@pattern/demos';
+import { CodeDemos, PrismDemos } from '@pattern-ui/demos';
 
 ## Inline code
 
@@ -37,6 +37,6 @@ you can change it to any color from [theme.colors](/theming/extend-theme/#defaul
 ## Syntax highlight
 
 In case you need syntax highlight like in all code examples on Pattern website,
-use [@pattern/prism](/others/prism/) package:
+use [@pattern-ui/prism](/others/prism/) package:
 
 <Demo data={PrismDemos.usage} />

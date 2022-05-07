@@ -109,4 +109,4 @@ export function PatternProvider({
   );
 }
 
-PatternProvider.displayName = '@pattern/core/PatternProvider';
+PatternProvider.displayName = '@pattern-ui/core/PatternProvider';

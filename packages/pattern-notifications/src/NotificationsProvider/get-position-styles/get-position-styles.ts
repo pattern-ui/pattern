@@ -1,4 +1,4 @@
-import { CSSObject } from '@pattern/core';
+import { CSSObject } from '@pattern-ui/core';
 import { NotificationsProviderPositioning } from '../../types';
 
 export default function getPositionStyles(

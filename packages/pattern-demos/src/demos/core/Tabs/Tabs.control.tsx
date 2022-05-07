@@ -1,6 +1,6 @@
 import React from 'react';
 import { Photo, MessageCircle, Settings } from 'tabler-icons-react';
-import { Tabs, TabsProps } from '@pattern/core';
+import { Tabs, TabsProps } from '@pattern-ui/core';
 
 function Wrapper(props: TabsProps) {
   const panelProps = props.orientation === 'vertical' ? { pl: 'xs' } : { pt: 'xs' };
@@ -36,7 +36,7 @@ function Wrapper(props: TabsProps) {
 const codeTemplate = (props: string) => {
   const panelProps = props.includes('vertical') ? 'pl="xs"' : 'pt="xs"';
   return `
-import { Tabs } from '@pattern/core';
+import { Tabs } from '@pattern-ui/core';
 import { Photo, MessageCircle, Settings } from 'tabler-icons-react';
 
 export default function Demo() {

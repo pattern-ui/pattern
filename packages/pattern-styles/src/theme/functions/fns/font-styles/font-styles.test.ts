@@ -1,7 +1,7 @@
 import { fontStyles } from './font-styles';
 import { DEFAULT_THEME } from '../../../default-theme';
 
-describe('@pattern/tss/get-font-styles', () => {
+describe('@pattern-ui/tss/get-font-styles', () => {
   it('sets font-family from given theme', () => {
     expect(fontStyles(DEFAULT_THEME)().fontFamily).toBe(DEFAULT_THEME.fontFamily);
   });

@@ -1,7 +1,7 @@
 import React from 'react';
 import { CheckIcon } from '@modulz/radix-icons';
-import { Group, Button } from '@pattern/core';
-import { showNotification, updateNotification } from '@pattern/notifications';
+import { Group, Button } from '@pattern-ui/core';
+import { showNotification, updateNotification } from '@pattern-ui/notifications';
 
 export default function Demo() {
   return (

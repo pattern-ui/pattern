@@ -5,7 +5,7 @@ import {
   Selectors,
   ForwardRefWithStaticComponents,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import { ListItem, ListItemStylesNames } from './ListItem/ListItem';
 import { ListContext } from './List.context';
@@ -87,4 +87,4 @@ export const List: ListComponent = forwardRef<HTMLUListElement, ListProps>(
 ) as any;
 
 List.Item = ListItem;
-List.displayName = '@pattern/core/List';
+List.displayName = '@pattern-ui/core/List';

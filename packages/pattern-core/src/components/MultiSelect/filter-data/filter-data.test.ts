@@ -11,7 +11,7 @@ const data = [
 
 const baseOptions = { data, limit: Infinity, filter: defaultFilter };
 
-describe('@pattern/core/MultiSelect/filter-data', () => {
+describe('@pattern-ui/core/MultiSelect/filter-data', () => {
   it('returns unmodified data if input is not searchable and value is empty', () => {
     expect(filterData({ ...baseOptions, searchable: false, searchValue: '', value: [] })).toBe(
       data

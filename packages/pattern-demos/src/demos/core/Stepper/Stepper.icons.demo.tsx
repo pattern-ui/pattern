@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { UserCheck, MailOpened, ShieldCheck, CircleCheck } from 'tabler-icons-react';
-import { Stepper } from '@pattern/core';
+import { Stepper } from '@pattern-ui/core';
 
 export default function Demo() {
   const [active, setActive] = useState(1);

@@ -8,10 +8,10 @@ Form management library
 
 ```sh
 # With yarn
-yarn add @pattern/form
+yarn add @pattern-ui/form
 
 # With npm
-npm install @pattern/form
+npm install @pattern-ui/form
 ```
 
 ## License

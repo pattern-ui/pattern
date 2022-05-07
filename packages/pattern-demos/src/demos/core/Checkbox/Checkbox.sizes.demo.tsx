@@ -1,5 +1,5 @@
 import React from 'react';
-import { Checkbox, PATTERN_SIZES, Group } from '@pattern/core';
+import { Checkbox, PATTERN_SIZES, Group } from '@pattern-ui/core';
 
 export default function Demo() {
   const items = PATTERN_SIZES.map((size) => (

@@ -1,5 +1,5 @@
 import React, { useState, forwardRef } from 'react';
-import { DefaultProps, PatternNumberSize, PatternColor, Selectors } from '@pattern/styles';
+import { DefaultProps, PatternNumberSize, PatternColor, Selectors } from '@pattern-ui/styles';
 import { Box } from '../../Box';
 import { Transition, PatternTransition } from '../../Transition';
 import useStyles from './Thumb.styles';
@@ -103,4 +103,4 @@ export const Thumb = forwardRef<HTMLDivElement, ThumbProps>(
   }
 );
 
-Thumb.displayName = '@pattern/core/SliderThumb';
+Thumb.displayName = '@pattern-ui/core/SliderThumb';

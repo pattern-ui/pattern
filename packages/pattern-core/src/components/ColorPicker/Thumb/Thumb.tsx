@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, PatternSize, Selectors } from '@pattern/styles';
+import { DefaultProps, PatternSize, Selectors } from '@pattern-ui/styles';
 import useStyles, { THUMB_SIZES } from './Thumb.styles';
 
 export type ThumbStylesNames = Selectors<typeof useStyles>;
@@ -38,4 +38,4 @@ export function Thumb({
   );
 }
 
-Thumb.displayName = '@pattern/core/Thumb';
+Thumb.displayName = '@pattern-ui/core/Thumb';

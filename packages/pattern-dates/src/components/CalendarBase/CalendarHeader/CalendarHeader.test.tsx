@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { itSupportsClassName, checkAccessibility } from '@pattern/tests';
+import { itSupportsClassName, checkAccessibility } from '@pattern-ui/tests';
 import { CalendarHeader, CalendarHeaderProps } from './CalendarHeader';
 
 const defaultProps: CalendarHeaderProps = {
@@ -14,7 +14,7 @@ const defaultProps: CalendarHeaderProps = {
 
 const LEVEL_ICON_SELECTOR = '.pattern-CalendarHeader-calendarHeaderLevelIcon';
 
-describe('@pattern/dates/CalendarHeader', () => {
+describe('@pattern-ui/dates/CalendarHeader', () => {
   itSupportsClassName(CalendarHeader, defaultProps);
   checkAccessibility([<CalendarHeader {...defaultProps} />]);
 
@@ -82,6 +82,6 @@ describe('@pattern/dates/CalendarHeader', () => {
   });
 
   it('has correct displayName', () => {
-    expect(CalendarHeader.displayName).toStrictEqual('@pattern/dates/CalendarHeader');
+    expect(CalendarHeader.displayName).toStrictEqual('@pattern-ui/dates/CalendarHeader');
   });
 });

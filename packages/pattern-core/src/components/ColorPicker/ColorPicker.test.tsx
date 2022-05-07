@@ -1,17 +1,17 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { checkAccessibility, itSupportsSystemProps } from '@pattern/tests';
-import { DEFAULT_THEME } from '@pattern/styles';
+import { checkAccessibility, itSupportsSystemProps } from '@pattern-ui/tests';
+import { DEFAULT_THEME } from '@pattern-ui/styles';
 import { ColorPicker, ColorPickerProps } from './ColorPicker';
 
 const swatches = DEFAULT_THEME.colors.red;
 const defaultProps: ColorPickerProps = {};
 
-describe('@pattern/core/ColorPicker', () => {
+describe('@pattern-ui/core/ColorPicker', () => {
   itSupportsSystemProps({
     component: ColorPicker,
     props: defaultProps,
-    displayName: '@pattern/core/ColorPicker',
+    displayName: '@pattern-ui/core/ColorPicker',
     refType: HTMLDivElement,
   });
   checkAccessibility([

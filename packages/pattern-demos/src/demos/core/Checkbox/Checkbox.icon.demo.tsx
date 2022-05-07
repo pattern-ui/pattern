@@ -1,6 +1,6 @@
 import React from 'react';
 import { Biohazard, Radioactive } from 'tabler-icons-react';
-import { Checkbox, CheckboxProps } from '@pattern/core';
+import { Checkbox, CheckboxProps } from '@pattern-ui/core';
 
 const CheckboxIcon: CheckboxProps['icon'] = ({
   indeterminate,

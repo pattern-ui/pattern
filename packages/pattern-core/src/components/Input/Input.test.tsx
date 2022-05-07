@@ -7,12 +7,12 @@ import {
   itSupportsWrapperProps,
   itSupportsInputIcon,
   itSupportsInputRightSection,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { Input, InputProps } from './Input';
 
 const defaultProps: InputProps<'input'> = {};
 
-describe('@pattern/core/Input', () => {
+describe('@pattern-ui/core/Input', () => {
   itIsPolymorphic(Input, defaultProps, '.pattern-Input-input');
   itSupportsWrapperProps(Input, defaultProps);
   itSupportsInputIcon(Input, defaultProps);
@@ -26,7 +26,7 @@ describe('@pattern/core/Input', () => {
   itSupportsSystemProps({
     component: Input,
     props: defaultProps,
-    displayName: '@pattern/core/Input',
+    displayName: '@pattern-ui/core/Input',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

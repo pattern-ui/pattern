@@ -14,7 +14,7 @@ const apple: Fruit = { fruit: 'apple', inStock: false };
 const carrot: Vegetable = { vegetable: 'carrot' };
 const potato: Vegetable = { vegetable: 'potato' };
 
-describe('@pattern/form/use-form get-list-input-props', () => {
+describe('@pattern-ui/form/use-form get-list-input-props', () => {
   it('returns correct input props', () => {
     const hook = renderHook(() =>
       useForm({

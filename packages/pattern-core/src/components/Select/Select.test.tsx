@@ -7,7 +7,7 @@ import {
   itSupportsSystemProps,
   itSupportsInputProps,
   renderWithAct,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { Select, SelectProps } from './Select';
 
 const defaultProps: SelectProps = {
@@ -24,14 +24,14 @@ const data = Array(50)
   .fill(0)
   .map((_, index) => ({ value: index.toString(), label: index.toString() }));
 
-describe('@pattern/core/Select', () => {
+describe('@pattern-ui/core/Select', () => {
   checkAccessibility([<Select {...defaultProps} />]);
   itSupportsFocusEvents(Select, defaultProps, 'input[type="text"]');
   itSupportsInputProps(Select, defaultProps, 'Select');
   itSupportsSystemProps({
     component: Select,
     props: defaultProps,
-    displayName: '@pattern/core/Select',
+    displayName: '@pattern-ui/core/Select',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

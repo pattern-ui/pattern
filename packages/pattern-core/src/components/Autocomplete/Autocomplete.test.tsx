@@ -5,7 +5,7 @@ import {
   checkAccessibility,
   itSupportsFocusEvents,
   renderWithAct,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { Autocomplete, AutocompleteProps } from './Autocomplete';
 
 const defaultProps: AutocompleteProps = {
@@ -26,14 +26,14 @@ const queries = {
   getItems: (container: HTMLElement) => container.querySelectorAll('.pattern-Autocomplete-item'),
 };
 
-describe('@pattern/core/Autocomplete', () => {
+describe('@pattern-ui/core/Autocomplete', () => {
   checkAccessibility([<Autocomplete {...defaultProps} />]);
   itSupportsInputProps(Autocomplete, defaultProps, 'Autocomplete');
   itSupportsFocusEvents(Autocomplete, defaultProps, '.pattern-Autocomplete-input');
   itSupportsSystemProps({
     component: Autocomplete,
     props: defaultProps,
-    displayName: '@pattern/core/Autocomplete',
+    displayName: '@pattern-ui/core/Autocomplete',
     refType: HTMLInputElement,
     excludeOthers: true,
   });

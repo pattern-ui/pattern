@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Button, Group } from '@pattern/core';
+import { Button, Group } from '@pattern-ui/core';
 import { ArrowRightIcon } from '@modulz/radix-icons';
-import { Demo, CreateStylesDemos } from '@pattern/demos';
+import { Demo, CreateStylesDemos } from '@pattern-ui/demos';
 import { PageSection } from '../PageSection/PageSection';
 
 export function Emotion() {

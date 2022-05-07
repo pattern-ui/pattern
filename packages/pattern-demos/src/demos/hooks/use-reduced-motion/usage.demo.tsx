@@ -1,6 +1,6 @@
 import React from 'react';
-import { Group, Badge } from '@pattern/core';
-import { useReducedMotion } from '@pattern/hooks';
+import { Group, Badge } from '@pattern-ui/core';
+import { useReducedMotion } from '@pattern-ui/hooks';
 
 export default function Demo() {
   const reduceMotion = useReducedMotion();

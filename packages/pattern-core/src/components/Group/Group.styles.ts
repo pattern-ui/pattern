@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStyles, PatternNumberSize } from '@pattern/styles';
+import { createStyles, PatternNumberSize } from '@pattern-ui/styles';
 
 export type GroupPosition = 'right' | 'center' | 'left' | 'apart';
 

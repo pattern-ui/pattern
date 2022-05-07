@@ -1,7 +1,7 @@
 import { renderHook } from '@testing-library/react-hooks';
 import { useShallowEffect } from './use-shallow-effect';
 
-describe('@pattern/hooks/use-shallow-effect', () => {
+describe('@pattern-ui/hooks/use-shallow-effect', () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });

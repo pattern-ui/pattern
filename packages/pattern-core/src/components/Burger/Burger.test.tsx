@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { checkAccessibility, itSupportsFocusEvents, itSupportsSystemProps } from '@pattern/tests';
+import { checkAccessibility, itSupportsFocusEvents, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Burger, BurgerProps } from './Burger';
 
 const defaultProps: BurgerProps = {
@@ -8,13 +8,13 @@ const defaultProps: BurgerProps = {
   title: 'Close navigation',
 };
 
-describe('@pattern/core/Burger', () => {
+describe('@pattern-ui/core/Burger', () => {
   checkAccessibility([<Burger {...defaultProps} />]);
   itSupportsFocusEvents(Burger, defaultProps, 'button');
   itSupportsSystemProps({
     component: Burger,
     props: defaultProps,
-    displayName: '@pattern/core/Burger',
+    displayName: '@pattern-ui/core/Burger',
     refType: HTMLButtonElement,
   });
 

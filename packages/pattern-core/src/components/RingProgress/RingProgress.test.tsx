@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { RingProgress, RingProgressProps } from './RingProgress';
 
 const defaultProps: RingProgressProps = {
@@ -8,11 +8,11 @@ const defaultProps: RingProgressProps = {
   label: 'test',
 };
 
-describe('@pattern/core/RingProgress', () => {
+describe('@pattern-ui/core/RingProgress', () => {
   itSupportsSystemProps({
     component: RingProgress,
     props: defaultProps,
-    displayName: '@pattern/core/RingProgress',
+    displayName: '@pattern-ui/core/RingProgress',
     refType: HTMLDivElement,
   });
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Header } from './Header/Header';
 import { Navbar } from './Navbar/Navbar';
 import { AppShell, AppShellProps } from './AppShell';
@@ -9,12 +9,12 @@ const defaultProps: AppShellProps = {
   children: 'test-app-shell',
 };
 
-describe('@pattern/core/AppShell', () => {
+describe('@pattern-ui/core/AppShell', () => {
   itRendersChildren(AppShell, defaultProps);
   itSupportsSystemProps({
     component: AppShell,
     props: defaultProps,
-    displayName: '@pattern/core/AppShell',
+    displayName: '@pattern-ui/core/AppShell',
     refType: HTMLDivElement,
   });
 

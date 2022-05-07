@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { PatternProvider } from '@pattern/styles';
-import { itSupportsSystemProps, itRendersChildren, checkAccessibility } from '@pattern/tests';
+import { PatternProvider } from '@pattern-ui/styles';
+import { itSupportsSystemProps, itRendersChildren, checkAccessibility } from '@pattern-ui/tests';
 import { Tab } from './Tab/Tab';
 import { TabsList } from './TabsList/TabsList';
 import { TabsPanel } from './TabsPanel/TabsPanel';
@@ -46,14 +46,14 @@ const getTab = (value: TabValue) => {
 
 const clickTab = (value: TabValue) => userEvent.click(getTab(value));
 
-describe('@pattern/core/Tabs', () => {
+describe('@pattern-ui/core/Tabs', () => {
   checkAccessibility([<Tabs {...defaultProps} defaultValue="tab-1" />]);
   itRendersChildren(Tabs, defaultProps);
   itSupportsSystemProps({
     component: Tabs,
     props: defaultProps,
     refType: HTMLDivElement,
-    displayName: '@pattern/core/Tabs',
+    displayName: '@pattern-ui/core/Tabs',
     name: 'Tabs',
   });
 

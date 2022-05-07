@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { checkAccessibility, itRendersChildren, itSupportsSystemProps } from '@pattern/tests';
+import { checkAccessibility, itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Modal, ModalProps } from './Modal';
 
 const defaultProps: ModalProps = {
@@ -13,7 +13,7 @@ const defaultProps: ModalProps = {
   children: 'test-modal',
 };
 
-describe('@pattern/core/Modal', () => {
+describe('@pattern-ui/core/Modal', () => {
   checkAccessibility([<Modal {...defaultProps} />]);
   itSupportsSystemProps({ component: Modal, props: defaultProps });
   itRendersChildren(Modal, defaultProps);
@@ -54,6 +54,6 @@ describe('@pattern/core/Modal', () => {
   });
 
   it('has correct displayName', () => {
-    expect(Modal.displayName).toStrictEqual('@pattern/core/Modal');
+    expect(Modal.displayName).toStrictEqual('@pattern-ui/core/Modal');
   });
 });

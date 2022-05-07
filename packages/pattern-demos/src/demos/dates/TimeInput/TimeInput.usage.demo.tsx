@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container } from '@pattern/core';
-import { TimeInput } from '@pattern/dates';
+import { Container } from '@pattern-ui/core';
+import { TimeInput } from '@pattern-ui/dates';
 
 export default function Demo() {
   return (

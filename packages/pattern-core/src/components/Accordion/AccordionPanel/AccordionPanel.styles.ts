@@ -1,4 +1,4 @@
-import { createStyles } from '@pattern/styles';
+import { createStyles } from '@pattern-ui/styles';
 import { AccordionStylesParams } from '../Accordion.types';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars

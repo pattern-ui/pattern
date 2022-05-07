@@ -5,8 +5,8 @@ import {
   Selectors,
   PatternNumberSize,
   usePatternDefaultProps,
-} from '@pattern/styles';
-import { useUuid } from '@pattern/hooks';
+} from '@pattern-ui/styles';
+import { useUuid } from '@pattern-ui/hooks';
 import { CloseButton } from '../ActionIcon';
 import { Box } from '../Box';
 import useStyles from './Alert.styles';
@@ -119,4 +119,4 @@ export const Alert = forwardRef<HTMLDivElement, AlertProps>((props: AlertProps, 
   );
 });
 
-Alert.displayName = '@pattern/core/Alert';
+Alert.displayName = '@pattern-ui/core/Alert';

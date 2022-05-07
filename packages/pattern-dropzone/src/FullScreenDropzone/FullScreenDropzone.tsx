@@ -7,8 +7,8 @@ import {
   DefaultProps,
   Box,
   usePatternDefaultProps,
-} from '@pattern/core';
-import { useIsomorphicEffect } from '@pattern/hooks';
+} from '@pattern-ui/core';
+import { useIsomorphicEffect } from '@pattern-ui/hooks';
 import { DropzoneStatus } from '../Dropzone';
 import useStyles from './FullscreenDropzone.styles';
 
@@ -168,4 +168,4 @@ export function FullScreenDropzone(props: FullScreenDropzoneProps) {
   );
 }
 
-FullScreenDropzone.displayName = '@pattern/dropzone/FullScreenDropzone';
+FullScreenDropzone.displayName = '@pattern-ui/dropzone/FullScreenDropzone';

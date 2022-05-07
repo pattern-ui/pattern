@@ -1,7 +1,7 @@
 import { getMonthsNames } from './get-months-names';
 import 'dayjs/locale/ru';
 
-describe('@pattern/dates/get-months-names', () => {
+describe('@pattern-ui/dates/get-months-names', () => {
   it('returns months names with given locale and format', () => {
     expect(getMonthsNames('en', 'MMMM')).toStrictEqual([
       'January',

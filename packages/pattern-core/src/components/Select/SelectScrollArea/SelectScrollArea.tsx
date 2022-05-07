@@ -9,4 +9,4 @@ export const SelectScrollArea = forwardRef<HTMLDivElement, ScrollAreaProps>(
   )
 );
 
-SelectScrollArea.displayName = '@pattern/core/SelectScrollArea';
+SelectScrollArea.displayName = '@pattern-ui/core/SelectScrollArea';

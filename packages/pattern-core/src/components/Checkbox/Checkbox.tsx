@@ -7,8 +7,8 @@ import {
   extractSystemStyles,
   PatternNumberSize,
   usePatternDefaultProps,
-} from '@pattern/styles';
-import { useUuid } from '@pattern/hooks';
+} from '@pattern-ui/styles';
+import { useUuid } from '@pattern-ui/hooks';
 import { Box } from '../Box';
 import { CheckboxIcon } from './CheckboxIcon';
 import useStyles from './Checkbox.styles';
@@ -115,4 +115,4 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>((props: Chec
   );
 });
 
-Checkbox.displayName = '@pattern/core/Checkbox';
+Checkbox.displayName = '@pattern-ui/core/Checkbox';

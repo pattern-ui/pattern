@@ -1,12 +1,12 @@
 import React, { forwardRef } from 'react';
-import { useBooleanToggle, useUuid } from '@pattern/hooks';
+import { useBooleanToggle, useUuid } from '@pattern-ui/hooks';
 import {
   Selectors,
   DefaultProps,
   extractSystemStyles,
   usePatternTheme,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { ActionIcon } from '../ActionIcon';
 import { TextInputProps, TextInputStylesNames } from '../TextInput';
 import { Input } from '../Input';
@@ -172,4 +172,4 @@ export const PasswordInput = forwardRef<HTMLInputElement, PasswordInputProps>(
   }
 );
 
-PasswordInput.displayName = '@pattern/core/PasswordInput';
+PasswordInput.displayName = '@pattern-ui/core/PasswordInput';

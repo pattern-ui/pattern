@@ -1,5 +1,5 @@
 import React from 'react';
-import { Center, usePatternTheme } from '@pattern/core';
+import { Center, usePatternTheme } from '@pattern-ui/core';
 
 export default function Demo() {
   const theme = usePatternTheme();

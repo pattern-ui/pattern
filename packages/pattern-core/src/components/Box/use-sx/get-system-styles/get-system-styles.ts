@@ -1,4 +1,4 @@
-import { PatternStyleSystemProps, PatternTheme, CSSObject } from '@pattern/styles';
+import { PatternStyleSystemProps, PatternTheme, CSSObject } from '@pattern-ui/styles';
 
 const SYSTEM_PROPS = {
   mt: 'marginTop',

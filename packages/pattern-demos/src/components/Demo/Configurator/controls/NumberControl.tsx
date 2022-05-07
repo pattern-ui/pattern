@@ -1,6 +1,6 @@
 import React from 'react';
-import { NumberInput } from '@pattern/core';
-import { upperFirst } from '@pattern/hooks';
+import { NumberInput } from '@pattern-ui/core';
+import { upperFirst } from '@pattern-ui/hooks';
 
 interface NumberControlProps {
   value: number;

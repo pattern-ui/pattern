@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Title, SimpleGrid, usePatternTheme } from '@pattern/core';
+import { Title, SimpleGrid, usePatternTheme } from '@pattern-ui/core';
 import { PACKAGES_DATA } from './data';
 import { CheckboxCard } from './CheckboxCard';
 
@@ -11,13 +11,13 @@ export function Installation({ setDependencies }: InstallationProps) {
   const theme = usePatternTheme();
 
   const [values, setValues] = useState({
-    '@pattern/hooks': true,
-    '@pattern/core': true,
-    '@pattern/dates': false,
-    '@pattern/notifications': false,
-    '@pattern/prism': false,
-    '@pattern/rte': false,
-    '@pattern/dropzone': false,
+    '@pattern-ui/hooks': true,
+    '@pattern-ui/core': true,
+    '@pattern-ui/dates': false,
+    '@pattern-ui/notifications': false,
+    '@pattern-ui/prism': false,
+    '@pattern-ui/rte': false,
+    '@pattern-ui/dropzone': false,
   });
 
   const items = PACKAGES_DATA.map((item) => (

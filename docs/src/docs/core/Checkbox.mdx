@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Checkbox
 order: 1
 slug: /core/checkbox/
 category: 'inputs'
 description: 'Capture boolean input from user'
 props: ['Checkbox']
-import: "import { Checkbox } from '@pattern/core';"
+import: "import { Checkbox } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Checkbox/Checkbox.tsx'
 docs: 'core/Checkbox.mdx'
 styles: ['Checkbox']
 ---
 
-import { CheckboxDemos } from '@pattern/demos';
+import { CheckboxDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -48,7 +48,7 @@ Checkbox supports indeterminate state. When `indeterminate` prop is true,
 
 ```tsx
 import { useState } from 'react';
-import { Checkbox } from '@pattern/core';
+import { Checkbox } from '@pattern-ui/core';
 
 function Demo() {
   const [checked, setChecked] = useState(false);
@@ -64,7 +64,7 @@ You can get input ref by setting `ref` prop:
 
 ```tsx
 import { useRef } from 'react';
-import { Checkbox } from '@pattern/core';
+import { Checkbox } from '@pattern-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>();
@@ -90,7 +90,7 @@ Provide `aria-label` in case you use checkbox without label for screen reader su
 
 ```tsx
 import { useState } from 'react';
-import { CheckboxGroup, Checkbox } from '@pattern/core';
+import { CheckboxGroup, Checkbox } from '@pattern-ui/core';
 
 function Demo() {
   const [value, setValue] = useState<string[]>([]);

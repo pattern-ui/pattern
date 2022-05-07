@@ -1,5 +1,5 @@
 import React from 'react';
-import { CloseButton, Group } from '@pattern/core';
+import { CloseButton, Group } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

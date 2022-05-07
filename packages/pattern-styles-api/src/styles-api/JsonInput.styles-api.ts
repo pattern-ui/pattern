@@ -1,4 +1,4 @@
-import { JsonInputStylesNames } from '@pattern/core';
+import { JsonInputStylesNames } from '@pattern-ui/core';
 import { Input } from './Input.styles-api';
 import { InputWrapper } from './InputWrapper.styles-api';
 

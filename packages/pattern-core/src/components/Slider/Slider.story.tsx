@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { Heart } from 'tabler-icons-react';
-import { useDisclosure } from '@pattern/hooks';
+import { useDisclosure } from '@pattern-ui/hooks';
 import { Slider } from './Slider/Slider';
 import { RangeSlider } from './RangeSlider/RangeSlider';
 import { Button } from '../Button';

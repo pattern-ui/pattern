@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title, Overlay, Text, Button, Group } from '@pattern/core';
+import { Title, Overlay, Text, Button, Group } from '@pattern-ui/core';
 import { MarkGithubIcon } from '@primer/octicons-react';
 import useStyles from './PatternUiBanner.styles';
 

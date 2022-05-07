@@ -1,6 +1,6 @@
 import { getDate } from './get-date';
 
-describe('@pattern/dates/get-date', () => {
+describe('@pattern-ui/dates/get-date', () => {
   it('returns correct dates', () => {
     const format24 = getDate('20', '12', '30', '24');
 

@@ -8,10 +8,10 @@ Quill based rich text editor
 
 ```sh
 # With yarn
-yarn add @pattern/hooks @pattern/core @pattern/rte
+yarn add @pattern-ui/hooks @pattern-ui/core @pattern-ui/rte
 
 # With npm
-npm install @pattern/hooks @pattern/core @pattern/rte
+npm install @pattern-ui/hooks @pattern-ui/core @pattern-ui/rte
 ```
 
 ## License

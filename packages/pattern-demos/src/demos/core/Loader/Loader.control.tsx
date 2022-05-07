@@ -1,5 +1,5 @@
 import React from 'react';
-import { Loader, LoaderProps, Group } from '@pattern/core';
+import { Loader, LoaderProps, Group } from '@pattern-ui/core';
 
 function Wrapper(props: LoaderProps) {
   return (
@@ -10,7 +10,7 @@ function Wrapper(props: LoaderProps) {
 }
 
 const codeTemplate = (props: string) => `
-import { Loader } from '@pattern/core';
+import { Loader } from '@pattern-ui/core';
 
 export default function Demo() {
   return <Loader${props} />;

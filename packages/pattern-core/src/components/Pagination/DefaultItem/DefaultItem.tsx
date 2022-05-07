@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePatternTheme } from '@pattern/styles';
+import { usePatternTheme } from '@pattern-ui/styles';
 import * as _icons from '../icons';
 
 export interface PaginationItemProps extends React.ComponentPropsWithoutRef<'button'> {
@@ -36,4 +36,4 @@ export function DefaultItem({ page, active, onClick, ...others }: PaginationItem
   );
 }
 
-DefaultItem.displayName = '@pattern/core/Pagination/DefaultItem';
+DefaultItem.displayName = '@pattern-ui/core/Pagination/DefaultItem';

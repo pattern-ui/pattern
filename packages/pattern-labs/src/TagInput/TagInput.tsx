@@ -1,5 +1,5 @@
 import React, { useState, useRef, forwardRef } from 'react';
-import { useUncontrolled, useMergedRef, useUuid } from '@pattern/hooks';
+import { useUncontrolled, useMergedRef, useUuid } from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternSize,
@@ -10,8 +10,7 @@ import {
   InputStylesNames,
   CloseButton,
   extractSystemStyles,
-} from '@pattern/core';
-import { BaseSelectProps } from '@pattern/core';
+ BaseSelectProps } from '@pattern-ui/core';
 import useStyles, { RIGHT_SECTION_WIDTH } from './TagInput.styles';
 import { DefaultValue, DefaultValueStylesNames } from './DefaultValue/DefaultValue';
 
@@ -386,4 +385,4 @@ export const TagInput = forwardRef<HTMLInputElement, TagInputProps>(
   }
 );
 
-TagInput.displayName = '@pattern/labs/TagInput';
+TagInput.displayName = '@pattern-ui/labs/TagInput';

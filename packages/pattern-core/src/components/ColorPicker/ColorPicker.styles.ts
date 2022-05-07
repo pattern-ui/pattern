@@ -1,4 +1,4 @@
-import { createStyles, PatternSize } from '@pattern/styles';
+import { createStyles, PatternSize } from '@pattern-ui/styles';
 
 export interface ColorPickerStylesParams {
   size: PatternSize;

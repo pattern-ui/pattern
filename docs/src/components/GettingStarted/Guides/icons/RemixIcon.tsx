@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePatternTheme, Center } from '@pattern/core';
+import { usePatternTheme, Center } from '@pattern-ui/core';
 
 export function RemixIcon() {
   const theme = usePatternTheme();

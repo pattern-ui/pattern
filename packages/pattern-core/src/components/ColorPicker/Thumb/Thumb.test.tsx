@@ -1,4 +1,4 @@
-import { itSupportsClassName, itSupportsStyle } from '@pattern/tests';
+import { itSupportsClassName, itSupportsStyle } from '@pattern-ui/tests';
 import { Thumb, ThumbProps } from './Thumb';
 
 const defaultProps: ThumbProps = {
@@ -7,11 +7,11 @@ const defaultProps: ThumbProps = {
   size: 'sm',
 };
 
-describe('@pattern/core/Thumb', () => {
+describe('@pattern-ui/core/Thumb', () => {
   itSupportsClassName(Thumb, defaultProps);
   itSupportsStyle(Thumb, defaultProps);
 
   it('has correct displayName', () => {
-    expect(Thumb.displayName).toStrictEqual('@pattern/core/Thumb');
+    expect(Thumb.displayName).toStrictEqual('@pattern-ui/core/Thumb');
   });
 });

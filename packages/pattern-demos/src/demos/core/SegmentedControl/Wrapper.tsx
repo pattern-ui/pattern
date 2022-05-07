@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SegmentedControl, SegmentedControlProps } from '@pattern/core';
+import { SegmentedControl, SegmentedControlProps } from '@pattern-ui/core';
 
 const data = [
   { label: 'React', value: 'react' },

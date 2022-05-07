@@ -1,6 +1,6 @@
 import React from 'react';
-import { useUncontrolled, useId, getSafeId } from '@pattern/utils';
-import { PatternColor, PatternNumberSize } from '@pattern/styles';
+import { useUncontrolled, useId, getSafeId } from '@pattern-ui/utils';
+import { PatternColor, PatternNumberSize } from '@pattern-ui/styles';
 import { TabsContextProvider } from './Tabs.context';
 import { TABS_ERRORS } from './Tabs.errors';
 import { TabsValue, TabsOrientation, TabsVariant } from './Tabs.types';
@@ -94,4 +94,4 @@ export function TabsProvider({
   );
 }
 
-TabsProvider.displayName = '@pattern/core/TabsProvider';
+TabsProvider.displayName = '@pattern-ui/core/TabsProvider';

@@ -1,5 +1,5 @@
 import React, { forwardRef, useRef } from 'react';
-import { DefaultProps, PatternShadow, Selectors, getDefaultZIndex } from '@pattern/styles';
+import { DefaultProps, PatternShadow, Selectors, getDefaultZIndex } from '@pattern-ui/styles';
 import type { Placement } from '@popperjs/core';
 import { SelectScrollArea } from '../SelectScrollArea/SelectScrollArea';
 import { PatternTransition } from '../../Transition';
@@ -140,4 +140,4 @@ export const SelectDropdown = forwardRef<HTMLDivElement, SelectDropdownProps>(
   }
 );
 
-SelectDropdown.displayName = '@pattern/core/SelectDropdown';
+SelectDropdown.displayName = '@pattern-ui/core/SelectDropdown';

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Group, InputWrapper, usePatternTheme, ColorSwatch } from '@pattern/core';
-import { upperFirst } from '@pattern/hooks';
+import { Group, InputWrapper, usePatternTheme, ColorSwatch } from '@pattern-ui/core';
+import { upperFirst } from '@pattern-ui/hooks';
 import { CheckIcon } from '@modulz/radix-icons';
 
 interface ColorControlProps {

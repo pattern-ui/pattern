@@ -1,4 +1,4 @@
-import { Selectors } from '@pattern/styles';
+import { Selectors } from '@pattern-ui/styles';
 import useStyles from './PopoverDropdown/PopoverDropdown.styles';
 
 export type { PopoverStylesParams } from './PopoverDropdown/PopoverDropdown.styles';

@@ -1,12 +1,12 @@
 import React, { forwardRef } from 'react';
-import { useUuid } from '@pattern/hooks';
+import { useUuid } from '@pattern-ui/hooks';
 import {
   DefaultProps,
   PatternSize,
   extractSystemStyles,
   usePatternTheme,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import {
   InputWrapperBaseProps,
   InputWrapper,
@@ -146,4 +146,4 @@ export const NativeSelect = forwardRef<HTMLSelectElement, NativeSelectProps>(
   }
 );
 
-NativeSelect.displayName = '@pattern/core/NativeSelect';
+NativeSelect.displayName = '@pattern-ui/core/NativeSelect';

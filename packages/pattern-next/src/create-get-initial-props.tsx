@@ -1,6 +1,6 @@
 import React from 'react';
 import NextDocument, { DocumentContext } from 'next/document';
-import { ServerStyles, createStylesServer } from '@pattern/ssr';
+import { ServerStyles, createStylesServer } from '@pattern-ui/ssr';
 
 export function createGetInitialProps(): (ctx: DocumentContext) => any {
   const stylesServer = createStylesServer();

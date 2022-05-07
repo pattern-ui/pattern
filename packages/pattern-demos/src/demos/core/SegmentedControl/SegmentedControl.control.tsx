@@ -1,7 +1,7 @@
 import { SegmentedControlWrapper } from './Wrapper';
 
 const codeTemplate = (props: string) => `
-import { SegmentedControl } from '@pattern/core';
+import { SegmentedControl } from '@pattern-ui/core';
 
 export default function Demo() {
   return <SegmentedControl${props} />;

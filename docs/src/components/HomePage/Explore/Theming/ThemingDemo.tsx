@@ -1,5 +1,5 @@
 import React from 'react';
-import { Prism } from '@pattern/prism';
+import { Prism } from '@pattern-ui/prism';
 import {
   Group,
   Button,
@@ -7,10 +7,10 @@ import {
   PatternProvider,
   usePatternTheme,
   createStyles,
-} from '@pattern/core';
+} from '@pattern-ui/core';
 
 const code = `
-import { Badge, Button, PatternProvider } from '@pattern/core';
+import { Badge, Button, PatternProvider } from '@pattern-ui/core';
 
 function Demo() {
   return (

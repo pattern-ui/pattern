@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: NumberInput
 order: 1
 slug: /core/number-input/
 category: 'inputs'
 description: 'Capture number input from user'
 props: ['NumberInput']
-import: "import { NumberInput } from '@pattern/core';"
+import: "import { NumberInput } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/NumberInput/NumberInput.tsx'
 docs: 'core/NumberInput.mdx'
 styles: ['NumberInput']
 ---
 
-import { NumberInputDemos } from '@pattern/demos';
+import { NumberInputDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -23,7 +23,7 @@ import { NumberInputDemos } from '@pattern/demos';
 
 ```tsx
 import { useState } from 'react';
-import { NumberInput } from '@pattern/core';
+import { NumberInput } from '@pattern-ui/core';
 
 function Demo() {
   const [value, setValue] = useState(0);
@@ -113,7 +113,7 @@ Controls to increment/decrement value are not displayed when input is disabled:
 
 ```tsx
 import { useRef } from 'react';
-import { NumberInput } from '@pattern/core';
+import { NumberInput } from '@pattern-ui/core';
 
 function Demo() {
   const ref = useRef<HTMLInputElement>();

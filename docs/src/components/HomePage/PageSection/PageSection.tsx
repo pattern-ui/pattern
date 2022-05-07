@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Text } from '@pattern/core';
+import { Container, Text } from '@pattern-ui/core';
 import { SectionTitle } from '../SectionTitle/SectionTitle';
 import useStyles from './PageSection.styles';
 

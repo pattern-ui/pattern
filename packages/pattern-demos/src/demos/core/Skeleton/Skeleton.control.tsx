@@ -1,5 +1,5 @@
 import React from 'react';
-import { Skeleton, SkeletonProps } from '@pattern/core';
+import { Skeleton, SkeletonProps } from '@pattern-ui/core';
 
 function Wrapper(props: Partial<SkeletonProps>) {
   return (
@@ -13,7 +13,7 @@ function Wrapper(props: Partial<SkeletonProps>) {
 }
 
 const codeTemplate = (props: string) => `
-import { Skeleton } from '@pattern/core';
+import { Skeleton } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

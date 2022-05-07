@@ -6,7 +6,7 @@ import {
   getDefaultZIndex,
   ForwardRefWithStaticComponents,
   Global,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../../Box';
 import { useAppShellContext } from '../AppShell.context';
 import { getSortedBreakpoints } from './get-sorted-breakpoints/get-sorted-breakpoints';
@@ -128,4 +128,4 @@ export const HorizontalSection: HorizontalSectionComponent = forwardRef<
 ) as any;
 
 HorizontalSection.Section = Section;
-HorizontalSection.displayName = '@pattern/core/HorizontalSection';
+HorizontalSection.displayName = '@pattern-ui/core/HorizontalSection';

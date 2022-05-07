@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import { useReducedMotion, useDidUpdate } from '@pattern/hooks';
-import { usePatternTheme } from '@pattern/styles';
+import { useReducedMotion, useDidUpdate } from '@pattern-ui/hooks';
+import { usePatternTheme } from '@pattern-ui/styles';
 
 export type TransitionStatus =
   | 'entered'

@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, PatternNumberSize, PatternColor, Selectors } from '@pattern/styles';
+import { DefaultProps, PatternNumberSize, PatternColor, Selectors } from '@pattern-ui/styles';
 import { Box } from '../../Box';
 import { getPosition } from '../utils/get-position/get-position';
 import { isMarkFilled } from './is-mark-filled';
@@ -70,4 +70,4 @@ export function Marks({
   return <div>{items}</div>;
 }
 
-Marks.displayName = '@pattern/core/SliderMarks';
+Marks.displayName = '@pattern-ui/core/SliderMarks';

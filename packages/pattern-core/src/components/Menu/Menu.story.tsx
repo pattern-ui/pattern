@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { WithinOverlays } from '@pattern/storybook';
+import { WithinOverlays } from '@pattern-ui/storybook';
 import { TextInput } from '../TextInput';
 import { Container } from '../Container';
 import { Divider } from '../Divider';

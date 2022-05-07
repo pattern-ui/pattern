@@ -1,6 +1,6 @@
 import React, { useRef, forwardRef } from 'react';
-import { useMergedRef } from '@pattern/hooks';
-import { PatternSize } from '@pattern/core';
+import { useMergedRef } from '@pattern-ui/hooks';
+import { PatternSize } from '@pattern-ui/core';
 import useStyles from '../TimeInputBase.styles';
 
 interface AmPmSelectProps
@@ -69,4 +69,4 @@ export const AmPmInput = forwardRef<HTMLInputElement, AmPmSelectProps>(
   }
 );
 
-AmPmInput.displayName = '@pattern/dates/AmPmInput';
+AmPmInput.displayName = '@pattern-ui/dates/AmPmInput';

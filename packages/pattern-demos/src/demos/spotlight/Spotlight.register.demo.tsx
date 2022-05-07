@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React, { useState } from 'react';
-import { Group, Button } from '@pattern/core';
-import { SpotlightProvider, useSpotlight } from '@pattern/spotlight';
+import { Group, Button } from '@pattern-ui/core';
+import { SpotlightProvider, useSpotlight } from '@pattern-ui/spotlight';
 import { Alien, Search } from 'tabler-icons-react';
 import { actions } from './_actions';
 

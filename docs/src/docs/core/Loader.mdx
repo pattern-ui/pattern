@@ -1,19 +1,19 @@
 ---
 group: 'pattern-core'
-package: '@pattern/core'
+package: '@pattern-ui/core'
 title: Loader
 order: 1
 slug: /core/loader/
 category: 'feedback'
 description: 'Indicate loading state'
 props: ['Loader']
-import: "import { Loader } from '@pattern/core';"
+import: "import { Loader } from '@pattern-ui/core';"
 source: 'pattern-core/src/components/Loader/Loader.tsx'
 docs: 'core/Loader.mdx'
 styles: ['Loader', 'single-node']
 ---
 
-import { LoaderDemos } from '@pattern/demos';
+import { LoaderDemos } from '@pattern-ui/demos';
 
 ## Usage
 
@@ -28,7 +28,7 @@ You can configure default loader in [PatternProvider](/theming/pattern-provider/
 it will be used in Loader and [LoadingOverlay](/core/loading-overlay/) components by default:
 
 ```tsx
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 
 function Demo() {
   return (

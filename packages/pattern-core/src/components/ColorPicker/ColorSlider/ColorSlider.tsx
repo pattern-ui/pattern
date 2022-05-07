@@ -5,8 +5,8 @@ import {
   useDidUpdate,
   UseMovePosition,
   useMergedRef,
-} from '@pattern/hooks';
-import { DefaultProps, PatternSize, Selectors } from '@pattern/styles';
+} from '@pattern-ui/hooks';
+import { DefaultProps, PatternSize, Selectors } from '@pattern-ui/styles';
 import { Box } from '../../Box';
 import { Thumb, ThumbStylesNames } from '../Thumb/Thumb';
 import useStyles from './ColorSlider.styles';
@@ -112,4 +112,4 @@ export const ColorSlider = forwardRef<HTMLDivElement, ColorSliderProps>(
   }
 );
 
-ColorSlider.displayName = '@pattern/core/ColorSlider';
+ColorSlider.displayName = '@pattern-ui/core/ColorSlider';

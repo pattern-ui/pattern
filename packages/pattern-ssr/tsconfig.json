@@ -10,7 +10,7 @@
     "declarationDir": "lib",
     "composite": true,
     "paths": {
-      "@pattern/styles": ["../pattern-styles/src"]
+      "@pattern-ui/styles": ["../pattern-styles/src"]
     }
   },
   "references": [{ "path": "../pattern-styles" }]

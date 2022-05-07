@@ -4,7 +4,7 @@ import {
   PatternNumberSize,
   PolymorphicComponentProps,
   PolymorphicRef,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../../Box';
 import useStyles from './CardSection.styles';
 
@@ -37,4 +37,4 @@ export const CardSection: CardSectionComponent = forwardRef(
   }
 ) as any;
 
-CardSection.displayName = '@pattern/core/CardSection';
+CardSection.displayName = '@pattern-ui/core/CardSection';

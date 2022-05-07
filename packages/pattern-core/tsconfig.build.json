@@ -21,10 +21,10 @@
     "declarationDir": "lib",
     "composite": true,
     "paths": {
-      "@pattern/hooks": ["../pattern-hooks/src"],
-      "@pattern/styles": ["../pattern-styles/src"],
-      "@pattern/utils": ["../pattern-utils/src"],
-      "@pattern/tests": ["../pattern-tests/src"]
+      "@pattern-ui/hooks": ["../pattern-hooks/src"],
+      "@pattern-ui/styles": ["../pattern-styles/src"],
+      "@pattern-ui/utils": ["../pattern-utils/src"],
+      "@pattern-ui/tests": ["../pattern-tests/src"]
     }
   },
   "references": [

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useDebouncedValue } from '@pattern/hooks';
-import { TextInput, Text, Button } from '@pattern/core';
+import { useDebouncedValue } from '@pattern-ui/hooks';
+import { TextInput, Text, Button } from '@pattern-ui/core';
 
 export default function Demo() {
   const [value, setValue] = useState('');

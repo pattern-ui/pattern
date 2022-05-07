@@ -1,7 +1,7 @@
-import { DEFAULT_THEME } from '@pattern/styles';
+import { DEFAULT_THEME } from '@pattern-ui/styles';
 import { getSortedBreakpoints } from './get-sorted-breakpoints';
 
-describe('@pattern/core/AppShell/get-sorted-breakpoints', () => {
+describe('@pattern-ui/core/AppShell/get-sorted-breakpoints', () => {
   it('returns sorted breakpoints with theme values', () => {
     expect(getSortedBreakpoints({ lg: 500, sm: 400, xs: 300 }, DEFAULT_THEME)).toStrictEqual([
       [DEFAULT_THEME.breakpoints.xs, 300],

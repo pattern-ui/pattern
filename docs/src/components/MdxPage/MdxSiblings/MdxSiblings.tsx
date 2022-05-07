@@ -1,5 +1,5 @@
 import React from 'react';
-import { SimpleGrid } from '@pattern/core';
+import { SimpleGrid } from '@pattern-ui/core';
 import { MdxPageProps } from '../../../types';
 import { MdxSibling } from './MdxSibling/MdxSibling';
 

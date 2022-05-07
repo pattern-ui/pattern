@@ -1,4 +1,4 @@
-import type { ScrollAreaStylesNames } from '@pattern/core';
+import type { ScrollAreaStylesNames } from '@pattern-ui/core';
 
 export const ScrollArea: Record<ScrollAreaStylesNames, string> = {
   root: 'Root element',

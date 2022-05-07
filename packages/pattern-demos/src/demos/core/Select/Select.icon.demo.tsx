@@ -1,6 +1,6 @@
 import React from 'react';
 import { Hash } from 'tabler-icons-react';
-import { Select } from '@pattern/core';
+import { Select } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

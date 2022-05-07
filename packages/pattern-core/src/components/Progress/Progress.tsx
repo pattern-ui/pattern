@@ -5,7 +5,7 @@ import {
   PatternColor,
   Selectors,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 import useStyles from './Progress.styles';
 import { Text } from '../Text';
@@ -118,4 +118,4 @@ export const Progress = forwardRef<HTMLDivElement, ProgressProps>((props: Progre
   );
 });
 
-Progress.displayName = '@pattern/core/Progress';
+Progress.displayName = '@pattern-ui/core/Progress';

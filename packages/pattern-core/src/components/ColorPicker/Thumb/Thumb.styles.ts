@@ -1,4 +1,4 @@
-import { createStyles, PatternSize } from '@pattern/styles';
+import { createStyles, PatternSize } from '@pattern-ui/styles';
 
 interface ThumbStyles {
   size: PatternSize;

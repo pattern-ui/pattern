@@ -23,4 +23,4 @@ export function TooltipGroup({ children, openDelay = 0, closeDelay = 0 }: Toolti
   );
 }
 
-TooltipGroup.displayName = '@pattern/core/TooltipGroup';
+TooltipGroup.displayName = '@pattern-ui/core/TooltipGroup';

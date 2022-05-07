@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itSupportsSystemProps } from '@pattern/tests';
+import { itSupportsSystemProps } from '@pattern-ui/tests';
 import { Grid, GridProps } from './Grid';
 import { Col } from './Col/Col';
 
@@ -8,11 +8,11 @@ const defaultProps: GridProps = {
   children: [<Col key={1}>1</Col>, <Col key={2}>2</Col>],
 };
 
-describe('@pattern/core/Grid', () => {
+describe('@pattern-ui/core/Grid', () => {
   itSupportsSystemProps({
     component: Grid,
     props: defaultProps,
-    displayName: '@pattern/core/Grid',
+    displayName: '@pattern-ui/core/Grid',
     refType: HTMLDivElement,
   });
 

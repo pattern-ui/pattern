@@ -1,6 +1,6 @@
 import React from 'react';
 import { Search } from 'tabler-icons-react';
-import { Divider, Box } from '@pattern/core';
+import { Divider, Box } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

@@ -1,4 +1,4 @@
-import { createStyles, PatternColor, PatternNumberSize, PatternSize } from '@pattern/styles';
+import { createStyles, PatternColor, PatternNumberSize, PatternSize } from '@pattern-ui/styles';
 
 export interface StepStylesParams {
   color: PatternColor;

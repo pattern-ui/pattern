@@ -1,5 +1,5 @@
 import React, { cloneElement } from 'react';
-import { isElement } from '@pattern/utils';
+import { isElement } from '@pattern-ui/utils';
 import { Popover, PopoverTargetProps } from '../../Popover';
 import { useHoverCardContext } from '../HoverCard.context';
 import { HOVER_CARD_ERRORS } from '../HoverCard.errors';
@@ -29,4 +29,4 @@ export function HoverCardTarget({ children, refProp }: PopoverTargetProps) {
   );
 }
 
-HoverCardTarget.displayName = '@pattern/core/HoverCardTarget';
+HoverCardTarget.displayName = '@pattern-ui/core/HoverCardTarget';

@@ -1,4 +1,4 @@
-import { createStyles, PatternNumberSize, CSSObject } from '@pattern/styles';
+import { createStyles, PatternNumberSize, CSSObject } from '@pattern-ui/styles';
 
 export interface MediaQueryStylesParams {
   smallerThan: PatternNumberSize;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, Selectors } from '@pattern/styles';
+import { DefaultProps, Selectors } from '@pattern-ui/styles';
 import { Box } from '../../Box';
 import { useListContext } from '../List.context';
 import useStyles from './ListItem.styles';
@@ -35,4 +35,4 @@ export function ListItem({ className, children, icon, ...others }: ListItemProps
   );
 }
 
-ListItem.displayName = '@pattern/core/ListItem';
+ListItem.displayName = '@pattern-ui/core/ListItem';

@@ -1,4 +1,4 @@
-// @pattern/core
+// @pattern-ui/core
 export * from './Accordion.styles-api';
 export * from './ActionIcon.styles-api';
 export * from './Alert.styles-api';
@@ -51,7 +51,7 @@ export * from './Timeline.styles-api';
 export * from './Tooltip.styles-api';
 export * from './TransferList.styles-api';
 
-// @pattern/dates
+// @pattern-ui/dates
 export * from './Calendar.styles-api';
 export * from './CalendarBase.styles-api';
 export * from './DatePicker.styles-api';

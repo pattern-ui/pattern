@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, PatternNumberSize, usePatternDefaultProps } from '@pattern/styles';
+import { DefaultProps, PatternNumberSize, usePatternDefaultProps } from '@pattern-ui/styles';
 import { Box } from '../Box';
 
 export interface SpaceProps extends DefaultProps {
@@ -34,4 +34,4 @@ export const Space = forwardRef<HTMLDivElement, SpaceProps>((props: SpaceProps, 
   );
 });
 
-Space.displayName = '@pattern/core/Space';
+Space.displayName = '@pattern-ui/core/Space';

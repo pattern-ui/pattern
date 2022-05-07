@@ -1,6 +1,6 @@
 import React from 'react';
 import { Check } from 'tabler-icons-react';
-import { Notification, NotificationProps } from '@pattern/core';
+import { Notification, NotificationProps } from '@pattern-ui/core';
 import { demoBase } from './_demo-base';
 
 function Wrapper(props: NotificationProps) {
@@ -13,7 +13,7 @@ function Wrapper(props: NotificationProps) {
 }
 
 const codeTemplate = (props: string, children: string) => `
-import { Notification } from '@pattern/core';
+import { Notification } from '@pattern-ui/core';
 import { Check } from 'tabler-icons-react';
 
 export default function Demo() {

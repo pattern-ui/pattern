@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table } from '@pattern/core';
+import { Table } from '@pattern-ui/core';
 import { elements } from './_data';
 
 export default function Demo() {

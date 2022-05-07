@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React from 'react';
-import { useForm } from '@pattern/form';
-import { Box, TextInput, NumberInput, Button, Group } from '@pattern/core';
+import { useForm } from '@pattern-ui/form';
+import { Box, TextInput, NumberInput, Button, Group } from '@pattern-ui/core';
 
 export default function Demo() {
   const form = useForm<{ name: string; age: number | undefined }>({

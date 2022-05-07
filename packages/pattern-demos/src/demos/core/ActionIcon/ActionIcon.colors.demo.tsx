@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sun } from 'tabler-icons-react';
-import { Group, PATTERN_COLORS, ActionIcon, ActionIconProps } from '@pattern/core';
+import { Group, PATTERN_COLORS, ActionIcon, ActionIconProps } from '@pattern-ui/core';
 
 const getColors = (props: Omit<ActionIconProps<'button'>, 'children'>) =>
   PATTERN_COLORS.slice(1).map((color) => (

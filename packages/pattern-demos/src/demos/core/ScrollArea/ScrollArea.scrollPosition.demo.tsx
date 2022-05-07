@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Group, Code, Text, ScrollArea } from '@pattern/core';
+import { Group, Code, Text, ScrollArea } from '@pattern-ui/core';
 import { Content } from './_content';
 
 export default function Demo() {

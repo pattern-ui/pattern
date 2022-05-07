@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { PATTERN_SIZES } from '@pattern/core';
+import { PATTERN_SIZES } from '@pattern-ui/core';
 import { TimeRangeInput } from './TimeRangeInput';
 
 const sizes = PATTERN_SIZES.map((size) => (

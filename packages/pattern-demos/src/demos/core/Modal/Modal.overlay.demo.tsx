@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal, Group, Button, usePatternTheme } from '@pattern/core';
+import { Modal, Group, Button, usePatternTheme } from '@pattern-ui/core';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 
 export default function Demo() {

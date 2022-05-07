@@ -1,5 +1,5 @@
 import React from 'react';
-import { getDefaultZIndex } from '@pattern/styles';
+import { getDefaultZIndex } from '@pattern-ui/styles';
 import { Portal } from '../../Portal';
 
 export interface PopperContainerProps {
@@ -37,4 +37,4 @@ export function PopperContainer({
   );
 }
 
-PopperContainer.displayName = '@pattern/core/PopperContainer';
+PopperContainer.displayName = '@pattern-ui/core/PopperContainer';

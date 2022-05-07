@@ -1,5 +1,5 @@
 import React from 'react';
-import { Group } from '@pattern/core';
+import { Group } from '@pattern-ui/core';
 import { DemoBase } from './_base';
 
 export default function Demo() {

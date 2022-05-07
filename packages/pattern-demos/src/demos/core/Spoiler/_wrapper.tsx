@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Box, Spoiler, SpoilerProps } from '@pattern/core';
+import { Text, Box, Spoiler, SpoilerProps } from '@pattern-ui/core';
 
 const content = (
   <div>

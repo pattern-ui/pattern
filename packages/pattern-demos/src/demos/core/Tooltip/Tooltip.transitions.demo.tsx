@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tooltip, Badge, Group, AVAILABLE_TRANSITIONS } from '@pattern/core';
+import { Tooltip, Badge, Group, AVAILABLE_TRANSITIONS } from '@pattern-ui/core';
 
 export default function Demo() {
   const transitions = AVAILABLE_TRANSITIONS.map((transition) => (

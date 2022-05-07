@@ -1,4 +1,4 @@
-import { PatternNumberSize } from '@pattern/styles';
+import { PatternNumberSize } from '@pattern-ui/styles';
 
 export type AccordionValue<Multiple extends boolean> = Multiple extends true
   ? string[]

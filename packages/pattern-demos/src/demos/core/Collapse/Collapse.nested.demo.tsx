@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Text, Collapse, CollapseProps } from '@pattern/core';
+import { Button, Text, Collapse, CollapseProps } from '@pattern-ui/core';
 
 export function CollapsedDemo({
   children,

@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { renderHook } from '@testing-library/react-hooks';
-import { PatternProvider } from '@pattern/core';
+import { PatternProvider } from '@pattern-ui/core';
 import { useNotifications } from './use-notifications';
 import { NotificationsProvider } from '../NotificationsProvider/NotificationsProvider';
 
-describe('@pattern/notifications/use-notifications', () => {
+describe('@pattern-ui/notifications/use-notifications', () => {
   beforeAll(() => {
     // @ts-ignore
     ReactDOM.createPortal = jest.fn((element) => element);
@@ -20,7 +20,7 @@ describe('@pattern/notifications/use-notifications', () => {
     const hook = renderHook(() => useNotifications());
     expect(hook.result.error).toStrictEqual(
       Error(
-        '@pattern/notifications: use-notifications hook was called outside of NotificationsProvider context'
+        '@pattern-ui/notifications: use-notifications hook was called outside of NotificationsProvider context'
       )
     );
   });

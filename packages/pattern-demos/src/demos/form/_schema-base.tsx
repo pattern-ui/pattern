@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 import React from 'react';
 import { z } from 'zod';
-import { useForm, zodResolver } from '@pattern/form';
-import { NumberInput, TextInput, Button, Box, Group } from '@pattern/core';
+import { useForm, zodResolver } from '@pattern-ui/form';
+import { NumberInput, TextInput, Button, Box, Group } from '@pattern-ui/core';
 
 const schema = z.object({
   name: z.string().min(2, { message: 'Name should have at least 2 letters' }),

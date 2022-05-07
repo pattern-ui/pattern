@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text } from '@pattern/core';
-import { DEFAULT_CONTROLS, DEFAULT_LABELS, Toolbar } from '@pattern/rte';
+import { Text } from '@pattern-ui/core';
+import { DEFAULT_CONTROLS, DEFAULT_LABELS, Toolbar } from '@pattern-ui/rte';
 
 export default function Demo() {
   return (

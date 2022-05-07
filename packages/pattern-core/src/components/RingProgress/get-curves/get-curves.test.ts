@@ -1,6 +1,6 @@
 import { getCurves } from './get-curves';
 
-describe('@pattern/core/RingProgress/get-curves', () => {
+describe('@pattern-ui/core/RingProgress/get-curves', () => {
   it('returns valid curves data', () => {
     const curves = getCurves({
       size: 350,

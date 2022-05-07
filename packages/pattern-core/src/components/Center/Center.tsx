@@ -4,7 +4,7 @@ import {
   PolymorphicComponentProps,
   PolymorphicRef,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { Box } from '../Box';
 
 export interface _CenterProps extends DefaultProps {
@@ -41,4 +41,4 @@ export const Center: CenterComponent = forwardRef(
   }
 ) as any;
 
-Center.displayName = '@pattern/core/Center';
+Center.displayName = '@pattern-ui/core/Center';

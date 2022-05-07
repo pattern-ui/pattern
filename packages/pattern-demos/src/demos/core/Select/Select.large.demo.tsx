@@ -1,5 +1,5 @@
 import React from 'react';
-import { Select } from '@pattern/core';
+import { Select } from '@pattern-ui/core';
 
 export default function Demo() {
   const data = Array(50)

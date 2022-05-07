@@ -7,8 +7,8 @@ import {
   LoadingOverlay,
   Box,
   usePatternDefaultProps,
-} from '@pattern/core';
-import { assignRef } from '@pattern/hooks';
+} from '@pattern-ui/core';
+import { assignRef } from '@pattern-ui/hooks';
 import useStyles from './Dropzone.styles';
 
 export type DropzoneStylesNames = Selectors<typeof useStyles>;
@@ -117,4 +117,4 @@ export const Dropzone = forwardRef<HTMLDivElement, DropzoneProps>((props: Dropzo
   );
 });
 
-Dropzone.displayName = '@pattern/dropzone/Dropzone';
+Dropzone.displayName = '@pattern-ui/dropzone/Dropzone';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollArea } from '@pattern/core';
+import { ScrollArea } from '@pattern-ui/core';
 import NavbarMainLink from './NavbarMainLink/NavbarMainLink';
 import NavbarDocsCategory from './NavbarDocsCategory/NavbarDocsCategory';
 import { getDocsData } from '../get-docs-data';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { PatternProvider } from '@pattern/styles';
-import { StylesAPIStory } from '@pattern/storybook';
+import { PatternProvider } from '@pattern-ui/styles';
+import { StylesAPIStory } from '@pattern-ui/storybook';
 import { Blockquote } from './Blockquote';
 
 storiesOf('Blockquote', module)

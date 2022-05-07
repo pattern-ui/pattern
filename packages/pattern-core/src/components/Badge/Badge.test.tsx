@@ -1,17 +1,17 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from '@pattern/tests';
+import { itRendersChildren, itIsPolymorphic, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Badge, BadgeProps } from './Badge';
 
 const defaultProps: BadgeProps<'div'> = {};
 
-describe('@pattern/core/Badge', () => {
+describe('@pattern-ui/core/Badge', () => {
   itRendersChildren(Badge, defaultProps);
   itIsPolymorphic(Badge, defaultProps);
   itSupportsSystemProps({
     component: Badge,
     props: defaultProps,
-    displayName: '@pattern/core/Badge',
+    displayName: '@pattern-ui/core/Badge',
     refType: HTMLDivElement,
   });
 

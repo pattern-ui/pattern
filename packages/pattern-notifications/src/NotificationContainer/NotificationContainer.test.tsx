@@ -1,4 +1,4 @@
-import { itSupportsClassName, itSupportsSx } from '@pattern/tests';
+import { itSupportsClassName, itSupportsSx } from '@pattern-ui/tests';
 import NotificationContainer from './NotificationContainer';
 
 const defaultProps = {
@@ -8,13 +8,13 @@ const defaultProps = {
   innerRef: undefined,
 } as const;
 
-describe('@pattern/notifications/NotificationContainer', () => {
+describe('@pattern-ui/notifications/NotificationContainer', () => {
   itSupportsSx(NotificationContainer, defaultProps);
   itSupportsClassName(NotificationContainer, defaultProps);
 
   it('has correct displayName', () => {
     expect(NotificationContainer.displayName).toStrictEqual(
-      '@pattern/notifications/NotificationContainer'
+      '@pattern-ui/notifications/NotificationContainer'
     );
   });
 });

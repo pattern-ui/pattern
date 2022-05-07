@@ -1,5 +1,5 @@
 import React from 'react';
-import { DEFAULT_THEME } from '@pattern/core';
+import { DEFAULT_THEME } from '@pattern-ui/core';
 
 export const demoBase: Partial<PatternDemoBase> = {
   wrapper: ({ children }: { children: React.ReactNode }) => (

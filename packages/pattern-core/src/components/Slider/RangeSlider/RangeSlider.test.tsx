@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { checkAccessibility, itSupportsSystemProps } from '@pattern/tests';
+import { checkAccessibility, itSupportsSystemProps } from '@pattern-ui/tests';
 import { RangeSlider } from './RangeSlider';
 
 const defaultProps = {
@@ -14,12 +14,12 @@ const getInput = (container: HTMLElement, index: 0 | 1) =>
 const expectInputValue = (value: string, container: HTMLElement, index: 0 | 1) =>
   expect(getInput(container, index)).toHaveValue(value);
 
-describe('@pattern/core/RangeSlider', () => {
+describe('@pattern-ui/core/RangeSlider', () => {
   checkAccessibility([<RangeSlider {...defaultProps} />]);
   itSupportsSystemProps({
     component: RangeSlider,
     props: defaultProps,
-    displayName: '@pattern/core/RangeSlider',
+    displayName: '@pattern-ui/core/RangeSlider',
     refType: HTMLDivElement,
   });
 

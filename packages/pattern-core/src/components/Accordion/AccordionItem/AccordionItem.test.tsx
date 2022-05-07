@@ -3,7 +3,7 @@ import {
   createContextContainer,
   itRendersChildren,
   itThrowsContextError,
-} from '@pattern/tests';
+} from '@pattern-ui/tests';
 import { AccordionItem, AccordionItemProps } from './AccordionItem';
 import { AccordionProvider } from '../AccordionProvider';
 import { ACCORDION_ERRORS } from '../Accordion.errors';
@@ -15,13 +15,13 @@ const defaultProps: AccordionItemProps = {
 
 const TestContainer = createContextContainer(AccordionItem, AccordionProvider, { order: 3 });
 
-describe('@pattern/core/AccordionItem', () => {
+describe('@pattern-ui/core/AccordionItem', () => {
   itRendersChildren(TestContainer, defaultProps);
   itThrowsContextError(AccordionItem, defaultProps, ACCORDION_ERRORS['accordion-context']);
   itSupportsSystemProps({
     component: TestContainer,
     props: defaultProps,
     refType: HTMLDivElement,
-    displayName: '@pattern/core/AccordionItem',
+    displayName: '@pattern-ui/core/AccordionItem',
   });
 });

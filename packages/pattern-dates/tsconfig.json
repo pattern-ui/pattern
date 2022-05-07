@@ -11,10 +11,10 @@
     "declarationDir": "lib",
     "composite": true,
     "paths": {
-      "@pattern/core": ["../pattern-core/src"],
-      "@pattern/hooks": ["../pattern-hooks/src"],
-      "@pattern/storybook": ["../pattern-storybook/src"],
-      "@pattern/tests": ["../pattern-tests/src"]
+      "@pattern-ui/core": ["../pattern-core/src"],
+      "@pattern-ui/hooks": ["../pattern-hooks/src"],
+      "@pattern-ui/storybook": ["../pattern-storybook/src"],
+      "@pattern-ui/tests": ["../pattern-tests/src"]
     }
   },
   "references": [

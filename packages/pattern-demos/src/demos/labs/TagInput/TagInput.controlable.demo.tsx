@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TagInput } from '@pattern/labs';
+import { TagInput } from '@pattern-ui/labs';
 
 export default function Demo() {
   const [value, setValue] = useState(['React']);

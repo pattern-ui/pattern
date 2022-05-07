@@ -5,14 +5,14 @@ import {
   useDidUpdate,
   useScrollIntoView,
   useUuid,
-} from '@pattern/hooks';
+} from '@pattern-ui/hooks';
 import {
   DefaultProps,
   Selectors,
   extractSystemStyles,
   getDefaultZIndex,
   usePatternDefaultProps,
-} from '@pattern/styles';
+} from '@pattern-ui/styles';
 import { InputWrapper } from '../InputWrapper';
 import { Input } from '../Input';
 import { DefaultValue, DefaultValueStylesNames } from './DefaultValue/DefaultValue';
@@ -673,4 +673,4 @@ export const MultiSelect = forwardRef<HTMLInputElement, MultiSelectProps>(
   }
 );
 
-MultiSelect.displayName = '@pattern/core/MultiSelect';
+MultiSelect.displayName = '@pattern-ui/core/MultiSelect';
