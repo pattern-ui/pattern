@@ -1,7 +1,7 @@
 import React from 'react';
 import { DatePicker } from '@pattern/dates';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <DatePicker label="Your birthday" placeholder="Your birthday" error />
@@ -15,8 +15,3 @@ function Demo() {
     </div>
   );
 }
-
-export const validation: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

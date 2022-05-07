@@ -24,7 +24,7 @@ const codeTemplate = (props: string) => `
 import { ActionIcon } from '@pattern/core';
 import { Adjustments } from 'tabler-icons-react';
 
-function Demo() {
+export default function Demo() {
   return (
     <ActionIcon${props}>
       <Adjustments />

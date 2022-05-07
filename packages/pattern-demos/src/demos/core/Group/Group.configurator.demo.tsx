@@ -14,7 +14,7 @@ function Wrapper(props: GroupProps) {
 const codeTemplate = (props: string) => `
 import { Group, Button } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group${props}>
       <Button variant="outline">1</Button>

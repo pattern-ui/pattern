@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Stepper } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [active, setActive] = useState(1);
   return (
     <Stepper active={active} onStepClick={setActive} orientation="vertical">
@@ -11,8 +11,3 @@ function Demo() {
     </Stepper>
   );
 }
-
-export const orientation: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

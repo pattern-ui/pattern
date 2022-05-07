@@ -2,7 +2,7 @@ import React from 'react';
 import { Avatar, Group } from '@pattern/core';
 import { avatars } from './_mockdata';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <Avatar
@@ -15,8 +15,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const link: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

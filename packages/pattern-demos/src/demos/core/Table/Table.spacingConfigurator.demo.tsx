@@ -30,7 +30,7 @@ function Wrapper(props: TableProps) {
 const codeTemplate = (props: string) => `
 import { Table } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Table${props}>
       {/* {...rows} */}

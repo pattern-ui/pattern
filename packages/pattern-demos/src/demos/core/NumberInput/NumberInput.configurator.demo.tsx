@@ -4,7 +4,7 @@ import { NumberInput, NumberInputProps } from '@pattern/core';
 const codeTemplate = (props: string) => `
 import { NumberInput } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <NumberInput
       defaultValue={18}

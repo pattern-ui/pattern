@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, Title } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Title order={3}>
       Title in which you want to{' '}
@@ -12,8 +12,3 @@ function Demo() {
     </Title>
   );
 }
-
-export const inherit: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

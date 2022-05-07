@@ -2,7 +2,7 @@ import React from 'react';
 import { useDisclosure } from '@pattern/hooks';
 import { FocusTrap, TextInput, Button } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [active, handlers] = useDisclosure(false);
 
   return (
@@ -19,8 +19,3 @@ function Demo() {
     </div>
   );
 }
-
-export const initial: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -4,7 +4,7 @@ import { TimeInput } from '@pattern/dates';
 const codeTemplate = (props: string) => `
 import { TimeInput } from '@pattern/dates';
 
-function Demo() {
+export default function Demo() {
   return (
     <TimeInput
       defaultValue={new Date()}

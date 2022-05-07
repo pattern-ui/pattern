@@ -1,7 +1,7 @@
 import React from 'react';
 import { JsonInput } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 400, marginLeft: 'auto', marginRight: 'auto' }}>
       <JsonInput
@@ -15,8 +15,3 @@ function Demo() {
     </div>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

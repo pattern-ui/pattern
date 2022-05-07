@@ -16,7 +16,7 @@ function Wrapper(props: ListProps) {
 const codeTemplate = (props: string) => `
 import { List } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <List${props}>
       <List.Item>Clone or download repository from GitHub</List.Item>

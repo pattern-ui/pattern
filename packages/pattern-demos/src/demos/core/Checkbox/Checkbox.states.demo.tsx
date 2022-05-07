@@ -1,7 +1,7 @@
 import React from 'react';
 import { Checkbox, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group direction="column">
       <Checkbox checked={false} label="Default checkbox" />
@@ -13,8 +13,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const states: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

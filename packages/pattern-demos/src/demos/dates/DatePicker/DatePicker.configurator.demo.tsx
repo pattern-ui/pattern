@@ -3,7 +3,7 @@ import { DatePicker } from '@pattern/dates';
 const codeTemplate = (props: string) => `
 import { DatePicker } from '@pattern/dates';
 
-function Demo() {
+export default function Demo() {
   return (
     <DatePicker
      ${props}

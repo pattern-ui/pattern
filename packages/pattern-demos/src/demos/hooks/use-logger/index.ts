@@ -1,1 +1,1 @@
-export { useLoggerDemo } from './usage';
+export { default as useLoggerDemo } from './usage.demo';

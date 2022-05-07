@@ -2,7 +2,7 @@ import React from 'react';
 import { Flame } from 'tabler-icons-react';
 import { Blockquote } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 420, margin: 'auto' }}>
       <Blockquote cite="– Your poor i3 from 2012 struggling its best" icon={<Flame size={24} />}>
@@ -11,8 +11,3 @@ function Demo() {
     </div>
   );
 }
-
-export const icon: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

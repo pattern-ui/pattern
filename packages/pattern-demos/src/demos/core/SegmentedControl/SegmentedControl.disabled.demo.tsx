@@ -1,7 +1,7 @@
 import React from 'react';
 import { SegmentedControl, Stack, Text } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Stack align="center">
       <div>
@@ -52,8 +52,3 @@ function Demo() {
     </Stack>
   );
 }
-
-export const disabled: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

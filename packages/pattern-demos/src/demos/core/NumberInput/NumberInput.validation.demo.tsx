@@ -1,7 +1,7 @@
 import React from 'react';
 import { NumberInput } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <NumberInput label="Your age" defaultValue={20} error placeholder="Invalid without error" />
@@ -15,8 +15,3 @@ function Demo() {
     </div>
   );
 }
-
-export const validation: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

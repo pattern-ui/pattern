@@ -21,7 +21,7 @@ export function CollapsedDemo({
 const lorem =
   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea atque in est quaerat dolore odio! Quibusdam, a nihil modi, maiores consequuntur ex quod suscipit illum ducimus doloribus odit commodi tenetur.';
 
-function Demo() {
+export default function Demo() {
   return (
     <CollapsedDemo buttonProps={{ children: 'Root collapse' }}>
       <Text mt="md" size="lg" weight={700}>
@@ -37,8 +37,3 @@ function Demo() {
     </CollapsedDemo>
   );
 }
-
-export const nested: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

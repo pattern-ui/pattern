@@ -2,7 +2,7 @@ import React from 'react';
 import { Group, ScrollArea } from '@pattern/core';
 import { Content } from './_content';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <ScrollArea style={{ width: 300, height: 200 }}>
@@ -13,8 +13,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const horizontal: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

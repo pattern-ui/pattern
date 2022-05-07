@@ -2,7 +2,7 @@ import React from 'react';
 import { SimpleGrid } from '@pattern/core';
 import { defaultItems } from './_Item';
 
-function Demo() {
+export default function Demo() {
   return (
     <SimpleGrid
       cols={4}
@@ -18,8 +18,3 @@ function Demo() {
     </SimpleGrid>
   );
 }
-
-export const breakpoints: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

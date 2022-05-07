@@ -3,7 +3,7 @@ import React from 'react';
 import { useForm } from '@pattern/form';
 import { Box, TextInput, NumberInput, Button, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const form = useForm<{ name: string; age: number | undefined }>({
     initialValues: { name: '', age: undefined },
     validate: (values) => ({
@@ -30,8 +30,3 @@ function Demo() {
     </Box>
   );
 }
-
-export const validateFunction: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

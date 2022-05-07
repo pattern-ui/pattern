@@ -1,7 +1,7 @@
 import React from 'react';
 import { NativeSelect } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <NativeSelect
@@ -13,8 +13,3 @@ function Demo() {
     </div>
   );
 }
-
-export const disabled: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

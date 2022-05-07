@@ -12,7 +12,7 @@ function Wrapper(props: ButtonProps<'button'>) {
 const codeTemplate = (props: string, children: string) => `
 import { Button } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Button${props}>
       ${children}

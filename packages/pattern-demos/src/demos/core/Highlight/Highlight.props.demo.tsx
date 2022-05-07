@@ -1,7 +1,7 @@
 import React from 'react';
 import { Highlight } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Highlight
       component="a"
@@ -15,8 +15,3 @@ function Demo() {
     </Highlight>
   );
 }
-
-export const props: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

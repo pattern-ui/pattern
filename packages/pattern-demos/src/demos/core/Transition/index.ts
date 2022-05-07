@@ -1,1 +1,1 @@
-export { custom } from './Transition.custom.demo';
+export { default as custom } from './Transition.custom.demo';

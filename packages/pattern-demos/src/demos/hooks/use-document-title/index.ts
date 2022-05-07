@@ -1,1 +1,1 @@
-export { useDocumentTitleDemo } from './usage';
+export { default as useDocumentTitleDemo } from './usage.demo';

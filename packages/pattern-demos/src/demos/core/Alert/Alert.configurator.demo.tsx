@@ -14,7 +14,7 @@ const codeTemplate = (props: string, children: string) => `
 import { Alert } from '@pattern/core';
 import { AlertCircle } from 'tabler-icons-react';
 
-function Demo() {
+export default function Demo() {
   return (
     <Alert icon={<AlertCircle size={16} />}${props}>
       ${children}

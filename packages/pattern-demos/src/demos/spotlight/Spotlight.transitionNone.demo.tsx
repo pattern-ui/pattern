@@ -2,7 +2,7 @@ import React from 'react';
 import { Search } from 'tabler-icons-react';
 import { Wrapper } from './_wrapper';
 
-function Demo() {
+export default function Demo() {
   return (
     <Wrapper
       searchIcon={<Search size={18} />}
@@ -13,8 +13,3 @@ function Demo() {
     />
   );
 }
-
-export const transitionNone: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

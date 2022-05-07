@@ -2,7 +2,7 @@ import React from 'react';
 import { Star } from 'tabler-icons-react';
 import { Avatar, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <Group position="center">
@@ -18,8 +18,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const placeholders: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -4,12 +4,12 @@ import { Prism } from '@pattern/prism';
 const demoCode = `
 import { Button } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return <Button>Hello</Button>
 }
 `;
 
-function Demo() {
+export default function Demo() {
   return (
     <>
       <Prism language="tsx" noCopy>
@@ -27,8 +27,3 @@ function Demo() {
     </>
   );
 }
-
-export const copyLabel: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -5,7 +5,7 @@ import { PATTERN_COLORS, Group, ThemeIcon, ThemeIconProps } from '@pattern/core'
 const getThemes = (props?: ThemeIconProps) =>
   PATTERN_COLORS.map((color) => <ThemeIcon key={color} color={color} {...props} />);
 
-function Demo() {
+export default function Demo() {
   return (
     <>
       <Group position="center">
@@ -22,8 +22,3 @@ function Demo() {
     </>
   );
 }
-
-export const colors: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

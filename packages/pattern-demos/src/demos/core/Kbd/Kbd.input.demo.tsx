@@ -2,7 +2,7 @@ import React from 'react';
 import { Search } from 'tabler-icons-react';
 import { Kbd, TextInput } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const rightSection = (
     <div style={{ display: 'flex', alignItems: 'center' }}>
       <Kbd>Ctrl</Kbd>
@@ -21,8 +21,3 @@ function Demo() {
     />
   );
 }
-
-export const input: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

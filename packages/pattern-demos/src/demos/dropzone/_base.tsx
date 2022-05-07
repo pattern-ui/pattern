@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 import React from 'react';
-import { Group, Text, usePatternTheme, PatternTheme } from '@pattern/core';
-import { Upload, Photo, X, Icon as TablerIcon } from 'tabler-icons-react';
-import { Dropzone, DropzoneStatus, DropzoneProps, IMAGE_MIME_TYPE } from '@pattern/dropzone';
+import { Group, PatternTheme, Text } from '@pattern/core';
+import { Icon as TablerIcon, Photo, Upload, X } from 'tabler-icons-react';
+import { DropzoneStatus } from '@pattern/dropzone';
 
 function getIconColor(status: DropzoneStatus, theme: PatternTheme) {
   return status.accepted

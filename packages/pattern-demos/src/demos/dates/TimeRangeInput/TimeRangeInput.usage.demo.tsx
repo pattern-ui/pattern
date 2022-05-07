@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import dayjs from 'dayjs';
 import { TimeRangeInput } from '@pattern/dates';
 
-function Demo() {
+export default function Demo() {
   const now = new Date();
   const then = dayjs(now).add(30, 'minutes').toDate();
   const [value, setValue] = useState<[Date, Date]>([now, then]);
@@ -13,8 +13,3 @@ function Demo() {
     </div>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -10,7 +10,7 @@ const schema = z.object({
   age: z.number().min(18, { message: 'You must be at least 18 to create an account' }),
 });
 
-function Demo() {
+export default function Demo() {
   const form = useForm({
     schema: zodResolver(schema),
     initialValues: {
@@ -51,8 +51,3 @@ function Demo() {
     </Box>
   );
 }
-
-export const joi: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeIcon, Text, Avatar, Timeline } from '@pattern/core';
 import { Sun, Video } from 'tabler-icons-react';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 320, margin: 'auto' }}>
       <Timeline>
@@ -53,8 +53,3 @@ function Demo() {
     </div>
   );
 }
-
-export const bullet: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

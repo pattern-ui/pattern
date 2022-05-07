@@ -1,7 +1,7 @@
 import React from 'react';
 import { Group, Badge } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <Badge variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }}>
@@ -22,8 +22,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const gradient: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

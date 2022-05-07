@@ -1,10 +1,10 @@
-export { variants } from './Button.variants.demo';
-export { overflow } from './Button.overflow.demo';
+export { default as variants } from './Button.variants.demo';
+export { default as overflow } from './Button.overflow.demo';
 export { configurator } from './Button.configurator.demo';
-export { component } from './Button.component.demo';
-export { customize } from './Button.customize.demo';
-export { unstyled } from './Button.unstyled.demo';
-export { compact } from './Button.compact.demo';
+export { default as component } from './Button.component.demo';
+export { default as customize } from './Button.customize.demo';
+export { default as unstyled } from './Button.unstyled.demo';
+export { default as compact } from './Button.compact.demo';
 export { loadingConfigurator } from './Button.loadingConfigurator.demo';
-export { gradient } from './Button.gradient.demo';
+export { default as gradient } from './Button.gradient.demo';
 export { whiteConfigurator } from './Button.whiteConfigurator.demo';

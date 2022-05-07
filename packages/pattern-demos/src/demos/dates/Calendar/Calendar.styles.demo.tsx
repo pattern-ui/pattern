@@ -2,7 +2,7 @@ import React from 'react';
 import { Group, usePatternTheme } from '@pattern/core';
 import { Calendar } from '@pattern/dates';
 
-function Demo() {
+export default function Demo() {
   const theme = usePatternTheme();
 
   return (
@@ -18,8 +18,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const styles: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -1,7 +1,7 @@
 import React from 'react';
 import { PasswordInput } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 360, margin: 'auto' }}>
       <PasswordInput
@@ -19,8 +19,3 @@ function Demo() {
     </div>
   );
 }
-
-export const focus: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

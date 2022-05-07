@@ -12,7 +12,7 @@ function Wrapper(props: ProgressProps) {
 const codeTemplate = (props: string) => `
 import { Progress } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return <Progress${props} />;
 }
 `;

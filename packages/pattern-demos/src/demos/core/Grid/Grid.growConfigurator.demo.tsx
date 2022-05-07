@@ -17,7 +17,7 @@ function Wrapper(props: GridProps) {
 const codeTemplate = (props: string) => `
 import { Grid } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Grid${props}>
       <Grid.Col span={4}>1</Grid.Col>

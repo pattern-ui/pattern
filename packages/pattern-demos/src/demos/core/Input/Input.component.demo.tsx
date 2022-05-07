@@ -2,7 +2,7 @@ import React from 'react';
 import { ChevronDownIcon } from '@modulz/radix-icons';
 import { Input } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <>
       <Input component="button">Button input</Input>
@@ -14,8 +14,3 @@ function Demo() {
     </>
   );
 }
-
-export const component: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

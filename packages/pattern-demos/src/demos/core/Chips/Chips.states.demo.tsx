@@ -1,7 +1,7 @@
 import React from 'react';
 import { Chips, Chip } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <>
       <Chips multiple value={['checked', 'checked-disabled']} position="center" variant="outline">
@@ -28,8 +28,3 @@ function Demo() {
     </>
   );
 }
-
-export const states: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

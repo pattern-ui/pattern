@@ -3,7 +3,7 @@ import React from 'react';
 import { TextInput, Checkbox, Button, Group, Box } from '@pattern/core';
 import { useForm } from '@pattern/form';
 
-function Demo() {
+export default function Demo() {
   const form = useForm({
     initialValues: {
       email: '',
@@ -38,8 +38,3 @@ function Demo() {
     </Box>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

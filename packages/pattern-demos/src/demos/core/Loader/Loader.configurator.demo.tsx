@@ -12,7 +12,7 @@ function Wrapper(props: LoaderProps) {
 const codeTemplate = (props: string) => `
 import { Loader } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return <Loader${props} />;
 }
 `;

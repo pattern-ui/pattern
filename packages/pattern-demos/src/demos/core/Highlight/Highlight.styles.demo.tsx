@@ -1,7 +1,7 @@
 import React from 'react';
 import { Highlight } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Highlight
       align="center"
@@ -17,8 +17,3 @@ function Demo() {
     </Highlight>
   );
 }
-
-export const styles: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -1,10 +1,10 @@
 export { configurator } from './Tooltip.configurator.demo';
-export { controlled } from './Tooltip.controlled.demo';
-export { arrow } from './Tooltip.arrow.demo';
-export { multiline } from './Tooltip.multiline.demo';
-export { transitions } from './Tooltip.transitions.demo';
-export { delay } from './Tooltip.delay.demo';
+export { default as controlled } from './Tooltip.controlled.demo';
+export { default as arrow } from './Tooltip.arrow.demo';
+export { default as multiline } from './Tooltip.multiline.demo';
+export { default as transitions } from './Tooltip.transitions.demo';
+export { default as delay } from './Tooltip.delay.demo';
 export { floating } from './Tooltip.floating.demo';
-export { usage } from './Tooltip.usage.demo';
-export { group } from './Tooltip.group.demo';
-export { offset } from './Tooltip.offset.demo';
+export { default as usage } from './Tooltip.usage.demo';
+export { default as group } from './Tooltip.group.demo';
+export { default as offset } from './Tooltip.offset.demo';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Select } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <Select
@@ -17,8 +17,3 @@ function Demo() {
     </div>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

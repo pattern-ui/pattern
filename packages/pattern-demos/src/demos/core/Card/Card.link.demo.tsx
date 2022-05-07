@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Image, Text } from '@pattern/core';
 import { demoBase } from './_demo-base';
 
-function Demo() {
+export default function Demo() {
   return (
     <Card
       shadow="sm"

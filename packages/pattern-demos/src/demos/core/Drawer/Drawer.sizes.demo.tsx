@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Drawer, Button, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [opened, setOpened] = useState(false);
   const [size, setSize] = useState<number | string>('top');
   const open = (s: typeof size) => {
@@ -31,8 +31,3 @@ function Demo() {
     </>
   );
 }
-
-export const sizes: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

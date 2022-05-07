@@ -1,1 +1,1 @@
-export { useHotkeysDemo } from './usage';
+export { default as useHotkeysDemo } from './usage.demo';

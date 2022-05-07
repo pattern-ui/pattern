@@ -3,7 +3,7 @@ import { Group, Button, Text } from '@pattern/core';
 import { useModals } from '@pattern/modals';
 import { useNotifications } from '@pattern/notifications';
 
-function Demo() {
+export default function Demo() {
   const notifications = useNotifications();
   const modals = useModals();
 
@@ -41,8 +41,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const confirmCustomize: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -1,1 +1,1 @@
-export { useIntersectionDemo } from './usage';
+export { default as useIntersectionDemo } from './usage.demo';

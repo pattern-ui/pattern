@@ -1,2 +1,2 @@
 export { configurator } from './RadioGroup.configurator.demo';
-export { sizes } from './RadioGroup.sizes.demo';
+export { default as sizes } from './RadioGroup.sizes.demo';

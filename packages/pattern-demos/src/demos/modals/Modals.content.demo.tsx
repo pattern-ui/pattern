@@ -2,7 +2,7 @@ import React from 'react';
 import { TextInput, Button, Group } from '@pattern/core';
 import { useModals } from '@pattern/modals';
 
-function Demo() {
+export default function Demo() {
   const modals = useModals();
 
   const openContentModal = () => {
@@ -25,8 +25,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const content: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

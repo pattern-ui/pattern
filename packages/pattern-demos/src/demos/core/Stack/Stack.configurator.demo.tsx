@@ -20,7 +20,7 @@ function Wrapper(props: StackProps) {
 const codeTemplate = (props: string) => `
 import { Stack, Button } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Stack${props} sx={(theme) => ({ backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0], height: 300 })}>
       <Button variant="outline">1</Button>

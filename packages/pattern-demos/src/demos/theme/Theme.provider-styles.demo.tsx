@@ -8,7 +8,7 @@ import {
   ButtonStylesParams,
 } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const { colorScheme } = usePatternColorScheme();
 
   return (
@@ -52,8 +52,3 @@ function Demo() {
     </PatternProvider>
   );
 }
-
-export const providerStyles: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

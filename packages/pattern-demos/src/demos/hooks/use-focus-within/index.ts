@@ -1,1 +1,1 @@
-export { useFocusWithinDemo } from './usage';
+export { default as useFocusWithinDemo } from './usage.demo';

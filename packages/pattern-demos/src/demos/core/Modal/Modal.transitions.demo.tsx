@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, Group, Button } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [noTransitionOpened, setNoTransitionOpened] = useState(false);
   const [slowTransitionOpened, setSlowTransitionOpened] = useState(false);
 
@@ -38,8 +38,3 @@ function Demo() {
     </>
   );
 }
-
-export const transitions: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

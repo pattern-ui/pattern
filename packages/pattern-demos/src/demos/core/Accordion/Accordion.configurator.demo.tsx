@@ -9,7 +9,7 @@ function Wrapper(props: Partial<AccordionProps>) {
 const codeTemplate = (props: string) => `
 import { Accordion } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Accordion${props} defaultValue="customization">
       <Accordion.Item value="customization">

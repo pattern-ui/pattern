@@ -3,7 +3,7 @@ import { Check, X } from 'tabler-icons-react';
 import { Notification } from '@pattern/core';
 import { demoBase } from './_demo-base';
 
-function Demo() {
+export default function Demo() {
   return (
     <>
       <Notification title="Default notification" onClose={() => {}}>

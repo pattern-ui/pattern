@@ -1,7 +1,7 @@
 import React from 'react';
 import { TagInput } from '@pattern/labs';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 400, marginLeft: 'auto', marginRight: 'auto' }}>
       <TagInput
@@ -14,8 +14,3 @@ function Demo() {
     </div>
   );
 }
-
-export const clearable: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

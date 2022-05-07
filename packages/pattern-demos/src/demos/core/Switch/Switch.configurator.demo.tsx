@@ -4,7 +4,7 @@ import { Switch, SwitchProps } from '@pattern/core';
 const codeTemplate = (props: string) => `
 import { Switch } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Switch
      ${props}

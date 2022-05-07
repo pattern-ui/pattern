@@ -3,7 +3,7 @@ import { ArrowUpIcon } from '@modulz/radix-icons';
 import { useWindowScroll } from '@pattern/hooks';
 import { Button, Text, Transition, Affix } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [scroll, scrollTo] = useWindowScroll();
 
   return (
@@ -25,8 +25,3 @@ function Demo() {
     </>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

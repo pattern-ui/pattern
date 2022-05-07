@@ -16,7 +16,7 @@ const Wrapper = (props: TooltipFloatingProps) => (
 const codeTemplate = (props: string) => `
 import { Tooltip, Button } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Tooltip.Floating label="Tooltip"${props}>
       <Button variant="outline" size="xl">

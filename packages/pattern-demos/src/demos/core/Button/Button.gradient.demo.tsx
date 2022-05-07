@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <Button variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }}>
@@ -22,8 +22,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const gradient: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

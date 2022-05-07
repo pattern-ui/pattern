@@ -16,7 +16,7 @@ const codeTemplate = (props: string) => `
 import { Database } from 'tabler-icons-react';
 import { Button } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Button leftIcon={<Database size={14} />}${props}>
       Connect to database

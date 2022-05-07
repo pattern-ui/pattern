@@ -17,7 +17,7 @@ function Wrapper(props: ColorInputProps) {
 const codeTemplate = (props: string) => `
 import { ColorInput } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return <ColorInput defaultValue="#C5D899"${props} />;
 }
 `;

@@ -1,1 +1,1 @@
-export { useReducedMotionDemo } from './usage';
+export { default as useReducedMotionDemo } from './usage.demo';

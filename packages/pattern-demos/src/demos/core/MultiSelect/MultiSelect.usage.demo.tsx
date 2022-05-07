@@ -2,7 +2,7 @@ import React from 'react';
 import { MultiSelect } from '@pattern/core';
 import { data } from './_data';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 400, marginLeft: 'auto', marginRight: 'auto' }}>
       <MultiSelect
@@ -13,8 +13,3 @@ function Demo() {
     </div>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

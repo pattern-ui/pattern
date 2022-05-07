@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tabs } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Tabs color="teal" defaultValue="first">
       <Tabs.List>
@@ -22,8 +22,3 @@ function Demo() {
     </Tabs>
   );
 }
-
-export const colors: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

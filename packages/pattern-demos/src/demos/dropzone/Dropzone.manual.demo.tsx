@@ -3,7 +3,7 @@ import { Button, Group, usePatternTheme } from '@pattern/core';
 import { Dropzone, IMAGE_MIME_TYPE } from '@pattern/dropzone';
 import { dropzoneChildren } from './_base';
 
-function Demo() {
+export default function Demo() {
   const openRef = useRef<() => void>();
   const theme = usePatternTheme();
 
@@ -24,8 +24,3 @@ function Demo() {
     </>
   );
 }
-
-export const manual: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

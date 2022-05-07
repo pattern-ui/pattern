@@ -15,7 +15,7 @@ function Wrapper(props: Partial<SkeletonProps>) {
 const codeTemplate = (props: string) => `
 import { Skeleton } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <>
       <Skeleton${props} height={50} circle mb="xl" />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ColorInput, DEFAULT_THEME } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <ColorInput
@@ -12,8 +12,3 @@ function Demo() {
     </div>
   );
 }
-
-export const swatches: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

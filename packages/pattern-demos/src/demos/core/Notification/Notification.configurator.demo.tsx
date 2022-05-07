@@ -16,7 +16,7 @@ const codeTemplate = (props: string, children: string) => `
 import { Notification } from '@pattern/core';
 import { Check } from 'tabler-icons-react';
 
-function Demo() {
+export default function Demo() {
   return (
     <>
       <Notification${props}>

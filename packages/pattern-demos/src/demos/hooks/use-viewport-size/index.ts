@@ -1,1 +1,1 @@
-export { useViewportSizeDemo } from './usage';
+export { default as useViewportSizeDemo } from './usage.demo';

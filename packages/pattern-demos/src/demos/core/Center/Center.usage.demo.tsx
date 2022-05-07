@@ -1,7 +1,7 @@
 import React from 'react';
 import { Center, usePatternTheme } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const theme = usePatternTheme();
   return (
     <Center
@@ -23,8 +23,3 @@ function Demo() {
     </Center>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

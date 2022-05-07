@@ -2,7 +2,7 @@ import React from 'react';
 import { Group, usePatternTheme } from '@pattern/core';
 import { Month } from '@pattern/dates';
 
-function Demo() {
+export default function Demo() {
   const theme = usePatternTheme();
   return (
     <Group position="center">
@@ -17,8 +17,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const styles: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -1,7 +1,7 @@
 import React from 'react';
 import { CloseButton, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <CloseButton aria-label="Close modal" />
@@ -9,8 +9,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const closeButton: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

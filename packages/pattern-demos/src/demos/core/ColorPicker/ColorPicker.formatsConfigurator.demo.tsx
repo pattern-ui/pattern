@@ -15,7 +15,7 @@ function Wrapper(props: ColorPickerProps) {
 const codeTemplate = (props: string) => `
 import { ColorPicker } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return <ColorPicker${props} />;
 }
 `;

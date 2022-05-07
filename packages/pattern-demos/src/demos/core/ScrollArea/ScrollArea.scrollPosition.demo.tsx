@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Group, Code, Text, ScrollArea } from '@pattern/core';
 import { Content } from './_content';
 
-function Demo() {
+export default function Demo() {
   const [scrollPosition, onScrollPositionChange] = useState({ x: 0, y: 0 });
 
   return (
@@ -21,8 +21,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const scrollPosition: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

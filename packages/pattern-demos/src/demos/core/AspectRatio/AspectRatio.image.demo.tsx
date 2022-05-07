@@ -1,7 +1,7 @@
 import React from 'react';
 import { AspectRatio, Image } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <AspectRatio ratio={720 / 1080} sx={{ maxWidth: 300 }} mx="auto">
       <Image
@@ -11,8 +11,3 @@ function Demo() {
     </AspectRatio>
   );
 }
-
-export const image: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

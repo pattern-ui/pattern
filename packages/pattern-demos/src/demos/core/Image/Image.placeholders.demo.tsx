@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, Group, Text } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <Image width={200} height={120} src={null} alt="Without placeholder" />
@@ -19,8 +19,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const placeholders: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

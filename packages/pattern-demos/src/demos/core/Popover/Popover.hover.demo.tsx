@@ -2,7 +2,7 @@ import React from 'react';
 import { useDisclosure } from '@pattern/hooks';
 import { Popover, Text, Button } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [opened, { close, open }] = useDisclosure(false);
   return (
     <Popover width={200} position="bottom" withArrow shadow="md" opened={opened}>
@@ -17,8 +17,3 @@ function Demo() {
     </Popover>
   );
 }
-
-export const hover: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

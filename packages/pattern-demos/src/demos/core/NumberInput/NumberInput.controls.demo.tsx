@@ -1,7 +1,7 @@
 import React from 'react';
 import { NumberInput } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 420, margin: 'auto' }}>
       <NumberInput label="By default controls are visible" placeholder="Controls are visible" />
@@ -21,8 +21,3 @@ function Demo() {
     </div>
   );
 }
-
-export const controls: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

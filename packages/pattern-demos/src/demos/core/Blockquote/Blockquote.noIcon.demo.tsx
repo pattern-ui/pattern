@@ -1,7 +1,7 @@
 import React from 'react';
 import { Blockquote } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 420, margin: 'auto' }}>
       <Blockquote cite="– Your poor i3 from 2012 struggling its best" icon={null}>
@@ -10,8 +10,3 @@ function Demo() {
     </div>
   );
 }
-
-export const noIcon: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

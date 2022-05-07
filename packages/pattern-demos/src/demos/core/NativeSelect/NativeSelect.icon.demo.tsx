@@ -2,7 +2,7 @@ import React from 'react';
 import { Hash } from 'tabler-icons-react';
 import { NativeSelect } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <NativeSelect
@@ -14,8 +14,3 @@ function Demo() {
     </div>
   );
 }
-
-export const icon: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

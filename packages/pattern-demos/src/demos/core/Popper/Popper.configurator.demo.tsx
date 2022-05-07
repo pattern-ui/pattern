@@ -40,7 +40,7 @@ const codeTemplate = (props: string) => `
 import { useState } from 'react';
 import { Popper, Button, Paper, Center, Group, usePatternTheme } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [referenceElement, setReferenceElement] = useState(null);
   const [visible, setVisible] = useState(true);
   const theme = usePatternTheme();

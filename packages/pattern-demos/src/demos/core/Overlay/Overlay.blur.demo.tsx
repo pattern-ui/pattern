@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Group, Box, Overlay } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [visible, setVisible] = useState(false);
   return (
     <>
@@ -25,8 +25,3 @@ function Demo() {
     </>
   );
 }
-
-export const blur: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

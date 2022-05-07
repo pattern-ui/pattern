@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tabs } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Tabs defaultValue="chat" inverted>
       <Tabs.Panel value="chat" pb="xs">
@@ -22,8 +22,3 @@ function Demo() {
     </Tabs>
   );
 }
-
-export const inverted: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

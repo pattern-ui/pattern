@@ -1,1 +1,1 @@
-export { useClipboardDemo } from './usage';
+export { default as useClipboardDemo } from './usage.demo';

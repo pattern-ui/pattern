@@ -1,7 +1,7 @@
 import React from 'react';
 import { NumberInput } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 420, margin: 'auto' }}>
       <NumberInput
@@ -17,8 +17,3 @@ function Demo() {
     </div>
   );
 }
-
-export const formatter: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -5,6 +5,7 @@ module.exports = {
     'jest/no-export': 'off',
     'jest/expect-expect': 'off',
     'import/no-import-module-exports': 'off',
+    'no-restricted-exports': 'warn',
   },
   parserOptions: {
     project: './tsconfig.json',

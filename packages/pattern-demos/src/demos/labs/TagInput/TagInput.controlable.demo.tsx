@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { TagInput } from '@pattern/labs';
 
-function Demo() {
+export default function Demo() {
   const [value, setValue] = useState(['React']);
   return (
     <div style={{ maxWidth: 400, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -15,8 +15,3 @@ function Demo() {
     </div>
   );
 }
-
-export const controlable: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -12,7 +12,7 @@ function Wrapper(props: HighlightProps<'div'>) {
 const codeTemplate = (props: string, children: string) => `
 import { Highlight } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Highlight${props}>
       ${children}

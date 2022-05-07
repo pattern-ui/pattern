@@ -2,7 +2,7 @@ import React from 'react';
 import { usePatternTheme } from '@pattern/core';
 import { DatePicker } from '@pattern/dates';
 
-function Demo() {
+export default function Demo() {
   const theme = usePatternTheme();
 
   return (
@@ -19,8 +19,3 @@ function Demo() {
     </div>
   );
 }
-
-export const styles: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

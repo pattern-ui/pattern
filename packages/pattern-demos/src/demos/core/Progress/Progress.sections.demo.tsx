@@ -1,7 +1,7 @@
 import React from 'react';
 import { Progress } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Progress
       size="xl"
@@ -13,8 +13,3 @@ function Demo() {
     />
   );
 }
-
-export const sections: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

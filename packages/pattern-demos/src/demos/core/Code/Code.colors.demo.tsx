@@ -1,7 +1,7 @@
 import React from 'react';
 import { Code, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group>
       <Code color="red">React.createElement()</Code>
@@ -10,8 +10,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const colors: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

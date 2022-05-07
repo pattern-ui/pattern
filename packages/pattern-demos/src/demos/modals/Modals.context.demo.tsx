@@ -2,7 +2,7 @@ import React from 'react';
 import { Group, Button } from '@pattern/core';
 import { useModals } from '@pattern/modals';
 
-function Demo() {
+export default function Demo() {
   const modals = useModals();
 
   const openContextModal = () =>
@@ -20,8 +20,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const context: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

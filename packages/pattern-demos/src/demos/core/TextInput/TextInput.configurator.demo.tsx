@@ -3,7 +3,7 @@ import { TextInput } from '@pattern/core';
 const codeTemplate = (props: string) => `
 import { TextInput } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <TextInput
      ${props}

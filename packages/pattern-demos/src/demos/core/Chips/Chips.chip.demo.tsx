@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Group, Chip } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [checked, setChecked] = useState(false);
   return (
     <Group position="center">
@@ -11,8 +11,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const chip: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

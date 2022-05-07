@@ -1,7 +1,7 @@
 import React from 'react';
 import { usePatternTheme, Container } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const theme = usePatternTheme();
   const color = theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.blue[0];
 
@@ -19,8 +19,3 @@ function Demo() {
     </>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

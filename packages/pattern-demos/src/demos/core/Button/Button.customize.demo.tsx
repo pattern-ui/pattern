@@ -2,7 +2,7 @@ import React from 'react';
 import { BrandTwitter } from 'tabler-icons-react';
 import { Button, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <Button
@@ -34,8 +34,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const customize: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

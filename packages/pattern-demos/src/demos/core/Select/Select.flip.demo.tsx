@@ -4,7 +4,7 @@ import { Select } from '@pattern/core';
 const codeTemplate = (props: string) => `
 import { Select } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return <Select${props} />;
 }
 `;

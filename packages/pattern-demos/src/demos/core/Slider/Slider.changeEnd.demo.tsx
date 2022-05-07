@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Slider, Text, Container } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [value, setValue] = useState(50);
   const [endValue, setEndValue] = useState(50);
 
@@ -17,8 +17,3 @@ function Demo() {
     </Container>
   );
 }
-
-export const changeEnd: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

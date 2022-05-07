@@ -1,7 +1,7 @@
 import React from 'react';
 import { Popover, Button, TextInput } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Popover width={300} trapFocus position="bottom" withArrow shadow="md">
       <Popover.Target>
@@ -14,8 +14,3 @@ function Demo() {
     </Popover>
   );
 }
-
-export const form: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

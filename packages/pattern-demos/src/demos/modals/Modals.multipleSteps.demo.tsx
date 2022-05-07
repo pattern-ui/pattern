@@ -2,7 +2,7 @@ import React from 'react';
 import { Group, Button, Text } from '@pattern/core';
 import { useModals } from '@pattern/modals';
 
-function Demo() {
+export default function Demo() {
   const modals = useModals();
 
   const openMultiStepModal = () =>
@@ -34,8 +34,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const multipleSteps: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

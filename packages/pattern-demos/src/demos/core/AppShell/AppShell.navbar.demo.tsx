@@ -4,7 +4,7 @@ import { User } from './_user';
 import { Brand } from './_brand';
 import { MainLinks } from './_mainLinks';
 
-function Demo() {
+export default function Demo() {
   return (
     <Navbar height={600} p="xs" width={{ base: 300 }}>
       <Navbar.Section mt="xs">
@@ -19,9 +19,3 @@ function Demo() {
     </Navbar>
   );
 }
-
-export const navbar: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-  demoProps: { spacing: false },
-};

@@ -3,7 +3,7 @@ import { CheckIcon } from '@modulz/radix-icons';
 import { Group, Button } from '@pattern/core';
 import { showNotification, updateNotification } from '@pattern/notifications';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <Button
@@ -35,8 +35,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const update: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

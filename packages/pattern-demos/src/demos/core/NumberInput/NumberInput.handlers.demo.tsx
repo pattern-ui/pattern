@@ -7,7 +7,7 @@ import {
   usePatternTheme,
 } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const theme = usePatternTheme();
   const [value, setValue] = useState(0);
   const handlers = useRef<NumberInputHandlers>();
@@ -51,8 +51,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const handlers: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

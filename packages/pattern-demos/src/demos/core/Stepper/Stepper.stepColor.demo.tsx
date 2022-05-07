@@ -2,7 +2,7 @@ import React from 'react';
 import { CircleX } from 'tabler-icons-react';
 import { Stepper } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Stepper active={2} breakpoint="sm">
       <Stepper.Step label="Step 1" description="Create an account" />
@@ -16,8 +16,3 @@ function Demo() {
     </Stepper>
   );
 }
-
-export const stepColor: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

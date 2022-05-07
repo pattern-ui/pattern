@@ -1,1 +1,1 @@
-export { useWindowScrollDemo } from './usage';
+export { default as useWindowScrollDemo } from './usage.demo';

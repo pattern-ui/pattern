@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ width: 240, marginLeft: 'auto', marginRight: 'auto' }}>
       <Image
@@ -12,8 +12,3 @@ function Demo() {
     </div>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

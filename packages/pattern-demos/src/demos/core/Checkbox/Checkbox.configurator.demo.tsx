@@ -4,7 +4,7 @@ import { Checkbox, CheckboxProps } from '@pattern/core';
 const codeTemplate = (props: string) => `
 import { Checkbox } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Checkbox
      ${props}

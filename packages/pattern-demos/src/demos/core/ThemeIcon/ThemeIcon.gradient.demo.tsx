@@ -2,7 +2,7 @@ import React from 'react';
 import { Photo } from 'tabler-icons-react';
 import { Group, ThemeIcon } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <ThemeIcon size="lg" variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }}>
@@ -27,8 +27,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const gradient: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

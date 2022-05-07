@@ -3,7 +3,7 @@ import { Group } from '@pattern/core';
 import dayjs from 'dayjs';
 import { Month } from '@pattern/dates';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <Month
@@ -16,8 +16,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const range: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

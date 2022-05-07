@@ -1,2 +1,2 @@
-export { usage } from './LoadingOverlay.usage.demo';
-export { loader } from './LoadingOverlay.loader.demo';
+export { default as usage } from './LoadingOverlay.usage.demo';
+export { default as loader } from './LoadingOverlay.loader.demo';

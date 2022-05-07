@@ -1,1 +1,1 @@
-export { usePageLeaveDemo } from './usage';
+export { default as usePageLeaveDemo } from './usage.demo';

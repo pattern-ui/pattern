@@ -4,7 +4,7 @@ import { useForm, formList } from '@pattern/form';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import { GripVertical } from 'tabler-icons-react';
 
-function Demo() {
+export default function Demo() {
   const form = useForm({
     initialValues: {
       employees: formList([
@@ -82,8 +82,3 @@ function Demo() {
     </Box>
   );
 }
-
-export const dnd: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

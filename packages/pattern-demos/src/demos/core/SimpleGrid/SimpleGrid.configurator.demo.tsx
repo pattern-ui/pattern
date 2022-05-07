@@ -13,7 +13,7 @@ function Wrapper(props: SimpleGridProps) {
 const codeTemplate = (props: string) => `
 import { SimpleGrid } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <SimpleGrid${props}>
       <div>1</div>

@@ -4,7 +4,7 @@ import { RadioGroup, RadioGroupProps, Radio } from '@pattern/core';
 const codeTemplate = (props: string) => `
 import { RadioGroup, Radio } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <RadioGroup
      ${props}

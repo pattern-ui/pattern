@@ -1,1 +1,1 @@
-export { useColorSchemeDemo } from './usage';
+export { default as useColorSchemeDemo } from './usage.demo';

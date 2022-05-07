@@ -6,7 +6,7 @@ import {
   cleanNotifications,
 } from '@pattern/notifications';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <Button
@@ -36,8 +36,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const clean: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

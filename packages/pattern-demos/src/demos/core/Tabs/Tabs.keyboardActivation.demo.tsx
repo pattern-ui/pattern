@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tabs } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Tabs defaultValue="chat" activateTabWithKeyboard={false}>
       <Tabs.List>
@@ -22,8 +22,3 @@ function Demo() {
     </Tabs>
   );
 }
-
-export const keyboardActivation: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

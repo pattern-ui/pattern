@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Modal, Group, Button } from '@pattern/core';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 
-function Demo() {
+export default function Demo() {
   const [opened, setOpened] = useState(false);
 
   return (
@@ -17,8 +17,3 @@ function Demo() {
     </>
   );
 }
-
-export const centered: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Select } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const data = Array(50)
     .fill(0)
     .map((_, index) => `Item ${index}`);
@@ -19,8 +19,3 @@ function Demo() {
     </div>
   );
 }
-
-export const large: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

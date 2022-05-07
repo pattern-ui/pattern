@@ -1,7 +1,7 @@
 import React from 'react';
 import { usePatternTheme, Button, Box, Overlay } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const theme = usePatternTheme();
 
   return (
@@ -25,8 +25,3 @@ function Demo() {
     </Box>
   );
 }
-
-export const gradient: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

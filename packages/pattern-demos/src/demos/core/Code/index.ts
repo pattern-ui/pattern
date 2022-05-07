@@ -1,3 +1,3 @@
-export { inline } from './Code.inline.demo';
-export { block } from './Code.block.demo';
-export { colors } from './Code.colors.demo';
+export { default as inline } from './Code.inline.demo';
+export { default as block } from './Code.block.demo';
+export { default as colors } from './Code.colors.demo';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { TextInput } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <TextInput label="Your email" placeholder="you@email.com" error />
@@ -15,8 +15,3 @@ function Demo() {
     </div>
   );
 }
-
-export const validation: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

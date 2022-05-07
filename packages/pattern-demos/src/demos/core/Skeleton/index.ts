@@ -1,2 +1,2 @@
 export { configurator } from './Skeleton.configurator.demo';
-export { content } from './Skeleton.content.demo';
+export { default as content } from './Skeleton.content.demo';

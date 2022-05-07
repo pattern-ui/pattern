@@ -1,7 +1,7 @@
 import React from 'react';
 import { Slider, Text } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 400, margin: 'auto' }}>
       <Text>No label</Text>
@@ -23,8 +23,3 @@ function Demo() {
     </div>
   );
 }
-
-export const label: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

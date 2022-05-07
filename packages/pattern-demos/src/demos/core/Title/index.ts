@@ -1,1 +1,1 @@
-export { usage } from './Title.usage.demo';
+export { default as usage } from './Title.usage.demo';

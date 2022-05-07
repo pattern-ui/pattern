@@ -2,7 +2,7 @@ import React from 'react';
 import { Paint } from 'tabler-icons-react';
 import { ColorInput } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <ColorInput label="Without preview" placeholder="No color preview" withPreview={false} />
@@ -11,8 +11,3 @@ function Demo() {
     </div>
   );
 }
-
-export const icon: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

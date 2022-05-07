@@ -3,7 +3,7 @@ import React from 'react';
 import { Container } from '@pattern/core';
 import { TimeRangeInput } from '@pattern/dates';
 
-function Demo() {
+export default function Demo() {
   return (
     <Container size={340}>
       <TimeRangeInput
@@ -14,8 +14,3 @@ function Demo() {
     </Container>
   );
 }
-
-export const withSeconds: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

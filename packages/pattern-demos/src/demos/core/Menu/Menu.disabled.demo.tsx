@@ -3,7 +3,7 @@ import { Search } from 'tabler-icons-react';
 import { Menu, Group } from '@pattern/core';
 import { menuItems } from './_menu-items';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <Menu>
@@ -16,8 +16,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const disabled: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

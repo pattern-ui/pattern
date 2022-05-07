@@ -1,1 +1,1 @@
-export { usage } from './Affix.usage.demo';
+export { default as usage } from './Affix.usage.demo';

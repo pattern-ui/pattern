@@ -1,7 +1,7 @@
 import React from 'react';
 import { Input, PATTERN_SIZES } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const inputs = PATTERN_SIZES.map((size, index) => (
     <Input
       style={{ marginTop: index === 0 ? 0 : 15 }}
@@ -12,8 +12,3 @@ function Demo() {
   ));
   return <>{inputs}</>;
 }
-
-export const sizes: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

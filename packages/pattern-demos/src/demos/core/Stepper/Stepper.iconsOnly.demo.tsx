@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { UserCheck, MailOpened, ShieldCheck } from 'tabler-icons-react';
 import { Stepper } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [active, setActive] = useState(0);
   return (
     <Stepper active={active} onStepClick={setActive}>
@@ -12,8 +12,3 @@ function Demo() {
     </Stepper>
   );
 }
-
-export const iconsOnly: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

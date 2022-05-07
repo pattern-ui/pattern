@@ -2,7 +2,7 @@ import React from 'react';
 import { Group, Button } from '@pattern/core';
 import { showNotification } from '@pattern/notifications';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <Button
@@ -25,8 +25,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const limit: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

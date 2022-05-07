@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Group } from '@pattern/core';
 import { Month } from '@pattern/dates';
 
-function Demo() {
+export default function Demo() {
   const [value, setValue] = useState(new Date());
   return (
     <Group position="center">
@@ -15,8 +15,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const exclude: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

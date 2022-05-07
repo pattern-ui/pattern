@@ -1,1 +1,1 @@
-export { useNetworkDemo } from './usage';
+export { default as useNetworkDemo } from './usage.demo';

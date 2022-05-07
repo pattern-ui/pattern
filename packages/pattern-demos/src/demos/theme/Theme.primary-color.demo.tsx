@@ -1,7 +1,7 @@
 import React from 'react';
 import { Group, Button, PatternProvider, usePatternTheme } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const theme = usePatternTheme();
 
   return (
@@ -32,8 +32,3 @@ function Demo() {
     </PatternProvider>
   );
 }
-
-export const primaryColor: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

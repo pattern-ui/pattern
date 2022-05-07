@@ -2,7 +2,7 @@ import React from 'react';
 import { Settings, MessageCircle, Coin } from 'tabler-icons-react';
 import { Tabs } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Tabs defaultValue="chat">
       <Tabs.List>
@@ -17,8 +17,3 @@ function Demo() {
     </Tabs>
   );
 }
-
-export const icons: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

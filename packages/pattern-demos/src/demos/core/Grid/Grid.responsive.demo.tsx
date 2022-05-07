@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid } from '@pattern/core';
 import { ColWrapper as Col } from './_col-wrapper';
 
-function Demo() {
+export default function Demo() {
   return (
     <Grid>
       <Col md={6} lg={3}>
@@ -20,8 +20,3 @@ function Demo() {
     </Grid>
   );
 }
-
-export const responsive: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

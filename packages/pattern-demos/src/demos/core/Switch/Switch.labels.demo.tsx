@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <Switch size="xs" onLabel="ON" offLabel="OFF" />
@@ -12,8 +12,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const labels: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

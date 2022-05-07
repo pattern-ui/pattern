@@ -2,27 +2,9 @@ import React from 'react';
 import { Settings } from 'tabler-icons-react';
 import { ActionIcon, Group } from '@pattern/core';
 
-const code = `
-import { ActionIcon } from '@pattern/core';
-import { Settings } from 'tabler-icons-react';
-
-function Demo() {
-  return (
-    <>
-      <ActionIcon variant="transparent"><Settings size={16} /></ActionIcon>
-      <ActionIcon variant="hover"><Settings size={16} /></ActionIcon>
-      <ActionIcon variant="default"><Settings size={16} /></ActionIcon>
-      <ActionIcon variant="outline"><Settings size={16} /></ActionIcon>
-      <ActionIcon variant="filled"><Settings size={16} /></ActionIcon>
-      <ActionIcon variant="light"><Settings size={16} /></ActionIcon>
-    </>
-  );
-}
-`;
-
 const icon = <Settings size={16} />;
 
-export function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <ActionIcon variant="transparent" color="blue">
@@ -46,8 +28,3 @@ export function Demo() {
     </Group>
   );
 }
-
-export const variants: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

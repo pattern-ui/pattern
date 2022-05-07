@@ -18,7 +18,7 @@ function Wrapper(props: any) {
 const codeTemplate = (props: string) => `
 import { Text, Paper } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Paper${props}>
       <Text>Paper is the most basic ui component</Text>

@@ -1,1 +1,1 @@
-export { useForceUpdateDemo } from './usage';
+export { default as useForceUpdateDemo } from './usage.demo';

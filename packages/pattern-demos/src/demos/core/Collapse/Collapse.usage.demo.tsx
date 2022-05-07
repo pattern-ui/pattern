@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Group, Text, Collapse } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [opened, setOpen] = useState(false);
 
   return (
@@ -27,8 +27,3 @@ function Demo() {
     </div>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -1,1 +1,1 @@
-export { useResizeObserverDemo } from './usage';
+export { default as useResizeObserverDemo } from './usage.demo';

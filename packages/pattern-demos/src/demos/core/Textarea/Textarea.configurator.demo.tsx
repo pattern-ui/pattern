@@ -3,7 +3,7 @@ import { Textarea } from '@pattern/core';
 const codeTemplate = (props: string) => `
 import { Textarea } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Textarea
      ${props}

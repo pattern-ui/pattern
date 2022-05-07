@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, Group, Button } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [insideOpened, setInsideOpened] = useState(false);
   const [outsideOpened, setOutsideOpened] = useState(false);
   const content = Array(100)
@@ -39,8 +39,3 @@ function Demo() {
     </>
   );
 }
-
-export const overflow: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

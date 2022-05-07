@@ -4,7 +4,7 @@ import { CheckboxGroup, CheckboxGroupProps, Checkbox } from '@pattern/core';
 const codeTemplate = (props: string) => `
 import { CheckboxGroup, Checkbox } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <CheckboxGroup
       defaultValue={['react']}

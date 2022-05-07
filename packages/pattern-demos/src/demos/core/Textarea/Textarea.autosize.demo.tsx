@@ -1,7 +1,7 @@
 import React from 'react';
 import { Textarea } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 400, margin: 'auto' }}>
       <Textarea
@@ -22,8 +22,3 @@ function Demo() {
     </div>
   );
 }
-
-export const autosize: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

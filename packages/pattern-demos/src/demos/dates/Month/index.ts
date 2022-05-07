@@ -1,9 +1,9 @@
-export { boundaries } from './Month.boundaries.demo';
-export { firstDaySunday } from './Month.firstDaySunday.demo';
-export { exclude } from './Month.exclude.demo';
-export { range } from './Month.range.demo';
-export { styles } from './Month.styles.demo';
-export { usage } from './Month.usage.demo';
-export { modifiers } from './Month.modifiers.demo';
-export { weekdays } from './Month.weekdays.demo';
-export { localization } from './Month.localization.demo';
+export { default as boundaries } from './Month.boundaries.demo';
+export { default as firstDaySunday } from './Month.firstDaySunday.demo';
+export { default as exclude } from './Month.exclude.demo';
+export { default as range } from './Month.range.demo';
+export { default as styles } from './Month.styles.demo';
+export { default as usage } from './Month.usage.demo';
+export { default as modifiers } from './Month.modifiers.demo';
+export { default as weekdays } from './Month.weekdays.demo';
+export { default as localization } from './Month.localization.demo';

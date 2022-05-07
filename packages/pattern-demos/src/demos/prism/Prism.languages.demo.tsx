@@ -65,7 +65,7 @@ insert into "topic" ("forum_id", "subject")
 values (2, 'D''artagnian');
 `;
 
-function Demo() {
+export default function Demo() {
   return (
     <Prism.Tabs defaultValue="go">
       <Prism.TabsList>
@@ -90,8 +90,3 @@ function Demo() {
     </Prism.Tabs>
   );
 }
-
-export const languages: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

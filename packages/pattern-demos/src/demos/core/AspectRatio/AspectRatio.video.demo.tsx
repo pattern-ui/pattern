@@ -1,7 +1,7 @@
 import React from 'react';
 import { AspectRatio } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <AspectRatio ratio={16 / 9}>
       <iframe
@@ -14,8 +14,3 @@ function Demo() {
     </AspectRatio>
   );
 }
-
-export const video: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

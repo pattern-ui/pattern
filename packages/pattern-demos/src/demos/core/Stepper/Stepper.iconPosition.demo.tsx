@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Stepper } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [active, setActive] = useState(1);
   return (
     <Stepper active={active} breakpoint="sm" onStepClick={setActive} iconPosition="right">
@@ -11,8 +11,3 @@ function Demo() {
     </Stepper>
   );
 }
-
-export const iconPosition: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

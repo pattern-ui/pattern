@@ -1,10 +1,10 @@
-export { usage } from './Menu.usage.demo';
-export { controls } from './Menu.controls.demo';
-export { transitions } from './Menu.transitions.demo';
+export { default as usage } from './Menu.usage.demo';
+export { default as controls } from './Menu.controls.demo';
+export { default as transitions } from './Menu.transitions.demo';
 export { configurator } from './Menu.configurator.demo';
-export { component } from './Menu.component.demo';
-export { hover } from './Menu.hover.demo';
-export { stylesApi } from './Menu.stylesApi.demo';
+export { default as component } from './Menu.component.demo';
+export { default as hover } from './Menu.hover.demo';
+export { default as stylesApi } from './Menu.stylesApi.demo';
 export { positionConfigurator } from './Menu.positionConfigurator.demo';
-export { disabled } from './Menu.disabled.demo';
-export { customControl } from './Menu.customControl.demo';
+export { default as disabled } from './Menu.disabled.demo';
+export { default as customControl } from './Menu.customControl.demo';

@@ -2,7 +2,7 @@ import React from 'react';
 import { Text } from '@pattern/core';
 import { DEFAULT_CONTROLS, DEFAULT_LABELS, Toolbar } from '@pattern/rte';
 
-function Demo() {
+export default function Demo() {
   return (
     <div>
       <Text style={{ paddingLeft: 15 }}>Default toolbar:</Text>
@@ -26,8 +26,3 @@ function Demo() {
     </div>
   );
 }
-
-export const toolbar: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

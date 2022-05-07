@@ -1,7 +1,7 @@
 import React from 'react';
 import { List } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <List listStyleType="disc">
       <List.Item>First order item</List.Item>
@@ -25,8 +25,3 @@ function Demo() {
     </List>
   );
 }
-
-export const nested: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

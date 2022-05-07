@@ -1,7 +1,7 @@
 import React from 'react';
 import { Title } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <>
       <Title order={1}>This is h1 title</Title>
@@ -13,8 +13,3 @@ function Demo() {
     </>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

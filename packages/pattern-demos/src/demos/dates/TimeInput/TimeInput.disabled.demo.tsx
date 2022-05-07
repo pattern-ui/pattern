@@ -1,7 +1,7 @@
 import React from 'react';
 import { TimeInput } from '@pattern/dates';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <TimeInput label="Disabled without value" disabled />
@@ -9,8 +9,3 @@ function Demo() {
     </div>
   );
 }
-
-export const disabled: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

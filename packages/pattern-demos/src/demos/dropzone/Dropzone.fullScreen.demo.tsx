@@ -4,7 +4,7 @@ import { Button, Group, usePatternTheme } from '@pattern/core';
 import { FullScreenDropzone, IMAGE_MIME_TYPE } from '@pattern/dropzone';
 import { dropzoneChildren } from './_base';
 
-function Demo() {
+export default function Demo() {
   const [disabled, setDisabled] = useState(true);
   const theme = usePatternTheme();
 
@@ -29,8 +29,3 @@ function Demo() {
     </>
   );
 }
-
-export const fullScreen: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

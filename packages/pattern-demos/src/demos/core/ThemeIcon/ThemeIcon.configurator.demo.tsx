@@ -24,7 +24,7 @@ const codeTemplate = (props: string) => `
 import { ThemeIcon } from '@pattern/core';
 import { Photo } from 'tabler-icons-react';
 
-function Demo() {
+export default function Demo() {
   return (
     <ThemeIcon${props}>
       <Photo />

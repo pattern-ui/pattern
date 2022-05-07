@@ -3,7 +3,7 @@ import React from 'react';
 import { PasswordInput, Group, Button, Box } from '@pattern/core';
 import { useForm } from '@pattern/form';
 
-function Demo() {
+export default function Demo() {
   const form = useForm({
     initialValues: {
       password: 'secret',
@@ -39,8 +39,3 @@ function Demo() {
     </Box>
   );
 }
-
-export const password: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

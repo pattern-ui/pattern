@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid } from '@pattern/core';
 import { ColWrapper as Col } from './_col-wrapper';
 
-function Demo() {
+export default function Demo() {
   return (
     <Grid>
       <Col span={3}>1</Col>
@@ -13,8 +13,3 @@ function Demo() {
     </Grid>
   );
 }
-
-export const offset: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

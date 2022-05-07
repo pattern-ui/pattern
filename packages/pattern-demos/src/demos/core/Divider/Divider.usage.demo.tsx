@@ -1,7 +1,7 @@
 import React from 'react';
 import { Divider } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <>
       <Divider my="sm" />
@@ -10,8 +10,3 @@ function Demo() {
     </>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

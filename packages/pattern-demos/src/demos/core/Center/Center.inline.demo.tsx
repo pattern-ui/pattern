@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowLeft, ArrowRight } from 'tabler-icons-react';
 import { Center, usePatternTheme, Anchor, Box } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const theme = usePatternTheme();
   return (
     <Anchor href="https://pattern-ui.design" target="_blank">
@@ -13,8 +13,3 @@ function Demo() {
     </Anchor>
   );
 }
-
-export const inline: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

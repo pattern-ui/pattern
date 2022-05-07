@@ -1,3 +1,3 @@
 export { configurator } from './SimpleGrid.configurator.demo';
-export { breakpoints } from './SimpleGrid.breakpoints.demo';
-export { themeBreakpoints } from './SimpleGrid.themeBreakpoints.demo';
+export { default as breakpoints } from './SimpleGrid.breakpoints.demo';
+export { default as themeBreakpoints } from './SimpleGrid.themeBreakpoints.demo';

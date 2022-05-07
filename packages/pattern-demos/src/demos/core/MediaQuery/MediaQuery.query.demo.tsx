@@ -1,7 +1,7 @@
 import React from 'react';
 import { MediaQuery, Text } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <MediaQuery
       query="(max-width: 1200px) and (min-width: 800px)"
@@ -11,8 +11,3 @@ function Demo() {
     </MediaQuery>
   );
 }
-
-export const query: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

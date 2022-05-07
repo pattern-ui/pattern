@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <Button
@@ -18,8 +18,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const createStylesSx: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

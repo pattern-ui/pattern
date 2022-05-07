@@ -2,21 +2,7 @@ import React from 'react';
 import { Group } from '@pattern/core';
 import { DemoBase } from './_base';
 
-const code = `
-import { Burger } from '@pattern/core';
-
-function Demo() {
-  return (
-    <>
-      <Burger />
-      <Burger color="#fe6734" />
-      <Burger color="#45f50d" />
-    </>
-  );
-}
-`;
-
-export function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <DemoBase />
@@ -25,8 +11,3 @@ export function Demo() {
     </Group>
   );
 }
-
-export const color: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -2,7 +2,7 @@ import React from 'react';
 import { DatePicker } from '@pattern/dates';
 import { Indicator } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 340, marginLeft: 'auto', marginRight: 'auto' }}>
       <DatePicker
@@ -20,8 +20,3 @@ function Demo() {
     </div>
   );
 }
-
-export const renderDay: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

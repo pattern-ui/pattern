@@ -1,7 +1,7 @@
 import React from 'react';
 import { Checkbox, PATTERN_SIZES, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const items = PATTERN_SIZES.map((size) => (
     <Checkbox key={size} size={size} defaultChecked label={`${size} checkbox`} />
   ));
@@ -12,8 +12,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const sizes: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

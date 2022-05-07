@@ -17,7 +17,7 @@ function Wrapper(props: IndicatorProps) {
 const codeTemplate = (props: string) => `
 import { Indicator, Avatar, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <Indicator${props}>

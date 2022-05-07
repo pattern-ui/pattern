@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Refresh } from 'tabler-icons-react';
 import { ActionIcon, ColorInput } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [value, onChange] = useState(randomColor());
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -20,8 +20,3 @@ function Demo() {
     </div>
   );
 }
-
-export const rightSection: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

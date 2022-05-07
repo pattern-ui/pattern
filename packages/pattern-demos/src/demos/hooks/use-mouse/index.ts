@@ -1,2 +1,2 @@
-export { useMouseRef } from './ref';
-export { useMouseUsage } from './usage';
+export { default as useMouseRef } from './ref.demo';
+export { default as useMouseUsage } from './usage.demo';

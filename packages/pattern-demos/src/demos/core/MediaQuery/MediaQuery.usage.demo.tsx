@@ -1,7 +1,7 @@
 import React from 'react';
 import { usePatternTheme, MediaQuery, Group, Box, CSSObject } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const theme = usePatternTheme();
 
   const highlight: CSSObject = {
@@ -37,8 +37,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

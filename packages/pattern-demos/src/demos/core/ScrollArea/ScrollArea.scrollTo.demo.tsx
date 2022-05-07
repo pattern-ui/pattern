@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { ScrollArea, Button, Group } from '@pattern/core';
 import { Content } from './_content';
 
-function Demo() {
+export default function Demo() {
   const viewport = useRef<HTMLDivElement>();
   const scrollToBottom = () =>
     viewport.current.scrollTo({ top: viewport.current.scrollHeight, behavior: 'smooth' });
@@ -29,8 +29,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const scrollTo: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

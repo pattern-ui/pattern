@@ -1,7 +1,7 @@
 import React from 'react';
 import { Group, Button, Code, Title, PatternProvider, usePatternColorScheme } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const { colorScheme } = usePatternColorScheme();
 
   return (
@@ -24,8 +24,3 @@ function Demo() {
     </PatternProvider>
   );
 }
-
-export const themeFontsExtend: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

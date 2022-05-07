@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { CheckIcon } from '@modulz/radix-icons';
 import { usePatternTheme, ColorSwatch, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const theme = usePatternTheme();
   const [checked, setChecked] = useState(true);
 
@@ -20,8 +20,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const component: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -12,7 +12,7 @@ function Wrapper(props: BadgeProps<'div'>) {
 const codeTemplate = (props: string) => `
 import { Badge } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Badge${props}>Badge</Badge>
   );

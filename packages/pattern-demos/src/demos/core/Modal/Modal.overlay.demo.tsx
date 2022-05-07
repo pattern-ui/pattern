@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Modal, Group, Button, usePatternTheme } from '@pattern/core';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 
-function Demo() {
+export default function Demo() {
   const [opened, setOpened] = useState(false);
   const theme = usePatternTheme();
 
@@ -25,8 +25,3 @@ function Demo() {
     </>
   );
 }
-
-export const overlay: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

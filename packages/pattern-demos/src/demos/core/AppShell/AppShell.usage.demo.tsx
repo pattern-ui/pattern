@@ -5,7 +5,7 @@ import { MainLinks } from './_mainLinks';
 import { User } from './_user';
 import { Logo } from './_logo';
 
-function Demo() {
+export default function Demo() {
   const { colorScheme, toggleColorScheme } = usePatternColorScheme();
 
   return (
@@ -42,9 +42,3 @@ function Demo() {
     </AppShell>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-  demoProps: { spacing: false },
-};

@@ -1,1 +1,1 @@
-export { useMediaQueryDemo } from './usage';
+export { default as useMediaQueryDemo } from './usage.demo';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Input } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <>
       <Input variant="default" placeholder="Default variant" />
@@ -10,8 +10,3 @@ function Demo() {
     </>
   );
 }
-
-export const variants: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

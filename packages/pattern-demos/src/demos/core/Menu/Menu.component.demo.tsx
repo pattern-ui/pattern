@@ -2,7 +2,7 @@ import React from 'react';
 import { ExternalLink } from 'tabler-icons-react';
 import { Menu, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <Menu>
@@ -21,8 +21,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const component: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -21,7 +21,7 @@ function Wrapper(props: TextProps<'div'>) {
 const codeTemplate = (props: string) => `
 import { Text } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Text${props}>
       {/* Text content */}

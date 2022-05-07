@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tooltip, Badge, Group, AVAILABLE_TRANSITIONS } from '@pattern/core';
 
-export function Demo() {
+export default function Demo() {
   const transitions = AVAILABLE_TRANSITIONS.map((transition) => (
     <Tooltip key={transition} label={transition} transition={transition} transitionDuration={300}>
       <Badge>{transition}</Badge>
@@ -10,8 +10,3 @@ export function Demo() {
 
   return <Group position="center">{transitions}</Group>;
 }
-
-export const transitions: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Slider, RangeSlider } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 400, marginLeft: 'auto', marginRight: 'auto' }}>
       <Slider defaultValue={60} disabled />
@@ -21,8 +21,3 @@ function Demo() {
     </div>
   );
 }
-
-export const disabled: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <Text
@@ -18,8 +18,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const gradient: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

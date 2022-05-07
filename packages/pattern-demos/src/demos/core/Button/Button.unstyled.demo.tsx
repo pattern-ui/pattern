@@ -1,7 +1,7 @@
 import React from 'react';
 import { UnstyledButton, Group, Avatar, Text } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <UnstyledButton aria-label="Open user menu" onClick={() => {}}>
@@ -20,8 +20,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const unstyled: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

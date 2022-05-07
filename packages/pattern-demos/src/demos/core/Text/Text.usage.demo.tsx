@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <>
       <Text size="xs">Extra small text</Text>
@@ -25,8 +25,3 @@ function Demo() {
     </>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

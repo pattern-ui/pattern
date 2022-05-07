@@ -2,7 +2,7 @@ import React from 'react';
 import { Group, ActionIcon, usePatternColorScheme } from '@pattern/core';
 import { Sun, MoonStars } from 'tabler-icons-react';
 
-function Demo() {
+export default function Demo() {
   const { colorScheme, toggleColorScheme } = usePatternColorScheme();
   const dark = colorScheme === 'dark';
 
@@ -19,8 +19,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const darkThemeToggle: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

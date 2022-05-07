@@ -1,7 +1,7 @@
 import React from 'react';
 import { Stepper } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Stepper active={1} breakpoint="sm">
       <Stepper.Step label="Step 1" description="Create an account" />
@@ -10,8 +10,3 @@ function Demo() {
     </Stepper>
   );
 }
-
-export const loading: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

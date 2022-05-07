@@ -44,7 +44,7 @@ function TsIcon(props: React.ComponentProps<'svg'>) {
   );
 }
 
-function Demo() {
+export default function Demo() {
   return (
     <Prism.Tabs defaultValue="styles.css">
       <Prism.TabsList>
@@ -71,8 +71,3 @@ function Demo() {
     </Prism.Tabs>
   );
 }
-
-export const tabs: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

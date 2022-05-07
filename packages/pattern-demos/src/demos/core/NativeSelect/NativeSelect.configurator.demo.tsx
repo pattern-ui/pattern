@@ -4,7 +4,7 @@ import { NativeSelect } from '@pattern/core';
 const codeTemplate = (props: string) => `
 import { NativeSelect } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <NativeSelect
       data={['React', 'Vue', 'Angular', 'Svelte']}

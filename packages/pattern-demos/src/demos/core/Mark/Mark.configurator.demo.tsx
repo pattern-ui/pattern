@@ -12,7 +12,7 @@ function Wrapper(props: MarkProps) {
 const codeTemplate = (props: string) => `
 import { Text, Mark } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Text>
       Highlight <Mark${props}>this chunk</Mark> of the text

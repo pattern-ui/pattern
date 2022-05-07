@@ -2,7 +2,7 @@ import React from 'react';
 import { ChevronDown } from 'tabler-icons-react';
 import { NativeSelect } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <NativeSelect
@@ -15,8 +15,3 @@ function Demo() {
     </div>
   );
 }
-
-export const rightSection: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

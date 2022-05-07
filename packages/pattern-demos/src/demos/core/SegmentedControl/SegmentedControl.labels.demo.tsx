@@ -2,7 +2,7 @@ import React from 'react';
 import { Eye, Code, ExternalLink } from 'tabler-icons-react';
 import { Center, SegmentedControl, Box, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <SegmentedControl
@@ -39,8 +39,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const labels: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

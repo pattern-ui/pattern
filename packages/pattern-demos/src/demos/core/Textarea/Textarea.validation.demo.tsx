@@ -1,7 +1,7 @@
 import React from 'react';
 import { Textarea } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <Textarea label="Your comment" placeholder="Your comment" error />
@@ -15,8 +15,3 @@ function Demo() {
     </div>
   );
 }
-
-export const validation: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

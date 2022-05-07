@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tabs } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Tabs defaultValue="chat">
       <Tabs.List>
@@ -15,8 +15,3 @@ function Demo() {
     </Tabs>
   );
 }
-
-export const pull: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

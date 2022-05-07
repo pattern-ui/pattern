@@ -1,7 +1,7 @@
 import React from 'react';
 import { Avatar, Indicator } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Indicator inline label="New" size={16}>
       <Avatar
@@ -11,8 +11,3 @@ function Demo() {
     </Indicator>
   );
 }
-
-export const inline: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

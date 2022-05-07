@@ -1,2 +1,2 @@
 export { configurator } from './Switch.configurator.demo';
-export { labels } from './Switch.labels.demo';
+export { default as labels } from './Switch.labels.demo';

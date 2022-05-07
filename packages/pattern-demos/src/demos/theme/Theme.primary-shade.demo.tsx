@@ -16,7 +16,7 @@ function Wrapper({ primaryShade }: { primaryShade: PatternTheme['primaryShade'] 
 const codeTemplate = (props: string) => `
 import { PatternProvider, Group, Button } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <PatternProvider theme={{ primaryShade: ${props
       .replace(' primaryShade={', '')

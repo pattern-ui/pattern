@@ -13,7 +13,7 @@ function Wrapper(props: AvatarProps<'div'>) {
 const codeTemplate = (props: string) => `
 import { Avatar } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return <Avatar${props} />;
 }
 `;

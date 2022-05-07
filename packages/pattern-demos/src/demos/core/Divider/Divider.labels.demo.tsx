@@ -2,7 +2,7 @@ import React from 'react';
 import { Search } from 'tabler-icons-react';
 import { Divider, Box } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <>
       <Divider my="xs" label="Label on the left" />
@@ -27,8 +27,3 @@ function Demo() {
     </>
   );
 }
-
-export const labels: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

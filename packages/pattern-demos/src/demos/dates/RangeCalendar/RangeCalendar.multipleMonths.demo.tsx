@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Group, MediaQuery, Text } from '@pattern/core';
 import { RangeCalendar } from '@pattern/dates';
 
-function Demo() {
+export default function Demo() {
   const [value, setValue] = useState<[Date, Date]>([new Date(2021, 11, 1), new Date(2022, 0, 15)]);
 
   return (
@@ -23,8 +23,3 @@ function Demo() {
     </>
   );
 }
-
-export const multipleMonths: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

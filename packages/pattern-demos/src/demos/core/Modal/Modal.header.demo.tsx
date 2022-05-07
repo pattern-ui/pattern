@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, Group, Button } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [opened, setOpened] = useState(false);
 
   return (
@@ -16,8 +16,3 @@ function Demo() {
     </>
   );
 }
-
-export const header: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

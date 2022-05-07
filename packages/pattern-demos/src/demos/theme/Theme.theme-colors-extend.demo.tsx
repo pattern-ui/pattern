@@ -1,7 +1,7 @@
 import React from 'react';
 import { Group, Button, Badge, PatternProvider, usePatternColorScheme } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const { colorScheme } = usePatternColorScheme();
 
   return (
@@ -45,8 +45,3 @@ function Demo() {
     </PatternProvider>
   );
 }
-
-export const themeColorsExtend: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

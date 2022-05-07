@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <>
       <Group position="center">
@@ -14,8 +14,3 @@ function Demo() {
     </>
   );
 }
-
-export const variants: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

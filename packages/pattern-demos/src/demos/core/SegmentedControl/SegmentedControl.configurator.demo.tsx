@@ -3,7 +3,7 @@ import { SegmentedControlWrapper } from './Wrapper';
 const codeTemplate = (props: string) => `
 import { SegmentedControl } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return <SegmentedControl${props} />;
 }
 `;

@@ -1,1 +1,1 @@
-export { usage } from './Anchor.usage.demo';
+export { default as usage } from './Anchor.usage.demo';

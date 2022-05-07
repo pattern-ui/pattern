@@ -10,7 +10,7 @@ import {
 } from '@pattern/nprogress';
 import React from 'react';
 
-function Demo() {
+export default function Demo() {
   return (
     <>
       <NProgress />
@@ -27,8 +27,3 @@ function Demo() {
     </>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -14,7 +14,7 @@ function Wrapper(props: InputWrapperProps) {
 const codeTemplate = (props: string) => `
 import { InputWrapper, Input } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <InputWrapper
       id="input-demo"

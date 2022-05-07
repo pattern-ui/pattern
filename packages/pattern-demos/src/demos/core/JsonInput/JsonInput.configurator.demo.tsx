@@ -3,7 +3,7 @@ import { JsonInput } from '@pattern/core';
 const codeTemplate = (props: string) => `
 import { JsonInput } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <JsonInput
      ${props}

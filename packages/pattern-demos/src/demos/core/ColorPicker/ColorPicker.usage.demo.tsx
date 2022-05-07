@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ColorPicker, Text, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [value, onChange] = useState('rgba(47, 119, 150, 0.7)');
 
   return (
@@ -11,8 +11,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

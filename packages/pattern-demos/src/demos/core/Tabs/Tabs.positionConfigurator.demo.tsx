@@ -16,7 +16,7 @@ function Wrapper(props: TabsProps) {
 const codeTemplate = (props: string) => `
 import { Tabs } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Tabs defaultValue="first">
       <Tabs.List${props}>

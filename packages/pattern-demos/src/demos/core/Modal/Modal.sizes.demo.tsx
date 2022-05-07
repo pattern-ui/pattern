@@ -4,7 +4,7 @@ import { AuthenticationForm } from '../../../shared/AuthenticationForm/Authentic
 
 const SIZES = ['xs', 'sm', 'md', 'lg', 'xl', 'full', 322, '70%'];
 
-function Demo() {
+export default function Demo() {
   const [opened, setOpened] = useState(false);
   const [size, setSize] = useState<string | number>('md');
 
@@ -36,8 +36,3 @@ function Demo() {
     </>
   );
 }
-
-export const sizes: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

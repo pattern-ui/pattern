@@ -1,7 +1,7 @@
 import React from 'react';
 import { RingProgress, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <RingProgress
@@ -14,8 +14,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const colors: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -12,7 +12,7 @@ function Wrapper(props: BlockquoteProps) {
 const codeTemplate = (props: string, children: string) => `
 import { Blockquote } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Blockquote${props}>
       ${children}

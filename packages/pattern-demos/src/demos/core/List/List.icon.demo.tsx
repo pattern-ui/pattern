@@ -2,7 +2,7 @@ import React from 'react';
 import { CircleCheck, CircleDashed } from 'tabler-icons-react';
 import { ThemeIcon, List } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 500, marginLeft: 'auto', marginRight: 'auto' }}>
       <List
@@ -32,8 +32,3 @@ function Demo() {
     </div>
   );
 }
-
-export const icon: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

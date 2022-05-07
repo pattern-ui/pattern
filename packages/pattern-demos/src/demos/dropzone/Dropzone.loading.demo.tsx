@@ -3,7 +3,7 @@ import { usePatternTheme } from '@pattern/styles';
 import { Dropzone, IMAGE_MIME_TYPE } from '@pattern/dropzone';
 import { dropzoneChildren } from './_base';
 
-function Demo() {
+export default function Demo() {
   const theme = usePatternTheme();
   return (
     <Dropzone
@@ -17,8 +17,3 @@ function Demo() {
     </Dropzone>
   );
 }
-
-export const loading: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

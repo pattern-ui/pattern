@@ -22,7 +22,7 @@ function Wrapper(props: BackgroundImageProps<'div'>) {
 const codeTemplate = (props: string) => `
 import { BackgroundImage, Center, Text, Box } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Box sx={{ maxWidth: 300 }} mx="auto">
       <BackgroundImage

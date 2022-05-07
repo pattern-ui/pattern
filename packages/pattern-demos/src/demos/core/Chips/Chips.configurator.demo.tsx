@@ -15,7 +15,7 @@ function Wrapper(props: ChipsProps) {
 const codeTemplate = (props: string) => `
 import { Chips, Chip } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Chips${props}>
       <Chip value="react">React</Chip>

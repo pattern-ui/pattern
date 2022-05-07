@@ -13,7 +13,7 @@ function Wrapper(props: Partial<StepperProps>) {
 const codeTemplate = (props: string) => `
 import { Stepper } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Stepper${props} active={1}>
       <Stepper.Step label="Step 1" description="Create an account" />

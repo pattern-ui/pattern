@@ -1,7 +1,7 @@
 import React from 'react';
 import { Slider, Text } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const MARKS = [
     { value: 0, label: 'xs' },
     { value: 25, label: 'sm' },
@@ -35,8 +35,3 @@ function Demo() {
     </div>
   );
 }
-
-export const step: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

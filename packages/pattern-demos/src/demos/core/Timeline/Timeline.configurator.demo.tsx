@@ -13,7 +13,7 @@ function Wrapper(props: TimelineProps) {
 const codeTemplate = (props: string) => `
 import { Timeline } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Timeline${props}>
       {/* items */}

@@ -22,7 +22,7 @@ function Wrapper(props: any) {
 const codeTemplate = (props: string) => `
 import { ${props.includes('range') ? 'RangeSlider' : 'Slider'} } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <${props.includes('range') ? 'RangeSlider' : 'Slider'}${
   props ? `\n      ${props.replace('type="range"', '').trim()}` : '' // please don't judge, this works somehow

@@ -22,7 +22,7 @@ function Wrapper(props: AlphaSliderProps) {
 const codeTemplate = (props: string) => `import { useState } from 'react';
 import { AlphaSlider, Text } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [value, onChange] = useState(1);
 
   return (

@@ -2,7 +2,7 @@ import React from 'react';
 import { Avatar, Group, AvatarsGroup } from '@pattern/core';
 import { avatars } from './_mockdata';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <AvatarsGroup spacing="lg" limit={2} total={7}>
@@ -12,8 +12,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const total: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

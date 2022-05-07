@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Group, MediaQuery, Text } from '@pattern/core';
 import { Calendar } from '@pattern/dates';
 
-function Demo() {
+export default function Demo() {
   const [value, setValue] = useState(null);
   return (
     <>
@@ -17,8 +17,3 @@ function Demo() {
     </>
   );
 }
-
-export const multipleMonths: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

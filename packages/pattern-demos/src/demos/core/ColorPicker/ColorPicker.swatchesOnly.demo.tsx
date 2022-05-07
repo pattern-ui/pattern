@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { DEFAULT_THEME, Text, ColorPicker } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [value, onChange] = useState(null);
 
   return (
@@ -24,8 +24,3 @@ function Demo() {
     </div>
   );
 }
-
-export const swatchesOnly: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

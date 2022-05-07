@@ -4,7 +4,7 @@ import { MultiSelect } from '@pattern/core';
 const codeTemplate = (props: string) => `
 import { MultiSelect } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <MultiSelect
       data={['React', 'Angular', 'Svelte', 'Vue']}

@@ -5,12 +5,7 @@ export const html = `
 <p>This editor is <b>read only</b></p>
 `;
 
-function Demo(props: any) {
+export default function Demo(props: any) {
   const [value, onChange] = useState(html);
   return <SSRWrapper readOnly value={value} onChange={onChange} stickyOffset={60} {...props} />;
 }
-
-export const readOnly: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

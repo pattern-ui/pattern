@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Drawer, Button, Group } from '@pattern/core';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 
-function Demo() {
+export default function Demo() {
   const [opened, setOpened] = useState(false);
 
   return (
@@ -26,8 +26,3 @@ function Demo() {
     </>
   );
 }
-
-export const transitions: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -20,7 +20,7 @@ export function Demo({ data: dataProp, demoProps, configuratorProps }: DemoProps
     if (typeof dataProp === 'function') {
       return {
         type: 'demo',
-        data: dataProp,
+        component: dataProp,
       };
     }
     return dataProp;

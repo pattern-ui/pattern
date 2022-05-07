@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Box
       sx={(theme) => ({
@@ -21,8 +21,3 @@ function Demo() {
     </Box>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -13,11 +13,6 @@ const getSizes = (props?: RadioProps) =>
     </RadioGroup>
   ));
 
-function Demo() {
+export default function Demo() {
   return <>{getSizes()}</>;
 }
-
-export const sizes: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

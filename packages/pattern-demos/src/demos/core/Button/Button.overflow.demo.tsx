@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group>
       <div style={{ width: 200 }}>
@@ -18,8 +18,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const overflow: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

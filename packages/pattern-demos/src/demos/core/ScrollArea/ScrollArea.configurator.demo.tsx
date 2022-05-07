@@ -15,7 +15,7 @@ function Wrapper(props: ScrollAreaProps) {
 const codeTemplate = (props: string) => `
 import { ScrollArea } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <ScrollArea style={{ height: 250 }}${props}>
       {/* ... content */}

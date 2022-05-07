@@ -1,7 +1,7 @@
 import React from 'react';
 import { NumberInput } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <NumberInput
@@ -15,8 +15,3 @@ function Demo() {
     </div>
   );
 }
-
-export const decimalSeparator: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

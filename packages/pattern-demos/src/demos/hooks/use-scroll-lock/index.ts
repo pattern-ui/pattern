@@ -1,1 +1,1 @@
-export { useScrollLockDemo } from './usage';
+export { default as useScrollLockDemo } from './usage.demo';

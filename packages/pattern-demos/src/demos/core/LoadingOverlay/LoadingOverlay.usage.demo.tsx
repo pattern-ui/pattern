@@ -3,29 +3,7 @@ import { LoadingOverlay, Button, Group, usePatternTheme } from '@pattern/core';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 import { demoBase } from './_demo-base';
 
-const code = `
-import { useState } from 'react';
-import { LoadingOverlay, Button, Group } from '@pattern/core';
-
-function Demo() {
-  const [visible, setVisible] = useState(false);
-
-  // Note that position: relative is required
-  return (
-    <>
-      <div style={{ width: 400, position: 'relative' }}>
-        <LoadingOverlay visible={visible} />
-        {/* ...other content */}
-      </div>
-
-      <Group position="center">
-        <Button onClick={() => setVisible((v) => !v)}>Toggle overlay</Button>
-      </Group>
-    </>
-  );
-}`;
-
-export function Demo() {
+export default function Demo() {
   const [visible, setVisible] = useState(false);
   const theme = usePatternTheme();
 

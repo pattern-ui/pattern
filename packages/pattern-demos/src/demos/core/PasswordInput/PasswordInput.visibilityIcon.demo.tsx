@@ -2,7 +2,7 @@ import React from 'react';
 import { EyeCheck, EyeOff } from 'tabler-icons-react';
 import { PasswordInput } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <PasswordInput
@@ -16,8 +16,3 @@ function Demo() {
     </div>
   );
 }
-
-export const visibilityIcon: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

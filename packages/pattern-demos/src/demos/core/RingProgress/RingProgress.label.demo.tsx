@@ -2,7 +2,7 @@ import React from 'react';
 import { Check } from 'tabler-icons-react';
 import { ThemeIcon, RingProgress, Group, Text, Center } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <RingProgress
@@ -27,8 +27,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const label: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

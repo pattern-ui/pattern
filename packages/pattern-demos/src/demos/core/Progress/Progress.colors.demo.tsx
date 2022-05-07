@@ -1,7 +1,7 @@
 import React from 'react';
 import { Progress } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Progress
       sections={[
@@ -12,8 +12,3 @@ function Demo() {
     />
   );
 }
-
-export const colors: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

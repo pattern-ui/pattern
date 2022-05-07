@@ -19,7 +19,7 @@ function Wrapper(props: RingProgressProps) {
 const codeTemplate = (props: string) => `
 import { RingProgress } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <RingProgress
      ${props}

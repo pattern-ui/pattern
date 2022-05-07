@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Image, Text, Badge, Button, Group, usePatternTheme } from '@pattern/core';
 import { demoBase } from './_demo-base';
 
-function Demo() {
+export default function Demo() {
   const theme = usePatternTheme();
   const secondaryColor = theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[7];
 

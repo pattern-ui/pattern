@@ -4,7 +4,7 @@ import { Select, SelectProps } from '@pattern/core';
 const codeTemplate = (props: string) => `
 import { Select } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Select
       data={['React', 'Angular', 'Svelte', 'Vue']}

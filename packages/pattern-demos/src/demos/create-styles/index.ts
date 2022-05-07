@@ -1,8 +1,8 @@
-export { createStylesBasics } from './CreateStyles.basics.demo';
-export { createStylesParameters } from './CreateStyles.parameters.demo';
-export { createStylesComposition } from './CreateStyles.composition.demo';
-export { createStylesMedia } from './CreateStyles.media.demo';
-export { createStylesPseudo } from './CreateStyles.pseudo.demo';
-export { createStylesCx } from './CreateStyles.cx.demo';
-export { createStylesKeyframes } from './CreateStyles.keyframes.demo';
-export { createStylesSx } from './CreateStyles.sx.demo';
+export { default as createStylesBasics } from './CreateStyles.basics.demo';
+export { default as createStylesParameters } from './CreateStyles.parameters.demo';
+export { default as createStylesComposition } from './CreateStyles.composition.demo';
+export { default as createStylesMedia } from './CreateStyles.media.demo';
+export { default as createStylesPseudo } from './CreateStyles.pseudo.demo';
+export { default as createStylesCx } from './CreateStyles.cx.demo';
+export { default as createStylesKeyframes } from './CreateStyles.keyframes.demo';
+export { default as createStylesSx } from './CreateStyles.sx.demo';

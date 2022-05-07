@@ -13,7 +13,7 @@ function Wrapper(props: MenuProps) {
 const codeTemplate = (props: string) => `
 import { Menu } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Menu${props}>
       {/* Menu items */}

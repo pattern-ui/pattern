@@ -2,7 +2,7 @@ import React from 'react';
 import { Text } from '@pattern/core';
 import { SegmentedControlWrapper } from './Wrapper';
 
-function Demo() {
+export default function Demo() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <div>
@@ -21,8 +21,3 @@ function Demo() {
     </div>
   );
 }
-
-export const transitions: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

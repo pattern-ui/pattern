@@ -1,7 +1,7 @@
 import React from 'react';
 import { Chips, Chip } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <>
       <Chips position="center">
@@ -18,8 +18,3 @@ function Demo() {
     </>
   );
 }
-
-export const type: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

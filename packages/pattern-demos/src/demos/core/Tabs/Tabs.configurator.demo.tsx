@@ -39,7 +39,7 @@ const codeTemplate = (props: string) => {
 import { Tabs } from '@pattern/core';
 import { Photo, MessageCircle, Settings } from 'tabler-icons-react';
 
-function Demo() {
+export default function Demo() {
   return (
     <Tabs${props} defaultValue="gallery">
       <Tabs.List>

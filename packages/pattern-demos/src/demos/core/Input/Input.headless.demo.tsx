@@ -2,7 +2,7 @@ import React from 'react';
 import { BrandTwitter } from 'tabler-icons-react';
 import { Input } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Input
       styles={{ input: { width: '100%', boxSizing: 'border-box' } }}
@@ -13,8 +13,3 @@ function Demo() {
     />
   );
 }
-
-export const headless: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

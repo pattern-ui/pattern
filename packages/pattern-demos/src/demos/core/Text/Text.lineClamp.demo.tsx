@@ -1,7 +1,7 @@
 import React from 'react';
 import { TypographyStylesProvider, Text } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Text lineClamp={3}>
       <TypographyStylesProvider>
@@ -17,8 +17,3 @@ function Demo() {
     </Text>
   );
 }
-
-export const lineClamp: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

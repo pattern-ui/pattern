@@ -15,7 +15,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-function Demo() {
+export default function Demo() {
   const { classes } = useStyles();
   const theme = usePatternTheme();
 
@@ -31,8 +31,3 @@ function Demo() {
     </Dropzone>
   );
 }
-
-export const disabled: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

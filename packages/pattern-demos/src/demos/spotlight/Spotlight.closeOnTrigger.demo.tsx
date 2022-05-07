@@ -1,7 +1,7 @@
 import React from 'react';
 import { Wrapper } from './_wrapper';
 
-function Demo() {
+export default function Demo() {
   return (
     <Wrapper
       searchPlaceholder="Search..."
@@ -10,8 +10,3 @@ function Demo() {
     />
   );
 }
-
-export const closeOnTrigger: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

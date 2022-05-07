@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tooltip, Button, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Tooltip.Group openDelay={500} closeDelay={100}>
       <Group position="center">
@@ -18,8 +18,3 @@ function Demo() {
     </Tooltip.Group>
   );
 }
-
-export const group: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

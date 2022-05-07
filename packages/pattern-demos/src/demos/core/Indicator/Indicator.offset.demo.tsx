@@ -1,7 +1,7 @@
 import React from 'react';
 import { Avatar, Indicator } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Indicator inline size={16} offset={7} position="bottom-end" color="red" withBorder>
       <Avatar
@@ -12,8 +12,3 @@ function Demo() {
     </Indicator>
   );
 }
-
-export const offset: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

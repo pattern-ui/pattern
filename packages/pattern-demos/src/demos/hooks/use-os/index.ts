@@ -1,1 +1,1 @@
-export { useOsDemo } from './usage';
+export { default as useOsDemo } from './usage.demo';

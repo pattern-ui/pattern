@@ -12,7 +12,7 @@ function Wrapper(props: any) {
 const codeTemplate = (props: string) => `
 import { Pagination } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return <Pagination total={10}${props} />;
 }
 `;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { DEFAULT_THEME, Group, ColorPicker } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center" direction="column">
       <ColorPicker
@@ -12,8 +12,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const swatches: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

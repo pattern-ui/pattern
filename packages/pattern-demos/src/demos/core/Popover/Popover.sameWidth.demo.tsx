@@ -1,7 +1,7 @@
 import React from 'react';
 import { Popover, Text, Button } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Popover width="target" position="bottom" withArrow shadow="md">
       <Popover.Target>
@@ -15,8 +15,3 @@ function Demo() {
     </Popover>
   );
 }
-
-export const sameWidth: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

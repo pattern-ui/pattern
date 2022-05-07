@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Autocomplete } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [value, setValue] = useState('');
   const data =
     value.trim().length > 0 && !value.includes('@')
@@ -20,8 +20,3 @@ function Demo() {
     </div>
   );
 }
-
-export const dynamic: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

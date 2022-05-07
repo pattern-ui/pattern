@@ -9,11 +9,6 @@ function Demo() {
 }
 `;
 
-function Demo() {
+export default function Demo() {
   return <Prism language="tsx">{demoCode}</Prism>;
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

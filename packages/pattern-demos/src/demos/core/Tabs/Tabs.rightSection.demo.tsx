@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tabs, Badge } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Tabs defaultValue="chat">
       <Tabs.List>
@@ -26,8 +26,3 @@ function Demo() {
     </Tabs>
   );
 }
-
-export const rightSection: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

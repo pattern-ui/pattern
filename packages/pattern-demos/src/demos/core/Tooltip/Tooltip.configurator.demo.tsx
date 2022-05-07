@@ -17,7 +17,7 @@ const Wrapper = (props: TooltipProps) => (
 const codeTemplate = (props: string) => `
 import { Tooltip, Button } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Tooltip
       label="Tooltip"

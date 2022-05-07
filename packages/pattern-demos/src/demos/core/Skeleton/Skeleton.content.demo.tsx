@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Group, Button, Text, Skeleton } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const [loading, setLoading] = useState(true);
 
   return (
@@ -25,8 +25,3 @@ function Demo() {
     </>
   );
 }
-
-export const content: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

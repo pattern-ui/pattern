@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, Pagination } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <>
       <Text mb={10}>1 sibling (default)</Text>
@@ -19,8 +19,3 @@ function Demo() {
     </>
   );
 }
-
-export const siblings: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

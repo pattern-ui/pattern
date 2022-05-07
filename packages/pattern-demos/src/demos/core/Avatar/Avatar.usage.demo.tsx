@@ -3,7 +3,7 @@ import { Star } from 'tabler-icons-react';
 import { Avatar, Group } from '@pattern/core';
 import { avatars } from './_mockdata';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <Avatar src={avatars[0]} alt="it's me" />
@@ -17,8 +17,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const usage: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Slider, RangeSlider } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   const marks = [
     { value: 20, label: '20%' },
     { value: 50, label: '50%' },
@@ -22,8 +22,3 @@ function Demo() {
     </div>
   );
 }
-
-export const marks: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

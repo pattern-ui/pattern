@@ -4,7 +4,7 @@ import { Autocomplete } from '@pattern/core';
 const codeTemplate = (props: string) => `
 import { Autocomplete } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Autocomplete
      ${props}

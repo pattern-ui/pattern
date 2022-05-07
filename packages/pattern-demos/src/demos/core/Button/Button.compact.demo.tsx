@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Group } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Group position="center">
       <Button compact>Compact filled button</Button>
@@ -14,8 +14,3 @@ function Demo() {
     </Group>
   );
 }
-
-export const compact: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

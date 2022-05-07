@@ -14,7 +14,7 @@ function Wrapper(props: any) {
 const codeTemplate = (props: string) => `
 import { Text, Space } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <>
       <Text>First line</Text>

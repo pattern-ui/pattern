@@ -2,7 +2,7 @@ import React from 'react';
 import { BrandTwitter } from 'tabler-icons-react';
 import { Input, Badge } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <Input
       icon={<BrandTwitter size={16} />}
@@ -17,8 +17,3 @@ function Demo() {
     />
   );
 }
-
-export const icon: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

@@ -18,7 +18,7 @@ const codeTemplate = (props: string) => `
 import { Input } from '@pattern/core';
 import { At } from 'tabler-icons-react';
 
-function Demo() {
+export default function Demo() {
   return (
     <Input
       icon={<At />}

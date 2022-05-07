@@ -9,7 +9,7 @@ const getColors = (props: Omit<ActionIconProps<'button'>, 'children'>) =>
     </ActionIcon>
   ));
 
-function Demo() {
+export default function Demo() {
   return (
     <>
       <Group position="center">{getColors({ variant: 'hover' })}</Group>
@@ -25,8 +25,3 @@ function Demo() {
     </>
   );
 }
-
-export const colors: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};

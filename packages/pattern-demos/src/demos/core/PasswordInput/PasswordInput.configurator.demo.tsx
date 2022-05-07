@@ -3,7 +3,7 @@ import { PasswordInput } from '@pattern/core';
 const codeTemplate = (props: string) => `
 import { PasswordInput } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return (
     <PasswordInput
      ${props}

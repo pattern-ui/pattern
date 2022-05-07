@@ -1,3 +1,3 @@
-export { image } from './AspectRatio.image.demo';
-export { map } from './AspectRatio.map.demo';
-export { video } from './AspectRatio.video.demo';
+export { default as image } from './AspectRatio.image.demo';
+export { default as map } from './AspectRatio.map.demo';
+export { default as video } from './AspectRatio.video.demo';

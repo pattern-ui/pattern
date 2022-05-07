@@ -4,7 +4,7 @@ import { Prism } from '@pattern/prism';
 const demoCode = `
 import { Button } from '@pattern/core';
 
-function Demo() {
+export default function Demo() {
   return <Button>Hello</Button>
 }
 
@@ -13,7 +13,7 @@ function Usage() {
 }
 `;
 
-function Demo() {
+export default function Demo() {
   const deleted = { color: 'red', label: '-' };
   const added = { color: 'green', label: '+' };
 
@@ -34,8 +34,3 @@ function Demo() {
     </Prism>
   );
 }
-
-export const linesHighlight: PatternDemo = {
-  type: 'demo',
-  component: Demo,
-};
