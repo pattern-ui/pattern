@@ -2,26 +2,6 @@ import React from 'react';
 import { Text } from '@pattern/core';
 import { SegmentedControlWrapper } from './Wrapper';
 
-const code = `
-import { SegmentedControl } from '@pattern/core';
-
-function Demo() {
-  return (
-    <>
-      {/* No transitions */}
-      <SegmentedControl transitionDuration={0} />
-
-      {/* 500ms linear transition */}
-      <SegmentedControl
-        transitionDuration={500}
-        transitionTimingFunction="linear"
-      />
-    </>
-  );
-}
-
-`;
-
 function Demo() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -44,6 +24,5 @@ function Demo() {
 
 export const transitions: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

@@ -1,28 +1,6 @@
 import React, { useState } from 'react';
 import { Group, Button, Text, Skeleton } from '@pattern/core';
 
-const code = `
-import { useState } from 'react';
-import { Skeleton, Button } from '@pattern/core';
-
-function Demo() {
-  const [loading, setLoading] = useState(true);
-
-  return (
-    <>
-      <Skeleton visible={loading}>
-        Lorem ipsum dolor sit amet...
-        {/* other content */}
-      </Skeleton>
-
-      <Button onClick={() => setLoading((l) => !l)}>
-        Toggle Skeleton
-      </Button>
-    </>
-  );
-}
-`;
-
 function Demo() {
   const [loading, setLoading] = useState(true);
 
@@ -51,5 +29,4 @@ function Demo() {
 export const content: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

@@ -177,6 +177,5 @@ function Demo() {
 
 export const countries: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

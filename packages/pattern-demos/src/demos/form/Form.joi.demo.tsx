@@ -1,22 +1,18 @@
 /* eslint-disable no-console */
-import { SchemaBase } from './_schema-base';
+import { useForm, zodResolver } from '@pattern/form';
+import { Box, Button, Group, NumberInput, TextInput } from '@pattern/core';
+import React from 'react';
+import { z } from 'zod';
 
-const code = `
-import Joi from 'joi';
-import { useForm, joiResolver } from '@pattern/form';
-import { NumberInput, TextInput, Button, Box, Group } from '@pattern/core';
-
-const schema = Joi.object({
-  name: Joi.string().min(2).message('Name should have at least 2 letters'),
-  email: Joi.string()
-    .email({ tlds: { allow: false } })
-    .message('Invalid email'),
-  age: Joi.number().min(18).message('You must be at least 18 to create an account'),
+const schema = z.object({
+  name: z.string().min(2, { message: 'Name should have at least 2 letters' }),
+  email: z.string().email({ message: 'Invalid email' }),
+  age: z.number().min(18, { message: 'You must be at least 18 to create an account' }),
 });
 
 function Demo() {
   const form = useForm({
-    schema: joiResolver(schema),
+    schema: zodResolver(schema),
     initialValues: {
       name: '',
       email: '',
@@ -55,10 +51,8 @@ function Demo() {
     </Box>
   );
 }
-`;
 
 export const joi: PatternDemo = {
   type: 'demo',
-  component: SchemaBase,
-  code,
+  component: Demo,
 };

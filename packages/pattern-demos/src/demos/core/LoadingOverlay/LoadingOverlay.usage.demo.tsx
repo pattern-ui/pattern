@@ -52,6 +52,5 @@ export function Demo() {
 export const usage: PatternDemo = {
   ...demoBase,
   type: 'demo',
-  code,
   component: Demo,
 };

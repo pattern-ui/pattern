@@ -94,5 +94,4 @@ function Demo() {
 export const createStylesPseudo: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

@@ -1,27 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Group, Text, Collapse } from '@pattern/core';
 
-const code = `
-import { useState } from 'react';
-import { Button, Collapse } from '@pattern/core';
-
-function Demo() {
-  const [opened, setOpen] = useState(false);
-
-  return (
-    <>
-      <Button onClick={() => setOpen((o) => !o)}>
-        Toggle with linear transition
-      </Button>
-
-      <Collapse in={opened} transitionDuration={1000} transitionTimingFunction="linear">
-        {/* content... */}
-      </Collapse>
-    </>
-  );
-}
-`;
-
 function Demo() {
   const [opened, setOpen] = useState(false);
 
@@ -49,6 +28,5 @@ function Demo() {
 
 export const transition: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

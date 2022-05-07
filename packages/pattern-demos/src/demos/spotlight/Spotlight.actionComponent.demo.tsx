@@ -218,5 +218,4 @@ function Demo() {
 export const actionComponent: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

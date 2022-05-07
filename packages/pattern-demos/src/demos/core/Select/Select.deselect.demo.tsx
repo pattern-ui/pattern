@@ -1,14 +1,6 @@
 import React from 'react';
 import { Select } from '@pattern/core';
 
-const code = `
-import { Select } from '@pattern/core';
-
-function Demo() {
-  return <Select allowDeselect />;
-}
-`;
-
 function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -30,6 +22,5 @@ function Demo() {
 
 export const deselect: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

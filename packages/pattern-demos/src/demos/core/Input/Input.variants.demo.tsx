@@ -1,20 +1,6 @@
 import React from 'react';
 import { Input } from '@pattern/core';
 
-const code = `
-import { Input } from '@pattern/core';
-
-function Demo() {
-  return (
-    <>
-      <Input variant="default" placeholder="Default variant" />
-      <Input variant="filled" placeholder="Filled variant" />
-      <Input variant="unstyled" placeholder="Unstyled variant" />
-    </>
-  );
-}
-`;
-
 function Demo() {
   return (
     <>
@@ -27,6 +13,5 @@ function Demo() {
 
 export const variants: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

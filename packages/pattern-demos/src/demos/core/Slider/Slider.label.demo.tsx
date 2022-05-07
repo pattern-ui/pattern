@@ -1,32 +1,6 @@
 import React from 'react';
 import { Slider, Text } from '@pattern/core';
 
-const code = `
-import { Slider } from '@pattern/core';
-
-function Demo() {
-  return (
-    <>
-      {/* Disable label */}
-      <Slider label={null} />
-
-      {/* Format label with function */}
-      <Slider label={(value) => \`\${value} °C\`} />
-
-      {/* Always display label */}
-      <Slider labelAlwaysOn />
-
-      {/* Change label transition */}
-      <Slider
-        labelTransition="skew-down"
-        labelTransitionDuration={150}
-        labelTransitionTimingFunction="ease"
-      />
-    </>
-  );
-}
-`;
-
 function Demo() {
   return (
     <div style={{ maxWidth: 400, margin: 'auto' }}>
@@ -53,5 +27,4 @@ function Demo() {
 export const label: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

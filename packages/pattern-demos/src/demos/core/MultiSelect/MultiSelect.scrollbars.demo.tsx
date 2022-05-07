@@ -38,5 +38,4 @@ function Demo() {
 export const scrollbars: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

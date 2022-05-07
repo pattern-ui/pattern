@@ -52,5 +52,4 @@ function Demo() {
 export const createStylesMedia: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

@@ -1,17 +1,6 @@
 import React, { useState } from 'react';
 import { TagInput } from '@pattern/labs';
 
-const code = `
-<TagInput
-  label="Technologies that you're interested in"
-  placeholder="Add as many as you like"
-  clearButtonLabel="Clear selection"
-  clearable
-  value={value}
-  onChange={(item) => setValue(item)}
-/>
-`;
-
 function Demo() {
   const [value, setValue] = useState(['React']);
   return (
@@ -29,6 +18,5 @@ function Demo() {
 
 export const controlable: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

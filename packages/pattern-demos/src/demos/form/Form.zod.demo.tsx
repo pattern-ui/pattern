@@ -25,30 +25,7 @@ function Demo() {
   return (
     <Box sx={{ maxWidth: 340 }} mx="auto">
       <form onSubmit={form.onSubmit((values) => console.log(values))}>
-        <TextInput
-          required
-          label="Email"
-          placeholder="example@mail.com"
-          {...form.getInputProps('email')}
-        />
-        <TextInput
-          required
-          label="Name"
-          placeholder="John Doe"
-          mt="sm"
-          {...form.getInputProps('name')}
-        />
-        <NumberInput
-          required
-          label="Age"
-          placeholder="Your age"
-          mt="sm"
-          {...form.getInputProps('age')}
-        />
-
-        <Group position="right" mt="xl">
-          <Button type="submit">Submit</Button>
-        </Group>
+        // form fields...
       </form>
     </Box>
   );

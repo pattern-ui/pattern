@@ -1,10 +1,6 @@
 import React from 'react';
 import { Wrapper } from './_wrapper';
 
-const code = `
-<TransferList listHeight={100} listComponent="div" {/* ...other props */} />
-`;
-
 function Demo() {
   return (
     <Wrapper
@@ -21,5 +17,4 @@ function Demo() {
 export const scrollbars: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

@@ -9,14 +9,6 @@ function Demo() {
 }
 `;
 
-const code = `
-import { Prism } from '@pattern/prism';
-
-function Demo() {
-  return <Prism withLineNumbers language="tsx">{/* ...code */}</Prism>;
-}
-`;
-
 function Demo() {
   return (
     <Prism language="tsx" withLineNumbers>
@@ -28,5 +20,4 @@ function Demo() {
 export const lineNumbers: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

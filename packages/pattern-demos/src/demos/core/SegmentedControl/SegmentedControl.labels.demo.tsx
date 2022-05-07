@@ -2,47 +2,6 @@ import React from 'react';
 import { Eye, Code, ExternalLink } from 'tabler-icons-react';
 import { Center, SegmentedControl, Box, Group } from '@pattern/core';
 
-const code = `
-import { Center, SegmentedControl, Box } from '@pattern/core';
-import { Eye, Code, ExternalLink } from 'tabler-icons-react';
-
-function Demo() {
-  return (
-    <SegmentedControl
-      data={[
-        {
-          value: 'preview',
-          label: (
-            <Center>
-              <Eye size={16} />
-              <Box ml={10}>Preview</Box>
-            </Center>
-          ),
-        },
-        {
-          value: 'code',
-          label: (
-            <Center>
-              <Code size={16} />
-              <Box ml={10}>Code</Box>
-            </Center>
-          ),
-        },
-        {
-          value: 'export',
-          label: (
-            <Center>
-              <ExternalLink size={16} />
-              <Box ml={10}>Export</Box>
-            </Center>
-          ),
-        },
-      ]}
-    />
-  );
-}
-`;
-
 function Demo() {
   return (
     <Group position="center">
@@ -84,5 +43,4 @@ function Demo() {
 export const labels: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

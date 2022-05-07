@@ -1,29 +1,6 @@
 import React, { useState } from 'react';
 import { Autocomplete } from '@pattern/core';
 
-const code = `
-import { useState } from 'react';
-import { Autocomplete } from '@pattern/core';
-
-function Demo() {
-  const [value, setValue] = useState('');
-  const data =
-    value.trim().length > 0 && !value.includes('@')
-      ? ['gmail.com', 'outlook.com', 'yahoo.com'].map((provider) => \`\${value}@\${provider}\`)
-      : [];
-
-  return (
-    <Autocomplete
-      value={value}
-      onChange={setValue}
-      label="Email"
-      placeholder="Start typing to see options"
-      data={data}
-    />
-  );
-}
-`;
-
 function Demo() {
   const [value, setValue] = useState('');
   const data =
@@ -46,6 +23,5 @@ function Demo() {
 
 export const dynamic: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

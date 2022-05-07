@@ -1,35 +1,23 @@
 import React, { useRef } from 'react';
-import { Button, Group } from '@pattern/core';
-import { BaseDemo } from './_base';
-
-const code = `
-import { useRef } from 'react';
-import { Button, Group } from '@pattern/core';
-import { Dropzone } from '@pattern/dropzone';
+import { Button, Group, usePatternTheme } from '@pattern/core';
+import { Dropzone, IMAGE_MIME_TYPE } from '@pattern/dropzone';
+import { dropzoneChildren } from './_base';
 
 function Demo() {
   const openRef = useRef<() => void>();
+  const theme = usePatternTheme();
 
   return (
     <>
-      <Dropzone openRef={openRef}>
-        {/* children */}
+      <Dropzone
+        onDrop={(files) => console.log('accepted files', files)}
+        onReject={(files) => console.log('rejected files', files)}
+        maxSize={3 * 1024 ** 2}
+        accept={IMAGE_MIME_TYPE}
+        openRef={openRef}
+      >
+        {(status) => dropzoneChildren(status, theme)}
       </Dropzone>
-
-      <Group position="center" mt="md">
-        <Button onClick={() => openRef.current()}>Select files</Button>
-      </Group>
-    </>
-  );
-}
-`;
-
-function Demo() {
-  const openRef = useRef<() => void>();
-
-  return (
-    <>
-      <BaseDemo openRef={openRef} />
       <Group position="center" mt="md">
         <Button onClick={() => openRef.current()}>Select files</Button>
       </Group>
@@ -40,5 +28,4 @@ function Demo() {
 export const manual: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

@@ -1,14 +1,6 @@
 import React from 'react';
 import { Chips, Chip } from '@pattern/core';
 
-const code = `
-// Single chip can be selected at a time (radio input)
-<Chips>{/* <Chip /> components */}</Chips>
-
-// Multiple chips can be selected at a time (checkbox input)
-<Chips multiple>{/* <Chip /> components */}</Chips>
-`;
-
 function Demo() {
   return (
     <>
@@ -30,5 +22,4 @@ function Demo() {
 export const type: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

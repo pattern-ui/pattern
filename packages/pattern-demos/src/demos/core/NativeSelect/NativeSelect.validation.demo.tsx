@@ -1,14 +1,6 @@
 import React from 'react';
 import { NativeSelect } from '@pattern/core';
 
-const code = `
-// Error as boolean – red border color
-<NativeSelect error />
-
-// Error as React node – red border color and message below input
-<NativeSelect error="Pick at least one item" />
-`;
-
 function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -32,6 +24,5 @@ function Demo() {
 
 export const validation: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

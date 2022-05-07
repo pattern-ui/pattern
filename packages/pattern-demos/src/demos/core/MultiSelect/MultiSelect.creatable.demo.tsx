@@ -42,6 +42,5 @@ export function Demo() {
 
 export const creatable: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

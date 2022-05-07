@@ -2,24 +2,6 @@ import React from 'react';
 import { Group, Badge } from '@pattern/core';
 import { useReducedMotion } from '@pattern/hooks';
 
-const code = `
-import { Badge } from '@pattern/core';
-import { useReducedMotion } from '@pattern/hooks';
-
-function Demo() {
-  const reduceMotion = useReducedMotion();
-
-  return (
-    <Badge
-      color={reduceMotion ? 'red' : 'teal'}
-      style={{ transitionDuration: reduceMotion ? '0ms' : '200ms' }}
-      variant="filled"
-    >
-      {reduceMotion ? 'You prefer to reduce motion' : 'You prefer not to reduce motion'}
-    </Badge>
-  );
-}`;
-
 function Demo() {
   const reduceMotion = useReducedMotion();
   return (
@@ -37,6 +19,5 @@ function Demo() {
 
 export const useReducedMotionDemo: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

@@ -35,6 +35,5 @@ export function Demo() {
 
 export const arrow: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

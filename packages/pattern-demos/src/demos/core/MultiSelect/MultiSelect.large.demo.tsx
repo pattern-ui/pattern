@@ -37,6 +37,5 @@ function Demo() {
 
 export const large: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

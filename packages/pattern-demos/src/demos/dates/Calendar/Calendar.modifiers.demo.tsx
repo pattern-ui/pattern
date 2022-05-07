@@ -59,6 +59,5 @@ function Demo() {
 
 export const modifiers: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

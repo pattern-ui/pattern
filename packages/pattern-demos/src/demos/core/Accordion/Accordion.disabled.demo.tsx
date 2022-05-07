@@ -45,5 +45,4 @@ function Demo() {
 export const disabled: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

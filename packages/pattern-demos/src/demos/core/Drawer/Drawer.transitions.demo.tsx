@@ -2,14 +2,6 @@ import React, { useState } from 'react';
 import { Drawer, Button, Group } from '@pattern/core';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 
-const code = `
-<Drawer
-  transition="rotate-left"
-  transitionDuration={250}
-  transitionTimingFunction="ease"
-/>
-`;
-
 function Demo() {
   const [opened, setOpened] = useState(false);
 
@@ -37,6 +29,5 @@ function Demo() {
 
 export const transitions: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

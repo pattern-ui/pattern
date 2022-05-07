@@ -84,5 +84,4 @@ function Demo() {
 export const createStylesComposition: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

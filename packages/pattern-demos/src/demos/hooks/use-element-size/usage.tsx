@@ -2,20 +2,6 @@ import React from 'react';
 import { usePatternTheme, Text, Group } from '@pattern/core';
 import { useElementSize } from '@pattern/hooks';
 
-const code = `
-import { useElementSize } from '@pattern/hooks';
-
-function Demo() {
-  const { ref, width, height } = useElementSize();
-
-  return (
-    <>
-      <textarea ref={ref} style={{ width: 400, height: 120 }} />
-      <div>Width: {width}px, height: {height}px</div>
-    </>
-  );
-}`;
-
 function Demo() {
   const theme = usePatternTheme();
   const { ref, width, height } = useElementSize();
@@ -48,6 +34,5 @@ function Demo() {
 
 export const useElementSizeDemo: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

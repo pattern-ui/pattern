@@ -92,5 +92,4 @@ function Demo() {
 export const mentions: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

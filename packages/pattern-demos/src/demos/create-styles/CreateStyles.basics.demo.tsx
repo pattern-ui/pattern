@@ -96,5 +96,4 @@ function Demo() {
 export const createStylesBasics: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

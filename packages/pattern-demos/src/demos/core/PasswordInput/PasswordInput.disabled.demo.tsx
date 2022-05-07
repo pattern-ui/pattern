@@ -1,14 +1,6 @@
 import React from 'react';
 import { PasswordInput } from '@pattern/core';
 
-const code = `
-import { PasswordInput } from '@pattern/core';
-
-function Demo() {
-  return <PasswordInput disabled />;
-}
-`;
-
 function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -27,6 +19,5 @@ function Demo() {
 
 export const disabled: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

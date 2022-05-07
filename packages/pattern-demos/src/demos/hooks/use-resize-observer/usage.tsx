@@ -2,21 +2,6 @@ import React from 'react';
 import { usePatternTheme, Text, Group, Code } from '@pattern/core';
 import { useResizeObserver } from '@pattern/hooks';
 
-const code = `
-import { Text, Code } from '@pattern/core';
-import { useResizeObserver } from '@pattern/hooks';
-
-function Demo() {
-  const [ref, rect] = useResizeObserver();
-
-  return (
-    <>
-      <textarea ref={ref} style={{ width: 400, height: 120 }} />
-      <Text align="center">Rect: <Code>{JSON.stringify(rect)}</Code></Text>
-    </>
-  );
-}`;
-
 function Demo() {
   const theme = usePatternTheme();
   const [ref, rect] = useResizeObserver();
@@ -49,6 +34,5 @@ function Demo() {
 
 export const useResizeObserverDemo: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

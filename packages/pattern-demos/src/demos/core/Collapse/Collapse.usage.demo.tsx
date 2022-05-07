@@ -1,27 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Group, Text, Collapse } from '@pattern/core';
 
-const code = `
-import { useState } from 'react';
-import { Button, Collapse } from '@pattern/core';
-
-function Demo() {
-  const [opened, setOpen] = useState(false);
-
-  return (
-    <>
-      <Button onClick={() => setOpen((o) => !o)}>
-        Toggle content
-      </Button>
-
-      <Collapse in={opened}>
-        {/* content... */}
-      </Collapse>
-    </>
-  );
-}
-`;
-
 function Demo() {
   const [opened, setOpen] = useState(false);
 
@@ -51,6 +30,5 @@ function Demo() {
 
 export const usage: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

@@ -7,39 +7,6 @@ import {
   usePatternTheme,
 } from '@pattern/core';
 
-const code = `
-import { useState, useRef } from 'react';
-import { NumberInput, Group, ActionIcon, NumberInputHandlers } from '@pattern/core';
-
-function Demo() {
-  const [value, setValue] = useState(0);
-  const handlers = useRef<NumberInputHandlers>();
-
-  return (
-    <Group spacing={5}>
-      <ActionIcon size={42} variant="default" onClick={() => handlers.current.decrement()}>
-        –
-      </ActionIcon>
-
-      <NumberInput
-        hideControls
-        value={value}
-        onChange={(val) => setValue(val)}
-        handlersRef={handlers}
-        max={10}
-        min={0}
-        step={2}
-        styles={{ input: { width: 54, textAlign: 'center' } }}
-      />
-
-      <ActionIcon size={42} variant="default" onClick={() => handlers.current.increment()}>
-        +
-      </ActionIcon>
-    </Group>
-  );
-}
-`;
-
 function Demo() {
   const theme = usePatternTheme();
   const [value, setValue] = useState(0);
@@ -87,6 +54,5 @@ function Demo() {
 
 export const handlers: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

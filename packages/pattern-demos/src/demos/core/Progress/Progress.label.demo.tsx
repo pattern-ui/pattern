@@ -43,6 +43,5 @@ function Label() {
 
 export const label: PatternDemo = {
   type: 'demo',
-  code,
   component: Label,
 };

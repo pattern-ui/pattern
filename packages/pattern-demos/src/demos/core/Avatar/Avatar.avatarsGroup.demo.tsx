@@ -2,21 +2,6 @@ import React from 'react';
 import { Avatar, Group, AvatarsGroup } from '@pattern/core';
 import { avatars } from './_mockdata';
 
-const code = `
-import { Avatar, AvatarsGroup } from '@pattern/core';
-
-function Demo() {
-  return (
-    <AvatarsGroup limit={3}>
-      <Avatar src="avatar.png" component="a" href="https://github.com/rtivital" />
-      <Avatar src="avatar.png" />
-      <Avatar src="avatar.png" />
-      {/* ...other items */}
-    </AvatarsGroup>
-  );
-}
-`;
-
 function Demo() {
   return (
     <Group position="center">
@@ -33,6 +18,5 @@ function Demo() {
 
 export const avatarsGroup: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

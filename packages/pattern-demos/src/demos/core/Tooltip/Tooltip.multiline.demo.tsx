@@ -39,6 +39,5 @@ export function Demo() {
 
 export const multiline: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

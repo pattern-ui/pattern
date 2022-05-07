@@ -1,28 +1,6 @@
 import React from 'react';
 import { SegmentedControl, Stack, Text } from '@pattern/core';
 
-const code = `
-import { SegmentedControl } from '@pattern/core';
-
-function Demo() {
-  return (
-    <>
-      {/* Disabled control */}
-      <SegmentedControl disabled={true} />
-
-      {/* Disabled option */}
-      <SegmentedControl
-        data={[
-          { value: 'preview', label: 'Preview', disabled: true },
-          { value: 'code', label: 'Code' },
-          { value: 'export', label: 'Export' },
-        ]}
-      />
-    </>
-  );
-}
-`;
-
 function Demo() {
   return (
     <Stack align="center">
@@ -78,5 +56,4 @@ function Demo() {
 export const disabled: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

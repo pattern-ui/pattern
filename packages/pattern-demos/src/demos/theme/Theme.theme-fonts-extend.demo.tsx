@@ -1,26 +1,6 @@
 import React from 'react';
 import { Group, Button, Code, Title, PatternProvider, usePatternColorScheme } from '@pattern/core';
 
-const code = `
-import { Button, Code, Title, PatternProvider } from '@pattern/core';
-
-function Demo() {
-  return (
-    <PatternProvider
-      theme={{
-        fontFamily: 'Verdana, sans-serif',
-        fontFamilyMonospace: 'Monaco, Courier, monospace',
-        headings: { fontFamily: 'Greycliff CF, sans-serif' },
-      }}
-    >
-      <Title order={3}>Greycliff CF or sans-serif title</Title>
-      <Button>Verdana button</Button>
-      <Code>Monaco, Courier Code</Code>
-    </PatternProvider>
-  );
-}
-`;
-
 function Demo() {
   const { colorScheme } = usePatternColorScheme();
 
@@ -48,5 +28,4 @@ function Demo() {
 export const themeFontsExtend: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

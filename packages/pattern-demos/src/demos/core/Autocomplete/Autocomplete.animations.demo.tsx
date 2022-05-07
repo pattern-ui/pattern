@@ -1,20 +1,6 @@
 import React from 'react';
 import { Autocomplete } from '@pattern/core';
 
-const code = `
-import { Autocomplete } from '@pattern/core';
-
-function Demo() {
-  return (
-    <Autocomplete
-      transition="pop-top-left"
-      transitionDuration={80}
-      transitionTimingFunction="ease"
-    />
-  );
-}
-`;
-
 function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -32,6 +18,5 @@ function Demo() {
 
 export const animations: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

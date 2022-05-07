@@ -2,31 +2,6 @@ import React from 'react';
 import { Paint } from 'tabler-icons-react';
 import { ColorInput } from '@pattern/core';
 
-const code = `
-import { Paint } from 'tabler-icons-react';
-import { ColorInput } from '@pattern/core';
-
-function Demo() {
-  return (
-    <>
-      {/* Remove color preview */}
-      <ColorInput
-        label="Without preview"
-        placeholder="No color preview"
-        withPreview={false}
-      />
-
-      {/* Replace color preview with any React node */}
-      <ColorInput
-        icon={<Paint size={16} />}
-        label="With icon"
-        placeholder="With icon"
-      />
-    </>
-  );
-}
-`;
-
 function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -39,6 +14,5 @@ function Demo() {
 
 export const icon: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

@@ -3,15 +3,6 @@ import { Hash } from 'tabler-icons-react';
 import { MultiSelect } from '@pattern/core';
 import { data } from './_data';
 
-const code = `
-import { MultiSelect } from '@pattern/core';
-import { Hash } from 'tabler-icons-react';
-
-function Demo() {
-  return <MultiSelect icon={<Hash />} />;
-}
-`;
-
 function Demo() {
   return (
     <div style={{ maxWidth: 400, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -27,6 +18,5 @@ function Demo() {
 
 export const icon: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

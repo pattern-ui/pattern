@@ -34,6 +34,5 @@ export function Demo() {
 
 export const offset: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

@@ -1,18 +1,6 @@
 import React from 'react';
 import { Center, usePatternTheme } from '@pattern/core';
 
-const code = `
-import { Center } from '@pattern/core';
-
-function Demo() {
-  return (
-    <Center style={{ width: 400, height: 200 }}>
-      <div>All elements inside Center are centered</div>
-    </Center>
-  );
-}
-`;
-
 function Demo() {
   const theme = usePatternTheme();
   return (
@@ -38,6 +26,5 @@ function Demo() {
 
 export const usage: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

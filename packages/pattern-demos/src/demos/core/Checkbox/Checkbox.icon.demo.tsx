@@ -37,5 +37,4 @@ function Demo() {
 export const icon: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

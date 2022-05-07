@@ -1,14 +1,6 @@
 import React from 'react';
 import { TimeInput } from '@pattern/dates';
 
-const code = `
-// Error as boolean – red border color
-<TimeInput error />
-
-// Error as React node – red border color and message below input
-<TimeInput error="It is not a valid time" />
-`;
-
 function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -27,6 +19,5 @@ function Demo() {
 
 export const validation: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

@@ -1,18 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Group, Button } from '@pattern/core';
 
-const code = `
-import { Modal } from '@pattern/core';
-
-function Demo() {
-  return (
-    <Modal withCloseButton={false}>
-      Modal without header, press escape or click on overlay to close
-    </Modal>
-  );
-}
-`;
-
 function Demo() {
   const [opened, setOpened] = useState(false);
 
@@ -31,6 +19,5 @@ function Demo() {
 
 export const header: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

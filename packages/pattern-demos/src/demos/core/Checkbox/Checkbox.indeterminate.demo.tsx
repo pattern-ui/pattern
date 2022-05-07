@@ -90,6 +90,5 @@ export function Demo() {
 
 export const indeterminate: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

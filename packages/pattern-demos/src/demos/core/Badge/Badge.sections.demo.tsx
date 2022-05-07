@@ -73,6 +73,5 @@ function Demo() {
 
 export const sections: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

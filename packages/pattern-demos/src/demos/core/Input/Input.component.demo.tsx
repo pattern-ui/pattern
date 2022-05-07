@@ -2,24 +2,6 @@ import React from 'react';
 import { ChevronDownIcon } from '@modulz/radix-icons';
 import { Input } from '@pattern/core';
 
-const code = `
-import { Input } from '@pattern/core';
-
-function Demo() {
-  return (
-    <>
-      <Input component="button">Button input</Input>
-
-      <Input component="select" rightSection={<ChevronDownIcon />}>
-        <option value="1">1</option>
-        <option value="2">2</option>
-      </Input>
-    </>
-  );
-}
-
-`;
-
 function Demo() {
   return (
     <>
@@ -35,6 +17,5 @@ function Demo() {
 
 export const component: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

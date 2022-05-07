@@ -95,6 +95,5 @@ export function Demo() {
 export const loader: PatternDemo = {
   ...demoBase,
   type: 'demo',
-  code,
   component: Demo,
 };

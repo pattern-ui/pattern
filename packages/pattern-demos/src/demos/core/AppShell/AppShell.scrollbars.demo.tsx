@@ -4,24 +4,6 @@ import { User } from './_user';
 import { Brand } from './_brand';
 import { MainLinks } from './_mainLinks';
 
-const code = `
-import { Navbar, ScrollArea } from '@pattern/core';
-
-function Demo() {
-  return (
-    <Navbar height={600} p="xs" width={{ base: 300 }}>
-      <Navbar.Section mt="xs">{/* Header with logo */}</Navbar.Section>
-
-      <Navbar.Section grow component={ScrollArea} mx="-xs" px="xs">
-        {/* scrollable content here */}
-      </Navbar.Section>
-
-      <Navbar.Section>{/* Footer with user */}</Navbar.Section>
-    </Navbar>
-  );
-}
-`;
-
 function Demo() {
   return (
     <Navbar height={600} p="xs" width={{ base: 300 }}>
@@ -47,5 +29,4 @@ export const scrollbars: PatternDemo = {
   type: 'demo',
   component: Demo,
   demoProps: { spacing: false },
-  code,
 };

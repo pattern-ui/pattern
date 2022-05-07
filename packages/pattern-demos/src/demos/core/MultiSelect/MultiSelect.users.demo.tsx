@@ -150,6 +150,5 @@ function Demo() {
 
 export const users: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

@@ -39,6 +39,5 @@ export function Demo() {
 
 export const disabledItems: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

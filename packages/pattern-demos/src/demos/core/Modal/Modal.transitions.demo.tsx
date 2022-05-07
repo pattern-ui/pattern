@@ -1,20 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Group, Button } from '@pattern/core';
 
-const code = `
-import { Modal } from '@pattern/core';
-
-function Demo() {
-  return (
-    <Modal
-      transition="fade"
-      transitionDuration={600}
-      transitionTimingFunction="ease"
-    />
-  );
-}
-`;
-
 function Demo() {
   const [noTransitionOpened, setNoTransitionOpened] = useState(false);
   const [slowTransitionOpened, setSlowTransitionOpened] = useState(false);
@@ -55,6 +41,5 @@ function Demo() {
 
 export const transitions: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

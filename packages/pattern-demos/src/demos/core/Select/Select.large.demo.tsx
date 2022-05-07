@@ -1,25 +1,6 @@
 import React from 'react';
 import { Select } from '@pattern/core';
 
-const code = `
-import { Select } from '@pattern/core';
-
-const data = Array(50).fill(0).map((_, index) => \`Item \${index}\`);
-
-function Demo() {
-  return (
-    <Select
-      label="What item is the best?"
-      placeholder="Pick one"
-      searchable
-      nothingFound="No options"
-      maxDropdownHeight={280}
-      data={data}
-    />
-  );
-}
-`;
-
 function Demo() {
   const data = Array(50)
     .fill(0)
@@ -41,6 +22,5 @@ function Demo() {
 
 export const large: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

@@ -131,5 +131,4 @@ function Demo() {
 export const stylesApi: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

@@ -2,14 +2,6 @@ import React, { useState } from 'react';
 import { Modal, Group, Button } from '@pattern/core';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 
-const code = `
-import { Modal } from '@pattern/core';
-
-function Demo() {
-  return <Modal centered /* ...other props */ />;
-};
-`;
-
 function Demo() {
   const [opened, setOpened] = useState(false);
 
@@ -28,6 +20,5 @@ function Demo() {
 
 export const centered: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

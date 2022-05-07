@@ -2,20 +2,6 @@ import React from 'react';
 import { Grid } from '@pattern/core';
 import { ColWrapper as Col } from './_col-wrapper';
 
-const code = `
-import { Grid } from '@pattern/core';
-
-function Demo() {
-  return (
-    <Grid columns={24}>
-      <Grid.Col span={12}>1</Grid.Col>
-      <Grid.Col span={6}>2</Grid.Col>
-      <Grid.Col span={6}>3</Grid.Col>
-    </Grid>
-  );
-}
-`;
-
 function Demo() {
   return (
     <Grid columns={24}>
@@ -28,6 +14,5 @@ function Demo() {
 
 export const columns: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

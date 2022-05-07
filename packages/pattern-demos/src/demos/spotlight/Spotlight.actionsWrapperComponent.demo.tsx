@@ -87,5 +87,4 @@ function Demo() {
 export const actionsWrapperComponent: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

@@ -1,31 +1,6 @@
 import React from 'react';
 import { NumberInput } from '@pattern/core';
 
-const code = `
-import { NumberInput } from '@pattern/core';
-
-function Demo() {
-  return (
-    <>
-      <NumberInput
-        style={{ marginTop: 15 }}
-        label="Step on hold"
-        description="Step the value when clicking and holding the arrows"
-        stepHoldDelay={500}
-        stepHoldInterval={100}
-      />
-
-      <NumberInput
-        label="Step the value with interval function"
-        description="Step value will increase incrementally when control is hold"
-        stepHoldDelay={500}
-        stepHoldInterval={(t) => Math.max(1000 / t ** 2, 25)}
-      />
-    </>
-  );
-}
-`;
-
 function Demo() {
   return (
     <div style={{ maxWidth: 420, margin: 'auto' }}>
@@ -50,6 +25,5 @@ function Demo() {
 
 export const hold: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

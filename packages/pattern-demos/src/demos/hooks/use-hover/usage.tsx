@@ -2,19 +2,6 @@ import React from 'react';
 import { useHover } from '@pattern/hooks';
 import { usePatternTheme, Text } from '@pattern/core';
 
-const code = `
-import { useHover } from '@pattern/hooks';
-
-function Demo() {
-  const { hovered, ref } = useHover();
-  return (
-    <div ref={ref}>
-      {hovered ? 'I am hovered' : 'Put mouse over me please'}
-    </div>
-  );
-}
-`;
-
 function Demo() {
   const theme = usePatternTheme();
   const { hovered, ref } = useHover();
@@ -37,5 +24,4 @@ function Demo() {
 export const useHoverDemo: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

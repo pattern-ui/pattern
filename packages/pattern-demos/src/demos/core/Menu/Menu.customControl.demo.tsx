@@ -138,5 +138,4 @@ function Demo() {
 export const customControl: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

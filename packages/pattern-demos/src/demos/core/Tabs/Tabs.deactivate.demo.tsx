@@ -1,18 +1,6 @@
 import React from 'react';
 import { Tabs } from '@pattern/core';
 
-const code = `
-import { Tabs } from '@pattern/core';
-
-function Demo() {
-  return (
-    <Tabs defaultValue="chat" allowTabDeactivation>
-      {/* ...content */}
-    </Tabs>
-  );
-}
-`;
-
 function Demo() {
   return (
     <Tabs defaultValue="chat" allowTabDeactivation>
@@ -38,5 +26,4 @@ function Demo() {
 export const deactivate: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

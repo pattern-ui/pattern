@@ -91,5 +91,4 @@ function Demo() {
 export const createStylesCx: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

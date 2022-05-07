@@ -28,6 +28,5 @@ function Demo() {
 
 export const pasteSplit: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

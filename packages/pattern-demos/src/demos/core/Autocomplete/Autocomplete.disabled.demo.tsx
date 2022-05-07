@@ -1,14 +1,6 @@
 import React from 'react';
 import { Autocomplete } from '@pattern/core';
 
-const code = `
-import { Autocomplete } from '@pattern/core';
-
-function Demo() {
-  return <Autocomplete disabled />;
-}
-`;
-
 function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -33,6 +25,5 @@ function Demo() {
 
 export const disabled: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

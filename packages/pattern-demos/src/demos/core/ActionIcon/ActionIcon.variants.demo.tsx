@@ -49,6 +49,5 @@ export function Demo() {
 
 export const variants: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

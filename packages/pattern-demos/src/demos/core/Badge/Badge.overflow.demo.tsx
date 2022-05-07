@@ -1,27 +1,6 @@
 import React from 'react';
 import { Badge } from '@pattern/core';
 
-const code = `
-import { Badge } from '@pattern/core';
-function Demo() {
-  return (
-    <>
-      <div style={{ width: 200 }}>
-        <Badge variant="filled" fullWidth>
-          Full width badge
-        </Badge>
-      </div>
-
-      <div style={{ width: 120 }}>
-        <Badge variant="filled" fullWidth>
-          Badge with overflow
-        </Badge>
-      </div>
-    </>
-  );
-}
-`;
-
 function Demo() {
   return (
     <div style={{ display: 'flex' }}>
@@ -42,6 +21,5 @@ function Demo() {
 
 export const overflow: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

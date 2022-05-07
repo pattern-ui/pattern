@@ -2,17 +2,6 @@ import React from 'react';
 import { Text } from '@pattern/core';
 import { DEFAULT_CONTROLS, DEFAULT_LABELS, Toolbar } from '@pattern/rte';
 
-const code = `
-<RichTextEditor
-  controls={[
-    ['bold', 'italic', 'underline', 'link', 'image'],
-    ['unorderedList', 'h1', 'h2', 'h3'],
-    ['sup', 'sub'],
-    ['alignLeft', 'alignCenter', 'alignRight'],
-  ]}
-/>
-`;
-
 function Demo() {
   return (
     <div>
@@ -41,5 +30,4 @@ function Demo() {
 export const toolbar: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

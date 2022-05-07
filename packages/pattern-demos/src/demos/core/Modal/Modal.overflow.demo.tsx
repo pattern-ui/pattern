@@ -1,14 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Group, Button } from '@pattern/core';
 
-const code = `
-// (default) – overflow is handled by modal wrapper
-<Modal overflow="outside" />
-
-// overflow is handled by modal body
-<Modal overflow="inside" />
-`;
-
 function Demo() {
   const [insideOpened, setInsideOpened] = useState(false);
   const [outsideOpened, setOutsideOpened] = useState(false);
@@ -51,5 +43,4 @@ function Demo() {
 export const overflow: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

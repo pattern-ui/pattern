@@ -3,37 +3,6 @@ import { Check, X } from 'tabler-icons-react';
 import { Notification } from '@pattern/core';
 import { demoBase } from './_demo-base';
 
-const code = `
-import { Notification } from '@pattern/core';
-import { Check, X } from 'tabler-icons-react';
-
-function Demo() {
-  return (
-    <>
-      <Notification title="Default notification">
-        This is default notification with title and body
-      </Notification>
-
-      <Notification icon={<Check size={18} />} color="teal" title="Teal notification">
-        This is teal notification with icon
-      </Notification>
-
-      <Notification icon={<X size={18} />} color="red">
-        Bummer! Notification without title
-      </Notification>
-
-      <Notification
-        loading
-        title="Uploading data to the server"
-        disallowClose
-      >
-        Please wait until data is uploaded, you cannot close this notification yet
-      </Notification>
-    </>
-  );
-}
-`;
-
 function Demo() {
   return (
     <>
@@ -71,6 +40,5 @@ function Demo() {
 export const usage: PatternDemo = {
   ...demoBase,
   type: 'demo',
-  code,
   component: Demo,
 };

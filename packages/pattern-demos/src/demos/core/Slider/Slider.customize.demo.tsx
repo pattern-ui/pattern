@@ -94,5 +94,4 @@ function Demo() {
 export const customize: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

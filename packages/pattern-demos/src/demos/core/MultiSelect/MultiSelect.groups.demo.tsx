@@ -39,6 +39,5 @@ export function Demo() {
 
 export const groups: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

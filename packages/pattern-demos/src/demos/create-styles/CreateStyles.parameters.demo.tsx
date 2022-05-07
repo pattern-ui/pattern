@@ -78,5 +78,4 @@ function Demo() {
 export const createStylesParameters: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

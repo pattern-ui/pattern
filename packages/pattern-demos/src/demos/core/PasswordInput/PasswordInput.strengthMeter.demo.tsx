@@ -148,7 +148,6 @@ function Demo() {
 
 export const strengthMeter: PatternDemo = {
   type: 'demo',
-  code,
   demoProps: { toggle: true },
   component: Demo,
 };

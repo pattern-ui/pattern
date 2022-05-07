@@ -1,23 +1,6 @@
 import React from 'react';
 import { Divider } from '@pattern/core';
 
-const code = `
-import { Divider } from '@pattern/core';
-
-function Demo() {
-  return (
-    <>
-      <Divider size="xs" />
-      <Divider size="sm" />
-      <Divider size="md" />
-      <Divider size="lg" />
-      <Divider size="xl" />
-      <Divider size={10} />
-    </>
-  );
-}
-`;
-
 function Demo() {
   return (
     <>
@@ -33,6 +16,5 @@ function Demo() {
 
 export const sizes: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

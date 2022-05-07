@@ -1,24 +1,24 @@
 import React from 'react';
-import { BaseDemo } from './_base';
-
-const code = `
-import { Dropzone } from '@pattern/dropzone';
+import { usePatternTheme } from '@pattern/styles';
+import { Dropzone, IMAGE_MIME_TYPE } from '@pattern/dropzone';
+import { dropzoneChildren } from './_base';
 
 function Demo() {
+  const theme = usePatternTheme();
   return (
-    <Dropzone loading>
-      {/* children */}
+    <Dropzone
+      onDrop={(files) => console.log('accepted files', files)}
+      onReject={(files) => console.log('rejected files', files)}
+      maxSize={3 * 1024 ** 2}
+      accept={IMAGE_MIME_TYPE}
+      loading
+    >
+      {(status) => dropzoneChildren(status, theme)}
     </Dropzone>
   );
-}
-`;
-
-function Demo() {
-  return <BaseDemo loading />;
 }
 
 export const loading: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

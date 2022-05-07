@@ -28,6 +28,5 @@ export function Demo() {
 
 export const color: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

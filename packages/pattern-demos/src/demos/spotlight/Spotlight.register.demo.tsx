@@ -140,5 +140,4 @@ export function Demo() {
 export const register: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

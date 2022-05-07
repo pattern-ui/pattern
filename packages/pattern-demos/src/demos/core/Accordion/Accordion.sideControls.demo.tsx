@@ -74,5 +74,4 @@ function Demo() {
 export const sideControls: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

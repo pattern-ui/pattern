@@ -2,31 +2,6 @@ import React, { useState } from 'react';
 import { useDebouncedValue } from '@pattern/hooks';
 import { TextInput, Text } from '@pattern/core';
 
-const code = `
-import { useState } from 'react';
-import { useDebouncedValue } from '@pattern/hooks';
-import { TextInput, Text } from '@pattern/core';
-
-function Demo() {
-  const [value, setValue] = useState('');
-  const [debounced] = useDebouncedValue(value, 200, { leading: true });
-
-  return (
-    <>
-      <TextInput
-        label="Enter value to see debounce"
-        value={value}
-        style={{ flex: 1 }}
-        onChange={(event) => setValue(event.currentTarget.value)}
-      />
-
-      <Text>Value: {value}</Text>
-      <Text>Debounced value: {debounced}</Text>
-    </>
-  );
-}
-`;
-
 function Demo() {
   const [value, setValue] = useState('');
   const [debounced] = useDebouncedValue(value, 200, { leading: true });
@@ -71,5 +46,4 @@ function Demo() {
 export const useDebouncedValueLeading: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

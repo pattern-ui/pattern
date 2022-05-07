@@ -2,24 +2,6 @@ import React, { useState } from 'react';
 import { Drawer, Group, Button, usePatternTheme } from '@pattern/core';
 import { AuthenticationForm } from '../../../shared/AuthenticationForm/AuthenticationForm';
 
-const code = `
-import { Drawer, usePatternTheme } from '@pattern/core';
-
-function Demo() {
-  const theme = usePatternTheme();
-
-  return (
-    <Drawer
-      overlayColor={theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.colors.gray[2]}
-      overlayOpacity={0.55}
-      overlayBlur={3}
-    >
-      {/* Drawer content */}
-    </Drawer>
-  );
-}
-`;
-
 function Demo() {
   const [opened, setOpened] = useState(false);
   const theme = usePatternTheme();
@@ -48,6 +30,5 @@ function Demo() {
 
 export const overlay: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

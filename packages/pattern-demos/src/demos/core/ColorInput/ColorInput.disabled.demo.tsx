@@ -1,14 +1,6 @@
 import React from 'react';
 import { ColorInput } from '@pattern/core';
 
-const code = `
-import { ColorInput } from '@pattern/core';
-
-function Demo() {
-  return <ColorInput disabled />;
-}
-`;
-
 function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -27,6 +19,5 @@ function Demo() {
 
 export const disabled: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

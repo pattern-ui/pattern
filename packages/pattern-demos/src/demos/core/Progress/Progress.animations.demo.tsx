@@ -15,6 +15,5 @@ function Label() {
 
 export const animations: PatternDemo = {
   type: 'demo',
-  code,
   component: Label,
 };

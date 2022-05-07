@@ -1,10 +1,6 @@
 import React from 'react';
 import { Wrapper } from './_wrapper';
 
-const code = `
-<TransferList initialSelection={[['react', 'ng'], []]} />
-`;
-
 function Demo() {
   return (
     <Wrapper
@@ -20,5 +16,4 @@ function Demo() {
 export const initialSelection: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

@@ -66,6 +66,5 @@ export function Demo() {
 
 export const captions: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

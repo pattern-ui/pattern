@@ -50,5 +50,4 @@ function Demo() {
 export const chevron: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

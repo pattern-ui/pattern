@@ -1,14 +1,6 @@
 import React from 'react';
 import { Select } from '@pattern/core';
 
-const code = `
-import { Select } from '@pattern/core';
-
-function Demo() {
-  return <Select disabled />;
-}
-`;
-
 function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -33,6 +25,5 @@ function Demo() {
 
 export const disabled: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

@@ -2,34 +2,6 @@ import React from 'react';
 import { Card, Image, Text } from '@pattern/core';
 import { demoBase } from './_demo-base';
 
-const code = `
-import { Card, Image, Text } from '@pattern/core';
-
-function Demo() {
-  return (
-    <Card
-      shadow="sm"
-      p="xl"
-      component="a"
-      href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-      target="_blank"
-    >
-      <Card.Section>
-        <Image src="unsplash.png" height={160} alt="No way!" />
-      </Card.Section>
-
-      <Text weight={500} size="lg">
-        You've won a million dollars in cash!
-      </Text>
-
-      <Text size="sm">
-        Please click anywhere on this card to claim your reward, this is not a fraud, trust us
-      </Text>
-    </Card>
-  );
-}
-`;
-
 function Demo() {
   return (
     <Card
@@ -61,6 +33,5 @@ function Demo() {
 export const link: PatternDemo = {
   ...demoBase,
   type: 'demo',
-  code,
   component: Demo,
 };

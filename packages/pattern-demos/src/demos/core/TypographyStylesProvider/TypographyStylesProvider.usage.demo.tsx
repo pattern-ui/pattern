@@ -25,18 +25,6 @@ const html = `
 <p>As such, when we talk about successes and failures of any groups, these should also be shared. There should be a sense that you’re all working towards a common goal together, and every group contributes to it. Within a leadership team there should be trust and vulnerability to own their part so that the whole organization can operate at its best.</p>
 `;
 
-const code = `
-import { TypographyStylesProvider } from '@pattern/core';
-
-function Demo() {
-  return (
-    <TypographyStylesProvider>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-    </TypographyStylesProvider>
-  );
-}
-`;
-
 function Demo() {
   return (
     <div style={{ maxWidth: 560, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -49,6 +37,5 @@ function Demo() {
 
 export const usage: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

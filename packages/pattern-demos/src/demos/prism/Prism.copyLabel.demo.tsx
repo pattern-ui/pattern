@@ -9,26 +9,6 @@ function Demo() {
 }
 `;
 
-const code = `
-import { Prism } from '@pattern/prism';
-
-function Demo() {
-  return (
-    <>
-      <Prism noCopy language="tsx">{/* ...code */}</Prism>
-
-      <Prism
-        language="tsx"
-        copyLabel="Copy code to clipboard"
-        copiedLabel="Code copied to clipboard"
-      >
-        {/* ...code */}
-      </Prism>
-    </>
-  );
-}
-`;
-
 function Demo() {
   return (
     <>
@@ -51,5 +31,4 @@ function Demo() {
 export const copyLabel: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

@@ -155,6 +155,5 @@ function Demo() {
 
 export const itemComponent: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

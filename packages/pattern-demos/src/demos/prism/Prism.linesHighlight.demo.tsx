@@ -13,32 +13,6 @@ function Usage() {
 }
 `;
 
-const code = `
-import { Prism } from '@pattern/prism';
-
-const deleted = { color: 'red', label: '-' };
-const added = { color: 'green', label: '+' };
-
-function Demo() {
-  return (
-    <Prism
-      language="tsx"
-      withLineNumbers
-      highlightLines={{
-        3: deleted,
-        4: deleted,
-        5: deleted,
-        7: added,
-        8: added,
-        9: added,
-      }}
-    >
-      {/* ...code */}
-    </Prism>
-  );
-}
-`;
-
 function Demo() {
   const deleted = { color: 'red', label: '-' };
   const added = { color: 'green', label: '+' };
@@ -64,5 +38,4 @@ function Demo() {
 export const linesHighlight: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

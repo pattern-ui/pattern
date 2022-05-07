@@ -127,5 +127,4 @@ function Demo() {
 export const itemComponent: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

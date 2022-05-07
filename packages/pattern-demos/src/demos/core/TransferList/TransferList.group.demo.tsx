@@ -72,5 +72,4 @@ function Demo() {
 export const group: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

@@ -2,22 +2,6 @@ import React from 'react';
 import { Clock } from 'tabler-icons-react';
 import { TimeInput } from '@pattern/dates';
 
-const code = `
-import { TimeInput } from '@pattern/dates';
-import { Clock } from 'tabler-icons-react';
-
-function Demo() {
-  return (
-    <TimeInput
-      label="Pick time"
-      placeholder="Pick time"
-      icon={<Clock size={16} />}
-      defaultValue={new Date()}
-    />
-  );
-}
-`;
-
 function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -33,6 +17,5 @@ function Demo() {
 
 export const icon: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

@@ -33,6 +33,5 @@ export function Demo() {
 
 export const controlled: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

@@ -1,52 +1,11 @@
-import { BaseDemo } from './_base';
-
-const code = `
-import { Group, Text, usePatternTheme, PatternTheme } from '@pattern/core';
-import { Upload, Photo, X, Icon as TablerIcon } from 'tabler-icons-react';
-import { Dropzone, DropzoneStatus, IMAGE_MIME_TYPE } from '@pattern/dropzone';
-
-function getIconColor(status: DropzoneStatus, theme: PatternTheme) {
-  return status.accepted
-    ? theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 4 : 6]
-    : status.rejected
-    ? theme.colors.red[theme.colorScheme === 'dark' ? 4 : 6]
-    : theme.colorScheme === 'dark'
-    ? theme.colors.dark[0]
-    : theme.colors.gray[7];
-}
-
-function ImageUploadIcon({
-  status,
-  ...props
-}: React.ComponentProps<TablerIcon> & { status: DropzoneStatus }) {
-  if (status.accepted) {
-    return <Upload {...props} />;
-  }
-
-  if (status.rejected) {
-    return <X {...props} />;
-  }
-
-  return <Photo {...props} />;
-}
-
-export const dropzoneChildren = (status: DropzoneStatus, theme: PatternTheme) => (
-  <Group position="center" spacing="xl" style={{ minHeight: 220, pointerEvents: 'none' }}>
-    <ImageUploadIcon status={status} style={{ color: getIconColor(status, theme) }} size={80} />
-
-    <div>
-      <Text size="xl" inline>
-        Drag images here or click to select files
-      </Text>
-      <Text size="sm" color="dimmed" inline mt={7}>
-        Attach as many files as you like, each file should not exceed 5mb
-      </Text>
-    </div>
-  </Group>
-);
+import React from 'react';
+import { usePatternTheme } from '@pattern/styles';
+import { Dropzone, IMAGE_MIME_TYPE } from '@pattern/dropzone';
+import { dropzoneChildren } from './_base';
 
 function Demo() {
   const theme = usePatternTheme();
+
   return (
     <Dropzone
       onDrop={(files) => console.log('accepted files', files)}
@@ -58,10 +17,8 @@ function Demo() {
     </Dropzone>
   );
 }
-`;
 
 export const usage: PatternDemo = {
   type: 'demo',
-  component: BaseDemo,
-  code,
+  component: Demo,
 };

@@ -2,29 +2,6 @@ import React, { useState } from 'react';
 import { Paper, Button, Group, usePatternTheme } from '@pattern/core';
 import { useClickOutside } from '@pattern/hooks';
 
-const code = `
-import { useState } from 'react';
-import { Paper, Button } from '@pattern/core';
-import { useClickOutside } from '@pattern/hooks';
-
-function Demo() {
-  const [opened, setOpened] = useState(false);
-  const ref = useClickOutside(() => setOpened(false));
-
-  return (
-    <>
-      <Button onClick={() => setOpened(true)}>Open dropdown</Button>
-
-      {opened && (
-        <Paper ref={ref} shadow="sm">
-          <span>Click outside to close</span>
-        </Paper>
-      )}
-    </>
-  );
-}
-`;
-
 function Demo() {
   const theme = usePatternTheme();
   const [opened, setOpened] = useState(false);
@@ -64,5 +41,4 @@ function Demo() {
 export const useClickOutsideUsage: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

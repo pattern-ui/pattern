@@ -2,14 +2,6 @@ import React from 'react';
 import { MultiSelect } from '@pattern/core';
 import { data } from './_data';
 
-const code = `
-import { MultiSelect } from '@pattern/core';
-
-function Demo() {
-  return <MultiSelect disabled />;
-}
-`;
-
 function Demo() {
   return (
     <div style={{ maxWidth: 400, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -35,6 +27,5 @@ function Demo() {
 
 export const disabled: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

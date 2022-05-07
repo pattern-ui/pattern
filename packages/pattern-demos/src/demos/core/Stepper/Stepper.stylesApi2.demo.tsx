@@ -85,5 +85,4 @@ function Demo() {
 export const stylesApi2: PatternDemo = {
   type: 'demo',
   component: Demo,
-  code,
 };

@@ -34,6 +34,5 @@ export function Demo() {
 
 export const delay: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };

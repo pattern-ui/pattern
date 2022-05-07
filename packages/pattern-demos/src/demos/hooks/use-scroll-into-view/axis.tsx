@@ -2,27 +2,6 @@ import React from 'react';
 import { useScrollIntoView } from '@pattern/hooks';
 import { Button, Text, Group, usePatternTheme, Paper } from '@pattern/core';
 
-const code = `
-import { useScrollIntoView } from '@pattern/hooks';
-import { Button, Paper } from '@pattern/core';
-
-function Demo() {
-  const { scrollIntoView, targetRef, scrollableRef } = useScrollIntoView({
-    axis: 'x',
-  });
-
-  return (
-    <>
-      <Paper ref={scrollableRef} style={{ overflowX: 'scroll', height: 150, width: 300 }}>
-        <Paper ref={targetRef}>Scroll me into view</Paper>
-      </Paper>
-
-      <Button onClick={() => scrollIntoView()}>Scroll to target</Button>
-    </>
-  );
-}
-`;
-
 function Demo() {
   const theme = usePatternTheme();
 
@@ -57,6 +36,5 @@ function Demo() {
 
 export const useScrollIntoViewAxis: PatternDemo = {
   type: 'demo',
-  code,
   component: Demo,
 };
