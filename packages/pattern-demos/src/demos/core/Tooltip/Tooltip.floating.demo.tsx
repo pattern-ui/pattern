@@ -27,7 +27,7 @@ export default function Demo() {
 }
 `;
 
-export const floating: PatternDemo = {
+export const floating: PatternControlDemo = {
   type: 'control',
   component: Wrapper,
   codeTemplate,

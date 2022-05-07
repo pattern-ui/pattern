@@ -8,7 +8,7 @@ export default function Demo() {
       shadow="sm"
       p="xl"
       component="a"
-      href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      href="https://www.example.com"
       target="_blank"
     >
       <Card.Section>
@@ -30,8 +30,8 @@ export default function Demo() {
   );
 }
 
-export const link: PatternDemo = {
+export const link: PatternCodeDemo = {
   ...demoBase,
-  type: 'demo',
+  type: 'code',
   component: Demo,
 };

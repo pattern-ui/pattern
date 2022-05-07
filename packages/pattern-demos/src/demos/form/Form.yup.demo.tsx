@@ -32,8 +32,8 @@ function Demo() {
 }
 `;
 
-export const yup: PatternDemo = {
-  type: 'demo',
+export const yup: PatternCodeDemo = {
+  type: 'code',
   component: SchemaBase,
   code,
 };

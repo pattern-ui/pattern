@@ -25,7 +25,7 @@ export default function Demo() {
 }
 `;
 
-export const vertical: PatternDemo = {
+export const vertical: PatternControlDemo = {
   type: 'control',
   component: Wrapper,
   codeTemplate,

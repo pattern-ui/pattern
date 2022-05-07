@@ -17,6 +17,7 @@ export function Demo({ data: dataProp, demoProps }: DemoProps) {
   const data: PatternCodeDemo = useMemo(() => {
     if (typeof dataProp === 'function') {
       return {
+        type: 'code',
         component: dataProp,
       };
     }

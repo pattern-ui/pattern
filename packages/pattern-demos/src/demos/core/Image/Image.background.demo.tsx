@@ -41,7 +41,7 @@ export default function Demo() {
 }
 `;
 
-export const background: PatternDemo = {
+export const background: PatternControlDemo = {
   type: 'control',
   component: Wrapper,
   codeTemplate,

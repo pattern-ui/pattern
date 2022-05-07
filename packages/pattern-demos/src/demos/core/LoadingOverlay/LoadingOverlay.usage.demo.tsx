@@ -27,8 +27,8 @@ export default function Demo() {
   );
 }
 
-export const usage: PatternDemo = {
+export const usage: PatternCodeDemo = {
   ...demoBase,
-  type: 'demo',
+  type: 'code',
   component: Demo,
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { DEFAULT_THEME } from '@pattern/core';
 
-export const demoBase: Partial<PatternDemo> = {
+export const demoBase: Partial<PatternDemoBase> = {
   wrapper: ({ children }: { children: React.ReactNode }) => (
     <div style={{ maxWidth: 400, margin: 'auto' }}>{children}</div>
   ),

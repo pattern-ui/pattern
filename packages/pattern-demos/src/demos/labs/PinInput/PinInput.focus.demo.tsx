@@ -4,7 +4,7 @@ const codeTemplate = (props: string) => `<PasswordInput
  ${props}
 />`;
 
-export const focus: PatternDemo = {
+export const focus: PatternControlDemo = {
   type: 'control',
   component: PinInput,
   codeTemplate,

@@ -9,7 +9,7 @@ export default function Demo() {
 }
 `;
 
-export const flip: PatternDemo = {
+export const flip: PatternControlDemo = {
   type: 'control',
   component: (props: any) => (
     <Select

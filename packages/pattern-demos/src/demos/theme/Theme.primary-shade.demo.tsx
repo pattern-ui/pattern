@@ -31,7 +31,7 @@ export default function Demo() {
 }
 `;
 
-export const primaryShade: PatternDemo = {
+export const primaryShade: PatternControlDemo = {
   type: 'control',
   component: Wrapper as any,
   codeTemplate,

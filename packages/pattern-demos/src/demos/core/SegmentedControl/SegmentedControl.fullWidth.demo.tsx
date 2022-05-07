@@ -18,7 +18,7 @@ export default function Demo() {
 }
 `;
 
-export const fullWidth: PatternDemo = {
+export const fullWidth: PatternControlDemo = {
   type: 'control',
   component: Demo,
   codeTemplate,

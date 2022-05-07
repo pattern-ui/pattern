@@ -58,8 +58,8 @@ export default function Demo() {
   );
 }
 
-export const loader: PatternDemo = {
+export const loader: PatternCodeDemo = {
   ...demoBase,
-  type: 'demo',
+  type: 'code',
   component: Demo,
 };

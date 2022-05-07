@@ -1,5 +1,5 @@
 const path = require('path')
-const demoLoader = path.resolve('./demo-loader.js');
+const demoLoader = path.resolve('../packages/pattern-demo-loader/lib/index.js');
 
 exports.onCreateWebpackConfig = ({ actions, loaders, getConfig }) => {
   const config = getConfig()
@@ -8,21 +8,13 @@ exports.onCreateWebpackConfig = ({ actions, loaders, getConfig }) => {
 
   config.module.rules = [
     ...config.module.rules,
-    // Recreate it with custom exclude filter
     {
-      // ...rest,
       test: /\.demo(\.[^.]+)?\.tsx$/,
       use: [
         {
           loader: demoLoader
         },
-      ],
-      exclude: it => {
-        if (it.includes('.demo.')) {
-          return false;
-        }
-        return true;
-      },
+      ]
     },
   ]
 

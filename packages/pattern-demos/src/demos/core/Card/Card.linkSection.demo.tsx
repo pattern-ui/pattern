@@ -35,8 +35,8 @@ export default function Demo() {
   );
 }
 
-export const linkSection: PatternDemo = {
+export const linkSection: PatternCodeDemo = {
   ...demoBase,
-  type: 'demo',
+  type: 'code',
   component: Demo,
 };

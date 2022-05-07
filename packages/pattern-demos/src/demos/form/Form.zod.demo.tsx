@@ -32,8 +32,8 @@ function Demo() {
 }
 `;
 
-export const zod: PatternDemo = {
-  type: 'demo',
+export const zod: PatternCodeDemo = {
+  type: 'code',
   component: SchemaBase,
   code,
 };
