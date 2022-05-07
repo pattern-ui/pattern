@@ -27,8 +27,8 @@ export const FOOTER_LINKS_DATA: LinksGroupProps[] = [
   {
     title: 'Project',
     data: [
-      { type: 'link', label: 'Pattern UI', link: 'https://ui.pattern-ui.design/' },
-      { type: 'link', label: 'Documentation', link: 'https://pattern-ui.design/' },
+      { type: 'link', label: 'Pattern UI', link: 'https://ui.pattern.icu/' },
+      { type: 'link', label: 'Documentation', link: 'https://pattern.icu/' },
       { type: 'link', label: 'Github organization', link: 'https://github.com/pattern-ui' },
       { type: 'link', label: 'npm organization', link: 'https://www.npmjs.com/org/pattern' },
     ],

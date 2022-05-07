@@ -2,7 +2,7 @@
 
 A set of react hooks for state and UI management
 
-[View documentation](https://pattern-ui.design/)
+[View documentation](https://pattern.icu/)
 
 ## Installation
 

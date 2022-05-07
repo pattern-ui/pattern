@@ -24,10 +24,10 @@ export const components = {
   h6: h(6),
   inlineCode: (props: any) => <Code {...props} />,
   a: ({ href, children }: { href: string; children: string }) => {
-    const replaced = href.replace('https://pattern-ui.design', '');
+    const replaced = href.replace('https://pattern.icu', '');
 
     if (!replaced.startsWith('http') && replaced.trim().length > 0) {
-      return <GatsbyLink to={href.replace('https://pattern-ui.design', '')}>{children}</GatsbyLink>;
+      return <GatsbyLink to={href.replace('https://pattern.icu', '')}>{children}</GatsbyLink>;
     }
 
     return (

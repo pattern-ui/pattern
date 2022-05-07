@@ -2,7 +2,7 @@
 
 Utilities to setup Pattern server side rendering with Next.js
 
-[View documentation](https://pattern-ui.design/)
+[View documentation](https://pattern.icu/)
 
 ## Installation
 

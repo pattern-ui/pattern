@@ -7,7 +7,7 @@
   "types": "lib/index.d.ts",
   "license": "MIT",
   "author": "lokielse <lokielse@gmail.com>",
-  "homepage": "https://pattern-ui.design/dates/getting-started/",
+  "homepage": "https://pattern.icu/dates/getting-started/",
   "keywords": [
     "react",
     "next",

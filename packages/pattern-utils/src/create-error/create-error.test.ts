@@ -5,7 +5,7 @@ describe('@pattern-ui/utils/create-error', () => {
     expect(
       createError({ message: 'Tabs component was not found in tree', code: 'tabs-context' })
     ).toBe(
-      '[@pattern-ui/core] Tabs component was not found in tree. Learn more – https://pattern-ui.design/errors/tabs-context/'
+      '[@pattern-ui/core] Tabs component was not found in tree. Learn more – https://pattern.icu/errors/tabs-context/'
     );
   });
 
@@ -17,7 +17,7 @@ describe('@pattern-ui/utils/create-error', () => {
         scope: '@pattern-ui/core',
       })
     ).toBe(
-      '[@pattern-ui/core] Tabs component was not found in tree. Learn more – https://pattern-ui.design/errors/core-context/'
+      '[@pattern-ui/core] Tabs component was not found in tree. Learn more – https://pattern.icu/errors/core-context/'
     );
   });
 

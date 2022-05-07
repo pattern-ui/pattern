@@ -8,7 +8,7 @@ export default function Demo() {
 
   return (
     <Group position="center" spacing="xs">
-      <ColorSwatch component="a" href="https://pattern-ui.design" color={theme.colors.blue[6]} />
+      <ColorSwatch component="a" href="https://pattern.icu" color={theme.colors.blue[6]} />
       <ColorSwatch
         component="button"
         color={theme.colors.grape[6]}

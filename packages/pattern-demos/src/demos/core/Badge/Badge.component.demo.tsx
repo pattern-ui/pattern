@@ -17,7 +17,7 @@ const CustomComponent = ({
 export default function Demo() {
   return (
     <Group position="center">
-      <Badge component="a" href="https://pattern-ui.design" variant="outline">
+      <Badge component="a" href="https://pattern.icu" variant="outline">
         Link badge
       </Badge>
 

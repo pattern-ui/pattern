@@ -2,7 +2,7 @@
 
 Quill based rich text editor
 
-[View documentation](https://pattern-ui.design/)
+[View documentation](https://pattern.icu/)
 
 ## Installation
 

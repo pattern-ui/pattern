@@ -8,11 +8,11 @@ export default function Demo() {
   const form = useForm({
     initialValues: {
       employees: formList([
-        { name: 'John Doe', email: 'john@pattern-ui.design' },
-        { name: 'Bill Love', email: 'bill@pattern-ui.design' },
-        { name: 'Nancy Eagle', email: 'nanacy@pattern-ui.design' },
-        { name: 'Lim Notch', email: 'lim@pattern-ui.design' },
-        { name: 'Susan Seven', email: 'susan@pattern-ui.design' },
+        { name: 'John Doe', email: 'john@pattern.icu' },
+        { name: 'Bill Love', email: 'bill@pattern.icu' },
+        { name: 'Nancy Eagle', email: 'nanacy@pattern.icu' },
+        { name: 'Lim Notch', email: 'lim@pattern.icu' },
+        { name: 'Susan Seven', email: 'susan@pattern.icu' },
       ]),
     },
   });

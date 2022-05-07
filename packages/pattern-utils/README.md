@@ -2,7 +2,7 @@
 
 A set of utils used in Pattern packages
 
-[View documentation](https://pattern-ui.design/)
+[View documentation](https://pattern.icu/)
 
 ## Installation
 

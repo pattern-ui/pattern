@@ -8,7 +8,7 @@
   "license": "MIT",
   "author": "lokielse <lokielse@gmail.com>",
   "sideEffects": false,
-  "homepage": "https://pattern-ui.design/labs/",
+  "homepage": "https://pattern.icu/labs/",
   "repository": {
     "url": "https://github.com/pattern-ui/pattern.git",
     "type": "git",

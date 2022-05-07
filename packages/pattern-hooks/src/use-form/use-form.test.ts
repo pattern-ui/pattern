@@ -3,7 +3,7 @@ import { useForm } from './use-form';
 
 const TEST_FORM = {
   initialValues: {
-    email: 'hello@pattern-ui.design',
+    email: 'hello@pattern.icu',
     confirmEmail: '',
     name: 'Pattern',
     age: 1,
@@ -203,16 +203,16 @@ describe('@pattern-ui/hooks/use-form', () => {
     const hook = renderHook(() => useForm(TEST_FORM));
     act(() => {
       hook.result.current.setValues({
-        email: 'hello@pattern-ui.design',
-        confirmEmail: 'hello@pattern-ui.design',
+        email: 'hello@pattern.icu',
+        confirmEmail: 'hello@pattern.icu',
         name: 'Pattern',
         age: 1,
       });
     });
 
     expect(hook.result.current.values).toStrictEqual({
-      email: 'hello@pattern-ui.design',
-      confirmEmail: 'hello@pattern-ui.design',
+      email: 'hello@pattern.icu',
+      confirmEmail: 'hello@pattern.icu',
       name: 'Pattern',
       age: 1,
     });

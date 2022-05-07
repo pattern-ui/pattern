@@ -2,7 +2,7 @@
 
 Overlay command center for your application
 
-[Documentation](https://pattern-ui.design/)
+[Documentation](https://pattern.icu/)
 
 ## Installation
 

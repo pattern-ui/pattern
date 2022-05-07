@@ -2,7 +2,7 @@
 
 Pattern core components library.
 
-[View documentation](https://pattern-ui.design/)
+[View documentation](https://pattern.icu/)
 
 ## Installation
 

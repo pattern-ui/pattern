@@ -7,14 +7,14 @@ interface CreateErrorInput {
   /** Message displayed in the console */
   message: string;
 
-  /** Error code, used to construct link to error decoder on pattern-ui.design website */
+  /** Error code, used to construct link to error decoder on pattern.icu website */
   code: string;
 }
 
 export function createError({ message, code, scope = '@pattern-ui/core' }: CreateErrorInput) {
   return `[${scope}] ${
     message.endsWith('.') ? message : `${message}.`
-  } Learn more – https://pattern-ui.design/errors/${code}/`;
+  } Learn more – https://pattern.icu/errors/${code}/`;
 }
 
 export function createErrors<ErrorKey extends string>(

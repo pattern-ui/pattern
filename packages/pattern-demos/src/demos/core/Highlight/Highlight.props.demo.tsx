@@ -5,7 +5,7 @@ export default function Demo() {
   return (
     <Highlight
       component="a"
-      href="https://pattern-ui.design"
+      href="https://pattern.icu"
       target="_blank"
       highlight="pattern"
       variant="link"

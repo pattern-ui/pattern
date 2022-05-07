@@ -28,13 +28,13 @@ export function PatternUiBanner({ className, ...others }: PatternUiBannerProps) 
           free for everyone.
         </Text>
         <Group mt="xl">
-          <Button component="a" href="https://ui.pattern-ui.design/">
+          <Button component="a" href="https://ui.pattern.icu/">
             View components
           </Button>
           <Button
             className={classes.secondaryControl}
             component="a"
-            href="https://github.com/pattern-ui/ui.pattern-ui.design"
+            href="https://github.com/pattern-ui/ui.pattern.icu"
             variant="default"
             leftIcon={<MarkGithubIcon size={14} />}
           >

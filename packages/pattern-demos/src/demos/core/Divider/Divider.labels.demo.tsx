@@ -22,7 +22,7 @@ export default function Demo() {
       <Divider
         my="xs"
         label="Link label"
-        labelProps={{ component: 'a', href: 'https://pattern-ui.design', variant: 'link', color: 'blue' }}
+        labelProps={{ component: 'a', href: 'https://pattern.icu', variant: 'link', color: 'blue' }}
       />
     </>
   );

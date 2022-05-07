@@ -2,7 +2,7 @@
 
 A navigation progress bar
 
-[Documentation](https://pattern-ui.design/)
+[Documentation](https://pattern.icu/)
 
 ## Installation
 

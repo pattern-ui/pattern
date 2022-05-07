@@ -10,10 +10,8 @@ module.exports = {
     title: 'Pattern Docs',
     description: 'Pattern documentation',
     author: '@lokielse',
-    siteUrl: 'https://pattern-ui.design',
+    siteUrl: 'https://pattern.icu',
   },
-
-  pathPrefix: "/pattern",
 
   plugins: [
     'gatsby-plugin-cname',

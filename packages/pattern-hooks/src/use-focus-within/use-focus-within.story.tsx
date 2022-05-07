@@ -10,7 +10,7 @@ export const Usage = () => {
       <input />
       <button type="button">Button</button>
       <input />
-      <a href="https://pattern-ui.design/">Link</a>
+      <a href="https://pattern.icu/">Link</a>
     </div>
   );
 };

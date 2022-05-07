@@ -6,13 +6,13 @@ export default function Demo() {
   return (
     <Group position="center">
       <Menu>
-        <Menu.Item component="a" href="https://pattern-ui.design">
+        <Menu.Item component="a" href="https://pattern.icu">
           Pattern website
         </Menu.Item>
         <Menu.Item
           icon={<ExternalLink size={14} />}
           component="a"
-          href="https://pattern-ui.design"
+          href="https://pattern.icu"
           target="_blank"
         >
           External link

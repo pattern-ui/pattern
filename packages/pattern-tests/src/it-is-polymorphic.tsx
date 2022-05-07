@@ -11,7 +11,7 @@ export function itIsPolymorphic<P>(
       selector ? container.querySelector(selector) : (container.firstChild as HTMLElement);
     const TestComponent = (props: any) => <mark data-test-prop {...props} />;
     const { container: withTag } = render(
-      <Component component="a" href="https://pattern-ui.design" {...requiredProps} />
+      <Component component="a" href="https://pattern.icu" {...requiredProps} />
     );
     const { container: withComponent } = render(
       <Component component={TestComponent} {...requiredProps} />

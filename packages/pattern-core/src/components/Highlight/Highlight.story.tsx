@@ -46,7 +46,7 @@ storiesOf('Highlight', module)
       component="a"
       variant="link"
       target="_blank"
-      href="https://pattern-ui.design"
+      href="https://pattern.icu"
     >
       Highlight this
     </Highlight>

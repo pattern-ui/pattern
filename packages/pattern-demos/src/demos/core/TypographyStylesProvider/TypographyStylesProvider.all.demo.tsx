@@ -8,7 +8,7 @@ const html = `<h1>Heading 1</h1>
 <h5>Heading 5</h5>
 <h6>Heading 6</h6>
 <hr />
-<p><a href="https://pattern-ui.design">Pattern link</a></p>
+<p><a href="https://pattern.icu">Pattern link</a></p>
 <p>Lorem ipsum, dolor sitamet consectetur adipisicing elit. Provident omnis laudantium itaque quisquam est, magnam harum, cum molestias necessitatibus obcaecati quod esse debitis velit nemo dolores deserunt. Quia, iure doloremque.</p>
 <img src="https://images.unsplash.com/photo-1485219309265-6cda6f90a076?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80" alt="Unsplash image" />
 <ul>

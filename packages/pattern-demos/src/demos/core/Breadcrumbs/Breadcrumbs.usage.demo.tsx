@@ -2,7 +2,7 @@ import React from 'react';
 import { usePatternTheme, Breadcrumbs, Anchor } from '@pattern-ui/core';
 
 const items = [
-  { title: 'Pattern', href: 'https://pattern-ui.design' },
+  { title: 'Pattern', href: 'https://pattern.icu' },
   { title: 'Pattern hooks', href: '#' },
   { title: 'use-id', href: '#' },
 ].map((item, index) => (

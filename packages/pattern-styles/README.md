@@ -2,7 +2,7 @@
 
 Pattern CSS-in-JS library built on top of emotion
 
-[View documentation](https://pattern-ui.design/)
+[View documentation](https://pattern.icu/)
 
 ## Installation
 

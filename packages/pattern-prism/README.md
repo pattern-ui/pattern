@@ -2,7 +2,7 @@
 
 Code highlight built with prism and Pattern
 
-[View documentation](https://pattern-ui.design/)
+[View documentation](https://pattern.icu/)
 
 ## Installation
 

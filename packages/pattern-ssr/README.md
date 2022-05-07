@@ -2,7 +2,7 @@
 
 General purpose utilities for Pattern server side rendering
 
-[View documentation](https://pattern-ui.design/)
+[View documentation](https://pattern.icu/)
 
 ## Installation
 

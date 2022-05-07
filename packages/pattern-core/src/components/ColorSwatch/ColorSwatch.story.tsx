@@ -22,7 +22,7 @@ storiesOf('ColorSwatch', module)
   .add('Custom components', () => (
     <Group style={{ padding: 15 }}>
       <ColorSwatch color="#f300f3" component="button" />
-      <ColorSwatch color="#000" component="a" href="https://pattern-ui.design" />
+      <ColorSwatch color="#000" component="a" href="https://pattern.icu" />
     </Group>
   ))
   .add('Default props on PatternProvider', () => (

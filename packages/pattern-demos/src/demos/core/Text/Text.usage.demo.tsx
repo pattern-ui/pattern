@@ -12,7 +12,7 @@ export default function Demo() {
       <Text weight={500}>Semibold</Text>
       <Text weight={700}>Bold</Text>
       <Text underline>Underlined</Text>
-      <Text variant="link" component="a" href="https://pattern-ui.design">
+      <Text variant="link" component="a" href="https://pattern.icu">
         Link variant
       </Text>
       <Text color="red">Red text</Text>

@@ -2,7 +2,7 @@
 
 Calendars, date and time pickers
 
-[View documentation](https://pattern-ui.design/)
+[View documentation](https://pattern.icu/)
 
 ## Installation
 
