@@ -33,6 +33,14 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
+export const universalBtoa = str => {
+  try {
+    return btoa(str);
+  } catch (err) {
+    return Buffer.from(str).toString('base64');
+  }
+};
+
 function LogoAsset({ image, code, fileName, imageWidth, background, ...others }: LogoAssetProps) {
   const clipboard = useClipboard();
   const { classes } = useStyles();
@@ -47,7 +55,7 @@ function LogoAsset({ image, code, fileName, imageWidth, background, ...others }:
         <Button
           component="a"
           download={fileName}
-          href={`data:image/svg+xml;charset=utf-8;base64,${btoa(code)}`}
+          href={`data:image/svg+xml;charset=utf-8;base64,${universalBtoa(code)}`}
         >
           Download svg
         </Button>
