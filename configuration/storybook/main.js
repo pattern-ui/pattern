@@ -35,20 +35,14 @@ module.exports = {
     };
 
     config.resolve.alias['@pattern/demos'] = path.resolve('../packages/pattern-demos/src');
+
     config.module.rules.push({
-      // ...rest,
       test: /\.demo(\.[^.]+)?\.tsx$/,
       use: [
         {
           loader: demoLoader
         },
-      ],
-      exclude: it => {
-        if (it.includes('.demo.')) {
-          return false;
-        }
-        return true;
-      },
+      ]
     },)
 
     // Turn off docgen plugin as it breaks bundle with displayName
