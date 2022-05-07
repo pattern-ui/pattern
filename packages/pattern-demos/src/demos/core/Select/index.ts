@@ -1,7 +1,7 @@
 export { default as usage } from './Select.usage.demo';
 export { default as searchable } from './Select.searchable.demo';
 export { default as large } from './Select.large.demo';
-export { configurator } from './Select.configurator.demo';
+export { control } from './Select.control';
 export { flip } from './Select.flip.demo';
 export { default as itemComponent } from './Select.itemComponent.demo';
 export { default as clearable } from './Select.clearable.demo';

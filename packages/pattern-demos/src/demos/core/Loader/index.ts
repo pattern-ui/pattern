@@ -1,1 +1,1 @@
-export { configurator } from './Loader.configurator.demo';
+export { control } from './Loader.control';

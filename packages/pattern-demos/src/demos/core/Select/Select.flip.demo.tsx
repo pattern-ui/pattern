@@ -10,7 +10,7 @@ export default function Demo() {
 `;
 
 export const flip: PatternDemo = {
-  type: 'configurator',
+  type: 'control',
   component: (props: any) => (
     <Select
       placeholder="Pick one"
@@ -25,8 +25,8 @@ export const flip: PatternDemo = {
     />
   ),
   codeTemplate,
-  configuratorProps: { multiline: false },
-  configurator: [
+  demoProps: { multiline: false },
+  controls: [
     {
       name: 'dropdownPosition',
       type: 'segmented',

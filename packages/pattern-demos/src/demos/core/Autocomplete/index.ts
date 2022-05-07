@@ -1,4 +1,4 @@
-export { configurator } from './Autocomplete.configurator.demo';
+export { control } from './Autocomplete.control';
 export { flip } from './Autocomplete.flip.demo';
 export { default as usage } from './Autocomplete.usage.demo';
 export { default as dynamic } from './Autocomplete.dynamic.demo';

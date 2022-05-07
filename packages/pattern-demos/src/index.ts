@@ -1,5 +1,6 @@
 // Demos components
-export { Demo, CodeDemo, Configurator } from './components/Demo/Demo';
+export { Demo, CodeDemo, CodeConfigurator } from './components/Demo/Demo';
+export { ControlDemo } from './components/Demo/ControlDemo';
 
 // Inline demos
 export { AuthenticationForm } from './shared/AuthenticationForm/AuthenticationForm';

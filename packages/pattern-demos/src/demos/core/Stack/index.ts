@@ -1,1 +1,1 @@
-export { configurator } from './Stack.configurator.demo';
+export { control } from './Stack.control';

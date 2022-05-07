@@ -2,7 +2,7 @@ export { default as countries } from './MultiSelect.countries.demo';
 export { default as usage } from './MultiSelect.usage.demo';
 export { default as searchable } from './MultiSelect.searchable.demo';
 export { default as clearable } from './MultiSelect.clearable.demo';
-export { configurator } from './MultiSelect.configurator.demo';
+export { control } from './MultiSelect.control';
 export { flip } from './MultiSelect.flip.demo';
 export { default as creatable } from './MultiSelect.creatable.demo';
 export { default as groups } from './MultiSelect.groups.demo';

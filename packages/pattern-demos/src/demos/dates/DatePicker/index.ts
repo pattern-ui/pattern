@@ -1,6 +1,6 @@
 export { default as usage } from './DatePicker.usage.demo';
 export { default as modal } from './DatePicker.modal.demo';
-export { configurator } from './DatePicker.configurator.demo';
+export { control } from './DatePicker.control';
 export { default as boundaries } from './DatePicker.boundaries.demo';
 export { default as exclude } from './DatePicker.exclude.demo';
 export { default as styles } from './DatePicker.styles.demo';

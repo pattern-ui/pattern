@@ -2,7 +2,7 @@ import React from 'react';
 import { MDXProvider } from '@mdx-js/react';
 import { Code, Text } from '@pattern/core';
 import { Prism } from '@pattern/prism';
-import { Demo } from '@pattern/demos';
+import { Demo, ControlDemo } from '@pattern/demos';
 import { KeyboardEventsTable } from './KeyboardEventsTable/KeyboardEventsTable';
 import GatsbyLink from './GatsbyLink/GatsbyLink';
 import DataTable from './DataTable/DataTable';
@@ -14,6 +14,7 @@ export const components = {
   GatsbyLink,
   DataTable,
   Demo,
+  ControlDemo,
   KeyboardEventsTable,
   h1: h(1),
   h2: h(2),

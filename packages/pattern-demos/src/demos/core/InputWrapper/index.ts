@@ -1,1 +1,1 @@
-export { configurator } from './InputWrapper.configurator.demo';
+export { control } from './InputWrapper.control';

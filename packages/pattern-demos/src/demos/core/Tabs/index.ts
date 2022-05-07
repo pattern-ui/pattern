@@ -1,7 +1,7 @@
 export { default as icons } from './Tabs.icons.demo';
 export { default as colors } from './Tabs.colors.demo';
-export { configurator } from './Tabs.configurator.demo';
-export { positionConfigurator } from './Tabs.positionConfigurator.demo';
+export { control } from './Tabs.control';
+export { positionControl } from './Tabs.position.control';
 export { default as stylesApi } from './Tabs.stylesApi.demo';
 export { default as pull } from './Tabs.pull.demo';
 export { default as disabled } from './Tabs.disabled.demo';

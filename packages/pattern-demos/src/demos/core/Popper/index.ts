@@ -1,1 +1,1 @@
-export { configurator } from './Popper.configurator.demo';
+export { control } from './Popper.control';

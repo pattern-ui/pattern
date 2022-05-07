@@ -4,11 +4,11 @@ const { argv } = require('yargs');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin').default;
 
 const storiesPath = !argv._[0]
-  ? path.resolve(__dirname, '../../src/**/*.story.@(ts|tsx)').replace(/\\/g, '/')
+  ? path.resolve(__dirname, '../../packages/**/*.story.@(ts|tsx)').replace(/\\/g, '/')
   : path
       .resolve(
         __dirname,
-        `../../src/pattern-${argv._[0].replace('@pattern/', '')}/**/*.story.@(ts|tsx)`
+        `../../packages/pattern-${argv._[0].replace('@pattern/', '')}/**/*.story.@(ts|tsx)`
       )
       .replace(/\\/g, '/');
 

@@ -1,4 +1,4 @@
-export { configurator } from './Tooltip.configurator.demo';
+export { control } from './Tooltip.control';
 export { default as controlled } from './Tooltip.controlled.demo';
 export { default as arrow } from './Tooltip.arrow.demo';
 export { default as multiline } from './Tooltip.multiline.demo';

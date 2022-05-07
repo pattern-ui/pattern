@@ -1,1 +1,1 @@
-export { configurator } from './Group.configurator.demo';
+export { control } from './Group.control';

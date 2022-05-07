@@ -5,9 +5,9 @@ const codeTemplate = (props: string) => `<PasswordInput
 />`;
 
 export const focus: PatternDemo = {
-  type: 'configurator',
+  type: 'control',
   component: PinInput,
   codeTemplate,
-  configuratorProps: { multiline: true },
-  configurator: [{ name: 'manageFocus', type: 'boolean', initialValue: true }],
+  demoProps: { multiline: true },
+  controls: [{ name: 'manageFocus', type: 'boolean', initialValue: true }],
 };

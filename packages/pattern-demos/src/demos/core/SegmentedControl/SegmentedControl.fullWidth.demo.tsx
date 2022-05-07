@@ -19,10 +19,10 @@ export default function Demo() {
 `;
 
 export const fullWidth: PatternDemo = {
-  type: 'configurator',
+  type: 'control',
   component: Demo,
   codeTemplate,
-  configurator: [
+  controls: [
     { name: 'fullWidth', type: 'boolean', defaultValue: false },
     {
       name: 'orientation',

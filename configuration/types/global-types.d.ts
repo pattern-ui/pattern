@@ -32,7 +32,7 @@ interface PatternDemoBase {
 }
 
 interface PatternCodeDemo extends PatternDemoBase {
-  type: 'demo';
+  type: 'code',
   demoProps?: {
     spacing?: boolean;
     demoBackground?: string;
@@ -42,11 +42,11 @@ interface PatternCodeDemo extends PatternDemoBase {
   };
 }
 
-interface PatternConfiguratorDemo extends PatternDemoBase {
-  type: 'configurator';
+interface PatternControlDemo extends PatternDemoBase {
+  type: 'control',
   codeTemplate(props: string, children?: string): string;
-  configurator?: PatternDemoControlProps[];
-  configuratorProps?: {
+  controls?: PatternDemoControlProps[];
+  demoProps?: {
     previewBackground?: string;
     multiline?: boolean | number;
     includeCode?: boolean;
@@ -55,4 +55,4 @@ interface PatternConfiguratorDemo extends PatternDemoBase {
   };
 }
 
-type PatternDemo = PatternCodeDemo | PatternConfiguratorDemo | PatternDemoBaseComponent;
+type PatternDemo = PatternCodeDemo | PatternControlDemo | PatternDemoBaseComponent;

@@ -1,4 +1,4 @@
-export { configurator } from './Slider.configurator.demo';
+export { control } from './Slider.control';
 export { default as customize } from './Slider.customize.demo';
 export { default as marks } from './Slider.marks.demo';
 export { default as label } from './Slider.label.demo';

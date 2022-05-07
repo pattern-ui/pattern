@@ -28,10 +28,10 @@ export default function Demo() {
 `;
 
 export const floating: PatternDemo = {
-  type: 'configurator',
+  type: 'control',
   component: Wrapper,
   codeTemplate,
-  configurator: [
+  controls: [
     {
       name: 'color',
       type: 'color',

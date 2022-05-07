@@ -1,1 +1,1 @@
-export { configurator } from './Alert.configurator.demo';
+export { control } from './Alert.control';

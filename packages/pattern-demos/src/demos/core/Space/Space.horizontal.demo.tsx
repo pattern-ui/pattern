@@ -26,8 +26,8 @@ export default function Demo() {
 `;
 
 export const horizontal: PatternDemo = {
-  type: 'configurator',
+  type: 'control',
   component: Wrapper,
   codeTemplate,
-  configurator: [{ name: 'h', type: 'size', initialValue: 'md', defaultValue: 0 }],
+  controls: [{ name: 'h', type: 'size', initialValue: 'md', defaultValue: 0 }],
 };

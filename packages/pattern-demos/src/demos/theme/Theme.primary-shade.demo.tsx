@@ -32,8 +32,8 @@ export default function Demo() {
 `;
 
 export const primaryShade: PatternDemo = {
-  type: 'configurator',
+  type: 'control',
   component: Wrapper as any,
   codeTemplate,
-  configurator: [{ name: 'primaryShade', type: 'number', initialValue: 6, min: 0, max: 9 }],
+  controls: [{ name: 'primaryShade', type: 'number', initialValue: 6, min: 0, max: 9 }],
 };

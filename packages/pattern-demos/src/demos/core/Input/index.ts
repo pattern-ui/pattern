@@ -1,4 +1,4 @@
-export { configurator } from './Input.configurator.demo';
+export { control } from './Input.control';
 export { default as variants } from './Input.variants.demo';
 export { default as icon } from './Input.icon.demo';
 export { default as tooltip } from './Input.tooltip.demo';

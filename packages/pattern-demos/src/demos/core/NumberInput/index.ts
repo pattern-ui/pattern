@@ -1,4 +1,4 @@
-export { configurator } from './NumberInput.configurator.demo';
+export { control } from './NumberInput.control';
 export { default as step } from './NumberInput.step.demo';
 export { default as controls } from './NumberInput.controls.demo';
 export { default as handlers } from './NumberInput.handlers.demo';

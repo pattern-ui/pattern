@@ -1,7 +1,7 @@
 export { default as usage } from './Stepper.usage.demo';
-export { configurator } from './Stepper.configurator.demo';
+export { control } from './Stepper.control';
 export { default as icons } from './Stepper.icons.demo';
-export { iconSizeConfigurator } from './Stepper.iconSizeConfigurator.demo';
+export { iconSizeControl } from './Stepper.iconSize.control';
 export { default as iconsOnly } from './Stepper.iconsOnly.demo';
 export { default as orientation } from './Stepper.orientation.demo';
 export { default as iconPosition } from './Stepper.iconPosition.demo';

@@ -1,6 +1,6 @@
 export { default as usage } from './ColorInput.usage.demo';
-export { formatsConfigurator } from './ColorInput.formatsConfigurator.demo';
-export { inputConfigurator } from './ColorInput.inputConfigurator.demo';
+export { formatsControl } from './ColorInput.formats.control';
+export { inputControl } from './ColorInput.input.control';
 export { default as swatches } from './ColorInput.swatches.demo';
 export { default as disabled } from './ColorInput.disabled.demo';
 export { default as readOnly } from './ColorInput.readOnly.demo';

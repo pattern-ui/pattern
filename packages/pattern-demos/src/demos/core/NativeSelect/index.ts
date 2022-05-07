@@ -1,4 +1,4 @@
-export { configurator } from './NativeSelect.configurator.demo';
+export { control } from './NativeSelect.control';
 export { default as validation } from './NativeSelect.validation.demo';
 export { default as disabled } from './NativeSelect.disabled.demo';
 export { default as icon } from './NativeSelect.icon.demo';

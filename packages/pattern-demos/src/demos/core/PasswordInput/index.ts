@@ -1,4 +1,4 @@
-export { configurator } from './PasswordInput.configurator.demo';
+export { control } from './PasswordInput.control';
 export { default as strengthMeter } from './PasswordInput.strengthMeter.demo';
 export { default as focus } from './PasswordInput.focus.demo';
 export { default as validation } from './PasswordInput.validation.demo';

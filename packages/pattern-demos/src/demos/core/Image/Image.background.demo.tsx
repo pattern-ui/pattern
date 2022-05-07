@@ -42,9 +42,9 @@ export default function Demo() {
 `;
 
 export const background: PatternDemo = {
-  type: 'configurator',
+  type: 'control',
   component: Wrapper,
   codeTemplate,
-  configuratorProps: { multiline: 4 },
-  configurator: [{ name: 'radius', type: 'size', initialValue: 'sm' }],
+  demoProps: { multiline: 4 },
+  controls: [{ name: 'radius', type: 'size', initialValue: 'sm' }],
 };
