@@ -36,8 +36,8 @@ jobs:
       - name: Build Packages 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: npm run build:all
 
-      - name: Build & Deploy Docs 🚀 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
-        run: docs:deploy
+      - name: Build Docs 🚀 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: npm run docs:build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
