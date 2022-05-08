@@ -46,7 +46,10 @@ export function useFocusTrap(active = true): (instance: HTMLElement | null) => v
             processNode(node);
           } else if (process.env.NODE_ENV === 'development') {
             // eslint-disable-next-line no-console
-            console.warn('[@pattern-ui/hooks/use-focus-trap] Ref node is not part of the dom', node);
+            console.warn(
+              '[@pattern-ui/hooks/use-focus-trap] Ref node is not part of the dom',
+              node
+            );
           }
         });
 

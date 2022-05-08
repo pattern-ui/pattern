@@ -33,7 +33,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export const universalBtoa = str => {
+export const universalBtoa = (str) => {
   try {
     return btoa(str);
   } catch (err) {

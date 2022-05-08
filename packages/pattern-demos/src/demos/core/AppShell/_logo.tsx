@@ -3,11 +3,7 @@ import { ColorScheme } from '@pattern-ui/core';
 
 export function Logo({ colorScheme }: { colorScheme: ColorScheme }) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 572.23 159.9"
-      width={100}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 572.23 159.9" width={100}>
       <g>
         <circle cx="79.95" cy="79.95" r="79.95" fill="#2251ca" />
         <g>
