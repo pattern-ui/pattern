@@ -1,0 +1,36 @@
+---
+group: 'pattern-hooks'
+package: '@pattern-ui/hooks'
+category: 'utils'
+title: 'use-os'
+order: 1
+slug: /hooks/use-os/
+description: 'Get user os'
+import: "import { useOs } from '@pattern-ui/hooks';"
+docs: 'hooks/use-os.mdx'
+source: 'pattern-hooks/src/use-os/use-os.ts'
+---
+
+import { HooksDemos } from '@pattern-ui/demos';
+
+## Usage
+
+use-os detects user's os. Possible values are: `undetermined`, `macos`, `ios`, `windows`, `android`, `linux`.
+If os cannot be identified, for example, during server side rendering `undetermined` will be returned.
+
+<Demo data={HooksDemos.useOsDemo} />
+
+## TypeScript
+
+You can import `OS` union type from `@pattern-ui/hooks`:
+
+```tsx
+import type { OS } from '@pattern-ui/hooks';
+// OS type is 'undetermined' | 'macos' | 'ios' | 'windows' | 'android' | 'linux'
+```
+
+## Definition
+
+```tsx
+function getOS(): 'undetermined' | 'macos' | 'ios' | 'windows' | 'android' | 'linux';
+```

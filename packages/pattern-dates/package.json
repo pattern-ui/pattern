@@ -1,0 +1,33 @@
+{
+  "name": "@pattern-ui/dates",
+  "description": "Calendars, date and time pickers based on Pattern components",
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "lokielse <lokielse@gmail.com>",
+  "homepage": "https://pattern.icu/dates/getting-started/",
+  "keywords": [
+    "react",
+    "next",
+    "nextjs",
+    "ui",
+    "components",
+    "ui-kit",
+    "library",
+    "frontend",
+    "calendar",
+    "date",
+    "time",
+    "picker"
+  ],
+  "peerDependencies": {
+    "@pattern-ui/core": "1.0.0",
+    "@pattern-ui/hooks": "1.0.0",
+    "dayjs": "^1.10.5",
+    "react": ">=16.8.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

@@ -1,0 +1,11 @@
+export { default as usage } from './Spotlight.usage.demo';
+export { default as transitionNone } from './Spotlight.transitionNone.demo';
+export { default as customTransition } from './Spotlight.customTransition.demo';
+export { default as large } from './Spotlight.large.demo';
+export { default as closeOnTrigger } from './Spotlight.closeOnTrigger.demo';
+export { default as register } from './Spotlight.register.demo';
+export { default as groups } from './Spotlight.groups.demo';
+export { default as actionComponent } from './Spotlight.actionComponent.demo';
+export { default as actionsWrapperComponent } from './Spotlight.actionsWrapperComponent.demo';
+export { default as filter } from './Spotlight.filter.demo';
+export { default as highlightQuery } from './Spotlight.highlightQuery.demo';

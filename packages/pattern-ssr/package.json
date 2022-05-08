@@ -1,0 +1,44 @@
+{
+  "name": "@pattern-ui/ssr",
+  "description": "Pattern server side rendering utils",
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "lokielse <lokielse@gmail.com>",
+  "sideEffects": false,
+  "homepage": "https://pattern.icu",
+  "repository": {
+    "url": "https://github.com/pattern-ui/pattern.git",
+    "type": "git",
+    "directory": "packages/pattern-ssr"
+  },
+  "keywords": [
+    "react",
+    "next",
+    "nextjs",
+    "gatsby",
+    "gatsbyjs",
+    "ssr",
+    "server",
+    "server-side",
+    "server-side-rendering",
+    "render"
+  ],
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "dependencies": {
+    "@emotion/server": "11.4.0",
+    "@pattern-ui/styles": "1.0.0",
+    "@emotion/cache": "11.7.1",
+    "@emotion/react": "11.7.1",
+    "@emotion/serialize": "1.0.2",
+    "@emotion/utils": "1.0.0",
+    "csstype": "3.0.9",
+    "html-react-parser": "1.3.0"
+  },
+  "devDependencies": {}
+}

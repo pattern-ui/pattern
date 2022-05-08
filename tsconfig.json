@@ -1,0 +1,29 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": [
+    "packages/pattern-*/src",
+    "packages/pattern-*/demos",
+    "./types",
+    "./docs/src",
+    "./scripts",
+    "./config",
+    "./config/types",
+    "./tests"
+  ],
+  "exclude": [
+    "public",
+    ".cache",
+    "config/jest",
+    "config/storybook/main.js",
+    "node_modules",
+    "packages/pattern-*/esm/**/*",
+    "packages/pattern-*/lib/**/*",
+    "packages/pattern-*/cjs/**/*"
+  ],
+  "compilerOptions": {
+    "paths": {
+      "@pattern-ui/*": ["packages/pattern-*/src"],
+      "@demos/*": ["packages/pattern-*/src/demos"]
+    }
+  }
+}

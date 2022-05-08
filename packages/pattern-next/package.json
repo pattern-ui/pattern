@@ -1,0 +1,31 @@
+{
+  "name": "@pattern-ui/next",
+  "description": "Pattern integration for Next.js",
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "lokielse <lokielse@gmail.com>",
+  "sideEffects": false,
+  "homepage": "https://pattern.icu",
+  "repository": {
+    "url": "https://github.com/pattern-ui/pattern.git",
+    "type": "git",
+    "directory": "packages/pattern-ssr"
+  },
+  "keywords": [
+    "react",
+    "next",
+    "nextjs"
+  ],
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "next": "*"
+  },
+  "dependencies": {
+    "@pattern-ui/ssr": "1.0.0"
+  },
+  "devDependencies": {}
+}

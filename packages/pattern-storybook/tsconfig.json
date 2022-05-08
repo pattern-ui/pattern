@@ -1,0 +1,21 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["./src", "./types",
+    "../../config/types"
+  ],
+  "compilerOptions": {
+    "rootDir": "src",
+    "baseUrl": ".",
+    "outDir": "lib",
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "lib",
+    "composite": true,
+    "paths": {
+      "@pattern-ui/core": ["../pattern-core/src"],
+      "@pattern-ui/hooks": ["../pattern-hooks/src"],
+      "@pattern-ui/prism": ["../pattern-prism/src"]
+    }
+  },
+  "references": [{ "path": "../pattern-hooks" }, { "path": "../pattern-core" }]
+}

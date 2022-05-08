@@ -1,0 +1,42 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["./src", "./types",
+    "../../config/types"
+  ],
+  "exclude": ["./lib", "./esm", "./cjs"],
+  "compilerOptions": {
+    "rootDir": "src",
+    "baseUrl": ".",
+    "outDir": "lib",
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "lib",
+    "composite": true,
+    "paths": {
+      "@pattern-ui/core": ["../pattern-core/src"],
+      "@pattern-ui/dates": ["../pattern-dates/src"],
+      "@pattern-ui/hooks": ["../pattern-hooks/src"],
+      "@pattern-ui/prism": ["../pattern-prism/src"],
+      "@pattern-ui/dropzone": ["../pattern-dropzone/src"],
+      "@pattern-ui/notifications": ["../pattern-notifications/src"],
+      "@pattern-ui/modals": ["../pattern-modals/src"],
+      "@pattern-ui/nprogress": ["../pattern-nprogress/src"],
+      "@pattern-ui/form": ["../pattern-form/src"],
+      "@pattern-ui/spotlight": ["../pattern-spotlight/src"],
+      "@pattern-ui/rte": ["../pattern-rte/src"]
+    }
+  },
+  "references": [
+    { "path": "../pattern-core" },
+    { "path": "../pattern-dates" },
+    { "path": "../pattern-hooks" },
+    { "path": "../pattern-prism" },
+    { "path": "../pattern-dropzone" },
+    { "path": "../pattern-notifications" },
+    { "path": "../pattern-modals" },
+    { "path": "../pattern-nprogress" },
+    { "path": "../pattern-spotlight" },
+    { "path": "../pattern-form" },
+    { "path": "../pattern-rte" }
+  ]
+}

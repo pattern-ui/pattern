@@ -1,0 +1,30 @@
+---
+group: 'pattern-core'
+package: '@pattern-ui/core'
+title: Mark
+order: 1
+slug: /core/mark/
+category: 'typography'
+description: 'Highlight part of the text'
+props: ['Mark']
+import: "import { Mark } from '@pattern-ui/core';"
+source: 'pattern-core/src/components/Mark/Mark.tsx'
+docs: 'core/Mark.mdx'
+styles: ['Mark', 'single-node']
+---
+
+import { MarkDemos, HighlightDemos } from '@pattern-ui/demos';
+
+## Usage
+
+Use Mark to highlight part of the text with [theme.colors](/theming/extend-theme/#default-colors):
+
+<Demo data={MarkDemos.usage} />
+
+It is used in other Pattern components, for example, in [Highlight](/core/highlight/):
+
+<Demo data={HighlightDemos.multiple} />
+
+## Change color
+
+<ControlDemo data={MarkDemos.control} />

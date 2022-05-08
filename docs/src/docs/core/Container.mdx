@@ -1,0 +1,55 @@
+---
+group: 'pattern-core'
+package: '@pattern-ui/core'
+title: Container
+order: 1
+slug: /core/container/
+category: 'layout'
+description: 'Center content horizontally with predefined max-width'
+props: ['Container']
+import: "import { Container } from '@pattern-ui/core';"
+source: 'pattern-core/src/components/Container/Container.tsx'
+docs: 'core/Container.mdx'
+styles: ['Container', 'single-node']
+---
+
+import { ContainerDemos } from '@pattern-ui/demos';
+
+## Usage
+
+Container is the most basic layout element, it centers content horizontally and add horizontal padding from theme.
+Component accepts these props:
+
+- **size** – controls default max width
+- **padding** – controls horizontal padding of container, use xs, sm, md, lg, xl for value defined in theme.spacing or number to set horizontal padding in px
+- **fluid** – overwrites size prop and sets max width to 100%
+
+<Demo data={ContainerDemos.usage} />
+
+## Configure sizes
+
+To configure container sizes use default props on [PatternProvider](/theming/pattern-provider/):
+
+```tsx
+import { PatternProvider, Container } from '@pattern-ui/core';
+
+function App() {
+  return (
+    <PatternProvider
+      defaultProps={{
+        Container: {
+          sizes: {
+            xs: 540,
+            sm: 720,
+            md: 960,
+            lg: 1140,
+            xl: 1320,
+          },
+        },
+      }}
+    >
+      <Container size="sm">Your app</Container>
+    </PatternProvider>
+  );
+}
+```

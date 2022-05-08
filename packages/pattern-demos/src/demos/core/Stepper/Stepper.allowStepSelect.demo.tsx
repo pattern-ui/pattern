@@ -1,0 +1,40 @@
+import React, { useState } from 'react';
+import { Stepper, Button, Group } from '@pattern-ui/core';
+import { Content } from './_content';
+
+export default function Demo() {
+  const [active, setActive] = useState(1);
+  const nextStep = () => setActive((current) => (current < 3 ? current + 1 : current));
+  const prevStep = () => setActive((current) => (current > 0 ? current - 1 : current));
+
+  return (
+    <>
+      <Stepper active={active} onStepClick={setActive} breakpoint="sm">
+        <Stepper.Step
+          label="Fist step"
+          description="Create an account"
+          allowStepSelect={active > 0}
+        >
+          <Content>Step 1 content: Create an account</Content>
+        </Stepper.Step>
+        <Stepper.Step label="Second step" description="Verify email" allowStepSelect={active > 1}>
+          <Content>Step 2 content: Verify email</Content>
+        </Stepper.Step>
+        <Stepper.Step label="Final step" description="Get full access" allowStepSelect={active > 2}>
+          <Content>Step 3 content: Get full access</Content>
+        </Stepper.Step>
+
+        <Stepper.Completed>
+          <Content>Completed, click back button to get to previous step</Content>
+        </Stepper.Completed>
+      </Stepper>
+
+      <Group position="center" mt="xl">
+        <Button variant="default" onClick={prevStep}>
+          Back
+        </Button>
+        <Button onClick={nextStep}>Next step</Button>
+      </Group>
+    </>
+  );
+}
