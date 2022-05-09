@@ -6,12 +6,7 @@ const testActiveStyle = {
 
 const testReturnStyle = {
   backgroundColor: 'blue',
-  '@media (active: active)': {
-    '&:active': testActiveStyle,
-  },
-  '@media (active: none)': {
-    '&:active': testActiveStyle,
-  },
+  '&:active': testActiveStyle,
 };
 
 describe('@pattern-ui/core/utils/apply-active-style', () => {
