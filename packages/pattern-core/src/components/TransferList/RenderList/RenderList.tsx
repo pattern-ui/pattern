@@ -206,7 +206,7 @@ export function RenderList({
 
           <ActionIcon
             variant="default"
-            size={36}
+            size={32}
             radius={0}
             className={classes.transferListControl}
             disabled={selection.length === 0}
@@ -218,7 +218,7 @@ export function RenderList({
           {showTransferAll && (
             <ActionIcon
               variant="default"
-              size={36}
+              size={32}
               radius={0}
               className={classes.transferListControl}
               disabled={data.length === 0}

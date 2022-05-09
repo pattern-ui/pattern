@@ -2,6 +2,7 @@ import type { PatternColor, PatternGradient, PatternThemeBase } from '../../../t
 import { rgba } from '../rgba/rgba';
 import { themeColor } from '../theme-color/theme-color';
 import { primaryShade } from '../primary-shade/primary-shade';
+import { darken } from '../darken/darken';
 
 export interface VariantInput {
   variant: 'filled' | 'light' | 'outline' | 'default' | 'gradient' | 'white' | 'subtle';
@@ -14,6 +15,7 @@ export interface VariantOutput {
   background: string;
   color: string;
   hover: string;
+  active: string;
 }
 
 const DEFAULT_GRADIENT = {
@@ -45,6 +47,10 @@ export function variant(theme: PatternThemeBase) {
           getThemeColor(color, theme.colorScheme === 'dark' ? 7 : 1),
           theme.colorScheme === 'dark' ? 0.45 : 0.65
         ),
+        active: rgba(
+          getThemeColor(color, theme.colorScheme === 'dark' ? 7 : 1),
+          theme.colorScheme === 'dark' ? 0.25 : 0.85
+        ),
       };
     }
 
@@ -54,6 +60,8 @@ export function variant(theme: PatternThemeBase) {
         background: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.white,
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         hover: theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[0],
+        active:
+          theme.colorScheme === 'dark' ? theme.colors.dark[5] : darken(theme.colors.gray[0], 0.02),
       };
     }
 
@@ -63,6 +71,7 @@ export function variant(theme: PatternThemeBase) {
         background: theme.white,
         color: getThemeColor(color, getPrimaryShade()),
         hover: null,
+        active: null,
       };
     }
 
@@ -75,6 +84,10 @@ export function variant(theme: PatternThemeBase) {
           theme.colorScheme === 'dark'
             ? rgba(getThemeColor(color, 4), 0.05)
             : rgba(getThemeColor(color, 0), 0.35),
+        active:
+          theme.colorScheme === 'dark'
+            ? rgba(getThemeColor(color, 4), 0.25)
+            : rgba(getThemeColor(color, 0), 0.55),
       };
     }
 
@@ -94,6 +107,7 @@ export function variant(theme: PatternThemeBase) {
         color: theme.white,
         border: 'transparent',
         hover: null,
+        active: null,
       };
     }
 
@@ -111,6 +125,10 @@ export function variant(theme: PatternThemeBase) {
           getThemeColor(color, theme.colorScheme === 'dark' ? 8 : 0),
           theme.colorScheme === 'dark' ? 0.35 : 1
         ),
+        active: rgba(
+          getThemeColor(color, theme.colorScheme === 'dark' ? 8 : 0),
+          theme.colorScheme === 'dark' ? 0.15 : 0.55
+        ),
       };
     }
 
@@ -119,6 +137,10 @@ export function variant(theme: PatternThemeBase) {
       background: getThemeColor(color, getPrimaryShade()),
       color: theme.white,
       hover: getThemeColor(color, getPrimaryShade() === 9 ? 8 : getPrimaryShade() + 1),
+      active: rgba(
+        getThemeColor(color, getPrimaryShade() === 9 ? 8 : getPrimaryShade() + 1),
+        theme.colorScheme === 'dark' ? 0.85 : 0.85
+      ),
     };
   };
 }

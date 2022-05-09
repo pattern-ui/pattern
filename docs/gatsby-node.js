@@ -1,10 +1,28 @@
+const fs = require('fs')
 const path = require('path')
 const demoLoader = path.resolve('../packages/pattern-demo-loader/cjs/index.js');
 
-exports.onCreateWebpackConfig = ({ actions, loaders, getConfig }) => {
-  const config = getConfig()
+function getDirectories(path) {
+  return fs.readdirSync(path).filter(function (file) {
+    return fs.statSync(path + '/' + file).isDirectory();
+  });
+}
 
-  config.resolve.alias['@pattern-ui/demos'] = path.resolve('../packages/pattern-demos/src')
+const PACKAGES_PATH = path.resolve('../packages');
+
+const packages = getDirectories(PACKAGES_PATH).map(it => {
+  return {
+    path: path.resolve(PACKAGES_PATH, it),
+    data: require(path.resolve(PACKAGES_PATH, it, 'package.json')),
+  }
+});
+
+exports.onCreateWebpackConfig = ({actions, loaders, getConfig}) => {
+  const config = getConfig();
+
+  packages.forEach(pkg=>{
+    config.resolve.alias[pkg.data.name] = path.resolve(`${pkg.path}`, 'src')
+  })
 
   config.module.rules = [
     ...config.module.rules,

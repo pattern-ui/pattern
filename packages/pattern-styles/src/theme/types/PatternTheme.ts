@@ -38,6 +38,7 @@ interface PatternThemeFunctions {
   variant(payload: VariantInput): VariantOutput;
   primaryShade(colorScheme?: ColorScheme): Shade;
   hover(hoverStyle: CSSObject): any;
+  active(activeStyle: CSSObject): any;
 }
 
 export interface PatternTheme {
