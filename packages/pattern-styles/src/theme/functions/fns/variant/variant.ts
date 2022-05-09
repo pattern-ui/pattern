@@ -60,7 +60,8 @@ export function variant(theme: PatternThemeBase) {
         background: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.white,
         color: theme.colorScheme === 'dark' ? theme.white : theme.black,
         hover: theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[0],
-        active: theme.colorScheme === 'dark' ? theme.colors.dark[5] : darken(theme.colors.gray[0], 0.02),
+        active:
+          theme.colorScheme === 'dark' ? theme.colors.dark[5] : darken(theme.colors.gray[0], 0.02),
       };
     }
 

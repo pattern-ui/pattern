@@ -42,11 +42,12 @@ function getVariantStyles({ variant, theme, color }: GetVariantStyles) {
                 theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.fn.themeColor(color, 0),
             }
       ),
-      ...theme.fn.active(
-        {
-          color: theme.fn.lighten(theme.fn.themeColor(color, theme.colorScheme === 'dark' ? 4 : 7), 0.25),
-        }
-      ),
+      ...theme.fn.active({
+        color: theme.fn.lighten(
+          theme.fn.themeColor(color, theme.colorScheme === 'dark' ? 4 : 7),
+          0.25
+        ),
+      }),
     };
   }
 
