@@ -6,6 +6,30 @@ export interface MultiSelectStylesParams {
   invalid: boolean;
 }
 
+export const MARGIN_LEFTS = {
+  xs: -5,
+  sm: -5,
+  md: -6,
+  lg: -6,
+  xl: -7,
+};
+
+export const VALUE_MARGINS = {
+  xs: 3,
+  sm: 5,
+  md: 7,
+  lg: 9,
+  xl: 11,
+};
+
+export const PADDINGS = {
+  xs: 3,
+  sm: 5,
+  md: 7,
+  lg: 9,
+  xl: 11,
+};
+
 export default createStyles((theme, { size, invalid }: MultiSelectStylesParams) => ({
   wrapper: {
     position: 'relative',
@@ -14,16 +38,17 @@ export default createStyles((theme, { size, invalid }: MultiSelectStylesParams) 
   values: {
     minHeight: theme.fn.size({ size, sizes: INPUT_SIZES }) - 2,
     display: 'flex',
-    alignItems: 'center',
+    // alignItems: 'center',
     flexWrap: 'wrap',
-    marginLeft: -theme.spacing.xs / 2,
-    paddingTop: theme.spacing.xs / 2 - 2,
-    paddingBottom: theme.spacing.xs / 2 - 2,
+    marginLeft: theme.fn.size({ size, sizes: MARGIN_LEFTS }),
+    paddingTop: theme.fn.size({ size, sizes: PADDINGS }),
     boxSizing: 'border-box',
   },
 
   value: {
-    margin: `${theme.spacing.xs / 2 - 2}px ${theme.spacing.xs / 2}px`,
+    margin: theme.fn.size({ size, sizes: VALUE_MARGINS }),
+    marginTop: 0,
+    marginLeft: 0,
   },
 
   searchInput: {
@@ -34,7 +59,9 @@ export default createStyles((theme, { size, invalid }: MultiSelectStylesParams) 
     outline: 0,
     fontSize: theme.fn.size({ size, sizes: theme.fontSizes }),
     padding: 0,
-    margin: theme.spacing.xs / 2,
+    margin: 0,
+    marginTop: -theme.fn.size({ size, sizes: VALUE_MARGINS }),
+    marginLeft: theme.fn.size({ size, sizes: VALUE_MARGINS }),
     appearance: 'none',
     color: 'inherit',
 

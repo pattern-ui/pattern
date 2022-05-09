@@ -8,10 +8,10 @@ interface DefaultLabelStyles {
 
 const sizes = {
   xs: 16,
-  sm: 22,
-  md: 26,
-  lg: 30,
-  xl: 36,
+  sm: 20,
+  md: 24,
+  lg: 28,
+  xl: 34,
 };
 
 const fontSizes = {
