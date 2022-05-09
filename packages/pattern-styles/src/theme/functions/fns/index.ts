@@ -12,6 +12,7 @@ import { radius } from './radius/radius';
 import { variant } from './variant/variant';
 import { primaryShade } from './primary-shade/primary-shade';
 import { hover } from './hover/hover';
+import { active } from './active/active';
 
 export const fns = {
   fontStyles,
@@ -30,4 +31,5 @@ export const fns = {
   variant,
   primaryShade,
   hover,
+  active,
 } as const;

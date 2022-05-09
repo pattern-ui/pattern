@@ -1,9 +1,9 @@
 import {
   createStyles,
-  PatternSize,
-  PatternNumberSize,
-  PatternSizes,
   PatternColor,
+  PatternNumberSize,
+  PatternSize,
+  PatternSizes,
   PatternTheme,
 } from '@pattern-ui/styles';
 import { INPUT_SIZES } from '../Input';
@@ -115,6 +115,9 @@ function getVariantStyles({ variant, theme, color }: GetVariantStyles) {
     ...theme.fn.hover({
       backgroundColor: colors.hover,
     }),
+    ...theme.fn.active({
+      backgroundColor: colors.active,
+    }),
   };
 }
 
@@ -173,6 +176,10 @@ export default createStyles(
         color: gradient.color,
 
         '&:hover': theme.fn.hover({
+          backgroundSize: '150%',
+        }),
+
+        '&:active': theme.fn.hover({
           backgroundSize: '200%',
         }),
       },
@@ -194,10 +201,6 @@ export default createStyles(
         cursor: 'pointer',
         appearance: 'none',
         WebkitAppearance: 'none',
-
-        '&:not(:disabled):active': {
-          transform: 'translateY(1px)',
-        },
 
         [`&:not(.${getRef('loading')}):disabled`]: {
           borderColor: 'transparent',

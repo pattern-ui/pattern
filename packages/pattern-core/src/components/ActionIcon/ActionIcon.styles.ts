@@ -42,6 +42,11 @@ function getVariantStyles({ variant, theme, color }: GetVariantStyles) {
                 theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.fn.themeColor(color, 0),
             }
       ),
+      ...theme.fn.active(
+        {
+          color: theme.fn.lighten(theme.fn.themeColor(color, theme.colorScheme === 'dark' ? 4 : 7), 0.25),
+        }
+      ),
     };
   }
 
@@ -51,7 +56,12 @@ function getVariantStyles({ variant, theme, color }: GetVariantStyles) {
     backgroundColor: colors.background,
     color: colors.color,
     border: `1px solid ${colors.border}`,
-    ...theme.fn.hover({ backgroundColor: colors.hover }),
+    ...theme.fn.hover({
+      backgroundColor: colors.hover,
+    }),
+    ...theme.fn.active({
+      backgroundColor: colors.active,
+    }),
   };
 }
 
@@ -81,10 +91,6 @@ export default createStyles((theme, { color, size, radius }: ActionIconStylesPar
       cursor: 'not-allowed',
       backgroundColor: theme.fn.themeColor('gray', theme.colorScheme === 'dark' ? 8 : 1),
       borderColor: theme.fn.themeColor('gray', theme.colorScheme === 'dark' ? 8 : 1),
-    },
-
-    '&:not(:disabled):active': {
-      transform: 'translateY(1px)',
     },
   },
 

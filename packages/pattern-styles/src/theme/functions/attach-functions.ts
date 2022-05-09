@@ -21,6 +21,7 @@ export function attachFunctions(themeBase: PatternThemeBase): PatternTheme {
       radius: fns.radius(themeBase),
       variant: fns.variant(themeBase),
       hover: fns.hover,
+      active: fns.active,
     },
   };
 }
