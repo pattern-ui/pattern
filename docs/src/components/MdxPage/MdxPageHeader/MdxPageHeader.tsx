@@ -76,12 +76,9 @@ export function MdxPageHeader({ frontmatter }: MdxPageProps) {
           <LinkItem
             label="Package"
             icon={<NpmIcon />}
-            link={`https://www.npmjs.com/package/${frontmatter.package.replace(
-              'pattern-',
-              '@pattern-ui/'
-            )}`}
+            link={`https://www.npmjs.com/package/${frontmatter.package}`}
           >
-            {frontmatter.package.replace('pattern-', '@pattern-ui/')}
+            {frontmatter.package}
           </LinkItem>
         )}
 
