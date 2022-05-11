@@ -22,6 +22,11 @@ interface PatternDemoControlProps {
 
 type PatternDemoBaseComponent = React.FC & {
   code?: string;
+  imports?: Array<{
+    raw: string,
+    name: string,
+    content: string;
+  }>;
 };
 
 interface PatternDemoBase {

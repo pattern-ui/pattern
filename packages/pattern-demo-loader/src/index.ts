@@ -1,24 +1,65 @@
-import parseImports from 'parse-es6-imports';
+// https://babel.dev/docs/en/babel-parser
+import { parse } from '@babel/parser';
+import { ImportDeclaration } from '@babel/types';
+import path from 'path';
+import fs from 'fs';
+import { FlattenImport, ImportType } from './type';
 
-function addRawCode(source: string) {
-  return `${source}
+const addRawCode = (source: string, imports: FlattenImport[]) => `
+${source}
+
 if (typeof Demo === 'function') {
   Demo.code = ${JSON.stringify(source)}
+  Demo.imports = ${JSON.stringify(imports)}
 }
   `;
-}
+
+const getFilename = (filename: string, exts = ['tsx', 'ts', 'js', 'jsx']) => {
+  const ext = exts.find((it) => fs.existsSync(`${filename}.${it}`));
+  if (ext) {
+    return `${filename}.${ext}`;
+  }
+  throw new Error(`file not found: ${filename}`);
+};
+
+const getImportsData = (code: string, codePath: string) => {
+  const ast = parse(code, {
+    sourceType: 'module',
+    plugins: ['typescript', 'jsx'],
+  });
+
+  const pathObj = path.parse(codePath);
+
+  return ast.program.body
+    .filter((it) => it.type === 'ImportDeclaration')
+    .map((it: ImportDeclaration) => it.source.value)
+    .filter((it) => it.startsWith('.'))
+    .map<ImportType>((it) => {
+      const importPath = getFilename(path.resolve(pathObj.dir, it));
+      const importFileObj = path.parse(importPath);
+      const importCode = fs.readFileSync(importPath).toString();
+      return {
+        raw: it,
+        name: importFileObj.base,
+        content: importCode,
+        imports: getImportsData(importCode, importPath),
+      };
+    });
+};
+
+const flatImports = (imports: ImportType[]): FlattenImport[] =>
+  imports.reduce<FlattenImport[]>((acc, current) => {
+    const { imports: currentImports, ...rest } = current;
+    acc.push(rest, ...flatImports(currentImports));
+    return acc;
+  }, []);
 
 module.exports = function (source: string, map: string, meta) {
   this.cacheable();
 
-  console.log('The original file was here:', this.resourcePath);
+  const imports = getImportsData(source, this.resourcePath);
 
-  const imports = parseImports(source);
+  const flattenImports = flatImports(imports);
 
-  this.callback(
-    null,
-    addRawCode(`${source}\n\nvar imports=${JSON.stringify(imports, null, 2)}`),
-    map,
-    meta
-  );
+  this.callback(null, addRawCode(source, flattenImports), map, meta);
 };

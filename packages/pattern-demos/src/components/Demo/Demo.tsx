@@ -32,6 +32,7 @@ export function Demo({ data: dataProp, demoProps }: DemoProps) {
     <CodeDemo
       language="tsx"
       code={data.code ?? data.component.code ?? null}
+      imports={data.component.imports ?? null}
       demoBackground={background}
       {...data.demoProps}
       {...demoProps}

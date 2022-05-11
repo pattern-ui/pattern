@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 import { Language } from 'prism-react-renderer';
 import { CodeIcon } from '@modulz/radix-icons';
-import { usePatternTheme, Paper, Group, ActionIcon, Tooltip } from '@pattern-ui/core';
+import { usePatternTheme, Paper, Group, ActionIcon, Tooltip, Tabs } from '@pattern-ui/core';
 import { Prism } from '@pattern-ui/prism';
 import useStyles from './CodeDemo.styles';
 
 interface CodeDemoProps {
   code?: string;
+  imports?: Array<{
+    raw: string;
+    name: string;
+    content: string;
+  }>;
   language?: Language;
   demoBackground?: string;
   demoBorder?: boolean;
@@ -19,6 +24,7 @@ interface CodeDemoProps {
 
 export default function CodeDemo({
   code,
+  imports,
   language,
   children,
   demoBackground,
@@ -73,11 +79,45 @@ export default function CodeDemo({
         )}
       </Paper>
 
-      {code && visible && (
-        <Prism language={language} className={classes.prism} classNames={{ code: classes.code }}>
-          {code}
-        </Prism>
-      )}
+      {code &&
+        visible &&
+        (!imports || imports.length === 0 ? (
+          <Prism language={language} className={classes.prism} classNames={{ code: classes.code }}>
+            {code}
+          </Prism>
+        ) : (
+          <Tabs defaultValue="demo">
+            <Tabs.List style={{ border: '1px solid #f1f3f5', borderBottom: 'none' }}>
+              <Tabs.Tab value="demo">demo.tsx</Tabs.Tab>
+              {imports.map((imp) => (
+                <Tabs.Tab key={imp.name} value={imp.name}>
+                  {imp.name}
+                </Tabs.Tab>
+              ))}
+            </Tabs.List>
+
+            <Tabs.Panel value="demo">
+              <Prism
+                language={language}
+                className={classes.prism}
+                classNames={{ code: classes.code }}
+              >
+                {code}
+              </Prism>
+            </Tabs.Panel>
+            {imports.map((imp) => (
+              <Tabs.Panel key={imp.name} value={imp.name}>
+                <Prism
+                  language={language}
+                  className={classes.prism}
+                  classNames={{ code: classes.code }}
+                >
+                  {imp.content}
+                </Prism>
+              </Tabs.Panel>
+            ))}
+          </Tabs>
+        ))}
     </div>
   );
 }
