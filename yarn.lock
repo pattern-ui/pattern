@@ -9787,6 +9787,11 @@ parse-entities@^2.0.0:
     is-decimal "^1.0.0"
     is-hexadecimal "^1.0.0"
 
+parse-es6-imports@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/parse-es6-imports/-/parse-es6-imports-1.0.1.tgz#fbfea61afcd94435c7f697fc439616c18853771b"
+  integrity sha1-+/6mGvzZRDXH9pf8Q5YWwYhTdxs=
+
 parse-json@^5.0.0, parse-json@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/parse-json/-/parse-json-5.2.0.tgz#c76fc66dee54231c962b22bcc8a72cf2f99753cd"
