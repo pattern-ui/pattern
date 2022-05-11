@@ -87,12 +87,13 @@ export default function CodeDemo({
           </Prism>
         ) : (
           <Tabs defaultValue="demo">
-            <Tabs.List style={{
-              borderWidth: 1,
-              borderStyle: 'solid',
-              borderColor: theme.colorScheme === 'dark' ? '#25262b' : '#f1f3f5',
-              borderBottom: 'none',
-            }}
+            <Tabs.List
+              style={{
+                borderWidth: 1,
+                borderStyle: 'solid',
+                borderColor: theme.colorScheme === 'dark' ? '#25262b' : '#f1f3f5',
+                borderBottom: 'none',
+              }}
             >
               <Tabs.Tab value="demo">demo.tsx</Tabs.Tab>
               {imports.map((imp) => (
