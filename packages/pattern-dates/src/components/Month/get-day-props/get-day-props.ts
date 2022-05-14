@@ -1,4 +1,4 @@
-import { isSameDate } from '../../utils';
+import { isSameDate } from '../../../utils';
 import { DayModifiers } from '../types';
 import { isWeekend } from './is-weekend/is-weekend';
 import { isOutside } from './is-outside/is-outside';
