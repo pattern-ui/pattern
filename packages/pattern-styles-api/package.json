@@ -16,7 +16,6 @@
     "directory": "packages/pattern-styles-api"
   },
   "peerDependencies": {
-    "@pattern-ui/core": "1.0.0",
     "@pattern-ui/hooks": "1.0.0",
     "@pattern-ui/spotlight": "1.0.0"
   },
