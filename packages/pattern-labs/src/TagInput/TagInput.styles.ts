@@ -1,4 +1,5 @@
-import { createStyles, PatternSize, INPUT_SIZES } from '@pattern-ui/core';
+import { INPUT_SIZES } from '@pattern-ui/input';
+import { createStyles, PatternSize } from '@pattern-ui/styles';
 
 interface TagInputStyles {
   size: PatternSize;

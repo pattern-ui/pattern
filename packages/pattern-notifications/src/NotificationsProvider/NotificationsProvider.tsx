@@ -1,13 +1,9 @@
 import React, { useRef } from 'react';
 import { Transition, TransitionGroup } from 'react-transition-group';
-import {
-  DefaultProps,
-  Portal,
-  PatternStyleSystemSize,
-  getDefaultZIndex,
-  Box,
-} from '@pattern-ui/core';
 import { useReducedMotion, useForceUpdate, useDidUpdate } from '@pattern-ui/hooks';
+import { DefaultProps, getDefaultZIndex, PatternStyleSystemSize } from '@pattern-ui/styles';
+import { Portal } from '@pattern-ui/portal';
+import { Box } from '@pattern-ui/box';
 import { NotificationsContext } from '../Notifications.context';
 import { NotificationsProviderPositioning } from '../types';
 import { useNotificationsEvents } from '../events';

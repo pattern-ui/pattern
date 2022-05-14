@@ -1,4 +1,4 @@
-import { ColorPickerStylesNames } from '@pattern-ui/core';
+import { ColorPickerStylesNames } from '@pattern-ui/color-picker';
 
 export const ColorPicker: Record<ColorPickerStylesNames, string> = {
   wrapper: 'Root element',

@@ -4,16 +4,14 @@ import {
   DefaultProps,
   PatternSize,
   Selectors,
-  InputWrapper,
-  InputWrapperStylesNames,
-  Input,
-  InputStylesNames,
-  CloseButton,
   extractSystemStyles,
-  BaseSelectProps,
-} from '@pattern-ui/core';
-import useStyles, { RIGHT_SECTION_WIDTH } from './TagInput.styles';
+} from '@pattern-ui/styles';
+import { Input, InputStylesNames } from '@pattern-ui/input';
+import { InputWrapper, InputWrapperStylesNames } from '@pattern-ui/input-wrapper';
+import { BaseSelectProps } from '@pattern-ui/select';
+import { CloseButton } from '@pattern-ui/action-icon';
 import { DefaultValue, DefaultValueStylesNames } from './DefaultValue/DefaultValue';
+import useStyles, { RIGHT_SECTION_WIDTH } from './TagInput.styles';
 
 export type TagInputStylesNames =
   | DefaultValueStylesNames

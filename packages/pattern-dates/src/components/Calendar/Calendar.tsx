@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePatternDefaultProps } from '@pattern-ui/core';
+import { usePatternDefaultProps } from '@pattern-ui/styles';
 import { CalendarBase, CalendarBaseProps } from '../CalendarBase';
 import { isSameDate } from '../../utils';
 

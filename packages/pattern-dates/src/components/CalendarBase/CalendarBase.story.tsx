@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { PATTERN_SIZES } from '@pattern-ui/core';
+import { PATTERN_SIZES } from '@pattern-ui/styles';
 import { CalendarBase, CalendarBaseProps } from './CalendarBase';
 
 function Wrapper(props: Partial<CalendarBaseProps>) {

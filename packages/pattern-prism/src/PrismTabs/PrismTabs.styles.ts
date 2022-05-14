@@ -1,4 +1,4 @@
-import { createStyles } from '@pattern-ui/core';
+import { createStyles } from '@pattern-ui/styles';
 
 export default createStyles((theme) => ({
   tab: {

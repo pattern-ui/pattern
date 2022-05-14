@@ -1,4 +1,4 @@
-import { createStyles, PatternSize } from '@pattern-ui/core';
+import { createStyles, PatternSize } from '@pattern-ui/styles';
 
 interface MonthPickerStyles {
   size: PatternSize;

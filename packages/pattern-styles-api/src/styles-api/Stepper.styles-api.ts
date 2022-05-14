@@ -1,4 +1,4 @@
-import type { StepperStylesNames } from '@pattern-ui/core';
+import type { StepperStylesNames } from '@pattern-ui/stepper';
 
 export const Stepper: Record<StepperStylesNames, string> = {
   root: 'Root element',

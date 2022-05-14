@@ -1,13 +1,13 @@
 import React, { forwardRef } from 'react';
 import {
   DefaultProps,
-  Text,
-  Box,
   PatternSize,
   Selectors,
   usePatternDefaultProps,
-} from '@pattern-ui/core';
+} from '@pattern-ui/styles';
 import { upperFirst } from '@pattern-ui/hooks';
+import { Text } from '@pattern-ui/text';
+import { Box } from '@pattern-ui/box';
 import dayjs from 'dayjs';
 import { FirstDayOfWeek } from '../../types';
 import { getMonthDays, getWeekdaysNames, isSameDate } from '../../utils';

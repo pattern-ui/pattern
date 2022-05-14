@@ -1,5 +1,5 @@
 import { PrismTheme } from 'prism-react-renderer';
-import { PatternTheme } from '@pattern-ui/core';
+import { PatternTheme } from '@pattern-ui/styles';
 
 export const dark = (theme: PatternTheme): PrismTheme => ({
   plain: {

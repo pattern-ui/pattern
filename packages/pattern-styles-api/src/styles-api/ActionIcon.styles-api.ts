@@ -1,4 +1,4 @@
-import type { ActionIconStylesNames } from '@pattern-ui/core';
+import { ActionIconStylesNames } from '@pattern-ui/action-icon';
 
 export const ActionIcon: Record<ActionIconStylesNames, string> = {
   root: 'Root element, shared styles for all variants',

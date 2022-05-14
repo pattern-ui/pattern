@@ -1,4 +1,5 @@
-import { createStyles, INPUT_SIZES, PatternSize } from '@pattern-ui/core';
+import { INPUT_SIZES } from '@pattern-ui/input';
+import { createStyles, PatternSize } from '@pattern-ui/styles';
 
 export interface TimeInputStylesParams {
   size: PatternSize;

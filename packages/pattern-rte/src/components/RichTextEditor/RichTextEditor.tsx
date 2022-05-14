@@ -5,10 +5,10 @@ import 'quill-mention';
 import {
   DefaultProps,
   Selectors,
-  Box,
   PatternNumberSize,
   usePatternDefaultProps,
-} from '@pattern-ui/core';
+} from '@pattern-ui/styles';
+import { Box } from '@pattern-ui/box';
 import { useUuid, mergeRefs } from '@pattern-ui/hooks';
 import { Toolbar, ToolbarStylesNames } from '../Toolbar/Toolbar';
 import { DEFAULT_CONTROLS } from './default-control';

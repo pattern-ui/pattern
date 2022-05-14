@@ -1,20 +1,12 @@
 import React, { useState } from 'react';
-import {
-  OptionalPortal,
-  GroupedTransition,
-  PatternTransition,
-  Overlay,
-  Paper,
-  DefaultProps,
-  Selectors,
-  PatternShadow,
-  TextInput,
-  getDefaultZIndex,
-  getGroupedOptions,
-  PatternNumberSize,
-  PatternColor,
-} from '@pattern-ui/core';
 import { useScrollLock, useFocusTrap, useDidUpdate, useFocusReturn } from '@pattern-ui/hooks';
+import { DefaultProps, getDefaultZIndex, PatternColor, PatternNumberSize, PatternShadow, Selectors } from '@pattern-ui/styles';
+import { GroupedTransition, PatternTransition } from '@pattern-ui/transition';
+import { getGroupedOptions } from '@pattern-ui/utils';
+import { OptionalPortal } from '@pattern-ui/portal';
+import { Paper } from '@pattern-ui/paper';
+import { TextInput } from '@pattern-ui/text-input';
+import { Overlay } from '@pattern-ui/overlay';
 import { DefaultAction, DefaultActionProps } from '../DefaultAction/DefaultAction';
 import { ActionsList, ActionsListStylesNames } from '../ActionsList/ActionsList';
 import type { SpotlightAction } from '../types';

@@ -1,4 +1,4 @@
-import type { ProgressStylesNames } from '@pattern-ui/core';
+import type { ProgressStylesNames } from '@pattern-ui/progress';
 
 export const Progress: Record<ProgressStylesNames, string> = {
   root: 'Root element',

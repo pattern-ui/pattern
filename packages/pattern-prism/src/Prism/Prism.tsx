@@ -1,20 +1,20 @@
 import React, { forwardRef } from 'react';
 import Highlight, { defaultProps, Language } from 'prism-react-renderer';
 import {
-  ActionIcon,
   usePatternTheme,
-  Tooltip,
   DefaultProps,
   Selectors,
-  Box,
-  ScrollArea,
   usePatternDefaultProps,
   PatternColor,
-} from '@pattern-ui/core';
+} from '@pattern-ui/styles';
 import { useClipboard } from '@pattern-ui/hooks';
-import { CopyIcon } from './CopyIcon';
-import { getPrismTheme } from './prism-theme';
+import { ScrollArea } from '@pattern-ui/scroll-area';
+import { Box } from '@pattern-ui/box';
+import { Tooltip } from '@pattern-ui/tooltip';
+import { ActionIcon } from '@pattern-ui/action-icon';
 import useStyles from './Prism.styles';
+import { getPrismTheme } from './prism-theme';
+import { CopyIcon } from './CopyIcon';
 
 export type PrismStylesNames = Selectors<typeof useStyles>;
 

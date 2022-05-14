@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { PATTERN_SIZES, Group, TextInput } from '@pattern-ui/core';
 import { SubmitForm } from '@pattern-ui/storybook';
+import { PATTERN_SIZES } from '@pattern-ui/styles';
+import { Group } from '@pattern-ui/group';
+import { TextInput } from '@pattern-ui/text-input';
 import { TagInput } from './TagInput';
 
 function Controlled() {

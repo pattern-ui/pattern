@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import {
-  Portal,
-  Transition,
   PatternNumberSize,
   Selectors,
   DefaultProps,
-  Box,
   usePatternDefaultProps,
-} from '@pattern-ui/core';
+} from '@pattern-ui/styles';
 import { useIsomorphicEffect } from '@pattern-ui/hooks';
+import { Portal } from '@pattern-ui/portal';
+import { Transition } from '@pattern-ui/transition';
+import { Box } from '@pattern-ui/box';
 import { DropzoneStatus } from '../Dropzone';
 import useStyles from './FullscreenDropzone.styles';
 

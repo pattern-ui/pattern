@@ -2,16 +2,16 @@ import React from 'react';
 import {
   DefaultProps,
   Selectors,
-  Highlight,
-  UnstyledButton,
-  Group,
-  Center,
-  Text,
   PatternNumberSize,
   PatternColor,
-} from '@pattern-ui/core';
-import type { SpotlightAction } from '../types';
+} from '@pattern-ui/styles';
+import { UnstyledButton } from '@pattern-ui/button';
+import { Group } from '@pattern-ui/group';
+import { Center } from '@pattern-ui/center';
+import { Text } from '@pattern-ui/text';
+import { Highlight } from '@pattern-ui/highlight';
 import useStyles from './DefaultAction.styles';
+import type { SpotlightAction } from '../types';
 
 export type DefaultActionStylesNames = Selectors<typeof useStyles>;
 

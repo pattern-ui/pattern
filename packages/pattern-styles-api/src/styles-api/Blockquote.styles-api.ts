@@ -1,4 +1,4 @@
-import { BlockquoteStylesNames } from '@pattern-ui/core';
+import { BlockquoteStylesNames } from '@pattern-ui/blockquote';
 
 export const Blockquote: Record<BlockquoteStylesNames, string> = {
   root: 'Root element',

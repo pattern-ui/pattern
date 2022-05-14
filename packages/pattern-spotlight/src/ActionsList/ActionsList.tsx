@@ -1,5 +1,6 @@
 import React from 'react';
-import { DefaultProps, Selectors, Text, PatternNumberSize, PatternColor } from '@pattern-ui/core';
+import { DefaultProps, Selectors, PatternNumberSize, PatternColor } from '@pattern-ui/styles';
+import { Text } from '@pattern-ui/text';
 import type { SpotlightAction } from '../types';
 import type { DefaultActionProps, DefaultActionStylesNames } from '../DefaultAction/DefaultAction';
 import useStyles from './ActionsList.styles';

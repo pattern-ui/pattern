@@ -1,4 +1,4 @@
-import type { ListStylesNames } from '@pattern-ui/core';
+import type { ListStylesNames } from '@pattern-ui/list';
 
 export const List: Record<ListStylesNames, string> = {
   root: 'Root element (ul or ol)',

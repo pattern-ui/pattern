@@ -5,11 +5,9 @@ import {
   PatternNumberSize,
   PatternSize,
   PatternColor,
-  Group,
-  Input,
-  InputBaseProps,
-  InputStylesNames,
-} from '@pattern-ui/core';
+} from '@pattern-ui/styles';
+import { Group } from '@pattern-ui/group';
+import { Input, InputBaseProps, InputStylesNames } from '@pattern-ui/input';
 import useStyles from './PinInput.styles';
 import { createPinArray } from './create-pin-array/create-pin-array';
 import { regex } from './regex/regex';

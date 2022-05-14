@@ -1,5 +1,5 @@
 import { TransitionStatus } from 'react-transition-group';
-import { CSSObject } from '@pattern-ui/core';
+import { CSSObject } from '@pattern-ui/styles';
 import { NotificationsProviderPositioning } from '../../types';
 
 interface NotificationStateStylesProps {

@@ -1,6 +1,6 @@
 import 'dayjs/locale/ru';
 import React from 'react';
-import { PatternProvider } from '@pattern-ui/core';
+import { PatternProvider } from '@pattern-ui/styles';
 import { render, screen } from '@testing-library/react';
 import {
   itSupportsSystemProps,

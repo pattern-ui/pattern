@@ -1,4 +1,4 @@
-import type { NumberInputStylesNames } from '@pattern-ui/core';
+import type { NumberInputStylesNames } from '@pattern-ui/number-input';
 import { Input } from './Input.styles-api';
 import { InputWrapper } from './InputWrapper.styles-api';
 

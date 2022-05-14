@@ -1,7 +1,7 @@
 import React, { useEffect, PropsWithChildren } from 'react';
 import ReactDOM from 'react-dom';
 import { renderHook, WrapperComponent } from '@testing-library/react-hooks';
-import { PatternProvider } from '@pattern-ui/core';
+import { PatternProvider } from '@pattern-ui/styles';
 import { render, screen } from '@testing-library/react';
 import { useModals } from './use-modals';
 import { ModalsProvider } from '../ModalsProvider';

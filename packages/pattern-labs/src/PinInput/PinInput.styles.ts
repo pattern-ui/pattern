@@ -1,4 +1,4 @@
-import { createStyles, PatternNumberSize } from '@pattern-ui/core';
+import { createStyles, PatternNumberSize } from '@pattern-ui/styles';
 
 interface PinInputStyles {
   size: PatternNumberSize;

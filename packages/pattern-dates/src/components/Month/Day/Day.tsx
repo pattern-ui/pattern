@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, PatternSize, Selectors } from '@pattern-ui/core';
+import { DefaultProps, PatternSize, Selectors } from '@pattern-ui/styles';
 import { getDayTabIndex } from './get-day-tab-index/get-day-tab-index';
 import { getDayAutofocus } from './get-day-autofocus/get-day-autofocus';
 import useStyles from './Day.styles';

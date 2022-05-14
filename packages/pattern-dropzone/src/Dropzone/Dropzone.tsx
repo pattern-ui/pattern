@@ -4,11 +4,11 @@ import {
   DefaultProps,
   Selectors,
   PatternNumberSize,
-  LoadingOverlay,
-  Box,
   usePatternDefaultProps,
-} from '@pattern-ui/core';
+} from '@pattern-ui/styles';
 import { assignRef } from '@pattern-ui/hooks';
+import { Box } from '@pattern-ui/box';
+import { LoadingOverlay } from '@pattern-ui/loading-overlay';
 import useStyles from './Dropzone.styles';
 
 export type DropzoneStylesNames = Selectors<typeof useStyles>;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, Selectors } from '@pattern-ui/core';
+import { DefaultProps, Selectors } from '@pattern-ui/styles';
 import type { RichTextEditorLabels } from '../RichTextEditor/default-labels';
 import { ToolbarButton } from './ToolbarButton/ToolbarButton';
 import { CONTROLS, ToolbarControl } from './controls';
