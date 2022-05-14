@@ -10,13 +10,13 @@ import {
   getDefaultZIndex,
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
+import { GroupedTransition, PatternTransition } from '@pattern-ui/transition';
 import { CloseButton } from '../ActionIcon';
 import { Text } from '../Text';
 import { Paper } from '../Paper';
 import { Overlay } from '../Overlay';
 import { OptionalPortal } from '../Portal';
 import { Box } from '../Box';
-import { GroupedTransition, PatternTransition } from '../Transition';
 import useStyles from './Modal.styles';
 
 export type ModalStylesNames = Selectors<typeof useStyles>;

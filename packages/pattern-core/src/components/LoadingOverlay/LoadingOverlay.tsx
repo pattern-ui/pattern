@@ -5,8 +5,8 @@ import {
   getDefaultZIndex,
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
+import { Transition } from '@pattern-ui/transition';
 import { Overlay } from '../Overlay';
-import { Transition } from '../Transition';
 import { Loader, LoaderProps } from '../Loader';
 import { Box } from '../Box';
 import useStyles from './LoadingOverlay.styles';

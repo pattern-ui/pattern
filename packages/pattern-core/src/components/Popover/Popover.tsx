@@ -14,7 +14,7 @@ import {
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
 import { useClickOutside } from '@pattern-ui/hooks';
-import { PatternTransition } from '../Transition';
+import { PatternTransition } from '@pattern-ui/transition';
 import { usePopover } from './use-popover';
 import { PopoverContextProvider } from './Popover.context';
 import {

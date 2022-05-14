@@ -7,11 +7,11 @@ import {
   getDefaultZIndex,
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
+import { PatternTransition } from '@pattern-ui/transition';
 import { InputWrapper, InputWrapperBaseProps, InputWrapperStylesNames } from '../InputWrapper';
 import { Input, InputBaseProps, InputStylesNames } from '../Input';
 import { ColorSwatch } from '../ColorSwatch';
 import { Popper } from '../Popper';
-import { PatternTransition } from '../Transition';
 import { Paper } from '../Paper';
 import {
   ColorPicker,

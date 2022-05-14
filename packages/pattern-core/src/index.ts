@@ -81,5 +81,5 @@ export * from './components/Timeline';
 export * from './components/Title';
 export * from './components/Tooltip';
 export * from './components/TransferList';
-export * from './components/Transition';
+export * from '@pattern-ui/transition';
 export * from './components/TypographyStylesProvider';

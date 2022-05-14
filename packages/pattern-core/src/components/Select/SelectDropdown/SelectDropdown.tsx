@@ -1,8 +1,8 @@
 import React, { forwardRef, useRef } from 'react';
 import { DefaultProps, PatternShadow, Selectors, getDefaultZIndex } from '@pattern-ui/styles';
 import type { Placement } from '@popperjs/core';
+import { PatternTransition } from '@pattern-ui/transition';
 import { SelectScrollArea } from '../SelectScrollArea/SelectScrollArea';
-import { PatternTransition } from '../../Transition';
 import { Paper } from '../../Paper';
 import useStyles from './SelectDropdown.styles';
 import { Popper } from '../../Popper';

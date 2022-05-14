@@ -14,10 +14,10 @@ import {
   getDefaultZIndex,
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
+import { PatternTransition } from '@pattern-ui/transition';
 import { SelectScrollArea } from './SelectScrollArea/SelectScrollArea';
 import { InputWrapper } from '../InputWrapper';
 import { Input } from '../Input';
-import { PatternTransition } from '../Transition';
 import { DefaultItem } from './DefaultItem/DefaultItem';
 import { getSelectRightSectionProps } from './SelectRightSection/get-select-right-section-props';
 import { SelectItems } from './SelectItems/SelectItems';

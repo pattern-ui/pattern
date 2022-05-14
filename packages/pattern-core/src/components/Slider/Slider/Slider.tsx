@@ -7,7 +7,7 @@ import {
   usePatternDefaultProps,
   usePatternTheme,
 } from '@pattern-ui/styles';
-import { PatternTransition } from '../../Transition';
+import { PatternTransition } from '@pattern-ui/transition';
 import { getPosition } from '../utils/get-position/get-position';
 import { getChangeValue } from '../utils/get-change-value/get-change-value';
 import { Thumb, ThumbStylesNames } from '../Thumb/Thumb';

@@ -3,7 +3,7 @@ import { usePopper, StrictModifier } from 'react-popper';
 import { getDefaultZIndex } from '@pattern-ui/styles';
 import type { Placement } from '@popperjs/core';
 import { useDidUpdate } from '@pattern-ui/hooks';
-import { Transition, PatternTransition } from '../Transition';
+import { Transition, PatternTransition } from '@pattern-ui/transition';
 import { parsePopperPosition } from './parse-popper-position/parse-popper-position';
 import { PopperContainer } from './PopperContainer/PopperContainer';
 import useStyles from './Popper.styles';

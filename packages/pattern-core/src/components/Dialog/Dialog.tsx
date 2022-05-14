@@ -8,7 +8,7 @@ import {
   getDefaultZIndex,
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
-import { Transition, PatternTransition } from '../Transition';
+import { Transition, PatternTransition } from '@pattern-ui/transition';
 import { CloseButton } from '../ActionIcon';
 import { Affix } from '../Affix';
 import { Paper, PaperProps } from '../Paper/Paper';

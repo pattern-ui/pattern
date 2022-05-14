@@ -1,6 +1,6 @@
 {
-  "name": "@pattern-ui/core",
-  "description": "React components library focused on usability, accessibility and developer experience",
+  "name": "@pattern-ui/transition",
+  "description": "Pattern UI Transition",
   "version": "1.0.0",
   "main": "cjs/index.js",
   "module": "esm/index.js",
@@ -12,7 +12,7 @@
   "repository": {
     "url": "https://github.com/pattern-ui/pattern.git",
     "type": "git",
-    "directory": "packages/pattern-core"
+    "directory": "packages/pattern-transition"
   },
   "keywords": [
     "react",
@@ -33,13 +33,7 @@
   },
   "dependencies": {
     "@pattern-ui/utils": "1.0.0",
-    "@pattern-ui/styles": "1.0.0",
-    "@pattern-ui/transition": "1.0.0",
-    "@radix-ui/react-scroll-area": "^0.1.1",
-    "react-textarea-autosize": "^8.3.2",
-    "@popperjs/core": "^2.9.3",
-    "react-popper": "^2.2.5",
-    "@floating-ui/react-dom-interactions": "0.3.1"
+    "@pattern-ui/styles": "1.0.0"
   },
   "devDependencies": {}
 }

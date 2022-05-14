@@ -9,13 +9,13 @@ import {
   getDefaultZIndex,
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
+import { GroupedTransition, PatternTransition } from '@pattern-ui/transition';
 import { Paper } from '../Paper';
 import { Overlay } from '../Overlay';
 import { OptionalPortal } from '../Portal';
 import { Text } from '../Text';
 import { Box } from '../Box';
 import { CloseButton } from '../ActionIcon';
-import { GroupedTransition, PatternTransition } from '../Transition';
 import useStyles, { DrawerPosition } from './Drawer.styles';
 
 export type DrawerStylesNames = Exclude<Selectors<typeof useStyles>, 'withOverlay'>;

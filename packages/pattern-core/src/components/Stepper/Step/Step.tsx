@@ -6,11 +6,11 @@ import {
   PatternSize,
   PatternNumberSize,
 } from '@pattern-ui/styles';
+import { Transition } from '@pattern-ui/transition';
 import { Text } from '../../Text';
 import { Loader } from '../../Loader';
 import { CheckboxIcon } from '../../Checkbox';
 import { UnstyledButton } from '../../Button';
-import { Transition } from '../../Transition';
 import useStyles from './Step.styles';
 
 export type StepStylesNames = Selectors<typeof useStyles>;

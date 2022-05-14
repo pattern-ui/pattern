@@ -1,7 +1,7 @@
 import React, { useState, forwardRef } from 'react';
 import { DefaultProps, PatternNumberSize, PatternColor, Selectors } from '@pattern-ui/styles';
+import { Transition, PatternTransition } from '@pattern-ui/transition';
 import { Box } from '../../Box';
-import { Transition, PatternTransition } from '../../Transition';
 import useStyles from './Thumb.styles';
 
 export type ThumbStylesNames = Selectors<typeof useStyles>;
