@@ -25,7 +25,7 @@ import {
   useWindowEvent,
   useUuid,
 } from '@pattern-ui/hooks';
-import { CalendarBaseStylesNames } from '../CalendarBase/CalendarBase';
+import { CalendarBaseStylesNames } from '../CalendarBase';
 import useStyles from './DatePickerBase.styles';
 
 export type DatePickerStylesNames =

@@ -104,7 +104,7 @@ Checks if component attaches correct styles to inner elements:
 
 ```tsx
 import { itSupportsStylesApi } from '@pattern-ui/tests';
-import { Button } from './Button';
+import { Button } from '@pattern-ui/button';
 import { Button as ButtonStylesApi } from './styles.api';
 
 describe('@pattern-ui/core/Button', () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { usePatternDefaultProps } from '@pattern-ui/core';
-import { CalendarBase, CalendarBaseProps } from '../CalendarBase/CalendarBase';
+import { CalendarBase, CalendarBaseProps } from '../CalendarBase';
 import { isSameDate } from '../../utils';
 
 export interface CalendarProps<Multiple extends boolean = false>

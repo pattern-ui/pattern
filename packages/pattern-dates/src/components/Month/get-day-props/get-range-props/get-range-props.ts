@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { isSameDate } from '../../../../utils';
+import { isSameDate } from '../../utils';
 
 export function getRangeProps(date: Date, range: [Date, Date]) {
   const hasRange = Array.isArray(range) && range.every((val) => val instanceof Date);
