@@ -4,7 +4,7 @@ import { PATTERN_SIZES, PatternProvider } from '@pattern-ui/styles';
 import { WithinOverlays, SubmitForm } from '@pattern-ui/storybook';
 import { Group } from '@pattern-ui/group';
 import { TextInput } from '@pattern-ui/text-input';
-import { SegmentedControl } from '../SegmentedControl/SegmentedControl';
+import { SegmentedControl } from '@pattern-ui/segmented-control';
 import { MultiSelect } from './MultiSelect';
 
 const data = [

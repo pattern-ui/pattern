@@ -1,15 +1,14 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { storiesOf } from '@storybook/react';
 import { PatternProvider } from '@pattern-ui/styles';
-import { Button } from '../Button/Button';
+import { Button } from '@pattern-ui/button';
 import { Text } from '@pattern-ui/text';
-import { Select } from '@pattern-ui/select';
-import { Autocomplete } from '../Autocomplete/Autocomplete';
-import { Popover } from '../Popover/Popover';
-import { ColorInput } from '../ColorInput/ColorInput';
-import { Menu } from '../Menu/Menu';
+import { Select, MultiSelect } from '@pattern-ui/select';
+import { Autocomplete } from '@pattern-ui/autocomplete';
+import { Popover } from '@pattern-ui/popover';
+import { ColorInput } from '@pattern-ui/color-input';
+import { Menu } from '@pattern-ui/menu';
 import { Modal } from './Modal';
-import { MultiSelect } from '../MultiSelect/MultiSelect';
 
 function WrappedModal(
   props: Omit<React.ComponentPropsWithoutRef<typeof Modal>, 'opened' | 'onClose'>

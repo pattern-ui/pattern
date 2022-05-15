@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { WithinOverlays } from '@pattern-ui/storybook';
 import { TextInput } from '@pattern-ui/text-input';
-import { Container } from '../Container';
+import { Container } from '@pattern-ui/container';
 import { Divider } from '@pattern-ui/divider';
 import { Menu } from './Menu';
 

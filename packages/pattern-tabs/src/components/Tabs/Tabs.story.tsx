@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Package } from 'tabler-icons-react';
-import { Tabs, TabsProps } from './Tabs';
-import { Badge } from '../Badge';
+import { Badge } from '@pattern-ui/badge';
 import { Box } from '@pattern-ui/box';
 import { Button } from '@pattern-ui/button';
+import { Tabs, TabsProps } from './Tabs';
 
 export default {
   title: 'Tabs',

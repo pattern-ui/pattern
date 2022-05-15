@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { PatternProvider } from '@pattern-ui/styles';
 import { Group } from '@pattern-ui/group';
-import { Button } from '../Button/Button';
+import { Button } from '@pattern-ui/button';
 import { Chip } from './Chip/Chip';
 import { Chips } from './Chips';
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { DEFAULT_THEME } from '@pattern-ui/styles';
-import { Button } from '../Button/Button';
+import { Button } from '@pattern-ui/button';
 import { Group } from '@pattern-ui/group';
 import { Progress } from './Progress';
 

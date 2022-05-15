@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { PatternProvider } from '@pattern-ui/styles';
-import { Button } from '../Button/Button';
+import { Button } from '@pattern-ui/button';
 import { SegmentedControl, SegmentedControlProps } from './SegmentedControl';
 
 const stringData = ['React', 'Angular', 'Vue', 'Very long label'];

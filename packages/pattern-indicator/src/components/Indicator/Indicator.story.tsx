@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar } from '../Avatar';
+import { Avatar } from '@pattern-ui/avatar';
 import { Box } from '@pattern-ui/box';
 import { Group } from '@pattern-ui/group';
 import { Indicator } from './Indicator';
