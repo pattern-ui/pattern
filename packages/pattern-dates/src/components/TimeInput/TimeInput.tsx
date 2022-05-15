@@ -8,7 +8,11 @@ import {
 } from '@pattern-ui/styles';
 import { useDidUpdate, useMergedRef, useUuid } from '@pattern-ui/hooks';
 import { Input, InputBaseProps, InputStylesNames } from '@pattern-ui/input';
-import { InputWrapper, InputWrapperBaseProps, InputWrapperStylesNames } from '@pattern-ui/input-wrapper';
+import {
+  InputWrapper,
+  InputWrapperBaseProps,
+  InputWrapperStylesNames,
+} from '@pattern-ui/input-wrapper';
 import { CloseButton } from '@pattern-ui/action-icon';
 import { TimeField } from '../TimeInputBase/TimeField/TimeField';
 import { createTimeHandler } from '../TimeInputBase/create-time-handler/create-time-handler';

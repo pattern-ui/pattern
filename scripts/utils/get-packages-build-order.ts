@@ -6,7 +6,9 @@ export async function getPackageBuildOrder(
   pkg: Package,
   order: Record<string, number> = {}
 ) {
-  const depSelf = Object.keys(pkg.packageJson.dependencies).find(it => it === pkg.packageJson.name);
+  const depSelf = Object.keys(pkg.packageJson.dependencies).find(
+    (it) => it === pkg.packageJson.name
+  );
 
   if (depSelf) {
     throw new Error(`package ${pkg.packageJson.name} depends on itself`);

@@ -14,7 +14,11 @@ import {
   useWindowEvent,
   useUuid,
 } from '@pattern-ui/hooks';
-import { InputWrapper, InputWrapperBaseProps, InputWrapperStylesNames } from '@pattern-ui/input-wrapper';
+import {
+  InputWrapper,
+  InputWrapperBaseProps,
+  InputWrapperStylesNames,
+} from '@pattern-ui/input-wrapper';
 import { Input, InputBaseProps, InputStylesNames } from '@pattern-ui/input';
 import { Popper } from '@pattern-ui/popper';
 import { Modal } from '@pattern-ui/modal';

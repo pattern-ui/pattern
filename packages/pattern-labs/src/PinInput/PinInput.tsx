@@ -1,11 +1,6 @@
 import React, { forwardRef, useRef, useEffect, useState } from 'react';
 import { useUncontrolled, useUuid } from '@pattern-ui/hooks';
-import {
-  DefaultProps,
-  PatternNumberSize,
-  PatternSize,
-  PatternColor,
-} from '@pattern-ui/styles';
+import { DefaultProps, PatternNumberSize, PatternSize, PatternColor } from '@pattern-ui/styles';
 import { Group } from '@pattern-ui/group';
 import { Input, InputBaseProps, InputStylesNames } from '@pattern-ui/input';
 import useStyles from './PinInput.styles';

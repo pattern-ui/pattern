@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import { useScrollLock, useFocusTrap, useDidUpdate, useFocusReturn } from '@pattern-ui/hooks';
-import { DefaultProps, getDefaultZIndex, PatternColor, PatternNumberSize, PatternShadow, Selectors } from '@pattern-ui/styles';
+import {
+  DefaultProps,
+  getDefaultZIndex,
+  PatternColor,
+  PatternNumberSize,
+  PatternShadow,
+  Selectors,
+} from '@pattern-ui/styles';
 import { GroupedTransition, PatternTransition } from '@pattern-ui/transition';
 import { getGroupedOptions } from '@pattern-ui/utils';
 import { OptionalPortal } from '@pattern-ui/portal';

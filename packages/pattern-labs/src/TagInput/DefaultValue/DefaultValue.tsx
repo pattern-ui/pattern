@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  DefaultProps,
-  PatternSize,
-  PatternNumberSize,
-  Selectors,
-} from '@pattern-ui/styles';
+import { DefaultProps, PatternSize, PatternNumberSize, Selectors } from '@pattern-ui/styles';
 import { CloseButton } from '@pattern-ui/action-icon';
 import useStyles from './DefaultValue.styles';
 

@@ -8,7 +8,11 @@ import {
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
 import { PatternTransition } from '@pattern-ui/transition';
-import { InputWrapper, InputWrapperBaseProps, InputWrapperStylesNames } from '@pattern-ui/input-wrapper';
+import {
+  InputWrapper,
+  InputWrapperBaseProps,
+  InputWrapperStylesNames,
+} from '@pattern-ui/input-wrapper';
 import { Input, InputBaseProps, InputStylesNames } from '@pattern-ui/input';
 import { ColorSwatch } from '@pattern-ui/color-swatch';
 import { Popper } from '@pattern-ui/popper';
@@ -17,7 +21,10 @@ import {
   ColorPicker,
   ColorPickerBaseProps,
   ColorPickerStylesNames,
- convertHsvaTo, isColorValid, parseColor } from '@pattern-ui/color-picker';
+  convertHsvaTo,
+  isColorValid,
+  parseColor,
+} from '@pattern-ui/color-picker';
 import useStyles from './ColorInput.styles';
 
 export type ColorInputStylesNames =

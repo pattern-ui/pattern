@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  DefaultProps,
-  Selectors,
-  PatternNumberSize,
-  PatternColor,
-} from '@pattern-ui/styles';
+import { DefaultProps, Selectors, PatternNumberSize, PatternColor } from '@pattern-ui/styles';
 import { UnstyledButton } from '@pattern-ui/button';
 import { Group } from '@pattern-ui/group';
 import { Center } from '@pattern-ui/center';

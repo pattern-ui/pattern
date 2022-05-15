@@ -1,11 +1,6 @@
 import React, { useState, useRef, forwardRef } from 'react';
 import { useUncontrolled, useMergedRef, useUuid } from '@pattern-ui/hooks';
-import {
-  DefaultProps,
-  PatternSize,
-  Selectors,
-  extractSystemStyles,
-} from '@pattern-ui/styles';
+import { DefaultProps, PatternSize, Selectors, extractSystemStyles } from '@pattern-ui/styles';
 import { Input, InputStylesNames } from '@pattern-ui/input';
 import { InputWrapper, InputWrapperStylesNames } from '@pattern-ui/input-wrapper';
 import { BaseSelectProps } from '@pattern-ui/select';
