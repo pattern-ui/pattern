@@ -1,4 +1,4 @@
-import { BreadcrumbsStylesNames } from '@pattern-ui/core';
+import { BreadcrumbsStylesNames } from '@pattern-ui/breadcrumbs';
 
 export const Breadcrumbs: Record<BreadcrumbsStylesNames, string> = {
   root: 'Root element',

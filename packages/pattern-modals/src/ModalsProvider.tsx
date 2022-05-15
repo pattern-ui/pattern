@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react';
-import { Modal } from '@pattern-ui/core';
+import { Modal } from '@pattern-ui/modal';
 import { randomId } from '@pattern-ui/hooks';
 import {
   ModalsContext,

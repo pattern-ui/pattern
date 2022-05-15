@@ -1,6 +1,6 @@
-# Pattern Dropzone
+# @pattern-ui/dropzone
 
-Capture files from user
+Pattern Pattern-Dropzone library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Capture files from user
 
 ```sh
 # With yarn
-yarn add @pattern-ui/dropzone @pattern-ui/core @pattern-ui/hooks
+yarn add @pattern-ui/pattern-dropzone
 
 # With npm
-npm install @pattern-ui/dropzone @pattern-ui/core @pattern-ui/hooks
+npm install @pattern-ui/pattern-dropzone
 ```
 
 ## License

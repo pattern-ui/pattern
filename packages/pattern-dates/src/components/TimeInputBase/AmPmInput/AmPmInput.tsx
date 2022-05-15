@@ -1,6 +1,6 @@
 import React, { useRef, forwardRef } from 'react';
 import { useMergedRef } from '@pattern-ui/hooks';
-import { PatternSize } from '@pattern-ui/core';
+import { PatternSize } from '@pattern-ui/styles';
 import useStyles from '../TimeInputBase.styles';
 
 interface AmPmSelectProps

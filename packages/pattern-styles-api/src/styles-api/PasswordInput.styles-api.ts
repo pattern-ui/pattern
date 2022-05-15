@@ -1,4 +1,4 @@
-import type { PasswordInputStylesNames } from '@pattern-ui/core';
+import type { PasswordInputStylesNames } from '@pattern-ui/password-input';
 import { TextInput } from './TextInput.styles-api';
 
 export const PasswordInput: Record<PasswordInputStylesNames, string> = {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePatternTheme } from '@pattern-ui/core';
+import { usePatternTheme } from '@pattern-ui/styles';
 
 interface ArrowIconProps extends React.ComponentPropsWithoutRef<'svg'> {
   direction: 'left' | 'right';

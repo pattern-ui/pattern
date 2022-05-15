@@ -1,0 +1,51 @@
+{
+  "name": "@pattern-ui/modal",
+  "description": "Pattern UI Modal library",
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "lokielse <lokielse@gmail.com>",
+  "sideEffects": false,
+  "homepage": "https://pattern.icu/",
+  "repository": {
+    "url": "https://github.com/pattern-ui/pattern.git",
+    "type": "git",
+    "directory": "packages/pattern-modal"
+  },
+  "keywords": [
+    "react",
+    "next",
+    "nextjs",
+    "ui",
+    "components",
+    "ui-kit",
+    "library",
+    "frontend",
+    "design",
+    "emotion",
+    "pattern-ui",
+    "pattern",
+    "modal"
+  ],
+  "dependencies": {
+    "@pattern-ui/utils": "1.0.0",
+    "@pattern-ui/styles": "1.0.0",
+    "@pattern-ui/hooks": "1.0.0",
+    "@pattern-ui/box": "1.0.0",
+    "@pattern-ui/button": "1.0.0",
+    "@pattern-ui/action-icon": "1.0.0",
+    "@pattern-ui/loader": "1.0.0",
+    "@pattern-ui/overlay": "1.0.0",
+    "@pattern-ui/group": "1.0.0",
+    "@pattern-ui/portal": "1.0.0",
+    "@pattern-ui/text": "1.0.0",
+    "@pattern-ui/transition": "1.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {}
+}

@@ -1,4 +1,4 @@
-import { InputStylesNames } from '@pattern-ui/core';
+import { InputStylesNames } from '@pattern-ui/input';
 
 export const Input: Record<InputStylesNames, string> = {
   wrapper: 'Root Input element',

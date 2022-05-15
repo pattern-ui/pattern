@@ -1,6 +1,6 @@
-# Pattern dates
+# @pattern-ui/dates
 
-Calendars, date and time pickers
+Pattern Pattern-Dates library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Calendars, date and time pickers
 
 ```sh
 # With yarn
-yarn add @pattern-ui/core @pattern-ui/hooks @pattern-ui/dates dayjs
+yarn add @pattern-ui/pattern-dates
 
 # With npm
-npm install @pattern-ui/core @pattern-ui/hooks @pattern-ui/dates dayjs
+npm install @pattern-ui/pattern-dates
 ```
 
 ## License

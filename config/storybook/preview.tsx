@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { useDarkMode } from 'storybook-dark-mode';
-import { PatternProvider, ColorSchemeProvider, Affix, ActionIcon } from '@pattern-ui/core';
+import { PatternProvider, ColorSchemeProvider } from '@pattern-ui/styles';
 import { useHotkeys } from '@pattern-ui/hooks';
 import { NotificationsProvider } from '@pattern-ui/notifications';
 import rtlPlugin from 'stylis-plugin-rtl';
+import { Affix } from '@pattern-ui/affix';
+import { ActionIcon } from '@pattern-ui/action-icon';
 
 export const parameters = { layout: 'fullscreen' };
 

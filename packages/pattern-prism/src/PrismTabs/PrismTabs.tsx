@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs, TabsProps, TabsPanelProps } from '@pattern-ui/core';
+import { Tabs, TabsProps, TabsPanelProps } from '@pattern-ui/tabs';
 import { Prism, PrismProps } from '../Prism/Prism';
 import useStyles from './PrismTabs.styles';
 

@@ -1,23 +1,12 @@
 import React, { useRef, useState, forwardRef } from 'react';
 import {
   DefaultProps,
-  Input,
-  InputWrapper,
-  InputBaseProps,
-  InputWrapperBaseProps,
-  Paper,
-  Popper,
-  PatternTransition,
-  InputStylesNames,
-  InputWrapperStylesNames,
   PatternSize,
-  Modal,
-  CloseButton,
   PatternShadow,
   Selectors,
   extractSystemStyles,
   getDefaultZIndex,
-} from '@pattern-ui/core';
+} from '@pattern-ui/styles';
 import {
   useClickOutside,
   useFocusTrap,
@@ -25,7 +14,18 @@ import {
   useWindowEvent,
   useUuid,
 } from '@pattern-ui/hooks';
-import { CalendarBaseStylesNames } from '../CalendarBase/CalendarBase';
+import {
+  InputWrapper,
+  InputWrapperBaseProps,
+  InputWrapperStylesNames,
+} from '@pattern-ui/input-wrapper';
+import { Input, InputBaseProps, InputStylesNames } from '@pattern-ui/input';
+import { Popper } from '@pattern-ui/popper';
+import { Modal } from '@pattern-ui/modal';
+import { PatternTransition } from '@pattern-ui/transition';
+import { CloseButton } from '@pattern-ui/action-icon';
+import { Paper } from '@pattern-ui/paper';
+import { CalendarBaseStylesNames } from '../CalendarBase';
 import useStyles from './DatePickerBase.styles';
 
 export type DatePickerStylesNames =

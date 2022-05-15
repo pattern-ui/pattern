@@ -1,4 +1,4 @@
-import type { NativeSelectStylesNames } from '@pattern-ui/core';
+import type { NativeSelectStylesNames } from '@pattern-ui/select';
 import { Input } from './Input.styles-api';
 import { InputWrapper } from './InputWrapper.styles-api';
 

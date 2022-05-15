@@ -1,4 +1,4 @@
-import { ChipStylesNames } from '@pattern-ui/core';
+import { ChipStylesNames } from '@pattern-ui/chips';
 
 export const Chip: Record<ChipStylesNames, string> = {
   root: 'Root element',

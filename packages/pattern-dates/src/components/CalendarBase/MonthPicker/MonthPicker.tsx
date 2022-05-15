@@ -1,5 +1,6 @@
 import React from 'react';
-import { DefaultProps, Selectors, UnstyledButton, PatternSize } from '@pattern-ui/core';
+import { DefaultProps, Selectors, PatternSize } from '@pattern-ui/styles';
+import { UnstyledButton } from '@pattern-ui/button';
 import { getMonthsNames } from '../../../utils';
 import { CalendarHeader, CalendarHeaderStylesNames } from '../CalendarHeader/CalendarHeader';
 import { isMonthInRange } from './is-month-in-range/is-month-in-range';

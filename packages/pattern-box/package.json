@@ -1,0 +1,42 @@
+{
+  "name": "@pattern-ui/box",
+  "description": "Pattern UI Box library",
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "lokielse <lokielse@gmail.com>",
+  "sideEffects": false,
+  "homepage": "https://pattern.icu/",
+  "repository": {
+    "url": "https://github.com/pattern-ui/pattern.git",
+    "type": "git",
+    "directory": "packages/pattern-box"
+  },
+  "keywords": [
+    "react",
+    "next",
+    "nextjs",
+    "ui",
+    "components",
+    "ui-kit",
+    "library",
+    "frontend",
+    "design",
+    "emotion",
+    "pattern-ui",
+    "pattern",
+    "box"
+  ],
+  "dependencies": {
+    "@pattern-ui/utils": "1.0.0",
+    "@pattern-ui/styles": "1.0.0",
+    "@pattern-ui/hooks": "1.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {}
+}

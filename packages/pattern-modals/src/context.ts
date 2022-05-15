@@ -1,5 +1,5 @@
 import { createContext, ReactNode } from 'react';
-import { ModalProps } from '@pattern-ui/core';
+import { ModalProps } from '@pattern-ui/modal';
 import type { ConfirmModalProps } from './ConfirmModal';
 
 export type ModalSettings = Partial<Omit<ModalProps, 'opened'>>;

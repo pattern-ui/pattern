@@ -1,7 +1,8 @@
 /* eslint-disable no-console */
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { PatternProvider, TextInput } from '@pattern-ui/core';
+import { PatternProvider } from '@pattern-ui/styles';
+import { TextInput } from '@pattern-ui/text-input';
 import { DateRangePicker } from './DateRangePicker';
 
 function Controlled() {

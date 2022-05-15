@@ -1,4 +1,4 @@
-import type { NotificationStylesNames } from '@pattern-ui/core';
+import type { NotificationStylesNames } from '@pattern-ui/notification';
 
 export const Notification: Record<NotificationStylesNames, string> = {
   root: 'Root element',

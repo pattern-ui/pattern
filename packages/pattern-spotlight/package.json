@@ -15,11 +15,21 @@
     "directory": "packages/pattern-spotlight"
   },
   "peerDependencies": {
-    "@pattern-ui/core": "1.0.0",
-    "@pattern-ui/hooks": "1.0.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@pattern-ui/hooks": "1.0.0",
+    "@pattern-ui/text": "1.0.0",
+    "@pattern-ui/button": "1.0.0",
+    "@pattern-ui/group": "1.0.0",
+    "@pattern-ui/center": "1.0.0",
+    "@pattern-ui/highlight": "1.0.0",
+    "@pattern-ui/transition": "1.0.0",
+    "@pattern-ui/portal": "1.0.0",
+    "@pattern-ui/paper": "1.0.0",
+    "@pattern-ui/text-input": "1.0.0",
+    "@pattern-ui/overlay": "1.0.0"
+  },
   "devDependencies": {}
 }

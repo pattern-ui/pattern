@@ -1,6 +1,7 @@
 import React, { useRef, forwardRef, useState } from 'react';
 import { useMergedRef, clamp } from '@pattern-ui/hooks';
-import { Text, PatternSize } from '@pattern-ui/core';
+import { PatternSize } from '@pattern-ui/styles';
+import { Text } from '@pattern-ui/text';
 import { padTime } from '../pad-time/pad-time';
 import useStyles from '../TimeInputBase.styles';
 import type { createTimeHandler } from '../create-time-handler/create-time-handler';

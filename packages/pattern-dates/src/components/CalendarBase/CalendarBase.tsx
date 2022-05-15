@@ -1,6 +1,7 @@
 import React, { useRef, useState, forwardRef } from 'react';
 import { useUncontrolled } from '@pattern-ui/hooks';
-import { Box, PatternSize, Selectors, DefaultProps } from '@pattern-ui/core';
+import { PatternSize, Selectors, DefaultProps } from '@pattern-ui/styles';
+import { Box } from '@pattern-ui/box';
 import { MonthSettings, DayKeydownPayload } from '../Month';
 import { YearPicker, YearPickerStylesNames } from './YearPicker/YearPicker';
 import { MonthPicker, MonthPickerStylesNames } from './MonthPicker/MonthPicker';

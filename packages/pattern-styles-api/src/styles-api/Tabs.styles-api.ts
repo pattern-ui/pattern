@@ -1,4 +1,4 @@
-import type { TabsStylesNames } from '@pattern-ui/core';
+import type { TabsStylesNames } from '@pattern-ui/tabs';
 
 export const Tabs: Record<TabsStylesNames, string> = {
   root: 'Root element',

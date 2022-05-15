@@ -1,6 +1,6 @@
-# Pattern modals manager
+# @pattern-ui/modals
 
-Manage modals state
+Pattern Pattern-Modals library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Manage modals state
 
 ```sh
 # With yarn
-yarn add @pattern-ui/hooks @pattern-ui/core @pattern-ui/modals
+yarn add @pattern-ui/pattern-modals
 
 # With npm
-npm install @pattern-ui/hooks @pattern-ui/core @pattern-ui/modals
+npm install @pattern-ui/pattern-modals
 ```
 
 ## License

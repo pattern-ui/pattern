@@ -1,14 +1,10 @@
 import React from 'react';
-import {
-  ActionIcon,
-  UnstyledButton,
-  SelectChevronIcon,
-  PatternSize,
-  Selectors,
-  DefaultProps,
-} from '@pattern-ui/core';
-import { ArrowIcon } from './ArrowIcon';
+import { PatternSize, Selectors, DefaultProps } from '@pattern-ui/styles';
+import { ActionIcon } from '@pattern-ui/action-icon';
+import { UnstyledButton } from '@pattern-ui/button';
+import { SelectChevronIcon } from '@pattern-ui/select';
 import useStyles from './CalendarHeader.styles';
+import { ArrowIcon } from './ArrowIcon';
 
 export type CalendarHeaderStylesNames = Selectors<typeof useStyles>;
 

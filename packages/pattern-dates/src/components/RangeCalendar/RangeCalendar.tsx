@@ -1,9 +1,9 @@
 import dayjs from 'dayjs';
 import React, { useState, forwardRef } from 'react';
-import { usePatternDefaultProps } from '@pattern-ui/core';
+import { usePatternDefaultProps } from '@pattern-ui/styles';
 import { isSameDate } from '../../utils';
 import { DayModifiers } from '../Month';
-import { CalendarBase, CalendarBaseProps } from '../CalendarBase/CalendarBase';
+import { CalendarBase, CalendarBaseProps } from '../CalendarBase';
 
 export interface RangeCalendarProps extends Omit<CalendarBaseProps, 'value' | 'onChange'> {
   /** Selected dates */

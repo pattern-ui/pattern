@@ -1,4 +1,4 @@
-import type { SwitchStylesNames } from '@pattern-ui/core';
+import type { SwitchStylesNames } from '@pattern-ui/switch';
 
 export const Switch: Record<SwitchStylesNames, string> = {
   root: 'Root element',

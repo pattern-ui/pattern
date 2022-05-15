@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import { Notification, DefaultProps } from '@pattern-ui/core';
+import { Notification } from '@pattern-ui/notification';
+import { DefaultProps } from '@pattern-ui/styles';
 import getAutoClose from './get-auto-close/get-auto-close';
 import { NotificationProps } from '../types';
 

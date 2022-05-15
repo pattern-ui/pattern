@@ -1,4 +1,4 @@
-import type { TextInputStylesNames } from '@pattern-ui/core';
+import type { TextInputStylesNames } from '@pattern-ui/text-input';
 import { Input } from './Input.styles-api';
 import { InputWrapper } from './InputWrapper.styles-api';
 

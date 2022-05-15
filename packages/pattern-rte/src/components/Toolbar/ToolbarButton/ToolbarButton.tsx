@@ -1,5 +1,5 @@
 import React from 'react';
-import { ActionIcon, ActionIconProps } from '@pattern-ui/core';
+import { ActionIcon, ActionIconProps } from '@pattern-ui/action-icon';
 import useStyles from './ToolbarButton.styles';
 
 interface ToolbarButtonProps extends ActionIconProps<'button'> {

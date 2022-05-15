@@ -1,4 +1,4 @@
-import { createStyles, PatternSize } from '@pattern-ui/core';
+import { createStyles, PatternSize } from '@pattern-ui/styles';
 import { sizes as DAY_SIZES } from '../Month/Day/Day.styles';
 
 interface CalendarBaseStyles {

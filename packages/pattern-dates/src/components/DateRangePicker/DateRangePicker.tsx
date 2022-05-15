@@ -1,11 +1,11 @@
 import dayjs from 'dayjs';
 import React, { useState, useRef, forwardRef } from 'react';
 import { useUncontrolled, useMergedRef, upperFirst } from '@pattern-ui/hooks';
-import { usePatternTheme, usePatternDefaultProps } from '@pattern-ui/core';
+import { usePatternTheme, usePatternDefaultProps } from '@pattern-ui/styles';
 import { FirstDayOfWeek } from '../../types';
 import { CalendarSharedProps } from '../CalendarBase/CalendarBase';
-import { RangeCalendar } from '../RangeCalendar/RangeCalendar';
-import { DatePickerBase, DatePickerBaseSharedProps } from '../DatePickerBase/DatePickerBase';
+import { RangeCalendar } from '../RangeCalendar';
+import { DatePickerBase, DatePickerBaseSharedProps } from '../DatePickerBase';
 
 export interface DateRangePickerProps
   extends Omit<DatePickerBaseSharedProps, 'value' | 'onChange'>,

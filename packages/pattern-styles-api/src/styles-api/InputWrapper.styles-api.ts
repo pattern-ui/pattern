@@ -1,4 +1,4 @@
-import type { InputWrapperStylesNames } from '@pattern-ui/core';
+import type { InputWrapperStylesNames } from '@pattern-ui/input-wrapper';
 
 export const InputWrapper: Record<InputWrapperStylesNames, string> = {
   root: 'Root element',

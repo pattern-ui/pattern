@@ -1,4 +1,4 @@
-import type { SliderStylesNames } from '@pattern-ui/core';
+import type { SliderStylesNames } from '@pattern-ui/slider';
 
 export const Slider: Record<SliderStylesNames, string> = {
   root: 'Root element',

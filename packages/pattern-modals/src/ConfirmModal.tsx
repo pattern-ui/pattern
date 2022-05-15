@@ -1,5 +1,7 @@
 import React from 'react';
-import { Button, Group, Box, ButtonProps, GroupProps } from '@pattern-ui/core';
+import { Button, ButtonProps } from '@pattern-ui/button';
+import { Group, GroupProps } from '@pattern-ui/group';
+import { Box } from '@pattern-ui/box';
 import { ConfirmLabels } from './context';
 import { useModals } from './use-modals/use-modals';
 

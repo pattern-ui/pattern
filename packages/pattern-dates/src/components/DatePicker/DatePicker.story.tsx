@@ -2,8 +2,11 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { useDisclosure } from '@pattern-ui/hooks';
-import { PATTERN_SIZES, PatternProvider, TextInput, Modal, Button } from '@pattern-ui/core';
+import { PATTERN_SIZES, PatternProvider } from '@pattern-ui/styles';
 import { WithinOverlays, SubmitForm } from '@pattern-ui/storybook';
+import { Button } from '@pattern-ui/button';
+import { Modal } from '@pattern-ui/modal';
+import { TextInput } from '@pattern-ui/text-input';
 import { DatePicker } from './DatePicker';
 
 function Controlled() {

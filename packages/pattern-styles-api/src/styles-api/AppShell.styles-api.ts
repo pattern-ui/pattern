@@ -1,4 +1,4 @@
-import type { AppShellStylesNames, HorizontalSectionStylesNames } from '@pattern-ui/core';
+import { AppShellStylesNames, HorizontalSectionStylesNames } from '@pattern-ui/app-shell';
 
 export const AppShell: Record<AppShellStylesNames, string> = {
   root: 'Root element, wraps Navbar, Header and content',
