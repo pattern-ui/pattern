@@ -1,9 +1,7 @@
 {
   "extends": "../../tsconfig.base.json",
-  "include": [
-    "./src",
-    "../../config/types",
-    "../../tests"
+  "include": ["./src", "./types",
+    "../../config/types"
   ],
   "exclude": [
     "./lib",
@@ -22,19 +20,12 @@
     "outDir": "lib",
     "declaration": true,
     "declarationMap": true,
-    "declarationDir": "lib",
     "composite": true,
+    "declarationDir": "lib",
     "paths": {
-      "@pattern-ui/hooks": ["../pattern-hooks/src"],
-      "@pattern-ui/styles": ["../pattern-styles/src"],
-      "@pattern-ui/utils": ["../pattern-utils/src"],
-      "@pattern-ui/tests": ["../pattern-tests/src"]
+      "@pattern-ui/core": ["../pattern-core/src"],
+      "@pattern-ui/hooks": ["../pattern-hooks/src"]
     }
   },
-  "references": [
-    { "path": "../pattern-hooks" },
-    { "path": "../pattern-utils" },
-    { "path": "../pattern-styles" },
-    { "path": "../pattern-tests" }
-  ]
+  "references": [{ "path": "../pattern-core" }, { "path": "../pattern-hooks" }]
 }
