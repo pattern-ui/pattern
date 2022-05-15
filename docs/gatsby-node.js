@@ -20,7 +20,8 @@ const packages = getDirectories(PACKAGES_PATH).map(it => {
 exports.onCreateWebpackConfig = ({actions, loaders, getConfig}) => {
   const config = getConfig();
 
-  packages.forEach(pkg=>{
+  packages.forEach(pkg => {
+    config.resolve.alias[pkg.data.name + '/src'] = path.resolve(`${pkg.path}`, 'src')
     config.resolve.alias[pkg.data.name] = path.resolve(`${pkg.path}`, 'src')
   })
 
