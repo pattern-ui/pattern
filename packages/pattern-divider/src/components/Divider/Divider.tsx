@@ -6,9 +6,9 @@ import {
   PatternColor,
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
-import useStyles from './Divider.styles';
 import { Text, TextProps } from '@pattern-ui/text';
 import { Box } from '@pattern-ui/box';
+import useStyles from './Divider.styles';
 
 export type DividerStylesNames = 'label';
 

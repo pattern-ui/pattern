@@ -1,7 +1,7 @@
 import React from 'react';
 import { PATTERN_COLORS } from '@pattern-ui/styles';
-import { Button } from './Button';
 import { Group } from '@pattern-ui/group';
+import { Button } from './Button';
 
 export default { title: 'Button' };
 

@@ -6,9 +6,9 @@ import {
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
 import { filterChildrenByType } from '@pattern-ui/utils';
-import { Avatar } from '../Avatar';
 import { Box } from '@pattern-ui/box';
 import { Center } from '@pattern-ui/center';
+import { Avatar } from '../Avatar';
 import useStyles from './AvatarsGroup.styles';
 
 export type AvatarsGroupStylesNames = Selectors<typeof useStyles>;

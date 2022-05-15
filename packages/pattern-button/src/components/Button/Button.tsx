@@ -11,8 +11,8 @@ import {
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
 import { Box } from '@pattern-ui/box';
-import useStyles, { heights, ButtonVariant } from './Button.styles';
 import { Loader, LoaderProps } from '@pattern-ui/loader';
+import useStyles, { heights, ButtonVariant } from './Button.styles';
 
 export type ButtonStylesNames = Selectors<typeof useStyles>;
 

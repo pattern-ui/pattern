@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { SubmitForm } from '@pattern-ui/storybook';
-import { Select, SelectProps } from './Select';
 import { Button } from '@pattern-ui/button';
 import { Group } from '@pattern-ui/group';
+import { Select, SelectProps } from './Select';
 
 const paragraph =
   'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto magnam veniam excepturi numquam facere odio eveniet nihil quidem iure. Saepe et illo, earum quia tenetur incidunt quae cum iure iusto!';

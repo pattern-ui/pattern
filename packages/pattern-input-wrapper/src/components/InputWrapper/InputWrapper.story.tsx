@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { PATTERN_SIZES } from '@pattern-ui/styles';
-import { InputWrapper } from './InputWrapper';
 import { Text } from '@pattern-ui/text';
+import { InputWrapper } from './InputWrapper';
 
 const sizes = PATTERN_SIZES.map((size) => (
   <InputWrapper

@@ -4,11 +4,11 @@ import { isElement, getArrowPositionStyles, getFloatingPosition } from '@pattern
 import { useMergedRef } from '@pattern-ui/hooks';
 import { getDefaultZIndex, usePatternDefaultProps } from '@pattern-ui/styles';
 import { PatternTransition, Transition } from '@pattern-ui/transition';
+import { OptionalPortal } from '@pattern-ui/portal';
+import { Box } from '@pattern-ui/box';
 import { TooltipGroup } from './TooltipGroup/TooltipGroup';
 import { TooltipFloating } from './TooltipFloating/TooltipFloating';
 import { useTooltip } from './use-tooltip';
-import { OptionalPortal } from '@pattern-ui/portal';
-import { Box } from '@pattern-ui/box';
 import { TOOLTIP_ERRORS } from './Tooltip.errors';
 import { TooltipBaseProps } from './Tooltip.types';
 import useStyles from './Tooltip.styles';

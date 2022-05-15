@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Tooltip } from './Tooltip';
 import { Button } from '@pattern-ui/button';
+import { Tooltip } from './Tooltip';
 
 export default { title: 'Tooltip' };
 

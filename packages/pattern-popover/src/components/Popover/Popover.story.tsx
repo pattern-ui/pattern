@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Popover } from './Popover';
 import { Button } from '@pattern-ui/button';
+import { Popover } from './Popover';
 
 export default { title: 'Popover' };
 

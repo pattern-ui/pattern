@@ -9,8 +9,8 @@ import {
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
 import { Box } from '@pattern-ui/box';
-import useStyles, { sizes, ActionIconVariant } from './ActionIcon.styles';
 import { Loader, LoaderProps } from '@pattern-ui/loader';
+import useStyles, { sizes, ActionIconVariant } from './ActionIcon.styles';
 
 export type ActionIconStylesNames = Selectors<typeof useStyles>;
 

@@ -7,8 +7,8 @@ import {
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
 import { Box } from '@pattern-ui/box';
-import useStyles from './Progress.styles';
 import { Text } from '@pattern-ui/text';
+import useStyles from './Progress.styles';
 
 export type ProgressStylesNames = Selectors<typeof useStyles>;
 

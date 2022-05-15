@@ -7,8 +7,8 @@ import {
 } from '@pattern-ui/styles';
 import { mergeRefs } from '@pattern-ui/hooks';
 import { Box } from '@pattern-ui/box';
-import { useMenuContext } from '../Menu.context';
 import { getContextItemIndex } from '@pattern-ui/utils';
+import { useMenuContext } from '../Menu.context';
 import useStyles from './MenuItem.styles';
 
 export type MenuItemStylesNames = Selectors<typeof useStyles>;

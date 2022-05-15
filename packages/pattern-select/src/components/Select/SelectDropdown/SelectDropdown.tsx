@@ -2,10 +2,10 @@ import React, { forwardRef, useRef } from 'react';
 import { DefaultProps, PatternShadow, Selectors, getDefaultZIndex } from '@pattern-ui/styles';
 import type { Placement } from '@popperjs/core';
 import { PatternTransition } from '@pattern-ui/transition';
-import { SelectScrollArea } from '../SelectScrollArea/SelectScrollArea';
 import { Paper } from '@pattern-ui/paper';
-import useStyles from './SelectDropdown.styles';
 import { Popper } from '@pattern-ui/popper';
+import { SelectScrollArea } from '../SelectScrollArea/SelectScrollArea';
+import useStyles from './SelectDropdown.styles';
 
 export type SelectDropdownStylesNames = Selectors<typeof useStyles>;
 

@@ -13,8 +13,8 @@ import {
   InputWrapperBaseProps,
   InputWrapperStylesNames,
 } from '@pattern-ui/input-wrapper';
-import { Radio, RadioStylesNames } from './Radio/Radio';
 import { Group } from '@pattern-ui/group';
+import { Radio, RadioStylesNames } from './Radio/Radio';
 
 export type RadioGroupStylesNames = InputWrapperStylesNames | RadioStylesNames;
 

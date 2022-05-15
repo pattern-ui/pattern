@@ -1,9 +1,9 @@
 import React, { forwardRef, useState } from 'react';
 import { useUncontrolled } from '@pattern-ui/hooks';
 import { DefaultProps, usePatternDefaultProps } from '@pattern-ui/styles';
-import { validateJson } from './validate-json/validate-json';
 import { Textarea, TextareaProps } from '@pattern-ui/textarea';
 import { TextInputStylesNames } from '@pattern-ui/text-input';
+import { validateJson } from './validate-json/validate-json';
 import useStyles from './JsonInput.styles';
 
 export type JsonInputStylesNames = TextInputStylesNames;
