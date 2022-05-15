@@ -17,9 +17,9 @@ import {
   SelectDropdown,
   SelectDropdownStylesNames,
 } from '@pattern-ui/select/src/components/Select/SelectDropdown/SelectDropdown';
-import { SelectItems } from '@pattern-ui/select/src/components//Select/SelectItems/SelectItems';
-import { DefaultItem } from '@pattern-ui/select/src/components//Select/DefaultItem/DefaultItem';
-import { SelectScrollArea } from '@pattern-ui/select/src/components//Select/SelectScrollArea/SelectScrollArea';
+import { SelectItems } from '@pattern-ui/select/src/components/Select/SelectItems/SelectItems';
+import { DefaultItem } from '@pattern-ui/select/src/components/Select/DefaultItem/DefaultItem';
+import { SelectScrollArea } from '@pattern-ui/select/src/components/Select/SelectScrollArea/SelectScrollArea';
 import { SelectSharedProps } from '@pattern-ui/select/src/components/Select/Select';
 import { filterData } from './filter-data/filter-data';
 import useStyles from './Autocomplete.styles';
