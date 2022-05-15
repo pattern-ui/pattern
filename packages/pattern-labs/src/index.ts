@@ -1,2 +1,2 @@
-export * from './PinInput';
-export * from './TagInput';
+export * from './components/PinInput';
+export * from './components/TagInput';

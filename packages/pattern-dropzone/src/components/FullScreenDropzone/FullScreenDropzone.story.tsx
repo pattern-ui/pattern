@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { FullScreenDropzone } from './FullScreenDropzone';
 import { DropzoneStatus } from '../Dropzone';
-import { IMAGE_MIME_TYPE } from '../mime-types';
+import { IMAGE_MIME_TYPE } from '../../mime-types';
 
 const children = (status: DropzoneStatus) =>
   status.accepted ? <div>Drop files here</div> : <div>Drag and drop files here</div>;

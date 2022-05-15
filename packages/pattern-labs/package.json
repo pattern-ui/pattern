@@ -9,6 +9,17 @@
   "author": "lokielse <lokielse@gmail.com>",
   "sideEffects": false,
   "homepage": "https://pattern.icu/labs/",
+  "keywords": [
+    "react",
+    "next",
+    "nextjs",
+    "ui",
+    "components",
+    "ui-kit",
+    "library",
+    "frontend",
+    "labs"
+  ],
   "repository": {
     "url": "https://github.com/pattern-ui/pattern.git",
     "type": "git",

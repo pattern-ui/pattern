@@ -1,3 +1,3 @@
-export * from './Dropzone';
-export * from './FullScreenDropzone';
+export * from './components/Dropzone';
+export * from './components/FullScreenDropzone';
 export * from './mime-types';
