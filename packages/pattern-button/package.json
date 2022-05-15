@@ -30,15 +30,15 @@
     "button"
   ],
   "dependencies": {
-    "@pattern-ui/hooks": "1.0.0",
     "@pattern-ui/utils": "1.0.0",
+    "@pattern-ui/hooks": "1.0.0",
     "@pattern-ui/box": "1.0.0",
     "@pattern-ui/input": "1.0.0",
     "@pattern-ui/loader": "1.0.0"
   },
-  "devDependencies": {},
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
-  }
+  },
+  "devDependencies": {}
 }

@@ -1,6 +1,6 @@
-# Pattern notifications system
+# @pattern-ui/notifications
 
-Notifications system
+Pattern Pattern-Notifications library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Notifications system
 
 ```sh
 # With yarn
-yarn add @pattern-ui/hooks @pattern-ui/core @pattern-ui/notifications
+yarn add @pattern-ui/pattern-notifications
 
 # With npm
-npm install @pattern-ui/hooks @pattern-ui/core @pattern-ui/notifications
+npm install @pattern-ui/pattern-notifications
 ```
 
 ## License

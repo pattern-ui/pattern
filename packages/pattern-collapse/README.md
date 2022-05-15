@@ -1,6 +1,6 @@
-# Pattern Collapse
+# @pattern-ui/collapse
 
-Pattern Collapse library.
+Pattern Pattern-Collapse library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Collapse library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/collapse
+yarn add @pattern-ui/pattern-collapse
 
 # With npm
-npm install @pattern-ui/collapse
+npm install @pattern-ui/pattern-collapse
 ```
 
 ## License

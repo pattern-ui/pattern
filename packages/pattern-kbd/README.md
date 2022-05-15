@@ -1,6 +1,6 @@
-# Pattern Kbd
+# @pattern-ui/kbd
 
-Pattern Kbd library.
+Pattern Pattern-Kbd library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Kbd library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/kbd
+yarn add @pattern-ui/pattern-kbd
 
 # With npm
-npm install @pattern-ui/kbd
+npm install @pattern-ui/pattern-kbd
 ```
 
 ## License

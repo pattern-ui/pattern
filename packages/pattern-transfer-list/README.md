@@ -1,6 +1,6 @@
-# Pattern TransferList
+# @pattern-ui/transfer-list
 
-Pattern TransferList library.
+Pattern Pattern-Transfer-List library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern TransferList library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/transfer-list
+yarn add @pattern-ui/pattern-transfer-list
 
 # With npm
-npm install @pattern-ui/transfer-list
+npm install @pattern-ui/pattern-transfer-list
 ```
 
 ## License

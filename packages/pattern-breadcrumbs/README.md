@@ -1,6 +1,6 @@
-# Pattern Breadcrumbs
+# @pattern-ui/breadcrumbs
 
-Pattern Breadcrumbs library.
+Pattern Pattern-Breadcrumbs library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Breadcrumbs library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/breadcrumbs
+yarn add @pattern-ui/pattern-breadcrumbs
 
 # With npm
-npm install @pattern-ui/breadcrumbs
+npm install @pattern-ui/pattern-breadcrumbs
 ```
 
 ## License

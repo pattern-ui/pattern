@@ -1,6 +1,6 @@
-# Pattern PasswordInput
+# @pattern-ui/password-input
 
-Pattern PasswordInput library.
+Pattern Pattern-Password-Input library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern PasswordInput library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/password-input
+yarn add @pattern-ui/pattern-password-input
 
 # With npm
-npm install @pattern-ui/password-input
+npm install @pattern-ui/pattern-password-input
 ```
 
 ## License

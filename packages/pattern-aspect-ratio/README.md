@@ -1,6 +1,6 @@
-# Pattern AspectRatio
+# @pattern-ui/aspect-ratio
 
-Pattern AspectRatio library.
+Pattern Pattern-Aspect-Ratio library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern AspectRatio library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/aspect-ratio
+yarn add @pattern-ui/pattern-aspect-ratio
 
 # With npm
-npm install @pattern-ui/aspect-ratio
+npm install @pattern-ui/pattern-aspect-ratio
 ```
 
 ## License

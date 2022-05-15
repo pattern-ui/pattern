@@ -1,6 +1,6 @@
-# Pattern ColorPicker
+# @pattern-ui/color-picker
 
-Pattern ColorPicker library.
+Pattern Pattern-Color-Picker library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern ColorPicker library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/color-picker
+yarn add @pattern-ui/pattern-color-picker
 
 # With npm
-npm install @pattern-ui/color-picker
+npm install @pattern-ui/pattern-color-picker
 ```
 
 ## License

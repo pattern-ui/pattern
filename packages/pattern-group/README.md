@@ -1,6 +1,6 @@
-# Pattern Group
+# @pattern-ui/group
 
-Pattern Group library.
+Pattern Pattern-Group library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Group library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/group
+yarn add @pattern-ui/pattern-group
 
 # With npm
-npm install @pattern-ui/group
+npm install @pattern-ui/pattern-group
 ```
 
 ## License

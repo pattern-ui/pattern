@@ -1,6 +1,6 @@
-# Pattern Switch
+# @pattern-ui/switch
 
-Pattern Switch library.
+Pattern Pattern-Switch library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Switch library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/switch
+yarn add @pattern-ui/pattern-switch
 
 # With npm
-npm install @pattern-ui/switch
+npm install @pattern-ui/pattern-switch
 ```
 
 ## License

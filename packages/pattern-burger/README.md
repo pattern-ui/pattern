@@ -1,6 +1,6 @@
-# Pattern Burger
+# @pattern-ui/burger
 
-Pattern Burger library.
+Pattern Pattern-Burger library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Burger library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/burger
+yarn add @pattern-ui/pattern-burger
 
 # With npm
-npm install @pattern-ui/burger
+npm install @pattern-ui/pattern-burger
 ```
 
 ## License

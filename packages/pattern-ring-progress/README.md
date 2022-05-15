@@ -1,6 +1,6 @@
-# Pattern RingProgress
+# @pattern-ui/ring-progress
 
-Pattern RingProgress library.
+Pattern Pattern-Ring-Progress library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern RingProgress library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/ring-progress
+yarn add @pattern-ui/pattern-ring-progress
 
 # With npm
-npm install @pattern-ui/ring-progress
+npm install @pattern-ui/pattern-ring-progress
 ```
 
 ## License

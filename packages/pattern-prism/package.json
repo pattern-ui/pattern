@@ -34,9 +34,9 @@
   },
   "dependencies": {
     "@pattern-ui/hooks": "1.0.0",
+    "@pattern-ui/box": "1.0.0",
     "@pattern-ui/tabs": "1.0.0",
     "@pattern-ui/scroll-area": "1.0.0",
-    "@pattern-ui/box": "1.0.0",
     "@pattern-ui/tooltip": "1.0.0",
     "@pattern-ui/action-icon": "1.0.0",
     "prism-react-renderer": "~1.2.1"

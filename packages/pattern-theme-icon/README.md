@@ -1,6 +1,6 @@
-# Pattern ThemeIcon
+# @pattern-ui/theme-icon
 
-Pattern ThemeIcon library.
+Pattern Pattern-Theme-Icon library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern ThemeIcon library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/theme-icon
+yarn add @pattern-ui/pattern-theme-icon
 
 # With npm
-npm install @pattern-ui/theme-icon
+npm install @pattern-ui/pattern-theme-icon
 ```
 
 ## License

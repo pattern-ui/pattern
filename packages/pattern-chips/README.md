@@ -1,6 +1,6 @@
-# Pattern Chips
+# @pattern-ui/chips
 
-Pattern Chips library.
+Pattern Pattern-Chips library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Chips library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/chips
+yarn add @pattern-ui/pattern-chips
 
 # With npm
-npm install @pattern-ui/chips
+npm install @pattern-ui/pattern-chips
 ```
 
 ## License

@@ -1,6 +1,6 @@
-# Pattern LoadingOverlay
+# @pattern-ui/loading-overlay
 
-Pattern LoadingOverlay library.
+Pattern Pattern-Loading-Overlay library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern LoadingOverlay library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/loading-overlay
+yarn add @pattern-ui/pattern-loading-overlay
 
 # With npm
-npm install @pattern-ui/loading-overlay
+npm install @pattern-ui/pattern-loading-overlay
 ```
 
 ## License

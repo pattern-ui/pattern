@@ -1,6 +1,6 @@
-# Pattern Image
+# @pattern-ui/image
 
-Pattern Image library.
+Pattern Pattern-Image library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Image library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/image
+yarn add @pattern-ui/pattern-image
 
 # With npm
-npm install @pattern-ui/image
+npm install @pattern-ui/pattern-image
 ```
 
 ## License

@@ -1,6 +1,6 @@
-# Pattern Autocomplete
+# @pattern-ui/autocomplete
 
-Pattern Autocomplete library.
+Pattern Pattern-Autocomplete library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Autocomplete library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/autocomplete
+yarn add @pattern-ui/pattern-autocomplete
 
 # With npm
-npm install @pattern-ui/autocomplete
+npm install @pattern-ui/pattern-autocomplete
 ```
 
 ## License

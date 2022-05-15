@@ -1,6 +1,6 @@
-# Pattern Box
+# @pattern-ui/box
 
-Pattern Box library.
+Pattern Pattern-Box library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Box library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/box
+yarn add @pattern-ui/pattern-box
 
 # With npm
-npm install @pattern-ui/box
+npm install @pattern-ui/pattern-box
 ```
 
 ## License

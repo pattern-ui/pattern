@@ -1,6 +1,6 @@
-# Pattern Stack
+# @pattern-ui/stack
 
-Pattern Stack library.
+Pattern Pattern-Stack library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Stack library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/stack
+yarn add @pattern-ui/pattern-stack
 
 # With npm
-npm install @pattern-ui/stack
+npm install @pattern-ui/pattern-stack
 ```
 
 ## License

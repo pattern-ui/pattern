@@ -1,6 +1,6 @@
-# Pattern core
+# @pattern-ui/transition
 
-Pattern core components library.
+Pattern Pattern-Transition library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern core components library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/core @pattern-ui/hooks
+yarn add @pattern-ui/pattern-transition
 
 # With npm
-npm install @pattern-ui/core @pattern-ui/hooks
+npm install @pattern-ui/pattern-transition
 ```
 
 ## License

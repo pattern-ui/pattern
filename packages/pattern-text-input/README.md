@@ -1,6 +1,6 @@
-# Pattern TextInput
+# @pattern-ui/text-input
 
-Pattern TextInput library.
+Pattern Pattern-Text-Input library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern TextInput library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/text-input
+yarn add @pattern-ui/pattern-text-input
 
 # With npm
-npm install @pattern-ui/text-input
+npm install @pattern-ui/pattern-text-input
 ```
 
 ## License

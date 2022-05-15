@@ -31,14 +31,14 @@
   ],
   "dependencies": {
     "@pattern-ui/utils": "1.0.0",
-    "@pattern-ui/box": "1.0.0",
     "@pattern-ui/styles": "1.0.0",
+    "@pattern-ui/hooks": "1.0.0",
+    "@pattern-ui/box": "1.0.0",
     "@radix-ui/react-scroll-area": "^0.1.1"
   },
-  "devDependencies": {},
   "peerDependencies": {
-    "@pattern-ui/hooks": "1.0.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
-  }
+  },
+  "devDependencies": {}
 }

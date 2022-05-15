@@ -1,6 +1,6 @@
-# Pattern Select
+# @pattern-ui/select
 
-Pattern Select library.
+Pattern Pattern-Select library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Select library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/select
+yarn add @pattern-ui/pattern-select
 
 # With npm
-npm install @pattern-ui/select
+npm install @pattern-ui/pattern-select
 ```
 
 ## License

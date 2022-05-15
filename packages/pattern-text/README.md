@@ -1,6 +1,6 @@
-# Pattern Text
+# @pattern-ui/text
 
-Pattern Text library.
+Pattern Pattern-Text library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Text library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/text
+yarn add @pattern-ui/pattern-text
 
 # With npm
-npm install @pattern-ui/text
+npm install @pattern-ui/pattern-text
 ```
 
 ## License

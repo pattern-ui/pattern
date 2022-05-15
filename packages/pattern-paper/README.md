@@ -1,6 +1,6 @@
-# Pattern Paper
+# @pattern-ui/paper
 
-Pattern Paper library.
+Pattern Pattern-Paper library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Paper library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/paper
+yarn add @pattern-ui/pattern-paper
 
 # With npm
-npm install @pattern-ui/paper
+npm install @pattern-ui/pattern-paper
 ```
 
 ## License

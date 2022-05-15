@@ -1,6 +1,6 @@
-# Pattern TypographyStylesProvider
+# @pattern-ui/typography-styles-provider
 
-Pattern TypographyStylesProvider library.
+Pattern Pattern-Typography-Styles-Provider library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern TypographyStylesProvider library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/typography-styles-provider
+yarn add @pattern-ui/pattern-typography-styles-provider
 
 # With npm
-npm install @pattern-ui/typography-styles-provider
+npm install @pattern-ui/pattern-typography-styles-provider
 ```
 
 ## License

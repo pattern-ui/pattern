@@ -1,6 +1,6 @@
-# Pattern Overlay
+# @pattern-ui/overlay
 
-Pattern Overlay library.
+Pattern Pattern-Overlay library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Overlay library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/overlay
+yarn add @pattern-ui/pattern-overlay
 
 # With npm
-npm install @pattern-ui/overlay
+npm install @pattern-ui/pattern-overlay
 ```
 
 ## License

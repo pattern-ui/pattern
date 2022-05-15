@@ -1,6 +1,6 @@
-# Pattern Stepper
+# @pattern-ui/stepper
 
-Pattern Stepper library.
+Pattern Pattern-Stepper library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Stepper library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/stepper
+yarn add @pattern-ui/pattern-stepper
 
 # With npm
-npm install @pattern-ui/stepper
+npm install @pattern-ui/pattern-stepper
 ```
 
 ## License

@@ -1,6 +1,6 @@
-# Pattern AppShell
+# @pattern-ui/app-shell
 
-Pattern AppShell library.
+Pattern Pattern-App-Shell library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern AppShell library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/app-shell
+yarn add @pattern-ui/pattern-app-shell
 
 # With npm
-npm install @pattern-ui/app-shell
+npm install @pattern-ui/pattern-app-shell
 ```
 
 ## License

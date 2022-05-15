@@ -1,6 +1,6 @@
-# Pattern Tabs
+# @pattern-ui/tabs
 
-Pattern Tabs library.
+Pattern Pattern-Tabs library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Tabs library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/tabs
+yarn add @pattern-ui/pattern-tabs
 
 # With npm
-npm install @pattern-ui/tabs
+npm install @pattern-ui/pattern-tabs
 ```
 
 ## License

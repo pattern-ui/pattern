@@ -1,6 +1,6 @@
-# Pattern Mark
+# @pattern-ui/mark
 
-Pattern Mark library.
+Pattern Pattern-Mark library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Mark library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/mark
+yarn add @pattern-ui/pattern-mark
 
 # With npm
-npm install @pattern-ui/mark
+npm install @pattern-ui/pattern-mark
 ```
 
 ## License

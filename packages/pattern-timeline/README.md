@@ -1,6 +1,6 @@
-# Pattern Timeline
+# @pattern-ui/timeline
 
-Pattern Timeline library.
+Pattern Pattern-Timeline library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Timeline library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/timeline
+yarn add @pattern-ui/pattern-timeline
 
 # With npm
-npm install @pattern-ui/timeline
+npm install @pattern-ui/pattern-timeline
 ```
 
 ## License

@@ -1,6 +1,6 @@
-# Pattern ActionIcon
+# @pattern-ui/action-icon
 
-Pattern ActionIcon library.
+Pattern Pattern-Action-Icon library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern ActionIcon library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/action-icon
+yarn add @pattern-ui/pattern-action-icon
 
 # With npm
-npm install @pattern-ui/action-icon
+npm install @pattern-ui/pattern-action-icon
 ```
 
 ## License

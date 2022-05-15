@@ -1,6 +1,6 @@
-# Pattern List
+# @pattern-ui/list
 
-Pattern List library.
+Pattern Pattern-List library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern List library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/list
+yarn add @pattern-ui/pattern-list
 
 # With npm
-npm install @pattern-ui/list
+npm install @pattern-ui/pattern-list
 ```
 
 ## License

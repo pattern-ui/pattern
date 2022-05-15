@@ -1,6 +1,6 @@
-# Pattern Card
+# @pattern-ui/card
 
-Pattern Card library.
+Pattern Pattern-Card library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Card library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/card
+yarn add @pattern-ui/pattern-card
 
 # With npm
-npm install @pattern-ui/card
+npm install @pattern-ui/pattern-card
 ```
 
 ## License

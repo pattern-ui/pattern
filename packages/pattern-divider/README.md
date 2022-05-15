@@ -1,6 +1,6 @@
-# Pattern Divider
+# @pattern-ui/divider
 
-Pattern Divider library.
+Pattern Pattern-Divider library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Divider library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/divider
+yarn add @pattern-ui/pattern-divider
 
 # With npm
-npm install @pattern-ui/divider
+npm install @pattern-ui/pattern-divider
 ```
 
 ## License

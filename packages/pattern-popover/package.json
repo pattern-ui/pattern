@@ -31,17 +31,17 @@
   ],
   "dependencies": {
     "@pattern-ui/utils": "1.0.0",
+    "@pattern-ui/styles": "1.0.0",
+    "@pattern-ui/hooks": "1.0.0",
     "@pattern-ui/box": "1.0.0",
     "@pattern-ui/focus-trap": "1.0.0",
     "@pattern-ui/portal": "1.0.0",
     "@pattern-ui/transition": "1.0.0",
-    "@pattern-ui/styles": "1.0.0",
     "@floating-ui/react-dom-interactions": "0.3.1"
   },
-  "devDependencies": {},
   "peerDependencies": {
-    "@pattern-ui/hooks": "1.0.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
-  }
+  },
+  "devDependencies": {}
 }

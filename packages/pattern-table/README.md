@@ -1,6 +1,6 @@
-# Pattern Table
+# @pattern-ui/table
 
-Pattern Table library.
+Pattern Pattern-Table library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Table library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/table
+yarn add @pattern-ui/pattern-table
 
 # With npm
-npm install @pattern-ui/table
+npm install @pattern-ui/pattern-table
 ```
 
 ## License

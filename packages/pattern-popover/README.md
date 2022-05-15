@@ -1,6 +1,6 @@
-# Pattern Popover
+# @pattern-ui/popover
 
-Pattern Popover library.
+Pattern Pattern-Popover library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Popover library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/popover
+yarn add @pattern-ui/pattern-popover
 
 # With npm
-npm install @pattern-ui/popover
+npm install @pattern-ui/pattern-popover
 ```
 
 ## License

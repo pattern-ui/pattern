@@ -1,6 +1,6 @@
-# Pattern NumberInput
+# @pattern-ui/number-input
 
-Pattern NumberInput library.
+Pattern Pattern-Number-Input library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern NumberInput library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/number-input
+yarn add @pattern-ui/pattern-number-input
 
 # With npm
-npm install @pattern-ui/number-input
+npm install @pattern-ui/pattern-number-input
 ```
 
 ## License

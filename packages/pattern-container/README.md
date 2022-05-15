@@ -1,6 +1,6 @@
-# Pattern Container
+# @pattern-ui/container
 
-Pattern Container library.
+Pattern Pattern-Container library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Container library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/container
+yarn add @pattern-ui/pattern-container
 
 # With npm
-npm install @pattern-ui/container
+npm install @pattern-ui/pattern-container
 ```
 
 ## License

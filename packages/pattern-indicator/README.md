@@ -1,6 +1,6 @@
-# Pattern Indicator
+# @pattern-ui/indicator
 
-Pattern Indicator library.
+Pattern Pattern-Indicator library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Indicator library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/indicator
+yarn add @pattern-ui/pattern-indicator
 
 # With npm
-npm install @pattern-ui/indicator
+npm install @pattern-ui/pattern-indicator
 ```
 
 ## License

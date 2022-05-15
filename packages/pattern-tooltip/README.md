@@ -1,6 +1,6 @@
-# Pattern Tooltip
+# @pattern-ui/tooltip
 
-Pattern Tooltip library.
+Pattern Pattern-Tooltip library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Tooltip library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/tooltip
+yarn add @pattern-ui/pattern-tooltip
 
 # With npm
-npm install @pattern-ui/tooltip
+npm install @pattern-ui/pattern-tooltip
 ```
 
 ## License

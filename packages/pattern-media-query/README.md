@@ -1,6 +1,6 @@
-# Pattern MediaQuery
+# @pattern-ui/media-query
 
-Pattern MediaQuery library.
+Pattern Pattern-Media-Query library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern MediaQuery library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/media-query
+yarn add @pattern-ui/pattern-media-query
 
 # With npm
-npm install @pattern-ui/media-query
+npm install @pattern-ui/pattern-media-query
 ```
 
 ## License

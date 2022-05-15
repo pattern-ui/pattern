@@ -1,6 +1,6 @@
-# Pattern Alert
+# @pattern-ui/alert
 
-Pattern Alert library.
+Pattern Pattern-Alert library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Alert library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/alert
+yarn add @pattern-ui/pattern-alert
 
 # With npm
-npm install @pattern-ui/alert
+npm install @pattern-ui/pattern-alert
 ```
 
 ## License

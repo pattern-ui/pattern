@@ -1,6 +1,6 @@
-# Pattern Space
+# @pattern-ui/space
 
-Pattern Space library.
+Pattern Pattern-Space library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Space library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/space
+yarn add @pattern-ui/pattern-space
 
 # With npm
-npm install @pattern-ui/space
+npm install @pattern-ui/pattern-space
 ```
 
 ## License

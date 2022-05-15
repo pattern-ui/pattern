@@ -1,6 +1,6 @@
-# Pattern Menu
+# @pattern-ui/menu
 
-Pattern Menu library.
+Pattern Pattern-Menu library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Menu library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/menu
+yarn add @pattern-ui/pattern-menu
 
 # With npm
-npm install @pattern-ui/menu
+npm install @pattern-ui/pattern-menu
 ```
 
 ## License

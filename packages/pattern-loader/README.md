@@ -1,6 +1,6 @@
-# Pattern Loader
+# @pattern-ui/loader
 
-Pattern Loader library.
+Pattern Pattern-Loader library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Loader library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/loader
+yarn add @pattern-ui/pattern-loader
 
 # With npm
-npm install @pattern-ui/loader
+npm install @pattern-ui/pattern-loader
 ```
 
 ## License

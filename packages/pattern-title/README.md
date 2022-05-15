@@ -1,6 +1,6 @@
-# Pattern Title
+# @pattern-ui/title
 
-Pattern Title library.
+Pattern Pattern-Title library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Title library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/title
+yarn add @pattern-ui/pattern-title
 
 # With npm
-npm install @pattern-ui/title
+npm install @pattern-ui/pattern-title
 ```
 
 ## License

@@ -1,6 +1,6 @@
-# Pattern Spoiler
+# @pattern-ui/spoiler
 
-Pattern Spoiler library.
+Pattern Pattern-Spoiler library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Spoiler library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/spoiler
+yarn add @pattern-ui/pattern-spoiler
 
 # With npm
-npm install @pattern-ui/spoiler
+npm install @pattern-ui/pattern-spoiler
 ```
 
 ## License

@@ -1,6 +1,6 @@
-# Pattern Pagination
+# @pattern-ui/pagination
 
-Pattern Pagination library.
+Pattern Pattern-Pagination library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Pagination library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/pagination
+yarn add @pattern-ui/pattern-pagination
 
 # With npm
-npm install @pattern-ui/pagination
+npm install @pattern-ui/pattern-pagination
 ```
 
 ## License

@@ -1,6 +1,6 @@
-# Pattern Progress
+# @pattern-ui/progress
 
-Pattern Progress library.
+Pattern Pattern-Progress library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Progress library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/progress
+yarn add @pattern-ui/pattern-progress
 
 # With npm
-npm install @pattern-ui/progress
+npm install @pattern-ui/pattern-progress
 ```
 
 ## License

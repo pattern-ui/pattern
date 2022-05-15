@@ -1,6 +1,6 @@
-# Pattern ColorInput
+# @pattern-ui/color-input
 
-Pattern ColorInput library.
+Pattern Pattern-Color-Input library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern ColorInput library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/color-input
+yarn add @pattern-ui/pattern-color-input
 
 # With npm
-npm install @pattern-ui/color-input
+npm install @pattern-ui/pattern-color-input
 ```
 
 ## License

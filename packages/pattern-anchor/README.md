@@ -1,6 +1,6 @@
-# Pattern Anchor
+# @pattern-ui/anchor
 
-Pattern Anchor library.
+Pattern Pattern-Anchor library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Anchor library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/anchor
+yarn add @pattern-ui/pattern-anchor
 
 # With npm
-npm install @pattern-ui/anchor
+npm install @pattern-ui/pattern-anchor
 ```
 
 ## License

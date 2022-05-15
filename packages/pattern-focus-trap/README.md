@@ -1,6 +1,6 @@
-# Pattern FocusTrap
+# @pattern-ui/focus-trap
 
-Pattern FocusTrap library.
+Pattern Pattern-Focus-Trap library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern FocusTrap library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/focus-trap
+yarn add @pattern-ui/pattern-focus-trap
 
 # With npm
-npm install @pattern-ui/focus-trap
+npm install @pattern-ui/pattern-focus-trap
 ```
 
 ## License

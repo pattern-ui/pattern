@@ -1,6 +1,6 @@
-# Pattern Highlight
+# @pattern-ui/highlight
 
-Pattern Highlight library.
+Pattern Pattern-Highlight library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Highlight library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/highlight
+yarn add @pattern-ui/pattern-highlight
 
 # With npm
-npm install @pattern-ui/highlight
+npm install @pattern-ui/pattern-highlight
 ```
 
 ## License

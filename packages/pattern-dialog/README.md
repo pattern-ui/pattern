@@ -1,6 +1,6 @@
-# Pattern Dialog
+# @pattern-ui/dialog
 
-Pattern Dialog library.
+Pattern Pattern-Dialog library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Dialog library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/dialog
+yarn add @pattern-ui/pattern-dialog
 
 # With npm
-npm install @pattern-ui/dialog
+npm install @pattern-ui/pattern-dialog
 ```
 
 ## License

@@ -1,6 +1,6 @@
-# Pattern Portal
+# @pattern-ui/portal
 
-Pattern Portal library.
+Pattern Pattern-Portal library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Portal library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/portal
+yarn add @pattern-ui/pattern-portal
 
 # With npm
-npm install @pattern-ui/portal
+npm install @pattern-ui/pattern-portal
 ```
 
 ## License

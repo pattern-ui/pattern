@@ -1,6 +1,6 @@
-# Pattern Accordion
+# @pattern-ui/accordion
 
-Pattern Accordion library.
+Pattern Pattern-Accordion library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Accordion library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/accordion
+yarn add @pattern-ui/pattern-accordion
 
 # With npm
-npm install @pattern-ui/accordion
+npm install @pattern-ui/pattern-accordion
 ```
 
 ## License

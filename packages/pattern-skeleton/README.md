@@ -1,6 +1,6 @@
-# Pattern Skeleton
+# @pattern-ui/skeleton
 
-Pattern Skeleton library.
+Pattern Pattern-Skeleton library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Skeleton library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/skeleton
+yarn add @pattern-ui/pattern-skeleton
 
 # With npm
-npm install @pattern-ui/skeleton
+npm install @pattern-ui/pattern-skeleton
 ```
 
 ## License

@@ -1,6 +1,6 @@
-# Pattern Code
+# @pattern-ui/code
 
-Pattern Code library.
+Pattern Pattern-Code library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Code library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/code
+yarn add @pattern-ui/pattern-code
 
 # With npm
-npm install @pattern-ui/code
+npm install @pattern-ui/pattern-code
 ```
 
 ## License

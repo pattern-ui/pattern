@@ -1,6 +1,6 @@
-# Pattern Popper
+# @pattern-ui/popper
 
-Pattern Popper library.
+Pattern Pattern-Popper library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Popper library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/popper
+yarn add @pattern-ui/pattern-popper
 
 # With npm
-npm install @pattern-ui/popper
+npm install @pattern-ui/pattern-popper
 ```
 
 ## License

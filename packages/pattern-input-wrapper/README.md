@@ -1,6 +1,6 @@
-# Pattern InputWrapper
+# @pattern-ui/input-wrapper
 
-Pattern InputWrapper library.
+Pattern Pattern-Input-Wrapper library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern InputWrapper library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/input-wrapper
+yarn add @pattern-ui/pattern-input-wrapper
 
 # With npm
-npm install @pattern-ui/input-wrapper
+npm install @pattern-ui/pattern-input-wrapper
 ```
 
 ## License

@@ -1,6 +1,6 @@
-# Pattern JsonInput
+# @pattern-ui/json-input
 
-Pattern JsonInput library.
+Pattern Pattern-Json-Input library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern JsonInput library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/json-input
+yarn add @pattern-ui/pattern-json-input
 
 # With npm
-npm install @pattern-ui/json-input
+npm install @pattern-ui/pattern-json-input
 ```
 
 ## License

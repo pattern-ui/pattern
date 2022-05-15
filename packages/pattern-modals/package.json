@@ -32,10 +32,10 @@
   },
   "dependencies": {
     "@pattern-ui/hooks": "1.0.0",
+    "@pattern-ui/box": "1.0.0",
     "@pattern-ui/button": "1.0.0",
     "@pattern-ui/group": "1.0.0",
     "@pattern-ui/modal": "1.0.0",
-    "@pattern-ui/box": "1.0.0",
     "@pattern-ui/text": "1.0.0"
   },
   "devDependencies": {}

@@ -1,6 +1,6 @@
-# Pattern ScrollArea
+# @pattern-ui/scroll-area
 
-Pattern ScrollArea library.
+Pattern Pattern-Scroll-Area library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern ScrollArea library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/scroll-area
+yarn add @pattern-ui/pattern-scroll-area
 
 # With npm
-npm install @pattern-ui/scroll-area
+npm install @pattern-ui/pattern-scroll-area
 ```
 
 ## License

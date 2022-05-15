@@ -1,6 +1,6 @@
-# Pattern prism code highlight
+# @pattern-ui/prism
 
-Code highlight built with prism and Pattern
+Pattern Pattern-Prism library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Code highlight built with prism and Pattern
 
 ```sh
 # With yarn
-yarn add @pattern-ui/hooks @pattern-ui/core @pattern-ui/prism
+yarn add @pattern-ui/pattern-prism
 
 # With npm
-npm install @pattern-ui/hooks @pattern-ui/core @pattern-ui/prism
+npm install @pattern-ui/pattern-prism
 ```
 
 ## License

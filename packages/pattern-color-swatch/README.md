@@ -1,6 +1,6 @@
-# Pattern ColorSwatch
+# @pattern-ui/color-swatch
 
-Pattern ColorSwatch library.
+Pattern Pattern-Color-Swatch library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern ColorSwatch library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/color-swatch
+yarn add @pattern-ui/pattern-color-swatch
 
 # With npm
-npm install @pattern-ui/color-swatch
+npm install @pattern-ui/pattern-color-swatch
 ```
 
 ## License

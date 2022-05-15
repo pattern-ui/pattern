@@ -1,6 +1,6 @@
-# Pattern Affix
+# @pattern-ui/affix
 
-Pattern Affix library.
+Pattern Pattern-Affix library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Affix library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/affix
+yarn add @pattern-ui/pattern-affix
 
 # With npm
-npm install @pattern-ui/affix
+npm install @pattern-ui/pattern-affix
 ```
 
 ## License

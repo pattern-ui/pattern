@@ -1,6 +1,6 @@
-# Pattern Badge
+# @pattern-ui/badge
 
-Pattern Badge library.
+Pattern Pattern-Badge library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Badge library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/badge
+yarn add @pattern-ui/pattern-badge
 
 # With npm
-npm install @pattern-ui/badge
+npm install @pattern-ui/pattern-badge
 ```
 
 ## License

@@ -1,6 +1,6 @@
-# Pattern rich text editor
+# @pattern-ui/rte
 
-Quill based rich text editor
+Pattern Pattern-Rte library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Quill based rich text editor
 
 ```sh
 # With yarn
-yarn add @pattern-ui/hooks @pattern-ui/core @pattern-ui/rte
+yarn add @pattern-ui/pattern-rte
 
 # With npm
-npm install @pattern-ui/hooks @pattern-ui/core @pattern-ui/rte
+npm install @pattern-ui/pattern-rte
 ```
 
 ## License

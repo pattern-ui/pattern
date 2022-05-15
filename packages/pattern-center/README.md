@@ -1,6 +1,6 @@
-# Pattern Center
+# @pattern-ui/center
 
-Pattern Center library.
+Pattern Pattern-Center library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Center library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/center
+yarn add @pattern-ui/pattern-center
 
 # With npm
-npm install @pattern-ui/center
+npm install @pattern-ui/pattern-center
 ```
 
 ## License

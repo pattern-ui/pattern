@@ -1,6 +1,6 @@
-# Pattern HoverCard
+# @pattern-ui/hover-card
 
-Pattern HoverCard library.
+Pattern Pattern-Hover-Card library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern HoverCard library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/hover-card
+yarn add @pattern-ui/pattern-hover-card
 
 # With npm
-npm install @pattern-ui/hover-card
+npm install @pattern-ui/pattern-hover-card
 ```
 
 ## License

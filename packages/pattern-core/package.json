@@ -27,11 +27,13 @@
     "emotion"
   ],
   "peerDependencies": {
-    "@pattern-ui/hooks": "1.0.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
   "dependencies": {
+    "@pattern-ui/hooks": "1.0.0",
+    "@pattern-ui/box": "1.0.0",
+    "@pattern-ui/button": "1.0.0",
     "@pattern-ui/accordion": "1.0.0",
     "@pattern-ui/action-icon": "1.0.0",
     "@pattern-ui/affix": "1.0.0",
@@ -43,10 +45,8 @@
     "@pattern-ui/avatar": "1.0.0",
     "@pattern-ui/badge": "1.0.0",
     "@pattern-ui/blockquote": "1.0.0",
-    "@pattern-ui/box": "1.0.0",
     "@pattern-ui/breadcrumbs": "1.0.0",
     "@pattern-ui/burger": "1.0.0",
-    "@pattern-ui/button": "1.0.0",
     "@pattern-ui/card": "1.0.0",
     "@pattern-ui/center": "1.0.0",
     "@pattern-ui/checkbox": "1.0.0",

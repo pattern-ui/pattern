@@ -1,6 +1,6 @@
-# Pattern SegmentedControl
+# @pattern-ui/segmented-control
 
-Pattern SegmentedControl library.
+Pattern Pattern-Segmented-Control library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern SegmentedControl library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/segmented-control
+yarn add @pattern-ui/pattern-segmented-control
 
 # With npm
-npm install @pattern-ui/segmented-control
+npm install @pattern-ui/pattern-segmented-control
 ```
 
 ## License

@@ -1,6 +1,6 @@
-# Pattern Slider
+# @pattern-ui/slider
 
-Pattern Slider library.
+Pattern Pattern-Slider library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Slider library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/slider
+yarn add @pattern-ui/pattern-slider
 
 # With npm
-npm install @pattern-ui/slider
+npm install @pattern-ui/pattern-slider
 ```
 
 ## License

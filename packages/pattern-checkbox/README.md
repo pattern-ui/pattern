@@ -1,6 +1,6 @@
-# Pattern Checkbox
+# @pattern-ui/checkbox
 
-Pattern Checkbox library.
+Pattern Pattern-Checkbox library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Checkbox library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/checkbox
+yarn add @pattern-ui/pattern-checkbox
 
 # With npm
-npm install @pattern-ui/checkbox
+npm install @pattern-ui/pattern-checkbox
 ```
 
 ## License

@@ -1,6 +1,6 @@
-# Pattern Drawer
+# @pattern-ui/drawer
 
-Pattern Drawer library.
+Pattern Pattern-Drawer library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Drawer library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/drawer
+yarn add @pattern-ui/pattern-drawer
 
 # With npm
-npm install @pattern-ui/drawer
+npm install @pattern-ui/pattern-drawer
 ```
 
 ## License

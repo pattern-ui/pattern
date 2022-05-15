@@ -1,6 +1,6 @@
-# Pattern Blockquote
+# @pattern-ui/blockquote
 
-Pattern Blockquote library.
+Pattern Pattern-Blockquote library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Blockquote library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/blockquote
+yarn add @pattern-ui/pattern-blockquote
 
 # With npm
-npm install @pattern-ui/blockquote
+npm install @pattern-ui/pattern-blockquote
 ```
 
 ## License

@@ -1,6 +1,6 @@
-# Pattern Textarea
+# @pattern-ui/textarea
 
-Pattern Textarea library.
+Pattern Pattern-Textarea library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Textarea library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/textarea
+yarn add @pattern-ui/pattern-textarea
 
 # With npm
-npm install @pattern-ui/textarea
+npm install @pattern-ui/pattern-textarea
 ```
 
 ## License

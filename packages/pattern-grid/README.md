@@ -1,6 +1,6 @@
-# Pattern Grid
+# @pattern-ui/grid
 
-Pattern Grid library.
+Pattern Pattern-Grid library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Grid library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/grid
+yarn add @pattern-ui/pattern-grid
 
 # With npm
-npm install @pattern-ui/grid
+npm install @pattern-ui/pattern-grid
 ```
 
 ## License

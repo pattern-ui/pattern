@@ -1,6 +1,6 @@
-# Pattern SimpleGrid
+# @pattern-ui/simple-grid
 
-Pattern SimpleGrid library.
+Pattern Pattern-Simple-Grid library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern SimpleGrid library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/simple-grid
+yarn add @pattern-ui/pattern-simple-grid
 
 # With npm
-npm install @pattern-ui/simple-grid
+npm install @pattern-ui/pattern-simple-grid
 ```
 
 ## License

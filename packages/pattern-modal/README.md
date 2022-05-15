@@ -1,6 +1,6 @@
-# Pattern Modal
+# @pattern-ui/modal
 
-Pattern Modal library.
+Pattern Pattern-Modal library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Modal library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/modal
+yarn add @pattern-ui/pattern-modal
 
 # With npm
-npm install @pattern-ui/modal
+npm install @pattern-ui/pattern-modal
 ```
 
 ## License

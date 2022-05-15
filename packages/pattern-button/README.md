@@ -1,6 +1,6 @@
-# Pattern Button
+# @pattern-ui/button
 
-Pattern Button library.
+Pattern Pattern-Button library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern Button library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/button
+yarn add @pattern-ui/pattern-button
 
 # With npm
-npm install @pattern-ui/button
+npm install @pattern-ui/pattern-button
 ```
 
 ## License

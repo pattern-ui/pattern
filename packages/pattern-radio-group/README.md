@@ -1,6 +1,6 @@
-# Pattern RadioGroup
+# @pattern-ui/radio-group
 
-Pattern RadioGroup library.
+Pattern Pattern-Radio-Group library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern RadioGroup library.
 
 ```sh
 # With yarn
-yarn add @pattern-ui/radio-group
+yarn add @pattern-ui/pattern-radio-group
 
 # With npm
-npm install @pattern-ui/radio-group
+npm install @pattern-ui/pattern-radio-group
 ```
 
 ## License
