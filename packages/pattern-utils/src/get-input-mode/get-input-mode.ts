@@ -1,4 +1,4 @@
-import { OS } from '@pattern-ui/hooks';
+export type OS = 'undetermined' | 'macos' | 'ios' | 'windows' | 'android' | 'linux';
 
 export const getInputMode = (
   step: number,
