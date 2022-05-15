@@ -34,7 +34,6 @@
     "@pattern-ui/box": "1.0.0",
     "@pattern-ui/action-icon": "1.0.0",
     "@pattern-ui/loader": "1.0.0",
-    "@pattern-ui/notification": "1.0.0",
     "@pattern-ui/text": "1.0.0",
     "@pattern-ui/styles": "1.0.0"
   },

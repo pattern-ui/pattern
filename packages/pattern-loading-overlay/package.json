@@ -33,7 +33,6 @@
     "@pattern-ui/utils": "1.0.0",
     "@pattern-ui/box": "1.0.0",
     "@pattern-ui/loader": "1.0.0",
-    "@pattern-ui/loading-overlay": "1.0.0",
     "@pattern-ui/overlay": "1.0.0",
     "@pattern-ui/transition": "1.0.0",
     "@pattern-ui/styles": "1.0.0"

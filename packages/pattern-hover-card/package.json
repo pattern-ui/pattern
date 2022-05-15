@@ -30,13 +30,14 @@
     "hover-card"
   ],
   "dependencies": {
+    "@pattern-ui/hooks": "1.0.0",
     "@pattern-ui/utils": "1.0.0",
     "@pattern-ui/box": "1.0.0",
+    "@pattern-ui/popover": "1.0.0",
     "@pattern-ui/styles": "1.0.0"
   },
   "devDependencies": {},
   "peerDependencies": {
-    "@pattern-ui/hooks": "1.0.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   }

@@ -30,9 +30,8 @@
     "react-dom": ">=16.8.0"
   },
   "dependencies": {
+    "@pattern-ui/utils": "1.0.0",
     "clsx": "^1.1.1",
-    "@pattern/utils": "1.0.0",
-    "@pattern/styles": "1.0.0",
     "@emotion/cache": "11.7.1",
     "@emotion/react": "11.7.1",
     "@emotion/serialize": "1.0.2",

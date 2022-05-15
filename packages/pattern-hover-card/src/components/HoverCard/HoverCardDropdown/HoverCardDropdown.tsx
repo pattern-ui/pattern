@@ -1,5 +1,5 @@
 import React from 'react';
-import { Popover, PopoverDropdownProps } from '../../Popover';
+import { Popover, PopoverDropdownProps } from '@pattern-ui/popover';
 import { useHoverCardContext } from '../HoverCard.context';
 
 export interface HoverCardDropdownProps extends PopoverDropdownProps {

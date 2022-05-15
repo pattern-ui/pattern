@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { useDisclosure } from '@pattern-ui/hooks';
-import { Popover } from '../Popover';
+import { Popover } from '@pattern-ui/popover';
 import { HoverCardContextProvider } from './HoverCard.context';
 import { HoverCardDropdown } from './HoverCardDropdown/HoverCardDropdown';
 import { HoverCardTarget } from './HoverCardTarget/HoverCardTarget';

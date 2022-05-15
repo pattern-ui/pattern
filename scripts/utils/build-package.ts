@@ -29,7 +29,16 @@ export async function buildPackage(packageName: string, options?: BuildOptions) 
     const startTime = Date.now();
     await generateDts(packagePath);
 
+    logger.info(
+      `${chalk.cyan('types')} was built in ${chalk.green(
+        `${((Date.now() - startTime) / 1000).toFixed(2)}s`
+      )}`
+    );
+
+    // eslint-disable-next-line no-unsafe-optional-chaining
     for (const format of options?.formats) {
+      const formatStartTime = Date.now();
+
       const config = await createPackageConfig({
         ...options,
         basePath: packagePath,
@@ -38,6 +47,12 @@ export async function buildPackage(packageName: string, options?: BuildOptions) 
 
       logger.info(`Building to ${chalk.cyan(format)} format...`);
       await compile(config);
+
+      logger.info(
+        `${chalk.cyan(format)} was built in ${chalk.green(
+          `${((Date.now() - formatStartTime) / 1000).toFixed(2)}s`
+        )}`
+      );
     }
 
     logger.info(

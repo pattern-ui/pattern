@@ -1,6 +1,6 @@
 import React, { cloneElement } from 'react';
 import { isElement } from '@pattern-ui/utils';
-import { Popover, PopoverTargetProps } from '../../Popover';
+import { Popover, PopoverTargetProps } from '@pattern-ui/popover';
 import { useHoverCardContext } from '../HoverCard.context';
 import { HOVER_CARD_ERRORS } from '../HoverCard.errors';
 
