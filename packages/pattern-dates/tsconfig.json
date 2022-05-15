@@ -1,7 +1,9 @@
 {
   "extends": "../../tsconfig.base.json",
-  "include": ["./src", "./types",
-    "../../config/types"
+  "include": [
+    "./src",
+    "../../config/types",
+    "../../tests"
   ],
   "exclude": ["./lib", "./esm", "./cjs"],
   "compilerOptions": {
@@ -13,16 +15,18 @@
     "declarationDir": "lib",
     "composite": true,
     "paths": {
-      "@pattern-ui/core": ["../pattern-core/src"],
       "@pattern-ui/hooks": ["../pattern-hooks/src"],
-      "@pattern-ui/storybook": ["../pattern-storybook/src"],
-      "@pattern-ui/tests": ["../pattern-tests/src"]
+      "@pattern-ui/styles": ["../pattern-styles/src"],
+      "@pattern-ui/utils": ["../pattern-utils/src"],
+      "@pattern-ui/tests": ["../pattern-tests/src"],
+      "@pattern-ui/storybook": ["../pattern-storybook/src"]
     }
   },
   "references": [
-    { "path": "../pattern-core" },
     { "path": "../pattern-hooks" },
-    { "path": "../pattern-storybook" },
-    { "path": "../pattern-tests" }
+    { "path": "../pattern-utils" },
+    { "path": "../pattern-styles" },
+    { "path": "../pattern-tests" },
+    { "path": "../pattern-storybook" }
   ]
 }

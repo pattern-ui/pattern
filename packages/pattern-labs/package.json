@@ -26,11 +26,11 @@
     "directory": "packages/pattern-labs"
   },
   "peerDependencies": {
-    "@pattern-ui/core": "1.0.0",
-    "@pattern-ui/hooks": "1.0.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@pattern-ui/hooks": "1.0.0"
+  },
   "devDependencies": {}
 }
