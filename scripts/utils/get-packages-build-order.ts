@@ -62,3 +62,81 @@ export async function getPackagesBuildOrder(
     .sort((a, b) => order[a] - order[b])
     .map((p) => packages.find((dataItem) => dataItem.packageJson.name === p));
 }
+
+interface ReverseDependPackage {
+  name: string;
+  dependBys: Set<string>;
+}
+
+interface DependPackage {
+  name: string;
+  dependencies: Set<string>;
+}
+
+export function getDependPackagesFromPackages(packages: Package[]): DependPackage[] {
+  return packages.map((it) => ({
+    name: it.packageJson.name,
+    dependencies: new Set(Object.keys(it.packageJson.dependencies)),
+  }));
+}
+
+export function getRevertDepPackages(packages: DependPackage[]): ReverseDependPackage[] {
+  const map = packages.reduce((acc, current) => {
+    current.dependencies.forEach((pkg) => {
+      if (!acc.has(pkg)) {
+        acc.set(pkg, {
+          name: pkg,
+          dependBys: new Set<string>(),
+        });
+      }
+      acc.get(pkg).dependBys.add(current.name);
+    });
+    return acc;
+  }, new Map<string, ReverseDependPackage>());
+
+  return Object.values(map);
+}
+
+export async function buildPackages(
+  packages: DependPackage[],
+  filter: (name: string) => boolean,
+  build: (name: string) => Promise<void>
+) {
+  const pkgMap = packages.reduce<
+    Record<
+      string,
+      {
+        package: DependPackage;
+        promise: Promise<void> | null;
+      }
+    >
+  >((acc, current) => {
+    acc[current.name] = {
+      package: current,
+      promise: null,
+    };
+    return acc;
+  }, {});
+
+  const buildPackage = async (pkg: DependPackage) => {
+    if (!filter(pkg.name)) {
+      return;
+    }
+
+    // build dependencies
+    await Promise.all(
+      [...pkg.dependencies].filter(filter).map((it) => buildPackage(pkgMap[it].package))
+    );
+
+    // build package itself
+    const pkgData = pkgMap[pkg.name];
+
+    if (!pkgData.promise) {
+      pkgData.promise = build(pkg.name);
+    } else {
+      await pkgData.promise;
+    }
+  };
+
+  return Promise.all(packages.map(buildPackage));
+}

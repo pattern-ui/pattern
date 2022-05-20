@@ -23,7 +23,12 @@ export interface Package {
   packageJson: PackageJson;
 }
 
-export async function getPackagesList() {
+export interface Edge {
+  source: string;
+  target: string;
+}
+
+export async function getPackagesList(): Promise<Package[]> {
   const basePath = path.join(__dirname, '../../packages');
   const packagePaths = await fs.readdir(basePath);
   const packages: Package[] = [];

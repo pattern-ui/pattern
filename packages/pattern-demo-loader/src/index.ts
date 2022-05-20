@@ -32,7 +32,7 @@ const getImportsData = (code: string, codePath: string) => {
 
   return ast.program.body
     .filter((it) => it.type === 'ImportDeclaration')
-    .map((it: ImportDeclaration) => it.source.value)
+    .map((it: any) => it.source.value)
     .filter((it) => it.startsWith('.'))
     .map<ImportType>((it) => {
       const importPath = getFilename(path.resolve(pathObj.dir, it));

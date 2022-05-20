@@ -1,10 +1,10 @@
+import path from 'path';
 import execa from 'execa';
 import fg from 'fast-glob';
-import path from 'path';
 import fs from 'fs-extra';
 
 export default async function generateDts(packagePath: string) {
-  await execa('yarn', ['tsc', '--project', 'tsconfig.build.json'], {
+  await execa('yarn', ['tsc', '--project', 'tsconfig.build.json', '--emitDeclarationOnly'], {
     cwd: packagePath,
   });
 
