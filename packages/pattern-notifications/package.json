@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@pattern-ui/hooks": "1.0.0",
+    "@pattern-ui/styles": "1.0.0",
     "@pattern-ui/box": "1.0.0",
     "@pattern-ui/notification": "1.0.0",
     "@pattern-ui/portal": "1.0.0",

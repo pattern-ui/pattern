@@ -14,6 +14,10 @@ const { argv }: { argv: any } = yargs(hideBin(process.argv))
     type: 'string',
     description: 'Specify package which should be bundled.',
   })
+  .option('from', {
+    type: 'string',
+    description: 'Start from package.',
+  })
   .option('analyze', {
     type: 'boolean',
     default: false,

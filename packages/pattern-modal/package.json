@@ -41,7 +41,8 @@
     "@pattern-ui/group": "1.0.0",
     "@pattern-ui/portal": "1.0.0",
     "@pattern-ui/text": "1.0.0",
-    "@pattern-ui/transition": "1.0.0"
+    "@pattern-ui/transition": "1.0.0",
+    "@pattern-ui/paper": "1.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",

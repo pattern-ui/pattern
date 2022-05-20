@@ -38,7 +38,8 @@
     "@pattern-ui/input": "1.0.0",
     "@pattern-ui/input-wrapper": "1.0.0",
     "@pattern-ui/loader": "1.0.0",
-    "@pattern-ui/text": "1.0.0"
+    "@pattern-ui/text": "1.0.0",
+    "@pattern-ui/text-input": "1.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",

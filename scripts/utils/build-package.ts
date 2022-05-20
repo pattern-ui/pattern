@@ -13,6 +13,7 @@ export interface BuildOptions {
   sourcemap: boolean;
   minify: boolean;
   formats: string[];
+  from: string;
 }
 
 export async function buildPackage(packageName: string, options?: BuildOptions) {

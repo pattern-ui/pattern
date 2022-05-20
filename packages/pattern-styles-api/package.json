@@ -95,9 +95,9 @@
     "@pattern-ui/title": "1.0.0",
     "@pattern-ui/tooltip": "1.0.0",
     "@pattern-ui/transfer-list": "1.0.0",
-    "@pattern-ui/transition": "1.0.0"
+    "@pattern-ui/transition": "1.0.0",
+    "@pattern-ui/spotlight": "1.0.0"
   },
   "devDependencies": {},
-  "peerDependencies": {
-  }
+  "peerDependencies": {}
 }

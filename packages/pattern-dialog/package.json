@@ -34,7 +34,10 @@
     "@pattern-ui/styles": "1.0.0",
     "@pattern-ui/hooks": "1.0.0",
     "@pattern-ui/box": "1.0.0",
-    "@pattern-ui/affix": "1.0.0"
+    "@pattern-ui/affix": "1.0.0",
+    "@pattern-ui/transition": "1.0.0",
+    "@pattern-ui/action-icon": "1.0.0",
+    "@pattern-ui/paper": "1.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",

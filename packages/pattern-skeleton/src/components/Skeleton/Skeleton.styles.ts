@@ -8,7 +8,7 @@ export interface SkeletonStylesParams {
   animate: boolean;
 }
 
-export const fade = keyframes({
+export const fade: string = keyframes({
   'from, to': { opacity: 0.4 },
   '50%': { opacity: 1 },
 });

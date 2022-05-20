@@ -14,14 +14,15 @@
     "type": "git",
     "directory": "packages/pattern-nprogress"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@pattern-ui/hooks": "1.0.0",
     "@pattern-ui/styles": "1.0.0",
     "@pattern-ui/portal": "1.0.0",
-    "@pattern-ui/progress": "1.0.0",
+    "@pattern-ui/progress": "1.0.0"
+  },
+  "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
-  "dependencies": {},
   "devDependencies": {}
 }

@@ -36,6 +36,8 @@
     "@pattern-ui/hooks": "1.0.0",
     "@pattern-ui/box": "1.0.0",
     "@pattern-ui/loading-overlay": "1.0.0",
+    "@pattern-ui/portal": "1.0.0",
+    "@pattern-ui/transition": "1.0.0",
     "react-dropzone": "^11.4.2"
   },
   "devDependencies": {}

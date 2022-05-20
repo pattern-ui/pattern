@@ -1,8 +1,8 @@
 // https://babel.dev/docs/en/babel-parser
-import { parse } from '@babel/parser';
-import { ImportDeclaration } from '@babel/types';
 import path from 'path';
 import fs from 'fs';
+import { parse } from '@babel/parser';
+import { ImportDeclaration } from '@babel/types';
 import { FlattenImport, ImportType } from './type';
 
 const addRawCode = (source: string, imports: FlattenImport[]) => `

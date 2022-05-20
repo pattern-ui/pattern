@@ -36,7 +36,11 @@
     "@pattern-ui/box": "1.0.0",
     "@pattern-ui/color-swatch": "1.0.0",
     "@pattern-ui/color-picker": "1.0.0",
-    "@pattern-ui/input-wrapper": "1.0.0"
+    "@pattern-ui/input-wrapper": "1.0.0",
+    "@pattern-ui/transition": "1.0.0",
+    "@pattern-ui/input": "1.0.0",
+    "@pattern-ui/popper": "1.0.0",
+    "@pattern-ui/paper": "1.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
