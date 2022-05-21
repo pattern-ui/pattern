@@ -2,6 +2,9 @@
   "name": "@pattern-ui/popper",
   "description": "Pattern UI Popper library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-popper"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

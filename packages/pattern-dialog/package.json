@@ -2,6 +2,9 @@
   "name": "@pattern-ui/dialog",
   "description": "Pattern UI Dialog library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-dialog"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

@@ -2,6 +2,9 @@
   "name": "@pattern-ui/progress",
   "description": "Pattern UI Progress library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-progress"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

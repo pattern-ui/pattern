@@ -2,6 +2,9 @@
   "name": "@pattern-ui/rte",
   "description": "Rich text editor built with Pattern components",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-rte"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

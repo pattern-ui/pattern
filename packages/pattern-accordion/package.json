@@ -2,6 +2,9 @@
   "name": "@pattern-ui/accordion",
   "description": "Pattern UI Accordion library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-accordion"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

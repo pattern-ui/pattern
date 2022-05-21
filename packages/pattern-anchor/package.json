@@ -2,6 +2,9 @@
   "name": "@pattern-ui/anchor",
   "description": "Pattern UI Anchor library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-anchor"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

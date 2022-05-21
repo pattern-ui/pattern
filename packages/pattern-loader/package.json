@@ -2,6 +2,9 @@
   "name": "@pattern-ui/loader",
   "description": "Pattern UI Loader library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-loader"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

@@ -2,6 +2,9 @@
   "name": "@pattern-ui/spotlight",
   "description": "Command center for your application",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-spotlight"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -13,10 +16,6 @@
     "url": "https://github.com/pattern-ui/pattern.git",
     "type": "git",
     "directory": "packages/pattern-spotlight"
-  },
-  "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
   },
   "dependencies": {
     "@pattern-ui/utils": "1.0.0",
@@ -32,6 +31,10 @@
     "@pattern-ui/paper": "1.0.0",
     "@pattern-ui/text-input": "1.0.0",
     "@pattern-ui/overlay": "1.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "devDependencies": {}
 }

@@ -1,6 +1,6 @@
-# Pattern SSR
+# @pattern-ui/ssr
 
-General purpose utilities for Pattern server side rendering
+Pattern Pattern-Ssr library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ General purpose utilities for Pattern server side rendering
 
 ```sh
 # With yarn
-yarn add @pattern-ui/hooks @pattern-ui/core @pattern-ui/ssr
+yarn add @pattern-ui/pattern-ssr
 
 # With npm
-npm install @pattern-ui/hooks @pattern-ui/core @pattern-ui/ssr
+npm install @pattern-ui/pattern-ssr
 ```
 
 ## License

@@ -2,6 +2,9 @@
   "name": "@pattern-ui/action-icon",
   "description": "Pattern UI ActionIcon library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-action-icon"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

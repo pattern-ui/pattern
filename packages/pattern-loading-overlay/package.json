@@ -2,6 +2,9 @@
   "name": "@pattern-ui/loading-overlay",
   "description": "Pattern UI LoadingOverlay library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-loading-overlay"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

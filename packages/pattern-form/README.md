@@ -1,6 +1,6 @@
-# Pattern Form
+# @pattern-ui/form
 
-Form management library
+Pattern Pattern-Form library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Form management library
 
 ```sh
 # With yarn
-yarn add @pattern-ui/form
+yarn add @pattern-ui/pattern-form
 
 # With npm
-npm install @pattern-ui/form
+npm install @pattern-ui/pattern-form
 ```
 
 ## License

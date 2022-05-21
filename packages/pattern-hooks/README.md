@@ -1,6 +1,6 @@
-# Pattern Hooks
+# @pattern-ui/hooks
 
-A set of react hooks for state and UI management
+Pattern Pattern-Hooks library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ A set of react hooks for state and UI management
 
 ```sh
 # With yarn
-yarn add @pattern-ui/hooks
+yarn add @pattern-ui/pattern-hooks
 
 # With npm
-npm install @pattern-ui/hooks
+npm install @pattern-ui/pattern-hooks
 ```
 
 ## License

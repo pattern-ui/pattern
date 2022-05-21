@@ -1,8 +1,10 @@
 {
   "name": "@pattern-ui/demos",
   "description": "Demos used in documentation",
-  "private": true,
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-demos"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -39,5 +41,6 @@
   "peerDependencies": {
     "react": "^17.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "private": true
 }

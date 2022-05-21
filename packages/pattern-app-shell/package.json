@@ -2,6 +2,9 @@
   "name": "@pattern-ui/app-shell",
   "description": "Pattern UI AppShell library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-app-shell"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

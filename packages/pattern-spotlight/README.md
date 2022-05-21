@@ -1,17 +1,17 @@
-# Pattern Spotlight
+# @pattern-ui/spotlight
 
-Overlay command center for your application
+Pattern Pattern-Spotlight library.
 
-[Documentation](https://pattern.icu/)
+[View documentation](https://pattern.icu/)
 
 ## Installation
 
 ```sh
 # With yarn
-yarn add @pattern-ui/spotlight @pattern-ui/core @pattern-ui/hooks
+yarn add @pattern-ui/pattern-spotlight
 
 # With npm
-npm install @pattern-ui/spotlight @pattern-ui/core @pattern-ui/hooks
+npm install @pattern-ui/pattern-spotlight
 ```
 
 ## License

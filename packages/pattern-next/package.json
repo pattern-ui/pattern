@@ -2,6 +2,9 @@
   "name": "@pattern-ui/next",
   "description": "Pattern integration for Next.js",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-next"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -19,13 +22,13 @@
     "next",
     "nextjs"
   ],
+  "dependencies": {
+    "@pattern-ui/ssr": "1.0.0"
+  },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
     "next": "*"
-  },
-  "dependencies": {
-    "@pattern-ui/ssr": "1.0.0"
   },
   "devDependencies": {}
 }

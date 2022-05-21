@@ -4,7 +4,7 @@ import fg from 'fast-glob';
 import fs from 'fs-extra';
 
 export default async function generateDts(packagePath: string) {
-  await execa('yarn', ['tsc', '--project', 'tsconfig.build.json', '--emitDeclarationOnly'], {
+  await execa('yarn', ['tsc', '--project', 'tsconfig.build.json'], {
     cwd: packagePath,
   });
 

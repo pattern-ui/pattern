@@ -2,6 +2,9 @@
   "name": "@pattern-ui/burger",
   "description": "Pattern UI Burger library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-burger"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

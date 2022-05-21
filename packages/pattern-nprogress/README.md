@@ -1,17 +1,17 @@
-# Pattern NProgress
+# @pattern-ui/nprogress
 
-A navigation progress bar
+Pattern Pattern-Nprogress library.
 
-[Documentation](https://pattern.icu/)
+[View documentation](https://pattern.icu/)
 
 ## Installation
 
 ```sh
 # With yarn
-yarn add @pattern-ui/nprogress @pattern-ui/core @pattern-ui/hooks
+yarn add @pattern-ui/pattern-nprogress
 
 # With npm
-npm install @pattern-ui/nprogress @pattern-ui/core @pattern-ui/hooks
+npm install @pattern-ui/pattern-nprogress
 ```
 
 ## License

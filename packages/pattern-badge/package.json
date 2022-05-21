@@ -2,6 +2,9 @@
   "name": "@pattern-ui/badge",
   "description": "Pattern UI Badge library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-badge"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

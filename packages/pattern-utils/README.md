@@ -1,6 +1,6 @@
-# Pattern Hooks
+# @pattern-ui/utils
 
-A set of utils used in Pattern packages
+Pattern Pattern-Utils library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ A set of utils used in Pattern packages
 
 ```sh
 # With yarn
-yarn add @pattern-ui/utils
+yarn add @pattern-ui/pattern-utils
 
 # With npm
-npm install @pattern-ui/utils
+npm install @pattern-ui/pattern-utils
 ```
 
 ## License

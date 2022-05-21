@@ -2,6 +2,9 @@
   "name": "@pattern-ui/aspect-ratio",
   "description": "Pattern UI AspectRatio library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-aspect-ratio"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

@@ -1,22 +1,17 @@
-# eslint-config-mantine
+# eslint-config-pattern
 
-## Install
+Pattern Pattern-Eslint-Config library.
+
+[View documentation](https://pattern.icu/)
+
+## Installation
 
 ```sh
-npx install-peerdeps eslint-config-pattern
-```
+# With yarn
+yarn add @pattern-ui/pattern-eslint-config
 
-## Usage
-
-In your `.eslintrc.js`:
-
-```tsx
-module.exports = {
-  extends: ['pattern'],
-  parserOptions: {
-    project: './tsconfig.json',
-  },
-};
+# With npm
+npm install @pattern-ui/pattern-eslint-config
 ```
 
 ## License

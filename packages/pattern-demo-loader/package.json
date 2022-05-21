@@ -1,12 +1,12 @@
 {
   "name": "@pattern-ui/demo-loader",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-demo-loader"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
-  "files": [
-    "lib"
-  ],
   "license": "MIT",
   "author": "lokielse <lokielse@gmail.com>",
   "sideEffects": false,
@@ -21,5 +21,8 @@
   },
   "devDependencies": {
     "@babel/types": "^7.18.0"
-  }
+  },
+  "files": [
+    "lib"
+  ]
 }

@@ -2,6 +2,9 @@
   "name": "@pattern-ui/notification",
   "description": "Pattern UI Notification library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-notification"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

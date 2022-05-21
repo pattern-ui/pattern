@@ -1,6 +1,6 @@
-# Pattern styles
+# @pattern-ui/styles
 
-Pattern CSS-in-JS library built on top of emotion
+Pattern Pattern-Styles library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Pattern CSS-in-JS library built on top of emotion
 
 ```sh
 # With yarn
-yarn add @pattern-ui/styles
+yarn add @pattern-ui/pattern-styles
 
 # With npm
-npm install @pattern-ui/styles
+npm install @pattern-ui/pattern-styles
 ```
 
 ## License
