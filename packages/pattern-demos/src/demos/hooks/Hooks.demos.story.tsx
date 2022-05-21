@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/react';
-import * as demos from './index';
 import { attachDemos } from '../../attach-demos';
+import * as demos from './index';
 
 attachDemos(storiesOf('Hooks', module), demos);

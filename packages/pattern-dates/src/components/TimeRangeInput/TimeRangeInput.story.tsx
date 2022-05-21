@@ -1,5 +1,5 @@
-import dayjs from 'dayjs';
 import React, { useState } from 'react';
+import dayjs from 'dayjs';
 import { storiesOf } from '@storybook/react';
 import { PATTERN_SIZES } from '@pattern-ui/styles';
 import { TimeRangeInput } from './TimeRangeInput';

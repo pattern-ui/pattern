@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { itSupportsClassName, checkAccessibility } from '@pattern-ui/tests';
 import userEvent from '@testing-library/user-event';
+import { itSupportsClassName, checkAccessibility } from '@pattern-ui/tests';
 import { MonthPicker, MonthPickerProps } from './MonthPicker';
 
 const CONTROL_SELECTOR = '.pattern-MonthPicker-monthPickerControl';

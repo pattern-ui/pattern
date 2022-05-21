@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { useUncontrolled } from './use-uncontrolled';
 import { useId } from '../use-id/use-id';
+import { useUncontrolled } from './use-uncontrolled';
 
 interface CustomInputProps {
   label: string;

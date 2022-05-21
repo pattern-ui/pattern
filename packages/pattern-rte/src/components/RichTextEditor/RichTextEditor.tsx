@@ -11,13 +11,13 @@ import {
 import { Box } from '@pattern-ui/box';
 import { useUuid, mergeRefs } from '@pattern-ui/hooks';
 import { Toolbar, ToolbarStylesNames } from '../Toolbar/Toolbar';
-import { DEFAULT_CONTROLS } from './default-control';
-import useStyles from './RichTextEditor.styles';
-import { DEFAULT_LABELS, RichTextEditorLabels } from './default-labels';
 import { ToolbarControl } from '../Toolbar/controls';
 import { createImageBlot, ImageUploader } from '../../modules/image-uploader';
 import { replaceIcons } from '../../modules/icons';
 import { attachShortcuts } from '../../modules/shortcuts';
+import { DEFAULT_LABELS, RichTextEditorLabels } from './default-labels';
+import useStyles from './RichTextEditor.styles';
+import { DEFAULT_CONTROLS } from './default-control';
 
 export type RichTextEditorStylesNames = ToolbarStylesNames | Selectors<typeof useStyles>;
 

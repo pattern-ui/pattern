@@ -1,6 +1,6 @@
-import { filterData } from './filter-data';
 import { defaultFilter } from '../Select';
 import { SelectItem } from '../types';
+import { filterData } from './filter-data';
 
 const data = [
   { value: 'react', label: 'React' },

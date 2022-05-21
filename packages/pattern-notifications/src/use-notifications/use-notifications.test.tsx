@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { renderHook } from '@testing-library/react-hooks';
 import { PatternProvider } from '@pattern-ui/styles';
-import { useNotifications } from './use-notifications';
 import { NotificationsProvider } from '../NotificationsProvider/NotificationsProvider';
+import { useNotifications } from './use-notifications';
 
 describe('@pattern-ui/notifications/use-notifications', () => {
   beforeAll(() => {

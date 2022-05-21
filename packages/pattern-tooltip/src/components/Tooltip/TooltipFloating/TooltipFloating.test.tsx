@@ -1,8 +1,8 @@
 import React from 'react';
-import { itSupportsSystemProps, checkAccessibility, patchConsoleError } from '@pattern-ui/tests';
 import { render } from '@testing-library/react';
-import { TooltipFloating, TooltipFloatingProps } from './TooltipFloating';
+import { itSupportsSystemProps, checkAccessibility, patchConsoleError } from '@pattern-ui/tests';
 import { TOOLTIP_ERRORS } from '../Tooltip.errors';
+import { TooltipFloating, TooltipFloatingProps } from './TooltipFloating';
 
 const defaultProps: TooltipFloatingProps = {
   withinPortal: false,

@@ -1,5 +1,5 @@
-import { smallerThan, largerThan } from './breakpoints';
 import { DEFAULT_THEME } from '../../../default-theme';
+import { smallerThan, largerThan } from './breakpoints';
 
 describe('@pattern-ui/styles/breakpoints', () => {
   it('returns correct max-width value', () => {

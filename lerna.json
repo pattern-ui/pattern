@@ -1,7 +1,9 @@
 {
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "packages": ["packages/*"],
+  "packages": [
+    "packages/*"
+  ],
   "version": "independent",
   "command": {
     "bootstrap": {
@@ -11,9 +13,16 @@
       "conventionalCommits": true
     },
     "publish": {
-      "ignoreChanges": ["ignored-file", "*.md", "**/test/**", "**/develop/**"],
+      "ignoreChanges": [
+        "ignored-file",
+        "*.md",
+        "**/test/**",
+        "**/develop/**"
+      ],
       "message": "chore(release): publish %s"
     }
   },
-  "ignoreChanges": ["**/*.md"]
+  "ignoreChanges": [
+    "**/*.md"
+  ]
 }

@@ -16,11 +16,11 @@ import {
 import { CloseButton } from '@pattern-ui/action-icon';
 import { TimeField } from '../TimeInputBase/TimeField/TimeField';
 import { createTimeHandler } from '../TimeInputBase/create-time-handler/create-time-handler';
-import useStyles from './TimeInput.styles';
 import { AmPmInput } from '../TimeInputBase/AmPmInput/AmPmInput';
 import { createAmPmHandler } from '../TimeInputBase/create-amPm-handler/create-amPm-handler';
 import { getDate } from '../TimeInputBase/get-date/get-date';
 import { getTimeValues } from '../TimeInputBase/get-time-values/get-time-value';
+import useStyles from './TimeInput.styles';
 
 export type TimeInputStylesNames =
   | Selectors<typeof useStyles>

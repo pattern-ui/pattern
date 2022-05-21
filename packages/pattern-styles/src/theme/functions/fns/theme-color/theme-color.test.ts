@@ -1,5 +1,5 @@
-import { themeColor } from './theme-color';
 import { DEFAULT_THEME } from '../../../default-theme';
+import { themeColor } from './theme-color';
 
 describe('@pattern-ui/styles/theme-color', () => {
   it('returns correct shade of given color', () => {

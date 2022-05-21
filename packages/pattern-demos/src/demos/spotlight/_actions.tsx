@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React from 'react';
-import type { SpotlightAction } from '@pattern-ui/spotlight';
 import { Home, Dashboard, FileText } from 'tabler-icons-react';
+import type { SpotlightAction } from '@pattern-ui/spotlight';
 
 export const actions: SpotlightAction[] = [
   {

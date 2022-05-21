@@ -1,6 +1,6 @@
-import { filterData } from './filter-data';
 import { defaultFilter } from '../MultiSelect';
 import { SelectItem } from '../../Select/types';
+import { filterData } from './filter-data';
 
 const data = [
   { value: 'react', label: 'React' },

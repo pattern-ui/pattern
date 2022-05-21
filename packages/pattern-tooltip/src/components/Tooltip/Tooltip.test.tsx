@@ -1,6 +1,6 @@
 import React from 'react';
-import { itSupportsSystemProps, checkAccessibility, patchConsoleError } from '@pattern-ui/tests';
 import { render } from '@testing-library/react';
+import { itSupportsSystemProps, checkAccessibility, patchConsoleError } from '@pattern-ui/tests';
 import { Tooltip, TooltipProps } from './Tooltip';
 import { TooltipFloating } from './TooltipFloating/TooltipFloating';
 import { TooltipGroup } from './TooltipGroup/TooltipGroup';

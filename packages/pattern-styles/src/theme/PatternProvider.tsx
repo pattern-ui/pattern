@@ -1,10 +1,10 @@
 import React, { createContext, useContext } from 'react';
 import type { Options as EmotionCacheOptions } from '@emotion/cache';
+import type { CSSObject } from '../tss';
 import { DEFAULT_THEME } from './default-theme';
 import { GlobalStyles } from './GlobalStyles';
 import { PatternCssVariables } from './PatternCssVariables';
 import type { PatternThemeOverride, PatternTheme } from './types';
-import type { CSSObject } from '../tss';
 import { mergeThemeWithFunctions } from './utils/merge-theme/merge-theme';
 import { filterProps } from './utils/filter-props/filter-props';
 import { NormalizeCSS } from './NormalizeCSS';

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Group, ActionIcon, usePatternColorScheme } from '@pattern-ui/core';
 import { Sun, MoonStars } from 'tabler-icons-react';
+import { Group, ActionIcon, usePatternColorScheme } from '@pattern-ui/core';
 
 export default function Demo() {
   const { colorScheme, toggleColorScheme } = usePatternColorScheme();

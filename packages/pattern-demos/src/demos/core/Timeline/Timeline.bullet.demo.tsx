@@ -1,6 +1,6 @@
 import React from 'react';
-import { ThemeIcon, Text, Avatar, Timeline } from '@pattern-ui/core';
 import { Sun, Video } from 'tabler-icons-react';
+import { ThemeIcon, Text, Avatar, Timeline } from '@pattern-ui/core';
 
 export default function Demo() {
   return (

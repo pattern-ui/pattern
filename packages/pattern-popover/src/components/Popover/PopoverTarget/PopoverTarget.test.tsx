@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { itThrowsContextError, patchConsoleError, createContextContainer } from '@pattern-ui/tests';
-import { PopoverTarget, PopoverTargetProps } from './PopoverTarget';
 import { POPOVER_ERRORS } from '../Popover.errors';
 import { Popover } from '../Popover';
+import { PopoverTarget, PopoverTargetProps } from './PopoverTarget';
 
 const defaultProps: PopoverTargetProps = {
   children: <div>test</div>,

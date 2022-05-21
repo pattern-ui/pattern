@@ -3,7 +3,8 @@
   "description": "Pattern UI Accordion library",
   "version": "1.0.0",
   "scripts": {
-    "build": "esno ../../scripts/build pattern-accordion"
+    "build": "esno ../../scripts/build pattern-accordion",
+    "build:ts": "tsc --project tsconfig.build.json --extendedDiagnostics"
   },
   "main": "cjs/index.js",
   "module": "esm/index.js",

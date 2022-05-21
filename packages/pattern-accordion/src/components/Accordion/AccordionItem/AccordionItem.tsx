@@ -2,8 +2,8 @@ import React, { forwardRef } from 'react';
 import { DefaultProps, Selectors, useContextStylesApi } from '@pattern-ui/styles';
 import { Box } from '@pattern-ui/box';
 import { AccordionItemContextProvider } from '../AccordionItem.context';
-import useStyles from './AccordionItem.styles';
 import { useAccordionContext } from '../Accordion.context';
+import useStyles from './AccordionItem.styles';
 
 export type AccordionItemStylesNames = Selectors<typeof useStyles>;
 

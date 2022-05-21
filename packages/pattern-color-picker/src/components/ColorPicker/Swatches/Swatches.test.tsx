@@ -2,8 +2,8 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { DEFAULT_THEME } from '@pattern-ui/styles';
-import { Swatches, SwatchesProps } from './Swatches';
 import { parseColor } from '../converters';
+import { Swatches, SwatchesProps } from './Swatches';
 
 const defaultProps: SwatchesProps = {
   data: [...DEFAULT_THEME.colors.red],

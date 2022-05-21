@@ -1,5 +1,5 @@
-import { filterData } from './filter-data';
 import { defaultFilter, AutocompleteItem } from '../Autocomplete';
+import { filterData } from './filter-data';
 
 const data = [{ value: 'react' }, { value: 'ng' }, { value: 'svelte' }, { value: 'vue' }];
 

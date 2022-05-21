@@ -1,5 +1,5 @@
-import { fontStyles } from './font-styles';
 import { DEFAULT_THEME } from '../../../default-theme';
+import { fontStyles } from './font-styles';
 
 describe('@pattern-ui/tss/get-font-styles', () => {
   it('sets font-family from given theme', () => {

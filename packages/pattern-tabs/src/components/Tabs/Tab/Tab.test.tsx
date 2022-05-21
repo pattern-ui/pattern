@@ -1,4 +1,6 @@
 import React from 'react';
+import userEvent from '@testing-library/user-event';
+import { render, screen } from '@testing-library/react';
 import {
   itSupportsSystemProps,
   createContextContainer,
@@ -6,11 +8,9 @@ import {
   itSupportsFocusEvents,
   itThrowsContextError,
 } from '@pattern-ui/tests';
-import userEvent from '@testing-library/user-event';
-import { render, screen } from '@testing-library/react';
-import { Tab, TabProps } from './Tab';
 import { TabsProvider } from '../TabsProvider';
 import { TABS_ERRORS } from '../Tabs.errors';
+import { Tab, TabProps } from './Tab';
 
 const defaultProps: TabProps = {
   value: 'test',

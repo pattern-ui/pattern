@@ -1,8 +1,8 @@
 import React, { forwardRef } from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { SelectItems, SelectItemsProps } from './SelectItems';
 import { DefaultItem } from '../DefaultItem/DefaultItem';
+import { SelectItems, SelectItemsProps } from './SelectItems';
 
 const data = [
   { value: 'react', label: 'React' },

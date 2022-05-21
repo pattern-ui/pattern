@@ -4,9 +4,9 @@ import {
   itThrowsContextError,
   itRendersChildren,
 } from '@pattern-ui/tests';
-import { PopoverDropdown, PopoverDropdownProps } from './PopoverDropdown';
 import { Popover } from '../Popover';
 import { POPOVER_ERRORS } from '../Popover.errors';
+import { PopoverDropdown, PopoverDropdownProps } from './PopoverDropdown';
 
 const defaultProps: PopoverDropdownProps = {};
 

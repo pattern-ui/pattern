@@ -14,8 +14,8 @@ import {
   InputWrapperStylesNames,
 } from '@pattern-ui/input-wrapper';
 import { CloseButton } from '@pattern-ui/action-icon';
-import useStyles from './TimeRangeInput.styles';
 import { TimeInput } from '../TimeInput';
+import useStyles from './TimeRangeInput.styles';
 
 export type TimeRangeInputStylesNames =
   | Exclude<Selectors<typeof useStyles>, 'disabled'>

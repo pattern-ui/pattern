@@ -1,6 +1,6 @@
 import { act, renderHook } from '@testing-library/react-hooks';
-import { useActionsState } from './use-actions-state';
 import type { SpotlightAction } from '../types';
+import { useActionsState } from './use-actions-state';
 
 const onTrigger = jest.fn();
 

@@ -1,6 +1,6 @@
 import { itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
-import { Aside, AsideProps } from './Aside';
 import { HorizontalSection } from '../HorizontalSection/HorizontalSection';
+import { Aside, AsideProps } from './Aside';
 
 const defaultProps: AsideProps = { children: 'test-aside' };
 

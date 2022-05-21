@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import { zodResolver } from './zod-resolver';
 import { testResolver, RESOLVER_ERROR_MESSAGES } from '../test-resolver';
+import { zodResolver } from './zod-resolver';
 
 describe('@pattern-ui/form zod resolver', () => {
   testResolver(
