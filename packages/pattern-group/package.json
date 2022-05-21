@@ -2,6 +2,9 @@
   "name": "@pattern-ui/group",
   "description": "Pattern UI Group library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-group"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

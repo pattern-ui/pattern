@@ -2,6 +2,9 @@
   "name": "@pattern-ui/nprogress",
   "description": "A navigation progress bar",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-nprogress"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -14,14 +17,15 @@
     "type": "git",
     "directory": "packages/pattern-nprogress"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@pattern-ui/hooks": "1.0.0",
     "@pattern-ui/styles": "1.0.0",
     "@pattern-ui/portal": "1.0.0",
-    "@pattern-ui/progress": "1.0.0",
+    "@pattern-ui/progress": "1.0.0"
+  },
+  "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
-  "dependencies": {},
   "devDependencies": {}
 }

@@ -1,5 +1,5 @@
-import dayjs from 'dayjs';
 import React, { useState, useRef, forwardRef, useEffect } from 'react';
+import dayjs from 'dayjs';
 import { useUncontrolled, useMergedRef, upperFirst } from '@pattern-ui/hooks';
 import { usePatternTheme, usePatternDefaultProps } from '@pattern-ui/styles';
 import { FirstDayOfWeek } from '../../types';

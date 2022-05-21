@@ -1,3 +1,4 @@
+import React from 'react';
 import { Button, Group } from '@pattern-ui/core';
 import {
   NProgress,
@@ -8,7 +9,6 @@ import {
   stopNProgress,
   resetNProgress,
 } from '@pattern-ui/nprogress';
-import React from 'react';
 
 export default function Demo() {
   return (

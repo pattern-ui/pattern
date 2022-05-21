@@ -2,6 +2,9 @@
   "name": "@pattern-ui/rte",
   "description": "Rich text editor built with Pattern components",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-rte"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -29,17 +32,19 @@
     "quill",
     "quilljs"
   ],
-  "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
-  },
   "dependencies": {
     "@pattern-ui/hooks": "1.0.0",
+    "@pattern-ui/styles": "1.0.0",
     "@pattern-ui/box": "1.0.0",
     "@pattern-ui/action-icon": "1.0.0",
     "@modulz/radix-icons": "^4.0.0",
     "react-quill": "2.0.0-beta.4",
+    "quill": "^1.3.7",
     "quill-mention": "^3.0.8"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "devDependencies": {}
 }

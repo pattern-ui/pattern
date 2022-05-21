@@ -2,6 +2,9 @@
   "name": "@pattern-ui/prism",
   "description": "Code highlight with Pattern theme",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-prism"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -28,18 +31,19 @@
     "syntax",
     "syntax-highlight"
   ],
-  "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
-  },
   "dependencies": {
     "@pattern-ui/hooks": "1.0.0",
+    "@pattern-ui/styles": "1.0.0",
     "@pattern-ui/box": "1.0.0",
     "@pattern-ui/tabs": "1.0.0",
     "@pattern-ui/scroll-area": "1.0.0",
     "@pattern-ui/tooltip": "1.0.0",
     "@pattern-ui/action-icon": "1.0.0",
     "prism-react-renderer": "~1.2.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "devDependencies": {}
 }

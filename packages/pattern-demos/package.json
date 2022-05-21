@@ -1,8 +1,10 @@
 {
   "name": "@pattern-ui/demos",
   "description": "Demos used in documentation",
-  "private": true,
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-demos"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -15,10 +17,10 @@
     "type": "git",
     "directory": "packages/pattern-demos"
   },
-  "peerDependencies": {
-    "react": "^17.0.2",
+  "dependencies": {
     "@pattern-ui/core": "1.0.0",
     "@pattern-ui/hooks": "1.0.0",
+    "@pattern-ui/styles": "1.0.0",
     "@pattern-ui/dates": "1.0.0",
     "@pattern-ui/form": "1.0.0",
     "@pattern-ui/rte": "1.0.0",
@@ -36,6 +38,9 @@
     "@modulz/radix-icons": "*",
     "@primer/octicons-react": "*"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "peerDependencies": {
+    "react": "^17.0.2"
+  },
+  "devDependencies": {},
+  "private": true
 }

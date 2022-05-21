@@ -2,6 +2,9 @@
   "name": "@pattern-ui/switch",
   "description": "Pattern UI Switch library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-switch"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

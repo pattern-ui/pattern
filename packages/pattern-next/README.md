@@ -1,6 +1,6 @@
-# Pattern integration for Next.js
+# @pattern-ui/next
 
-Utilities to setup Pattern server side rendering with Next.js
+Pattern Pattern-Next library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Utilities to setup Pattern server side rendering with Next.js
 
 ```sh
 # With yarn
-yarn add @pattern-ui/hooks @pattern-ui/core @pattern-ui/next
+yarn add @pattern-ui/pattern-next
 
 # With npm
-npm install @pattern-ui/hooks @pattern-ui/core @pattern-ui/next
+npm install @pattern-ui/pattern-next
 ```
 
 ## License

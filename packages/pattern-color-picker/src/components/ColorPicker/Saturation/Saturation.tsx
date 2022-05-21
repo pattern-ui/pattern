@@ -3,8 +3,8 @@ import { useMove, clampUseMovePosition, UseMovePosition } from '@pattern-ui/hook
 import { DefaultProps, PatternSize, Selectors } from '@pattern-ui/styles';
 import { HsvaColor } from '../types';
 import { Thumb, ThumbStylesNames } from '../Thumb/Thumb';
-import useStyles from './Saturation.styles';
 import { convertHsvaTo } from '../converters';
+import useStyles from './Saturation.styles';
 
 export type SaturationStylesNames =
   | Exclude<Selectors<typeof useStyles>, 'saturationOverlay' | 'saturationThumb'>

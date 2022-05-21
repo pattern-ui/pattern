@@ -2,6 +2,9 @@
   "name": "@pattern-ui/dropzone",
   "description": "Dropzone component built with Pattern theme and components",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-dropzone"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -27,16 +30,18 @@
     "dragndrop",
     "upload"
   ],
-  "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
-  },
   "dependencies": {
     "@pattern-ui/styles": "1.0.0",
     "@pattern-ui/hooks": "1.0.0",
     "@pattern-ui/box": "1.0.0",
     "@pattern-ui/loading-overlay": "1.0.0",
+    "@pattern-ui/portal": "1.0.0",
+    "@pattern-ui/transition": "1.0.0",
     "react-dropzone": "^11.4.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "devDependencies": {}
 }

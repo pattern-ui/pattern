@@ -1,8 +1,8 @@
 // https://babel.dev/docs/en/babel-parser
-import { parse } from '@babel/parser';
-import { ImportDeclaration } from '@babel/types';
 import path from 'path';
 import fs from 'fs';
+import { parse } from '@babel/parser';
+import { ImportDeclaration } from '@babel/types';
 import { FlattenImport, ImportType } from './type';
 
 const addRawCode = (source: string, imports: FlattenImport[]) => `
@@ -32,7 +32,7 @@ const getImportsData = (code: string, codePath: string) => {
 
   return ast.program.body
     .filter((it) => it.type === 'ImportDeclaration')
-    .map((it: ImportDeclaration) => it.source.value)
+    .map((it) => (it as ImportDeclaration).source.value)
     .filter((it) => it.startsWith('.'))
     .map<ImportType>((it) => {
       const importPath = getFilename(path.resolve(pathObj.dir, it));

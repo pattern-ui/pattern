@@ -7,9 +7,9 @@ import { Box } from '@pattern-ui/box';
 import { NotificationsContext } from '../Notifications.context';
 import { NotificationsProviderPositioning } from '../types';
 import { useNotificationsEvents } from '../events';
+import NotificationContainer from '../NotificationContainer/NotificationContainer';
 import getPositionStyles from './get-position-styles/get-position-styles';
 import getNotificationStateStyles from './get-notification-state-styles/get-notification-state-styles';
-import NotificationContainer from '../NotificationContainer/NotificationContainer';
 import useStyles from './NotificationsProvider.styles';
 import useNotificationsState from './use-notifications-state/use-notifications-state';
 

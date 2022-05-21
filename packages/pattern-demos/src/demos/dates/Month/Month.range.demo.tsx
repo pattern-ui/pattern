@@ -1,6 +1,6 @@
 import React from 'react';
-import { Group } from '@pattern-ui/core';
 import dayjs from 'dayjs';
+import { Group } from '@pattern-ui/core';
 import { Month } from '@pattern-ui/dates';
 
 export default function Demo() {

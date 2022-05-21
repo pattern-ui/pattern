@@ -2,6 +2,9 @@
   "name": "@pattern-ui/chips",
   "description": "Pattern UI Chips library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-chips"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -35,6 +38,7 @@
     "@pattern-ui/hooks": "1.0.0",
     "@pattern-ui/box": "1.0.0",
     "@pattern-ui/checkbox": "1.0.0",
+    "@pattern-ui/group": "1.0.0",
     "@pattern-ui/input-wrapper": "1.0.0"
   },
   "peerDependencies": {

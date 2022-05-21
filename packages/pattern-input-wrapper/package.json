@@ -2,6 +2,9 @@
   "name": "@pattern-ui/input-wrapper",
   "description": "Pattern UI InputWrapper library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-input-wrapper"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

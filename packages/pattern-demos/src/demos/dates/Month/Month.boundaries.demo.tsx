@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import dayjs from 'dayjs';
 import { Group } from '@pattern-ui/core';
 import { Month } from '@pattern-ui/dates';
-import dayjs from 'dayjs';
 
 export default function Demo() {
   const initialDate = dayjs(new Date()).startOf('month').add(10, 'days').toDate();

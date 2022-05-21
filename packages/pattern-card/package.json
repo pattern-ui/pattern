@@ -2,6 +2,9 @@
   "name": "@pattern-ui/card",
   "description": "Pattern UI Card library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-card"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -33,7 +36,8 @@
     "@pattern-ui/utils": "1.0.0",
     "@pattern-ui/styles": "1.0.0",
     "@pattern-ui/hooks": "1.0.0",
-    "@pattern-ui/box": "1.0.0"
+    "@pattern-ui/box": "1.0.0",
+    "@pattern-ui/paper": "1.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",

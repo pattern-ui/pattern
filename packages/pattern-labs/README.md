@@ -1,6 +1,6 @@
-# Pattern Labs
+# @pattern-ui/labs
 
-Experimental Pattern components, use at your own risk
+Pattern Pattern-Labs library.
 
 [View documentation](https://pattern.icu/)
 
@@ -8,10 +8,10 @@ Experimental Pattern components, use at your own risk
 
 ```sh
 # With yarn
-yarn add @pattern-ui/hooks @pattern-ui/core @pattern-ui/labs
+yarn add @pattern-ui/pattern-labs
 
 # With npm
-npm install @pattern-ui/hooks @pattern-ui/core @pattern-ui/labs
+npm install @pattern-ui/pattern-labs
 ```
 
 ## License

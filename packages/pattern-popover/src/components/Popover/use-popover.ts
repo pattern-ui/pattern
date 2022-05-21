@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react';
-import { useDidUpdate } from '@pattern-ui/hooks';
-import { useUncontrolled } from '@pattern-ui/utils';
 import {
   Placement,
   useFloating,
@@ -11,6 +9,8 @@ import {
   autoUpdate,
   Middleware,
 } from '@floating-ui/react-dom-interactions';
+import { useDidUpdate } from '@pattern-ui/hooks';
+import { useUncontrolled } from '@pattern-ui/utils';
 import { PopoverWidth, PopoverMiddlewares } from './Popover.types';
 
 interface UsePopoverOptions {

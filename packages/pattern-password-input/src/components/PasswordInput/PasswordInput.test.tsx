@@ -1,5 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import {
   checkAccessibility,
   itSupportsFocusEvents,
@@ -8,7 +9,6 @@ import {
   itConnectsLabelAndInput,
   itSupportsInputWrapperProps,
 } from '@pattern-ui/tests';
-import userEvent from '@testing-library/user-event';
 import { PasswordInput, PasswordInputProps } from './PasswordInput';
 
 const defaultProps: PasswordInputProps = {};

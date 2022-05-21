@@ -2,6 +2,9 @@
   "name": "@pattern-ui/modal",
   "description": "Pattern UI Modal library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-modal"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -41,7 +44,8 @@
     "@pattern-ui/group": "1.0.0",
     "@pattern-ui/portal": "1.0.0",
     "@pattern-ui/text": "1.0.0",
-    "@pattern-ui/transition": "1.0.0"
+    "@pattern-ui/transition": "1.0.0",
+    "@pattern-ui/paper": "1.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",

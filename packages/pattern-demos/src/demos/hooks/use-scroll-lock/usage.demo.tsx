@@ -1,6 +1,6 @@
 import React from 'react';
-import { useScrollLock } from '@pattern-ui/hooks';
 import { LockClosedIcon, LockOpen2Icon } from '@modulz/radix-icons';
+import { useScrollLock } from '@pattern-ui/hooks';
 import { Group, Button } from '@pattern-ui/core';
 
 export default function Demo() {

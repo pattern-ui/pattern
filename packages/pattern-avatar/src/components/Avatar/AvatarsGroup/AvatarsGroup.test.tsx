@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { itSupportsSystemProps } from '@pattern-ui/tests';
-import { AvatarsGroup, AvatarsGroupProps } from './AvatarsGroup';
 import { Avatar } from '../Avatar';
+import { AvatarsGroup, AvatarsGroupProps } from './AvatarsGroup';
 
 const defaultProps: AvatarsGroupProps = {
   children: [<Avatar>M</Avatar>, <Avatar>K</Avatar>, <Avatar>L</Avatar>, <Avatar>L</Avatar>],

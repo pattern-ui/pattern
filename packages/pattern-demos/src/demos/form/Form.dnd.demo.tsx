@@ -1,8 +1,8 @@
 import React from 'react';
-import { Group, TextInput, Box, Text, Code, Button, Center } from '@pattern-ui/core';
-import { useForm, formList } from '@pattern-ui/form';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import { GripVertical } from 'tabler-icons-react';
+import { Group, TextInput, Box, Text, Code, Button, Center } from '@pattern-ui/core';
+import { useForm, formList } from '@pattern-ui/form';
 
 export default function Demo() {
   const form = useForm({

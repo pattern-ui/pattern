@@ -1,7 +1,7 @@
 import React from 'react';
+import { Trash } from 'tabler-icons-react';
 import { useForm, formList } from '@pattern-ui/form';
 import { TextInput, Switch, Group, ActionIcon, Box, Text, Button, Code } from '@pattern-ui/core';
-import { Trash } from 'tabler-icons-react';
 
 export default function Demo() {
   const form = useForm({

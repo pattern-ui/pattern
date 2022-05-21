@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { DefaultProps, Selectors, PatternSize } from '@pattern-ui/styles';
 import { UnstyledButton } from '@pattern-ui/button';
-import { getDecadeRange } from './get-decade-range/get-decade-range';
 import { CalendarHeader, CalendarHeaderStylesNames } from '../CalendarHeader/CalendarHeader';
+import { getDecadeRange } from './get-decade-range/get-decade-range';
 import useStyles from './YearPicker.styles';
 
 export type YearPickerStylesNames = Selectors<typeof useStyles> | CalendarHeaderStylesNames;

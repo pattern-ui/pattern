@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useForm } from '@pattern-ui/hooks';
 import { EnvelopeClosedIcon, LockClosedIcon } from '@modulz/radix-icons';
+import { useForm } from '@pattern-ui/hooks';
 import {
   TextInput,
   PasswordInput,

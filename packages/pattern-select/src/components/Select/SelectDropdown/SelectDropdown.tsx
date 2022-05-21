@@ -1,6 +1,6 @@
 import React, { forwardRef, useRef } from 'react';
-import { DefaultProps, PatternShadow, Selectors, getDefaultZIndex } from '@pattern-ui/styles';
 import type { Placement } from '@popperjs/core';
+import { DefaultProps, PatternShadow, Selectors, getDefaultZIndex } from '@pattern-ui/styles';
 import { PatternTransition } from '@pattern-ui/transition';
 import { Paper } from '@pattern-ui/paper';
 import { Popper } from '@pattern-ui/popper';

@@ -1,8 +1,10 @@
 {
   "name": "@pattern-ui/styles-api",
   "description": "Pattern components styles api descriptions",
-  "private": true,
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-styles-api"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -95,9 +97,10 @@
     "@pattern-ui/title": "1.0.0",
     "@pattern-ui/tooltip": "1.0.0",
     "@pattern-ui/transfer-list": "1.0.0",
-    "@pattern-ui/transition": "1.0.0"
+    "@pattern-ui/transition": "1.0.0",
+    "@pattern-ui/spotlight": "1.0.0"
   },
+  "peerDependencies": {},
   "devDependencies": {},
-  "peerDependencies": {
-  }
+  "private": true
 }

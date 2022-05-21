@@ -2,6 +2,9 @@
   "name": "@pattern-ui/labs",
   "description": "Experimental unstable Pattern components",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-labs"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -9,6 +12,11 @@
   "author": "lokielse <lokielse@gmail.com>",
   "sideEffects": false,
   "homepage": "https://pattern.icu/labs/",
+  "repository": {
+    "url": "https://github.com/pattern-ui/pattern.git",
+    "type": "git",
+    "directory": "packages/pattern-labs"
+  },
   "keywords": [
     "react",
     "next",
@@ -20,17 +28,18 @@
     "frontend",
     "labs"
   ],
-  "repository": {
-    "url": "https://github.com/pattern-ui/pattern.git",
-    "type": "git",
-    "directory": "packages/pattern-labs"
+  "dependencies": {
+    "@pattern-ui/styles": "1.0.0",
+    "@pattern-ui/hooks": "1.0.0",
+    "@pattern-ui/group": "1.0.0",
+    "@pattern-ui/input-wrapper": "1.0.0",
+    "@pattern-ui/input": "1.0.0",
+    "@pattern-ui/select": "1.0.0",
+    "@pattern-ui/action-icon": "1.0.0"
   },
   "peerDependencies": {
-    "@pattern-ui/core": "1.0.0",
-    "@pattern-ui/hooks": "1.0.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
-  "dependencies": {},
   "devDependencies": {}
 }

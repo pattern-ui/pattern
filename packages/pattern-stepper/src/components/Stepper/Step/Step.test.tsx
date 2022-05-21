@@ -1,6 +1,6 @@
 import React from 'react';
-import { checkAccessibility, itSupportsSystemProps } from '@pattern-ui/tests';
 import { render } from '@testing-library/react';
+import { checkAccessibility, itSupportsSystemProps } from '@pattern-ui/tests';
 import { Step, StepProps } from './Step';
 
 const defaultProps: StepProps = {};

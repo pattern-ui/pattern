@@ -1,10 +1,10 @@
 import type { CSSProperties } from 'react';
+import type { VariantInput, VariantOutput } from '../functions/fns/variant/variant';
+import { CSSObject } from '../../tss';
 import type { PatternSizes, PatternSize, PatternNumberSize } from './PatternSize';
 import type { DeepPartial } from './DeepPartial';
 import type { PatternThemeColors } from './PatternColor';
-import type { VariantInput, VariantOutput } from '../functions/fns/variant/variant';
 import type { ColorScheme } from './ColorScheme';
-import { CSSObject } from '../../tss';
 
 export type LoaderType = 'bars' | 'oval' | 'dots';
 export type PatternThemeOther = Record<string, any>;

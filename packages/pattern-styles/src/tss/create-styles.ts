@@ -1,8 +1,8 @@
 import type { PatternTheme } from '../theme';
+import { usePatternTheme, usePatternThemeStyles } from '../theme/PatternProvider';
 import type { CSSObject } from './types';
 import { fromEntries } from './utils/from-entries/from-entries';
 import { useCss } from './use-css';
-import { usePatternTheme, usePatternThemeStyles } from '../theme/PatternProvider';
 import { mergeClassNames } from './utils/merge-class-names/merge-class-names';
 
 export interface UseStylesOptions<Key extends string> {

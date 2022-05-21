@@ -2,6 +2,9 @@
   "name": "@pattern-ui/form",
   "description": "Pattern form management library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-form"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -14,9 +17,9 @@
     "type": "git",
     "directory": "packages/pattern-hooks"
   },
+  "dependencies": {},
   "peerDependencies": {
     "react": ">=16.8.0"
   },
-  "dependencies": {},
   "devDependencies": {}
 }

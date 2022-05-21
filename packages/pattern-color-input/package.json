@@ -2,6 +2,9 @@
   "name": "@pattern-ui/color-input",
   "description": "Pattern UI ColorInput library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-color-input"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -36,7 +39,11 @@
     "@pattern-ui/box": "1.0.0",
     "@pattern-ui/color-swatch": "1.0.0",
     "@pattern-ui/color-picker": "1.0.0",
-    "@pattern-ui/input-wrapper": "1.0.0"
+    "@pattern-ui/input-wrapper": "1.0.0",
+    "@pattern-ui/transition": "1.0.0",
+    "@pattern-ui/input": "1.0.0",
+    "@pattern-ui/popper": "1.0.0",
+    "@pattern-ui/paper": "1.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",

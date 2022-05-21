@@ -2,6 +2,9 @@
   "name": "@pattern-ui/core",
   "description": "React components library focused on usability, accessibility and developer experience",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-core"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -26,10 +29,6 @@
     "design",
     "emotion"
   ],
-  "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
-  },
   "dependencies": {
     "@pattern-ui/hooks": "1.0.0",
     "@pattern-ui/box": "1.0.0",
@@ -112,6 +111,10 @@
     "@pattern-ui/transfer-list": "1.0.0",
     "@pattern-ui/transition": "1.0.0",
     "@pattern-ui/typography-styles-provider": "1.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "devDependencies": {}
 }

@@ -4,9 +4,9 @@ import {
   itRendersChildren,
   itThrowsContextError,
 } from '@pattern-ui/tests';
-import { AccordionItem, AccordionItemProps } from './AccordionItem';
 import { AccordionProvider } from '../AccordionProvider';
 import { ACCORDION_ERRORS } from '../Accordion.errors';
+import { AccordionItem, AccordionItemProps } from './AccordionItem';
 
 const defaultProps: AccordionItemProps = {
   value: 'test',

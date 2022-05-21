@@ -5,8 +5,8 @@ import { Group } from '@pattern-ui/group';
 import { Center } from '@pattern-ui/center';
 import { Text } from '@pattern-ui/text';
 import { Highlight } from '@pattern-ui/highlight';
-import useStyles from './DefaultAction.styles';
 import type { SpotlightAction } from '../types';
+import useStyles from './DefaultAction.styles';
 
 export type DefaultActionStylesNames = Selectors<typeof useStyles>;
 

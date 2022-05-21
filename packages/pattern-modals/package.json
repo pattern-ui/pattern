@@ -2,6 +2,9 @@
   "name": "@pattern-ui/modals",
   "description": "Modals manager based on Pattern components",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-modals"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -26,17 +29,20 @@
     "modal",
     "confirm"
   ],
-  "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
-  },
   "dependencies": {
     "@pattern-ui/hooks": "1.0.0",
+    "@pattern-ui/styles": "1.0.0",
     "@pattern-ui/box": "1.0.0",
     "@pattern-ui/button": "1.0.0",
     "@pattern-ui/group": "1.0.0",
     "@pattern-ui/modal": "1.0.0",
     "@pattern-ui/text": "1.0.0"
   },
-  "devDependencies": {}
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/testing-library__jest-dom": "^5.14.3"
+  }
 }

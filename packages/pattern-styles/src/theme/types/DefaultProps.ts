@@ -1,7 +1,7 @@
 import type { CSSProperties } from 'react';
+import type { CSSObject } from '../../tss';
 import type { PatternStyleSystemProps } from './PatternStyleSystem';
 import type { PatternTheme } from './PatternTheme';
-import type { CSSObject } from '../../tss';
 
 export type Sx = CSSObject | ((theme: PatternTheme) => CSSObject);
 

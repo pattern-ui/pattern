@@ -1,5 +1,5 @@
-import { focusStyles } from './focus-styles';
 import { DEFAULT_THEME } from '../../../default-theme';
+import { focusStyles } from './focus-styles';
 
 describe('@pattern-ui/styles/focus-styles', () => {
   it('uses primaryColor from given theme', () => {

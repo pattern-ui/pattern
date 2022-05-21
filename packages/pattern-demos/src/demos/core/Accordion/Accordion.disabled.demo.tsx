@@ -1,5 +1,5 @@
-import { Accordion, Box } from '@pattern-ui/core';
 import React from 'react';
+import { Accordion, Box } from '@pattern-ui/core';
 import { baseAccordionMockdata } from './_mockdata';
 
 export const baseDemoItems = baseAccordionMockdata.map((item, index) => (

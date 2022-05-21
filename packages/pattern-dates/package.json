@@ -2,6 +2,9 @@
   "name": "@pattern-ui/dates",
   "description": "Calendars, date and time pickers based on Pattern components",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-dates"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -22,16 +25,24 @@
     "time",
     "picker"
   ],
-  "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
-  },
   "dependencies": {
     "@pattern-ui/styles": "1.0.0",
     "@pattern-ui/hooks": "1.0.0",
     "@pattern-ui/button": "1.0.0",
     "@pattern-ui/select": "1.0.0",
+    "@pattern-ui/box": "1.0.0",
+    "@pattern-ui/input": "1.0.0",
+    "@pattern-ui/popper": "1.0.0",
+    "@pattern-ui/modal": "1.0.0",
+    "@pattern-ui/transition": "1.0.0",
+    "@pattern-ui/input-wrapper": "1.0.0",
+    "@pattern-ui/paper": "1.0.0",
+    "@pattern-ui/text": "1.0.0",
     "@pattern-ui/action-icon": "1.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "devDependencies": {}
 }

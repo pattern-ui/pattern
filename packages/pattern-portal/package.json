@@ -2,6 +2,9 @@
   "name": "@pattern-ui/portal",
   "description": "Pattern UI Portal library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-portal"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

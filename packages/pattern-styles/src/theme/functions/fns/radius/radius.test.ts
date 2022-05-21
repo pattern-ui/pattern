@@ -1,5 +1,5 @@
-import { radius } from './radius';
 import { DEFAULT_THEME } from '../../../default-theme';
+import { radius } from './radius';
 
 describe('@pattern-ui/tss/radius', () => {
   it('returns given radius from theme.radius', () => {

@@ -16,16 +16,16 @@ import {
 import { InputWrapper } from '@pattern-ui/input-wrapper';
 import { Input } from '@pattern-ui/input';
 import { groupOptions } from '@pattern-ui/utils';
-import { DefaultValue, DefaultValueStylesNames } from './DefaultValue/DefaultValue';
 import { DefaultItem } from '../Select/DefaultItem/DefaultItem';
-import { filterData } from './filter-data/filter-data';
 import { getSelectRightSectionProps } from '../Select/SelectRightSection/get-select-right-section-props';
 import { SelectScrollArea } from '../Select';
 import { SelectItem, BaseSelectProps, BaseSelectStylesNames } from '../Select/types';
 import { SelectItems } from '../Select/SelectItems/SelectItems';
 import { SelectDropdown } from '../Select/SelectDropdown/SelectDropdown';
-import useStyles from './MultiSelect.styles';
 import { SelectSharedProps } from '../Select/Select';
+import useStyles from './MultiSelect.styles';
+import { filterData } from './filter-data/filter-data';
+import { DefaultValue, DefaultValueStylesNames } from './DefaultValue/DefaultValue';
 
 export type MultiSelectStylesNames =
   | DefaultValueStylesNames

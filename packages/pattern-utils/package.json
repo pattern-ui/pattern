@@ -1,6 +1,9 @@
 {
   "name": "@pattern-ui/utils",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-utils"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -23,9 +26,9 @@
     "hooks",
     "state"
   ],
+  "dependencies": {},
   "peerDependencies": {
     "react": ">=16.8.0"
   },
-  "dependencies": {},
   "devDependencies": {}
 }

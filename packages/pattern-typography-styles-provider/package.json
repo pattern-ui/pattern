@@ -2,6 +2,9 @@
   "name": "@pattern-ui/typography-styles-provider",
   "description": "Pattern UI TypographyStylesProvider library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-typography-styles-provider"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

@@ -2,6 +2,9 @@
   "name": "@pattern-ui/stack",
   "description": "Pattern UI Stack library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-stack"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

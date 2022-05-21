@@ -1,6 +1,6 @@
 import { itRendersChildren, itSupportsSystemProps } from '@pattern-ui/tests';
-import { Navbar, NavbarProps } from './Navbar';
 import { HorizontalSection } from '../HorizontalSection/HorizontalSection';
+import { Navbar, NavbarProps } from './Navbar';
 
 const defaultProps: NavbarProps = { children: 'test-navbar' };
 

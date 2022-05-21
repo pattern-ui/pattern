@@ -2,6 +2,9 @@
   "name": "@pattern-ui/code",
   "description": "Pattern UI Code library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-code"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

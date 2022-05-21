@@ -7,10 +7,10 @@ import {
   itThrowsContextError,
   itRendersChildren,
 } from '@pattern-ui/tests';
-import { AccordionControl, AccordionControlProps } from './AccordionControl';
 import { AccordionProvider } from '../AccordionProvider';
 import { AccordionItemContextProvider } from '../AccordionItem.context';
 import { ACCORDION_ERRORS } from '../Accordion.errors';
+import { AccordionControl, AccordionControlProps } from './AccordionControl';
 
 const TestContainer = createContextContainer(
   createContextContainer(AccordionControl, AccordionItemContextProvider, {

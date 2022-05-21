@@ -2,6 +2,9 @@
   "name": "@pattern-ui/kbd",
   "description": "Pattern UI Kbd library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-kbd"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",

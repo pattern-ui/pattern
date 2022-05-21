@@ -1,9 +1,9 @@
 import React from 'react';
-import { useBooleanToggle } from '@pattern-ui/hooks';
 import { storiesOf } from '@storybook/react';
-import { PATTERN_SIZES, PatternProvider } from '@pattern-ui/styles';
 import { MagnifyingGlassIcon } from '@modulz/radix-icons';
 import Textarea from 'react-textarea-autosize';
+import { PATTERN_SIZES, PatternProvider } from '@pattern-ui/styles';
+import { useBooleanToggle } from '@pattern-ui/hooks';
 import { ActionIcon } from '@pattern-ui/action-icon';
 import { Input } from './Input';
 

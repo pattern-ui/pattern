@@ -1,8 +1,6 @@
 {
   "extends": "../../tsconfig.base.json",
-  "include": ["./src",
-    "../../config/types"
-  ],
+  "include": ["./src", "../../config/types"],
   "exclude": [
     "./lib",
     "./esm",

@@ -4,9 +4,9 @@ import {
   itRendersChildren,
   itThrowsContextError,
 } from '@pattern-ui/tests';
-import { TabsList, TabsListProps } from './TabsList';
 import { TabsProvider } from '../TabsProvider';
 import { TABS_ERRORS } from '../Tabs.errors';
+import { TabsList, TabsListProps } from './TabsList';
 
 const defaultProps: TabsListProps = {
   children: 'Test children',

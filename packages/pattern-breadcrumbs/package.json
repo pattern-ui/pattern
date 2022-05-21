@@ -2,6 +2,9 @@
   "name": "@pattern-ui/breadcrumbs",
   "description": "Pattern UI Breadcrumbs library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-breadcrumbs"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -33,7 +36,8 @@
     "@pattern-ui/utils": "1.0.0",
     "@pattern-ui/styles": "1.0.0",
     "@pattern-ui/hooks": "1.0.0",
-    "@pattern-ui/box": "1.0.0"
+    "@pattern-ui/box": "1.0.0",
+    "@pattern-ui/text": "1.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",

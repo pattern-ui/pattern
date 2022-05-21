@@ -1,11 +1,12 @@
 import React, { useEffect, PropsWithChildren } from 'react';
 import ReactDOM from 'react-dom';
 import { renderHook, WrapperComponent } from '@testing-library/react-hooks';
-import { PatternProvider } from '@pattern-ui/styles';
 import { render, screen } from '@testing-library/react';
-import { useModals } from './use-modals';
+import { PatternProvider } from '@pattern-ui/styles';
 import { ModalsProvider } from '../ModalsProvider';
 import { ContextModalProps } from '../context';
+import { useModals } from './use-modals';
+import '@testing-library/jest-dom/extend-expect';
 
 describe('@pattern-ui/modals/use-modals', () => {
   beforeAll(() => {

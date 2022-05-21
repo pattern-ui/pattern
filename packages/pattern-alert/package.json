@@ -2,6 +2,9 @@
   "name": "@pattern-ui/alert",
   "description": "Pattern UI Alert library",
   "version": "1.0.0",
+  "scripts": {
+    "build": "esno ../../scripts/build pattern-alert"
+  },
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
@@ -33,7 +36,8 @@
     "@pattern-ui/utils": "1.0.0",
     "@pattern-ui/styles": "1.0.0",
     "@pattern-ui/hooks": "1.0.0",
-    "@pattern-ui/box": "1.0.0"
+    "@pattern-ui/box": "1.0.0",
+    "@pattern-ui/action-icon": "1.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
