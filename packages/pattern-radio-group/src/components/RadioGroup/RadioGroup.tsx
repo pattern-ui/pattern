@@ -8,11 +8,7 @@ import {
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
 import { filterChildrenByType } from '@pattern-ui/utils';
-import {
-  InputWrapper,
-  InputWrapperBaseProps,
-  InputWrapperStylesNames,
-} from '@pattern-ui/input-wrapper';
+import { InputWrapperStylesNames } from '@pattern-ui/input-wrapper';
 import { Group } from '@pattern-ui/group';
 import { Radio, RadioStylesNames } from './Radio/Radio';
 
@@ -20,7 +16,6 @@ export type RadioGroupStylesNames = InputWrapperStylesNames | RadioStylesNames;
 
 export interface RadioGroupProps
   extends DefaultProps<RadioGroupStylesNames>,
-    InputWrapperBaseProps,
     Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
   /** <Radio /> components only */
   children: React.ReactNode;
@@ -63,6 +58,7 @@ export const RadioGroup = forwardRef<HTMLDivElement, RadioGroupProps>(
     const {
       id,
       name,
+      sx,
       children,
       value,
       defaultValue,
@@ -74,9 +70,6 @@ export const RadioGroup = forwardRef<HTMLDivElement, RadioGroupProps>(
       classNames,
       styles,
       wrapperProps,
-      errorProps,
-      labelProps,
-      descriptionProps,
       ...others
     } = usePatternDefaultProps('RadioGroup', defaultProps, props);
 
@@ -106,30 +99,20 @@ export const RadioGroup = forwardRef<HTMLDivElement, RadioGroupProps>(
     );
 
     return (
-      <InputWrapper
-        id={rootId}
-        labelElement="div"
-        size={size}
-        __staticSelector="RadioGroup"
-        classNames={classNames}
-        styles={styles}
+      <Group
         ref={ref}
-        errorProps={errorProps}
-        descriptionProps={descriptionProps}
-        labelProps={labelProps}
+        id={rootId}
+        styles={styles}
+        role="radiogroup"
+        aria-labelledby={`${rootId}-label`}
+        spacing={spacing}
+        direction={orientation === 'horizontal' ? 'row' : 'column'}
+        sx={sx}
         {...wrapperProps}
         {...others}
       >
-        <Group
-          role="radiogroup"
-          aria-labelledby={`${rootId}-label`}
-          spacing={spacing}
-          direction={orientation === 'horizontal' ? 'row' : 'column'}
-          style={{ paddingTop: 5 }}
-        >
-          {radios}
-        </Group>
-      </InputWrapper>
+        {radios}
+      </Group>
     );
   }
 );
