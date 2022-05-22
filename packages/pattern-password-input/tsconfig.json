@@ -23,6 +23,8 @@
     { "path": "../pattern-utils" },
     { "path": "../pattern-styles" },
     { "path": "../pattern-tests" },
+    { "path": "../pattern-text-input" },
+    { "path": "../pattern-input" },
     { "path": "../pattern-storybook" }
   ]
 }
