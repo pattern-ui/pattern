@@ -1,8 +1,6 @@
 {
   "extends": "../../tsconfig.base.json",
-  "include": ["./src", "./types",
-    "../../config/types"
-  ],
+  "include": ["./src", "./types", "../../config/types"],
   "exclude": ["./lib", "./esm", "./cjs"],
   "compilerOptions": {
     "rootDir": "src",
@@ -21,6 +19,8 @@
   "references": [
     { "path": "../pattern-core" },
     { "path": "../pattern-hooks" },
+    { "path": "../pattern-input" },
+    { "path": "../pattern-select" },
     { "path": "../pattern-tests" }
   ]
 }
