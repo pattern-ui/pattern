@@ -14,7 +14,6 @@ function Controlled(props: Partial<PasswordInputProps>) {
       <PasswordInput
         value={value}
         onChange={(event) => onChange(event.currentTarget.value)}
-        label="Password"
         placeholder="Password"
         {...props}
       />
@@ -25,7 +24,7 @@ function Controlled(props: Partial<PasswordInputProps>) {
 storiesOf('PasswordInput', module)
   .add('Controlled', () => <Controlled />)
   .add('Sizes', () => <div style={{ width: 400, padding: 20 }}>{sizes}</div>)
-  .add('Invalid', () => <Controlled error="error" />)
+  .add('Invalid', () => <Controlled invalid />)
   .add('Default radius on PatternProvider', () => (
     <PatternProvider theme={{ defaultRadius: 'lg' }}>
       <Controlled />

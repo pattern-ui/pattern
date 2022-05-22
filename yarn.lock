@@ -7560,14 +7560,21 @@ esbuild-netbsd-64@0.14.38:
   resolved "https://registry.yarnpkg.com/esbuild-netbsd-64/-/esbuild-netbsd-64-0.14.38.tgz#322ea9937d9e529183ee281c7996b93eb38a5d95"
   integrity sha512-cljBAApVwkpnJZfnRVThpRBGzCi+a+V9Ofb1fVkKhtrPLDYlHLrSYGtmnoTVWDQdU516qYI8+wOgcGZ4XIZh0Q==
 
+esbuild-node-loader@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.npmmirror.com/esbuild-node-loader/-/esbuild-node-loader-0.1.1.tgz#b43937133e70435f9dd1dc058a5ac27ccc7addbe"
+  integrity sha512-n24xYzMfKmPupUZgs0QYBr52HUSh1M1vDtBfkEVa6pdENqo5+U5WP+zaj4Iw2MinuYk1axLW8+NVutrBCkrdmA==
+  dependencies:
+    esbuild "^0.12.6"
+
 esbuild-openbsd-64@0.14.38:
   version "0.14.38"
   resolved "https://registry.yarnpkg.com/esbuild-openbsd-64/-/esbuild-openbsd-64-0.14.38.tgz#1ca29bb7a2bf09592dcc26afdb45108f08a2cdbd"
   integrity sha512-CDswYr2PWPGEPpLDUO50mL3WO/07EMjnZDNKpmaxUPsrW+kVM3LoAqr/CE8UbzugpEiflYqJsGPLirThRB18IQ==
 
-esbuild-register@^2.5.0:
+esbuild-register@^2.6.0:
   version "2.6.0"
-  resolved "https://registry.yarnpkg.com/esbuild-register/-/esbuild-register-2.6.0.tgz#9f19a54c82be751dd87673d6a66d7b9e1cdd8498"
+  resolved "https://registry.npmmirror.com/esbuild-register/-/esbuild-register-2.6.0.tgz#9f19a54c82be751dd87673d6a66d7b9e1cdd8498"
   integrity sha512-2u4AtnCXP5nivtIxZryiZOUcEQkOzFS7UhAqibUEmaTAThJ48gDLYTBF/Fsz+5r0hbV1jrFE6PQvPDUrKZNt/Q==
   dependencies:
     esbuild "^0.12.8"
@@ -7593,7 +7600,7 @@ esbuild-windows-arm64@0.14.38:
   resolved "https://registry.yarnpkg.com/esbuild-windows-arm64/-/esbuild-windows-arm64-0.14.38.tgz#d97e9ac0f95a4c236d9173fa9f86c983d6a53f54"
   integrity sha512-k3FGCNmHBkqdJXuJszdWciAH77PukEyDsdIryEHn9cKLQFxzhT39dSumeTuggaQcXY57UlmLGIkklWZo2qzHpw==
 
-esbuild@^0.12.5, esbuild@^0.12.8:
+esbuild@^0.12.5, esbuild@^0.12.6, esbuild@^0.12.8:
   version "0.12.29"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.12.29.tgz#be602db7c4dc78944a9dbde0d1ea19d36c1f882d"
   integrity sha512-w/XuoBCSwepyiZtIRsKsetiLDUVGPVw1E/R3VTFSecIy8UR7Cq3SOtwKHJMFoVqqVG36aGkzh4e8BvpO1Fdc7g==
@@ -7854,14 +7861,15 @@ eslint@^8.10.0:
     text-table "^0.2.0"
     v8-compile-cache "^2.0.3"
 
-esno@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/esno/-/esno-0.6.0.tgz#9e00c314840f314fcb92f7ef89258ed1be37471d"
-  integrity sha512-fzk7/w3I9f1c6oJ6E9qGN54rEYwweM2/LxGhW8iDrhkY4VnQvpavYS6pK3SF8iZgEvmtXsY7i9fs/D09o3Xdtg==
+esno@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.npmmirror.com/esno/-/esno-0.8.0.tgz#33ca366ea2cef6c499010b48c11848a719e9dbb3"
+  integrity sha512-zbvu/Kmv+/MznS1J3/U9fXBpnpl7N2dVkwihq1YzR4JzYfJMuwFxDQ0WcTSUX+rBXmKxbYlgj9dwbog+mJXo1Q==
   dependencies:
     cross-spawn "^7.0.3"
-    esbuild "^0.12.5"
-    esbuild-register "^2.5.0"
+    esbuild "^0.12.8"
+    esbuild-node-loader "^0.1.1"
+    esbuild-register "^2.6.0"
 
 espree@^9.3.1:
   version "9.3.1"

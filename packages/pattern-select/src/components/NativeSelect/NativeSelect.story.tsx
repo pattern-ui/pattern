@@ -20,14 +20,9 @@ function Controlled(props: Partial<NativeSelectProps>) {
 storiesOf('NativeSelect', module)
   .add('Controlled', () => (
     <div style={{ maxWidth: 300, padding: 20 }}>
-      <Controlled label="Your favorite library" placeholder="Your favorite library" />
+      <Controlled placeholder="Your favorite library" />
     </div>
   ))
   .add('Uncontrolled with default value', () => (
-    <NativeSelect
-      label="Data as string"
-      data={stringData}
-      placeholder="String data"
-      defaultValue="Vue"
-    />
+    <NativeSelect data={stringData} placeholder="String data" defaultValue="Vue" />
   ));

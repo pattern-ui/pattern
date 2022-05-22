@@ -7,7 +7,6 @@ export default function Demo() {
   return (
     <Container size={340}>
       <TimeRangeInput
-        label="Appointment time"
         withSeconds
         defaultValue={[new Date(), dayjs(new Date()).add(30, 'minutes').toDate()]}
       />

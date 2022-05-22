@@ -5,7 +5,6 @@ export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <Select
-        label="Select with disabled items"
         placeholder="Select something"
         data={[
           { value: 'react', label: 'React', disabled: true },

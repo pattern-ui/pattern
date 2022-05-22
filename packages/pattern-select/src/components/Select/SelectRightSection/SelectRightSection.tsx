@@ -8,7 +8,7 @@ export interface SelectRightSectionProps {
   clearButtonLabel?: string;
   onClear?: () => void;
   size: PatternSize;
-  error?: any;
+  invalid?: boolean;
   // eslint-disable-next-line react/no-unused-prop-types
   disabled?: boolean;
   clearButtonTabIndex?: number;
@@ -19,7 +19,7 @@ export function SelectRightSection({
   clearButtonLabel,
   onClear,
   size,
-  error,
+  invalid,
   clearButtonTabIndex,
 }: SelectRightSectionProps) {
   return shouldClear ? (
@@ -31,7 +31,7 @@ export function SelectRightSection({
       tabIndex={clearButtonTabIndex}
     />
   ) : (
-    <ChevronIcon error={error} size={size} />
+    <ChevronIcon error={invalid} size={size} />
   );
 }
 

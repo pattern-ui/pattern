@@ -6,7 +6,6 @@ export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <NumberInput
-        label="Age when you graduated"
         placeholder="Age when you graduated"
         defaultValue={22}
         min={0}

@@ -54,7 +54,6 @@ export default function Demo() {
           >
             <PasswordInput
               required
-              label="Your password"
               placeholder="Your password"
               value={value}
               onChange={(event) => setValue(event.currentTarget.value)}

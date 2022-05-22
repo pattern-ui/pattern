@@ -13,9 +13,7 @@ function DynamicData() {
         }))
       : [];
 
-  return (
-    <Autocomplete value={value} onChange={setValue} label="Email" placeholder="Email" data={data} />
-  );
+  return <Autocomplete value={value} onChange={setValue} placeholder="Email" data={data} />;
 }
 
 storiesOf('Autocomplete', module)
@@ -30,7 +28,6 @@ storiesOf('Autocomplete', module)
   .add('Repetitive data', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
       <Autocomplete
-        label="Choose your favorite library/framework"
         placeholder="Choose value"
         data={[{ value: 'AA' }, { value: 'AAA' }, { value: 'AAAA' }]}
       />
@@ -39,7 +36,6 @@ storiesOf('Autocomplete', module)
   .add('Fixed value', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
       <Autocomplete
-        label="Choose your favorite library/framework"
         placeholder="Choose value"
         value="React"
         onChange={() => {}}
@@ -54,17 +50,12 @@ storiesOf('Autocomplete', module)
   ))
   .add('Strings as data', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
-      <Autocomplete
-        label="Choose your favorite library/framework"
-        placeholder="Choose value"
-        data={['React', 'Angular', 'Svelte', 'Vue']}
-      />
+      <Autocomplete placeholder="Choose value" data={['React', 'Angular', 'Svelte', 'Vue']} />
     </div>
   ))
   .add('Within overlays', () => (
     <WithinOverlays>
       <Autocomplete
-        label="Choose your favorite library/framework"
         placeholder="Choose value"
         data={['React', 'Angular', 'Svelte', 'Vue']}
         withinPortal={false}
@@ -73,20 +64,16 @@ storiesOf('Autocomplete', module)
   ))
   .add('Within form', () => (
     <SubmitForm>
-      <Autocomplete
-        label="Press enter"
-        placeholder="Choose value"
-        data={['React', 'Angular', 'Svelte', 'Vue']}
-      />
+      <Autocomplete placeholder="Choose value" data={['React', 'Angular', 'Svelte', 'Vue']} />
     </SubmitForm>
   ))
   .add('Default props on PatternProvider', () => (
     <PatternProvider defaultProps={{ Autocomplete: { placeholder: 'Default placeholder' } }}>
-      <Autocomplete label="Default props" data={['React', 'Angular', 'Svelte', 'Vue']} />
+      <Autocomplete data={['React', 'Angular', 'Svelte', 'Vue']} />
     </PatternProvider>
   ))
   .add('Default radius on PatternProvider', () => (
     <PatternProvider theme={{ defaultRadius: 0 }}>
-      <Autocomplete label="Default radius" data={['React', 'Angular', 'Svelte', 'Vue']} />
+      <Autocomplete data={['React', 'Angular', 'Svelte', 'Vue']} />
     </PatternProvider>
   ));

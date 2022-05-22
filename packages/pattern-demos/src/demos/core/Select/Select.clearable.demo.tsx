@@ -5,7 +5,6 @@ export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <Select
-        label="Your favorite framework/library"
         placeholder="Pick one"
         clearable
         data={[
@@ -17,7 +16,6 @@ export default function Demo() {
       />
 
       <Select
-        label="Your favorite framework/library"
         placeholder="Pick one"
         clearable
         searchable

@@ -20,19 +20,9 @@ export const control: PatternControlDemo = {
   controls: [
     { name: 'placeholder', type: 'string', initialValue: 'Password' },
     {
-      name: 'label',
-      type: 'string',
-      initialValue: 'Password',
-    },
-    {
-      name: 'description',
-      type: 'string',
-      initialValue: 'Password must include at least one letter, number and special character',
-    },
-    {
-      name: 'error',
-      type: 'string',
-      initialValue: '',
+      name: 'invalid',
+      type: 'boolean',
+      initialValue: false,
     },
     {
       name: 'variant',
@@ -48,11 +38,5 @@ export const control: PatternControlDemo = {
     { name: 'radius', type: 'size', initialValue: 'xs', defaultValue: 'xs' },
     { name: 'size', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
     { name: 'disabled', type: 'boolean', initialValue: false, defaultValue: false },
-    {
-      name: 'required',
-      type: 'boolean',
-      initialValue: true,
-      defaultValue: false,
-    },
   ],
 };

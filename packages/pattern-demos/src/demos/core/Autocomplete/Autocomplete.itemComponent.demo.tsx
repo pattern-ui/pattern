@@ -54,7 +54,6 @@ export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <Autocomplete
-        label="Choose employee of the month"
         placeholder="Pick one"
         itemComponent={AutoCompleteItem}
         data={data}

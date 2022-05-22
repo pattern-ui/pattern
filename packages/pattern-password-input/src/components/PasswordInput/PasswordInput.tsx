@@ -10,7 +10,6 @@ import {
 import { ActionIcon } from '@pattern-ui/action-icon';
 import { TextInputProps, TextInputStylesNames } from '@pattern-ui/text-input';
 import { Input } from '@pattern-ui/input';
-import { InputWrapper } from '@pattern-ui/input-wrapper';
 import { PasswordToggleIcon } from './PasswordToggleIcon';
 import useStyles from './PasswordInput.styles';
 
@@ -63,15 +62,13 @@ export const PasswordInput = forwardRef<HTMLInputElement, PasswordInputProps>(
       radius,
       disabled,
       size,
+      invalid,
       toggleTabIndex,
       className,
       id,
-      label,
-      error,
       required,
       style,
       icon,
-      description,
       wrapperProps,
       classNames,
       styles,
@@ -82,9 +79,6 @@ export const PasswordInput = forwardRef<HTMLInputElement, PasswordInputProps>(
       rightSectionWidth: _rightSectionWidth,
       rightSectionProps: _rightSectionProps,
       sx,
-      labelProps,
-      descriptionProps,
-      errorProps,
       ...others
     } = usePatternDefaultProps('PasswordInput', defaultProps, props);
 
@@ -121,53 +115,39 @@ export const PasswordInput = forwardRef<HTMLInputElement, PasswordInputProps>(
     );
 
     return (
-      <InputWrapper
-        required={required}
-        id={uuid}
-        label={label}
-        error={error}
-        description={description}
+      <Input<'div'>
+        id={`${uuid}-wrapper`}
+        component="div"
+        invalid={invalid}
+        icon={icon}
         size={size}
         className={className}
+        classNames={{ ...classNames, input: classes.input }}
         style={style}
-        classNames={classNames}
         styles={styles}
+        radius={radius}
+        disabled={disabled}
         __staticSelector={__staticSelector}
+        rightSectionWidth={rightSectionWidth}
+        rightSection={!disabled && rightSection}
+        variant={variant}
         sx={sx}
-        errorProps={errorProps}
-        descriptionProps={descriptionProps}
-        labelProps={labelProps}
         {...systemStyles}
         {...wrapperProps}
       >
-        <Input<'div'>
-          component="div"
-          invalid={!!error}
-          icon={icon}
-          size={size}
-          classNames={{ ...classNames, input: classes.input }}
-          styles={styles}
-          radius={radius}
+        <input
+          type={reveal ? 'text' : 'password'}
+          required={required}
+          className={cx(classes.innerInput, {
+            [classes.withIcon]: icon,
+            [classes.invalid]: invalid,
+          })}
           disabled={disabled}
-          __staticSelector={__staticSelector}
-          rightSectionWidth={rightSectionWidth}
-          rightSection={!disabled && rightSection}
-          variant={variant}
-        >
-          <input
-            type={reveal ? 'text' : 'password'}
-            required={required}
-            className={cx(classes.innerInput, {
-              [classes.withIcon]: icon,
-              [classes.invalid]: !!error,
-            })}
-            disabled={disabled}
-            id={uuid}
-            ref={ref}
-            {...rest}
-          />
-        </Input>
-      </InputWrapper>
+          id={uuid}
+          ref={ref}
+          {...rest}
+        />
+      </Input>
     );
   }
 );

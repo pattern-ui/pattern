@@ -7,7 +7,6 @@ export default function Demo() {
     <div style={{ maxWidth: 340, marginLeft: 'auto', marginRight: 'auto' }}>
       <DatePicker
         placeholder="Pick date"
-        label="Event date"
         renderDay={(date) => {
           const day = date.getDate();
           return (

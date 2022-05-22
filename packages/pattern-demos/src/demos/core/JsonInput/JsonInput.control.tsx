@@ -20,19 +20,9 @@ export const control: PatternControlDemo = {
   controls: [
     { name: 'placeholder', type: 'string', initialValue: 'Your package.json' },
     {
-      name: 'label',
-      type: 'string',
-      initialValue: 'Your package.json',
-    },
-    {
-      name: 'description',
-      type: 'string',
-      initialValue: '',
-    },
-    {
-      name: 'error',
-      type: 'string',
-      initialValue: '',
+      name: 'invalid',
+      type: 'boolean',
+      initialValue: false,
     },
     {
       name: 'variant',
@@ -48,11 +38,5 @@ export const control: PatternControlDemo = {
     { name: 'radius', type: 'size', initialValue: 'xs', defaultValue: 'xs' },
     { name: 'size', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
     { name: 'disabled', type: 'boolean', initialValue: false, defaultValue: false },
-    {
-      name: 'required',
-      type: 'boolean',
-      initialValue: true,
-      defaultValue: false,
-    },
   ],
 };

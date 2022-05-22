@@ -20,7 +20,6 @@ function Controlled() {
         onChange(val);
       }}
       placeholder="With month and year"
-      label="Date picker"
     />
   );
 }
@@ -39,7 +38,6 @@ function ControlledFreeInput() {
           onChange(val);
         }}
         placeholder="Controlled with free input"
-        label="Date picker"
         allowFreeInput
       />
       <button type="button" onClick={() => onChange(new Date())}>
@@ -55,7 +53,7 @@ function WithinModal() {
     <>
       <Button onClick={handlers.open}>Open Modal</Button>
       <Modal opened={opened} onClose={handlers.close} title="Modal with DatePicker">
-        <DatePicker mt="md" id="dateOfBirth" label="Date Of Birth" placeholder="Date Of Birth" />
+        <DatePicker mt="md" id="dateOfBirth" placeholder="Date Of Birth" />
       </Modal>
     </>
   );
@@ -68,8 +66,6 @@ const sizes = PATTERN_SIZES.map((size) => (
     key={size}
     style={{ marginTop: 30 }}
     defaultValue={new Date()}
-    label="This is label"
-    description="This is description"
   />
 ));
 
@@ -77,34 +73,28 @@ storiesOf('DatePicker', module)
   .add('Sizes', () => <div style={{ maxWidth: 400, padding: 40 }}>{sizes}</div>)
   .add('Hide week days', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
-      <DatePicker hideWeekdays label="Date picker" />
+      <DatePicker hideWeekdays />
     </div>
   ))
   .add('Hide outside dates', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
-      <DatePicker hideOutsideDates label="Date picker" />
+      <DatePicker hideOutsideDates />
     </div>
   ))
   .add('Within modal', () => <WithinModal />)
   .add('Dropdown type modal', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
-      <DatePicker
-        dropdownType="modal"
-        placeholder="Pick date"
-        label="Date picker"
-        modalZIndex={4554}
-      />
+      <DatePicker dropdownType="modal" placeholder="Pick date" modalZIndex={4554} />
     </div>
   ))
   .add('Amount of months', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
       <DatePicker
         amountOfMonths={2}
-        label="Two months"
         onDropdownClose={() => console.log('Close')}
         onDropdownOpen={() => console.log('open')}
       />
-      <DatePicker amountOfMonths={3} label="Three months" />
+      <DatePicker amountOfMonths={3} />
     </div>
   ))
   .add('Controlled', () => (
@@ -120,14 +110,14 @@ storiesOf('DatePicker', module)
   .add('Restricted input focus', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
       <TextInput placeholder="Focus me when dropdown is opened" />
-      <DatePicker placeholder="Pick date" label="Date picker" mt="xl" />
+      <DatePicker placeholder="Pick date" mt="xl" />
     </div>
   ))
   .add('Free input focus', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
-      <DatePicker placeholder="Pick date" label="Date picker" allowFreeInput />
+      <DatePicker placeholder="Pick date" allowFreeInput />
 
-      <DatePicker placeholder="Pick date" label="Date picker" allowFreeInput mt={20} mb={40} />
+      <DatePicker placeholder="Pick date" allowFreeInput mt={20} mb={40} />
 
       <button type="button">Focus test</button>
 
@@ -136,30 +126,26 @@ storiesOf('DatePicker', module)
   ))
   .add('Date format on PatternProvider', () => (
     <PatternProvider theme={{ dateFormat: 'MM YYYY DD' }}>
-      <DatePicker label="One month" />
+      <DatePicker />
     </PatternProvider>
   ))
   .add('Within overlays', () => (
     <WithinOverlays>
-      <DatePicker placeholder="Pick date" label="Event date" withinPortal={false} />
+      <DatePicker placeholder="Pick date" withinPortal={false} />
     </WithinOverlays>
   ))
   .add('Within form', () => (
     <SubmitForm>
-      <DatePicker placeholder="Submit with enter" label="Event date" />
+      <DatePicker placeholder="Submit with enter" />
     </SubmitForm>
   ))
   .add('Within form: free input', () => (
     <SubmitForm>
-      <DatePicker
-        placeholder="Submit with enter with free input"
-        label="Event date"
-        allowFreeInput
-      />
+      <DatePicker placeholder="Submit with enter with free input" allowFreeInput />
     </SubmitForm>
   ))
   .add('Clear button tab index disabled', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
-      <DatePicker placeholder="Submit with enter" label="Event date" clearButtonTabIndex={-1} />
+      <DatePicker placeholder="Submit with enter" clearButtonTabIndex={-1} />
     </div>
   ));

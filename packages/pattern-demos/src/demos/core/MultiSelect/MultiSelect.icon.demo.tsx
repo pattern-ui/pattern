@@ -6,12 +6,7 @@ import { data } from './_data';
 export default function Demo() {
   return (
     <div style={{ maxWidth: 400, marginLeft: 'auto', marginRight: 'auto' }}>
-      <MultiSelect
-        data={data}
-        label="Pick hashtags"
-        placeholder="Pick all that you like"
-        icon={<Hash size={14} />}
-      />
+      <MultiSelect data={data} placeholder="Pick all that you like" icon={<Hash size={14} />} />
     </div>
   );
 }

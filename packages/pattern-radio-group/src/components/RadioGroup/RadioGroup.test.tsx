@@ -1,12 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import {
-  checkAccessibility,
-  itSupportsInputWrapperProps,
-  itSupportsSystemProps,
-  itFiltersChildren,
-} from '@pattern-ui/tests';
+import { checkAccessibility, itSupportsSystemProps, itFiltersChildren } from '@pattern-ui/tests';
 import { RadioGroup, Radio, RadioGroupProps } from './index';
 
 const defaultProps: RadioGroupProps = {
@@ -18,7 +13,6 @@ const defaultProps: RadioGroupProps = {
 };
 
 describe('@pattern-ui/core/RadioGroup', () => {
-  itSupportsInputWrapperProps(RadioGroup, defaultProps, 'RadioGroup');
   itSupportsSystemProps({
     component: RadioGroup,
     props: defaultProps,
@@ -48,18 +42,6 @@ describe('@pattern-ui/core/RadioGroup', () => {
       withoutName.querySelector('input[type="radio"]').getAttribute('name').includes('pattern-')
     ).toBe(true);
     expect(withName.querySelector('input[type="radio"]').getAttribute('name')).toBe('test-name');
-  });
-
-  it('has an accessible label', () => {
-    const radioGroup = render(
-      <RadioGroup label="Select a Framework">
-        <Radio value="pattern" label="Pattern" />
-        <Radio value="mui" label="MUI" />
-        <Radio value="chakra" label="ChakraUI" />
-      </RadioGroup>
-    );
-
-    expect(radioGroup.queryByLabelText('Select a Framework')).not.toEqual(null);
   });
 
   it('supports uncontrolled state', () => {

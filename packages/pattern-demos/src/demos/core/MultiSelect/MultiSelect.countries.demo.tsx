@@ -72,7 +72,6 @@ export function CountriesSelect(props: Partial<MultiSelectProps>) {
       searchable
       defaultValue={['US', 'FI']}
       placeholder="Pick countries"
-      label="Which countries you visited last year?"
       {...props}
     />
   );

@@ -8,11 +8,7 @@ import {
 } from '@pattern-ui/styles';
 import { useDidUpdate, useMergedRef, useUuid } from '@pattern-ui/hooks';
 import { Input, InputBaseProps, InputStylesNames } from '@pattern-ui/input';
-import {
-  InputWrapper,
-  InputWrapperBaseProps,
-  InputWrapperStylesNames,
-} from '@pattern-ui/input-wrapper';
+import { InputWrapperStylesNames } from '@pattern-ui/input-wrapper';
 import { CloseButton } from '@pattern-ui/action-icon';
 import { TimeInput } from '../TimeInput';
 import useStyles from './TimeRangeInput.styles';
@@ -25,7 +21,6 @@ export type TimeRangeInputStylesNames =
 export interface TimeRangeInputProps
   extends DefaultProps<TimeRangeInputStylesNames>,
     InputBaseProps,
-    InputWrapperBaseProps,
     Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange' | 'value' | 'defaultValue'> {
   /** Input size */
   size?: PatternSize;
@@ -103,12 +98,10 @@ export const TimeRangeInput = forwardRef<HTMLInputElement, TimeRangeInputProps>(
   (props: TimeRangeInputProps, ref) => {
     const {
       required,
-      label,
-      error,
-      description,
       className,
       style,
       size,
+      invalid,
       wrapperProps,
       classNames,
       styles,
@@ -130,9 +123,6 @@ export const TimeRangeInput = forwardRef<HTMLInputElement, TimeRangeInputProps>(
       labelSeparator,
       disabled,
       sx,
-      labelProps,
-      descriptionProps,
-      errorProps,
       ...others
     } = usePatternDefaultProps('TimeRangeInput', defaultProps, props);
 
@@ -191,73 +181,57 @@ export const TimeRangeInput = forwardRef<HTMLInputElement, TimeRangeInputProps>(
     };
 
     return (
-      <InputWrapper
-        required={required}
-        label={label}
-        error={error}
-        description={description}
-        className={className}
-        style={style}
-        classNames={classNames}
-        styles={styles}
-        size={size}
+      <Input
+        component="div"
         __staticSelector="TimeRangeInput"
-        id={uuid}
+        required={required}
+        invalid={invalid}
+        onClick={() => {
+          fromTimeRef.current?.focus();
+        }}
+        size={size}
+        className={cx(className, { [classes.disabled]: disabled })}
+        classNames={classNames}
+        style={style}
+        styles={styles}
+        disabled={disabled}
+        rightSection={rightSection}
+        rightSectionWidth={theme.fn.size({ size, sizes: RIGHT_SECTION_WIDTH })}
+        {...rest}
         sx={sx}
-        errorProps={errorProps}
-        descriptionProps={descriptionProps}
-        labelProps={labelProps}
         {...systemStyles}
         {...wrapperProps}
       >
-        <Input
-          component="div"
-          __staticSelector="TimeRangeInput"
-          required={required}
-          invalid={!!error}
-          onClick={() => {
-            fromTimeRef.current?.focus();
-          }}
-          size={size}
-          className={cx({ [classes.disabled]: disabled })}
-          classNames={classNames}
-          styles={styles}
-          disabled={disabled}
-          rightSection={rightSection}
-          rightSectionWidth={theme.fn.size({ size, sizes: RIGHT_SECTION_WIDTH })}
-          {...rest}
-        >
-          <div className={classes.inputWrapper}>
-            <TimeInput
-              ref={useMergedRef(fromTimeRef, ref)}
-              variant="unstyled"
-              value={_value[0]}
-              onChange={(date) => setValue([date, _value[1]])}
-              name={name}
-              nextRef={toTimeRef}
-              id={uuid}
-              {...forwardProps}
-            />
+        <div className={classes.inputWrapper}>
+          <TimeInput
+            ref={useMergedRef(fromTimeRef, ref)}
+            variant="unstyled"
+            value={_value[0]}
+            onChange={(date) => setValue([date, _value[1]])}
+            name={name}
+            nextRef={toTimeRef}
+            id={uuid}
+            {...forwardProps}
+          />
 
-            <span
-              className={classes.separator}
-              style={{
-                color: theme.colorScheme === 'dark' ? theme.colors.dark[2] : theme.colors.gray[7],
-              }}
-            >
-              {labelSeparator}
-            </span>
+          <span
+            className={classes.separator}
+            style={{
+              color: theme.colorScheme === 'dark' ? theme.colors.dark[2] : theme.colors.gray[7],
+            }}
+          >
+            {labelSeparator}
+          </span>
 
-            <TimeInput
-              ref={toTimeRef}
-              variant="unstyled"
-              value={_value[1]}
-              onChange={(date) => setValue([_value[0], date])}
-              {...forwardProps}
-            />
-          </div>
-        </Input>
-      </InputWrapper>
+          <TimeInput
+            ref={toTimeRef}
+            variant="unstyled"
+            value={_value[1]}
+            onChange={(date) => setValue([_value[0], date])}
+            {...forwardProps}
+          />
+        </div>
+      </Input>
     );
   }
 );

@@ -6,10 +6,9 @@ import {
   itSupportsSystemProps,
   itSupportsInputRightSection,
   itSupportsInputIcon,
-  itConnectsLabelAndInput,
   itSupportsFocusEvents,
-  itSupportsInputWrapperProps,
 } from '@pattern-ui/tests';
+import { InputWrapper } from '@pattern-ui/input-wrapper';
 import { TimeInput, TimeInputProps } from './TimeInput';
 
 const defaultProps: TimeInputProps = {
@@ -20,10 +19,17 @@ const defaultProps: TimeInputProps = {
 };
 
 describe('@pattern-ui/dates/TimeInput', () => {
+  checkAccessibility([
+    <InputWrapper>
+      <TimeInput {...defaultProps} />
+    </InputWrapper>,
+    <InputWrapper>
+      <TimeInput {...defaultProps} withSeconds />
+    </InputWrapper>,
+  ]);
+
   itSupportsInputRightSection(TimeInput, defaultProps);
-  itSupportsInputWrapperProps(TimeInput, defaultProps, 'TimeInput');
   itSupportsInputIcon(TimeInput, defaultProps);
-  itConnectsLabelAndInput(TimeInput, defaultProps);
   itSupportsFocusEvents(TimeInput, defaultProps, 'input');
   itSupportsSystemProps({
     component: TimeInput,
@@ -32,11 +38,6 @@ describe('@pattern-ui/dates/TimeInput', () => {
     refType: HTMLInputElement,
     excludeOthers: true,
   });
-
-  checkAccessibility([
-    <TimeInput {...defaultProps} />,
-    <TimeInput {...defaultProps} withSeconds />,
-  ]);
 
   it('renders input with given name', () => {
     const value = new Date(2021, 11, 1);

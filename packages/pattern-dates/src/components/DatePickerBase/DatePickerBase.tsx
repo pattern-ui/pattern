@@ -14,17 +14,14 @@ import {
   useWindowEvent,
   useUuid,
 } from '@pattern-ui/hooks';
-import {
-  InputWrapper,
-  InputWrapperBaseProps,
-  InputWrapperStylesNames,
-} from '@pattern-ui/input-wrapper';
+import { InputWrapperStylesNames } from '@pattern-ui/input-wrapper';
 import { Input, InputBaseProps, InputStylesNames } from '@pattern-ui/input';
 import { Popper } from '@pattern-ui/popper';
 import { Modal } from '@pattern-ui/modal';
 import { PatternTransition } from '@pattern-ui/transition';
 import { CloseButton } from '@pattern-ui/action-icon';
 import { Paper } from '@pattern-ui/paper';
+import { Box } from '@pattern-ui/box';
 import { CalendarBaseStylesNames } from '../CalendarBase';
 import useStyles from './DatePickerBase.styles';
 
@@ -36,7 +33,6 @@ export type DatePickerStylesNames =
 
 export interface DatePickerBaseSharedProps
   extends InputBaseProps,
-    InputWrapperBaseProps,
     DefaultProps<DatePickerStylesNames>,
     Omit<
       React.ComponentPropsWithoutRef<'input'>,
@@ -144,13 +140,11 @@ export const DatePickerBase = forwardRef<HTMLInputElement, DatePickerBaseProps>(
       className,
       style,
       styles,
+      invalid,
       wrapperProps,
       required,
       allowFreeInput = false,
-      label,
-      error,
       id,
-      description,
       placeholder,
       shadow = 'sm',
       transition = 'pop-top-left',
@@ -181,22 +175,18 @@ export const DatePickerBase = forwardRef<HTMLInputElement, DatePickerBaseProps>(
       onDropdownOpen,
       clickOutsideEvents = ['mousedown', 'touchstart'],
       modalZIndex,
-      errorProps,
-      labelProps,
-      descriptionProps,
       clearButtonTabIndex = 0,
       ...others
     }: DatePickerBaseProps,
     ref
   ) => {
     const { classes, cx, theme } = useStyles(
-      { size, invalid: !!error },
+      { size, invalid },
       { classNames, styles, name: __staticSelector }
     );
     const { systemStyles, rest } = extractSystemStyles(others);
     const [dropdownElement, setDropdownElement] = useState<HTMLDivElement>(null);
     const [rootElement, setRootElement] = useState<HTMLDivElement>(null);
-    const [referenceElement, setReferenceElement] = useState<HTMLDivElement>(null);
     const uuid = useUuid(id);
 
     const focusTrapRef = useFocusTrap(!allowFreeInput && dropdownOpened);
@@ -265,102 +255,86 @@ export const DatePickerBase = forwardRef<HTMLInputElement, DatePickerBaseProps>(
     };
 
     return (
-      <InputWrapper
-        required={required}
-        id={uuid}
-        label={label}
-        error={error}
-        description={description}
+      <Box
+        ref={setRootElement}
+        id={`${uuid}-wrapper`}
         className={className}
         style={style}
-        classNames={classNames}
         styles={styles}
-        size={size}
-        __staticSelector={__staticSelector}
         sx={sx}
-        ref={setReferenceElement}
-        errorProps={errorProps}
-        descriptionProps={descriptionProps}
-        labelProps={labelProps}
         {...systemStyles}
         {...wrapperProps}
       >
-        <div ref={setRootElement}>
-          <div className={classes.wrapper}>
-            <Input<'input'>
-              classNames={{
-                ...classNames,
-                input: cx(
-                  classes.input,
-                  { [classes.freeInput]: allowFreeInput },
-                  classNames?.input
-                ),
-              }}
-              styles={styles}
-              onClick={() => (!allowFreeInput ? toggleDropdown() : openDropdown())}
-              onKeyDown={handleKeyDown}
-              id={uuid}
-              ref={useMergedRef(ref, inputRef)}
-              __staticSelector={__staticSelector}
-              size={size}
-              name={name}
-              placeholder={placeholder}
-              value={inputLabel}
-              required={required}
-              invalid={!!error}
-              readOnly={!allowFreeInput}
-              rightSection={rightSection}
-              rightSectionWidth={theme.fn.size({ size, sizes: RIGHT_SECTION_WIDTH })}
-              onBlur={handleInputBlur}
-              onFocus={handleInputFocus}
-              onChange={onChange}
-              autoComplete="off"
-              {...rest}
-            />
-          </div>
-
-          {dropdownType === 'popover' ? (
-            <Popper
-              referenceElement={referenceElement}
-              transitionDuration={transitionDuration}
-              transitionTimingFunction={transitionTimingFunction}
-              forceUpdateDependencies={positionDependencies}
-              transition={transition}
-              mounted={dropdownOpened}
-              position="bottom"
-              placement="start"
-              gutter={10}
-              withinPortal={withinPortal}
-              withArrow
-              arrowSize={3}
-              zIndex={zIndex}
-              arrowClassName={classes.arrow}
-            >
-              <div
-                className={classes.dropdownWrapper}
-                ref={setDropdownElement}
-                data-pattern-stop-propagation={dropdownOpened}
-                onKeyDownCapture={closeOnEscape}
-                aria-hidden={allowFreeInput || undefined}
-              >
-                <Paper className={classes.dropdown} shadow={shadow} ref={focusTrapRef}>
-                  {children}
-                </Paper>
-              </div>
-            </Popper>
-          ) : (
-            <Modal
-              opened={dropdownOpened}
-              onClose={closeDropdown}
-              withCloseButton={false}
-              size={amountOfMonths * 400}
-              zIndex={modalZIndex}
-            >
-              {children}
-            </Modal>
-          )}
+        <div className={classes.wrapper}>
+          <Input<'input'>
+            classNames={{
+              ...classNames,
+              input: cx(classes.input, { [classes.freeInput]: allowFreeInput }, classNames?.input),
+            }}
+            styles={styles}
+            onClick={() => (!allowFreeInput ? toggleDropdown() : openDropdown())}
+            onKeyDown={handleKeyDown}
+            id={uuid}
+            ref={useMergedRef(ref, inputRef)}
+            __staticSelector={__staticSelector}
+            size={size}
+            name={name}
+            placeholder={placeholder}
+            value={inputLabel}
+            required={required}
+            invalid={invalid}
+            readOnly={!allowFreeInput}
+            rightSection={rightSection}
+            rightSectionWidth={theme.fn.size({ size, sizes: RIGHT_SECTION_WIDTH })}
+            onBlur={handleInputBlur}
+            onFocus={handleInputFocus}
+            onChange={onChange}
+            autoComplete="off"
+            {...rest}
+          />
         </div>
-      </InputWrapper>
+
+        {dropdownType === 'popover' ? (
+          <Popper
+            referenceElement={rootElement}
+            transitionDuration={transitionDuration}
+            transitionTimingFunction={transitionTimingFunction}
+            forceUpdateDependencies={positionDependencies}
+            transition={transition}
+            mounted={dropdownOpened}
+            position="bottom"
+            placement="start"
+            gutter={10}
+            withinPortal={withinPortal}
+            withArrow
+            arrowSize={3}
+            zIndex={zIndex}
+            arrowClassName={classes.arrow}
+          >
+            <div
+              className={classes.dropdownWrapper}
+              ref={setDropdownElement}
+              data-pattern-stop-propagation={dropdownOpened}
+              onKeyDownCapture={closeOnEscape}
+              aria-hidden={allowFreeInput || undefined}
+            >
+              <Paper className={classes.dropdown} shadow={shadow} ref={focusTrapRef}>
+                {children}
+              </Paper>
+            </div>
+          </Popper>
+        ) : (
+          <Modal
+            opened={dropdownOpened}
+            onClose={closeDropdown}
+            withCloseButton={false}
+            size={amountOfMonths * 400}
+            zIndex={modalZIndex}
+          >
+            {children}
+          </Modal>
+        )}
+      </Box>
     );
   }
 );

@@ -5,7 +5,6 @@ export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <Select
-        label="Your favorite Rick and Morty character"
         placeholder="Pick one"
         data={[
           { value: 'rick', label: 'Rick', group: 'Used to be a pickle' },

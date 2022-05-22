@@ -10,7 +10,6 @@ export default function Demo() {
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <MultiSelect
         data={data}
-        label="MultiSelect with native scrollbars"
         placeholder="Dropdown rendered as div element"
         dropdownComponent="div"
       />

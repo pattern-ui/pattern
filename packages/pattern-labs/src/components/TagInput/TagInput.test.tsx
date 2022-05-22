@@ -5,25 +5,27 @@ import {
   itSupportsInputIcon,
   itSupportsInputRightSection,
   itSupportsWrapperProps,
-  itConnectsLabelAndInput,
   itSupportsFocusEvents,
 } from '@pattern-ui/tests';
+import { InputWrapper } from '@pattern-ui/input-wrapper';
 import { TagInput, TagInputProps } from './TagInput';
 
 const defaultProps: TagInputProps = {
-  label: 'test-tag-input',
   defaultValue: ['react', 'ng'],
   placeholder: 'Input Tag',
   id: 'test-tag-input',
 };
 
 describe('@pattern-ui/labs/TagInput', () => {
-  checkAccessibility([<TagInput {...defaultProps} />]);
+  checkAccessibility([
+    <InputWrapper label="test-label" id="test">
+      <TagInput {...defaultProps} id="test" />
+    </InputWrapper>,
+  ]);
   itSupportsFocusEvents(TagInput, defaultProps, '#test-tag-input');
   itSupportsInputIcon(TagInput, defaultProps);
   itSupportsInputRightSection(TagInput, defaultProps);
   itSupportsWrapperProps(TagInput, defaultProps);
-  itConnectsLabelAndInput(TagInput, defaultProps);
   itSupportsSystemProps({
     component: TagInput,
     props: defaultProps,

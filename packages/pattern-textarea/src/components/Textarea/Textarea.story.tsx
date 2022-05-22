@@ -12,11 +12,11 @@ function Controlled(props: Partial<TextareaProps>) {
 storiesOf('Textarea', module)
   .add('Controlled', () => (
     <div style={{ width: 300, padding: 20 }}>
-      <Controlled label="text" placeholder="text" />
+      <Controlled placeholder="text" />
     </div>
   ))
   .add('Autosize', () => (
     <div style={{ width: 300, padding: 20 }}>
-      <Textarea label="text" placeholder="text" autosize minRows={3} maxRows={10} />
+      <Textarea placeholder="text" autosize minRows={3} maxRows={10} />
     </div>
   ));

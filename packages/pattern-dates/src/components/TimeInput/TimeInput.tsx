@@ -8,11 +8,7 @@ import {
 } from '@pattern-ui/styles';
 import { useDidUpdate, useMergedRef, useUuid } from '@pattern-ui/hooks';
 import { Input, InputBaseProps, InputStylesNames } from '@pattern-ui/input';
-import {
-  InputWrapper,
-  InputWrapperBaseProps,
-  InputWrapperStylesNames,
-} from '@pattern-ui/input-wrapper';
+import { InputWrapperBaseProps, InputWrapperStylesNames } from '@pattern-ui/input-wrapper';
 import { CloseButton } from '@pattern-ui/action-icon';
 import { TimeField } from '../TimeInputBase/TimeField/TimeField';
 import { createTimeHandler } from '../TimeInputBase/create-time-handler/create-time-handler';
@@ -239,97 +235,81 @@ export const TimeInput = forwardRef<HTMLInputElement, TimeInputProps>(
       ) : null;
 
     return (
-      <InputWrapper
-        required={required}
-        label={label}
-        error={error}
-        description={description}
-        className={className}
-        style={style}
-        classNames={classNames}
-        styles={styles}
-        size={size}
+      <Input
+        id={`${uuid}-wrapper`}
+        component="div"
         __staticSelector="TimeInput"
-        id={uuid}
+        required={required}
+        invalid={!!error}
+        onClick={() => hoursRef.current.focus()}
+        size={size}
+        className={cx(className, { [classes.disabled]: disabled })}
+        style={style}
+        styles={styles}
+        disabled={disabled}
+        rightSection={rightSection}
+        rightSectionWidth={theme.fn.size({ size, sizes: RIGHT_SECTION_WIDTH })}
+        {...rest}
         sx={sx}
-        errorProps={errorProps}
-        descriptionProps={descriptionProps}
-        labelProps={labelProps}
         {...systemStyles}
         {...wrapperProps}
       >
-        <Input
-          component="div"
-          __staticSelector="TimeInput"
-          required={required}
-          invalid={!!error}
-          onClick={() => hoursRef.current.focus()}
-          size={size}
-          className={cx({ [classes.disabled]: disabled })}
-          classNames={classNames}
-          styles={styles}
-          disabled={disabled}
-          rightSection={rightSection}
-          rightSectionWidth={theme.fn.size({ size, sizes: RIGHT_SECTION_WIDTH })}
-          {...rest}
-        >
-          <div className={classes.controls}>
+        <div className={classes.controls}>
+          <TimeField
+            ref={useMergedRef(hoursRef, ref)}
+            value={time.hours}
+            onChange={handleHoursChange}
+            setValue={(val) => setTime((current) => ({ ...current, hours: val }))}
+            id={uuid}
+            className={classes.timeInput}
+            withSeparator
+            size={size}
+            max={format === '12' ? 12 : 23}
+            placeholder={timePlaceholder}
+            aria-label={hoursLabel}
+            disabled={disabled}
+            name={name}
+          />
+          <TimeField
+            ref={minutesRef}
+            value={time.minutes}
+            onChange={handleMinutesChange}
+            setValue={(val) => setTime((current) => ({ ...current, minutes: val }))}
+            className={classes.timeInput}
+            withSeparator={withSeconds}
+            size={size}
+            max={59}
+            placeholder={timePlaceholder}
+            aria-label={minutesLabel}
+            disabled={disabled}
+          />
+          {withSeconds && (
             <TimeField
-              ref={useMergedRef(hoursRef, ref)}
-              value={time.hours}
-              onChange={handleHoursChange}
-              setValue={(val) => setTime((current) => ({ ...current, hours: val }))}
-              id={uuid}
+              ref={secondsRef}
+              value={time.seconds}
+              onChange={handleSecondsChange}
+              setValue={(val) => setTime((current) => ({ ...current, seconds: val }))}
               className={classes.timeInput}
-              withSeparator
-              size={size}
-              max={format === '12' ? 12 : 23}
-              placeholder={timePlaceholder}
-              aria-label={hoursLabel}
-              disabled={disabled}
-              name={name}
-            />
-            <TimeField
-              ref={minutesRef}
-              value={time.minutes}
-              onChange={handleMinutesChange}
-              setValue={(val) => setTime((current) => ({ ...current, minutes: val }))}
-              className={classes.timeInput}
-              withSeparator={withSeconds}
               size={size}
               max={59}
               placeholder={timePlaceholder}
-              aria-label={minutesLabel}
+              aria-label={secondsLabel}
               disabled={disabled}
             />
-            {withSeconds && (
-              <TimeField
-                ref={secondsRef}
-                value={time.seconds}
-                onChange={handleSecondsChange}
-                setValue={(val) => setTime((current) => ({ ...current, seconds: val }))}
-                className={classes.timeInput}
-                size={size}
-                max={59}
-                placeholder={timePlaceholder}
-                aria-label={secondsLabel}
-                disabled={disabled}
-              />
-            )}
-            {format === '12' && (
-              <AmPmInput
-                ref={amPmRef}
-                value={time.amPm}
-                onChange={handleAmPmChange}
-                placeholder={amPmPlaceholder}
-                size={size}
-                aria-label={amPmLabel}
-                disabled={disabled}
-              />
-            )}
-          </div>
-        </Input>
-      </InputWrapper>
+          )}
+          {format === '12' && (
+            <AmPmInput
+              ref={amPmRef}
+              value={time.amPm}
+              onChange={handleAmPmChange}
+              placeholder={amPmPlaceholder}
+              size={size}
+              aria-label={amPmLabel}
+              disabled={disabled}
+            />
+          )}
+        </div>
+      </Input>
     );
   }
 );

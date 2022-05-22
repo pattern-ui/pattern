@@ -80,56 +80,44 @@ export function InputsDemo() {
     <Paper className={classes.wrapper} shadow="md" p={30} radius="md">
       <div className={classes.column}>
         <DatePicker
-          label="Date picker"
           placeholder="Pick a date"
           required
           defaultValue={new Date()}
           inputFormat="MMMM D, YYYY"
         />
 
-        <DateRangePicker label="Date range picker" placeholder="Pick dates range" mt="md" />
+        <DateRangePicker placeholder="Pick dates range" mt="md" />
 
-        <CountriesSelect
-          label="Multi select"
-          mt="md"
-          defaultValue={[]}
-          styles={{ dropdown: { zIndex: 5 } }}
-        />
+        <CountriesSelect mt="md" defaultValue={[]} styles={{ dropdown: { zIndex: 5 } }} />
 
-        <RadioGroup label="Radio group" mt="md" defaultValue="react">
-          <Radio value="react" label="React" />
-          <Radio value="svelte" label="Svelte" />
-          <Radio value="vue" label="Vue" />
+        <RadioGroup mt="md" defaultValue="react">
+          <Radio value="react" />
+          <Radio value="svelte" />
+          <Radio value="vue" />
         </RadioGroup>
 
-        <Checkbox mt={20} label="Checkbox" defaultChecked />
+        <Checkbox mt={20} defaultChecked />
 
-        <Switch mt="md" label="Switch" defaultChecked />
+        <Switch mt="md" defaultChecked />
       </div>
 
       <div className={classes.column}>
         <div style={{ position: 'relative', zIndex: 3 }}>
-          <CustomSelectDemo label="Custom select" />
+          <CustomSelectDemo />
         </div>
 
         <Autocomplete
-          label="Autocomplete"
           placeholder="Your favorite library/framework"
           styles={{ dropdown: { zIndex: 4 } }}
           mt="md"
           data={[{ value: 'React' }, { value: 'Angular' }, { value: 'Svelte' }, { value: 'Vue' }]}
         />
 
-        <NumberInput label="Number input" defaultValue={18} mt="md" />
+        <NumberInput defaultValue={18} mt="md" />
 
-        <ColorInput
-          label="Color input"
-          defaultValue="rgba(97, 168, 255, 0.88)"
-          format="rgba"
-          mt="md"
-        />
+        <ColorInput defaultValue="rgba(97, 168, 255, 0.88)" format="rgba" mt="md" />
 
-        <InputWrapper labelElement="div" label="Slider and RangeSlider" mt="md">
+        <InputWrapper labelElement="div" mt="md">
           <Slider defaultValue={40} mt="xs" />
           <RangeSlider
             mt={10}

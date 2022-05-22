@@ -20,8 +20,8 @@ export default function Demo() {
   return (
     <Box sx={{ maxWidth: 340 }} mx="auto">
       <form onSubmit={form.onSubmit((values) => console.log(values))}>
-        <TextInput label="Name" placeholder="Name" {...form.getInputProps('name')} />
-        <NumberInput mt="sm" label="Age" placeholder="You age" {...form.getInputProps('age')} />
+        <TextInput placeholder="Name" {...form.getInputProps('name')} />
+        <NumberInput mt="sm" placeholder="You age" {...form.getInputProps('age')} />
 
         <Group position="right" mt="md">
           <Button type="submit">Submit</Button>

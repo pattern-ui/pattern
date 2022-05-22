@@ -1,6 +1,7 @@
 import React from 'react';
 import { TextInput } from '@pattern-ui/core';
 import { upperFirst } from '@pattern-ui/hooks';
+import { InputWrapper } from '@pattern-ui/input-wrapper';
 
 interface StringControlProps {
   value: string;
@@ -10,13 +11,14 @@ interface StringControlProps {
 
 export function StringControl({ value, label, onChange, ...others }: StringControlProps) {
   return (
-    <TextInput
-      {...others}
-      label={upperFirst(label)}
-      placeholder={upperFirst(label)}
-      value={value}
-      onChange={(event) => onChange(event.currentTarget.value)}
-    />
+    <InputWrapper label={upperFirst(label)}>
+      <TextInput
+        {...others}
+        placeholder={upperFirst(label)}
+        value={value}
+        onChange={(event) => onChange(event.currentTarget.value)}
+      />
+    </InputWrapper>
   );
 }
 

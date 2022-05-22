@@ -1,8 +1,6 @@
 {
   "extends": "../../tsconfig.base.json",
-  "include": ["./src", "./types",
-    "../../config/types"
-  ],
+  "include": ["./src", "./types", "../../config/types"],
   "exclude": ["./lib", "./esm", "./cjs"],
   "compilerOptions": {
     "rootDir": "src",
@@ -15,12 +13,18 @@
     "paths": {
       "@pattern-ui/core": ["../pattern-core/src"],
       "@pattern-ui/hooks": ["../pattern-hooks/src"],
+      "@pattern-ui/input": ["../pattern-input/src"],
+      "@pattern-ui/textarea": ["../pattern-textarea/src"],
       "@pattern-ui/tests": ["../pattern-tests/src"]
     }
   },
   "references": [
     { "path": "../pattern-core" },
     { "path": "../pattern-hooks" },
+    { "path": "../pattern-input" },
+    { "path": "../pattern-input" },
+    { "path": "../pattern-select" },
+    { "path": "../pattern-textarea" },
     { "path": "../pattern-tests" }
   ]
 }

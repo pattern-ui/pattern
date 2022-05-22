@@ -8,12 +8,7 @@ export default function Demo() {
   ]);
   return (
     <div style={{ maxWidth: 340, marginLeft: 'auto', marginRight: 'auto' }}>
-      <DateRangePicker
-        label="Book hotel"
-        placeholder="Pick dates range"
-        value={value}
-        onChange={setValue}
-      />
+      <DateRangePicker placeholder="Pick dates range" value={value} onChange={setValue} />
     </div>
   );
 }

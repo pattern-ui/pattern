@@ -2,9 +2,9 @@ import React, { useState, useRef, forwardRef } from 'react';
 import { useUncontrolled, useMergedRef, useUuid } from '@pattern-ui/hooks';
 import { DefaultProps, PatternSize, Selectors, extractSystemStyles } from '@pattern-ui/styles';
 import { Input, InputStylesNames } from '@pattern-ui/input';
-import { InputWrapper, InputWrapperStylesNames } from '@pattern-ui/input-wrapper';
 import { BaseSelectProps } from '@pattern-ui/select';
 import { CloseButton } from '@pattern-ui/action-icon';
+import { Box } from '@pattern-ui/box';
 import { DefaultValue, DefaultValueStylesNames } from './DefaultValue/DefaultValue';
 import useStyles, { RIGHT_SECTION_WIDTH } from './TagInput.styles';
 
@@ -14,8 +14,8 @@ export type TagInputStylesNames =
       Selectors<typeof useStyles>,
       'tagInputEmpty' | 'tagInputInputHidden' | 'tagInputPointer'
     >
-  | InputStylesNames
-  | InputWrapperStylesNames;
+  | InputStylesNames;
+
 export interface TagInputProps extends DefaultProps<TagInputStylesNames>, BaseSelectProps {
   /** Input size */
   size?: PatternSize;
@@ -103,10 +103,8 @@ export const TagInput = forwardRef<HTMLInputElement, TagInputProps>(
       className,
       style,
       required,
-      label,
-      description,
       size = 'sm',
-      error,
+      invalid,
       classNames,
       styles,
       wrapperProps,
@@ -141,7 +139,7 @@ export const TagInput = forwardRef<HTMLInputElement, TagInputProps>(
     ref
   ) => {
     const { classes, cx, theme } = useStyles(
-      { size, invalid: !!error },
+      { size, invalid },
       { classNames, styles, name: 'TagInput' }
     );
     const { systemStyles, rest } = extractSystemStyles(others);
@@ -289,18 +287,11 @@ export const TagInput = forwardRef<HTMLInputElement, TagInputProps>(
     };
 
     return (
-      <InputWrapper
-        required={required}
-        id={uuid}
-        label={label}
-        error={error}
-        description={description}
-        size={size}
+      <Box
+        id={`${uuid}-wrapper`}
         className={className}
         style={style}
-        classNames={classNames}
         styles={styles}
-        __staticSelector="TagInput"
         sx={sx}
         {...systemStyles}
         {...wrapperProps}
@@ -321,7 +312,7 @@ export const TagInput = forwardRef<HTMLInputElement, TagInputProps>(
             size={size}
             variant={variant}
             disabled={disabled}
-            invalid={!!error}
+            invalid={invalid}
             required={required}
             radius={radius}
             icon={icon}
@@ -374,7 +365,7 @@ export const TagInput = forwardRef<HTMLInputElement, TagInputProps>(
         </div>
 
         {name && <input type="hidden" name={name} value={_value.join(',')} />}
-      </InputWrapper>
+      </Box>
     );
   }
 );

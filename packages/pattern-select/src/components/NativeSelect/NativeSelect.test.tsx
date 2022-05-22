@@ -6,6 +6,7 @@ import {
   itSupportsInputProps,
   itSupportsFocusEvents,
 } from '@pattern-ui/tests';
+import { InputWrapper } from '@pattern-ui/input-wrapper';
 import { NativeSelect, NativeSelectProps } from './NativeSelect';
 
 const defaultProps: NativeSelectProps = {
@@ -13,6 +14,14 @@ const defaultProps: NativeSelectProps = {
 };
 
 describe('@pattern-ui/core/NativeSelect', () => {
+  checkAccessibility([
+    <InputWrapper label="test-label" id="test">
+      <NativeSelect {...defaultProps} id="test" />
+    </InputWrapper>,
+    <InputWrapper id="test2" label="test-label">
+      <NativeSelect {...defaultProps} aria-label="test-label" id="test2" />
+    </InputWrapper>,
+  ]);
   itSupportsInputProps(NativeSelect, defaultProps, 'NativeSelect');
   itSupportsFocusEvents(NativeSelect, defaultProps, 'select');
   itSupportsSystemProps({
@@ -22,11 +31,6 @@ describe('@pattern-ui/core/NativeSelect', () => {
     excludeOthers: true,
     refType: HTMLSelectElement,
   });
-
-  checkAccessibility([
-    <NativeSelect {...defaultProps} label="test-label" />,
-    <NativeSelect {...defaultProps} aria-label="test-label" />,
-  ]);
 
   it('renders correct amount of options', () => {
     const { container: withoutPlaceholder } = render(<NativeSelect {...defaultProps} />);

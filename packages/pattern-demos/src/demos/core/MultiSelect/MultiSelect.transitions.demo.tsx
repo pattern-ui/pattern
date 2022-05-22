@@ -10,7 +10,6 @@ export default function Demo() {
         transitionDuration={150}
         transition="pop-top-left"
         transitionTimingFunction="ease"
-        label="Your favorite frameworks/libraries"
         placeholder="Pick all that you like"
       />
     </div>

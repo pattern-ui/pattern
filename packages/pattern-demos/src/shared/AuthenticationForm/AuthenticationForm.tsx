@@ -93,16 +93,10 @@ export function AuthenticationForm({
               data-autofocus
               required
               placeholder="Your first name"
-              label="First name"
               {...form.getInputProps('firstName')}
             />
 
-            <TextInput
-              required
-              placeholder="Your last name"
-              label="Last name"
-              {...form.getInputProps('lastName')}
-            />
+            <TextInput required placeholder="Your last name" {...form.getInputProps('lastName')} />
           </Group>
         )}
 
@@ -110,7 +104,6 @@ export function AuthenticationForm({
           mt="md"
           required
           placeholder="Your email"
-          label="Email"
           icon={<EnvelopeClosedIcon />}
           {...form.getInputProps('email')}
         />
@@ -119,7 +112,6 @@ export function AuthenticationForm({
           mt="md"
           required
           placeholder="Password"
-          label="Password"
           icon={<LockClosedIcon />}
           {...form.getInputProps('password')}
         />
@@ -128,7 +120,6 @@ export function AuthenticationForm({
           <PasswordInput
             mt="md"
             required
-            label="Confirm Password"
             placeholder="Confirm password"
             icon={<LockClosedIcon />}
             {...form.getInputProps('confirmPassword')}

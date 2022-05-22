@@ -7,20 +7,15 @@ import {
   usePatternTheme,
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
-import {
-  InputWrapperBaseProps,
-  InputWrapper,
-  InputWrapperStylesNames,
-} from '@pattern-ui/input-wrapper';
+import { InputWrapperStylesNames } from '@pattern-ui/input-wrapper';
 import { Input, InputBaseProps, InputStylesNames } from '@pattern-ui/input';
 import { getSelectRightSectionProps } from '../Select/SelectRightSection/get-select-right-section-props';
-import { SelectItem } from '../Select/types';
+import { SelectItem } from '../Select';
 
 export type NativeSelectStylesNames = InputStylesNames | InputWrapperStylesNames;
 
 export interface NativeSelectProps
   extends DefaultProps<NativeSelectStylesNames>,
-    InputWrapperBaseProps,
     InputBaseProps,
     Omit<React.ComponentPropsWithoutRef<'select'>, 'size'> {
   /** id is used to bind input and label, if not passed unique id will be generated for each input */
@@ -40,6 +35,9 @@ export interface NativeSelectProps
 
   /** Input size */
   size?: PatternSize;
+
+  /** Sets border color to red and aria-invalid=true on input element */
+  invalid?: boolean;
 }
 
 const defaultProps: Partial<NativeSelectProps> = {
@@ -52,14 +50,11 @@ export const NativeSelect = forwardRef<HTMLSelectElement, NativeSelectProps>(
       id,
       className,
       required,
-      label,
-      error,
       style,
       data,
       placeholder,
       wrapperProps,
       inputStyle,
-      description,
       onChange,
       value,
       classNames,
@@ -68,9 +63,7 @@ export const NativeSelect = forwardRef<HTMLSelectElement, NativeSelectProps>(
       rightSection,
       rightSectionWidth,
       sx,
-      errorProps,
-      descriptionProps,
-      labelProps,
+      invalid,
       ...others
     } = usePatternDefaultProps('NativeSelect', defaultProps, props);
     const uuid = useUuid(id);
@@ -96,52 +89,40 @@ export const NativeSelect = forwardRef<HTMLSelectElement, NativeSelectProps>(
     }
 
     return (
-      <InputWrapper
-        required={required}
+      <Input<'select'>
+        {...rest}
+        onChange={onChange}
+        component="select"
+        invalid={invalid}
+        style={{
+          ...style,
+          ...inputStyle,
+        }}
+        aria-required={required}
+        ref={ref}
         id={uuid}
-        label={label}
-        error={error}
-        className={className}
-        style={style}
-        description={description}
+        required={required}
+        value={value === null ? '' : value}
         size={size}
-        styles={styles}
+        className={className}
         classNames={classNames}
-        sx={sx}
+        styles={styles}
         __staticSelector="NativeSelect"
-        errorProps={errorProps}
-        descriptionProps={descriptionProps}
-        labelProps={labelProps}
+        {...getSelectRightSectionProps({
+          theme,
+          rightSection,
+          rightSectionWidth,
+          styles,
+          shouldClear: false,
+          size,
+          invalid,
+        })}
+        sx={sx}
         {...systemStyles}
         {...wrapperProps}
       >
-        <Input<'select'>
-          {...rest}
-          onChange={onChange}
-          component="select"
-          invalid={!!error}
-          style={inputStyle}
-          aria-required={required}
-          ref={ref}
-          id={uuid}
-          required={required}
-          value={value === null ? '' : value}
-          size={size}
-          classNames={classNames}
-          __staticSelector="NativeSelect"
-          {...getSelectRightSectionProps({
-            theme,
-            rightSection,
-            rightSectionWidth,
-            styles,
-            shouldClear: false,
-            size,
-            error,
-          })}
-        >
-          {options}
-        </Input>
-      </InputWrapper>
+        {options}
+      </Input>
     );
   }
 );

@@ -9,7 +9,7 @@ export default function Demo() {
 
   return (
     <div style={{ maxWidth: 340, marginLeft: 'auto', marginRight: 'auto' }}>
-      <TimeRangeInput label="Appointment time" value={value} onChange={setValue} clearable />
+      <TimeRangeInput value={value} onChange={setValue} clearable />
     </div>
   );
 }

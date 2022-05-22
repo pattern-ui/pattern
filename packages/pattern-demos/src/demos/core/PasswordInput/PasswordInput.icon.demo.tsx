@@ -5,7 +5,7 @@ import { PasswordInput } from '@pattern-ui/core';
 export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
-      <PasswordInput label="Your password" placeholder="Your password" icon={<Lock size={16} />} />
+      <PasswordInput placeholder="Your password" icon={<Lock size={16} />} />
     </div>
   );
 }

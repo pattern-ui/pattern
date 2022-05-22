@@ -7,14 +7,19 @@ import {
   itSupportsSystemProps,
   itSupportsInputProps,
 } from '@pattern-ui/tests';
+import { InputWrapper } from '@pattern-ui/input-wrapper';
 import { Textarea, TextareaProps } from './Textarea';
 
 const defaultProps: TextareaProps = {};
 
 describe('@pattern-ui/core/Textarea', () => {
+  checkAccessibility([
+    <InputWrapper label="test-label" id="test">
+      <Textarea id="test" />
+    </InputWrapper>,
+  ]);
   itSupportsFocusEvents(Textarea, defaultProps, 'textarea');
   itSupportsInputProps(Textarea, defaultProps, 'Textarea');
-  checkAccessibility([<Textarea label="test-label" />, <Textarea aria-label="test-label" />]);
   itSupportsSystemProps({
     component: Textarea,
     props: defaultProps,

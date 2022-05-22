@@ -1,6 +1,7 @@
 import React from 'react';
 import { NumberInput } from '@pattern-ui/core';
 import { upperFirst } from '@pattern-ui/hooks';
+import { InputWrapper } from '@pattern-ui/input-wrapper';
 
 interface NumberControlProps {
   value: number;
@@ -10,13 +11,9 @@ interface NumberControlProps {
 
 export function NumberControl({ value, label, onChange, ...others }: NumberControlProps) {
   return (
-    <NumberInput
-      {...others}
-      type="number"
-      label={upperFirst(label)}
-      value={value}
-      onChange={onChange}
-    />
+    <InputWrapper label={upperFirst(label)}>
+      <NumberInput {...others} type="number" value={value} onChange={onChange} />
+    </InputWrapper>
   );
 }
 

@@ -15,7 +15,7 @@ export default function Demo() {
         })}
       >
         <Text size="sm">One of elements has focus: {focused.toString()}</Text>
-        <TextInput label="Focus this input" placeholder="Styles will be added to parent" />
+        <TextInput placeholder="Styles will be added to parent" />
         <Button mt="md">Button</Button>
       </Box>
     </div>

@@ -6,7 +6,6 @@ export default function Demo() {
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <NumberInput
         decimalSeparator=","
-        label="Number input with a custom decimal separator"
         placeholder="Decimal separator"
         defaultValue={0.5}
         precision={2}

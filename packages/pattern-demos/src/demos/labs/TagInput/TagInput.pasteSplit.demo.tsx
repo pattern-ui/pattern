@@ -10,7 +10,6 @@ export default function Demo() {
   return (
     <div style={{ maxWidth: 400, marginLeft: 'auto', marginRight: 'auto' }}>
       <TagInput
-        label="Technologies that you're interested in"
         placeholder="Enter manually or paste comma separated values"
         pasteSplit={PasteSplit}
       />

@@ -8,8 +8,8 @@ export default function Demo() {
         <Button>Toggle popover</Button>
       </Popover.Target>
       <Popover.Dropdown>
-        <TextInput variant="default" label="Name" placeholder="Name" size="xs" />
-        <TextInput variant="default" label="Email" placeholder="john@doe.com" size="xs" mt="xs" />
+        <TextInput variant="default" placeholder="Name" size="xs" />
+        <TextInput variant="default" placeholder="john@doe.com" size="xs" mt="xs" />
       </Popover.Dropdown>
     </Popover>
   );

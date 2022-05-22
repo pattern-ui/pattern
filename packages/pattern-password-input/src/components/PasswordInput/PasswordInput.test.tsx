@@ -6,19 +6,20 @@ import {
   itSupportsFocusEvents,
   itSupportsSystemProps,
   itSupportsInputIcon,
-  itConnectsLabelAndInput,
-  itSupportsInputWrapperProps,
 } from '@pattern-ui/tests';
+import { InputWrapper } from '@pattern-ui/input-wrapper';
 import { PasswordInput, PasswordInputProps } from './PasswordInput';
 
 const defaultProps: PasswordInputProps = {};
 
 describe('@pattern-ui/core/PasswordInput', () => {
   itSupportsFocusEvents(PasswordInput, defaultProps, 'input');
-  itSupportsInputWrapperProps(PasswordInput, defaultProps, 'PasswordInput');
   itSupportsInputIcon(PasswordInput, defaultProps);
-  itConnectsLabelAndInput(PasswordInput, defaultProps);
-  checkAccessibility([<PasswordInput label="test" />, <PasswordInput aria-label="test" />]);
+  checkAccessibility([
+    <InputWrapper label="test-label" id="test">
+      <PasswordInput id="test" />
+    </InputWrapper>,
+  ]);
 
   itSupportsSystemProps({
     component: PasswordInput,

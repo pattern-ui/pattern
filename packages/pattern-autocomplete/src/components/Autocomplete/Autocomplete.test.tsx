@@ -1,17 +1,17 @@
 import React from 'react';
 import {
   itSupportsSystemProps,
-  itSupportsInputProps,
   checkAccessibility,
   itSupportsFocusEvents,
   renderWithAct,
+  itSupportsInputProps,
 } from '@pattern-ui/tests';
+import { InputWrapper } from '@pattern-ui/input-wrapper';
 import { Autocomplete, AutocompleteProps } from './Autocomplete';
 
 const defaultProps: AutocompleteProps = {
   withinPortal: false,
   initiallyOpened: true,
-  label: 'Test',
   data: [{ value: 'test-1' }, { value: 'test-2' }],
   transitionDuration: 0,
 };
@@ -27,7 +27,11 @@ const queries = {
 };
 
 describe('@pattern-ui/core/Autocomplete', () => {
-  checkAccessibility([<Autocomplete {...defaultProps} />]);
+  checkAccessibility([
+    <InputWrapper label="Test" id="test">
+      <Autocomplete {...defaultProps} id="test" />
+    </InputWrapper>,
+  ]);
   itSupportsInputProps(Autocomplete, defaultProps, 'Autocomplete');
   itSupportsFocusEvents(Autocomplete, defaultProps, '.pattern-Autocomplete-input');
   itSupportsSystemProps({

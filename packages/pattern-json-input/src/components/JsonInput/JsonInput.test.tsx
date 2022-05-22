@@ -5,14 +5,17 @@ import {
   itSupportsFocusEvents,
   checkAccessibility,
 } from '@pattern-ui/tests';
+import { InputWrapper } from '@pattern-ui/input-wrapper';
 import { JsonInput, JsonInputProps } from './JsonInput';
 
-const defaultProps: JsonInputProps = {
-  label: 'test-label',
-};
+const defaultProps: JsonInputProps = {};
 
 describe('@pattern-ui/core/JsonInput', () => {
-  checkAccessibility([<JsonInput {...defaultProps} />]);
+  checkAccessibility([
+    <InputWrapper label="test-label" id="test">
+      <JsonInput {...defaultProps} id="test" />
+    </InputWrapper>,
+  ]);
   itSupportsFocusEvents(JsonInput, defaultProps, 'textarea');
   itSupportsInputProps(JsonInput, defaultProps, 'JsonInput');
   itSupportsSystemProps({

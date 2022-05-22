@@ -4,14 +4,7 @@ import { TextInput } from '@pattern-ui/core';
 export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
-      <TextInput label="Your email" placeholder="you@email.com" error />
-
-      <TextInput
-        style={{ marginTop: 15 }}
-        label="Your email"
-        placeholder="you@email.com"
-        error="Invalid email"
-      />
+      <TextInput placeholder="you@email.com" invalid />
     </div>
   );
 }

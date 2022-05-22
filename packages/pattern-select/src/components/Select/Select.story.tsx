@@ -38,7 +38,6 @@ function Controlled(props: Partial<SelectProps>) {
   return (
     <div>
       <Select
-        label="Controlled"
         placeholder="Controlled"
         value={value}
         onChange={setValue}
@@ -67,7 +66,6 @@ function Creatable() {
 
   return (
     <Select
-      label="Creatable Select"
       data={creatableData}
       placeholder="Select items"
       nothingFound="Nothing found"
@@ -99,7 +97,6 @@ function DynamicLabels(props: Partial<SelectProps>) {
   return (
     <div>
       <Select
-        label="Controlled"
         placeholder="Controlled"
         value={value}
         onChange={setValue}
@@ -127,14 +124,7 @@ storiesOf('Select', module)
   ))
   .add('Fixed value', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
-      <Select
-        label="Controlled (fixed value)"
-        placeholder="Choose value"
-        searchable
-        value="ng"
-        data={data}
-        mt={20}
-      />
+      <Select placeholder="Choose value" searchable value="ng" data={data} mt={20} />
     </div>
   ))
   .add('Dynamic Labels', () => (
@@ -150,7 +140,6 @@ storiesOf('Select', module)
   .add('Disabled items', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
       <Select
-        label="Disabled Elements"
         placeholder="Choose value"
         data={[...data, { value: 'lit', label: 'Lit', disabled: true }]}
         mt={20}
@@ -159,20 +148,13 @@ storiesOf('Select', module)
   ))
   .add('Grouped data', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
-      <Select
-        label="With Grouped and Disabled Data"
-        placeholder="Choose value"
-        data={groupedData}
-        mt={20}
-        searchable
-      />
+      <Select placeholder="Choose value" data={groupedData} mt={20} searchable />
     </div>
   ))
   .add('With native scrollbars', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
       <Select
         data={largeData}
-        label="Native scrollbars"
         placeholder="Select with native scrollbars"
         dropdownComponent="div"
       />
@@ -186,14 +168,12 @@ storiesOf('Select', module)
   .add('Deselect item', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
       <Select
-        label="Allow deselect"
         placeholder="Choose value"
         data={[...data, { value: 'lit', label: 'Lit', disabled: true }]}
         mt={20}
         allowDeselect
       />
       <Select
-        label="Disallow deselect"
         placeholder="Choose value"
         data={[...data, { value: 'lit', label: 'Lit', disabled: true }]}
         mt={20}
@@ -203,62 +183,41 @@ storiesOf('Select', module)
   ))
   .add('String as data', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
-      <Select
-        label="Choose your favorite library/framework"
-        placeholder="Choose value"
-        data={stringData}
-      />
+      <Select placeholder="Choose value" data={stringData} />
     </div>
   ))
   .add('Searchable without nothing found', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
-      <Select
-        label="Choose your favorite library/framework"
-        placeholder="Choose value"
-        data={stringData}
-        searchable
-      />
+      <Select placeholder="Choose value" data={stringData} searchable />
     </div>
   ))
   .add('Within form', () => (
     <SubmitForm>
-      <Select
-        label="Submit with enter"
-        data={data}
-        placeholder="Select items"
-        searchable
-        name="test"
-      />
+      <Select data={data} placeholder="Select items" searchable name="test" />
     </SubmitForm>
   ))
   .add('Out of viewport', () => (
     <div style={{ position: 'relative', marginTop: 40 }}>
-      <Select
-        label="Out of viewport"
-        data={data}
-        placeholder="Select items"
-        sx={{ position: 'absolute', right: '-50%' }}
-      />
+      <Select data={data} placeholder="Select items" sx={{ position: 'absolute', right: '-50%' }} />
     </div>
   ))
   .add('Popper flip', () => (
     <div style={{ maxWidth: 600, margin: 'auto' }}>
       {content}
-      <Select label="Dropdown flip" data={data} placeholder="Select items" />
+      <Select data={data} placeholder="Select items" />
       {content}
     </div>
   ))
   .add('Popper flip (with direction switch)', () => (
     <div style={{ maxWidth: 600, margin: 'auto' }}>
       {content}
-      <Select label="Dropdown flip" data={data} placeholder="Select items" switchDirectionOnFlip />
+      <Select data={data} placeholder="Select items" switchDirectionOnFlip />
       {content}
     </div>
   ))
   .add('Searchable value clear', () => (
     <div style={{ padding: 40 }}>
       <Controlled
-        label="ControlledSearchable value clear"
         placeholder="Searchable value clear"
         searchable
         clearable
@@ -271,7 +230,6 @@ storiesOf('Select', module)
       />
 
       <Select
-        label="Searchable value clear"
         placeholder="Searchable value clear"
         searchable
         clearable
@@ -289,7 +247,6 @@ storiesOf('Select', module)
     <div style={{ padding: 40 }}>
       <Select
         name="test"
-        label="Your favorite framework/library"
         placeholder="Pick one"
         data={[
           { value: 'react', label: 'React' },
@@ -321,23 +278,14 @@ storiesOf('Select', module)
         clearable
         data={['React', 'Angular']}
         defaultValue="React"
-        label="Filter"
         searchable
       />
-      <Select
-        mt="md"
-        clearable
-        data={['React', 'Angular']}
-        defaultValue="React"
-        label="Do not filter (default)"
-        searchable
-      />
+      <Select mt="md" clearable data={['React', 'Angular']} defaultValue="React" searchable />
     </div>
   ))
   .add('Clearable button not in tab index', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
       <Select
-        label="Search in first select"
         placeholder="Choose value"
         data={stringData}
         searchable
@@ -345,7 +293,6 @@ storiesOf('Select', module)
         clearButtonTabIndex={-1}
       />
       <Select
-        label="Tab directly to next select"
         placeholder="Choose value"
         data={stringData}
         searchable
