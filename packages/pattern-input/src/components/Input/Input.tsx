@@ -48,6 +48,9 @@ export interface InputBaseProps {
 
   /** Input size */
   size?: PatternSize;
+
+  /** Sets border color to red and aria-invalid=true on input element */
+  invalid?: boolean;
 }
 
 interface _InputProps extends InputBaseProps, DefaultProps<InputStylesNames> {

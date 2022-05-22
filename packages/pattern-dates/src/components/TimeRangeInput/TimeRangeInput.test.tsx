@@ -4,24 +4,28 @@ import {
   itSupportsSystemProps,
   itSupportsInputRightSection,
   itSupportsInputIcon,
-  itConnectsLabelAndInput,
   itSupportsFocusEvents,
-  itSupportsInputWrapperProps,
 } from '@pattern-ui/tests';
+import { InputWrapper } from '@pattern-ui/input-wrapper';
 import { TimeRangeInput, TimeRangeInputProps } from './TimeRangeInput';
 
 const defaultProps: TimeRangeInputProps = {
-  label: 'test-label',
   hoursLabel: 'test-hours',
   minutesLabel: 'test-minutes',
   secondsLabel: 'test-seconds',
 };
 
 describe('@pattern-ui/dates/TimeRangeInput', () => {
+  checkAccessibility([
+    <InputWrapper label="test-label" id="test">
+      <TimeRangeInput {...defaultProps} id="test" />
+    </InputWrapper>,
+    <InputWrapper label="test-label" id="test2">
+      <TimeRangeInput {...defaultProps} withSeconds id="test2" />
+    </InputWrapper>,
+  ]);
   itSupportsInputRightSection(TimeRangeInput, defaultProps);
-  itSupportsInputWrapperProps(TimeRangeInput, defaultProps, 'TimeRangeInput');
   itSupportsInputIcon(TimeRangeInput, defaultProps);
-  itConnectsLabelAndInput(TimeRangeInput, defaultProps);
   itSupportsFocusEvents(TimeRangeInput, defaultProps, 'input');
   itSupportsSystemProps({
     component: TimeRangeInput,
@@ -30,9 +34,4 @@ describe('@pattern-ui/dates/TimeRangeInput', () => {
     refType: HTMLInputElement,
     excludeOthers: true,
   });
-
-  checkAccessibility([
-    <TimeRangeInput {...defaultProps} />,
-    <TimeRangeInput {...defaultProps} withSeconds />,
-  ]);
 });

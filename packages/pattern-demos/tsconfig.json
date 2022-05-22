@@ -127,6 +127,7 @@
     { "path": "../pattern-transfer-list" },
     { "path": "../pattern-transition" },
     { "path": "../pattern-typography-styles-provider" },
-    { "path": "../pattern-utils" }
+    { "path": "../pattern-utils" },
+    { "path": "../pattern-dates" }
   ]
 }

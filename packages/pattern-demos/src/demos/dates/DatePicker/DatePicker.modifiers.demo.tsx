@@ -24,7 +24,6 @@ export default function Demo() {
       <DatePicker
         disableOutsideEvents
         placeholder="Pick date"
-        label="Event date"
         dayClassName={(date, modifiers) =>
           cx({
             [classes.outside]: modifiers.outside,

@@ -4,7 +4,7 @@ import { DatePicker } from '@pattern-ui/dates';
 export default function Demo() {
   return (
     <div style={{ maxWidth: 340, marginLeft: 'auto', marginRight: 'auto' }}>
-      <DatePicker placeholder="Pick date" label="Event date" clearable={false} />
+      <DatePicker placeholder="Pick date" clearable={false} />
     </div>
   );
 }
