@@ -1,20 +1,19 @@
 import React, { forwardRef } from 'react';
 import TextareaAutosize from 'react-textarea-autosize';
 import { useUuid } from '@pattern-ui/hooks';
+import { Box } from '@pattern-ui/box';
 import {
   DefaultProps,
   PatternSize,
   extractSystemStyles,
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
-import { InputWrapperBaseProps, InputWrapper } from '@pattern-ui/input-wrapper';
 import { TextInputStylesNames } from '@pattern-ui/text-input';
 import { Input, InputBaseProps, InputProps } from '@pattern-ui/input';
 import useStyles from './Textarea.styles';
 
 export interface TextareaProps
   extends DefaultProps<TextInputStylesNames>,
-    InputWrapperBaseProps,
     InputBaseProps,
     React.ComponentPropsWithoutRef<'textarea'> {
   /** Id is used to bind input and label, if not passed unique id will be generated for each input */
@@ -37,6 +36,9 @@ export interface TextareaProps
 
   /** Static selectors base */
   __staticSelector?: string;
+
+  /** Sets border color to red and aria-invalid=true on input element */
+  invalid?: boolean;
 }
 
 const defaultProps: Partial<TextareaProps> = {
@@ -51,9 +53,6 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
       autosize,
       maxRows,
       minRows,
-      label,
-      error,
-      description,
       id,
       className,
       required,
@@ -64,9 +63,7 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
       size,
       __staticSelector,
       sx,
-      errorProps,
-      descriptionProps,
-      labelProps,
+      invalid,
       ...others
     } = usePatternDefaultProps('Textarea', defaultProps, props);
 
@@ -76,7 +73,7 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
     const sharedProps: InputProps<'textarea'> = {
       required,
       ref,
-      invalid: !!error,
+      invalid,
       id: uuid,
       classNames: { ...classNames, input: cx(classes.input, classNames?.input) },
       styles,
@@ -87,22 +84,12 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
     };
 
     return (
-      <InputWrapper
-        label={label}
-        error={error}
-        id={uuid}
-        description={description}
-        required={required}
+      <Box
+        id={`${uuid}-wrapper`}
         style={style}
-        className={className}
-        classNames={classNames}
         styles={styles}
-        size={size}
-        __staticSelector={__staticSelector}
+        className={className}
         sx={sx}
-        errorProps={errorProps}
-        labelProps={labelProps}
-        descriptionProps={descriptionProps}
         {...systemStyles}
         {...wrapperProps}
       >
@@ -116,7 +103,7 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
         ) : (
           <Input<'textarea'> {...sharedProps} component="textarea" rows={minRows} />
         )}
-      </InputWrapper>
+      </Box>
     );
   }
 );
