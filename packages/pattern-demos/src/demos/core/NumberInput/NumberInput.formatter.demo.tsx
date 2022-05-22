@@ -5,7 +5,6 @@ export default function Demo() {
   return (
     <div style={{ maxWidth: 420, margin: 'auto' }}>
       <NumberInput
-        label="Price"
         defaultValue={1000}
         formatter={(value) =>
           !Number.isNaN(parseFloat(value))

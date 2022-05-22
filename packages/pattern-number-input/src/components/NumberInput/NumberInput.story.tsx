@@ -4,7 +4,7 @@ import { PATTERN_SIZES } from '@pattern-ui/styles';
 import { NumberInput } from './NumberInput';
 
 const sizes = PATTERN_SIZES.map((size) => (
-  <NumberInput defaultValue={0} label={size} size={size} key={size} mt="xl" />
+  <NumberInput defaultValue={0} size={size} key={size} mt="xl" />
 ));
 
 function Controlled(
@@ -24,20 +24,17 @@ storiesOf('NumberInput', module)
   .add('Formatter/Parser', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
       <NumberInput
-        label="Price"
         defaultValue={1000}
         formatter={(value) => `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
         parser={(value) => value.replace(/\$\s?|(,*)/g, '')}
       />
       <NumberInput
-        label="Price with cents"
         defaultValue={1000.5}
         precision={2}
         formatter={(value) => `$ ${value}`}
         parser={(value) => value.replace(/\$\s?|(,*)/g, '')}
       />
       <NumberInput
-        label="Percentage"
         defaultValue={0.1}
         step={0.01}
         precision={2}
@@ -49,17 +46,16 @@ storiesOf('NumberInput', module)
   .add('Step On Hold', () => (
     <>
       <div style={{ padding: 40, maxWidth: 400 }}>
-        <NumberInput label="Step on hold" stepHoldDelay={750} stepHoldInterval={100} />
+        <NumberInput stepHoldDelay={750} stepHoldInterval={100} />
       </div>
       <div style={{ padding: 40, maxWidth: 400 }}>
         <NumberInput
-          label="Step on hold with interval function"
           stepHoldDelay={750}
           stepHoldInterval={(count) => Math.max(1000 - count * count, 0)}
         />
       </div>
       <div style={{ padding: 40, maxWidth: 400 }}>
-        <NumberInput label="Don't step on hold" />
+        <NumberInput />
       </div>
     </>
   ));

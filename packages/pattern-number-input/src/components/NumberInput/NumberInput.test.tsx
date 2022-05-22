@@ -8,6 +8,7 @@ import {
   itSupportsInputProps,
   itSupportsFocusEvents,
 } from '@pattern-ui/tests';
+import { InputWrapper } from '@pattern-ui/input-wrapper';
 import { NumberInput, NumberInputHandlers, NumberInputProps } from './NumberInput';
 
 const defaultProps: NumberInputProps = {};
@@ -28,8 +29,9 @@ const blurInput = () => fireEvent.blur(getInput());
 
 describe('@pattern-ui/core/NumberInput', () => {
   checkAccessibility([
-    <NumberInput {...defaultProps} label="test" />,
-    <NumberInput {...defaultProps} aria-label="test" />,
+    <InputWrapper label="test-label" id="test">
+      <NumberInput {...defaultProps} id="test" />
+    </InputWrapper>,
   ]);
 
   itSupportsSystemProps({
