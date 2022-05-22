@@ -102,7 +102,7 @@ const sizes = PATTERN_SIZES.map((size) => (
       placeholder="Select items"
       nothingFound="Nothing found"
     />
-    <TextInput label="Text input" placeholder="Text input" size={size} />
+    <TextInput placeholder="Text input" size={size} />
   </Group>
 ));
 
@@ -114,7 +114,7 @@ const variants = (['default', 'filled', 'unstyled'] as const).map((variant) => (
       placeholder="Select items"
       nothingFound="Nothing found"
     />
-    <TextInput label="Text input" placeholder="Text input" variant={variant} />
+    <TextInput placeholder="Text input" variant={variant} />
   </Group>
 ));
 
@@ -128,10 +128,10 @@ storiesOf('MultiSelect', module)
           placeholder="Select items"
           nothingFound="Nothing found"
         />
-        <TextInput label="Text input" placeholder="Select items" />
+        <TextInput placeholder="Select items" />
       </Group>
       <Group style={{ padding: 40, paddingTop: 0 }} grow align="flex-start" mt="md">
-        <TextInput label="Text input" placeholder="Select items" />
+        <TextInput placeholder="Select items" />
         <MultiSelect
           data={[...data, { label: 'Lit', value: 'lit', disabled: true }]}
           defaultValue={['react', 'ng']}

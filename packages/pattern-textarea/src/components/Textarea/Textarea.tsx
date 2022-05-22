@@ -36,9 +36,6 @@ export interface TextareaProps
 
   /** Static selectors base */
   __staticSelector?: string;
-
-  /** Sets border color to red and aria-invalid=true on input element */
-  invalid?: boolean;
 }
 
 const defaultProps: Partial<TextareaProps> = {

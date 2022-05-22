@@ -6,7 +6,6 @@ import {
 import { DatePickerBase, DatePickerBaseProps } from './DatePickerBase';
 
 const defaultProps: DatePickerBaseProps = {
-  label: 'test-label',
   placeholder: 'test-placeholder',
   dropdownOpened: true,
   setDropdownOpened: () => {},

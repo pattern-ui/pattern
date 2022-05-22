@@ -25,7 +25,6 @@ export default function Demo() {
   return (
     <TextInput
       placeholder="Your message"
-      label="Press ⌘+Enter or Ctrl+Enter when input has focus to send message"
       value={value}
       onChange={(event) => setValue(event.target.value)}
       onKeyDown={getHotkeyHandler([

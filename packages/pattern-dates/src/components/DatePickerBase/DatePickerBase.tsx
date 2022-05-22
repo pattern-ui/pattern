@@ -140,13 +140,11 @@ export const DatePickerBase = forwardRef<HTMLInputElement, DatePickerBaseProps>(
       className,
       style,
       styles,
+      invalid,
       wrapperProps,
       required,
       allowFreeInput = false,
-      label,
-      error,
       id,
-      description,
       placeholder,
       shadow = 'sm',
       transition = 'pop-top-left',
@@ -177,16 +175,13 @@ export const DatePickerBase = forwardRef<HTMLInputElement, DatePickerBaseProps>(
       onDropdownOpen,
       clickOutsideEvents = ['mousedown', 'touchstart'],
       modalZIndex,
-      errorProps,
-      labelProps,
-      descriptionProps,
       clearButtonTabIndex = 0,
       ...others
     }: DatePickerBaseProps,
     ref
   ) => {
     const { classes, cx, theme } = useStyles(
-      { size, invalid: !!error },
+      { size, invalid },
       { classNames, styles, name: __staticSelector }
     );
     const { systemStyles, rest } = extractSystemStyles(others);
@@ -287,7 +282,7 @@ export const DatePickerBase = forwardRef<HTMLInputElement, DatePickerBaseProps>(
             placeholder={placeholder}
             value={inputLabel}
             required={required}
-            invalid={!!error}
+            invalid={invalid}
             readOnly={!allowFreeInput}
             rightSection={rightSection}
             rightSectionWidth={theme.fn.size({ size, sizes: RIGHT_SECTION_WIDTH })}

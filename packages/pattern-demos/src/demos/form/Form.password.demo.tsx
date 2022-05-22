@@ -19,15 +19,10 @@ export default function Demo() {
   return (
     <Box sx={{ maxWidth: 340 }} mx="auto">
       <form onSubmit={form.onSubmit((values) => console.log(values))}>
-        <PasswordInput
-          label="Password"
-          placeholder="Password"
-          {...form.getInputProps('password')}
-        />
+        <PasswordInput placeholder="Password" {...form.getInputProps('password')} />
 
         <PasswordInput
           mt="sm"
-          label="Confirm password"
           placeholder="Confirm password"
           {...form.getInputProps('confirmPassword')}
         />

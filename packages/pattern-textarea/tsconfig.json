@@ -15,6 +15,7 @@
       "@pattern-ui/styles": ["../pattern-styles/src"],
       "@pattern-ui/utils": ["../pattern-utils/src"],
       "@pattern-ui/tests": ["../pattern-tests/src"],
+      "@pattern-ui/input": ["../pattern-input/src"],
       "@pattern-ui/storybook": ["../pattern-storybook/src"]
     }
   },
@@ -23,6 +24,7 @@
     { "path": "../pattern-utils" },
     { "path": "../pattern-styles" },
     { "path": "../pattern-tests" },
+    { "path": "../pattern-input" },
     { "path": "../pattern-storybook" }
   ]
 }

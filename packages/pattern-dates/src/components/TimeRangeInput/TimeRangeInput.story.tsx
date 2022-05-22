@@ -5,7 +5,7 @@ import { PATTERN_SIZES } from '@pattern-ui/styles';
 import { TimeRangeInput } from './TimeRangeInput';
 
 const sizes = PATTERN_SIZES.map((size) => (
-  <TimeRangeInput label={size} size={size} key={size} style={{ marginTop: 30 }} />
+  <TimeRangeInput size={size} key={size} style={{ marginTop: 30 }} />
 ));
 
 function Controlled() {
@@ -13,12 +13,7 @@ function Controlled() {
 
   return (
     <>
-      <TimeRangeInput
-        value={[value[0], value[1]]}
-        onChange={setValue}
-        label="Controlled"
-        withSeconds
-      />
+      <TimeRangeInput value={[value[0], value[1]]} onChange={setValue} withSeconds />
       <button
         type="button"
         onClick={() =>

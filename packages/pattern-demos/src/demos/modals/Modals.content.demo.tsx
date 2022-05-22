@@ -10,7 +10,7 @@ export default function Demo() {
       title: 'Subscribe to newsletter',
       children: (
         <>
-          <TextInput label="Your email" placeholder="Your email" />
+          <TextInput placeholder="Your email" />
           <Button fullWidth onClick={() => modals.closeModal(id)} mt="md">
             Submit
           </Button>

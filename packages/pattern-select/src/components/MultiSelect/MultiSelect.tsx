@@ -534,7 +534,6 @@ export const MultiSelect = forwardRef<HTMLInputElement, MultiSelectProps>(
       <Box
         id={`${uuid}-wrapper`}
         className={className}
-        classNames={classNames}
         style={style}
         styles={styles}
         role="combobox"

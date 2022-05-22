@@ -11,9 +11,9 @@ export default function Demo() {
 
       <FocusTrap active={active}>
         <div>
-          <TextInput mt="sm" label="First input" placeholder="First input" />
-          <TextInput mt="sm" label="Second input" placeholder="Second input" />
-          <TextInput mt="sm" label="Third input" placeholder="Third input" />
+          <TextInput mt="sm" placeholder="First input" />
+          <TextInput mt="sm" placeholder="Second input" />
+          <TextInput mt="sm" placeholder="Third input" />
         </div>
       </FocusTrap>
     </div>

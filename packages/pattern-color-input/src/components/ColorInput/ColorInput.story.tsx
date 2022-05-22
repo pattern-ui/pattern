@@ -5,13 +5,7 @@ import { WithinOverlays } from '@pattern-ui/storybook';
 import { ColorInput } from './ColorInput';
 
 const sizes = PATTERN_SIZES.map((size) => (
-  <ColorInput
-    size={size}
-    label="Color input"
-    placeholder="Pick color"
-    format="rgba"
-    style={{ marginTop: 20 }}
-  />
+  <ColorInput size={size} placeholder="Pick color" format="rgba" style={{ marginTop: 20 }} />
 ));
 
 function ControlledInput() {
@@ -19,7 +13,6 @@ function ControlledInput() {
   return (
     <div style={{ margin: 'auto', maxWidth: 400, marginTop: 15 }}>
       <ColorInput
-        label="Controlled input"
         placeholder="Pick color"
         format="rgba"
         value={value}
@@ -52,7 +45,6 @@ storiesOf('ColorInput', module)
           ...Object.keys(DEFAULT_THEME.colors).map((color) => DEFAULT_THEME.colors[color][6]),
           'transparent',
         ]}
-        label="Color"
         placeholder="Color"
         withinPortal={false}
       />

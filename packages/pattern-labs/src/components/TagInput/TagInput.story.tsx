@@ -26,14 +26,14 @@ const sizes = PATTERN_SIZES.map((size) => (
       defaultValue={['react', 'ng']}
       placeholder="Input Tag"
     />
-    <TextInput label="Text input" placeholder="Text input" size={size} />
+    <TextInput placeholder="Text input" size={size} />
   </Group>
 ));
 
 const variants = (['default', 'filled', 'unstyled'] as const).map((variant) => (
   <Group grow key={variant} style={{ marginTop: 30 }} direction="column">
     <TagInput variant={variant} placeholder="Input Tag" />
-    <TextInput label="Text input" placeholder="Text input" variant={variant} />
+    <TextInput placeholder="Text input" variant={variant} />
   </Group>
 ));
 
@@ -42,10 +42,10 @@ storiesOf('TagInput', module)
     <>
       <Group style={{ padding: 40, paddingBottom: 0 }} grow align="flex-start">
         <TagInput defaultValue={['react', 'ng']} placeholder="Input tag" />
-        <TextInput label="Text input" placeholder="Input tag" />
+        <TextInput placeholder="Input tag" />
       </Group>
       <Group style={{ padding: 40, paddingTop: 0 }} grow align="flex-start" mt="md">
-        <TextInput label="Text input" placeholder="Input tag" />
+        <TextInput placeholder="Input tag" />
         <TagInput defaultValue={['react', 'ng']} placeholder="Input tag" />
       </Group>
     </>
@@ -65,6 +65,6 @@ storiesOf('TagInput', module)
   ));
 // .add('RTL', () => (
 //   <RtlProvider>
-//     <TagInput label="Tag Input" defaultValue={['react', 'ng']} placeholder="Input tag" />
+//     <TagInput  defaultValue={['react', 'ng']} placeholder="Input tag" />
 //   </RtlProvider>
 // ));

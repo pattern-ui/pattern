@@ -4,9 +4,7 @@ import { JsonInput } from './JsonInput';
 
 function Controlled() {
   const [value, onChange] = useState('');
-  return (
-    <JsonInput value={value} onChange={onChange} label="Controlled" placeholder="Controlled" />
-  );
+  return <JsonInput value={value} onChange={onChange} placeholder="Controlled" />;
 }
 
 storiesOf('JsonInput', module).add('Controlled', () => (

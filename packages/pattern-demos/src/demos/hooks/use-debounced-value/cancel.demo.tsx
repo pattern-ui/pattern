@@ -18,7 +18,6 @@ export default function Demo() {
         }}
       >
         <TextInput
-          label="Enter value to see debounce effect"
           placeholder="Enter value to see debounce effect"
           value={value}
           style={{ flex: 1 }}

@@ -103,10 +103,8 @@ export const TagInput = forwardRef<HTMLInputElement, TagInputProps>(
       className,
       style,
       required,
-      label,
-      description,
       size = 'sm',
-      error,
+      invalid,
       classNames,
       styles,
       wrapperProps,
@@ -141,7 +139,7 @@ export const TagInput = forwardRef<HTMLInputElement, TagInputProps>(
     ref
   ) => {
     const { classes, cx, theme } = useStyles(
-      { size, invalid: !!error },
+      { size, invalid },
       { classNames, styles, name: 'TagInput' }
     );
     const { systemStyles, rest } = extractSystemStyles(others);
@@ -314,7 +312,7 @@ export const TagInput = forwardRef<HTMLInputElement, TagInputProps>(
             size={size}
             variant={variant}
             disabled={disabled}
-            invalid={!!error}
+            invalid={invalid}
             required={required}
             radius={radius}
             icon={icon}

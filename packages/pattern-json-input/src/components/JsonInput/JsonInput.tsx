@@ -40,7 +40,7 @@ export const JsonInput = forwardRef<HTMLTextAreaElement, JsonInputProps>(
       onChange,
       onFocus,
       onBlur,
-      error,
+      invalid,
       formatOnBlur,
       size,
       validationError,
@@ -80,7 +80,7 @@ export const JsonInput = forwardRef<HTMLTextAreaElement, JsonInputProps>(
         onChange={(event) => setValue(event.currentTarget.value)}
         onFocus={handleFocus}
         onBlur={handleBlur}
-        error={valid ? error : validationError || true}
+        invalid={valid ? invalid : !!validationError || true}
         __staticSelector="JsonInput"
         classNames={{ ...classNames, input: cx(classes.input, classNames?.input) }}
         autoComplete="nope"
