@@ -1,5 +1,6 @@
 import React, { forwardRef } from 'react';
 import { useUuid } from '@pattern-ui/hooks';
+import { Box } from '@pattern-ui/box';
 import {
   DefaultProps,
   PatternSize,
@@ -7,18 +8,13 @@ import {
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
 import { Input, InputBaseProps, InputStylesNames } from '@pattern-ui/input';
-import {
-  InputWrapperBaseProps,
-  InputWrapper,
-  InputWrapperStylesNames,
-} from '@pattern-ui/input-wrapper';
+import { InputWrapperStylesNames } from '@pattern-ui/input-wrapper';
 
 export type TextInputStylesNames = InputStylesNames | InputWrapperStylesNames;
 
 export interface TextInputProps
   extends DefaultProps<TextInputStylesNames>,
     InputBaseProps,
-    InputWrapperBaseProps,
     Omit<React.ComponentPropsWithoutRef<'input'>, 'size'> {
   /** id is used to bind input and label, if not passed unique id will be generated for each input */
   id?: string;
@@ -37,6 +33,9 @@ export interface TextInputProps
 
   /** Static css selector base */
   __staticSelector?: string;
+
+  /** Sets border color to red and aria-invalid=true on input element */
+  invalid?: boolean;
 }
 
 const defaultProps: Partial<TextInputProps> = {
@@ -50,20 +49,15 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
     const {
       className,
       id,
-      label,
-      error,
+      invalid,
       required,
       type,
       style,
       icon,
-      description,
       wrapperProps,
       size,
       classNames,
       styles,
-      errorProps,
-      labelProps,
-      descriptionProps,
       __staticSelector,
       sx,
       ...others
@@ -73,22 +67,12 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
     const { systemStyles, rest } = extractSystemStyles(others);
 
     return (
-      <InputWrapper
-        required={required}
-        id={uuid}
-        label={label}
-        error={error}
-        description={description}
-        size={size}
+      <Box
+        id={`${uuid}-wrapper`}
         className={className}
         style={style}
-        classNames={classNames}
         styles={styles}
-        __staticSelector={__staticSelector}
         sx={sx}
-        errorProps={errorProps}
-        labelProps={labelProps}
-        descriptionProps={descriptionProps}
         {...systemStyles}
         {...wrapperProps}
       >
@@ -98,14 +82,14 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
           ref={ref}
           id={uuid}
           type={type}
-          invalid={!!error}
+          invalid={invalid}
           icon={icon}
           size={size}
           classNames={classNames}
           styles={styles}
           __staticSelector={__staticSelector}
         />
-      </InputWrapper>
+      </Box>
     );
   }
 );

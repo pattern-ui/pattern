@@ -7,12 +7,17 @@ import {
   itSupportsFocusEvents,
   itSupportsInputProps,
 } from '@pattern-ui/tests';
+import { InputWrapper } from '@pattern-ui/input-wrapper';
 import { TextInput, TextInputProps } from './TextInput';
 
 const defaultProps: TextInputProps = {};
 
 describe('@pattern-ui/core/Input', () => {
-  checkAccessibility([<TextInput label="test-input" />, <TextInput aria-label="test-input" />]);
+  checkAccessibility([
+    <InputWrapper label="test-input" id="test">
+      <TextInput id="test" />
+    </InputWrapper>,
+  ]);
   itSupportsInputProps(TextInput, defaultProps, 'TextInput');
   itSupportsFocusEvents(TextInput, defaultProps, 'input');
   itSupportsSystemProps({
