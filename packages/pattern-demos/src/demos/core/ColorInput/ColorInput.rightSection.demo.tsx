@@ -10,7 +10,6 @@ export default function Demo() {
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <ColorInput
         placeholder="Pick color"
-        label="Your favorite color"
         value={value}
         onChange={onChange}
         rightSection={

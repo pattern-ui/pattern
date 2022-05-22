@@ -8,11 +8,7 @@ import {
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
 import { PatternTransition } from '@pattern-ui/transition';
-import {
-  InputWrapper,
-  InputWrapperBaseProps,
-  InputWrapperStylesNames,
-} from '@pattern-ui/input-wrapper';
+import { InputWrapperStylesNames } from '@pattern-ui/input-wrapper';
 import { Input, InputBaseProps, InputStylesNames } from '@pattern-ui/input';
 import { ColorSwatch } from '@pattern-ui/color-swatch';
 import { Popper } from '@pattern-ui/popper';
@@ -25,6 +21,7 @@ import {
   isColorValid,
   parseColor,
 } from '@pattern-ui/color-picker';
+import { Box } from '@pattern-ui/box';
 import useStyles from './ColorInput.styles';
 
 export type ColorInputStylesNames =
@@ -34,8 +31,7 @@ export type ColorInputStylesNames =
   | Selectors<typeof useStyles>;
 
 export interface ColorInputProps
-  extends InputWrapperBaseProps,
-    InputBaseProps,
+  extends InputBaseProps,
     ColorPickerBaseProps,
     DefaultProps<ColorInputStylesNames>,
     Omit<React.ComponentPropsWithoutRef<'input'>, 'size' | 'onChange' | 'defaultValue' | 'value'> {
@@ -62,6 +58,9 @@ export interface ColorInputProps
 
   /** Whether to render the dropdown in a Portal */
   withinPortal?: boolean;
+
+  /** Sets border color to red and aria-invalid=true on input element */
+  invalid?: boolean;
 }
 
 const SWATCH_SIZES = {
@@ -96,9 +95,6 @@ const defaultProps: Partial<ColorInputProps> = {
 export const ColorInput = forwardRef<HTMLInputElement, ColorInputProps>(
   (props: ColorInputProps, ref) => {
     const {
-      label,
-      description,
-      error,
       required,
       wrapperProps,
       size,
@@ -126,9 +122,7 @@ export const ColorInput = forwardRef<HTMLInputElement, ColorInputProps>(
       style,
       swatches,
       sx,
-      errorProps,
-      labelProps,
-      descriptionProps,
+      invalid,
       ...others
     } = usePatternDefaultProps('ColorInput', defaultProps, props);
 
@@ -173,22 +167,13 @@ export const ColorInput = forwardRef<HTMLInputElement, ColorInputProps>(
     }, [format]);
 
     return (
-      <InputWrapper
-        label={label}
-        description={description}
-        error={error}
-        required={required}
+      <Box
+        id={`${uuid}-wrapper`}
         classNames={classNames}
         styles={styles}
-        size={size}
-        id={uuid}
         className={className}
         style={style}
-        __staticSelector="ColorInput"
         sx={sx}
-        errorProps={errorProps}
-        descriptionProps={descriptionProps}
-        labelProps={labelProps}
         {...systemStyles}
         {...wrapperProps}
       >
@@ -204,7 +189,7 @@ export const ColorInput = forwardRef<HTMLInputElement, ColorInputProps>(
             size={size}
             value={_value}
             onChange={(event) => setValue(event.currentTarget.value)}
-            invalid={!!error}
+            invalid={invalid}
             required={required}
             autoComplete="nope"
             icon={
@@ -259,7 +244,7 @@ export const ColorInput = forwardRef<HTMLInputElement, ColorInputProps>(
             </Paper>
           </div>
         </Popper>
-      </InputWrapper>
+      </Box>
     );
   }
 );

@@ -4,12 +4,7 @@ import { ColorInput, ColorInputProps } from '@pattern-ui/core';
 function Wrapper(props: ColorInputProps) {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
-      <ColorInput
-        label="Choose color format"
-        placeholder={props.format}
-        defaultValue="#C5D899"
-        {...props}
-      />
+      <ColorInput placeholder={props.format} defaultValue="#C5D899" {...props} />
     </div>
   );
 }
