@@ -6,7 +6,6 @@ export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <Autocomplete
-        label="Enter a hashtag"
         placeholder="Enter a hashtag"
         data={['React', 'Angular', 'Svelte', 'Vue']}
         icon={<Hash size={14} />}

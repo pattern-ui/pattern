@@ -7,11 +7,7 @@ import {
   getDefaultZIndex,
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
-import {
-  InputWrapper,
-  InputWrapperBaseProps,
-  InputWrapperStylesNames,
-} from '@pattern-ui/input-wrapper';
+import { InputWrapperStylesNames } from '@pattern-ui/input-wrapper';
 import { Input, InputBaseProps, InputStylesNames } from '@pattern-ui/input';
 import {
   SelectDropdown,
@@ -21,6 +17,7 @@ import { SelectItems } from '@pattern-ui/select/src/components/Select/SelectItem
 import { DefaultItem } from '@pattern-ui/select/src/components/Select/DefaultItem/DefaultItem';
 import { SelectScrollArea } from '@pattern-ui/select/src/components/Select/SelectScrollArea/SelectScrollArea';
 import { SelectSharedProps } from '@pattern-ui/select/src/components/Select/Select';
+import { Box } from '@pattern-ui/box';
 import { filterData } from './filter-data/filter-data';
 import useStyles from './Autocomplete.styles';
 
@@ -32,13 +29,13 @@ export type AutocompleteStylesNames =
 
 export interface AutocompleteItem {
   value: string;
+
   [key: string]: any;
 }
 
 export interface AutocompleteProps
   extends DefaultProps<AutocompleteStylesNames>,
     InputBaseProps,
-    InputWrapperBaseProps,
     SelectSharedProps<AutocompleteItem, string>,
     Omit<React.ComponentPropsWithoutRef<'input'>, 'size' | 'onChange' | 'value' | 'defaultValue'> {
   /** Maximum dropdown height */
@@ -49,6 +46,9 @@ export interface AutocompleteProps
 
   /** Called when item from dropdown was selected */
   onItemSubmit?(item: AutocompleteItem): void;
+
+  /** Sets border color to red and aria-invalid=true on input element */
+  invalid?: boolean;
 }
 
 export function defaultFilter(value: string, item: AutocompleteItem) {
@@ -79,10 +79,7 @@ export const Autocomplete = forwardRef<HTMLInputElement, AutocompleteProps>(
       style,
       sx,
       required = false,
-      label,
       id,
-      error,
-      description,
       size = 'sm',
       shadow = 'sm',
       data,
@@ -113,13 +110,11 @@ export const Autocomplete = forwardRef<HTMLInputElement, AutocompleteProps>(
       dropdownPosition,
       maxDropdownHeight,
       dropdownComponent,
-      errorProps,
-      labelProps,
-      descriptionProps,
       positionDependencies,
+      invalid,
       ...others
     } = usePatternDefaultProps('Autocomplete', defaultProps, props);
-    const { classes } = useStyles({ size }, { classNames, styles, name: 'Autocomplete' });
+    const { classes, cx } = useStyles({ size }, { classNames, styles, name: 'Autocomplete' });
     const { systemStyles, rest } = extractSystemStyles(others);
     const [dropdownOpened, _setDropdownOpened] = useState(initiallyOpened);
     const [hovered, setHovered] = useState(-1);
@@ -217,99 +212,85 @@ export const Autocomplete = forwardRef<HTMLInputElement, AutocompleteProps>(
       dropdownOpened && (filteredData.length > 0 || (filteredData.length === 0 && !!nothingFound));
 
     return (
-      <InputWrapper
-        required={required}
-        id={uuid}
-        label={label}
-        error={error}
-        description={description}
-        size={size}
-        className={className}
-        classNames={classNames}
+      <Box
+        id={`${uuid}=wrapper`}
+        className={cx(className, classes.wrapper)}
         styles={styles}
-        __staticSelector="Autocomplete"
-        sx={sx}
         style={style}
-        errorProps={errorProps}
-        descriptionProps={descriptionProps}
-        labelProps={labelProps}
+        sx={sx}
+        role="combobox"
+        aria-haspopup="listbox"
+        aria-owns={`${uuid}-items`}
+        aria-controls={uuid}
+        aria-expanded={shouldRenderDropdown}
+        onMouseLeave={() => setHovered(-1)}
+        tabIndex={-1}
         {...systemStyles}
         {...wrapperProps}
       >
-        <div
-          className={classes.wrapper}
-          role="combobox"
-          aria-haspopup="listbox"
-          aria-owns={`${uuid}-items`}
-          aria-controls={uuid}
-          aria-expanded={shouldRenderDropdown}
-          onMouseLeave={() => setHovered(-1)}
-          tabIndex={-1}
-        >
-          <Input<'input'>
-            {...rest}
-            data-pattern-stop-propagation={dropdownOpened}
-            required={required}
-            ref={useMergedRef(ref, inputRef)}
-            id={uuid}
-            type="string"
-            invalid={!!error}
-            size={size}
-            onKeyDown={handleInputKeydown}
-            classNames={classNames}
-            styles={styles}
-            __staticSelector="Autocomplete"
-            value={_value}
-            onChange={(event) => {
-              handleChange(event.currentTarget.value);
-              setDropdownOpened(true);
-            }}
-            onFocus={handleInputFocus}
-            onBlur={handleInputBlur}
-            onClick={handleInputClick}
-            autoComplete="nope"
-            aria-autocomplete="list"
-            aria-controls={shouldRenderDropdown ? `${uuid}-items` : null}
-            aria-activedescendant={hovered !== -1 ? `${uuid}-${hovered}` : null}
-          />
+        <Input<'input'>
+          {...rest}
+          data-pattern-stop-propagation={dropdownOpened}
+          required={required}
+          ref={useMergedRef(ref, inputRef)}
+          id={uuid}
+          type="string"
+          invalid={invalid}
+          size={size}
+          onKeyDown={handleInputKeydown}
+          classNames={classNames}
+          styles={styles}
+          __staticSelector="Autocomplete"
+          value={_value}
+          onChange={(event) => {
+            handleChange(event.currentTarget.value);
+            setDropdownOpened(true);
+          }}
+          onFocus={handleInputFocus}
+          onBlur={handleInputBlur}
+          onClick={handleInputClick}
+          autoComplete="nope"
+          aria-autocomplete="list"
+          aria-controls={shouldRenderDropdown ? `${uuid}-items` : null}
+          aria-activedescendant={hovered !== -1 ? `${uuid}-${hovered}` : null}
+        />
 
-          <SelectDropdown
-            mounted={shouldRenderDropdown}
-            transition={transition}
-            transitionDuration={transitionDuration}
-            transitionTimingFunction={transitionTimingFunction}
-            uuid={uuid}
-            shadow={shadow}
-            maxDropdownHeight={maxDropdownHeight}
-            dropdownComponent={dropdownComponent || SelectScrollArea}
+        <SelectDropdown
+          mounted={shouldRenderDropdown}
+          transition={transition}
+          transitionDuration={transitionDuration}
+          transitionTimingFunction={transitionTimingFunction}
+          uuid={uuid}
+          shadow={shadow}
+          maxDropdownHeight={maxDropdownHeight}
+          dropdownComponent={dropdownComponent || SelectScrollArea}
+          classNames={classNames}
+          styles={styles}
+          __staticSelector="Autocomplete"
+          direction={direction}
+          onDirectionChange={setDirection}
+          switchDirectionOnFlip={switchDirectionOnFlip}
+          referenceElement={inputRef.current}
+          withinPortal={withinPortal}
+          zIndex={zIndex}
+          dropdownPosition={dropdownPosition}
+          positionDependencies={positionDependencies}
+        >
+          <SelectItems
+            data={filteredData}
+            hovered={hovered}
             classNames={classNames}
             styles={styles}
+            uuid={uuid}
             __staticSelector="Autocomplete"
-            direction={direction}
-            onDirectionChange={setDirection}
-            switchDirectionOnFlip={switchDirectionOnFlip}
-            referenceElement={inputRef.current}
-            withinPortal={withinPortal}
-            zIndex={zIndex}
-            dropdownPosition={dropdownPosition}
-            positionDependencies={positionDependencies}
-          >
-            <SelectItems
-              data={filteredData}
-              hovered={hovered}
-              classNames={classNames}
-              styles={styles}
-              uuid={uuid}
-              __staticSelector="Autocomplete"
-              onItemHover={setHovered}
-              onItemSelect={handleItemClick}
-              itemComponent={itemComponent}
-              size={size}
-              nothingFound={nothingFound}
-            />
-          </SelectDropdown>
-        </div>
-      </InputWrapper>
+            onItemHover={setHovered}
+            onItemSelect={handleItemClick}
+            itemComponent={itemComponent}
+            size={size}
+            nothingFound={nothingFound}
+          />
+        </SelectDropdown>
+      </Box>
     );
   }
 );

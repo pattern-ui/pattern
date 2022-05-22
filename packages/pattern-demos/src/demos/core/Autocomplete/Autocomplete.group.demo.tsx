@@ -5,7 +5,6 @@ export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <Autocomplete
-        label="Your favorite Rick and Morty character"
         placeholder="Pick one"
         data={[
           { value: 'Rick', group: 'Used to be a pickle' },

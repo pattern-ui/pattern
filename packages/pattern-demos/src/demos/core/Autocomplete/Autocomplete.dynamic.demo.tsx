@@ -13,7 +13,6 @@ export default function Demo() {
       <Autocomplete
         value={value}
         onChange={setValue}
-        label="Email"
         placeholder="Start typing to see options"
         data={data}
       />

@@ -6,7 +6,6 @@ export default function Demo() {
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <Autocomplete
         data={['React', 'Angular', 'Svelte', 'Vue']}
-        label="Disabled without value"
         placeholder="Pick all that you like"
         disabled
       />
@@ -14,7 +13,6 @@ export default function Demo() {
       <Autocomplete
         style={{ marginTop: 15 }}
         data={['React', 'Angular', 'Svelte', 'Vue']}
-        label="Disabled with value"
         placeholder="Pick all that you like"
         disabled
         value="React"
