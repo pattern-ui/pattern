@@ -5,29 +5,29 @@ import {
   itSupportsInputIcon,
   itSupportsInputRightSection,
   itSupportsWrapperProps,
-  itConnectsLabelAndInput,
   itSupportsFocusEvents,
-  itSupportsInputWrapperProps,
 } from '@pattern-ui/tests';
+import { InputWrapper } from '@pattern-ui/input-wrapper';
 import { MultiSelect, MultiSelectProps } from './MultiSelect';
 
 const defaultProps: MultiSelectProps = {
   withinPortal: false,
   transitionDuration: 0,
-  label: 'test-multi-select',
   data: ['React', 'Angular', 'Svelte', 'Vue'],
   defaultValue: ['React', 'Angular'],
   id: 'test-multi-select',
 };
 
 describe('@pattern-ui/core/MultiSelect', () => {
-  checkAccessibility([<MultiSelect {...defaultProps} initiallyOpened />]);
+  checkAccessibility([
+    <InputWrapper id="test" label="Test">
+      <MultiSelect {...defaultProps} initiallyOpened id="test" />
+    </InputWrapper>,
+  ]);
   itSupportsFocusEvents(MultiSelect, defaultProps, '#test-multi-select');
   itSupportsInputIcon(MultiSelect, defaultProps);
-  itSupportsInputWrapperProps(MultiSelect, defaultProps, 'MultiSelect');
   itSupportsInputRightSection(MultiSelect, defaultProps);
   itSupportsWrapperProps(MultiSelect, defaultProps);
-  itConnectsLabelAndInput(MultiSelect, defaultProps);
   itSupportsSystemProps({
     component: MultiSelect,
     props: defaultProps,

@@ -5,7 +5,6 @@ export default function Demo() {
   return (
     <div style={{ maxWidth: 400, marginLeft: 'auto', marginRight: 'auto' }}>
       <MultiSelect
-        label="Your favorite Rick and Morty character"
         placeholder="Pick all that you like"
         data={[
           { value: 'rick', label: 'Rick', group: 'Used to be a pickle' },

@@ -7,7 +7,6 @@ export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <Select
-        label="Creatable Select"
         data={data}
         placeholder="Select items"
         nothingFound="Nothing found"

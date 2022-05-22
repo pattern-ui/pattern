@@ -24,18 +24,8 @@ export const control: PatternControlDemo = {
   controls: [
     { name: 'placeholder', type: 'string', initialValue: 'Pick all you like' },
     {
-      name: 'label',
-      type: 'string',
-      initialValue: 'Your favorite frameworks/libraries',
-    },
-    {
-      name: 'description',
-      type: 'string',
-      initialValue: '',
-    },
-    {
-      name: 'error',
-      type: 'string',
+      name: 'invalid',
+      type: 'boolean',
       initialValue: '',
     },
     {
@@ -52,11 +42,5 @@ export const control: PatternControlDemo = {
     { name: 'radius', type: 'size', initialValue: 'xs', defaultValue: 'xs' },
     { name: 'size', type: 'size', initialValue: 'sm', defaultValue: 'sm' },
     { name: 'disabled', type: 'boolean', initialValue: false, defaultValue: false },
-    {
-      name: 'required',
-      type: 'boolean',
-      initialValue: true,
-      defaultValue: false,
-    },
   ],
 };

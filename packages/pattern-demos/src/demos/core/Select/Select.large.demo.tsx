@@ -9,7 +9,6 @@ export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <Select
-        label="What item is the best?"
         placeholder="Pick one"
         searchable
         nothingFound="No options"

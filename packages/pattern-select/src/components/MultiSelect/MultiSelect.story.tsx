@@ -44,7 +44,6 @@ function Controlled() {
   return (
     <div style={{ padding: 40, maxWidth: 400 }}>
       <MultiSelect
-        label="Multi select"
         data={data}
         value={value}
         onChange={setValue}
@@ -79,7 +78,6 @@ function DynamicLabels() {
   return (
     <div style={{ padding: 40, maxWidth: 400 }}>
       <MultiSelect
-        label="Multi select"
         data={dynamicData}
         value={value}
         onChange={setValue}
@@ -99,7 +97,6 @@ const sizes = PATTERN_SIZES.map((size) => (
     <MultiSelect
       size={size}
       variant="unstyled"
-      label="Multi select"
       data={data}
       defaultValue={['react', 'ng']}
       placeholder="Select items"
@@ -113,7 +110,6 @@ const variants = (['default', 'filled', 'unstyled'] as const).map((variant) => (
   <Group grow key={variant} style={{ marginTop: 30 }} direction="column">
     <MultiSelect
       variant={variant}
-      label="Multi select"
       data={data}
       placeholder="Select items"
       nothingFound="Nothing found"
@@ -127,7 +123,6 @@ storiesOf('MultiSelect', module)
     <>
       <Group style={{ padding: 40, paddingBottom: 0 }} grow align="flex-start">
         <MultiSelect
-          label="Multi select"
           data={data}
           defaultValue={['react', 'ng']}
           placeholder="Select items"
@@ -138,7 +133,6 @@ storiesOf('MultiSelect', module)
       <Group style={{ padding: 40, paddingTop: 0 }} grow align="flex-start" mt="md">
         <TextInput label="Text input" placeholder="Select items" />
         <MultiSelect
-          label="Multi select with separator and disabled items"
           data={[...data, { label: 'Lit', value: 'lit', disabled: true }]}
           defaultValue={['react', 'ng']}
           placeholder="Select items"
@@ -149,19 +143,18 @@ storiesOf('MultiSelect', module)
   ))
   .add('Overflow value and items', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
-      <MultiSelect label="Multi select" data={longData} placeholder="Select items" searchable />
+      <MultiSelect data={longData} placeholder="Select items" searchable />
     </div>
   ))
   .add('z-index', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
-      <MultiSelect label="Multi select" data={data} placeholder="Select items" searchable />
+      <MultiSelect data={data} placeholder="Select items" searchable />
       <SegmentedControl data={data} />
     </div>
   ))
   .add('Grouped and disabled data', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
       <MultiSelect
-        label="Multi select"
         data={groupedData}
         placeholder="Select items"
         nothingFound="Nothing found"
@@ -172,7 +165,6 @@ storiesOf('MultiSelect', module)
   .add('String data', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
       <MultiSelect
-        label="Multi select"
         data={stringData}
         placeholder="Select items"
         nothingFound="Nothing found"
@@ -183,7 +175,6 @@ storiesOf('MultiSelect', module)
   .add('Large data', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
       <MultiSelect
-        label="Multi select"
         data={largeData}
         limit={20}
         placeholder="Select items"
@@ -197,7 +188,6 @@ storiesOf('MultiSelect', module)
   .add('Searchable', () => (
     <Group style={{ padding: 40, paddingBottom: 0 }} grow align="flex-start">
       <MultiSelect
-        label="Multi select"
         data={data}
         defaultValue={['react', 'ng']}
         placeholder="Select items"
@@ -205,7 +195,6 @@ storiesOf('MultiSelect', module)
         searchable
       />
       <MultiSelect
-        label="Multi select with disabled and separator items"
         data={[...data, { label: 'Lit', value: 'lit', disabled: true }]}
         defaultValue={['react', 'ng']}
         placeholder="Select items"
@@ -217,7 +206,6 @@ storiesOf('MultiSelect', module)
   .add('Clearable', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
       <MultiSelect
-        label="Multi select"
         data={data}
         defaultValue={['react', 'ng']}
         placeholder="Select items"
@@ -226,7 +214,6 @@ storiesOf('MultiSelect', module)
         clearable
       />
       <MultiSelect
-        label="Multi select"
         data={data}
         defaultValue={['react', 'ng']}
         placeholder="Select items"
@@ -234,7 +221,6 @@ storiesOf('MultiSelect', module)
         clearable
       />
       <MultiSelect
-        label="Multi select"
         data={data}
         defaultValue={['react', 'ng']}
         placeholder="Select items"
@@ -249,7 +235,6 @@ storiesOf('MultiSelect', module)
   .add('Max Selected Values', () => (
     <Group style={{ padding: 40, paddingBottom: 0 }} grow align="flex-start">
       <MultiSelect
-        label="Searchable with Max Selectable Values"
         data={data}
         defaultValue={['react', 'ng']}
         placeholder="Select items"
@@ -259,7 +244,6 @@ storiesOf('MultiSelect', module)
         maxSelectedValues={5}
       />
       <MultiSelect
-        label="Non-searchable with Max Selectable Values"
         data={data}
         defaultValue={['react', 'ng']}
         placeholder="Select items"
@@ -271,7 +255,6 @@ storiesOf('MultiSelect', module)
   .add('Within overlays', () => (
     <WithinOverlays>
       <MultiSelect
-        label="Multi select"
         data={data}
         defaultValue={['react', 'ng']}
         placeholder="Select items"
@@ -282,7 +265,6 @@ storiesOf('MultiSelect', module)
   .add('Within form', () => (
     <SubmitForm>
       <MultiSelect
-        label="Submit with enter"
         data={data}
         defaultValue={['react', 'ng']}
         placeholder="Select items"
@@ -299,7 +281,6 @@ storiesOf('MultiSelect', module)
   .add('Clearable button not in tab index', () => (
     <div style={{ padding: 40, maxWidth: 400 }}>
       <MultiSelect
-        label="Multi select"
         data={data}
         defaultValue={['react', 'ng']}
         placeholder="Select items"
@@ -309,7 +290,6 @@ storiesOf('MultiSelect', module)
         clearButtonTabIndex={-1}
       />
       <MultiSelect
-        label="Multi select"
         data={data}
         defaultValue={['react', 'ng']}
         placeholder="Select items"

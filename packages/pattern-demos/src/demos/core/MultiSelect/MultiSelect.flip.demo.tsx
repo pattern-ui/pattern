@@ -14,7 +14,6 @@ export const flip: PatternControlDemo = {
   component: (props: any) => (
     <MultiSelect
       placeholder="Pick one"
-      label="Your favorite framework/library"
       data={[
         { value: 'react', label: 'React' },
         { value: 'ng', label: 'Angular' },

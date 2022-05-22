@@ -13,9 +13,9 @@ import {
   getDefaultZIndex,
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
-import { InputWrapper } from '@pattern-ui/input-wrapper';
 import { Input } from '@pattern-ui/input';
 import { groupOptions } from '@pattern-ui/utils';
+import { Box } from '@pattern-ui/box';
 import { DefaultItem } from '../Select/DefaultItem/DefaultItem';
 import { getSelectRightSectionProps } from '../Select/SelectRightSection/get-select-right-section-props';
 import { SelectScrollArea } from '../Select';
@@ -89,6 +89,9 @@ export interface MultiSelectProps
 
   /** Set the clear button tab index to disabled or default after input field */
   clearButtonTabIndex?: -1 | 0;
+
+  /** Sets border color to red and aria-invalid=true on input element */
+  invalid?: boolean;
 }
 
 export function defaultFilter(value: string, selected: boolean, item: SelectItem) {
@@ -133,10 +136,8 @@ export const MultiSelect = forwardRef<HTMLInputElement, MultiSelectProps>(
       className,
       style,
       required,
-      label,
-      description,
       size,
-      error,
+      invalid,
       classNames,
       styles,
       wrapperProps,
@@ -186,9 +187,6 @@ export const MultiSelect = forwardRef<HTMLInputElement, MultiSelectProps>(
       selectOnBlur,
       name,
       dropdownPosition,
-      errorProps,
-      labelProps,
-      descriptionProps,
       clearButtonTabIndex,
       form,
       positionDependencies,
@@ -196,7 +194,7 @@ export const MultiSelect = forwardRef<HTMLInputElement, MultiSelectProps>(
     } = usePatternDefaultProps('MultiSelect', defaultProps, props);
 
     const { classes, cx, theme } = useStyles(
-      { size, invalid: !!error },
+      { size, invalid },
       { classNames, styles, name: 'MultiSelect' }
     );
     const { systemStyles, rest } = extractSystemStyles(others);
@@ -533,142 +531,129 @@ export const MultiSelect = forwardRef<HTMLInputElement, MultiSelectProps>(
       filteredData.length > 0 ? dropdownOpened : dropdownOpened && !!nothingFound;
 
     return (
-      <InputWrapper
-        required={required}
-        id={uuid}
-        label={label}
-        error={error}
-        description={description}
-        size={size}
+      <Box
+        id={`${uuid}-wrapper`}
         className={className}
-        style={style}
         classNames={classNames}
+        style={style}
         styles={styles}
-        __staticSelector="MultiSelect"
+        role="combobox"
+        aria-haspopup="listbox"
+        aria-owns={`${uuid}-items`}
+        aria-controls={uuid}
+        aria-expanded={dropdownOpened}
+        onMouseLeave={() => setHovered(-1)}
+        tabIndex={-1}
+        ref={wrapperRef}
         sx={sx}
-        errorProps={errorProps}
-        descriptionProps={descriptionProps}
-        labelProps={labelProps}
         {...systemStyles}
         {...wrapperProps}
       >
-        <div
-          className={classes.wrapper}
-          role="combobox"
-          aria-haspopup="listbox"
-          aria-owns={`${uuid}-items`}
-          aria-controls={uuid}
-          aria-expanded={dropdownOpened}
-          onMouseLeave={() => setHovered(-1)}
-          tabIndex={-1}
-          ref={wrapperRef}
+        <input type="hidden" name={name} value={_value.join(',')} form={form} />
+
+        <Input<'div'>
+          __staticSelector="MultiSelect"
+          style={{ overflow: 'hidden' }}
+          component="div"
+          multiline
+          size={size}
+          variant={variant}
+          disabled={disabled}
+          invalid={invalid}
+          required={required}
+          radius={radius}
+          icon={icon}
+          onMouseDown={(event) => {
+            event.preventDefault();
+            !disabled && !valuesOverflow.current && setDropdownOpened(!dropdownOpened);
+            inputRef.current?.focus();
+          }}
+          classNames={{
+            ...classNames,
+            input: cx({ [classes.input]: !searchable }, classNames?.input),
+          }}
+          {...getSelectRightSectionProps({
+            theme,
+            rightSection,
+            rightSectionWidth,
+            styles,
+            size,
+            shouldClear: clearable && _value.length > 0,
+            clearButtonLabel,
+            onClear: handleClear,
+            invalid,
+            disabled,
+            clearButtonTabIndex,
+          })}
         >
-          <input type="hidden" name={name} value={_value.join(',')} form={form} />
+          <div className={classes.values}>
+            {selectedItems}
 
-          <Input<'div'>
-            __staticSelector="MultiSelect"
-            style={{ overflow: 'hidden' }}
-            component="div"
-            multiline
-            size={size}
-            variant={variant}
-            disabled={disabled}
-            invalid={!!error}
-            required={required}
-            radius={radius}
-            icon={icon}
-            onMouseDown={(event) => {
-              event.preventDefault();
-              !disabled && !valuesOverflow.current && setDropdownOpened(!dropdownOpened);
-              inputRef.current?.focus();
-            }}
-            classNames={{
-              ...classNames,
-              input: cx({ [classes.input]: !searchable }, classNames?.input),
-            }}
-            {...getSelectRightSectionProps({
-              theme,
-              rightSection,
-              rightSectionWidth,
-              styles,
-              size,
-              shouldClear: clearable && _value.length > 0,
-              clearButtonLabel,
-              onClear: handleClear,
-              error,
-              disabled,
-              clearButtonTabIndex,
-            })}
-          >
-            <div className={classes.values}>
-              {selectedItems}
+            <input
+              ref={useMergedRef(ref, inputRef)}
+              type="text"
+              id={uuid}
+              className={cx(classes.searchInput, {
+                [classes.searchInputPointer]: !searchable,
+                [classes.searchInputInputHidden]:
+                  (!dropdownOpened && _value.length > 0) || (!searchable && _value.length > 0),
+                [classes.searchInputEmpty]: _value.length === 0,
+              })}
+              onKeyDown={handleInputKeydown}
+              value={searchValue}
+              onChange={handleInputChange}
+              onFocus={handleInputFocus}
+              onBlur={handleInputBlur}
+              readOnly={!searchable || valuesOverflow.current}
+              placeholder={_value.length === 0 ? placeholder : undefined}
+              disabled={disabled}
+              data-pattern-stop-propagation={dropdownOpened}
+              autoComplete="nope"
+              {...rest}
+            />
+          </div>
+        </Input>
 
-              <input
-                ref={useMergedRef(ref, inputRef)}
-                type="text"
-                id={uuid}
-                className={cx(classes.searchInput, {
-                  [classes.searchInputPointer]: !searchable,
-                  [classes.searchInputInputHidden]:
-                    (!dropdownOpened && _value.length > 0) || (!searchable && _value.length > 0),
-                  [classes.searchInputEmpty]: _value.length === 0,
-                })}
-                onKeyDown={handleInputKeydown}
-                value={searchValue}
-                onChange={handleInputChange}
-                onFocus={handleInputFocus}
-                onBlur={handleInputBlur}
-                readOnly={!searchable || valuesOverflow.current}
-                placeholder={_value.length === 0 ? placeholder : undefined}
-                disabled={disabled}
-                data-pattern-stop-propagation={dropdownOpened}
-                autoComplete="nope"
-                {...rest}
-              />
-            </div>
-          </Input>
-
-          <SelectDropdown
-            mounted={dropdownOpened && shouldRenderDropdown}
-            transition={transition}
-            transitionDuration={transitionDuration}
-            transitionTimingFunction={transitionTimingFunction}
-            uuid={uuid}
-            shadow={shadow}
-            maxDropdownHeight={maxDropdownHeight}
+        <SelectDropdown
+          mounted={dropdownOpened && shouldRenderDropdown}
+          transition={transition}
+          transitionDuration={transitionDuration}
+          transitionTimingFunction={transitionTimingFunction}
+          uuid={uuid}
+          shadow={shadow}
+          maxDropdownHeight={maxDropdownHeight}
+          classNames={classNames}
+          styles={styles}
+          ref={useMergedRef(dropdownRef, scrollableRef)}
+          __staticSelector="MultiSelect"
+          dropdownComponent={dropdownComponent || SelectScrollArea}
+          referenceElement={wrapperRef.current}
+          direction={direction}
+          onDirectionChange={setDirection}
+          switchDirectionOnFlip={switchDirectionOnFlip}
+          withinPortal={withinPortal}
+          zIndex={zIndex}
+          dropdownPosition={dropdownPosition}
+          positionDependencies={positionDependencies}
+        >
+          <SelectItems
+            data={filteredData}
+            hovered={hovered}
             classNames={classNames}
             styles={styles}
-            ref={useMergedRef(dropdownRef, scrollableRef)}
+            uuid={uuid}
             __staticSelector="MultiSelect"
-            dropdownComponent={dropdownComponent || SelectScrollArea}
-            referenceElement={wrapperRef.current}
-            direction={direction}
-            onDirectionChange={setDirection}
-            switchDirectionOnFlip={switchDirectionOnFlip}
-            withinPortal={withinPortal}
-            zIndex={zIndex}
-            dropdownPosition={dropdownPosition}
-            positionDependencies={positionDependencies}
-          >
-            <SelectItems
-              data={filteredData}
-              hovered={hovered}
-              classNames={classNames}
-              styles={styles}
-              uuid={uuid}
-              __staticSelector="MultiSelect"
-              onItemHover={setHovered}
-              onItemSelect={handleItemSelect}
-              itemsRefs={itemsRefs}
-              itemComponent={itemComponent}
-              size={size}
-              nothingFound={nothingFound}
-              creatable={creatable && !!createLabel}
-              createLabel={createLabel}
-            />
-          </SelectDropdown>
-        </div>
-      </InputWrapper>
+            onItemHover={setHovered}
+            onItemSelect={handleItemSelect}
+            itemsRefs={itemsRefs}
+            itemComponent={itemComponent}
+            size={size}
+            nothingFound={nothingFound}
+            creatable={creatable && !!createLabel}
+            createLabel={createLabel}
+          />
+        </SelectDropdown>
+      </Box>
     );
   }
 );

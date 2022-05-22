@@ -15,9 +15,9 @@ import {
   usePatternDefaultProps,
 } from '@pattern-ui/styles';
 import { PatternTransition } from '@pattern-ui/transition';
-import { InputWrapper } from '@pattern-ui/input-wrapper';
 import { Input } from '@pattern-ui/input';
 import { groupOptions } from '@pattern-ui/utils';
+import { Box } from '@pattern-ui/box';
 import { SelectScrollArea } from './SelectScrollArea/SelectScrollArea';
 import { DefaultItem } from './DefaultItem/DefaultItem';
 import { getSelectRightSectionProps } from './SelectRightSection/get-select-right-section-props';
@@ -137,6 +137,9 @@ export interface SelectProps
 
   /** Set the clear button tab index to disabled or default after input field */
   clearButtonTabIndex?: -1 | 0;
+
+  /** Sets border color to red and aria-invalid=true on input element */
+  invalid?: boolean;
 }
 
 export function defaultFilter(value: string, item: SelectItem) {
@@ -176,10 +179,7 @@ export const Select = forwardRef<HTMLInputElement, SelectProps>((props: SelectPr
     className,
     style,
     required,
-    label,
     id,
-    error,
-    description,
     size,
     shadow,
     data,
@@ -223,14 +223,12 @@ export const Select = forwardRef<HTMLInputElement, SelectProps>((props: SelectPr
     name,
     dropdownPosition,
     allowDeselect,
-    errorProps,
-    descriptionProps,
-    labelProps,
     placeholder,
     filterDataOnExactSearchMatch,
     clearButtonTabIndex,
     form,
     positionDependencies,
+    invalid,
     ...others
   } = usePatternDefaultProps('Select', defaultProps, props);
 
@@ -551,121 +549,107 @@ export const Select = forwardRef<HTMLInputElement, SelectProps>((props: SelectPr
     filteredData.length > 0 ? dropdownOpened : dropdownOpened && !!nothingFound;
 
   return (
-    <InputWrapper
-      required={required}
-      id={uuid}
-      label={label}
-      error={error}
-      description={description}
-      size={size}
+    <Box
+      role="combobox"
+      aria-haspopup="listbox"
+      aria-owns={`${uuid}-items`}
+      aria-controls={uuid}
+      aria-expanded={shouldShowDropdown}
+      onMouseLeave={() => setHovered(-1)}
+      tabIndex={-1}
+      id={`${uuid}-wrapper`}
       className={className}
       style={style}
-      classNames={classNames}
       styles={styles}
-      __staticSelector="Select"
       sx={sx}
-      errorProps={errorProps}
-      descriptionProps={descriptionProps}
-      labelProps={labelProps}
       {...systemStyles}
       {...wrapperProps}
     >
-      <div
-        role="combobox"
-        aria-haspopup="listbox"
-        aria-owns={`${uuid}-items`}
-        aria-controls={uuid}
-        aria-expanded={shouldShowDropdown}
-        onMouseLeave={() => setHovered(-1)}
-        tabIndex={-1}
+      <input type="hidden" name={name} value={_value || ''} form={form} />
+
+      <Input<'input'>
+        autoComplete="nope"
+        {...rest}
+        type="text"
+        required={required}
+        ref={useMergedRef(ref, inputRef)}
+        id={uuid}
+        invalid={invalid}
+        size={size}
+        onKeyDown={handleInputKeydown}
+        __staticSelector="Select"
+        value={inputValue}
+        placeholder={placeholder}
+        onChange={handleInputChange}
+        aria-autocomplete="list"
+        aria-controls={shouldShowDropdown ? `${uuid}-items` : null}
+        aria-activedescendant={hovered !== -1 ? `${uuid}-${hovered}` : null}
+        onClick={handleInputClick}
+        onBlur={handleInputBlur}
+        onFocus={handleInputFocus}
+        readOnly={!searchable}
+        disabled={disabled}
+        data-pattern-stop-propagation={shouldShowDropdown}
+        name={null}
+        classNames={{
+          ...classNames,
+          input: cx({ [classes.input]: !searchable }, classNames?.input),
+        }}
+        {...getSelectRightSectionProps({
+          theme,
+          rightSection,
+          rightSectionWidth,
+          styles,
+          size,
+          shouldClear: clearable && !!selectedValue,
+          clearButtonLabel,
+          onClear: handleClear,
+          invalid,
+          clearButtonTabIndex,
+        })}
+      />
+
+      <SelectDropdown
+        referenceElement={inputRef.current}
+        mounted={shouldShowDropdown}
+        transition={transition}
+        transitionDuration={transitionDuration}
+        transitionTimingFunction={transitionTimingFunction}
+        uuid={uuid}
+        shadow={shadow}
+        maxDropdownHeight={maxDropdownHeight}
+        classNames={classNames}
+        styles={styles}
+        ref={useMergedRef(dropdownRef, scrollableRef)}
+        __staticSelector="Select"
+        dropdownComponent={dropdownComponent || SelectScrollArea}
+        direction={direction}
+        onDirectionChange={setDirection}
+        switchDirectionOnFlip={switchDirectionOnFlip}
+        withinPortal={withinPortal}
+        zIndex={zIndex}
+        dropdownPosition={dropdownPosition}
+        positionDependencies={positionDependencies}
       >
-        <input type="hidden" name={name} value={_value || ''} form={form} />
-
-        <Input<'input'>
-          autoComplete="nope"
-          {...rest}
-          type="text"
-          required={required}
-          ref={useMergedRef(ref, inputRef)}
-          id={uuid}
-          invalid={!!error}
-          size={size}
-          onKeyDown={handleInputKeydown}
-          __staticSelector="Select"
-          value={inputValue}
-          placeholder={placeholder}
-          onChange={handleInputChange}
-          aria-autocomplete="list"
-          aria-controls={shouldShowDropdown ? `${uuid}-items` : null}
-          aria-activedescendant={hovered !== -1 ? `${uuid}-${hovered}` : null}
-          onClick={handleInputClick}
-          onBlur={handleInputBlur}
-          onFocus={handleInputFocus}
-          readOnly={!searchable}
-          disabled={disabled}
-          data-pattern-stop-propagation={shouldShowDropdown}
-          name={null}
-          classNames={{
-            ...classNames,
-            input: cx({ [classes.input]: !searchable }, classNames?.input),
-          }}
-          {...getSelectRightSectionProps({
-            theme,
-            rightSection,
-            rightSectionWidth,
-            styles,
-            size,
-            shouldClear: clearable && !!selectedValue,
-            clearButtonLabel,
-            onClear: handleClear,
-            error,
-            clearButtonTabIndex,
-          })}
-        />
-
-        <SelectDropdown
-          referenceElement={inputRef.current}
-          mounted={shouldShowDropdown}
-          transition={transition}
-          transitionDuration={transitionDuration}
-          transitionTimingFunction={transitionTimingFunction}
-          uuid={uuid}
-          shadow={shadow}
-          maxDropdownHeight={maxDropdownHeight}
+        <SelectItems
+          data={filteredData}
+          hovered={hovered}
           classNames={classNames}
           styles={styles}
-          ref={useMergedRef(dropdownRef, scrollableRef)}
+          isItemSelected={(val) => val === _value}
+          uuid={uuid}
           __staticSelector="Select"
-          dropdownComponent={dropdownComponent || SelectScrollArea}
-          direction={direction}
-          onDirectionChange={setDirection}
-          switchDirectionOnFlip={switchDirectionOnFlip}
-          withinPortal={withinPortal}
-          zIndex={zIndex}
-          dropdownPosition={dropdownPosition}
-          positionDependencies={positionDependencies}
-        >
-          <SelectItems
-            data={filteredData}
-            hovered={hovered}
-            classNames={classNames}
-            styles={styles}
-            isItemSelected={(val) => val === _value}
-            uuid={uuid}
-            __staticSelector="Select"
-            onItemHover={setHovered}
-            onItemSelect={handleItemSelect}
-            itemsRefs={itemsRefs}
-            itemComponent={itemComponent}
-            size={size}
-            nothingFound={nothingFound}
-            creatable={isCreatable && !!createLabel}
-            createLabel={createLabel}
-            aria-label={label}
-          />
-        </SelectDropdown>
-      </div>
-    </InputWrapper>
+          onItemHover={setHovered}
+          onItemSelect={handleItemSelect}
+          itemsRefs={itemsRefs}
+          itemComponent={itemComponent}
+          size={size}
+          nothingFound={nothingFound}
+          creatable={isCreatable && !!createLabel}
+          createLabel={createLabel}
+        />
+      </SelectDropdown>
+    </Box>
   );
 });
 

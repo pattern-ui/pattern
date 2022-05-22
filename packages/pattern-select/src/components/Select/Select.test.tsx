@@ -8,11 +8,11 @@ import {
   itSupportsInputProps,
   renderWithAct,
 } from '@pattern-ui/tests';
+import { InputWrapper } from '@pattern-ui/input-wrapper';
 import { Select, SelectProps } from './Select';
 
 const defaultProps: SelectProps = {
   initiallyOpened: true,
-  label: 'test-label',
   withinPortal: false,
   data: [
     { value: 'test-1', label: 'Test 1' },
@@ -25,7 +25,11 @@ const data = Array(50)
   .map((_, index) => ({ value: index.toString(), label: index.toString() }));
 
 describe('@pattern-ui/core/Select', () => {
-  checkAccessibility([<Select {...defaultProps} />]);
+  checkAccessibility([
+    <InputWrapper id="test" label="Test">
+      <Select {...defaultProps} id="test" />
+    </InputWrapper>,
+  ]);
   itSupportsFocusEvents(Select, defaultProps, 'input[type="text"]');
   itSupportsInputProps(Select, defaultProps, 'Select');
   itSupportsSystemProps({

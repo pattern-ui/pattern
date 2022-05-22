@@ -6,7 +6,6 @@ export default function Demo() {
   return (
     <div style={{ maxWidth: 320, marginLeft: 'auto', marginRight: 'auto' }}>
       <Select
-        label="Your favorite framework/library"
         placeholder="Pick one"
         rightSection={<ChevronDown size={14} />}
         rightSectionWidth={30}

@@ -56,7 +56,6 @@ export default function Demo() {
   return (
     <div style={{ maxWidth: 400, marginLeft: 'auto', marginRight: 'auto' }}>
       <MultiSelect
-        label="Choose employees of the month"
         placeholder="Pick all you like"
         itemComponent={SelectItem}
         data={data}
